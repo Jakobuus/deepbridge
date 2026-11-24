@@ -1,0 +1,134 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T21:50:00Z",
+    "case": "HOPO Therapeutics / Rebecca Abergel",
+    "generator": "hand-curated from value_map_hopo.json and buyers_hopo.json",
+    "notes": "Hypotheses from the founder's papers; not verified demand. Lead poisoning is an expansion segment: complexation shown in solution chemistry, not yet in animals."
+  },
+  "founder_id": "person:openalex:A5043992375",
+  "buyer_roles": [
+    {
+      "title": "Program manager, radiological/nuclear medical countermeasures (e.g. BARDA)",
+      "why": "Hypothesis: stockpile buyers need an oral decorporation option beyond injected DTPA; the founder's papers report higher Pu/Am/U removal than DTPA in animals and oral tolerability in rats. BARDA is linked to OpenAlex works on radiation medical countermeasures.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-dtpa",
+        "evidence:value-map:hopo-taylor-more",
+        "evidence:value-map:hopo-oral",
+        "evidence:value-map:hopo-bunin-reg",
+        "evidence:buyers:45551d9ddab21671f8cc"
+      ]
+    },
+    {
+      "title": "Radiopharmaceutical business development lead",
+      "why": "Hypothesis: immuno-PET developers may want a 89Zr chelator that does not release 89Zr into bone; Zr-HOPO matched or surpassed DFO stability and showed 2.4%ID/g vs 17.0%ID/g bone uptake in mice.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-zr",
+        "evidence:value-map:hopo-bone",
+        "evidence:value-map:hopo-bifunc",
+        "evidence:value-map:hopo-safer"
+      ]
+    },
+    {
+      "title": "Contrast-agent R&D head (MRI gadolinium agents)",
+      "why": "Hypothesis: makers of gadolinium agents face regulator pressure over retention; the founder's gadolinium paper reports better Gd removal than DTPA. Guerbet, Bracco and Bayer are linked to OpenAlex works on gadolinium retention.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-gd",
+        "evidence:value-map:hopo-mitigate",
+        "evidence:value-map:hopo-ema",
+        "evidence:buyers:9c412e33422f05510e3b",
+        "evidence:buyers:1a351874fa78d1b41148"
+      ]
+    },
+    {
+      "title": "Paediatric toxicologist / poison-centre medical director",
+      "why": "Hypothesis (expansion): heavy-metal poisoning teams need chelation options; Pb, Cd and Sn complexation is reported in solution. Boston Children's is linked to a work on lead-chelator shortages.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb",
+        "evidence:value-map:hopo-taylor-oral",
+        "evidence:buyers:3e348adff49202347ff8"
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "name": "Radiation countermeasures: government stockpiles and defense",
+      "why": "Hypothesis: the papers describe limited current therapies for radionuclide contamination and a dirty-bomb threat; HOPO ligands removed more actinides than DTPA in animal models. Not verified demand.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-limited",
+        "evidence:value-map:hopo-bomb",
+        "evidence:value-map:hopo-dtpa",
+        "evidence:value-map:hopo-bunin-reg",
+        "evidence:buyers:45551d9ddab21671f8cc"
+      ]
+    },
+    {
+      "name": "Radiopharmaceutical imaging (89Zr PET)",
+      "why": "Hypothesis: 89Zr released from DFO accumulates in bone; a more stable chelator could give a safer tracer.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-dfo",
+        "evidence:value-map:hopo-zr",
+        "evidence:value-map:hopo-safer",
+        "evidence:value-map:hopo-bt474"
+      ]
+    },
+    {
+      "name": "Gadolinium contrast-agent makers",
+      "why": "Hypothesis: regulators recommended discontinuing over half of approved gadolinium agents; a chelation remedy could sit alongside the product.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-ema",
+        "evidence:value-map:hopo-deposits",
+        "evidence:value-map:hopo-gd",
+        "evidence:value-map:hopo-mitigate",
+        "evidence:buyers:9c412e33422f05510e3b"
+      ]
+    }
+  ],
+  "needs": [
+    {
+      "text": "Hypothesis: emergency planners and stockpile buyers need an oral, more effective alternative to injected DTPA. Reasoning: the papers report higher Pu, Am and U removal than DTPA in animals and oral tolerability in rats.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-dtpa",
+        "evidence:value-map:hopo-taylor-more",
+        "evidence:value-map:hopo-oral"
+      ]
+    },
+    {
+      "text": "Hypothesis: PET developers need an 89Zr chelator that stays bound in vivo and conjugates to antibodies. Reasoning: Zr-HOPO matched or surpassed DFO and a bifunctional derivative exists.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-zr",
+        "evidence:value-map:hopo-bifunc",
+        "evidence:value-map:hopo-bone"
+      ]
+    },
+    {
+      "text": "Hypothesis: contrast-agent makers and MRI providers need a way to reduce gadolinium retention. Reasoning: 3,4,3-LI(1,2-HOPO) removed Gd better than DTPA in a preclinical study measured with a 153Gd radiotracer.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-gd",
+        "evidence:value-map:hopo-gd153",
+        "evidence:value-map:hopo-mitigate"
+      ]
+    }
+  ],
+  "expansion_segments": [
+    {
+      "name": "Lead and heavy-metal poisoning in children (public health and paediatrics)",
+      "why": "Hypothesis, early: the same ligand complexes Pb, Cd and Sn in solution chemistry, not yet in animals. Hospitals and poison centres are linked to OpenAlex works on lead-chelator use and shortages, a research signal and not purchase intent.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb",
+        "evidence:value-map:hopo-oral",
+        "evidence:value-map:hopo-goldnp",
+        "evidence:buyers:3e348adff49202347ff8"
+      ]
+    },
+    {
+      "name": "Targeted alpha therapy developers (227Th chelation)",
+      "why": "Hypothesis: the ligand binds Th(IV) with high affinity and labelling completed in 1 h at room temperature.",
+      "evidence_ids": [
+        "evidence:value-map:hopo-th227",
+        "evidence:value-map:hopo-th227-label",
+        "evidence:value-map:hopo-hf-pet"
+      ]
+    }
+  ]
+}
