@@ -1,0 +1,520 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T20:20:11.418123+00:00",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "founder_id": "person:openalex:A5102978866",
+    "notes": "Claude-generated, reviewed demo snapshot from cached OpenAlex records and live publisher abstracts. Buyer values are hypotheses about what the published research could enable."
+  },
+  "value_nodes": [
+    {
+      "id": "value:9ddc7896fa9b2389c7843381",
+      "kind": "feature",
+      "text": "Programmable silicon photonic prototype with a Mach–Zehnder interferometer mesh",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ]
+    },
+    {
+      "id": "value:d4b5ab7c34de003218255c00",
+      "kind": "feature",
+      "text": "Research prototype: single-chip coherent optical neural network combining matrix processing and nonlinear activations",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c"
+      ]
+    },
+    {
+      "id": "value:6651d7b9fd1a3b958fd4eb04",
+      "kind": "feature",
+      "text": "Demonstrated in situ training of an optical neural network without backpropagation",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:e30432dff2d8c055e719b33f"
+      ]
+    },
+    {
+      "id": "value:1c3a1e9e7a076d74eb9d481c",
+      "kind": "feature",
+      "text": "Low-loss thermo-optic phase modulation in a silicon-on-insulator waveguide",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:2cd74480befbffc8c5a2b55c"
+      ]
+    },
+    {
+      "id": "value:657be6aac09a698d63ef12fa",
+      "kind": "feature",
+      "text": "Research prototype: rapidly reprogrammable photonic mesh used for quantum transport simulation",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:180731ac83e2857fcd281dc3"
+      ]
+    },
+    {
+      "id": "value:9c3764956dd5664991756d62",
+      "kind": "feature",
+      "text": "Electrically reconfigurable circuits for universal linear optical transformations",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ]
+    },
+    {
+      "id": "value:bb1c1b4b18a05b3780dba3ec",
+      "kind": "benefit",
+      "text": "Potential to perform neural-network inference directly in the optical domain",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ]
+    },
+    {
+      "id": "value:ed27c4ff4b3dac6c6d21b3aa",
+      "kind": "benefit",
+      "text": "Potential to train optical networks on the chip itself, without computing backpropagation digitally",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:e30432dff2d8c055e719b33f"
+      ]
+    },
+    {
+      "id": "value:abfda7f07d7a4e0582f42e9f",
+      "kind": "benefit",
+      "text": "Potential for dense, low-loss programmable photonic circuits built on CMOS-style fabrication",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:2cd74480befbffc8c5a2b55c",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ]
+    },
+    {
+      "id": "value:d41f9dd9f11be8efc24a31b1",
+      "kind": "benefit",
+      "text": "Potential for reconfigurable photonic testbeds that run many experiments on one chip",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:180731ac83e2857fcd281dc3",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ]
+    },
+    {
+      "id": "value:54d8e1a8dc702e5082d44b21",
+      "kind": "value",
+      "text": "Potential to lower the energy and time cost of AI workloads for AI hardware operators",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e30432dff2d8c055e719b33f",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ]
+    },
+    {
+      "id": "value:1de151425ce3ca8e5cd403db",
+      "kind": "value",
+      "text": "Potential to let builders of optical-signal systems process signals directly with very fast response",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ]
+    },
+    {
+      "id": "value:919cb36f094dc08461a75747",
+      "kind": "value",
+      "text": "Potential for photonic chip integrators to pack more programmable elements per chip with manageable loss and thermal spacing",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:2cd74480befbffc8c5a2b55c",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ]
+    },
+    {
+      "id": "value:41545594a3c398d8dac1b38f",
+      "kind": "value",
+      "text": "Potential for quantum-simulation labs to explore many parameter settings without rebuilding hardware",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:180731ac83e2857fcd281dc3",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ]
+    },
+    {
+      "id": "value:745a6451789d82b4b4847dfa",
+      "kind": "problem",
+      "text": "AI hardware operators: CMOS electronics are limited by energy consumption and throughput for neural networks",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:dd63c365c01909f9d03ffecf"
+      ]
+    },
+    {
+      "id": "value:70a2acd8b2cd13b79bfd0337",
+      "kind": "problem",
+      "text": "Builders of latency-critical optical-signal systems: applications need ultrafast, direct processing of optical signals",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:1fba2299fd326c05304a16a3"
+      ]
+    },
+    {
+      "id": "value:e11656a0b77e188009304e88",
+      "kind": "problem",
+      "text": "Quantum-simulation researchers: large photonic systems need low-loss, high-fidelity control over all parameters",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:663ee421f873c920e653dbdb"
+      ]
+    },
+    {
+      "id": "value:410b5555e760acfb7570ae8e",
+      "kind": "problem",
+      "text": "Photonic chip designers: dense integration requires spacing to thermally isolate thermo-optic devices",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:59c24caea86df761cb83fa80"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:value-map:920b1bb3985ce602663e6972",
+      "from": "value:9ddc7896fa9b2389c7843381",
+      "to": "value:bb1c1b4b18a05b3780dba3ec",
+      "type": "ENABLES",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:22e6810e85e7f521f2e2ef26",
+      "from": "value:d4b5ab7c34de003218255c00",
+      "to": "value:bb1c1b4b18a05b3780dba3ec",
+      "type": "ENABLES",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:79fc07c645cda0b8aaff6ca7",
+      "from": "value:6651d7b9fd1a3b958fd4eb04",
+      "to": "value:ed27c4ff4b3dac6c6d21b3aa",
+      "type": "ENABLES",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:e30432dff2d8c055e719b33f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:8d7b5e018c0df40ba737a5b1",
+      "from": "value:1c3a1e9e7a076d74eb9d481c",
+      "to": "value:abfda7f07d7a4e0582f42e9f",
+      "type": "ENABLES",
+      "date": "2018-12-20",
+      "evidence_ids": [
+        "evidence:value-map:2cd74480befbffc8c5a2b55c",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:40dc40aa27415845bd7fb317",
+      "from": "value:657be6aac09a698d63ef12fa",
+      "to": "value:d41f9dd9f11be8efc24a31b1",
+      "type": "ENABLES",
+      "date": "2018-12-20",
+      "evidence_ids": [
+        "evidence:value-map:180731ac83e2857fcd281dc3",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:77aa7752a35f5bedb333b2cc",
+      "from": "value:9c3764956dd5664991756d62",
+      "to": "value:bb1c1b4b18a05b3780dba3ec",
+      "type": "ENABLES",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:93d12516740695bfac600b6b",
+      "from": "value:9c3764956dd5664991756d62",
+      "to": "value:abfda7f07d7a4e0582f42e9f",
+      "type": "ENABLES",
+      "date": "2018-12-20",
+      "evidence_ids": [
+        "evidence:value-map:2cd74480befbffc8c5a2b55c",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:ca7e61cd1586749b4784b8b5",
+      "from": "value:9c3764956dd5664991756d62",
+      "to": "value:d41f9dd9f11be8efc24a31b1",
+      "type": "ENABLES",
+      "date": "2018-12-20",
+      "evidence_ids": [
+        "evidence:value-map:180731ac83e2857fcd281dc3",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:f4043090fed87ed1d95b7841",
+      "from": "value:bb1c1b4b18a05b3780dba3ec",
+      "to": "value:54d8e1a8dc702e5082d44b21",
+      "type": "DELIVERS",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e30432dff2d8c055e719b33f",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:e18de68c0c265084f9a652eb",
+      "from": "value:bb1c1b4b18a05b3780dba3ec",
+      "to": "value:1de151425ce3ca8e5cd403db",
+      "type": "DELIVERS",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:8cb833ba529a32899ecf6c58",
+      "from": "value:ed27c4ff4b3dac6c6d21b3aa",
+      "to": "value:54d8e1a8dc702e5082d44b21",
+      "type": "DELIVERS",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e30432dff2d8c055e719b33f",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:9bbbb87bdcc3a5cf2a6f9db8",
+      "from": "value:abfda7f07d7a4e0582f42e9f",
+      "to": "value:919cb36f094dc08461a75747",
+      "type": "DELIVERS",
+      "date": "2018-12-20",
+      "evidence_ids": [
+        "evidence:value-map:2cd74480befbffc8c5a2b55c",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:c72a28e85072c239c6735615",
+      "from": "value:d41f9dd9f11be8efc24a31b1",
+      "to": "value:41545594a3c398d8dac1b38f",
+      "type": "DELIVERS",
+      "date": "2018-12-20",
+      "evidence_ids": [
+        "evidence:value-map:180731ac83e2857fcd281dc3",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:13231c0fe3aaa938df70a47f",
+      "from": "value:54d8e1a8dc702e5082d44b21",
+      "to": "value:745a6451789d82b4b4847dfa",
+      "type": "SOLVES",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:dd63c365c01909f9d03ffecf",
+        "evidence:value-map:e30432dff2d8c055e719b33f",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:420d8a9b8deae918b11a7c1f",
+      "from": "value:1de151425ce3ca8e5cd403db",
+      "to": "value:70a2acd8b2cd13b79bfd0337",
+      "type": "SOLVES",
+      "date": "2024-12-02",
+      "evidence_ids": [
+        "evidence:value-map:1fba2299fd326c05304a16a3",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+        "evidence:value-map:e6d344ba6a09281a2492c61f"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:08d3859ede690956a1842831",
+      "from": "value:919cb36f094dc08461a75747",
+      "to": "value:410b5555e760acfb7570ae8e",
+      "type": "SOLVES",
+      "date": "2018-12-20",
+      "evidence_ids": [
+        "evidence:value-map:2cd74480befbffc8c5a2b55c",
+        "evidence:value-map:59c24caea86df761cb83fa80",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:c41c73f9821496ff8a38e898",
+      "from": "value:41545594a3c398d8dac1b38f",
+      "to": "value:e11656a0b77e188009304e88",
+      "type": "SOLVES",
+      "date": "2018-12-20",
+      "evidence_ids": [
+        "evidence:value-map:180731ac83e2857fcd281dc3",
+        "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+        "evidence:value-map:663ee421f873c920e653dbdb"
+      ],
+      "confidence": 0.5,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+      "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+      "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+      "source_date": "2017-06-12",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+      "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+      "quote": "matrix algebra and nonlinear activation",
+      "source_date": "2024-12-02",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:e30432dff2d8c055e719b33f",
+      "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+      "quote": "backpropagation-free in situ training",
+      "source_date": "2024-12-02",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:2cd74480befbffc8c5a2b55c",
+      "source_url": "https://openalex.org/W2952285760",
+      "quote": "efficient and low-loss optical phase modulation in a silicon-on-insulator (SOI) waveguide",
+      "source_date": "2014-04-23",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:180731ac83e2857fcd281dc3",
+      "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+      "quote": "mesh of 88 generalized beamsplitters programmable on microsecond timescales",
+      "source_date": "2017-06-19",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+      "source_url": "https://openalex.org/W2905425616",
+      "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+      "source_date": "2018-12-20",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:dd63c365c01909f9d03ffecf",
+      "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+      "quote": "energy consumption and throughput are emerging as fundamental limitations",
+      "source_date": "2024-12-02",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:1fba2299fd326c05304a16a3",
+      "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+      "quote": "ultrafast, direct processing of optical signals",
+      "source_date": "2024-12-02",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:663ee421f873c920e653dbdb",
+      "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+      "quote": "low-loss, high-fidelity control over all parameters of the transport problem",
+      "source_date": "2017-06-19",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:59c24caea86df761cb83fa80",
+      "source_url": "https://openalex.org/W2952285760",
+      "quote": "separation necessary to isolate thermo-optic devices",
+      "source_date": "2014-04-23",
+      "observed_at": "2026-11-24T20:20:11.417865+00:00",
+      "kind": "paper"
+    }
+  ]
+}
