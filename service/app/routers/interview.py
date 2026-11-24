@@ -14,7 +14,8 @@ router = APIRouter()
 
 @router.post('/interview', response_model=InterviewResponse)
 def interview(request: InterviewRequest):
-    return turn(request.session_id, request.answer, paper_links=request.paper_links, founder_id=request.founder_id)
+    return turn(request.session_id, request.answer, paper_links=request.paper_links, founder_id=request.founder_id,
+                mode=request.mode)
 
 
 @router.post('/interview/transcript', response_model=TranscriptResponse)

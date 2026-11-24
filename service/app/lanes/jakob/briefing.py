@@ -10,12 +10,13 @@ from threading import Lock
 from typing import Callable, Literal
 from uuid import uuid4
 
-from pydantic import BaseModel, Field, ValidationError
+from pydantic import BaseModel, Field, ValidationError, model_validator
 
 from ...events import events, publish
 from ...llm import run_claude
 from ...models import BuyerCategory, Edge, Evidence, Founder, ValueNode
 from ...store import FIXTURES, now, store
+from . import interview_style as style
 from .grounding import extract_claims, ground
 from .icp import _name_matches, _write
 from .sources import SourceDoc, SourceError, SourceKind, read_gdoc, read_notion, read_paper, read_website
@@ -67,6 +68,26 @@ class Briefing(BaseModel):
     claims: list[Claim]
     gaps: list[str]
     interviewer_instructions: str
+    # Voice style for the hosted voice app and the in-app interview (added fields; all optional for old clients).
+    mode: Mode = 'stage'
+    persona: str = ''
+    style_rules: list[str] = Field(default_factory=list)
+    stage_questions: list[str] = Field(default_factory=list)
+    plain_summary: str = ''
+
+    @model_validator(mode='after')
+    def _voice_style(self):
+        hopo = style.is_hopo(self.founder.company, self.session_id)
+        self.persona = style.PERSONA
+        self.style_rules = list(style.STYLE_RULES)
+        self.stage_questions = style.stage_questions(self.founder.name, hopo)
+        self.plain_summary = style.plain_summary(self.understanding, self.founder.company, self.session_id)
+        questions = self.stage_questions if self.mode == 'stage' else [*self.stage_questions,
+                                                                       *style.full_questions(hopo)[2:]]
+        self.interviewer_instructions = style.instructions(
+            self.founder.name, self.founder.company or ('HOPO Therapeutics' if hopo else None),
+            self.plain_summary, self.gaps, self.mode, questions)
+        return self
 
 
 class Turn(BaseModel):
@@ -412,7 +433,8 @@ Do not repeat a fact in a second kind. Support the opening using facts you inclu
     gaps = [question for key, question in GAPS.items() if key not in answers]
     briefing = Briefing(session_id=session_id, founder=founder, understanding=understanding,
                         sources=[SourceSummary(kind=doc.kind, title=doc.title, url=doc.url) for doc in docs],
-                        claims=claims, gaps=gaps, interviewer_instructions=_instructions(understanding, gaps, mode))
+                        claims=claims, gaps=gaps, interviewer_instructions=_instructions(understanding, gaps, mode),
+                        mode=mode)
     session = Session(briefing)
     for _, node, proof in facts:
         _publish_fact(session, 'reading', node, proof)
