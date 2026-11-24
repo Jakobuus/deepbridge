@@ -9,7 +9,6 @@ import {
   Kanban,
   MailCheck,
   RefreshCw,
-  ShieldCheck,
 } from "lucide-react";
 import * as React from "react";
 import {
@@ -21,7 +20,6 @@ import { ScreenDrafts } from "@/components/deepbridge/screen-drafts";
 import { ScreenIntake } from "@/components/deepbridge/screen-intake";
 import { ScreenLeads } from "@/components/deepbridge/screen-leads";
 import { ScreenPipeline } from "@/components/deepbridge/screen-pipeline";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { API_BASE, ApiError, api, GOLDEN_FOUNDER_ID } from "@/lib/api";
 import type {
@@ -88,6 +86,43 @@ const NAV_ITEMS: {
   },
 ];
 
+// HACK: /integrations/status shape not fixed yet; accept a list or a name-keyed object.
+function parseIntegrations(data: unknown): { name: string; live: boolean; detail?: string }[] {
+  const pretty: Record<string, string> = { band: "Band", flexprice: "Flexprice", moss: "Moss" };
+  const isLive = (v: unknown): boolean => {
+    if (typeof v === "boolean") return v;
+    if (typeof v === "string") return /ok|live|up|connected|active|true/i.test(v);
+    if (v && typeof v === "object") {
+      const o = v as Record<string, unknown>;
+      for (const k of ["live", "ok", "connected", "active", "up"]) if (typeof o[k] === "boolean") return o[k] as boolean;
+      if (typeof o.status === "string") return isLive(o.status);
+    }
+    return false;
+  };
+  const detailOf = (v: unknown): string | undefined =>
+    v && typeof v === "object" && typeof (v as Record<string, unknown>).detail === "string"
+      ? ((v as Record<string, unknown>).detail as string)
+      : undefined;
+  const root =
+    data && typeof data === "object" && "integrations" in (data as Record<string, unknown>)
+      ? (data as Record<string, unknown>).integrations
+      : data;
+  const out: { name: string; live: boolean; detail?: string }[] = [];
+  if (Array.isArray(root)) {
+    for (const it of root) {
+      if (!it || typeof it !== "object") continue;
+      const name = String((it as Record<string, unknown>).name ?? "");
+      if (name) out.push({ name: pretty[name.toLowerCase()] ?? name, live: isLive(it), detail: detailOf(it) });
+    }
+  } else if (root && typeof root === "object") {
+    for (const [k, v] of Object.entries(root as Record<string, unknown>)) {
+      if (!(k.toLowerCase() in pretty)) continue;
+      out.push({ name: pretty[k.toLowerCase()], live: isLive(v), detail: detailOf(v) });
+    }
+  }
+  return out;
+}
+
 export default function DeepBridgeWorkspace() {
   const [activeScreen, setActiveScreen] = React.useState<ScreenKey>("intake");
 
@@ -119,6 +154,28 @@ export default function DeepBridgeWorkspace() {
   const [intakeError, setIntakeError] = React.useState<string | null>(null);
   const [apiOfflineError, setApiOfflineError] = React.useState<string | null>(null);
   const [replayNotice, setReplayNotice] = React.useState<string | null>(null);
+
+  // Integration live dots (GET /integrations/status). Missing endpoint → render nothing.
+  const [integrations, setIntegrations] = React.useState<{ name: string; live: boolean; detail?: string }[]>([]);
+  React.useEffect(() => {
+    let cancelled = false;
+    const load = async () => {
+      try {
+        const res = await fetch(`${API_BASE}/integrations/status`);
+        if (!res.ok) return;
+        const data: unknown = await res.json();
+        if (!cancelled) setIntegrations(parseIntegrations(data));
+      } catch {
+        // endpoint not there yet: show nothing
+      }
+    };
+    void load();
+    const t = window.setInterval(load, 15000);
+    return () => {
+      cancelled = true;
+      window.clearInterval(t);
+    };
+  }, []);
 
   // Lookup Maps
   const peopleMap = React.useMemo(() => {
@@ -324,23 +381,9 @@ export default function DeepBridgeWorkspace() {
   return (
     <div className="db-grid-bg flex min-h-screen flex-col lg:flex-row">
       {/* LEFT NAVIGATION RAIL — STRICT FLAT LUCITE ONYX */}
-      <aside className="flex w-full shrink-0 flex-col justify-between border-b border-white/20 bg-[#060709] lg:w-64 lg:border-b-0 lg:border-r">
+      <aside className="flex w-full shrink-0 flex-col justify-between border-b border-white/10 bg-[#060709] lg:w-56 lg:border-b-0 lg:border-r">
         <div>
-          <div className="border-b border-white/20 px-5 py-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <div className="flex size-7 items-center justify-center rounded border-2 border-sky-400 bg-[#0b2536] font-mono text-xs font-bold text-sky-200">
-                  DB
-                </div>
-                <div>
-                  <div className="text-sm font-bold tracking-tight">DEEPBRIDGE</div>
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                    Onyx · Lucite · Flat
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="px-5 py-5 text-sm font-semibold tracking-tight">DeepBridge</div>
 
           <nav className="flex flex-row gap-1 overflow-x-auto p-3 lg:flex-col">
             {NAV_ITEMS.map((item) => {
@@ -351,25 +394,17 @@ export default function DeepBridgeWorkspace() {
                   key={item.key}
                   type="button"
                   onClick={() => setActiveScreen(item.key)}
-                  className={`flex min-w-[165px] items-start gap-3 rounded border px-3 py-2.5 text-left transition lg:min-w-0 ${
+                  aria-current={isActive ? "page" : undefined}
+                  className={`flex min-w-[150px] items-center gap-3 rounded-md px-3 py-2 text-left transition lg:min-w-0 ${
                     isActive
-                      ? "border-2 border-sky-400 bg-[#0b2536] text-white"
-                      : "border-transparent text-muted-foreground hover:border-white/20 hover:bg-[#0f1117] hover:text-foreground"
+                      ? "bg-white/[0.07] text-white"
+                      : "text-muted-foreground hover:bg-white/[0.03] hover:text-foreground"
                   }`}
                 >
-                  <Icon
-                    className={`mt-0.5 size-4 shrink-0 ${
-                      isActive ? "text-sky-300" : "text-muted-foreground"
-                    }`}
-                  />
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-1.5">
-                      <span className="font-mono text-[10px] text-sky-300">{item.step}</span>
-                      <span className="truncate text-xs font-semibold">{item.label}</span>
-                    </div>
-                    <div className="truncate font-mono text-[10px] text-muted-foreground">
-                      {item.sub}
-                    </div>
+                  <Icon className={`size-4 shrink-0 ${isActive ? "text-sky-300" : "text-muted-foreground"}`} />
+                  <div className="min-w-0 truncate text-sm">
+                    <span className="mr-1.5 font-mono text-[10px] text-muted-foreground">{item.step}</span>
+                    {item.label}
                   </div>
                 </button>
               );
@@ -377,55 +412,54 @@ export default function DeepBridgeWorkspace() {
           </nav>
         </div>
 
-        <div className="hidden border-t border-white/20 p-4 space-y-2.5 lg:block">
-          <div className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wider text-emerald-300">
-            <ShieldCheck className="size-3.5" />
-            <span>Stage Guardrails Active</span>
-          </div>
-          <ul className="space-y-1 font-mono text-[10px] leading-relaxed text-muted-foreground">
-            <li>• Every claim cites source URL</li>
-            <li>• Affiliations carry &ldquo;as of&rdquo; date</li>
-            <li>• Emails masked; 0 emails sent</li>
-            <li>• Cached replay labeled honestly</li>
-          </ul>
+        <div className="hidden p-5 text-[11px] leading-relaxed text-muted-foreground lg:block">
+          Every claim cites a source. Nothing is sent without your approval.
         </div>
       </aside>
 
       {/* MAIN WORKSPACE COLUMN — FLAT SOLID HEADER (NO FROSTED BLUR) */}
       <div className="flex min-w-0 flex-1 flex-col">
-        <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border-b border-white/20 bg-[#090a0d] px-6 py-3">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <Badge flat className="border-white/25 bg-[#0f1117] font-mono text-[11px]">
-              CASE: {founder ? `${founder.name} · ${founder.company}` : "Loading..."}
-            </Badge>
-            <Badge
-              flat
-              className="border-emerald-400/50 bg-[#07291e] font-mono text-[10px] text-emerald-200"
-            >
-              {founder?.id === GOLDEN_FOUNDER_ID
-                ? "CACHED RESEARCH REPLAY"
-                : "LIVE OPENALEX COMPUTED GRAPH"}
-            </Badge>
+        <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 bg-[#090a0d] px-6 py-3">
+          <div className="flex flex-wrap items-baseline gap-3">
+            <span className="text-sm font-medium">
+              {founder ? `${founder.name} · ${founder.company}` : "Loading..."}
+            </span>
+            <span className="text-[11px] text-muted-foreground">
+              {founder?.id === GOLDEN_FOUNDER_ID ? "cached research replay" : "live OpenAlex graph"}
+            </span>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-4">
+            {integrations.length > 0 && (
+              <div className="flex items-center gap-3 text-[11px] text-muted-foreground">
+                {integrations.map((it) => (
+                  <span key={it.name} className="inline-flex items-center gap-1.5" title={it.detail ?? it.name}>
+                    <span className={`size-1.5 rounded-full ${it.live ? "bg-emerald-400" : "bg-slate-600"}`} />
+                    {it.name}
+                  </span>
+                ))}
+              </div>
+            )}
+
             <button
               type="button"
               onClick={() => setActiveScreen("drafts")}
-              className={`inline-flex items-center gap-1.5 rounded border px-2.5 py-1 font-mono text-xs transition ${
-                credits && credits.balance <= 0
-                  ? "border-2 border-red-400 bg-[#2d0a0e] text-red-100"
-                  : "border-amber-400/50 bg-[#2b1d05] text-amber-100 hover:border-amber-300"
+              title={`Credits metered by ${credits?.source ?? "local"}`}
+              className={`inline-flex items-center gap-1.5 text-xs transition ${
+                credits && credits.balance <= 0 ? "text-red-300" : "text-foreground hover:text-amber-200"
               }`}
             >
               <Coins className="size-3.5 text-amber-300" />
-              <span>CREDITS: {credits?.balance ?? "—"}</span>
-              <span className="text-[10px] opacity-80">({credits?.source ?? "local"})</span>
+              <span>
+                {credits?.source === "local" ? "Credits" : "Flexprice"} · {credits?.balance ?? "—"} credits
+              </span>
             </button>
 
             <Button
-              size="sm"
+              size="icon-sm"
+              variant="ghost"
               flat
+              title={`Sources (${Object.keys(evidenceMap).length})`}
               onClick={() => {
                 const defaultEv =
                   founder?.evidence_ids?.[0] ?? Object.keys(evidenceMap)[0] ?? null;
@@ -435,18 +469,16 @@ export default function DeepBridgeWorkspace() {
                 });
                 setDrawerOpen(true);
               }}
-              className="border border-white/25 font-mono text-xs"
             >
-              <FileSearch className="size-3.5 text-sky-300" />
-              Proof Drawer ({Object.keys(evidenceMap).length})
+              <FileSearch className="size-4" />
             </Button>
 
             <Button
               size="icon-sm"
+              variant="ghost"
               flat
-              title="Reload state from FastAPI"
+              title="Reload"
               onClick={() => void boot()}
-              className="border border-white/25"
             >
               <RefreshCw className={`size-3.5 ${booting ? "animate-spin" : ""}`} />
             </Button>
