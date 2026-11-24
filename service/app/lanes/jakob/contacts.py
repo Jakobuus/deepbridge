@@ -17,6 +17,7 @@ from urllib.request import Request, urlopen
 
 from ...models import Contact, Evidence, Person, Profile
 from ...store import now, store
+from .emails import company_domain, email_candidates
 
 CACHE_PATH = Path(__file__).resolve().parents[4] / 'fixtures' / 'contacts.json'
 MOSS_BASE = 'https://inference.moss.dev/v1'
@@ -34,18 +35,70 @@ def _read_cache():
     return json.loads(CACHE_PATH.read_text())
 
 
+def _mask_email(email: str | None) -> str | None:
+    if not email:
+        return None
+    local, _, domain = email.rpartition('@')
+    return f'{local[0]}***@{domain}' if local and domain and '@' not in local else None
+
+
+def _public_evidence(evidence: Evidence) -> Evidence:
+    # Older Hunter fixtures stored the address alongside the provider status.
+    if evidence.id.startswith('evidence:hunter:') and evidence.quote.startswith('email: '):
+        _, _, status = evidence.quote.partition('; verification.status: ')
+        return evidence.model_copy(update={'quote': f'verification.status: {status}' if status else 'Email finder result'})
+    return evidence
+
+
+def _with_pattern(contact: Contact, person: Person, evidence: list[Evidence]) -> Contact:
+    if os.getenv('HUNTER_API_KEY') or contact.email or not contact.current_org:
+        return contact
+    names = person.name.split()
+    if len(names) < 2:
+        return contact
+    supplemental = store.evidence.get(f'evidence:contact-domain:{person.id}')
+    if supplemental is not None:
+        evidence = [*evidence, supplemental]
+    for source in evidence:
+        domain = company_domain(contact.current_org, [source.source_url])
+        if domain is None:
+            continue
+        candidates = email_candidates(names[0], names[-1], domain)
+        if not candidates:
+            return contact
+        reason = f'pattern first.last@{domain}; domain from {source.source_url}'
+        return contact.model_copy(update={
+            'email': _mask_email(candidates[0]),
+            'email_status': 'guessed',
+            'assessment': f'{contact.assessment} {reason}' if contact.assessment else reason,
+            'source': 'cache' if contact.source == 'cache' else 'pattern',
+            'evidence_ids': list(dict.fromkeys([*contact.evidence_ids, source.id])),
+        })
+    return contact
+
+
 def cached_contact(person_id: str) -> Contact | None:
     """Replay evidence alongside contacts so /evidence/{id} works after restart."""
     data = _read_cache()
     for item in data.get('items', []):
         if item['person_id'] == person_id:
             contact = Contact.model_validate(item)
-            evidence = [Evidence.model_validate(e) for e in data.get('evidence', [])]
+            evidence = [_public_evidence(Evidence.model_validate(e)) for e in data.get('evidence', [])]
             with store.lock:
                 store.evidence.update({e.id: e for e in evidence})
                 if not all(e in store.evidence for e in contact.evidence_ids):
                     raise ContactResolutionError('Cached contact evidence is missing')
-            return contact.model_copy(update={'source': 'cache'})
+                sources = [store.evidence[eid] for eid in contact.evidence_ids]
+                person = store.people.get(person_id)
+            masked = _mask_email(contact.email)
+            assessment = contact.assessment
+            if assessment and contact.email and masked:
+                assessment = assessment.replace(contact.email, masked)
+            contact = contact.model_copy(update={
+                'source': 'cache', 'email': masked, 'assessment': assessment,
+                'email_status': contact.email_status if masked else 'none',
+            })
+            return _with_pattern(contact, person, sources) if person else contact
     return None
 
 
@@ -155,9 +208,23 @@ async def _hunter(person, domain):
 
 
 async def resolve_contact(person: Person, evidence: list[Evidence]) -> Contact:
-    """Resolve and cache only completed, schema-verified Moss Tasks (<=120s)."""
+    """Resolve with Moss or dated affiliation evidence. Cache completed Moss tasks."""
     project, key = os.getenv('MOSS_PROJECT_ID'), os.getenv('MOSS_PROJECT_KEY')
     if not project or not key:
+        if not os.getenv('HUNTER_API_KEY'):
+            cached = cached_contact(person.id)
+            if cached is not None:
+                return cached
+            org = store.orgs.get(person.org_id)
+            affiliation = Contact(
+                person_id=person.id, current_role=person.role, current_org=org.name if org else None,
+                current_asof=person.affiliation_asof, email=None, email_status='none', profiles=[],
+                assessment='Cached affiliation only; current employment not verified.',
+                source='cache', evidence_ids=[source.id for source in evidence],
+            )
+            contact = _with_pattern(affiliation, person, evidence)
+            if contact.email:
+                return contact
         raise ContactResolutionError('Moss key pending: set MOSS_PROJECT_ID and MOSS_PROJECT_KEY')
     async with asyncio.timeout(120):
         headers = {'Authorization': f'Bearer {project}:{key}', 'Content-Type': 'application/json'}
@@ -195,21 +262,19 @@ async def resolve_contact(person: Person, evidence: list[Evidence]) -> Contact:
             identifier = hashlib.sha256(f'{task_id}:{person.id}:{email}:{email_status}'.encode()).hexdigest()[:20]
             sources.append(Evidence(id=f'evidence:hunter:{identifier}',
                 source_url='https://api.hunter.io/v2/email-finder',
-                quote=f'email: {email}; verification.status: {hunter_status}',
+                quote=f'verification.status: {hunter_status}',
                 source_date=None, observed_at=now(), kind='web'))
         contact = Contact(person_id=person.id, current_role=output['current_role'],
             current_org=output['current_org'], current_asof=asof, profiles=profiles,
             assessment=output['assessment'], source='moss_task', evidence_ids=[e.id for e in sources],
-            email=email, email_status=email_status)
+            email=_mask_email(email), email_status=email_status)
+        contact = _with_pattern(contact, person, [*sources, *evidence])
         _save(contact, sources, task)
         return contact
 
 
 async def _warm():
     store.load()
-    if not os.getenv('MOSS_PROJECT_ID') or not os.getenv('MOSS_PROJECT_KEY'):
-        print('Live Moss run pending a key: set MOSS_PROJECT_ID and MOSS_PROJECT_KEY.')
-        return
     # Rank unique bridge people using the existing demo path scores.
     from ...routers.contacts import person_evidence
     seen = set()
@@ -219,7 +284,7 @@ async def _warm():
         seen.add(path.bridge_id)
         try:
             result = await resolve_contact(store.people[path.bridge_id], person_evidence(path.bridge_id))
-            print(json.dumps(result.model_dump(exclude={'email'})))
+            print(result.model_dump_json())
         except Exception as exc:
             print(json.dumps({'person_id': path.bridge_id, 'live_run': 'failed', 'error_type': type(exc).__name__,
                               'reason': str(exc) if isinstance(exc, ContactResolutionError) else 'Provider response unavailable or invalid'}))

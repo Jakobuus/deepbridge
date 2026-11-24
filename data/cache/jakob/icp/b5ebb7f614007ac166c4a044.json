@@ -1,0 +1,96 @@
+{
+  "fingerprint": "f156e3d25de9baeda9651c89b31b0b86d0833d24a37de59ea05fc97ef3e05f2d",
+  "cached": true,
+  "icp": {
+    "founder_id": "person:openalex:A5077780617",
+    "buyer_roles": [
+      {
+        "title": "Head of AI Hardware / Accelerator Architecture",
+        "why": "Hypothesis: The work on coherent VCSEL neural networks suggests interest in optical compute hardware for deep learning, so leaders responsible for next-generation AI accelerators may evaluate such approaches.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      },
+      {
+        "title": "R&D Director, Photonic Components and Lasers",
+        "why": "Hypothesis: The topic of semiconductor lasers and optical devices suggests that teams developing VCSEL and related photonic components may look for new applications such as neural network computing.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      },
+      {
+        "title": "Principal Researcher, Neuromorphic and Reservoir Computing",
+        "why": "Hypothesis: The listed topics of neural networks, reservoir computing and advanced neural computing memory point to research groups exploring alternative computing paradigms who may be early technical evaluators.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      }
+    ],
+    "industries": [
+      {
+        "name": "Semiconductor and photonic integrated circuit manufacturing",
+        "why": "Hypothesis: VCSEL-based neural networks relate to semiconductor laser devices, so companies making lasers and photonic chips may be relevant.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      },
+      {
+        "name": "AI accelerator and data center hardware",
+        "why": "Hypothesis: Deep learning with optical neural networks suggests relevance to organizations seeking alternative compute hardware for AI workloads.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      },
+      {
+        "name": "Optical communications and interconnect",
+        "why": "Hypothesis: Coherent optical devices and VCSELs are commonly associated with optical links, so firms in this area may have adjacent capabilities and interest.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      }
+    ],
+    "needs": [
+      {
+        "text": "Hypothesis: Organizations running deep learning workloads may need faster or more energy-efficient compute for neural network inference. Reasoning: the work applies coherent optical hardware to deep learning, which implies this problem is being addressed, though demand is not verified.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      },
+      {
+        "text": "Hypothesis: Photonic device makers may need demonstrations of new application areas for VCSEL technology beyond conventional uses. Reasoning: the publication pairs semiconductor laser topics with neural computing, suggesting a possible route to broaden device use.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      },
+      {
+        "text": "Hypothesis: Teams working on neuromorphic or in-memory computing may need hardware platforms and expertise to test optical approaches. Reasoning: the topics include reservoir computing and advanced memory and neural computing, indicating overlap with those research areas.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      }
+    ],
+    "expansion_segments": [
+      {
+        "name": "Edge AI and low-power sensing devices",
+        "why": "Hypothesis: If optical neural computing proves efficient, it could interest builders of edge systems with tight power budgets, though this is not established by the evidence.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      },
+      {
+        "name": "Academic and national lab photonics computing groups",
+        "why": "Hypothesis: Research institutions working on neural networks and optical devices may be collaborators or early adopters of experimental platforms.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      },
+      {
+        "name": "Telecom and signal processing equipment vendors",
+        "why": "Hypothesis: Coherent optical technology is related to communication systems, so vendors needing fast signal processing may find optical neural processing relevant.",
+        "evidence_ids": [
+          "evidence:openalex:W4384522497"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "fingerprint": "e078ebf8a8f7e60f2e0de86350d68f223e81437e52237edf414f80fa54fca50c",
+  "cached": true,
+  "icp": {
+    "founder_id": "person:openalex:A5066245772",
+    "buyer_roles": [
+      {
+        "title": "Head of Quantum Hardware / R&D Director at a neutral-atom quantum computing company",
+        "why": "Hypothesis: The paper proposes Rydberg dipole blockade for scalable quantum logic gates in atomic ensembles, a mechanism relevant to leaders building atom-based quantum processors.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      },
+      {
+        "title": "Principal Investigator / Lab Director in atomic, molecular and optical (AMO) physics",
+        "why": "Hypothesis: The work covers cold Rydberg gases and collective atomic spin states, which are experimental platforms managed by academic and national-lab group leaders who buy or build control and optical systems.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      },
+      {
+        "title": "Quantum Networking / Quantum Communication Program Lead",
+        "why": "Hypothesis: The abstract mentions generating nonclassical photonic states and storing quantum information in collective ensemble states, which may interest teams working on quantum memories and photonic interfaces.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      }
+    ],
+    "industries": [
+      {
+        "name": "Quantum computing hardware",
+        "why": "Hypothesis: Scalable quantum logic gates based on dipole blockade point to neutral-atom approaches to quantum information processing.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      },
+      {
+        "name": "Quantum communication and cryptography",
+        "why": "Hypothesis: The listed topic of quantum information and cryptography, together with nonclassical photonic state generation, suggests relevance to quantum networking and secure communication.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      },
+      {
+        "name": "Scientific instrumentation for cold-atom and laser systems",
+        "why": "Hypothesis: Cold Rydberg gases and optical excitation require lasers, optics, and control equipment, so suppliers to cold-atom labs may be adjacent.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      }
+    ],
+    "needs": [
+      {
+        "text": "Hypothesis: Organizations pursuing atom-based quantum processors need reliable methods to implement multi-qubit gates with strong, controllable interactions. The paper describes dipole blockade as a way to restrict ensembles to singly excited collective states, which would address this.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      },
+      {
+        "text": "Hypothesis: Quantum memory and photonic interface developers need ways to generate and manipulate collective atomic spin states and nonclassical light. The paper describes controlled generation of both using mesoscopic ensembles.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      },
+      {
+        "text": "Hypothesis: Teams working with cold Rydberg gases need modeling and simulation support to analyze ensemble behavior before building experiments. The paper includes an analyzed cold Rydberg gas example, suggesting theory-guided design is valuable.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      }
+    ],
+    "expansion_segments": [
+      {
+        "name": "Quantum sensing and metrology",
+        "why": "Hypothesis: Collective atomic states and controlled many-body interactions are often relevant to precision measurement, though the abstract does not state this directly.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      },
+      {
+        "name": "Quantum simulation for materials and chemistry research",
+        "why": "Hypothesis: Atomic ensembles with strong tunable interactions could serve as platforms for simulating many-body systems, extending beyond the gate-focused framing of the paper.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      },
+      {
+        "name": "National labs and government quantum programs",
+        "why": "Hypothesis: Foundational quantum information research of this kind is commonly funded and followed by public-sector programs, which may seek technology partners.",
+        "evidence_ids": [
+          "evidence:openalex:W2042458092"
+        ]
+      }
+    ]
+  }
+}

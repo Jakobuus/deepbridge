@@ -1,0 +1,632 @@
+{
+  "founder": {
+    "id": "person:openalex:A5066245772",
+    "name": "Mikhail D. Lukin",
+    "company": "",
+    "openalex_id": "https://openalex.org/A5066245772",
+    "topics": [
+      "Quantum optics and atomic interactions",
+      "Cold Atom Physics and Bose-Einstein Condensates",
+      "Quantum Information and Cryptography"
+    ],
+    "summary": "Research topics inferred from 1 supplied OpenAlex works. Paper-only intake resolves to the first listed author. Customer segments are hypotheses, not verified demand.",
+    "evidence_ids": [
+      "evidence:openalex:W2042458092"
+    ]
+  },
+  "works": [
+    {
+      "id": "https://openalex.org/W2042458092",
+      "title": "Dipole Blockade and Quantum Information Processing in Mesoscopic Atomic Ensembles",
+      "publication_date": "2001-06-26",
+      "topics": [
+        {
+          "id": "https://openalex.org/T11414",
+          "display_name": "Quantum optics and atomic interactions",
+          "score": 0.8026999831199646,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3107",
+            "display_name": "Atomic and Molecular Physics, and Optics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10425",
+          "display_name": "Cold Atom Physics and Bose-Einstein Condensates",
+          "score": 0.12960000336170197,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3107",
+            "display_name": "Atomic and Molecular Physics, and Optics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10020",
+          "display_name": "Quantum Information and Cryptography",
+          "score": 0.05660000070929527,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3107",
+            "display_name": "Atomic and Molecular Physics, and Optics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "We": [
+          0
+        ],
+        "describe": [
+          1
+        ],
+        "a": [
+          2,
+          50,
+          73
+        ],
+        "technique": [
+          3
+        ],
+        "for": [
+          4,
+          49,
+          65
+        ],
+        "manipulating": [
+          5
+        ],
+        "quantum": [
+          6,
+          67
+        ],
+        "information": [
+          7
+        ],
+        "stored": [
+          8
+        ],
+        "in": [
+          9
+        ],
+        "collective": [
+          10,
+          43,
+          54
+        ],
+        "states": [
+          11,
+          23,
+          57,
+          63
+        ],
+        "of": [
+          12,
+          53
+        ],
+        "mesoscopic": [
+          13
+        ],
+        "ensembles.": [
+          14
+        ],
+        "Quantum": [
+          15
+        ],
+        "processing": [
+          16
+        ],
+        "is": [
+          17,
+          77
+        ],
+        "accomplished": [
+          18
+        ],
+        "by": [
+          19
+        ],
+        "optical": [
+          20
+        ],
+        "excitation": [
+          21
+        ],
+        "into": [
+          22,
+          38
+        ],
+        "with": [
+          24
+        ],
+        "strong": [
+          25
+        ],
+        "dipole-dipole": [
+          26
+        ],
+        "interactions.": [
+          27
+        ],
+        "The": [
+          28
+        ],
+        "resulting": [
+          29
+        ],
+        "\"dipole": [
+          30
+        ],
+        "blockade\"": [
+          31
+        ],
+        "can": [
+          32,
+          46
+        ],
+        "be": [
+          33,
+          47
+        ],
+        "used": [
+          34
+        ],
+        "to": [
+          35
+        ],
+        "inhibit": [
+          36
+        ],
+        "transitions": [
+          37
+        ],
+        "all": [
+          39
+        ],
+        "but": [
+          40
+        ],
+        "singly": [
+          41
+        ],
+        "excited": [
+          42
+        ],
+        "states.": [
+          44
+        ],
+        "This": [
+          45
+        ],
+        "employed": [
+          48
+        ],
+        "controlled": [
+          51
+        ],
+        "generation": [
+          52
+        ],
+        "atomic": [
+          55
+        ],
+        "spin": [
+          56
+        ],
+        "as": [
+          58,
+          60
+        ],
+        "well": [
+          59
+        ],
+        "nonclassical": [
+          61
+        ],
+        "photonic": [
+          62
+        ],
+        "and": [
+          64
+        ],
+        "scalable": [
+          66
+        ],
+        "logic": [
+          68
+        ],
+        "gates.": [
+          69
+        ],
+        "An": [
+          70
+        ],
+        "example": [
+          71
+        ],
+        "involving": [
+          72
+        ],
+        "cold": [
+          74
+        ],
+        "Rydberg": [
+          75
+        ],
+        "gas": [
+          76
+        ],
+        "analyzed.": [
+          78
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5066245772",
+            "display_name": "Mikhail D. Lukin",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-8658-1007",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8658-1007"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210124175",
+              "display_name": "Center for Astrophysics Harvard & Smithsonian",
+              "ror": "https://ror.org/03c3r2d17",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I103187081",
+                "https://openalex.org/I136199984",
+                "https://openalex.org/I4210124175"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "M. D. Lukin",
+          "raw_affiliation_strings": [
+            "ITAMP, Harvard-Smithsonian Center for Astrophysics, Cambridge, Massachusetts 02138, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "ITAMP, Harvard-Smithsonian Center for Astrophysics, Cambridge, Massachusetts 02138, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984",
+                "https://openalex.org/I4210124175"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5084085784",
+            "display_name": "Michael Fleischhauer",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4059-7289",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4059-7289"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I153267046",
+              "display_name": "University of Kaiserslautern",
+              "ror": "https://ror.org/04zrf7b53",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I153267046",
+                "https://openalex.org/I4387152675"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210124175",
+              "display_name": "Center for Astrophysics Harvard & Smithsonian",
+              "ror": "https://ror.org/03c3r2d17",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I103187081",
+                "https://openalex.org/I136199984",
+                "https://openalex.org/I4210124175"
+              ]
+            }
+          ],
+          "countries": [
+            "DE",
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "M. Fleischhauer",
+          "raw_affiliation_strings": [
+            "Fachbereich Physik, Universität Kaiserslautern, D-67663 Kaiserslautern, Germany",
+            "ITAMP, Harvard-Smithsonian Center for Astrophysics, Cambridge, Massachusetts 02138"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Fachbereich Physik, Universität Kaiserslautern, D-67663 Kaiserslautern, Germany",
+              "institution_ids": [
+                "https://openalex.org/I153267046"
+              ]
+            },
+            {
+              "raw_affiliation_string": "ITAMP, Harvard-Smithsonian Center for Astrophysics, Cambridge, Massachusetts 02138",
+              "institution_ids": [
+                "https://openalex.org/I4210124175"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5035287587",
+            "display_name": "Robin Côté",
+            "type": null,
+            "orcid": "https://orcid.org/0009-0000-7624-0332",
+            "observed_orcids": [
+              "https://orcid.org/0009-0000-7624-0332"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I140172145",
+              "display_name": "University of Connecticut",
+              "ror": "https://ror.org/02der9h97",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I140172145"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "R. Cote",
+          "raw_affiliation_strings": [
+            "Physics Department, University of Connecticut, Storrs, Connecticut 06269"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Physics Department, University of Connecticut, Storrs, Connecticut 06269",
+              "institution_ids": [
+                "https://openalex.org/I140172145"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5017135006",
+            "display_name": "L.-M. Duan",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5539-2721",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5539-2721"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I190249584",
+              "display_name": "Universität Innsbruck",
+              "ror": "https://ror.org/054pv6659",
+              "country_code": "AT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I190249584"
+              ]
+            }
+          ],
+          "countries": [
+            "AT"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "L. M. Duan",
+          "raw_affiliation_strings": [
+            "Institut für Theoretische Physik, Universität Innsbruck A-6020 Innsbruck, Austria"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institut für Theoretische Physik, Universität Innsbruck A-6020 Innsbruck, Austria",
+              "institution_ids": [
+                "https://openalex.org/I190249584"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5061103540",
+            "display_name": "Dieter Jaksch",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-9704-3941",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9704-3941"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I190249584",
+              "display_name": "Universität Innsbruck",
+              "ror": "https://ror.org/054pv6659",
+              "country_code": "AT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I190249584"
+              ]
+            }
+          ],
+          "countries": [
+            "AT"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "D. Jaksch",
+          "raw_affiliation_strings": [
+            "Institut für Theoretische Physik, Universität Innsbruck A-6020 Innsbruck, Austria"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institut für Theoretische Physik, Universität Innsbruck A-6020 Innsbruck, Austria",
+              "institution_ids": [
+                "https://openalex.org/I190249584"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5083228566",
+            "display_name": "J. I. Cirac",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3359-1743",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3359-1743"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I190249584",
+              "display_name": "Universität Innsbruck",
+              "ror": "https://ror.org/054pv6659",
+              "country_code": "AT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I190249584"
+              ]
+            }
+          ],
+          "countries": [
+            "AT"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "J. I. Cirac",
+          "raw_affiliation_strings": [
+            "Institut für Theoretische Physik, Universität Innsbruck A-6020 Innsbruck, Austria"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institut für Theoretische Physik, Universität Innsbruck A-6020 Innsbruck, Austria",
+              "institution_ids": [
+                "https://openalex.org/I190249584"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5016282235",
+            "display_name": "P. Zoller",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4014-1505",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4014-1505"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I190249584",
+              "display_name": "Universität Innsbruck",
+              "ror": "https://ror.org/054pv6659",
+              "country_code": "AT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I190249584"
+              ]
+            }
+          ],
+          "countries": [
+            "AT"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "P. Zoller",
+          "raw_affiliation_strings": [
+            "Institut für Theoretische Physik, Universität Innsbruck A-6020 Innsbruck, Austria"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institut für Theoretische Physik, Universität Innsbruck A-6020 Innsbruck, Austria",
+              "institution_ids": [
+                "https://openalex.org/I190249584"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence:openalex:W2042458092",
+      "source_url": "https://openalex.org/W2042458092",
+      "quote": "Dipole Blockade and Quantum Information Processing in Mesoscopic Atomic Ensembles",
+      "source_date": "2001-06-26",
+      "observed_at": "2026-11-24T20:55:49.979132+00:00",
+      "kind": "paper"
+    }
+  ],
+  "persona": null
+}
