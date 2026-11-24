@@ -503,7 +503,7 @@ export function ScreenLeads({
                     <circle r={36} fill="url(#founderHalo)" />
                     <circle r={14} fill="#0b2536" stroke="#38bdf8" strokeWidth={2} />
                     <circle r={4.5} fill="#ffffff" />
-                    <text y={30} textAnchor="middle" className="fill-white font-sans text-[12px] font-semibold">
+                    <text y={30} textAnchor="middle" className="fill-white font-sans text-[12px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
                       {founder?.name ?? "Nicholas C. Harris"}
                     </text>
                   </g>
@@ -525,7 +525,7 @@ export function ScreenLeads({
                   >
                     <title>{cat.name}</title>
                     <circle r={isCatSelected ? 7 : 5.5} fill={color} />
-                    <text y={-12} textAnchor="middle" className="fill-slate-200 font-sans text-[11px]">
+                    <text y={-12} textAnchor="middle" className="fill-slate-200 font-sans text-[11px]" stroke="#020510" strokeWidth={4} paintOrder="stroke">
                       {cat.name.split(/[:(]/)[0].slice(0, 24)}
                     </text>
                   </g>
@@ -560,7 +560,7 @@ export function ScreenLeads({
                       strokeWidth={isLit ? 1.5 : 0}
                     />
                     {isLit && (
-                      <text x={12} y={4} className="fill-white font-sans text-[12px] font-semibold">
+                      <text x={12} y={4} className="fill-white font-sans text-[12px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
                         {person.name}
                       </text>
                     )}
@@ -594,7 +594,7 @@ export function ScreenLeads({
                       <text
                         x={12}
                         y={4}
-                        className={`font-sans text-[12px] ${isLit ? "fill-white font-semibold" : "fill-slate-300"}`}
+                        className={`font-sans text-[12px] ${isLit ? "fill-white font-semibold" : "fill-slate-300"}`} stroke="#020510" strokeWidth={4} paintOrder="stroke"
                       >
                         {org.name.slice(0, 34)}
                       </text>
