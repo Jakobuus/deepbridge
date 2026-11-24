@@ -14,6 +14,7 @@ OUT_ROOT = ROOT / "data" / "obsidian"
 # Same hex values as web/src/app/deepbridge.css --cat-1..4
 CAT_RGB = {1: 0x38BDF8, 2: 0xA78BFA, 3: 0x34D399, 4: 0xFBBF24}
 MOSS_RGB, CORE_RGB, PATH_RGB = 0xFF4D4D, 0xF8FAFC, 0xF472B6
+HERO_RGB = 0xFACC15
 
 
 def _clean(s: str) -> str:
@@ -44,6 +45,8 @@ def _node_info(n: dict, is_cat: bool) -> tuple[str, str, str]:
     nid = n["id"]
     if is_cat or nid.startswith("category:"):
         return "category", "Categories", "Category - " + n["name"]
+    if nid == "company:hopo":
+        return "company", "Core", n["name"]
     if nid.startswith("org:"):
         return "org", "Buyers", n["name"]
     if nid.startswith("person:"):
@@ -121,6 +124,8 @@ def export(session_id: str, out_dir: str | Path | None = None) -> dict:
         c = cat.get(nid)
         if c:
             tags.append(f"cat/{c}")
+        if d["kind"] == "company":
+            tags.append("hero")
         if d["kind"] == "person" and n["name"] in moss_names:
             tags.append("verified/moss")
         fm = ["---", f"id: {_yaml(nid)}", f"kind: {d['kind']}", f"layer: {d['layer']}"]
@@ -186,7 +191,7 @@ def export(session_id: str, out_dir: str | Path | None = None) -> dict:
         (out / "Paths" / f"{title}.md").write_text("\n".join(fm + body) + "\n")
         counts["Paths"] += 1
 
-    groups = [("tag:#verified/moss", MOSS_RGB)] + [(f"tag:#cat/{n}", c) for n, c in CAT_RGB.items()] + [
+    groups = [("tag:#hero", HERO_RGB), ("tag:#verified/moss", MOSS_RGB)] + [(f"tag:#cat/{n}", c) for n, c in CAT_RGB.items()] + [
         ("tag:#layer/core", CORE_RGB), ("tag:#path", PATH_RGB)]
     graph = {
         "collapse-filter": False, "search": "", "showTags": False, "showAttachments": False,

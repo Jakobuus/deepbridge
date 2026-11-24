@@ -8,6 +8,13 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
+      "query": "tag:#hero",
+      "color": {
+        "a": 1,
+        "rgb": 16436245
+      }
+    },
+    {
       "query": "tag:#verified/moss",
       "color": {
         "a": 1,
