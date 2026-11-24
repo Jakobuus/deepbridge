@@ -281,7 +281,7 @@
     {
       "id": "card:hopo:daleo",
       "path_id": "path:erick:09e2786ad75e1192e077",
-      "stage": "draft",
+      "stage": "path_checked",
       "history": [
         {
           "stage": "found",
@@ -293,12 +293,6 @@
           "stage": "path_checked",
           "at": "2026-11-24T20:23:00Z",
           "actor": "Path agent",
-          "actor_kind": "agent"
-        },
-        {
-          "stage": "draft",
-          "at": "2026-11-24T20:30:00Z",
-          "actor": "Draft agent",
           "actor_kind": "agent"
         }
       ]
@@ -362,19 +356,6 @@
         {
           "stage": "found",
           "at": "2026-11-24T20:28:00Z",
-          "actor": "Discovery agent",
-          "actor_kind": "agent"
-        }
-      ]
-    },
-    {
-      "id": "card:hopo:raymond",
-      "path_id": "path:erick:b71216d7336b332ae634",
-      "stage": "found",
-      "history": [
-        {
-          "stage": "found",
-          "at": "2026-11-24T20:31:00Z",
           "actor": "Discovery agent",
           "actor_kind": "agent"
         }

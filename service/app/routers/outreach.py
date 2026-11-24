@@ -24,6 +24,10 @@ def drafts(body: DraftRequest, founder_id: str | None = None):
         templates = [d for d in store.draft_templates if d.path_id == path.id]
         if computed is None and templates:
             return store.generate_drafts(path.id)
+        if templates:
+            # HACK: cached replay of fixture/previously generated drafts on a computed path: free, no Band review.
+            return [store.drafts.get(d.id) or store.add_or_replace_draft(d.model_copy(deep=True))
+                    for d in templates]
         if store.credits.balance < 1:
             store.credit_event('drafts:' + path.id, 0, True)
             raise HTTPException(402, 'No credits remaining')
