@@ -43,8 +43,9 @@ for name in names:
 if 'fixtures/credits.json' not in snapshot:
     raise SystemExit('Committed credit fixture is missing')
 credits = json.loads(snapshot['fixtures/credits.json'])
-if credits['balance'] != 5:
-    credits['balance'] = 5
+want = int(os.environ.get('DEMO_CREDITS', '5'))  # DEMO_CREDITS=1 stages the 402 credit-gate beat
+if credits['balance'] != want:
+    credits['balance'] = want
     snapshot['fixtures/credits.json'] = (json.dumps(credits, indent=2) + '\n').encode()
 
 for pid in pids:
@@ -81,8 +82,8 @@ for _ in range(150):
             health = json.load(response)
         with urlopen(base + '/credits', timeout=0.5) as response:
             balance = json.load(response)['balance']
-        if health.get('status') == 'ok' and balance == 5:
-            print(f'PASS reset: {len(snapshot)} committed fixtures restored; credits=5; {base}')
+        if health.get('status') == 'ok' and balance == want:
+            print(f'PASS reset: {len(snapshot)} committed fixtures restored; credits={want}; {base}')
             print(f'Service log: {log_path}')
             break
     except (OSError, ValueError):

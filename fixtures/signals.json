@@ -91,6 +91,16 @@
       "evidence_ids": [
         "evidence:buyers:05765ea9f4b4a1af93e4"
       ]
+    },
+    {
+      "id": "signal:buyers:d2b63ed6998a6a2c148e",
+      "org_id": "org:openalex:I4210147582",
+      "type": "topic_paper",
+      "date": "2017-06-02",
+      "title": "1 OpenAlex work(s) on pet: Evaluation of macrocyclic hydroxyisophthalamide ligands as chelators for zirconium-89",
+      "evidence_ids": [
+        "evidence:buyers:b732f794138ef300fc29"
+      ]
     }
   ]
 }

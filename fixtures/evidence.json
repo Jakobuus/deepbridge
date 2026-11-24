@@ -341,6 +341,14 @@
       "source_date": "2010-08-11",
       "observed_at": "2026-11-24T21:24:52.255892+00:00",
       "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:b732f794138ef300fc29",
+      "source_url": "https://openalex.org/W2620846126",
+      "quote": "Evaluation of macrocyclic hydroxyisophthalamide ligands as chelators for zirconium-89",
+      "source_date": "2017-06-02",
+      "observed_at": "2026-11-24T21:40:54.768168+00:00",
+      "kind": "paper"
     }
   ]
 }

@@ -42,6 +42,7 @@ bash scripts/demo-reset.sh                      # fixtures restored from HEAD, c
 cd web && npx next start -p 3000                # in a second terminal
 ```
 
+- `DEMO_CREDITS=1 bash scripts/demo-reset.sh` starts with 1 credit, so the 2nd draft shows the 402 credit-gate banner (default stays 5; reset normally afterwards).
 - Commit fixture edits BEFORE resetting: reset restores tracked `fixtures/*.json` from HEAD.
 - `bash scripts/demo-check.sh` and `service/smoke.sh` spend credits and edit memory: reset again afterwards.
 - Check the API: `curl -s http://127.0.0.1:8000/health`.
