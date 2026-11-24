@@ -224,11 +224,31 @@ async def graph_categories(session_id: str):
     return _categories(session_id)
 
 
+class AddNode(BaseModel):
+    id: str | None = None
+    label: str
+    kind: str  # value | buyer | person
+    category: str | None = None  # category id or keyword (radiation|lead|pet|gd)
+
+
 class Sharpen(BaseModel):
     confirm: list[str] = []
     fade: list[str] = []
     category_weights: dict[str, float] = {}
+    add_nodes: list[AddNode] = []  # things the founder named in the interview (drop-in nodes)
+    strengthen: list[str] = []  # node ids or category keywords to emphasise
     note: str | None = None
+
+
+_NODE_ID = re.compile(r'[A-Za-z0-9:_.\-]{1,96}')
+_CENTRE = 'company:hopo'
+
+
+def _resolve_category(key: str, cats: list[dict]) -> str | None:
+    k = key.strip().lower()
+    hit = next((c for c in cats if c['id'] == key or (c['keyword'] and (
+        c['keyword'] == k or (k == 'gadolinium' and c['keyword'] == 'gd')))), None)
+    return hit['id'] if hit else None
 
 
 @router.post('/graph/sharpen')
@@ -251,11 +271,9 @@ async def graph_sharpen(session_id: str, body: Sharpen):
             else:
                 ignored += 1
     for key, w in body.category_weights.items():
-        k = key.strip().lower()
-        hit = next((c for c in cats if c['id'] == key or (c['keyword'] and (
-            c['keyword'] == k or (k == 'gadolinium' and c['keyword'] == 'gd')))), None)
-        if hit:
-            weights[hit['id']] = min(1.0, max(0.0, w))
+        cid = _resolve_category(key, cats)
+        if cid:
+            weights[cid] = min(1.0, max(0.0, w))
         else:
             ignored += 1
     n = 0
@@ -266,7 +284,43 @@ async def graph_sharpen(session_id: str, body: Sharpen):
     for cid, w in weights.items():
         events.publish(session_id, 'interview', 'category', 'category', node={'id': cid}, weight=w)
         n += 1
+    # Drop-in nodes the founder named (labels are taken verbatim from the interview payload; nothing generated here).
+    added = []
+    for a in body.add_nodes:
+        kind = a.kind.strip().lower()
+        label = ' '.join(a.label.split())[:80]
+        if kind not in ('value', 'buyer', 'person') or not label:
+            ignored += 1
+            continue
+        slug = re.sub(r'[^a-z0-9]+', '-', label.lower()).strip('-')[:60] or 'node'
+        nid = a.id if a.id and _NODE_ID.fullmatch(a.id) else f'interview:{kind}:{slug}'
+        if nid in layer_of or nid in added:
+            body.strengthen.append(nid)  # already on the graph: emphasise instead of duplicating
+            continue
+        cat_id = _resolve_category(a.category, cats) if a.category else None
+        layer = 'lead' if kind == 'buyer' else 'core'
+        events.publish(session_id, 'interview', 'node', layer, action='add', drop_in=True,
+                       node={'id': nid, 'name': label, 'kind': kind, 'category': cat_id, 'source': 'interview'})
+        parent = cat_id if (kind == 'buyer' and cat_id) else _CENTRE
+        events.publish(session_id, 'interview', 'edge', layer, action='add', edge={
+            'id': f'edge:interview:{nid}', 'from': parent, 'to': nid, 'type': 'FITS' if parent != _CENTRE else 'PERSONAL',
+            'date': None, 'evidence_ids': [], 'confidence': 0.5, 'name_check': 'unchecked', 'label': 'named in interview'})
+        layer_of[nid] = layer
+        added.append(nid)
+        n += 2
+    strengthened = []
+    for key in dict.fromkeys(body.strengthen):
+        target = _resolve_category(key, cats) or (key if (key in layer_of or key in cat_ids) else None)
+        if not target:
+            ignored += 1
+            continue
+        events.publish(session_id, 'interview', 'edge', layer_of.get(target, 'category' if target in cat_ids else 'core'),
+                       action='strengthen', target=target,
+                       edge={'id': f'edge:strengthen:{target}', 'from': _CENTRE, 'to': target, 'label': 'confirmed in interview'})
+        strengthened.append(target)
+        n += 1
     events.publish(session_id, 'interview', 'status', 'core', status=body.note or
-                   f'Interview sharpened the graph: {len(confirmed)} confirmed, {len(faded)} faded')
+                   f'Interview sharpened the graph: {len(confirmed)} confirmed, {len(faded)} faded, '
+                   f'{len(added)} added, {len(strengthened)} strengthened')
     return {'session_id': session_id, 'published': n + 1, 'confirmed': confirmed, 'faded': faded,
-            'weights': weights, 'ignored': ignored}
+            'weights': weights, 'added': added, 'strengthened': strengthened, 'ignored': ignored}
