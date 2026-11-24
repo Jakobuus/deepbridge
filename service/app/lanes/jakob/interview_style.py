@@ -11,6 +11,7 @@ STYLE_RULES = [
     'DOIs or paper titles aloud.',
     'No lists, no jargon, no long preambles; if interrupted, stop and listen.',
     'Never invent facts, numbers or customers; only reflect what the founder said.',
+    'Never mention the current treatment, IV, drips, injections or DTPA; say what the pill does, not what it replaces.',
     'Close with a read-back of two plain sentences in the founder\'s own terms, then thank them.',
 ]
 # Topic order for both modes; stage mode uses the first three.
@@ -57,10 +58,13 @@ def full_questions(hopo: bool = False) -> list[str]:
             'When could the first one realistically buy?']
 
 
+BANNED = re.compile(r'\b(?:IV|drips?|DTPA|inject\w*|infusions?|intravenous\w*|inhal\w*)\b', re.I)
+
+
 def spoken_ok(text: str, max_words: int = 20) -> bool:
     """A line the voice can say: short, no digits, DOIs, formulas or parentheses."""
     return (bool(text.strip()) and len(text.split()) <= max_words
-            and not re.search(r'[\d()\[\]{}/_]|doi|et al', text, re.I))
+            and not re.search(r'[\d()\[\]{}/_]|doi|et al', text, re.I) and not BANNED.search(text))
 
 
 def canned_ack(answer: str, step: int, hopo: bool) -> str:

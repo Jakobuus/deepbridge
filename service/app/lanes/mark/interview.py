@@ -546,7 +546,7 @@ def _readback(session, timeout):
         text = ' '.join(str(_moss(
             'Write the closing read-back: exactly two short plain spoken sentences, at most 40 words in total, '
             'reflecting only what the founder said: the real value, who buys it first, and who they already know '
-            'there or we should talk to. Address them as "you"; say "your molecule" or "your work". No numbers, '
+            'there or we should talk to. Never mention the current treatment, IV, drips, injections or DTPA. Address them as "you"; say "your molecule" or "your work". No numbers, '
             'chemical names, paper titles or lists. Start with "So, in short:". Shape: {"readback":"..."}.',
             {'interview': [{'question': e.question, 'answer': e.answer} for e in session.exchanges]},
             timeout=timeout)['readback']).split())
@@ -558,12 +558,15 @@ def _readback(session, timeout):
     def clause(text):
         words = re.split(r'(?<=[.!?;])\s', ' '.join(text.split()))[0].rstrip('.!?;').split()
         return ' '.join(words[:14])
-    what = clause(answers[0]) if answers else 'your work'
-    payer = clause(_answers(session, 1)[0]) if _answers(session, 1) else ''
-    proof = clause(_answers(session, 2)[0]) if _answers(session, 2) else ''
-    second = '; '.join(filter(None, (f'first buyer: {payer[:1].lower() + payer[1:]}' if payer else '',
-                                     f'way in: {proof[:1].lower() + proof[1:]}' if proof else '')))
-    second = second[:1].upper() + second[1:] + '.' if second else ''
+    what = 'a pill that clears radioactive metals and lead' if session.hopo else (
+        clause(answers[0]) if answers else 'your work')
+    what = style.BANNED.sub('', what).strip(' ,')
+    payer = clause(_answers(session, 1)[0]).split(',')[0] if _answers(session, 1) else ''
+    payer = re.sub(r'\s+first$', '', payer, flags=re.I)
+    people = [e['label'].split()[0] for e in sharpen.entities(_answers(session, 2)[0], 2)
+              if e['kind'] == 'person'] if _answers(session, 2) else []
+    know = (' and you know ' + ' and '.join(people[:2])) if people else ''
+    second = f'{payer[:1].upper() + payer[1:]} buy first{"," if know else ""}{know}.' if payer else ''
     return f'So, in short: {what[:1].lower() + what[1:]}. {second}'.strip() + thanks
 
 
