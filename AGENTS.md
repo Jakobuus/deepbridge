@@ -18,4 +18,4 @@ Hackathon build (HackwithBay 4.0, 24 Nov 2026). Goal: a demo that works on stage
 - **Nothing is sent** to real people. Drafts + approval only.
 - **Secrets** live in `.env` (never committed); add each new key name to `.env.example`.
 - **AI calls** go through `service/app/llm.py: run_claude()` (subscription CLI with all tools and MCP off, empty working dir: prompts carry untrusted text). No paid API keys; cache demo outputs in `fixtures/`.
-- Run: `cd service && uv run uvicorn app.main:app --reload --port 8000` · `cd web && npm run dev` (port 3000).
+- Run: `cd service && uv run uvicorn app.main:app --reload --port 8000` · `cd web && bun install && bun run dev` (port 3000).

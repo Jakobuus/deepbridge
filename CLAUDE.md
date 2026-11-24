@@ -30,7 +30,7 @@ WhiteMountain/SilverRiver, Erick: RedHarbor/GoldFalcon).
 scope, demo or money go to your human first. Keep messages short: what, where (branch/file/endpoint), what you need.
 
 ## Run
-`bash scripts/demo-reset.sh` (API on :8000 with cached real data) · `bash scripts/demo-check.sh` · UI (Mark's lane, the only UI): `cd web && npm run dev` (:3000).
+`bash scripts/demo-reset.sh` (API on :8000 with cached real data) · `bash scripts/demo-check.sh` · UI (Mark's lane, the only UI): `cd web && bun run dev` (:3000).
 
 ## Clock (PT)
 13:30 real data everywhere · **14:30 feature freeze** · 14:30–15:15 video (≤ 1:30) + backup take · 15:15 submit ·

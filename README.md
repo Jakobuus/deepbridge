@@ -10,7 +10,7 @@ Built at HackwithBay 4.0, 24 Nov 2026. The judge case follows **Hannah Weber / H
 
 ## Run it
 
-Requires Python 3.12, uv, lsof, curl, and Node.js with npm. [Install uv](https://docs.astral.sh/uv/).
+Requires Python 3.12, uv, lsof, curl, and Node.js and [Bun](https://bun.sh) (the web app uses bun; `bun.lock` is the lockfile). [Install uv](https://docs.astral.sh/uv/).
 
 From the repository root, restore committed demo fixtures and start the service:
 
@@ -22,8 +22,8 @@ In another terminal, start the web app:
 
 ```sh
 cd web
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 Open http://localhost:3000. The API explorer is at http://localhost:8000/docs. The reset script restores committed fixture files and restarts this checkout’s service.
