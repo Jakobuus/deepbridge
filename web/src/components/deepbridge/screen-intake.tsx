@@ -4,7 +4,6 @@ import {
   ArrowRight,
   BookOpen,
   CheckCircle2,
-  Cpu,
   ExternalLink,
   FlaskConical,
   Mic,
@@ -12,7 +11,6 @@ import {
   RotateCcw,
   Search,
   Send,
-  Sparkles,
   Volume2,
   VolumeX,
 } from "lucide-react";
@@ -229,7 +227,7 @@ export function ScreenIntake({
       {/* LEFT: VOICE PAPER-GRILLING INTERVIEW + INTAKE */}
       <div className="xl:col-span-5 space-y-5">
         {/* 1. LIVE PAPER-GRILLING VOICE INTERVIEW (POST /interview · Moss fastlane-1) */}
-        <Card flat border className="border-sky-400/45 bg-[#0f1117] py-5 gap-4">
+        <Card flat border className="border-white/10 bg-white/[0.02] py-5 gap-4">
           <CardHeader className="px-5">
             <div className="flex items-center justify-between gap-2">
               <span className="font-mono text-[11px] uppercase tracking-widest text-sky-300">
@@ -376,8 +374,13 @@ export function ScreenIntake({
           </CardContent>
         </Card>
 
+        <details className="group">
+          <summary className="cursor-pointer list-none px-1 text-xs text-muted-foreground hover:text-foreground">
+            Other ways in: look up a founder or DOI, or fill the form
+          </summary>
+          <div className="mt-4 space-y-5">
         {/* 2. QUICK OPENALEX AUTHOR / DOI LOOKUP */}
-        <Card flat border className="border-white/20 bg-[#0f1117] py-5 gap-4">
+        <Card flat border className="border-white/10 bg-white/[0.02] py-5 gap-4">
           <CardHeader className="px-5">
             <div className="flex items-center justify-between gap-2">
               <span className="font-mono text-[11px] uppercase tracking-widest text-sky-300">
@@ -397,7 +400,7 @@ export function ScreenIntake({
                 placeholder="e.g. Nicholas C. Harris, Dirk Englund, 10.1038/nphoton.2017.93"
                 className="font-mono text-xs"
               />
-              <Button type="submit" variant="default" flat disabled={loadingIntake}>
+              <Button type="submit" flat disabled={loadingIntake}>
                 <Search className="size-3.5" />
                 {loadingIntake ? "Resolving..." : "Resolve"}
               </Button>
@@ -430,7 +433,7 @@ export function ScreenIntake({
         </Card>
 
         {/* 3. FULL FOUNDER SIGN-UP FORM */}
-        <Card flat border className="border-white/20 bg-[#0f1117] py-5 gap-4">
+        <Card flat border className="border-white/10 bg-white/[0.02] py-5 gap-4">
           <CardHeader className="px-5">
             <div className="flex items-center justify-between">
               <span className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
@@ -506,34 +509,24 @@ export function ScreenIntake({
             </form>
           </CardContent>
         </Card>
+          </div>
+        </details>
       </div>
 
       {/* RIGHT: RESOLVED FOUNDER PROFILE + STORY TRANSLATION */}
       <div className="xl:col-span-7 space-y-5">
         {founder ? (
           <>
-            <Card flat border className="border-white/25 bg-[#0f1117] py-5 gap-4">
+            <Card flat border className="border-white/10 bg-white/[0.02] py-5 gap-4">
               <CardHeader className="px-6">
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <div className="flex items-center gap-2">
-                    <Badge
-                      flat
-                      className={
-                        isGoldenReplay
-                          ? "border-emerald-400/50 bg-[#07291e] text-emerald-200 font-mono text-[10px]"
-                          : "border-sky-400/50 bg-[#0b2536] text-sky-200 font-mono text-[10px]"
-                      }
-                    >
-                      {isGoldenReplay ? "CACHED RESEARCH REPLAY" : "LIVE OPENALEX INTAKE"}
-                    </Badge>
-                    <span className="font-mono text-xs text-muted-foreground">{founder.id}</span>
-                  </div>
+                  <div />
                   {founder.openalex_id && (
                     <a
                       href={founder.openalex_id}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1 rounded border border-white/20 bg-[#151922] px-2.5 py-1 font-mono text-xs hover:border-white/45"
+                      className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground"
                     >
                       OpenAlex Profile <ExternalLink className="size-3" />
                     </a>
@@ -552,28 +545,9 @@ export function ScreenIntake({
               </CardHeader>
 
               <CardContent className="px-6 space-y-4">
-                <div className="space-y-1.5">
-                  <div className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-                    Indexed Research Domains ({founder.topics.length})
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {founder.topics.map((topic) => (
-                      <Badge
-                        key={topic}
-                        flat
-                        className="border-white/20 bg-[#151922] px-3 py-1 font-mono text-xs text-foreground"
-                      >
-                        <Cpu className="mr-1 size-3 text-sky-300" />
-                        {topic}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
+                <div className="text-xs text-muted-foreground">{founder.topics.join(" · ")}</div>
 
                 <div className="space-y-1.5">
-                  <div className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-                    Verified Anchor Evidence ({founder.evidence_ids.length})
-                  </div>
                   <div className="flex flex-wrap gap-2">
                     {founder.evidence_ids.map((eid) => (
                       <EvidenceChip
@@ -589,26 +563,17 @@ export function ScreenIntake({
             </Card>
 
             {/* STORY TRANSLATION / VALUE MAP PREVIEW */}
-            <Card flat border className="border-sky-400/40 bg-[#0f1117] py-5 gap-4">
+            <Card flat border className="border-white/10 bg-white/[0.02] py-5 gap-4">
               <CardHeader className="px-6">
-                <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-sky-300">
-                  <Sparkles className="size-3.5" />
-                  <span>Value Map Core · Feature → Benefit → Commercial Problem</span>
-                </div>
-                <CardTitle className="text-lg">
-                  From Academic Publication Language → Commercial Buyer Urgency
-                </CardTitle>
-                <CardDescription className="text-xs">
-                  Technical founders write in circuit physics; enterprise buyers sign POs for cluster throughput, power head-room, and roadmap velocity.
-                </CardDescription>
+                <CardTitle className="text-base">Paper → buyer value</CardTitle>
               </CardHeader>
 
               <CardContent className="px-6 space-y-4">
                 <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-                  <div className="rounded border border-white/20 bg-[#151922] p-4 space-y-2">
+                  <div className="space-y-2">
                     <div className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wider text-amber-300">
                       <BookOpen className="size-3.5" />
-                      <span>Paper Primitive (Lab Frame)</span>
+                      <span>In the paper</span>
                     </div>
                     <p className="text-xs leading-relaxed text-foreground/90">
                       Co-authored research in{" "}
@@ -619,10 +584,10 @@ export function ScreenIntake({
                     </p>
                   </div>
 
-                  <div className="rounded border border-emerald-400/45 bg-[#07291e] p-4 space-y-2">
+                  <div className="space-y-2">
                     <div className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wider text-emerald-300">
                       <CheckCircle2 className="size-3.5" />
-                      <span>Buyer Value Map (Commercial Frame)</span>
+                      <span>For the buyer</span>
                     </div>
                     <p className="text-xs leading-relaxed text-foreground/95">
                       {vp ? (
@@ -653,11 +618,9 @@ export function ScreenIntake({
                 </div>
 
                 <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/15 pt-4">
-                  <div className="font-mono text-xs text-muted-foreground">
-                    Next: Inspect buyer categories, 90-day signals, and layered warm paths.
-                  </div>
+                  <div />
                   <Button variant="default" flat onClick={onGoToBuyers}>
-                    <span>02 · Find Buyers & Why-Now Signals</span>
+                    <span>Find buyers</span>
                     <ArrowRight className="size-4" />
                   </Button>
                 </div>
@@ -665,7 +628,7 @@ export function ScreenIntake({
             </Card>
           </>
         ) : (
-          <Card flat border className="border-white/20 bg-[#0f1117] p-8 text-center font-mono text-xs text-muted-foreground">
+          <Card flat border className="border-white/10 bg-white/[0.02] p-8 text-center font-mono text-xs text-muted-foreground">
             Loading founder research profile...
           </Card>
         )}
