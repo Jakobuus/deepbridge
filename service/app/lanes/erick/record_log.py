@@ -15,8 +15,9 @@ FIX = ROOT / 'fixtures'
 OUT = ROOT / 'data' / 'graph_events' / 'demo-hopo.json'
 FOUNDER = 'person:openalex:A5043992375'
 HERO = 'person:openalex:A5085203145'
-MAX_PATHS = 8
+MAX_PATHS = 12
 SPAN = 300  # seconds covered by the recording
+START = datetime(2026, 11, 24, 21, 0, 0, tzinfo=UTC)  # fixed so re-runs do not change the file
 
 
 def _load(name):
@@ -35,9 +36,11 @@ def build_log(session_id='demo-hopo'):
     vm, cats, buyers = _load('value_map_hopo.json'), _load('categories_hopo.json'), _load('buyers_hopo.json')
     brief, contacts = _load('briefing_demo_hopo.json')['briefing'], _load('contacts.json')
     pool = {e['id']: e for e in vm['evidence'] + contacts['evidence']}
+    pool.update({e['id']: e for e in buyers.get('evidence', [])})
     buyer_orgs = [Org.model_validate({k: v for k, v in o.items() if k in Org.model_fields}) for o in buyers['orgs']]
     paths.buyer_orgs = lambda _f: buyer_orgs  # cached buyers instead of the store-backed router
     buyer_ids = {o.id for o in buyer_orgs}
+    buyer_ev = {o['id']: o.get('evidence_ids', []) for o in buyers['orgs']}
 
     people, orgs, edges, ev = build.build_graph(FOUNDER)
     pool.update({e.id: _dump(e) for e in ev})
@@ -45,30 +48,32 @@ def build_log(session_id='demo-hopo'):
     org_by = {o.id: o for o in orgs} | {o.id: o for o in buyer_orgs}
     ed = {e.id: e for e in edges}
 
-    base_paths = [p for p in paths.find_paths(FOUNDER) if p.buyer_org_id in buyer_ids]
-    hero = next((p for p in base_paths if p.bridge_id == HERO and p.buyer_org_id.endswith('I67348948')), None) \
-        or next((p for p in base_paths if p.bridge_id == HERO), None)
-    contact = next((c for c in contacts['items'] if c['person_id'] == HERO), None)
+    base = [p for p in paths.find_paths(FOUNDER) if p.buyer_org_id in buyer_ids]
+    # Moss-verified contacts: source moss_task + task verification_passed (never pattern/guessed/cache)
+    tasks = contacts['_meta'].get('tasks', {})
+    verified = {c['person_id']: c for c in contacts['items']
+                if c.get('source') == 'moss_task' and tasks.get(c['person_id'], {}).get('verification_passed')}
     warnings = []
-    if hero and contact:  # Moss verified: mark the hero hops ok and rescore with the real scoring function
-        for h in hero.hops:
-            ed[h].name_check = 'ok'
-        orig = build.build_graph
-        paths.build_graph = lambda f: (people, orgs, list(ed.values()), ev)
-        try:
-            final = [p for p in paths.find_paths(FOUNDER) if p.buyer_org_id in buyer_ids]
-        finally:
-            paths.build_graph = orig
-    else:
-        final = base_paths
-    hero_new = next((p for p in final if hero and p.id == hero.id), None)
-    top = sorted(final, key=lambda p: (-p.score, p.id))[:MAX_PATHS]  # keep the log demo-sized
-    if hero_new and hero_new not in top:
-        top = top[:-1] + [hero_new]
-    final = sorted(top, key=lambda p: (p.score, p.id))  # ascending: best last
-    if hero_new and final[-1].id != hero_new.id:
-        warnings.append(f'WARNING: Larsen->Bayer scored {hero_new.score} after Moss check, '
-                        f'top is {final[-1].score}; kept score order')
+
+    def _is_verified(p):
+        c = verified.get(p.bridge_id)
+        return c if c and paths._norm(c['current_org']) == paths._norm(org_by[p.buyer_org_id].name) else None
+
+    for p in base:  # name check ok on the verified bridge person's hop edges, then rescore with the real function
+        if _is_verified(p):
+            for h in p.hops:
+                if p.bridge_id in (ed[h].from_, ed[h].to):
+                    ed[h].name_check = 'ok'
+    orig = build.build_graph
+    paths.build_graph = lambda f: (people, orgs, list(ed.values()), ev)
+    try:
+        final = [p for p in paths.find_paths(FOUNDER) if p.buyer_org_id in buyer_ids]
+    finally:
+        paths.build_graph = orig
+    ranked = sorted(final, key=lambda p: (-p.score, p.id))
+    keep = {p.id for p in ranked[:MAX_PATHS]} | {p.id for p in ranked if _is_verified(p)}
+    final = sorted((p for p in ranked if p.id in keep), key=lambda p: (p.score, p.id))  # ascending: best last
+    build_log.final = final
 
     out, seen = [], set()
 
@@ -81,8 +86,13 @@ def build_log(session_id='demo-hopo'):
         seen.add(n['id'])
         emit(phase, 'node', layer, node=n, evidence=evidence)
 
+    seen_edges = set()
+
     def edge(phase, layer, e, evidence=None):
         d = _dump(e)
+        if d['id'] in seen_edges:
+            return
+        seen_edges.add(d['id'])
         emit(phase, 'edge', layer, edge=d, evidence=evidence if evidence is not None else _ev(d['evidence_ids'], pool))
 
     def person_dict(p):
@@ -106,30 +116,40 @@ def build_log(session_id='demo-hopo'):
             if n['kind'] != kind:
                 continue
             node('interview', 'core', n, _ev(n['evidence_ids'], pool))
-            emit('interview', 'status', 'core', status=f"{kind.capitalize()}: {n['text'][:110]}")
+            if kind == 'value':
+                emit('interview', 'status', 'core', status=f"Value: {n['text'][:110]}")
             for e in vedges:
                 if e['id'] not in done and e['from'] in seen and e['to'] in seen:
                     done.add(e['id'])
                     edge('interview', 'core', e)
     assert len(done) == len(vedges), 'value-map edge with missing endpoint'
 
-    # 3 discovery
+    # 3 discovery: categories (+ SOLVES to problem nodes), then all buyers grouped by category, best score first
     for c in cats:
-        emit('discovery', 'category', 'category', node=c)
+        emit('discovery', 'category', 'category', node=c, evidence=_ev(c.get('evidence_ids', []), pool))
+        for pid in c.get('problem_node_ids', []):
+            if pid in seen:
+                emit('discovery', 'edge', 'category', edge={
+                    'id': f"edge:solves:{c['id']}:{pid}", 'from': c['id'], 'to': pid, 'type': 'SOLVES', 'date': None,
+                    'evidence_ids': [], 'confidence': 0.6, 'name_check': 'unchecked', 'label': 'Solves'})
     emit('discovery', 'status', 'category', status=f'Found {len(cats)} buyer categories')
     cat_of = {}
     for c in cats:
         for oid in c['org_ids']:
             cat_of.setdefault(oid, c['id'])
-    for c in cats:
-        for oid in c['org_ids']:
-            if oid in seen or oid not in org_by or cat_of[oid] != c['id']:
-                continue
-            node('discovery', 'lead', org_dict(org_by[oid]))
-            emit('discovery', 'edge', 'lead', edge={
-                'id': f"edge:fits:{c['id']}:{oid}", 'from': c['id'], 'to': oid, 'type': 'FITS', 'date': None,
-                'evidence_ids': [], 'confidence': 0.6, 'name_check': 'unchecked',
-                'label': f"fits {c['name']}"[:80]})
+    score = {o.id: o.buyer_score or 0 for o in buyer_orgs}
+    groups = [(c, [i for i in c['org_ids'] if cat_of[i] == c['id'] and i in org_by]) for c in cats]
+    groups.append((None, [o.id for o in buyer_orgs if o.id not in cat_of]))
+    for c, ids in groups:
+        if c is None:
+            emit('discovery', 'status', 'lead', status=f'{len(ids)} other buyers')
+        for oid in sorted(ids, key=lambda i: (-score[i], i)):
+            node('discovery', 'lead', org_dict(org_by[oid]), _ev(buyer_ev.get(oid, []), pool))
+            if c:
+                emit('discovery', 'edge', 'lead', edge={
+                    'id': f"edge:fits:{c['id']}:{oid}", 'from': c['id'], 'to': oid, 'type': 'FITS', 'date': None,
+                    'evidence_ids': [], 'confidence': 0.6, 'name_check': 'unchecked',
+                    'label': f"fits {c['name']}"[:80]})
 
     # 4 paths
     for p in final:
@@ -143,24 +163,22 @@ def build_log(session_id='demo-hopo'):
             edge('paths', 'lead', e)
         buyer = org_by[p.buyer_org_id]
         node('paths', 'lead', org_dict(buyer))
-        pe = []
-        if hero_new and p.id == hero_new.id and contact:
-            pe = _ev(contact['evidence_ids'], pool)
+        c = _is_verified(p)
+        pe = _ev(c['evidence_ids'], pool) if c else []
         for h in p.hops:
             pe += [x for x in _ev(ed[h].evidence_ids, pool) if x not in pe]
         emit('paths', 'path', 'lead', path=_dump(p), evidence=pe)
-    if hero_new and contact and contact['current_asof']:
-        d = datetime.fromisoformat(contact['current_asof'])
-        name = person_by[HERO].name
-        emit('paths', 'status', 'lead', status=f"Moss verified: {name}, {contact['current_role']} at "
-             f"{contact['current_org'].split(' (')[0]} (as of {d.strftime('%b %Y')})")
+        if c:
+            asof = f" (as of {datetime.fromisoformat(c['current_asof']).strftime('%b %Y')})" if c['current_asof'] else ''
+            emit('paths', 'status', 'lead', status=f"Moss verified: {person_by[p.bridge_id].name}, "
+                 f"{c['current_role']} at {c['current_org'].split(' (')[0]}{asof}")
     n_buy = len({p.buyer_org_id for p in final})
     emit('paths', 'status', 'lead', status=f'{len(final)} warm paths to {n_buy} buyer orgs')
 
-    t0 = datetime.now(UTC) - timedelta(seconds=SPAN)
+    t0 = START
     step = SPAN / max(len(out) - 1, 1)
     for i, e in enumerate(out):
-        e.update(seq=i + 1, session_id=session_id, at=(t0 + timedelta(seconds=i * step)).isoformat())
+        e.update(seq=i + 1, session_id=session_id, at=(t0 + timedelta(seconds=round(i * step, 3))).isoformat())
     build_log.warnings = warnings
     return out
 
