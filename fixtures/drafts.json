@@ -929,7 +929,7 @@
       "to_person_id": "person:openalex:A5015500305",
       "kind": "intro_request",
       "subject": "An oral option next to IV DTPA, via your 2023 paper",
-      "body": "Hi Polly,\n\nHannah Weber, CEO of HOPO Therapeutics. You co-authored \"Identifying Toxicity Mechanisms Associated with f-block Radiometals through Genome-wide Toxicogenomics\" with Rebecca Abergel in 2023; we develop her Berkeley Lab chelator as a pill. The approved drug, DTPA, needs an IV, which is slow in a mass-casualty event. Could you forward the note below to whoever runs radiation countermeasure studies at SRI? No pressure.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics, led by CEO Hannah Weber, develops an oral chelator from Rebecca Abergel's Berkeley Lab; DTPA, the approved drug for plutonium contamination, is given intravenously. Hannah would like to know which criteria SRI would apply to an oral radiation countermeasure.",
+      "body": "Hi Polly,\n\nHannah Weber, CEO of HOPO Therapeutics. You co-authored \"Identifying Toxicity Mechanisms Associated with f-block Radiometals through Genome-wide Toxicogenomics\" with Rebecca Abergel in 2023; we develop her Berkeley Lab chelator. The approved drug, DTPA, is given by IV or inhaled; ours is oral. Could you forward the note below to whoever runs radiation countermeasure studies at SRI? No pressure.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics, led by CEO Hannah Weber, develops an oral chelator from Rebecca Abergel's Berkeley Lab; DTPA, the approved drug for plutonium contamination, is given by IV or inhaled. Hannah would like to know which criteria SRI would apply to an oral radiation countermeasure.",
       "evidence_ids": [
         "evidence:erick:770af0ce670722f16f3a",
         "evidence:erick:2acf868b95526006424b",
@@ -938,7 +938,7 @@
         "evidence:value-map:remm-iv",
         "evidence:value-map:hopo-oral"
       ],
-      "content_hash": "984fe7fbf1303ddc0bc225d0085a780942ee849d2c42fe87aca0c7bfa8cfdea7",
+      "content_hash": "2493d10c5ac506de16c9c5227a12aa75e73857bf8be634c4f0d001c6a1f2a3e0",
       "status": "draft",
       "checks": [
         {
@@ -1009,14 +1009,14 @@
       "to_person_id": "person:openalex:A5015500305",
       "kind": "forwardable_note",
       "subject": "An oral chelator for internal contamination: criteria question for SRI",
-      "body": "HOPO Therapeutics, led by CEO Hannah Weber, develops an oral chelator from Rebecca Abergel's Berkeley Lab; DTPA, the approved drug for plutonium contamination, is given intravenously. Hannah would like to know which criteria SRI would apply to an oral radiation countermeasure.",
+      "body": "HOPO Therapeutics, led by CEO Hannah Weber, develops an oral chelator from Rebecca Abergel's Berkeley Lab; DTPA, the approved drug for plutonium contamination, is given by IV or inhaled. Hannah would like to know which criteria SRI would apply to an oral radiation countermeasure.",
       "evidence_ids": [
         "evidence:openalex:W2101984559",
         "evidence:buyers:60b25ab244d63d520202",
         "evidence:value-map:remm-iv",
         "evidence:value-map:hopo-oral"
       ],
-      "content_hash": "edfb2780a01fd7218c30819889559126218a8c428b795de8012e7d1b09873e35",
+      "content_hash": "6905e5ce177cb200bbaed691add6ccc202900d4074c86b44957b5b46e25d0528",
       "status": "draft",
       "checks": [
         {
