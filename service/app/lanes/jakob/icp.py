@@ -3,6 +3,14 @@ import hashlib
 import json
 import re
 import subprocess
+from ...llm import run_claude
+
+
+class _Result:
+    def __init__(self, stdout: str):
+        self.stdout = stdout
+        self.returncode = 0
+
 import threading
 import time
 import unicodedata
@@ -158,11 +166,8 @@ Output shape: {"buyer_roles":[{"title":"...","why":"...","evidence_ids":["..."]}
 "needs":[{"text":"Hypothesis: ... (include reasoning here)","evidence_ids":["..."]}],
 "expansion_segments":[{"name":"...","why":"...","evidence_ids":["..."]}]}.
 Give 2-3 items per group. Data:\n''' + json.dumps({'founder': founder.name,
-                                                            'persona': persona, 'works': inputs})
-    result = subprocess.run(['claude', '-p', '--model', 'sonnet', prompt],
-                            capture_output=True, text=True, timeout=180)
-    if result.returncode:
-        raise RuntimeError('Claude ICP generation failed (exit %s)' % result.returncode)
+                                                            'persona': (persona or '')[:1000], 'works': inputs})
+    result = _Result(run_claude(prompt))
     output = result.stdout.strip()
     if output.startswith('```'):
         output = re.sub(r'^```(?:json)?\s*|\s*```$', '', output).strip()
