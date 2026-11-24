@@ -1,0 +1,104 @@
+{
+  "fingerprint": "9326e7f8531db68522cecc2add86c9ad701150fbc9199082d011402f0a9a123e",
+  "cached": true,
+  "icp": {
+    "founder_id": "person:openalex:A5043992375",
+    "buyer_roles": [
+      {
+        "title": "Head of Antibacterial Discovery / Infectious Disease R&D (hypothesis)",
+        "why": "Hypothesis: Work on siderophore evasion of lipocalin 2 / siderocalin (iroA in E. coli, Salmonella, Klebsiella; petrobactin in B. anthracis) maps to teams seeking new antibacterial targets in iron acquisition, synthesis and uptake.",
+        "evidence_ids": [
+          "evidence:openalex:W2041755598",
+          "evidence:openalex:W2022017052"
+        ]
+      },
+      {
+        "title": "Medical Countermeasures Program Manager (biodefense / radiological) (hypothesis)",
+        "why": "Hypothesis: The anthrax siderophore studies and the orally active HOPO actinide decorporation agents point to program leads responsible for countermeasures against biothreat agents and radiological contamination.",
+        "evidence_ids": [
+          "evidence:openalex:W2022017052",
+          "evidence:openalex:W2101984559"
+        ]
+      },
+      {
+        "title": "Director of Chemistry / Process Development for chelator therapeutics (hypothesis)",
+        "why": "Hypothesis: The abstract reports optimized, scale-up-ready synthesis and manufacturing analytical methods for hydroxypyridonate ligands, suggesting a buyer interested in scalable chelator chemistry.",
+        "evidence_ids": [
+          "evidence:openalex:W2101984559"
+        ]
+      }
+    ],
+    "industries": [
+      {
+        "name": "Antibacterial and anti-infective drug discovery (hypothesis)",
+        "why": "Hypothesis: Siderophore biosynthesis and uptake pathways in pathogenic Gram-negative bacteria and Bacillus species are described as potential antimicrobial targets.",
+        "evidence_ids": [
+          "evidence:openalex:W2041755598",
+          "evidence:openalex:W2085969778"
+        ]
+      },
+      {
+        "name": "Biodefense and radiological/nuclear medical countermeasures (hypothesis)",
+        "why": "Hypothesis: Evidence covers anthrax pathogen virulence and decorporation agents for dirty-bomb or radiological contamination scenarios, which fit government-linked preparedness work.",
+        "evidence_ids": [
+          "evidence:openalex:W2022017052",
+          "evidence:openalex:W2101984559"
+        ]
+      },
+      {
+        "name": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+        "why": "Hypothesis: Siderophore-inspired multidentate ligands with high actinide affinity and selectivity suggest relevance to chelator design and radiochemistry applications.",
+        "evidence_ids": [
+          "evidence:openalex:W2101984559"
+        ]
+      }
+    ],
+    "needs": [
+      {
+        "text": "Hypothesis: Organizations developing antibacterials need ways to target siderophore synthesis and uptake that bypass or exploit host immune evasion. Reasoning: iroA glucosylation and petrobactin structure let pathogens evade Lcn2/siderocalin, and the anthrax paper argues for antianthrax strategies targeting siderophore synthesis and uptake.",
+        "evidence_ids": [
+          "evidence:openalex:W2041755598",
+          "evidence:openalex:W2022017052"
+        ]
+      },
+      {
+        "text": "Hypothesis: Teams working on iron-uptake-based antimicrobials need characterized transporter and receptor targets with known ligand specificity. Reasoning: the B. cereus study identifies substrate-binding proteins (FatB, FpuA, FeuA and others) with measured affinities and specificities, positioned as candidates for antimicrobial therapies.",
+        "evidence_ids": [
+          "evidence:openalex:W2085969778",
+          "evidence:openalex:W2062348077"
+        ]
+      },
+      {
+        "text": "Hypothesis: Emergency-preparedness programs need orally bioavailable actinide decorporation agents that outperform DTPA. Reasoning: the abstract reports higher actinide-removal efficacy than DTPA, oral dosing tolerated in rats over 28 days, and an accelerated development path toward clinical use.",
+        "evidence_ids": [
+          "evidence:openalex:W2101984559"
+        ]
+      }
+    ],
+    "expansion_segments": [
+      {
+        "name": "Iron-overload and iron-metabolism therapeutics (hypothesis)",
+        "why": "Hypothesis: Iron-chelation chemistry and iron metabolism topics in the siderophore work may extend to conditions of iron dysregulation, though the supplied evidence does not show this demand.",
+        "evidence_ids": [
+          "evidence:openalex:W2022017052",
+          "evidence:openalex:W2101984559"
+        ]
+      },
+      {
+        "name": "Diagnostics and research tools for siderophore and host-defense profiling (hypothesis)",
+        "why": "Hypothesis: Characterized siderophore-protein interactions (siderocalin, Lcn2, substrate-binding proteins) and biochemical methods such as fluorescence spectroscopy and ESI-MS could support assay or tool offerings for microbiology labs.",
+        "evidence_ids": [
+          "evidence:openalex:W2085969778",
+          "evidence:openalex:W2062348077"
+        ]
+      },
+      {
+        "name": "Nuclear industry and environmental actinide remediation (hypothesis)",
+        "why": "Hypothesis: High-affinity, selective actinide chelation for Pu, Am, U and Np may adapt to occupational safety or cleanup contexts beyond medical use; the evidence addresses only medical decorporation.",
+        "evidence_ids": [
+          "evidence:openalex:W2101984559"
+        ]
+      }
+    ]
+  }
+}

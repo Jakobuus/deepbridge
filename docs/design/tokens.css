@@ -1,0 +1,118 @@
+/* ==========================================================================
+   DeepBridge Canonical Design Tokens — Sistine (Lucite + Onyx + Flat)
+   Single source of truth for `web/` (Next.js) and `stage/` (no-build console).
+   Rules: Flat neo-brutalism, ZERO drop shadows, ZERO frosted blur.
+   Exception: Knowledge Graph canvas drops into sleek `#020510` Deep Space.
+   ========================================================================== */
+
+:root,
+.dark,
+[data-glass="lucite"][data-glass-tint="onyx"] {
+  /* ── 1. Core Surface & Ink (Onyx + Lucite + Flat, WCAG AA >= 4.5:1) ────── */
+  --db-paper: #090a0d;          /* Primary flat canvas */
+  --db-paper-rail: #060709;     /* Left navigation rail & top bar */
+  --db-surface-1: #0f1117;      /* Flat card / panel surface */
+  --db-surface-2: #151922;      /* Interactive row / recessed input */
+  --db-surface-3: #1d2230;      /* Active / selected row fill */
+
+  --db-ink: #f3f5f9;            /* Primary text (17.4:1 on paper) */
+  --db-ink-strong: #ffffff;     /* Display & numeric KPI ink */
+  --db-ink-muted: #9aa3b5;      /* Secondary metadata (7.2:1 on paper) */
+  --db-ink-subtle: #687387;     /* Structural coordinates / dividers */
+
+  /* ── 2. Primary Accent (1 crisp operational accent) ────────────────────── */
+  --db-accent: #38bdf8;         /* Photon Cyan — primary action & active border */
+  --db-accent-ink: #04131d;     /* High-contrast ink on solid accent button */
+  --db-accent-bg: #0b2536;      /* Flat tint backing (no alpha blur needed) */
+
+  /* ── 3. Semantic Governance & Provenance Tokens ────────────────────────── */
+  --db-verified: #34d399;       /* Quote verified / Name-check OK / Approved */
+  --db-verified-bg: #07291e;
+  --db-verified-border: #10b981;
+
+  --db-unverified: #fbbf24;     /* Dated paper affiliation ("as of YYYY") / Unchecked */
+  --db-unverified-bg: #2b1d05;
+  --db-unverified-border: #f59e0b;
+
+  --db-stale: #fb923c;          /* Edited after approval -> requires re-approval */
+  --db-stale-bg: #2e1505;
+  --db-stale-border: #f97316;
+
+  --db-blocked: #f87171;        /* HTTP 402 Credit Gate / Rejected collision / 409 */
+  --db-blocked-bg: #2d0a0e;
+  --db-blocked-border: #ef4444;
+
+  --db-agent: #60a5fa;          /* Autonomous agent action pill */
+  --db-agent-bg: #0b1d3a;
+
+  --db-human: #34d399;          /* Human-in-the-loop (HITL) action pill */
+  --db-human-bg: #07291e;
+
+  /* ── 4. Buyer Problem-Set Category Palette (Middle Ring, WCAG AA) ──────── */
+  --cat-1: #38bdf8;             /* Hyperscale AI Infrastructure & Clusters */
+  --cat-2: #a78bfa;             /* Optical Interconnects & Silicon Photonics */
+  --cat-3: #34d399;             /* Quantum & Fault-Tolerant Compute */
+  --cat-4: #fbbf24;             /* Semiconductor & Foundry R&D */
+  --cat-5: #f472b6;             /* Sovereign / Defense & Telecom Backbone */
+
+  /* ── 5. Deep-Space Knowledge Graph Palette (The One Deep View) ─────────── */
+  --db-cosmos-bg: #020510;      /* Deep-space void */
+  --db-cosmos-core: #071430;    /* Inner radial gravity well */
+  --db-cosmos-grid: rgba(56, 189, 248, 0.06);
+  --db-cosmos-orbit: rgba(148, 163, 184, 0.18);
+
+  /* Graph Node Types */
+  --db-node-founder: #38bdf8;
+  --db-node-value: #e2e8f0;
+  --db-node-bridge: #60a5fa;
+  --db-node-buyer: #2dd4bf;
+  --db-node-org: #34d399;
+
+  /* Graph Edge Types (13 contract EdgeTypes) */
+  --db-edge-LAB_MATE: #38bdf8;
+  --db-edge-DUAL_AFFILIATION: #c084fc;
+  --db-edge-ADVISOR_LAB: #818cf8;
+  --db-edge-CO_AUTHORED: #60a5fa;
+  --db-edge-CITES: #2dd4bf;
+  --db-edge-TOPIC_ALIGNED: #94a3b8;
+  --db-edge-AFFILIATED_AT: #fbbf24;
+  --db-edge-BOARD: #f472b6;
+  --db-edge-PERSONAL: #34d399;
+  --db-edge-ENABLES: #7dd3fc;
+  --db-edge-DELIVERS: #a78bfa;
+  --db-edge-SOLVES: #34d399;
+  --db-edge-FITS: #fbbf24;
+
+  /* ── 6. Typography Scale ───────────────────────────────────────────────── */
+  --db-font-sans: var(--font-geist-sans), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --db-font-mono: var(--font-geist-mono), "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --db-text-display: 1.75rem;   /* 28px / tight -0.02em */
+  --db-text-h1: 1.25rem;        /* 20px */
+  --db-text-h2: 1rem;           /* 16px */
+  --db-text-body: 0.875rem;     /* 14px */
+  --db-text-sm: 0.75rem;        /* 12px */
+  --db-text-mono-xs: 0.6875rem; /* 11px — Evidence chips, hashes, timestamps */
+
+  /* ── 7. Spacing, Borders, Radii & Zero-Shadow Enforcement ──────────────── */
+  --db-space-1: 0.25rem;        /* 4px */
+  --db-space-2: 0.5rem;         /* 8px */
+  --db-space-3: 0.75rem;        /* 12px */
+  --db-space-4: 1rem;           /* 16px */
+  --db-space-5: 1.25rem;        /* 20px */
+  --db-space-6: 1.5rem;         /* 24px */
+
+  --db-border-thin: 1px;
+  --db-border-thick: 2px;
+  --db-border-color: rgba(255, 255, 255, 0.18);
+  --db-border-strong: rgba(255, 255, 255, 0.34);
+
+  --radius: 0.25rem;            /* 4px neo-brutalist sharp radius */
+  --db-radius-none: 0px;
+  --db-radius-sm: 2px;
+  --db-radius-md: 4px;
+
+  --db-shadow-none: none;
+  --db-focus-ring: 2px solid var(--db-accent);
+  --db-focus-offset: 2px;
+}
