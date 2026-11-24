@@ -131,9 +131,9 @@ def event_name(action):
 
 
 def dashboard_url(remote, founder):
-    base = os.getenv('FLEXPRICE_DASHBOARD_URL', 'https://admin.flexprice.io/billing/customers')
-    cid = remote.customers.get(founder.id)
-    return base.rstrip('/') + ('/' + cid if cid else '')
+    # No documented customer-page URL: only link when FLEXPRICE_DASHBOARD_URL is set in .env.
+    base = os.getenv('FLEXPRICE_DASHBOARD_URL')
+    return base or None
 
 
 def credits():

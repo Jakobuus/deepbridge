@@ -52,9 +52,20 @@ def set_balance(external_id, target):
         call('POST', f'/wallets/{w["id"]}/top-up', {'credits_to_add': str(diff),
              'transaction_reason': 'FREE_CREDIT_GRANT', 'description': 'demo reset/top-up'})
     elif diff < 0:
-        try:  # HACK: debit endpoint is not in the public spec; reset only tops up if it fails
-            call('POST', f'/wallets/{w["id"]}/debit', {'credits': str(-diff),
-                 'transaction_reason': 'MANUAL_BALANCE_DEBIT', 'description': 'demo reset'})
-        except SystemExit:
-            print('note: cannot debit above-target wallet; balance stays', cur)
+        drain(external_id, w['id'], int(round(-diff)))
     return cur, balance(w['id'])
+
+
+def drain(external_id, wallet_id, n, wait=60):
+    """Lower the real-time balance by ingesting n real usage events (priced 1 credit each)."""
+    import time
+    import uuid
+    target = balance(wallet_id) - n
+    call('POST', '/events/bulk', {'events': [{'event_id': str(uuid.uuid4()), 'event_name': 'outreach_sent',
+         'external_customer_id': external_id, 'source': 'deepbridge',
+         'properties': {'demo_staging': 'true'}} for _ in range(n)]})
+    for _ in range(wait):
+        if balance(wallet_id) <= target:
+            return
+        time.sleep(1)
+    print('warn: balance did not settle to', target)
