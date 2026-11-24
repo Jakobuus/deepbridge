@@ -373,7 +373,7 @@ export function ScreenIntake({
   return (
     <div className="space-y-6">
       {/* Real-voice interview: large orb floating in space + Speak, with the knowledge graph building beside it. */}
-      <VoiceStage />
+      <VoiceStage onEnded={onGoToBuyers} />
 
       {/* Everything else stays out of sight until asked for. */}
       <div className="flex justify-center">

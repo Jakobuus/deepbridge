@@ -49,6 +49,7 @@ import type {
   Signal,
 } from "@/lib/types";
 import { SidebarOrb } from "@/components/deepbridge/sidebar-orb";
+import { BridgeMark } from "@/components/deepbridge/bridge-mark";
 
 type ScreenKey = "intake" | "buyers" | "leads" | "drafts" | "pipeline";
 
@@ -405,9 +406,12 @@ export default function DeepBridgeWorkspace() {
   return (
     <div className="db-grid-bg flex min-h-screen flex-col lg:flex-row">
       {/* LEFT NAVIGATION RAIL — STRICT FLAT LUCITE ONYX */}
-      <aside className="flex w-full shrink-0 flex-col justify-between border-b border-white/10 bg-[#060709] lg:sticky lg:top-0 lg:h-screen lg:w-56 lg:border-b-0 lg:border-r">
+      <aside className="flex w-full shrink-0 flex-col justify-between border-b border-white/10 db-glass-rail lg:sticky lg:top-0 lg:h-screen lg:w-56 lg:border-b-0 lg:border-r">
         <div>
-          <div className="px-5 py-5 text-sm font-semibold tracking-tight">DeepBridge</div>
+          <div className="flex items-center gap-2.5 px-5 py-5 text-sm font-semibold tracking-tight">
+            <BridgeMark className="size-6 shrink-0 text-white" />
+            DeepBridge
+          </div>
 
           <nav className="flex flex-row gap-1 overflow-x-auto p-3 lg:flex-col">
             {NAV_ITEMS.filter((item) => !item.hidden).map((item) => {
@@ -446,7 +450,7 @@ export default function DeepBridgeWorkspace() {
 
       {/* MAIN WORKSPACE COLUMN — FLAT SOLID HEADER (NO FROSTED BLUR) */}
       <div className="flex min-w-0 flex-1 flex-col">
-        <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 bg-[#090a0d] px-6 py-3">
+        <header className="db-glass-bar sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-6 py-3">
           <div className="flex flex-wrap items-baseline gap-3">
             <span className="text-sm font-medium">
               {founder
