@@ -206,7 +206,9 @@ def _keyword(name: str) -> str | None:
 
 def _categories(session_id: str) -> list[dict]:
     from ..lanes.erick import record_log
-    nodes = [e['node'] for e in events.events(session_id) if e.get('kind') == 'category' and e.get('node')]
+    # Weight-update events carry only {'id'}; keep the named ones (else the 2nd sharpen call raised KeyError).
+    nodes = [e['node'] for e in events.events(session_id)
+             if e.get('kind') == 'category' and e.get('node') and e['node'].get('name')]
     if not nodes:
         nodes = [{'id': c['id'], 'name': c['name']} for c in record_log._load('categories_hopo.json')]
     seen, out = set(), []

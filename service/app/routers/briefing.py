@@ -7,7 +7,7 @@ from fastapi import APIRouter, BackgroundTasks, Header, HTTPException, Response
 
 from ..lanes.jakob.briefing import (
     INFERENCE_ERRORS, BriefForm, Briefing, SessionConflict, Turn, extract_turn,
-    get_session, prepare_briefing, record_turn,
+    get_session, prepare_briefing, record_turn, sharpen_turn,
 )
 from ..lanes.jakob.sources import SourceError
 from .categories import category_layer
@@ -52,11 +52,14 @@ def _buyer_categories():
 
 
 @router.post('/interview/turn')
-def submit_turn(turn: Turn, background_tasks: BackgroundTasks) -> dict[str, Literal[True]]:
+def submit_turn(turn: Turn, background_tasks: BackgroundTasks) -> dict:
     recorded = record_turn(turn)
     if recorded is None:
         raise HTTPException(404, 'Interview session not found')
     session, index = recorded
-    if turn.role == 'founder':
+    if turn.role == 'founder':  # interviewer lines are stored only: no topic change, no extraction, no sharpen
+        sharpened = sharpen_turn(session, index)
         background_tasks.add_task(extract_turn, session, turn, index, _buyer_categories)
+        if sharpened is not None:
+            return {'ok': True, 'sharpen': sharpened}
     return {'ok': True}

@@ -43,11 +43,12 @@ def first_name(name: str | None) -> str:
 
 def stage_questions(name: str | None = None, hopo: bool = False) -> list[str]:
     hello = f'Hi {first_name(name)}.' if first_name(name) else 'Hi.'
-    read = ' Your papers say: a pill that clears radioactive metals and lead.' if hopo else ' I\'ve read your papers.'
+    read = (' In plain words: your papers describe a pill that pulls radioactive metals and lead out of the body.'
+            if hopo else ' I\'ve read your papers.')
     return [
-        f'{hello}{read} What\'s the real value, in one line?',
-        'Who do you think buys it first?',
-        'Who do you already know there, or who should we talk to?',
+        f'{hello}{read} What\'s the value, and for whom?',
+        'Who would buy it first?',
+        'Who do you already know there?',
     ]
 
 
@@ -86,8 +87,10 @@ def instructions(name: str | None, company: str | None, summary: str, gaps: list
     hopo = is_hopo(company)
     rules = '\n'.join('- ' + rule for rule in STYLE_RULES)
     flow = (
-        'STAGE MODE (about 75 seconds, on a live stage): ask exactly these three questions in order, each after a '
-        'few words acknowledging the last answer; no follow-ups; then the two-sentence read-back and a thank you.'
+        'STAGE MODE (about 75 seconds, on a live stage): open with the one-sentence plain summary and the first '
+        'question in the same turn, exactly as written below. Then ask the other two questions in order, each after a '
+        'few words acknowledging the last answer; no follow-ups. End with a read-back of two short sentences, then '
+        '"Thanks, <first name>."'
         if mode == 'stage' else
         'FULL MODE: five to seven questions. Start with the three below, then ask what proof the buyer needs, '
         'how buyers find out, and the timeline. One short follow-up when an answer is vague, at most two in total.'

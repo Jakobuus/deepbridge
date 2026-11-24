@@ -486,6 +486,26 @@ def record_turn(request: Turn):
         return session, len(session.turns)
 
 
+def sharpen_turn(session: Session, index: int) -> dict | None:
+    """Founder turn -> /graph/sharpen (fire and forget). Interviewer lines never count; the topic comes from the
+    last interviewer question (value / buyers / who you know), else from the number of founder turns."""
+    from . import sharpen
+    with session.lock:
+        turns = list(session.turns[:index])
+    turn = turns[-1]
+    if turn.role != 'founder' or not style.is_hopo(session.briefing.founder.company, turn.session_id):
+        return None
+    founder = [t.text for t in turns if t.role == 'founder']
+    asked = [t.text for t in turns[:-1] if t.role == 'interviewer' and '?' in t.text]
+    topic = min(len(founder) - 1, 2)
+    if asked:
+        last = asked[-1]
+        topic = (2 if re.search(r'\bknow\b|talk to|introduc', last, re.I) else
+                 1 if re.search(r'\bbuy|\bpay|budget|customer', last, re.I) else
+                 0 if re.search(r'value|what does', last, re.I) else min(len(asked) - 1, 2))
+    return sharpen.send(turn.session_id, founder, turn.text, topic)
+
+
 def extract_turn(session: Session, turn: Turn, index: int, get_categories: Callable[[], list[BuyerCategory]]):
     if turn.role != 'founder':
         return
