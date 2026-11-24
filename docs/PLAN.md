@@ -52,7 +52,9 @@ checks · Moss prospecting · intro drafts · hash-bound approval · pipeline + 
 `/interview/brief`, `/interview/turn`). Building: briefing + live events (Jakob lane), connectors, transcript receiver +
 public tunnel for the hosted voice app, graph stream (Erick), UI (Mark).
 
-## 6. Judging criteria → where we score
+## 6. Judging criteria → subplans
+**Detailed subplans per criterion (tasks, owners, status, demo moment): [`docs/plan/`](plan/README.md).**
+
 ICP & discovery 20% (cited ICP, buyers with sources, expansion via categories) · Enrichment & outreach 20% (Moss-verified
 contacts, signal-personalised intro, strict approval) · Dashboard 15% (stages, agent/human attribution, conversion) ·
 Viability 15% (founders pay per path in credits; tech-transfer offices / accelerators buy seats per cohort) ·
