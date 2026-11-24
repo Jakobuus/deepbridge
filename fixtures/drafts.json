@@ -619,14 +619,14 @@
       "path_id": "path:erick:e8691e1d13091477d524",
       "to_person_id": "person:openalex:A5085203145",
       "kind": "intro_request",
-      "subject": "Forwarding request for the relevant team at Bayer",
-      "body": "Hello,\n\nWe co-authored \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\" (2018), when you were at Bayer AS (as of 2018). Would you be willing to forward the blurb below to the relevant team at Bayer, given the 2025 gadoquatrane pharmacokinetics paper from Bayer-affiliated authors? Declining is completely fine.\n\nRebecca\n\nBlurb you can forward:\nRebecca Abergel works on metal complexation with hydroxypyridinone chelators. Bayer-affiliated authors published a June 2025 gadoquatrane pharmacokinetics study in monkeys, so it may be worth exploring whether this chelation chemistry is relevant to your team.",
+      "subject": "Thorium-227 chelation and Bayer radiopharma",
+      "body": "Hi Åsmund,\n\nHannah Weber, CEO of HOPO Therapeutics. Our founder Rebecca Abergel co-authored \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\" with you in 2018. You are a Radiopharmaceuticals manager at Bayer as of 2024, and Bayer-affiliated authors published on a thorium-227 conjugate in 2023. Could you point me to the right Bayer radiopharmaceuticals contact, or forward this? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics builds on hydroxypyridinone chelation research by Rebecca Abergel, who co-authored a 2018 paper on a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy. We would welcome a short conversation.",
       "evidence_ids": [
         "evidence:erick:bd66a699632a8769a89f",
-        "evidence:erick:891c58aa87148111c4fe",
-        "evidence:buyers:05765ea9f4b4a1af93e4"
+        "evidence:moss:ed2c79c085f83555d5bc",
+        "evidence:buyers:efe4992678cca269609d"
       ],
-      "content_hash": "11da4623ba4c24b56eba826006a8d2a84ed89b633964e5f5562dafa7ffdd3b5d",
+      "content_hash": "2163e940130c447cbc98a2b6df236c0133bbead218561c2b726c4296c477b18a",
       "status": "draft",
       "checks": [
         {
@@ -696,167 +696,13 @@
       "path_id": "path:erick:e8691e1d13091477d524",
       "to_person_id": "person:openalex:A5085203145",
       "kind": "forwardable_note",
-      "subject": "Chelation chemistry and gadoquatrane work",
-      "body": "Rebecca Abergel works on metal complexation with hydroxypyridinone chelators. Bayer-affiliated authors published a June 2025 gadoquatrane pharmacokinetics study in monkeys, so it may be worth exploring whether this chelation chemistry is relevant to your team.",
+      "subject": "HOPO Therapeutics and Bayer radiopharmaceuticals",
+      "body": "HOPO Therapeutics builds on hydroxypyridinone chelation research by Rebecca Abergel, who co-authored a 2018 paper on a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy. We would welcome a short conversation.",
       "evidence_ids": [
         "evidence:erick:bd66a699632a8769a89f",
-        "evidence:buyers:05765ea9f4b4a1af93e4"
+        "evidence:moss:ed2c79c085f83555d5bc"
       ],
-      "content_hash": "d2dfdd701011c03286545d4a8185f02ff69e9c157b5e7aaf055cfa1397130e08",
-      "status": "draft",
-      "checks": [
-        {
-          "name": "length",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "grounded",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_repeated_numbers",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_made_up_features",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "banned",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_begging",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_exclamation",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_emoji",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_knows",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "two_sentences",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_question_marks",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_first_person_i",
-          "ok": true,
-          "detail": ""
-        }
-      ]
-    },
-    {
-      "id": "draft:erick:2a3a6b663d84daa75797:intro_request",
-      "path_id": "path:erick:2a3a6b663d84daa75797",
-      "to_person_id": "person:openalex:A5027572313",
-      "kind": "intro_request",
-      "subject": "Forwarding a note to the Bayer team?",
-      "body": "Hello,\n\nOur 2018 paper, \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\", is why I'm writing. With the June 2025 gadoquatrane pharmacokinetics paper in mind, would you be comfortable forwarding the note below to the relevant team at Bayer? Completely fine to decline.\n\nRebecca\n\nBlurb you can forward:\nRebecca Abergel researches hydroxypyridinone metal chelators, including a Thorium-227 alpha therapy chelator (2018) and actinide decorporation agents (2010). With the 2025 gadoquatrane paper on a gadolinium-based MRI contrast agent in view, she wonders whether her metal-complexation research touches questions your team is working on.",
-      "evidence_ids": [
-        "evidence:erick:bd66a699632a8769a89f",
-        "evidence:openalex:W2101984559",
-        "evidence:buyers:05765ea9f4b4a1af93e4"
-      ],
-      "content_hash": "15ff1a8810a7fc1055d7fffce64992f3ef378fa3146b4e327fe2941fd11697ca",
-      "status": "draft",
-      "checks": [
-        {
-          "name": "length",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "grounded",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_repeated_numbers",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_made_up_features",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "banned",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_begging",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_exclamation",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_emoji",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "no_knows",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "one_ask",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "names_shared_paper_or_lab",
-          "ok": true,
-          "detail": ""
-        },
-        {
-          "name": "way_out",
-          "ok": true,
-          "detail": ""
-        }
-      ]
-    },
-    {
-      "id": "draft:erick:2a3a6b663d84daa75797:forwardable_note",
-      "path_id": "path:erick:2a3a6b663d84daa75797",
-      "to_person_id": "person:openalex:A5027572313",
-      "kind": "forwardable_note",
-      "subject": "Metal-chelator research and gadoquatrane",
-      "body": "Rebecca Abergel researches hydroxypyridinone metal chelators, including a Thorium-227 alpha therapy chelator (2018) and actinide decorporation agents (2010). With the 2025 gadoquatrane paper on a gadolinium-based MRI contrast agent in view, she wonders whether her metal-complexation research touches questions your team is working on.",
-      "evidence_ids": [
-        "evidence:erick:bd66a699632a8769a89f",
-        "evidence:openalex:W2101984559",
-        "evidence:buyers:05765ea9f4b4a1af93e4"
-      ],
-      "content_hash": "aabd607ad32e13bcac2e3950095a3e9908650df673e450efaa737112746763b2",
+      "content_hash": "639b8bd4e50c548f6a84f948c3e5dc1e90b75f71d7837c64b44156524b74c932",
       "status": "draft",
       "checks": [
         {

@@ -349,6 +349,22 @@
       "source_date": "2017-06-02",
       "observed_at": "2026-11-24T21:40:54.768168+00:00",
       "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:efe4992678cca269609d",
+      "source_url": "https://openalex.org/W4382792533",
+      "quote": "Efficacy of a HER2-Targeted Thorium-227 Conjugate in a HER2-Positive Breast Cancer Bone Metastasis Model",
+      "source_date": "2023-06-29",
+      "observed_at": "2026-11-24T21:29:27.923909+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:moss:ed2c79c085f83555d5bc",
+      "source_url": "https://orcid.org/0009-0008-9375-5715",
+      "quote": "Bayer (Germany): Leverkusen, DE\nRadiopharmaceuticals manager\nEmployment",
+      "source_date": "2024-03-21",
+      "observed_at": "2026-11-24T21:21:40.956667+00:00",
+      "kind": "web"
     }
   ]
 }
