@@ -16,9 +16,21 @@
         "status": "completed",
         "verification_passed": true,
         "cost_usd": 0.022592
+      },
+      "person:openalex:A5085203145": {
+        "id": "task_2bdbd697abf54c4980c6943b93f14707",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.02207
+      },
+      "person:openalex:A5063128206": {
+        "id": "task_739fec12f0394394b60e0600a6e27242",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.017605
       }
     },
-    "observed_at": "2026-11-24T19:25:19.803286+00:00"
+    "observed_at": "2026-11-24T21:21:47.010354+00:00"
   },
   "items": [
     {
@@ -38,7 +50,7 @@
           "url": "https://openalex.org/W4404905249"
         }
       ],
-      "assessment": "His research develops photonic systems and programmable silicon-photonic processors for artificial intelligence and deep neural networks, aligning with photonic and optical devices and neural-network computing, including the linked work\u2019s Neural Networks and Reservoir Computing topic classification.",
+      "assessment": "His research develops photonic systems and programmable silicon-photonic processors for artificial intelligence and deep neural networks, aligning with photonic and optical devices and neural-network computing, including the linked work’s Neural Networks and Reservoir Computing topic classification.",
       "source": "moss_task",
       "evidence_ids": [
         "evidence:moss:9c787c09fd76ab2fdb2b",
@@ -70,7 +82,7 @@
           "url": "https://api.openalex.org/works/W4404905249"
         }
       ],
-      "assessment": "OpenAlex lists 90 works under Neural Networks and Reservoir Computing and 55 under Photonic and Optical Devices; his 2024 Nature Photonics paper on a single-chip photonic deep neural network exemplifies that intersection.",
+      "assessment": "OpenAlex lists 90 works under Neural Networks and Reservoir Computing and 55 under Photonic and Optical Devices.",
       "source": "moss_task",
       "evidence_ids": [
         "evidence:moss:5f5353fd7a03ab8939f9",
@@ -93,13 +105,76 @@
         "evidence:follet-dual",
         "evidence:harris-englund"
       ]
+    },
+    {
+      "person_id": "person:openalex:A5085203145",
+      "current_role": "Radiopharmaceuticals manager",
+      "current_org": "Bayer (Germany)",
+      "current_asof": "2024-03-21",
+      "email": null,
+      "email_status": "none",
+      "profiles": [
+        {
+          "kind": "orcid",
+          "url": "https://orcid.org/0009-0008-9375-5715"
+        },
+        {
+          "kind": "linkedin",
+          "url": "https://no.linkedin.com/in/%C3%A5smund-larsen-52601430"
+        },
+        {
+          "kind": "scholar",
+          "url": "https://openalex.org/A5085203145"
+        },
+        {
+          "kind": "other",
+          "url": "https://doi.org/10.1021/acs.inorgchem.8b02430"
+        }
+      ],
+      "assessment": "The identified author's indexed work is in radiopharmaceutical chemistry, including thorium-227 chelation.",
+      "source": "moss_task",
+      "evidence_ids": [
+        "evidence:moss:ed2c79c085f83555d5bc",
+        "evidence:moss:cd6c1ed8117b5b7cecf5",
+        "evidence:moss:f469d448687e64a82a0c",
+        "evidence:moss:792b1e382f6c4d74fda3"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5063128206",
+      "current_role": "Consulting in Radiopharmaceutical R&D",
+      "current_org": "Cuthbertson Radiopharm Consulting",
+      "current_asof": null,
+      "email": null,
+      "email_status": "none",
+      "profiles": [
+        {
+          "kind": "linkedin",
+          "url": "https://no.linkedin.com/in/alan-cuthbertson-8ba9031"
+        },
+        {
+          "kind": "other",
+          "url": "https://openalex.org/authors/A5063128206"
+        },
+        {
+          "kind": "other",
+          "url": "https://doi.org/10.1021/acs.inorgchem.8b02430"
+        }
+      ],
+      "assessment": "The identified publication record centers on radiopharmaceutical chemistry and targeted alpha therapy.",
+      "source": "moss_task",
+      "evidence_ids": [
+        "evidence:moss:e373078d5e4fc929c3c5",
+        "evidence:moss:79c9f5a4699332c33c82",
+        "evidence:moss:92e9975e620f0847aee5"
+      ]
     }
   ],
   "evidence": [
     {
       "id": "evidence:moss:9c787c09fd76ab2fdb2b",
       "source_url": "https://phi.ntt-research.com/phi-people/bandyopadhyay-profile/",
-      "quote": "Saumil Bandyopadhyay\nPostdoctoral Fellow\nSaumil Bandyopadhyay\u2019s research in the PHI Lab is focused on developing photonic systems for artificial intelligence. He received his Ph.D. in Electrical Engineering from MIT, where his S.B and M.Eng. were also conferred. Saumil\u2019s doctoral work focused on building programmable silicon photonic processors for deep neural networks",
+      "quote": "Saumil Bandyopadhyay\nPostdoctoral Fellow\nSaumil Bandyopadhyay’s research in the PHI Lab is focused on developing photonic systems for artificial intelligence. He received his Ph.D. in Electrical Engineering from MIT, where his S.B and M.Eng. were also conferred. Saumil’s doctoral work focused on building programmable silicon photonic processors for deep neural networks",
       "source_date": null,
       "observed_at": "2026-11-24T19:23:51.666003+00:00",
       "kind": "web"
@@ -142,6 +217,62 @@
       "quote": "\"title\":\"Single-chip photonic deep neural network with forward-only training\",\"publication_year\":2024",
       "source_date": "2026-01-02",
       "observed_at": "2026-11-24T19:25:19.803058+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:ed2c79c085f83555d5bc",
+      "source_url": "https://orcid.org/0009-0008-9375-5715",
+      "quote": "Bayer (Germany): Leverkusen, DE\nRadiopharmaceuticals manager\nEmployment",
+      "source_date": "2024-03-21",
+      "observed_at": "2026-11-24T21:21:40.956667+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:cd6c1ed8117b5b7cecf5",
+      "source_url": "https://no.linkedin.com/in/%C3%A5smund-larsen-52601430",
+      "quote": "Pharmaceuticals Development Manager at Bayer",
+      "source_date": "2024-03-21",
+      "observed_at": "2026-11-24T21:21:40.956725+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:f469d448687e64a82a0c",
+      "source_url": "https://openalex.org/A5085203145",
+      "quote": "Radiopharmaceutical Chemistry and Applications",
+      "source_date": "2024-03-21",
+      "observed_at": "2026-11-24T21:21:40.956744+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:792b1e382f6c4d74fda3",
+      "source_url": "https://doi.org/10.1021/acs.inorgchem.8b02430",
+      "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy",
+      "source_date": "2024-03-21",
+      "observed_at": "2026-11-24T21:21:40.956759+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:e373078d5e4fc929c3c5",
+      "source_url": "https://no.linkedin.com/in/alan-cuthbertson-8ba9031",
+      "quote": "Consulting in Radiopharmaceutical R&D · Erfaring: Cuthbertson Radiopharm Consulting",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:21:47.008985+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:79c9f5a4699332c33c82",
+      "source_url": "https://openalex.org/authors/A5063128206",
+      "quote": "Radiopharmaceutical Chemistry and Applications\t64",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:21:47.009113+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:92e9975e620f0847aee5",
+      "source_url": "https://doi.org/10.1021/acs.inorgchem.8b02430",
+      "quote": "The solution chemistry of a chelator developed for 227Th targeted alpha therapy was probed.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:21:47.009168+00:00",
       "kind": "web"
     }
   ]
