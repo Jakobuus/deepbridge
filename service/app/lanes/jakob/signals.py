@@ -167,12 +167,27 @@ class _Sources:
             return None
 
 
+def _own_institutions(author_id):
+    # HACK: the founder's last-known institutions and their parents (from the cached
+    # OpenAlex author record) are not buyers; reads Erick's cached dataset, no API calls.
+    try:
+        path = CACHE.parent / 'erick' / author_id / 'dataset.json'
+        author = json.loads(path.read_text()).get('founder') or {}
+    except (OSError, ValueError):
+        return set()
+    return {i for inst in author.get('last_known_institutions') or []
+            for i in [inst.get('id'), *(inst.get('lineage') or [])] if i}
+
+
 def _discover(founder, groups, source, date_filter):
     orgs, papers, affiliations, hints = {}, {}, {}, {}
     author_id = (founder.openalex_id or '').rsplit('/', 1)[-1]
+    own = _own_institutions(author_id)
 
     def remember(institution):
         key, name = institution.get('id'), institution.get('display_name')
+        if key in own:
+            return None
         kind = _INSTITUTION_TYPES.get(institution.get('type'))
         if not (key and name and kind) or name.casefold() == founder.company.casefold():
             return None
