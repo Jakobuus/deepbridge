@@ -22,7 +22,11 @@
       "org:openalex:I4210088792"
     ],
     "problem_node_ids": [
-      "value:hopo-p-limited"
+      "value:hopo-p-limited",
+      "value:hopo-rad-p-harm",
+      "value:hopo-rad-p-dtpa",
+      "value:hopo-rad-p-lung",
+      "value:hopo-rad-p-u"
     ],
     "evidence_ids": [
       "evidence:buyers:10a2745524d98da3569f",
@@ -73,7 +77,9 @@
       "org:openalex:I25763013"
     ],
     "problem_node_ids": [
-      "value:hopo-p-dfo"
+      "value:hopo-p-dfo",
+      "value:hopo-pet-p-bone",
+      "value:hopo-pet-p-chel"
     ],
     "evidence_ids": [
       "evidence:buyers:2bf8475ff85c5e8c8439",
@@ -112,7 +118,9 @@
       "org:openalex:I17937529"
     ],
     "problem_node_ids": [
-      "value:hopo-p-gd"
+      "value:hopo-p-gd",
+      "value:hopo-gd-p-ema",
+      "value:hopo-gd-p-ln"
     ],
     "evidence_ids": [
       "evidence:buyers:05765ea9f4b4a1af93e4",
@@ -153,7 +161,9 @@
       "org:openalex:I4210110933",
       "org:openalex:I4210106432"
     ],
-    "problem_node_ids": [],
+    "problem_node_ids": [
+      "value:hopo-lead-p-pb"
+    ],
     "evidence_ids": [
       "evidence:buyers:cd6584c431e5f63bbdfa",
       "evidence:buyers:3e348adff49202347ff8",

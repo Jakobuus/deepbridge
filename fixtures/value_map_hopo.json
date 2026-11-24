@@ -130,6 +130,384 @@
         "evidence:value-map:hopo-deposits",
         "evidence:value-map:hopo-gd"
       ]
+    },
+    {
+      "id": "value:hopo-c-oral",
+      "kind": "feature",
+      "text": "Oral availability: orally active in animal studies, with a permeability-enhancer co-formulation raising oral bioavailability",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-oral",
+        "evidence:value-map:hopo-pk-oral",
+        "evidence:value-map:hopo-oral"
+      ]
+    },
+    {
+      "id": "value:hopo-c-safe",
+      "kind": "feature",
+      "text": "Low toxicity: no genotoxicity in standard assays, noncytotoxic at medical dosages, well tolerated in rats at high oral doses",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bunin-gen",
+        "evidence:value-map:hopo-goldnp",
+        "evidence:value-map:hopo-oral"
+      ]
+    },
+    {
+      "id": "value:hopo-c-iv",
+      "kind": "feature",
+      "text": "Extreme stability with tetravalent metal ions (Zr, Hf, Th, Pu) from one octadentate ligand",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-grp4",
+        "evidence:value-map:hopo-hf",
+        "evidence:value-map:hopo-th227"
+      ]
+    },
+    {
+      "id": "value:hopo-c-sidero",
+      "kind": "feature",
+      "text": "Siderophore-inspired design: iron-binding units reused to bind actinides and other hard metals",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-unrivaled",
+        "evidence:value-map:hopo-iron06",
+        "evidence:value-map:hopo-tam"
+      ]
+    },
+    {
+      "id": "value:hopo-c-conj",
+      "kind": "feature",
+      "text": "Bifunctional derivatives: a HOPO chelator that can be conjugated to an antibody or targeting protein",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bifunc",
+        "evidence:value-map:hopo-th227-label"
+      ]
+    },
+    {
+      "id": "value:hopo-c-form",
+      "kind": "feature",
+      "text": "Formulation options beyond injection: oral co-formulation and inhalable chitosan nanoparticles with extended release",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-chitosan",
+        "evidence:value-map:hopo-pk-oral",
+        "evidence:value-map:hopo-nano-iv"
+      ]
+    },
+    {
+      "id": "value:hopo-c-lumin",
+      "kind": "feature",
+      "text": "Luminescent metal complexes: Eu and Sm HOPO complexes enable spectroscopic detection and quantification",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-antenna",
+        "evidence:value-map:hopo-eusm",
+        "evidence:value-map:hopo-goldnp"
+      ]
+    },
+    {
+      "id": "value:hopo-c-pk",
+      "kind": "feature",
+      "text": "Characterised pharmacokinetics and biodistribution (14C-labelled, three dosing routes, two species) and an analytical HPLC method",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pk-dist",
+        "evidence:value-map:hopo-hplc",
+        "evidence:value-map:hopo-window"
+      ]
+    },
+    {
+      "id": "value:hopo-c-actstab",
+      "kind": "feature",
+      "text": "Stability across the actinide series, from americium to einsteinium, backed by theory and X-ray data",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-cov",
+        "evidence:value-map:hopo-es",
+        "evidence:value-map:hopo-thermo13"
+      ]
+    },
+    {
+      "id": "value:hopo-c-heavy",
+      "kind": "feature",
+      "text": "Complexation of toxic heavy metals (Pb, Cd, Sn) by the same octadentate ligand",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb"
+      ]
+    },
+    {
+      "id": "value:hopo-c-sep",
+      "kind": "feature",
+      "text": "Selective metal separation chemistry: HOPO works in actinide/lanthanide and U/Np/Pu separations",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-talspeak",
+        "evidence:value-map:hopo-np",
+        "evidence:value-map:hopo-sadhu"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-p-harm",
+      "kind": "problem",
+      "text": "Radiation-protection teams: internalised actinides damage and induce cancer in bone, liver and lungs",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-harm",
+        "evidence:value-map:hopo-rev98"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-p-dtpa",
+      "kind": "problem",
+      "text": "Emergency clinicians: DTPA has low oral activity and must be injected as a Ca or Zn chelate to avoid toxicity",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-dtpa"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-p-lung",
+      "kind": "problem",
+      "text": "Responders to inhalation exposure: intravenous chelators are inefficient for radionuclides trapped in the lungs",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-nano-iv"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-p-u",
+      "kind": "problem",
+      "text": "Uranium exposure: U(VI) is a kidney poison and carcinogenic in bone",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-u-neph"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-b-oral",
+      "kind": "benefit",
+      "text": "Could give responders a pill instead of an infusion for mass-casualty treatment",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-oral",
+        "evidence:value-map:hopo-oral",
+        "evidence:value-map:hopo-pk-oral"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-b-more",
+      "kind": "benefit",
+      "text": "Could remove more plutonium, americium and uranium than CaNa3-DTPA in animal models",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-more",
+        "evidence:value-map:hopo-bunin-eff",
+        "evidence:value-map:hopo-pu95",
+        "evidence:value-map:hopo-thermo13"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-b-lung",
+      "kind": "benefit",
+      "text": "Could cut dosing frequency for inhaled-radionuclide cases via nanoparticle formulation (early in vitro stage)",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-chitosan",
+        "evidence:value-map:hopo-chitosan-dose"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-b-reg",
+      "kind": "benefit",
+      "text": "Animal-efficacy and toxicology data feed the regulatory approval path (FDA Animal Efficacy Rule)",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bunin-reg",
+        "evidence:value-map:hopo-animal",
+        "evidence:value-map:hopo-animal-eff"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-v-reg",
+      "kind": "value",
+      "text": "Government stockpile buyers and regulators could assess a decorporation candidate with a documented efficacy and safety dataset",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bunin-reg",
+        "evidence:value-map:hopo-bunin-gen",
+        "evidence:value-map:hopo-animal"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-v-lung",
+      "kind": "value",
+      "text": "Defense and civil-protection planners could cover inhalation scenarios, not only injected treatment",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-nano-iv",
+        "evidence:value-map:hopo-chitosan-alt"
+      ]
+    },
+    {
+      "id": "value:hopo-pet-p-bone",
+      "kind": "problem",
+      "text": "Immuno-PET teams: bone uptake of released 89Zr adds background dose to antibody tracers",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bone",
+        "evidence:value-map:hopo-dfo"
+      ]
+    },
+    {
+      "id": "value:hopo-pet-p-chel",
+      "kind": "problem",
+      "text": "Radiopharmaceutical makers need chelators that hold other radiometals (44Ti, 177Lu/Hf, 227Th) stably",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-hf-pet",
+        "evidence:value-map:hopo-th227"
+      ]
+    },
+    {
+      "id": "value:hopo-pet-b-bone",
+      "kind": "benefit",
+      "text": "Could cut bone uptake of antibody tracers: 2.4%ID/g with HOPO versus 17.0%ID/g with DFO at 336 h in mice",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bone",
+        "evidence:value-map:hopo-bt474"
+      ]
+    },
+    {
+      "id": "value:hopo-pet-b-conj",
+      "kind": "benefit",
+      "text": "Could ship as a ready-to-conjugate chelator for antibody radiolabelling",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bifunc",
+        "evidence:value-map:hopo-bt474"
+      ]
+    },
+    {
+      "id": "value:hopo-pet-b-tat",
+      "kind": "benefit",
+      "text": "Could also anchor 227Th for targeted alpha therapy: labelling completed in 1 h at room temperature",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-th227-label",
+        "evidence:value-map:hopo-th227"
+      ]
+    },
+    {
+      "id": "value:hopo-pet-v-ab",
+      "kind": "value",
+      "text": "Antibody-drug and imaging developers could pair a HOPO chelator with their antibody for cleaner PET images",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bt474",
+        "evidence:value-map:hopo-grp4-pet"
+      ]
+    },
+    {
+      "id": "value:hopo-pet-v-tat",
+      "kind": "value",
+      "text": "Targeted-alpha-therapy developers could get a high-affinity tetravalent-metal chelator",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-th227",
+        "evidence:value-map:hopo-hf-pet"
+      ]
+    },
+    {
+      "id": "value:hopo-gd-p-ema",
+      "kind": "problem",
+      "text": "Regulators and MRI providers: the European Medicines Agency recommended discontinuing over half of the approved gadolinium contrast agents",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-ema",
+        "evidence:value-map:hopo-deposits"
+      ]
+    },
+    {
+      "id": "value:hopo-gd-p-ln",
+      "kind": "problem",
+      "text": "Toxicologists: the biology of late lanthanides is poorly understood",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-latelan"
+      ]
+    },
+    {
+      "id": "value:hopo-gd-b-dtpa",
+      "kind": "benefit",
+      "text": "Could remove gadolinium better than DTPA, measured with a 153Gd radiotracer",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-gd",
+        "evidence:value-map:hopo-gd153"
+      ]
+    },
+    {
+      "id": "value:hopo-gd-b-bio",
+      "kind": "benefit",
+      "text": "Lanthanide-toxicity screening could guide dosing and decorporation strategy for late lanthanides",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-latelan-dec",
+        "evidence:value-map:hopo-ln"
+      ]
+    },
+    {
+      "id": "value:hopo-gd-v-regs",
+      "kind": "value",
+      "text": "Contrast-agent makers could offer a chelation remedy alongside their products to address the regulator concern",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-ema",
+        "evidence:value-map:hopo-mitigate"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-p-pb",
+      "kind": "problem",
+      "text": "Public-health and poison-centre teams: toxic heavy metals such as Pb and Cd need effective chelation options",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-b-pb",
+      "kind": "benefit",
+      "text": "Could extend oral chelation to Pb, Cd and Sn exposure (complexation shown in solution chemistry, not yet in animals)",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb",
+        "evidence:value-map:hopo-oral"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-b-safe",
+      "kind": "benefit",
+      "text": "Noncytotoxicity and a clean genotoxicity result point to a favourable safety profile for chelation use",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-goldnp",
+        "evidence:value-map:hopo-bunin-gen"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-v-pb",
+      "kind": "value",
+      "text": "Poison-control and environmental-health programmes could add an oral chelator candidate to their toolbox",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb",
+        "evidence:value-map:hopo-taylor-oral"
+      ]
     }
   ],
   "edges": [
@@ -283,6 +661,608 @@
       "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-12",
+      "from": "value:hopo-c-oral",
+      "to": "value:hopo-rad-b-oral",
+      "type": "ENABLES",
+      "date": "2015-04-06",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-oral",
+        "evidence:value-map:hopo-pk-oral"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-13",
+      "from": "value:hopo-c-oral",
+      "to": "value:hopo-lead-b-pb",
+      "type": "ENABLES",
+      "date": "2010-08-11",
+      "evidence_ids": [
+        "evidence:value-map:hopo-oral",
+        "evidence:value-map:hopo-taylor-oral"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-14",
+      "from": "value:hopo-c-oral",
+      "to": "value:hopo-gd-b-dtpa",
+      "type": "ENABLES",
+      "date": "2018-03-13",
+      "evidence_ids": [
+        "evidence:value-map:hopo-gd"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-15",
+      "from": "value:hopo-f-decorp",
+      "to": "value:hopo-rad-b-more",
+      "type": "ENABLES",
+      "date": "2013-01-04",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-more",
+        "evidence:value-map:hopo-bunin-eff"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-16",
+      "from": "value:hopo-f-affinity",
+      "to": "value:hopo-rad-b-more",
+      "type": "ENABLES",
+      "date": "2013-07-16",
+      "evidence_ids": [
+        "evidence:value-map:hopo-thermo13",
+        "evidence:value-map:hopo-pu95"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-17",
+      "from": "value:hopo-c-actstab",
+      "to": "value:hopo-rad-b-more",
+      "type": "ENABLES",
+      "date": "2018-04-06",
+      "evidence_ids": [
+        "evidence:value-map:hopo-cov",
+        "evidence:value-map:hopo-thermo13"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-18",
+      "from": "value:hopo-c-safe",
+      "to": "value:hopo-rad-b-reg",
+      "type": "ENABLES",
+      "date": "2013-01-04",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bunin-gen",
+        "evidence:value-map:hopo-bunin-reg"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-19",
+      "from": "value:hopo-c-pk",
+      "to": "value:hopo-rad-b-reg",
+      "type": "ENABLES",
+      "date": "2016-04-01",
+      "evidence_ids": [
+        "evidence:value-map:hopo-animal",
+        "evidence:value-map:hopo-window"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-20",
+      "from": "value:hopo-c-form",
+      "to": "value:hopo-rad-b-lung",
+      "type": "ENABLES",
+      "date": "2018-08-25",
+      "evidence_ids": [
+        "evidence:value-map:hopo-chitosan",
+        "evidence:value-map:hopo-chitosan-dose"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-21",
+      "from": "value:hopo-c-iv",
+      "to": "value:hopo-pet-b-bone",
+      "type": "ENABLES",
+      "date": "2019-06-11",
+      "evidence_ids": [
+        "evidence:value-map:hopo-grp4",
+        "evidence:value-map:hopo-hf"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-22",
+      "from": "value:hopo-f-zr",
+      "to": "value:hopo-pet-b-bone",
+      "type": "ENABLES",
+      "date": "2015-11-25",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bone",
+        "evidence:value-map:hopo-zr"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-23",
+      "from": "value:hopo-c-conj",
+      "to": "value:hopo-pet-b-conj",
+      "type": "ENABLES",
+      "date": "2015-11-25",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bifunc"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-24",
+      "from": "value:hopo-c-conj",
+      "to": "value:hopo-pet-b-tat",
+      "type": "ENABLES",
+      "date": "2018-10-29",
+      "evidence_ids": [
+        "evidence:value-map:hopo-th227-label"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-25",
+      "from": "value:hopo-c-iv",
+      "to": "value:hopo-pet-b-tat",
+      "type": "ENABLES",
+      "date": "2019-06-11",
+      "evidence_ids": [
+        "evidence:value-map:hopo-th227",
+        "evidence:value-map:hopo-hf"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-26",
+      "from": "value:hopo-f-gd",
+      "to": "value:hopo-gd-b-dtpa",
+      "type": "ENABLES",
+      "date": "2018-03-13",
+      "evidence_ids": [
+        "evidence:value-map:hopo-gd",
+        "evidence:value-map:hopo-gd153"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-27",
+      "from": "value:hopo-f-affinity",
+      "to": "value:hopo-gd-b-bio",
+      "type": "ENABLES",
+      "date": "2023-06-19",
+      "evidence_ids": [
+        "evidence:value-map:hopo-ln",
+        "evidence:value-map:hopo-latelan-dec"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-28",
+      "from": "value:hopo-c-lumin",
+      "to": "value:hopo-gd-b-bio",
+      "type": "ENABLES",
+      "date": "2015-01-21",
+      "evidence_ids": [
+        "evidence:value-map:hopo-antenna",
+        "evidence:value-map:hopo-eusm"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-29",
+      "from": "value:hopo-c-heavy",
+      "to": "value:hopo-lead-b-pb",
+      "type": "ENABLES",
+      "date": "2018-01-01",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-30",
+      "from": "value:hopo-c-safe",
+      "to": "value:hopo-lead-b-safe",
+      "type": "ENABLES",
+      "date": "2020-01-23",
+      "evidence_ids": [
+        "evidence:value-map:hopo-goldnp",
+        "evidence:value-map:hopo-bunin-gen"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-31",
+      "from": "value:hopo-c-sidero",
+      "to": "value:hopo-rad-b-more",
+      "type": "ENABLES",
+      "date": "2010-08-11",
+      "evidence_ids": [
+        "evidence:value-map:hopo-unrivaled",
+        "evidence:value-map:hopo-iron06"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-32",
+      "from": "value:hopo-rad-b-oral",
+      "to": "value:hopo-v-prep",
+      "type": "DELIVERS",
+      "date": "2010-08-11",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-oral",
+        "evidence:value-map:hopo-bomb"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-33",
+      "from": "value:hopo-rad-b-reg",
+      "to": "value:hopo-rad-v-reg",
+      "type": "DELIVERS",
+      "date": "2013-01-04",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bunin-reg"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-34",
+      "from": "value:hopo-rad-b-more",
+      "to": "value:hopo-rad-v-reg",
+      "type": "DELIVERS",
+      "date": "2013-01-04",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bunin-eff",
+        "evidence:value-map:hopo-pu95"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-35",
+      "from": "value:hopo-rad-b-lung",
+      "to": "value:hopo-rad-v-lung",
+      "type": "DELIVERS",
+      "date": "2020-01-23",
+      "evidence_ids": [
+        "evidence:value-map:hopo-chitosan-dose",
+        "evidence:value-map:hopo-nano-iv"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-36",
+      "from": "value:hopo-pet-b-bone",
+      "to": "value:hopo-v-pet",
+      "type": "DELIVERS",
+      "date": "2015-11-25",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bone",
+        "evidence:value-map:hopo-safer"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-37",
+      "from": "value:hopo-pet-b-conj",
+      "to": "value:hopo-pet-v-ab",
+      "type": "DELIVERS",
+      "date": "2015-11-25",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bifunc",
+        "evidence:value-map:hopo-bt474"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-38",
+      "from": "value:hopo-pet-b-bone",
+      "to": "value:hopo-pet-v-ab",
+      "type": "DELIVERS",
+      "date": "2015-11-25",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bt474"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-39",
+      "from": "value:hopo-pet-b-tat",
+      "to": "value:hopo-pet-v-tat",
+      "type": "DELIVERS",
+      "date": "2018-10-29",
+      "evidence_ids": [
+        "evidence:value-map:hopo-th227-label"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-40",
+      "from": "value:hopo-gd-b-dtpa",
+      "to": "value:hopo-v-gd",
+      "type": "DELIVERS",
+      "date": "2018-03-13",
+      "evidence_ids": [
+        "evidence:value-map:hopo-gd",
+        "evidence:value-map:hopo-mitigate"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-41",
+      "from": "value:hopo-gd-b-dtpa",
+      "to": "value:hopo-gd-v-regs",
+      "type": "DELIVERS",
+      "date": "2018-03-13",
+      "evidence_ids": [
+        "evidence:value-map:hopo-ema",
+        "evidence:value-map:hopo-gd"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-42",
+      "from": "value:hopo-lead-b-pb",
+      "to": "value:hopo-lead-v-pb",
+      "type": "DELIVERS",
+      "date": "2018-01-01",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-43",
+      "from": "value:hopo-lead-b-safe",
+      "to": "value:hopo-lead-v-pb",
+      "type": "DELIVERS",
+      "date": "2020-01-23",
+      "evidence_ids": [
+        "evidence:value-map:hopo-goldnp"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-44",
+      "from": "value:hopo-v-prep",
+      "to": "value:hopo-rad-p-harm",
+      "type": "SOLVES",
+      "date": "2008-10-08",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-harm",
+        "evidence:value-map:hopo-rev98"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-45",
+      "from": "value:hopo-v-prep",
+      "to": "value:hopo-rad-p-dtpa",
+      "type": "SOLVES",
+      "date": "2008-10-08",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-dtpa"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-46",
+      "from": "value:hopo-rad-v-reg",
+      "to": "value:hopo-p-limited",
+      "type": "SOLVES",
+      "date": "2013-01-04",
+      "evidence_ids": [
+        "evidence:value-map:hopo-limited",
+        "evidence:value-map:hopo-bunin-reg"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-47",
+      "from": "value:hopo-rad-v-reg",
+      "to": "value:hopo-rad-p-u",
+      "type": "SOLVES",
+      "date": "2000-05-01",
+      "evidence_ids": [
+        "evidence:value-map:hopo-u-neph"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-48",
+      "from": "value:hopo-rad-v-lung",
+      "to": "value:hopo-rad-p-lung",
+      "type": "SOLVES",
+      "date": "2020-01-23",
+      "evidence_ids": [
+        "evidence:value-map:hopo-nano-iv"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-49",
+      "from": "value:hopo-pet-v-ab",
+      "to": "value:hopo-pet-p-bone",
+      "type": "SOLVES",
+      "date": "2015-11-25",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bone",
+        "evidence:value-map:hopo-dfo"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-50",
+      "from": "value:hopo-v-pet",
+      "to": "value:hopo-pet-p-bone",
+      "type": "SOLVES",
+      "date": "2015-11-25",
+      "evidence_ids": [
+        "evidence:value-map:hopo-bone",
+        "evidence:value-map:hopo-safer"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-51",
+      "from": "value:hopo-pet-v-tat",
+      "to": "value:hopo-pet-p-chel",
+      "type": "SOLVES",
+      "date": "2019-06-11",
+      "evidence_ids": [
+        "evidence:value-map:hopo-th227",
+        "evidence:value-map:hopo-hf-pet"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-52",
+      "from": "value:hopo-gd-v-regs",
+      "to": "value:hopo-gd-p-ema",
+      "type": "SOLVES",
+      "date": "2018-03-13",
+      "evidence_ids": [
+        "evidence:value-map:hopo-ema"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-53",
+      "from": "value:hopo-gd-b-bio",
+      "to": "value:hopo-gd-v-regs",
+      "type": "DELIVERS",
+      "date": "2023-06-19",
+      "evidence_ids": [
+        "evidence:value-map:hopo-latelan-dec",
+        "evidence:value-map:hopo-ln"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-54",
+      "from": "value:hopo-gd-v-regs",
+      "to": "value:hopo-gd-p-ln",
+      "type": "SOLVES",
+      "date": "2023-06-19",
+      "evidence_ids": [
+        "evidence:value-map:hopo-latelan",
+        "evidence:value-map:hopo-latelan-dec"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-55",
+      "from": "value:hopo-lead-v-pb",
+      "to": "value:hopo-lead-p-pb",
+      "type": "SOLVES",
+      "date": "2018-01-01",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
     }
   ],
   "evidence": [
@@ -395,6 +1375,358 @@
       "source_url": "https://openalex.org/W2791769218",
       "quote": "Several MRI contrast agent clinical formulations are now known to leave deposits of the heavy metal gadolinium in the brain, bones, and other organs of patients",
       "source_date": "2018-03-13",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-cov",
+      "source_url": "https://openalex.org/W2796375015",
+      "quote": "the ability of this ligand to either accept or donate electron density as needed from its pyridine rings is found to be key to its extraordinary stability across the actinide series",
+      "source_date": "2018-04-06",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-taylor-oral",
+      "source_url": "https://openalex.org/W2087980883",
+      "quote": "they are orally active, and toxicity is acceptably low at effective dosage",
+      "source_date": "2008-10-08",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-taylor-dtpa",
+      "source_url": "https://openalex.org/W2087980883",
+      "quote": "DTPA is now clinically accepted, but its oral activity is low, it must be injected as a Ca(II) or Zn(II) chelate to avoid toxicity",
+      "source_date": "2008-10-08",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-taylor-harm",
+      "source_url": "https://openalex.org/W2087980883",
+      "quote": "Taken into the body, they damage and induce cancer in bone and liver, and in the lungs if inhaled",
+      "source_date": "2008-10-08",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-taylor-more",
+      "source_url": "https://openalex.org/W2087980883",
+      "quote": "Both are much more effective than CaNa3-DTPA for decorporation of Pu(IV), Am(III), U(VI), and Np(IV,V)",
+      "source_date": "2008-10-08",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-rev98",
+      "source_url": "https://openalex.org/W1983202946",
+      "quote": "Chelation therapy for internally deposited actinides has been shown to reduce acute radiation damage and chemical toxicity and the severity of late radiation effects",
+      "source_date": "1998-10-01",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-u-neph",
+      "source_url": "https://openalex.org/W2083451051",
+      "quote": "Uranium(VI) (UO2(2+), uranyl) is nephrotoxic",
+      "source_date": "2000-05-01",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-pu95",
+      "source_url": "https://openalex.org/W2036746820",
+      "quote": "Eight of the ligands studied promoted significantly more Pu excretion than an equal molar amount of CaNa3-DTPA (the compound in present clinical use)",
+      "source_date": "1995-07-01",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-thermo13",
+      "source_url": "https://openalex.org/W2085453940",
+      "quote": "Comparisons with the standard ligand diethylenetriamine pentaacetic acid (DTPA) provide a thermodynamic basis for the observed significantly higher efficacy of 3,4,3-LI(1,2-HOPO) as an in vivo actinide decorporation agent",
+      "source_date": "2013-07-16",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-antenna",
+      "source_url": "https://openalex.org/W2015995340",
+      "quote": "The complex [Eu(III)(3,4,3-LI(1,2-HOPO))](-) luminesces with a long lifetime (805 mus) and a quantum yield of 7.0% in aqueous solution, at pH 7.4",
+      "source_date": "2009-11-10",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-eusm",
+      "source_url": "https://openalex.org/W1965927692",
+      "quote": "the Eu(III) and Sm(III) complexes of this ligand undergo a transformation after in situ preparation to yield complexes with higher quantum yield (QY) over time",
+      "source_date": "2015-01-21",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-sadhu",
+      "source_url": "https://openalex.org/W2963099377",
+      "quote": "introduction of sulfur as a soft donor atom into the metal coordination sphere indeed infuses an Am 3+ selectivity into the otherwise nonselective ligand L",
+      "source_date": "2019-07-25",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-grp4",
+      "source_url": "https://openalex.org/W2333732538",
+      "quote": "Stability constants log β110 = 43.1 ± 0.6 and 43.5 ± 0.7 were determined for [Zr(IV)(3,4,3-LI(1,2-HOPO))] and [Pu(IV)(3,4,3-LI(1,2-HOPO))], respectively",
+      "source_date": "2015-03-23",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-grp4-pet",
+      "source_url": "https://openalex.org/W2333732538",
+      "quote": "corroborate the great potential of hydroxypyridinonate ligands as new (89)Zr-chelating platforms for immuno-PET applications",
+      "source_date": "2015-03-23",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-nano-iv",
+      "source_url": "https://openalex.org/W2995121391",
+      "quote": "current decorporation protocols to respond to accidental actinide exposure rely on intravenous injections of soluble chelating agents, which are inefficient for treatment of inhaled radionuclides trapped in lungs",
+      "source_date": "2020-01-23",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-th227",
+      "source_url": "https://openalex.org/W2899214672",
+      "quote": "the high affinity and selectivity of the ligand for Th ions over potentially competing endogenous metals",
+      "source_date": "2018-10-29",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-th227-label",
+      "source_url": "https://openalex.org/W2899214672",
+      "quote": "labeling the bioconjugated ligand with Th(IV) could be achieved and completed after 1 h at room temperature",
+      "source_date": "2018-10-29",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-bunin-gen",
+      "source_url": "https://openalex.org/W2106156001",
+      "quote": "neither ligand is genotoxic, in the presence and absence of metabolic activation",
+      "source_date": "2013-01-04",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-bunin-eff",
+      "source_url": "https://openalex.org/W2106156001",
+      "quote": "presumed efficacious doses promoted substantially greater actinide elimination rates than the currently approved agent, diethylenetriamine-pentaacetic acid",
+      "source_date": "2013-01-04",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-bunin-reg",
+      "source_url": "https://openalex.org/W2106156001",
+      "quote": "These results are necessary components of the regulatory approval process and will help determine the optimal human dosing regimens for the treatment of internal radionuclide contamination",
+      "source_date": "2013-01-04",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-iron06",
+      "source_url": "https://openalex.org/W1976659638",
+      "quote": "the high affinity for the ferric ion of the discussed linear ligands strongly correlates with their ability to remove iron in vivo",
+      "source_date": "2006-03-29",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-goldnp",
+      "source_url": "https://openalex.org/W3002510978",
+      "quote": "3,4,3-LI(1,2-HOPO) is a promising therapeutic agent because of its high affinity for f-block elements and noncytotoxicity at medical dosages",
+      "source_date": "2020-01-23",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-talspeak",
+      "source_url": "https://openalex.org/W3031029403",
+      "quote": "the proposed system works at pH values as low as 1.5, which simplifies the process by eliminating the need for pH buffers",
+      "source_date": "2020-05-28",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-pk-oral",
+      "source_url": "https://openalex.org/W2162743494",
+      "quote": "to improve its oral bioavailability, 3,4,3-LI(1,2-HOPO) was coformulated with a proprietary permeability enhancer, leading to a notable increase in oral bioavailability of the compound",
+      "source_date": "2015-04-06",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-pk-dist",
+      "source_url": "https://openalex.org/W2162743494",
+      "quote": "the radiolabeled compound was rapidly distributed to various tissues and organs of the body",
+      "source_date": "2015-04-06",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-hf",
+      "source_url": "https://openalex.org/W2945217543",
+      "quote": "343HOPO forms a neutral 1 : 1 complex, [HfIV343HOPO], that exhibits extreme stability in aqueous solution, with a log β110 value reaching 42.3",
+      "source_date": "2019-06-11",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-hf-pet",
+      "source_url": "https://openalex.org/W2945217543",
+      "quote": "paves the way for new selective sequestration systems for radionuclides including medical 44Ti, 89Zr or 177Lu/Hf isotopes",
+      "source_date": "2019-06-11",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-animal",
+      "source_url": "https://openalex.org/W1543811551",
+      "quote": "there is no designated standard animal model for the evaluation of new actinide chelation drugs",
+      "source_date": "2012-08-01",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-animal-eff",
+      "source_url": "https://openalex.org/W1543811551",
+      "quote": "The dependence of body burden on contamination dose observed in untreated animals was reduced with the hydroxypyridinonate chelators, more so than with the commercially available diethylenetriaminepentaacetic acid chelator",
+      "source_date": "2012-08-01",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-chitosan",
+      "source_url": "https://openalex.org/W2888041331",
+      "quote": "its release from the nanoparticles to lung fluid, observed in in vitro experiments, exhibited an extended release profile",
+      "source_date": "2018-08-25",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-chitosan-dose",
+      "source_url": "https://openalex.org/W2888041331",
+      "quote": "this nanomedicine could lead to a reduction in the dosing frequency required to achieve the decorporation efficacy of unformulated 3,4,3-LI(1,2-HOPO) itself",
+      "source_date": "2018-08-25",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-chitosan-alt",
+      "source_url": "https://openalex.org/W2888041331",
+      "quote": "3,4,3-LI(1,2-HOPO) has been identified as an excellent alternative for DTPA for decorporating actinides, such as Pu and Am, after internal contamination",
+      "source_date": "2018-08-25",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-latelan",
+      "source_url": "https://openalex.org/W4381248275",
+      "quote": "toxicity of late lanthanides is consistent with disruption of vesicle-mediated transport",
+      "source_date": "2023-06-19",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-latelan-dec",
+      "source_url": "https://openalex.org/W4381248275",
+      "quote": "which may help devise new avenues toward the development of decorporation strategies and bio-inspired separation processes",
+      "source_date": "2023-06-19",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-bifunc",
+      "source_url": "https://openalex.org/W2192838961",
+      "quote": "we developed a bifunctional derivative, p-SCN-Bn-HOPO, for conjugation to an antibody",
+      "source_date": "2015-11-25",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-bone",
+      "source_url": "https://openalex.org/W2192838961",
+      "quote": "measuring 17.0%ID/g in the bone at 336 h for (89)Zr-DFO-trastuzumab while (89)Zr-HOPO-trastuzumab only had 2.4%ID/g",
+      "source_date": "2015-11-25",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-bt474",
+      "source_url": "https://openalex.org/W2192838961",
+      "quote": "In vivo studies demonstrate the successful use of (89)Zr-HOPO-trastuzumab to image BT474 breast cancer with low background, good tumor to organ contrast, and, importantly, very low bone uptake",
+      "source_date": "2015-11-25",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-ema",
+      "source_url": "https://openalex.org/W2791769218",
+      "quote": "prompting the European Medicines Agency to recommend discontinuing the use of over half of the GBCAs currently approved for clinical applications",
+      "source_date": "2018-03-13",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-gd153",
+      "source_url": "https://openalex.org/W2791769218",
+      "quote": "Using the radiotracer 153Gd to obtain precise biodistribution data, the results herein, supported by speciation simulations",
+      "source_date": "2018-03-13",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-window",
+      "source_url": "https://openalex.org/W2314954075",
+      "quote": "From early prophylaxis to delayed treatment: Establishing the plutonium decorporation activity window of hydroxypyridinonate chelating agents",
+      "source_date": "2016-04-01",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-es",
+      "source_url": "https://openalex.org/W3127469982",
+      "quote": "Structural and spectroscopic characterization of an einsteinium complex",
+      "source_date": "2021-02-03",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-np",
+      "source_url": "https://openalex.org/W3111674325",
+      "quote": "Hydroxypyridinone-based stabilization of Np(IV) enabling efficient U/Np/Pu separations in the Adapted PUREX process",
+      "source_date": "2020-12-07",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-tam",
+      "source_url": "https://openalex.org/W1970090127",
+      "quote": "Terephthalamide-containing ligands: fast removal of iron from transferrin",
+      "source_date": "2007-11-08",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-hplc",
+      "source_url": "https://openalex.org/W2070305029",
+      "quote": "Characterization, HPLC method development and impurity identification for 3,4,3-LI(1,2-HOPO), a potent actinide chelator for radionuclide decorporation",
+      "source_date": "2014-10-22",
       "observed_at": "2026-11-24T21:25:42.296027+00:00",
       "kind": "paper"
     }
