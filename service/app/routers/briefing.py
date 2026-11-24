@@ -10,6 +10,9 @@ from ..lanes.jakob.briefing import (
     get_session, prepare_briefing, record_turn, sharpen_turn,
 )
 from ..lanes.jakob.sources import SourceError
+from ..lanes.jakob import graph_match
+
+graph_match.build()  # index of demo graph nodes, built once at startup
 from .categories import category_layer
 
 router = APIRouter()

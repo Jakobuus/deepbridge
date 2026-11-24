@@ -503,7 +503,10 @@ def sharpen_turn(session: Session, index: int) -> dict | None:
         topic = (2 if re.search(r'\bknow\b|talk to|introduc', last, re.I) else
                  1 if re.search(r'\bbuy|\bpay|budget|customer', last, re.I) else
                  0 if re.search(r'value|what does', last, re.I) else min(len(asked) - 1, 2))
-    return sharpen.send(turn.session_id, founder, turn.text, topic)
+    def llm_entities(text):  # slow path, bounded to 2 s inside sharpen.send
+        from ..mark.interview import _llm_entities
+        return _llm_entities(text)
+    return sharpen.send(turn.session_id, founder, turn.text, topic, extractor=llm_entities)
 
 
 def extract_turn(session: Session, turn: Turn, index: int, get_categories: Callable[[], list[BuyerCategory]]):

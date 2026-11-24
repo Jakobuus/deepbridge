@@ -4,6 +4,7 @@ Fire-and-forget POST to the graph lane's `/graph/sharpen`; skipped silently when
 """
 import json
 import os
+import queue
 import re
 import threading
 from pathlib import Path
@@ -89,31 +90,50 @@ def entities(answer: str, topic: int) -> list[dict]:
     return found[:6]
 
 
+def _post(base, graph_session, body):
+    try:
+        request = Request(f'{base}/graph/sharpen?session_id={graph_session}', data=json.dumps(body).encode(),
+                          headers={'Content-Type': 'application/json'}, method='POST')
+        urlopen(request, timeout=1.5).close()
+    except Exception:  # HACK: route may be missing or slow; the interview never waits on it.
+        pass
+
+
 def send(graph_session: str, answers: list[str], latest: str = '', topic: int = 0, extractor=None) -> dict:
-    """Post the mapping + new nodes in a background thread (1.5 s timeout, errors and 404 ignored)."""
+    """Fast path (<5 ms): match existing graph nodes -> strengthen; unknown names -> add_nodes; post in a thread.
+    Slow path: optional LLM extractor in a daemon thread with a hard 2 s timeout; new finds -> a second post."""
+    from . import graph_match
+    matched = graph_match.match(latest)
+    known = {m['name'].casefold() for m in matched}
     payload = mapping(answers)
     latest_categories = [c for c, (pattern, _, _) in CATEGORIES.items() if re.search(pattern, latest, re.I)]
-    payload['add_nodes'] = entities(latest, topic)
-    payload['strengthen'] = latest_categories + [n['id'] for n in payload['add_nodes']]
+    payload['add_nodes'] = [n for n in entities(latest, topic) if not any(
+        n['label'].casefold() in name or name in n['label'].casefold() for name in known)
+        and not any(m['kind'] in ('org', 'person') for m in graph_match.match(n['label']))]
+    payload['strengthen'] = latest_categories + [m['id'] for m in matched] + [n['id'] for n in payload['add_nodes']]
+    payload['matched'] = [{'id': m['id'], 'name': m['name'], 'kind': m['kind']} for m in matched]
     payload['note'] = ' '.join(latest.split())[:200]
     base = os.environ.get('DEEPBRIDGE_API', 'http://127.0.0.1:8000').rstrip('/')
+    body = {k: v for k, v in payload.items() if k != 'matched'}
 
-    def post():
-        body = payload
-        if extractor is not None:  # full mode: LLM entities on top of the keyword ones
-            try:
-                extra = [{'id': f'interview:{e["kind"]}:{_slug(e["label"])}', 'label': e['label'], 'kind': e['kind'],
-                          'category': _category(e['label']) or _category(latest)} for e in extractor(latest)]
-                known = {n['id'] for n in payload['add_nodes']}
-                body = {**payload, 'add_nodes': payload['add_nodes'] + [e for e in extra if e['id'] not in known]}
-            except Exception:
-                pass
+    def run():
+        _post(base, graph_session, body)
+        if extractor is None:
+            return
+        results = queue.Queue()
+        threading.Thread(target=lambda: results.put(extractor(latest)), daemon=True).start()
         try:
-            request = Request(f'{base}/graph/sharpen?session_id={graph_session}', data=json.dumps(body).encode(),
-                              headers={'Content-Type': 'application/json'}, method='POST')
-            urlopen(request, timeout=1.5).close()
-        except Exception:  # HACK: route may not exist yet (404) or be slow; the interview never waits on it.
-            pass
+            found = results.get(timeout=2)
+        except Exception:
+            return
+        have = known | {n['label'].casefold() for n in payload['add_nodes']}
+        extra = [{'id': f'interview:{e["kind"]}:{_slug(e["label"])}', 'label': e['label'], 'kind': e['kind'],
+                  'category': _category(e['label']) or _category(latest)}
+                 for e in found or [] if e['label'].casefold() not in have
+                 and not graph_match.match(e['label'])]
+        if extra:
+            _post(base, graph_session, {'add_nodes': extra, 'strengthen': [e['id'] for e in extra],
+                                        'note': 'More from the answer: ' + ', '.join(e['label'] for e in extra)})
 
-    threading.Thread(target=post, daemon=True).start()
+    threading.Thread(target=run, daemon=True).start()
     return payload
