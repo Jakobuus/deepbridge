@@ -84,6 +84,12 @@ def write_drafts(path: Path, edges: list[Edge], evidence: list[Evidence],
     path_edges = [e for e in edges if e.id in path.hops]
     signal = next((s for signal_id in path.why_now_signal_ids for s in signals
                    if s.id == signal_id and s.org_id == path.buyer_org_id and s.evidence_ids), None)
+    if signal is None:
+        # HACK: computed paths carry no why-now ids; use the buyer org's newest cached signal.
+        signal = max((s for s in signals if s.org_id == path.buyer_org_id and s.evidence_ids),
+                     key=lambda s: s.date or '', default=None)
+        known = {e.id for e in evidence}
+        evidence = evidence + [e for e in store.evidence.values() if e.id not in known]
     ids = set(founder.evidence_ids)
     for edge in path_edges:
         ids.update(edge.evidence_ids)

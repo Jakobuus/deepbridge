@@ -285,6 +285,14 @@
       "source_date": "2024-12-01",
       "observed_at": "2026-11-24T19:14:08.331082+00:00",
       "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:05765ea9f4b4a1af93e4",
+      "source_url": "https://openalex.org/W4411217863",
+      "quote": "Pharmacokinetics, Excretion, and Organ Distribution of the Novel Gadolinium-Based MRI Contrast Agent Gadoquatrane in Female Cynomolgus Monkeys",
+      "source_date": "2025-06-11",
+      "observed_at": "2026-11-24T21:29:27.923909+00:00",
+      "kind": "paper"
     }
   ]
 }

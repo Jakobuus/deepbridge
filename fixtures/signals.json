@@ -81,6 +81,16 @@
       "evidence_ids": [
         "evidence:google-citation"
       ]
+    },
+    {
+      "id": "signal:hopo:bayer-gadoquatrane",
+      "org_id": "org:openalex:I67348948",
+      "type": "topic_paper",
+      "title": "Bayer-affiliated authors published a 2025 gadoquatrane (MRI contrast agent) stability study",
+      "date": "2025-06-11",
+      "evidence_ids": [
+        "evidence:buyers:05765ea9f4b4a1af93e4"
+      ]
     }
   ]
 }
