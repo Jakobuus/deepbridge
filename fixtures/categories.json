@@ -1,0 +1,195 @@
+{
+  "_meta": {
+    "cached": true,
+    "founder_id": "person:openalex:A5102978866",
+    "observed_at": "2026-11-24T20:15:48.998214+00:00",
+    "fingerprint": "0d10542dbf6f690c5d153f897d936dd0290bc8bdf61baf4538220c13968d1e31",
+    "generator": "Claude Sonnet",
+    "notes": "Inferred buyer fit based on public evidence. Demand has not been verified."
+  },
+  "plans": [
+    {
+      "name": "Operating AI infrastructure networks",
+      "problem_set": [
+        "Meeting bandwidth, density and power-efficiency pressure from AI scale inside the data center",
+        "Running reconfigurable optical switching and optical links at rack and cluster scale",
+        "Keeping optical transceivers and switching reliable while reducing power"
+      ],
+      "value_prop": "The founder’s programmable nanophotonic processor research could inform experiments with reconfigurable optical switching.",
+      "problem_ids": [
+        "icp-need:2"
+      ],
+      "value_ids": [
+        "icp-role:0"
+      ],
+      "members": {
+        "org:cisco": [
+          "evidence:category:cisco"
+        ],
+        "org:google": [
+          "evidence:category:google"
+        ],
+        "org:meta": [
+          "evidence:category:meta"
+        ],
+        "org:microsoft": [
+          "evidence:category:microsoft"
+        ]
+      }
+    },
+    {
+      "name": "Designing and packaging photonic chips",
+      "problem_set": [
+        "Co-packaging optics with processors and accelerators for AI systems",
+        "Building optical I/O chiplets and optical modules",
+        "Making inverse-designed photonic circuits manufacturable"
+      ],
+      "value_prop": "The founder’s phase-shifter measurements could help chip designers evaluate optical loss and device spacing when integrating photonic components.",
+      "problem_ids": [
+        "icp-need:1"
+      ],
+      "value_ids": [
+        "icp-role:0"
+      ],
+      "members": {
+        "org:amd": [
+          "evidence:category:amd"
+        ],
+        "org:ibm": [
+          "evidence:category:ibm"
+        ],
+        "org:intel": [
+          "evidence:category:intel"
+        ],
+        "org:nvidia": [
+          "evidence:buyers:0b42a55d16f825acd54e"
+        ]
+      }
+    },
+    {
+      "name": "Engineering quantum photonic hardware",
+      "problem_set": [
+        "Designing and simulating photonic circuits for quantum hardware",
+        "Validating photonics hardware and packaging optical components"
+      ],
+      "value_prop": "The founder’s programmable nanophotonic circuits could provide a reference design for testing optical transformations in quantum hardware.",
+      "problem_ids": [
+        "icp-need:1",
+        "icp-need:2"
+      ],
+      "value_ids": [
+        "icp-role:0",
+        "icp-role:2"
+      ],
+      "members": {
+        "org:psiquantum": [
+          "evidence:category:psiquantum",
+          "evidence:buyers:1a99a9cd9f4bc5794b96",
+          "evidence:buyers:ecde9f7dd1860dea84dd",
+          "evidence:buyers:a4340b3d45d7a9a232a3"
+        ]
+      }
+    },
+    {
+      "name": "Laboratory research on photonic computing",
+      "problem_set": [
+        "Scaling photonic computing approaches such as Ising machines to very large problem sizes",
+        "Testing whether photonic hardware can run neural-network-style workloads"
+      ],
+      "value_prop": "The founder’s on-chip deep-learning experiments could give photonic computing labs a reference point for testing other workloads.",
+      "problem_ids": [
+        "icp-need:0"
+      ],
+      "value_ids": [
+        "icp-role:1"
+      ],
+      "members": {
+        "org:ntt": [
+          "evidence:buyers:f8ed12ba9a1b8e000e62"
+        ]
+      }
+    }
+  ],
+  "buyer_evidence": {
+    "org:cisco": [
+      {
+        "id": "evidence:category:cisco",
+        "source_url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/cisco-advances-scalability-and-openness-at-ocp-2026.html",
+        "quote": "Inside the data center, AI scale is driving the same need for greater bandwidth, density and power efficiency across silicon, systems and optics.",
+        "source_date": "2026-10-12",
+        "observed_at": "2026-11-24T20:14:51.972022+00:00",
+        "kind": "web"
+      }
+    ],
+    "org:ibm": [
+      {
+        "id": "evidence:category:ibm",
+        "source_url": "https://research.ibm.com/publications/co-packaged-optics-cpo-technology-full-module-test-vehicle-demonstrations",
+        "quote": "We built co-packaged optics modules having polymer waveguide fiber interfaces successfully.",
+        "source_date": "2025-05-27",
+        "observed_at": "2026-11-24T20:14:51.972022+00:00",
+        "kind": "paper"
+      }
+    ],
+    "org:amd": [
+      {
+        "id": "evidence:category:amd",
+        "source_url": "https://www.amd.com/en/blogs/2025/amd-acquires-enosemi-to-accelerate-co-packaged-optics-innovation.html",
+        "quote": "AMD Acquires Enosemi to Accelerate Co-Packaged Optics Innovation for AI Systems",
+        "source_date": "2025-05-28",
+        "observed_at": "2026-11-24T20:14:51.972022+00:00",
+        "kind": "web"
+      }
+    ],
+    "org:google": [
+      {
+        "id": "evidence:category:google",
+        "source_url": "https://docs.cloud.google.com/tpu/docs/system-architecture-tpu-vm?hl=en",
+        "quote": "the boundary links of each 4x4x4 cube are connected through optical links and reconfigurable optical circuit switches (OCS)",
+        "source_date": null,
+        "observed_at": "2026-11-24T20:14:51.972022+00:00",
+        "kind": "web"
+      }
+    ],
+    "org:meta": [
+      {
+        "id": "evidence:category:meta",
+        "source_url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+        "quote": "A look at why integrated optics matter for rack-scale AI — power, density, disaggregation, and reliability",
+        "source_date": "2026-10-26",
+        "observed_at": "2026-11-24T20:14:51.972022+00:00",
+        "kind": "web"
+      }
+    ],
+    "org:microsoft": [
+      {
+        "id": "evidence:category:microsoft",
+        "source_url": "https://www.microsoft.com/en-us/research/theme/future-ai-infrastructure/networking/",
+        "quote": "optical transceiver and switching technologies designed to deliver significantly higher bandwidth and reliability while reducing power consumption and costs.",
+        "source_date": null,
+        "observed_at": "2026-11-24T20:14:51.972022+00:00",
+        "kind": "web"
+      }
+    ],
+    "org:intel": [
+      {
+        "id": "evidence:category:intel",
+        "source_url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-unveils-first-integrated-optical-io-chiplet.html",
+        "quote": "fully integrated optical compute interconnect (OCI) chiplet co-packaged with an Intel CPU and running live data.",
+        "source_date": "2024-06-26",
+        "observed_at": "2026-11-24T20:15:33.402234+00:00",
+        "kind": "web"
+      }
+    ],
+    "org:psiquantum": [
+      {
+        "id": "evidence:category:psiquantum",
+        "source_url": "https://www.psiquantum.com/architecture",
+        "quote": "PsiQuantum made a strategic decision from the very beginning to use photons (particles of light).",
+        "source_date": null,
+        "observed_at": "2026-11-24T20:15:33.402234+00:00",
+        "kind": "web"
+      }
+    ]
+  }
+}
