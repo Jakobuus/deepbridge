@@ -52,6 +52,9 @@ def set_balance(external_id, target):
         call('POST', f'/wallets/{w["id"]}/top-up', {'credits_to_add': str(diff),
              'transaction_reason': 'FREE_CREDIT_GRANT', 'description': 'demo reset/top-up'})
     elif diff < 0:
-        call('POST', f'/wallets/{w["id"]}/debit', {'credits': str(-diff),
-             'transaction_reason': 'MANUAL_BALANCE_DEBIT', 'description': 'demo reset'})
+        try:  # HACK: debit endpoint is not in the public spec; reset only tops up if it fails
+            call('POST', f'/wallets/{w["id"]}/debit', {'credits': str(-diff),
+                 'transaction_reason': 'MANUAL_BALANCE_DEBIT', 'description': 'demo reset'})
+        except SystemExit:
+            print('note: cannot debit above-target wallet; balance stays', cur)
     return cur, balance(w['id'])
