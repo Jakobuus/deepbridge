@@ -301,49 +301,89 @@ export function ScreenLeads({
       }
     }
 
-    const width = 1220; // room for full org names right of the org column (no truncation)
-    // Tall enough that every buyer org gets its own row (38 orgs used to stack into one block).
-    const height = Math.max(520, Math.max(buyerOrgIds.length, bridgeIds.length) * 17 + 90);
+    // Radial two-ring layout. viewBox is fixed; rings are fractions of min(width, height).
+    const width = 1300;
+    const height = 1000;
+    const cx = width / 2;
+    const cy = height / 2;
+    const base = Math.min(width, height);
+    const R_INNER = base * 0.28;
+    const R_BRIDGE = base * 0.36;
+    const R_HOP2 = base * 0.4;
+    const R_OUTER = base * 0.44;
+    const rad = (deg: number) => (deg * Math.PI) / 180;
+    const polar = (deg: number, r: number) => ({ x: cx + r * Math.cos(rad(deg)), y: cy + r * Math.sin(rad(deg)) });
     const coords: Record<
       Id,
-      { x: number; y: number; col: "founder" | "cat" | "bridge" | "hop2" | "org" }
+      {
+        x: number;
+        y: number;
+        col: "founder" | "cat" | "bridge" | "hop2" | "org";
+        angle?: number;
+        arcRank?: number;
+      }
     > = {};
 
-    // HOPO: the company founder (Hannah) is the centre; the scientist whose co-authorships give the warm paths sits one hop right.
+    // HOPO: Hannah/HOPO is the centre (orb); the scientist (founder node) is a satellite right next to it.
     const hopoCentre = founderNodeId === HOPO_FOUNDER_ID;
-    coords[founderNodeId] = { x: hopoCentre ? 205 : 105, y: height / 2, col: "founder" };
+    coords[founderNodeId] = hopoCentre ? { x: cx + 190, y: cy, col: "founder" } : { x: cx, y: cy, col: "founder" };
 
-    const distributeY = (count: number, idx: number, padTop = 52, padBottom = 52) => {
-      if (count <= 1) return height / 2;
-      const usable = height - padTop - padBottom;
-      return padTop + (usable * idx) / (count - 1);
-    };
-
-    if (showCategoryLayer && categories.length > 0) {
-      categories.forEach((cat, idx) => {
-        coords[cat.id] = {
-          x: 315,
-          y: distributeY(categories.length, idx, 90, 90),
-          col: "cat",
-        };
-      });
+    // Group orgs into category arcs (first matching category wins; leftovers go to an unlabelled "other" arc).
+    const orgCat: Record<Id, number> = {};
+    categories.forEach((cat, idx) => {
+      for (const oid of cat.org_ids) if (buyerOrgIds.includes(oid) && orgCat[oid] === undefined) orgCat[oid] = idx;
+    });
+    const groups: Id[][] = categories.map(() => []);
+    const otherOrgs: Id[] = [];
+    for (const oid of buyerOrgIds) {
+      if (orgCat[oid] !== undefined) groups[orgCat[oid]].push(oid);
+      else otherOrgs.push(oid);
     }
-
-    const bridgeX = showCategoryLayer && categories.length > 0 ? 540 : 435;
-    const hop2X = showCategoryLayer && categories.length > 0 ? 720 : 680;
-    const orgX = 880;
-
-    bridgeIds.forEach((id, idx) => {
-      coords[id] = { x: bridgeX, y: distributeY(bridgeIds.length, idx, 44, 44), col: "bridge" };
+    const arcList: { catIdx: number; ids: Id[] }[] = groups.map((ids, catIdx) => ({ catIdx, ids }));
+    if (otherOrgs.length > 0) arcList.push({ catIdx: -1, ids: otherOrgs });
+    const activeArcs = arcList.filter((a) => a.ids.length > 0);
+    const GAP = activeArcs.length > 1 ? 8 : 0; // degrees between arcs
+    const totalOrgs = activeArcs.reduce((s, a) => s + a.ids.length, 0);
+    const usable = 360 - GAP * activeArcs.length;
+    let cursor = -90 + GAP / 2; // start at the top, go clockwise: first categories land top/right
+    const catAngle: Record<number, number> = {};
+    const orgAngle: Record<Id, number> = {};
+    const labelledOrgIds = new Set<Id>();
+    for (const arc of activeArcs) {
+      const span = (usable * arc.ids.length) / Math.max(1, totalOrgs);
+      const step = span / arc.ids.length;
+      arc.ids.forEach((oid, i) => {
+        const a = cursor + step * (i + 0.5);
+        orgAngle[oid] = a;
+        coords[oid] = { ...polar(a, R_OUTER), col: "org", angle: a, arcRank: i };
+        if (i < 4) labelledOrgIds.add(oid); // top orgs per arc (buyerOrgIds is score-ordered)
+      });
+      if (arc.catIdx >= 0) catAngle[arc.catIdx] = cursor + span / 2;
+      cursor += span + GAP;
+    }
+    // Categories with no orgs: spread into the remaining free angles at the end of the circle.
+    categories.forEach((cat, idx) => {
+      const a = catAngle[idx] ?? -90 + (360 * idx) / Math.max(1, categories.length);
+      coords[cat.id] = { ...polar(a, R_INNER), col: "cat", angle: a };
     });
 
-    secondHopIds.forEach((id, idx) => {
-      coords[id] = { x: hop2X, y: distributeY(secondHopIds.length, idx, 130, 130), col: "hop2" };
-    });
-
-    buyerOrgIds.forEach((id, idx) => {
-      coords[id] = { x: orgX, y: distributeY(buyerOrgIds.length, idx, 52, 52), col: "org" };
-    });
+    // People sit on intermediate rings at the angle of the org they lead to (small offsets keep siblings apart).
+    const personAngle = (pid: Id): number => {
+      const p = sortedAllPaths.find((x) => x.bridge_id === pid || x.buyer_person_id === pid);
+      return (p && orgAngle[p.buyer_org_id]) ?? -90;
+    };
+    const used: Record<string, number> = {};
+    const placePerson = (id: Id, r: number, col: "bridge" | "hop2") => {
+      const a0 = personAngle(id);
+      const key = `${col}:${Math.round(a0 * 2)}`;
+      const k = used[key] ?? 0;
+      used[key] = k + 1;
+      const off = k === 0 ? 0 : (k % 2 ? 1 : -1) * Math.ceil(k / 2) * 1.6;
+      const a = a0 + off;
+      coords[id] = { ...polar(a, r), col, angle: a };
+    };
+    bridgeIds.forEach((id) => placePerson(id, R_BRIDGE, "bridge"));
+    secondHopIds.forEach((id) => placePerson(id, R_HOP2, "hop2"));
 
     // Map each org to its first matching category color
     const orgCatColor: Record<Id, string> = {};
@@ -354,8 +394,6 @@ export function ScreenLeads({
       }
     });
 
-    // Labels always shown for Bayer and the top 3 buyer orgs by best path score; the rest on hover.
-    const labelledOrgIds = new Set<Id>(buyerOrgIds.slice(0, 3));
     for (const oid of buyerOrgIds) {
       const o = orgs.find((x) => x.id === oid);
       if (o && /bayer/i.test(o.name)) labelledOrgIds.add(oid);
@@ -370,13 +408,34 @@ export function ScreenLeads({
       buyerOrgIds,
       coords,
       orgCatColor,
-      bridgeX,
-      hop2X,
-      orgX,
+      cx,
+      cy,
+      rInner: R_INNER,
+      rOuter: R_OUTER,
       width,
       height,
     };
   }, [founder?.id, paths, orgs, categories, showCategoryLayer]);
+
+  // Quadratic curve whose control point is pulled toward the centre, so edges bow inward.
+  const curveD = (a: { x: number; y: number }, b: { x: number; y: number }, pull = 0.55) => {
+    const { cx, cy } = graphLayout;
+    const qx = (a.x + b.x) / 2;
+    const qy = (a.y + b.y) / 2;
+    return `M ${a.x} ${a.y} Q ${qx + (cx - qx) * pull} ${qy + (cy - qy) * pull} ${b.x} ${b.y}`;
+  };
+  // Radial label geometry: rotate along the radius, flip on the left half so text is never upside down.
+  const radialLabel = (pos: { x: number; y: number }, angle: number, name: string, gap = 12, fontPx = 12) => {
+    const c = Math.cos((angle * Math.PI) / 180);
+    const s = Math.sin((angle * Math.PI) / 180);
+    const right = c >= 0;
+    const tx = c > 0.001 ? (graphLayout.width - pos.x) / c : c < -0.001 ? pos.x / -c : Infinity;
+    const ty = s > 0.001 ? (graphLayout.height - pos.y) / s : s < -0.001 ? pos.y / -s : Infinity;
+    const avail = Math.min(tx, ty) - gap - 6;
+    const maxChars = Math.max(6, Math.floor(avail / (fontPx * 0.55)));
+    const text = name.length > maxChars ? `${name.slice(0, maxChars - 1)}…` : name;
+    return { text, rot: right ? angle : angle + 180, anchor: (right ? "start" : "end") as "start" | "end", x: right ? gap : -gap };
+  };
 
   const activeHopSet = React.useMemo(() => new Set(activePath?.hops ?? []), [activePath]);
 
@@ -491,30 +550,34 @@ export function ScreenLeads({
                 </radialGradient>
               </defs>
 
-              {/* Category arcs: core → category always (faint); category → orgs only for the picked category */}
+              {/* Ring guides */}
+              <circle cx={graphLayout.cx} cy={graphLayout.cy} r={graphLayout.rInner} fill="none" stroke="#ffffff" strokeOpacity={0.05} />
+              <circle cx={graphLayout.cx} cy={graphLayout.cy} r={graphLayout.rOuter} fill="none" stroke="#ffffff" strokeOpacity={0.05} />
+
+              {/* Soft fans: category → its orgs (low opacity, category colour); founder → category at ~0.5 */}
               {categories.map((cat, idx) => {
                 const cPos = graphLayout.coords[cat.id];
-                const fPos = graphLayout.coords[graphLayout.founderNodeId];
-                if (!cPos || !fPos) return null;
+                if (!cPos) return null;
+                const centre = { x: graphLayout.cx, y: graphLayout.cy };
                 const color = resolveCatColor(cat.colour, idx);
                 const isCatSelected = selectedCatId === cat.id;
                 return (
-                  <g key={`cat-links-${cat.id}`} opacity={isCatSelected ? 0.6 : 0.3}>
-                    <line x1={fPos.x} y1={fPos.y} x2={cPos.x} y2={cPos.y} stroke={color} strokeWidth={1} />
-                    {isCatSelected &&
-                      cat.org_ids.map((oid) => {
-                        const oPos = graphLayout.coords[oid];
-                        if (!oPos) return null;
-                        return (
-                          <path
-                            key={`${cat.id}-${oid}`}
-                            d={`M ${cPos.x} ${cPos.y} C ${cPos.x + 220} ${cPos.y}, ${oPos.x - 220} ${oPos.y}, ${oPos.x} ${oPos.y}`}
-                            fill="none"
-                            stroke={color}
-                            strokeWidth={0.8}
-                          />
-                        );
-                      })}
+                  <g key={`cat-links-${cat.id}`}>
+                    <path d={curveD(centre, cPos, 0.2)} fill="none" stroke={color} strokeWidth={1} strokeOpacity={isCatSelected ? 0.8 : 0.5} />
+                    {cat.org_ids.map((oid) => {
+                      const oPos = graphLayout.coords[oid];
+                      if (!oPos || graphLayout.orgCatColor[oid] !== color) return null;
+                      return (
+                        <path
+                          key={`${cat.id}-${oid}`}
+                          d={curveD(cPos, oPos, 0.6)}
+                          fill="none"
+                          stroke={color}
+                          strokeWidth={0.8}
+                          strokeOpacity={isCatSelected ? 0.35 : 0.11}
+                        />
+                      );
+                    })}
                   </g>
                 );
               })}
@@ -526,15 +589,14 @@ export function ScreenLeads({
                 if (!fromPos || !toPos) return null;
                 const isLit = activeHopSet.has(edge.id);
                 const isWeakest = isLit && activePath?.weakest_edge_id === edge.id;
-                const dx = toPos.x - fromPos.x;
-                const curvePath = `M ${fromPos.x} ${fromPos.y} C ${fromPos.x + dx * 0.42} ${fromPos.y}, ${toPos.x - dx * 0.42} ${toPos.y}, ${toPos.x} ${toPos.y}`;
+                const curvePath = curveD(fromPos, toPos, 0.45);
                 const strokeColor = isWeakest
                   ? "#fbbf24"
                   : edge.name_check === "rejected"
                     ? "#f87171"
                     : isLit
                       ? "#38bdf8"
-                      : "rgba(148, 163, 184, 0.10)";
+                      : "rgba(148, 163, 184, 0.07)";
                 return (
                   <g key={edge.id} onClick={() => onInspectEdge(edge.id)} className="cursor-pointer">
                     <title>{edge.label}</title>
@@ -555,14 +617,14 @@ export function ScreenLeads({
                 (() => {
                   const fPos = graphLayout.coords[graphLayout.founderNodeId];
                   if (!fPos) return null;
-                  const cx = 72;
+                  const cx = graphLayout.cx;
                   return (
                     <g>
-                      <line x1={cx} y1={fPos.y} x2={fPos.x} y2={fPos.y} stroke="#38bdf8" strokeWidth={1.5} strokeOpacity={0.7} />
-                      <text x={(cx + fPos.x) / 2 + 4} y={fPos.y - 7} textAnchor="middle" className="fill-slate-400 font-sans text-[10px]" stroke="#020510" strokeWidth={3} paintOrder="stroke">
+                      <line x1={cx + 50} y1={fPos.y} x2={fPos.x - 10} y2={fPos.y} stroke="#38bdf8" strokeWidth={1.5} strokeOpacity={0.7} />
+                      <text x={(cx + fPos.x) / 2 + 20} y={fPos.y - 7} textAnchor="middle" className="fill-slate-400 font-sans text-[10px]" stroke="#020510" strokeWidth={3} paintOrder="stroke">
                         science from
                       </text>
-                      <g transform={`translate(${cx}, ${fPos.y})`}>
+                      <g transform={`translate(${cx}, ${graphLayout.cy})`}>
                         {/* Graph core: particle orb (Mark) that kicks once per incoming stream event. */}
                         <foreignObject x={-48} y={-48} width={96} height={96} style={{ overflow: "visible" }}>
                           <ParticleOrb
@@ -645,9 +707,25 @@ export function ScreenLeads({
                   >
                     <title>{cat.name}</title>
                     <circle r={isCatSelected ? 7 : 5.5} fill={color} />
-                    <text y={-12} textAnchor="middle" className="fill-slate-200 font-sans text-[11px]" stroke="#020510" strokeWidth={4} paintOrder="stroke">
-                      {shortCategoryName(cat.name)}
-                    </text>
+                    {(() => {
+                      const ang = pos.angle ?? 0;
+                      const c = Math.cos((ang * Math.PI) / 180);
+                      const sn = Math.sin((ang * Math.PI) / 180);
+                      return (
+                        <text
+                          x={c * 14}
+                          y={sn * 14 + 4}
+                          textAnchor={Math.abs(c) < 0.3 ? "middle" : c > 0 ? "start" : "end"}
+                          dy={Math.abs(c) < 0.3 ? (sn < 0 ? -4 : 8) : 0}
+                          className="fill-slate-200 font-sans text-[11px]"
+                          stroke="#020510"
+                          strokeWidth={4}
+                          paintOrder="stroke"
+                        >
+                          {shortCategoryName(cat.name)}
+                        </text>
+                      );
+                    })()}
                   </g>
                 );
               })}
@@ -679,11 +757,14 @@ export function ScreenLeads({
                       stroke={isLit ? "#e0f2fe" : "none"}
                       strokeWidth={isLit ? 1.5 : 0}
                     />
-                    {isLit && (
-                      <text x={12} y={4} className="fill-white font-sans text-[12px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
-                        {person.name}
-                      </text>
-                    )}
+                    {isLit && (() => {
+                      const lb = radialLabel(pos, pos.angle ?? 0, person.name, 12);
+                      return (
+                        <text x={lb.x} y={4} transform={`rotate(${lb.rot})`} textAnchor={lb.anchor} className="fill-white font-sans text-[12px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
+                          {lb.text}
+                        </text>
+                      );
+                    })()}
                   </g>
                 );
               })}
@@ -710,15 +791,20 @@ export function ScreenLeads({
                   >
                     <title>{org.name}</title>
                     <circle r={isLit ? 7 : 4.5} fill={catColor} stroke={isLit ? "#ffffff" : "none"} strokeWidth={1.5} />
-                    {showLabel && (
-                      <text
-                        x={12}
-                        y={4}
-                        className={`font-sans text-[12px] ${isLit ? "fill-white font-semibold" : "fill-slate-300"}`} stroke="#020510" strokeWidth={4} paintOrder="stroke"
-                      >
-                        {org.name}
-                      </text>
-                    )}
+                    {showLabel && (() => {
+                      const lb = radialLabel(pos, pos.angle ?? 0, org.name, 12);
+                      return (
+                        <text
+                          x={lb.x}
+                          y={4}
+                          transform={`rotate(${lb.rot})`}
+                          textAnchor={lb.anchor}
+                          className={`font-sans text-[12px] ${isLit ? "fill-white font-semibold" : "fill-slate-300"}`} stroke="#020510" strokeWidth={4} paintOrder="stroke"
+                        >
+                          {lb.text}
+                        </text>
+                      );
+                    })()}
                   </g>
                 );
               })}
