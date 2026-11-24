@@ -6,7 +6,7 @@ from .common import check_founder
 from ..models import Credits, DraftRequest
 from ..lanes.jakob.credits import credits as read_credits, gate
 from . import contacts, outreach, prospect
-from ..lanes.jakob import prospect as prospect_lane
+from ..lanes.jakob import prospect as prospect_lane, drafts as drafts_lane
 
 router = APIRouter(dependencies=[Depends(check_founder)])
 
@@ -24,7 +24,10 @@ async def meter_action(request: Request, _=Depends(check_founder)):
         except ValueError:
             return
         with store.lock:
-            store.get('paths', body.path_id)
+            known = body.path_id in store.paths
+        if not known and await asyncio.to_thread(
+                drafts_lane.computed_path, body.path_id, request.query_params.get('founder_id')) is None:
+            return  # let the endpoint return its normal 404
         await asyncio.to_thread(gate, 'drafts:' + body.path_id, draft=True)
     elif request.method == 'POST' and request.url.path == '/prospect':
         try:
