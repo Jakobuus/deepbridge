@@ -16,7 +16,8 @@ PING_EVERY = 15.0
 POLL = 0.05
 MAX_SPEED = 64.0
 MAX_LIVE = 64
-_live_count = 0
+_active = 0  # live + replay streams
+BATCH = 50
 MIN_SLEEP, MAX_SLEEP = 0.02, 2.0
 HEADERS = {'Cache-Control': 'no-cache', 'X-Accel-Buffering': 'no'}
 
@@ -34,20 +35,29 @@ def _gap(prev: dict, cur: dict, speed: float) -> float:
 
 
 async def _live(request: Request, session_id: str, from_seq: int, q: queue.Queue):
-    """The queue is only a wakeup; events are always read from the log in seq order."""
+    """The queue is only a wakeup; events are read from the log in seq order, only when woken (+1 s safety)."""
     last = from_seq
     ping_at = time.monotonic() + PING_EVERY
     check_at = time.monotonic() + 1.0
+    reread_at = 0.0
     while True:
+        woke = False
         try:
             while True:
                 q.get_nowait()  # drain wakeups
+                woke = True
         except queue.Empty:
             pass
-        for e in events.events(session_id, last):
-            last = max(last, e['seq'])
-            ping_at = time.monotonic() + PING_EVERY
-            yield _sse(e)
+        now = time.monotonic()
+        if woke or now >= reread_at:
+            reread_at = now + 1.0
+            while batch := events.events(session_id, last, BATCH):
+                for e in batch:
+                    last = e['seq']
+                    yield _sse(e)
+                    if time.monotonic() >= ping_at:
+                        ping_at = time.monotonic() + PING_EVERY
+                        yield ': ping\n\n'
         now = time.monotonic()
         if now >= check_at:
             check_at = now + 1.0
@@ -77,16 +87,25 @@ class _CleanupResponse(StreamingResponse):
 
 
 async def _replay(request: Request, session_id: str, from_seq: int, speed: float):
+    end_seq = events.last_seq(session_id)
+    last = pos = max(from_seq, 0)
     prev = None
-    last = from_seq
-    for e in events.events(session_id, from_seq):
-        if prev is not None:
-            await asyncio.sleep(_gap(prev, e, speed))
-            if await request.is_disconnected():
-                return
-        prev = e
-        last = e['seq']
-        yield _sse(e)
+    ping_at = time.monotonic() + PING_EVERY
+    while pos < end_seq:
+        batch = events.events(session_id, pos, min(BATCH, end_seq - pos))
+        if not batch:
+            break
+        for e in batch:
+            if prev is not None:
+                await asyncio.sleep(_gap(prev, e, speed))
+                if await request.is_disconnected():
+                    return
+            if time.monotonic() >= ping_at:
+                ping_at = time.monotonic() + PING_EVERY
+                yield ': ping\n\n'
+            prev = e
+            last = pos = e['seq']
+            yield _sse(e)
     yield f"event: end\ndata: {json.dumps({'session_id': session_id, 'last_seq': last})}\n\n"
 
 
@@ -98,34 +117,33 @@ async def graph_events(session_id: str):
 
 @router.get('/graph/stream')
 async def graph_stream(request: Request, session_id: str, speed: float = Query(1.0, gt=0), from_seq: int = 0):
-    global _live_count
+    global _active
     await asyncio.to_thread(events.ensure_recorded, session_id)
     try:
         from_seq = max(from_seq, int(request.headers.get('last-event-id', '')))
     except ValueError:
         pass
     speed = min(speed, MAX_SPEED)
-    if speed > 1:
-        return StreamingResponse(_replay(request, session_id, from_seq, speed), media_type='text/event-stream',
-                                 headers=HEADERS)
-    if _live_count >= MAX_LIVE:
-        raise HTTPException(503, 'too many live streams')
-    _live_count += 1
-    q = events.subscribe(session_id, maxsize=1)
+    if _active >= MAX_LIVE:
+        raise HTTPException(503, 'too many streams')
+    _active += 1
+    q = events._subscribe_bounded(session_id, 1) if speed <= 1 else None
     done = False
 
     def on_close():
-        global _live_count
+        global _active
         nonlocal done
         if done:
             return
         done = True
-        _live_count -= 1
-        events.unsubscribe(session_id, q)
+        _active -= 1
+        if q is not None:
+            events.unsubscribe(session_id, q)
 
     try:
-        return _CleanupResponse(_live(request, session_id, from_seq, q), on_close,
-                                media_type='text/event-stream', headers=HEADERS)
+        gen = (_live(request, session_id, from_seq, q) if q is not None
+               else _replay(request, session_id, from_seq, speed))
+        return _CleanupResponse(gen, on_close, media_type='text/event-stream', headers=HEADERS)
     except BaseException:
         on_close()
         raise

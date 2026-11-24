@@ -216,7 +216,8 @@ def test_ensure_recorded_rejects_invalid_file():
     from pathlib import Path
     sid = _sid('bad')
     good = _mk(2)
-    for tweak in ({'phase': 'nope'}, {'kind': 'x'}, {'layer': 'x'}, {'at': 5}):
+    for tweak in ({'phase': 'nope'}, {'kind': 'x'}, {'layer': 'x'}, {'at': 5}, {'phase': ['reading']}, {'kind': {'a': 1}}, {'at': 'not-a-date'},
+                  {'node': 'str'}, {'edge': []}, {'evidence': {}}, {'status': 3}):
         bad = [good[0], {**good[1], **tweak}]
         with tempfile.TemporaryDirectory() as d:
             (Path(d) / f'{sid}.json').write_text(json.dumps(bad))
@@ -235,6 +236,54 @@ def test_ensure_recorded_rejects_invalid_file():
             events._LOG_DIR = old
 
 
+def test_valid_record_accepts_z_and_optionals():
+    r = _mk(1)[0]
+    assert events._valid_record({**r, 'at': '2026-11-24T12:00:00Z', 'node': {}, 'evidence': [], 'status': 's'})
+
+
+def test_heartbeat_while_events_flow():
+    from app.routers import graphstream
+    sid = _sid('hb')
+    events.publish(sid, 'reading', 'status', 'core', status='x')
+    stop = threading.Event()
+
+    def pump():
+        while not stop.is_set():
+            events.publish(sid, 'reading', 'status', 'core', status='y')
+            time.sleep(0.05)
+
+    old, graphstream.PING_EVERY = graphstream.PING_EVERY, 0.3
+    t = threading.Thread(target=pump)
+    t.start()
+    try:
+        msgs = _read(f'/graph/stream?session_id={sid}', until=lambda m: any('comment' in x for x in m))
+        assert any('comment' in x for x in msgs) and len(_graph(msgs)) >= 2
+    finally:
+        stop.set()
+        t.join()
+        graphstream.PING_EVERY = old
+
+
+def test_replay_cap_and_batches():
+    from app.routers import graphstream
+    sid = _sid('cap')
+    events.load_log(sid, _mk(120))
+    msgs = _read(f'/graph/stream?session_id={sid}&speed=64', timeout=20)
+    assert [e['seq'] for e in _graph(msgs)] == list(range(1, 121))
+    time.sleep(0.3)  # let the first stream's cleanup finish
+    old, graphstream._active = graphstream._active, graphstream.MAX_LIVE
+    try:
+        urllib.request.urlopen(f'{_start()}/graph/stream?session_id={sid}&speed=4')
+    except urllib.error.HTTPError as e:
+        assert e.code == 503
+    else:
+        raise AssertionError('expected 503')
+    finally:
+        graphstream._active = old
+    time.sleep(0.2)
+    assert graphstream._active == old
+
+
 def test_ensure_recorded_does_not_clobber():
     sid = _sid('cl')
     events.publish(sid, 'reading', 'status', 'core', status='live')
@@ -244,7 +293,7 @@ def test_ensure_recorded_does_not_clobber():
 
 def test_unsubscribe_cleans_key_and_bounded_publish():
     sid = _sid('bq')
-    q = events.subscribe(sid, maxsize=1)
+    q = events._subscribe_bounded(sid, 1)
     for i in range(5):
         events.publish(sid, 'reading', 'status', 'core', status=str(i))  # must not block/raise
     assert q.qsize() == 1

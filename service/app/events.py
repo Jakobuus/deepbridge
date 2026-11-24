@@ -32,16 +32,28 @@ def publish(session_id: str, phase: str, kind: str, layer: str, **payload) -> di
     return event
 
 
-def events(session_id: str, from_seq: int = 0) -> list[dict]:
+def events(session_id: str, from_seq: int = 0, limit: int | None = None) -> list[dict]:
+    """Events with seq > from_seq. seq is contiguous 1..N, so this is a slice: O(returned), not O(log)."""
+    start = max(from_seq, 0)
     with _LOCK:
-        return [e for e in _LOG.get(session_id, []) if e['seq'] > from_seq]
+        log = _LOG.get(session_id, [])
+        return log[start:] if limit is None else log[start:start + max(limit, 0)]
 
 
-def subscribe(session_id: str, maxsize: int = 0) -> queue.Queue:
+def last_seq(session_id: str) -> int:
+    with _LOCK:
+        return len(_LOG.get(session_id, []))
+
+
+def _subscribe_bounded(session_id: str, maxsize: int = 1) -> queue.Queue:
     q: queue.Queue = queue.Queue(maxsize)
     with _LOCK:
         _SUBS.setdefault(session_id, []).append(q)
     return q
+
+
+def subscribe(session_id: str) -> queue.Queue:
+    return _subscribe_bounded(session_id, 0)
 
 
 def unsubscribe(session_id: str, q: queue.Queue) -> None:
@@ -86,9 +98,29 @@ def _install_if_empty(session_id: str, events_list: list[dict]) -> bool:
         return True
 
 
+def _in(v, allowed: set) -> bool:
+    return isinstance(v, str) and v in allowed
+
+
+def _valid_at(v) -> bool:
+    if not isinstance(v, str):
+        return False
+    try:
+        datetime.fromisoformat(v[:-1] + '+00:00' if v.endswith('Z') else v)
+    except ValueError:
+        return False
+    return True
+
+
 def _valid_record(e) -> bool:
-    return (isinstance(e, dict) and e.get('phase') in _PHASES and e.get('kind') in _KINDS
-            and e.get('layer') in _LAYERS and isinstance(e.get('at'), str))
+    if not (isinstance(e, dict) and _in(e.get('phase'), _PHASES) and _in(e.get('kind'), _KINDS)
+            and _in(e.get('layer'), _LAYERS) and _valid_at(e.get('at'))):
+        return False
+    if any(k in e and not isinstance(e[k], dict) for k in ('node', 'edge', 'path')):
+        return False
+    if 'evidence' in e and not isinstance(e['evidence'], list):
+        return False
+    return not ('status' in e and not isinstance(e['status'], str))
 
 
 def ensure_recorded(session_id: str) -> bool:
