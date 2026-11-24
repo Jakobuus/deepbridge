@@ -2,6 +2,8 @@
 import asyncio
 import json
 import queue
+import re
+import threading
 import time
 from datetime import datetime
 
@@ -147,3 +149,46 @@ async def graph_stream(request: Request, session_id: str, speed: float = Query(1
     except BaseException:
         on_close()
         raise
+
+
+_SID = re.compile(r'[A-Za-z0-9_-]{1,64}')
+_running: set[str] = set()
+_running_lock = threading.Lock()
+
+
+def _run_discovery(session_id: str, evs: list[dict], pace: float):
+    try:
+        events.publish(session_id, 'discovery', 'status', 'category', status='Finding buyers and warm paths…')
+        for e in evs:
+            time.sleep(pace)
+            events.publish(session_id, e['phase'], e['kind'], e['layer'],
+                           **{k: v for k, v in e.items() if k not in ('phase', 'kind', 'layer')})
+    finally:
+        with _running_lock:
+            _running.discard(session_id)
+
+
+@router.post('/graph/discover', status_code=202)
+async def graph_discover(session_id: str, founder_id: str = 'person:openalex:A5043992375', pace: float = 0.4):
+    from ..lanes.erick import record_log
+    if not _SID.fullmatch(session_id):
+        raise HTTPException(422, 'invalid session_id')
+    if founder_id not in record_log.founder_sessions():
+        raise HTTPException(404, 'unsupported founder_id')
+    pace = min(2.0, max(0.05, pace))
+    with _running_lock:
+        if session_id in _running:
+            raise HTTPException(409, 'discovery already running')
+        _running.add(session_id)
+    try:
+        await asyncio.to_thread(events.ensure_recorded, session_id)
+        if any(e.get('phase') in ('discovery', 'paths') for e in events.events(session_id)):
+            raise HTTPException(409, 'already has discovery events')
+        evs = await asyncio.to_thread(record_log.discovery_events, founder_id)
+        threading.Thread(target=_run_discovery, args=(session_id, evs, pace), daemon=True).start()
+    except BaseException:
+        with _running_lock:
+            _running.discard(session_id)
+        raise
+    n = len(evs) + 1
+    return {'session_id': session_id, 'founder_id': founder_id, 'queued': n, 'pace': pace, 'eta_s': round(n * pace, 1)}

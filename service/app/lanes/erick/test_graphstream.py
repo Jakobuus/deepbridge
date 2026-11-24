@@ -319,6 +319,38 @@ def test_disconnect_unsubscribes():
     assert not events._SUBS.get(sid)
 
 
+def _post(url):
+    try:
+        r = urllib.request.urlopen(urllib.request.Request(url, method='POST'), timeout=30)
+        return r.status, json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        return e.code, None
+
+
+def test_discover():
+    import urllib.parse
+    base = _start()
+    sid = _sid('disc')
+    st, body = _post(f'{base}/graph/discover?session_id={sid}&pace=0.05')
+    assert st == 202 and body['queued'] > 10, (st, body)
+    assert _post(f'{base}/graph/discover?session_id={sid}&pace=0.05')[0] == 409
+    deadline, last, evs = time.time() + 30, -1, []
+    while time.time() < deadline:
+        evs = json.loads(urllib.request.urlopen(f'{base}/graph/events?session_id={sid}').read())
+        if len(evs) == body['queued'] and len(evs) == last:
+            break
+        last = len(evs)
+        time.sleep(0.5)
+    assert len(evs) == body['queued'], (len(evs), body)
+    assert [e['seq'] for e in evs] == list(range(1, len(evs) + 1))
+    scores = [e['path']['score'] for e in evs if e['kind'] == 'path']
+    assert scores and scores[-1] == max(scores)
+    assert _post(f'{base}/graph/discover?session_id={sid}')[0] == 409  # now has discovery events
+    assert _post(f'{base}/graph/discover?session_id={urllib.parse.quote("bad id!")}')[0] == 422
+    assert _post(f'{base}/graph/discover?session_id=demo-hopo')[0] == 409
+    assert _post(f'{base}/graph/discover?session_id={_sid("x")}&founder_id=nope')[0] == 404
+
+
 def _main():
     failed = 0
     for name, fn in sorted(globals().items()):

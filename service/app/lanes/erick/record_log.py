@@ -243,6 +243,20 @@ def build_log(session_id='demo-hopo'):
     return out
 
 
+def founder_sessions():
+    """founder_id -> recorded session id whose cached data drives discovery."""
+    return {FOUNDER: 'demo-hopo', _load('founder.json')['id']: 'demo-lightmatter'}
+
+
+def discovery_events(founder_id=FOUNDER):
+    """Only the discovery + paths phase events (no seq/at/session_id), same order as the recorded log."""
+    sid = founder_sessions().get(founder_id)
+    if sid is None:
+        raise KeyError(founder_id)
+    return [{k: v for k, v in e.items() if k not in ('seq', 'at', 'session_id')}
+            for e in build_log(sid) if e['phase'] in ('discovery', 'paths')]
+
+
 if __name__ == '__main__':
     import sys
     for sid in sys.argv[1:] or SESSIONS:
