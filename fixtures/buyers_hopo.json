@@ -1,0 +1,503 @@
+{
+    "orgs": [
+        {
+            "id": "org:openalex:I1294671590",
+            "name": "Centre National de la Recherche Scientifique",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 51.0,
+            "openalex_id": "https://openalex.org/I1294671590",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:03706f2addd91a21cec8",
+                "evidence:buyers:fff88ed2058f0e7927d9",
+                "evidence:buyers:d0627c1de6119cba304a"
+            ]
+        },
+        {
+            "id": "org:openalex:I19820366",
+            "name": "Chinese Academy of Sciences",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 47.0,
+            "openalex_id": "https://openalex.org/I19820366",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:4042ac57ab7fa479591e",
+                "evidence:buyers:c2605982cf478de5f8b9",
+                "evidence:buyers:722b9f301e625c1fbc89"
+            ]
+        },
+        {
+            "id": "org:openalex:I1299303238",
+            "name": "National Institutes of Health",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 43.0,
+            "openalex_id": "https://openalex.org/I1299303238",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:bb2c824cf05c0fa2adc0",
+                "evidence:buyers:7bea845b8d7290ee3793",
+                "evidence:buyers:677c1013e80d95e4a462"
+            ]
+        },
+        {
+            "id": "org:openalex:I4405271368",
+            "name": "State Key Laboratory of Radiation Medicine and Protection",
+            "type": "lab",
+            "is_buyer": true,
+            "buyer_score": 39.0,
+            "openalex_id": "https://openalex.org/I4405271368",
+            "category_hint": "Biodefense and radiological/nuclear medical countermeasures (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:0ab0701704682397ce71"
+            ]
+        },
+        {
+            "id": "org:openalex:I67348948",
+            "name": "Bayer (Germany)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 35.0,
+            "openalex_id": "https://openalex.org/I67348948",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:05765ea9f4b4a1af93e4",
+                "evidence:buyers:95767d23a042338c141f",
+                "evidence:buyers:0e536a54448e3ba727e3"
+            ]
+        },
+        {
+            "id": "org:openalex:I2738703131",
+            "name": "Commissariat \u00e0 l'\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 35.0,
+            "openalex_id": "https://openalex.org/I2738703131",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:832077c158a882430b18",
+                "evidence:buyers:c5509addc4946ce89924",
+                "evidence:buyers:bf0c4a0aea5ae3f220de"
+            ]
+        },
+        {
+            "id": "org:openalex:I1329621470",
+            "name": "Bhabha Atomic Research Centre",
+            "type": "lab",
+            "is_buyer": true,
+            "buyer_score": 35.0,
+            "openalex_id": "https://openalex.org/I1329621470",
+            "category_hint": "Biodefense and radiological/nuclear medical countermeasures (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:119bf50e893167fbb754"
+            ]
+        },
+        {
+            "id": "org:openalex:I1282311441",
+            "name": "Lawrence Livermore National Laboratory",
+            "type": "lab",
+            "is_buyer": true,
+            "buyer_score": 35.0,
+            "openalex_id": "https://openalex.org/I1282311441",
+            "category_hint": "Biodefense and radiological/nuclear medical countermeasures (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:e629a99a2a1445cc98e3",
+                "evidence:buyers:ed3112a8f95e335128dd",
+                "evidence:buyers:feae6c8c9b806e56b85d"
+            ]
+        },
+        {
+            "id": "org:openalex:I154526488",
+            "name": "Inserm",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 24.0,
+            "openalex_id": "https://openalex.org/I154526488",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:a8ffc062b8a71e4dded4",
+                "evidence:buyers:efb01f4fab65dfaae2d3",
+                "evidence:buyers:6e114ee32dcadbaeafac"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210140884",
+            "name": "National Cancer Institute",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 24.0,
+            "openalex_id": "https://openalex.org/I4210140884",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:863b86284c6cbde39bdb",
+                "evidence:buyers:afa9e1c022deee9c0daa",
+                "evidence:buyers:57f65d944e0024d7e34c"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210118725",
+            "name": "Laboratoire Chimie Electrochimie Mol\u00e9culaires et Chimie Analytique",
+            "type": "lab",
+            "is_buyer": true,
+            "buyer_score": 22.0,
+            "openalex_id": "https://openalex.org/I4210118725",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:f05fd53b86cc0803b0bc"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210114217",
+            "name": "National Institutes for Quantum Science and Technology",
+            "type": "lab",
+            "is_buyer": true,
+            "buyer_score": 17.0,
+            "openalex_id": "https://openalex.org/I4210114217",
+            "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+            "evidence_ids": [
+                "evidence:buyers:fe0d739e9703a0edf127"
+            ]
+        }
+    ],
+    "signals": [
+        {
+            "id": "signal:buyers:590a67e5d490b4321a5e",
+            "org_id": "org:openalex:I1294671590",
+            "type": "paper_90d",
+            "title": "4 on-topic papers in the past 90 days (cached)",
+            "date": "2026-11-24",
+            "evidence_ids": [
+                "evidence:buyers:590a67e5d490b4321a5e"
+            ]
+        },
+        {
+            "id": "signal:buyers:42bb8894058d9e1823a9",
+            "org_id": "org:openalex:I1294671590",
+            "type": "cites_founder",
+            "title": "At least 26 papers cite sampled founder works (cached)",
+            "date": "2025-10-28",
+            "evidence_ids": [
+                "evidence:buyers:42bb8894058d9e1823a9",
+                "evidence:buyers:0233113714bcc60960c0",
+                "evidence:buyers:cac0a51346d535601aa0",
+                "evidence:buyers:41baf0716777c413fb3e",
+                "evidence:buyers:e104317b3f0de740fe3c",
+                "evidence:buyers:0db633fb00d0eae40a4f",
+                "evidence:buyers:265a8032a25c60fe9fea",
+                "evidence:buyers:8984ba90ee6c94e664f3",
+                "evidence:buyers:5091c9926e716181a721",
+                "evidence:buyers:c0fbcf8f8d0150d19420",
+                "evidence:buyers:7eb09c197f98e4998f7d",
+                "evidence:buyers:f5d3bfa21abbadc13e45",
+                "evidence:buyers:5a96af790145878b5564",
+                "evidence:buyers:d32a86e67dafed93ca98",
+                "evidence:buyers:b271aed80cee692227b9",
+                "evidence:buyers:7bf8805fbe892a8349d5",
+                "evidence:buyers:fab035898da30e5d2dd4",
+                "evidence:buyers:3cd169ff80539957579a",
+                "evidence:buyers:e7d0c18644ac557edd0b",
+                "evidence:buyers:64930f096f6fb6ec3716",
+                "evidence:buyers:df2cd8051462860504ea",
+                "evidence:buyers:f80327d96a76aeabf550",
+                "evidence:buyers:7165944738807d545b55",
+                "evidence:buyers:f130d38bd69fe9407143",
+                "evidence:buyers:cf06f0cc7dbdec601456",
+                "evidence:buyers:432aad4e17a4d2cef307"
+            ]
+        },
+        {
+            "id": "signal:buyers:efe4992678cca269609d",
+            "org_id": "org:openalex:I67348948",
+            "type": "cites_founder",
+            "title": "At least 11 papers cite sampled founder works (cached)",
+            "date": "2023-06-29",
+            "evidence_ids": [
+                "evidence:buyers:efe4992678cca269609d",
+                "evidence:buyers:f1db0fb9dcb68254f1c2",
+                "evidence:buyers:af7029d5baa78fa3c98d",
+                "evidence:buyers:46b86763b5ccd01b0017",
+                "evidence:buyers:c073a6dca0f800014109",
+                "evidence:buyers:69711c488e3e1f965f0e",
+                "evidence:buyers:4a882504222c722b15f5",
+                "evidence:buyers:b3af7be1bdb622818d51",
+                "evidence:buyers:ef56a1df1084ccff000a",
+                "evidence:buyers:6d6540ccb1f8c41a0005",
+                "evidence:buyers:bbaf8bea339b4a738593"
+            ]
+        },
+        {
+            "id": "signal:buyers:5f3fa3eae10b0fa4d5f1",
+            "org_id": "org:openalex:I2738703131",
+            "type": "cites_founder",
+            "title": "At least 25 papers cite sampled founder works (cached)",
+            "date": "2026-09-09",
+            "evidence_ids": [
+                "evidence:buyers:5f3fa3eae10b0fa4d5f1",
+                "evidence:buyers:1cf3093b86c334fc4d32",
+                "evidence:buyers:dbca522d17551134a5c6",
+                "evidence:buyers:2d94a3884ddaf3ddb742",
+                "evidence:buyers:6d72863809de9f372b6e",
+                "evidence:buyers:6cb71eded7dd53156ff6",
+                "evidence:buyers:31595466fe6f52e64c91",
+                "evidence:buyers:3968028b58e305988ddc",
+                "evidence:buyers:abb95107f2ee2242fce9",
+                "evidence:buyers:18602840492b4380c1a0",
+                "evidence:buyers:af63dd21b89cc8a114df",
+                "evidence:buyers:c308ea8d457b8827ffdd",
+                "evidence:buyers:a49353b0ac0388d516a6",
+                "evidence:buyers:558f98af4fa29e0f8c75",
+                "evidence:buyers:2a2f7ac55d381288dd53",
+                "evidence:buyers:ea0e611dd6dcb401a0ca",
+                "evidence:buyers:d85bff09cd2060b2529b",
+                "evidence:buyers:8901cf48b6bd7eafd324",
+                "evidence:buyers:6595ce9049113e2f89b2",
+                "evidence:buyers:140ba885076793ccba7d",
+                "evidence:buyers:0623d52ad18a574896d2",
+                "evidence:buyers:4b1128601942f5181c02",
+                "evidence:buyers:958e632ea278ca0a030d",
+                "evidence:buyers:51dccdc5905c6246ade4",
+                "evidence:buyers:01d1f31928d33f5a2522"
+            ]
+        },
+        {
+            "id": "signal:buyers:7943c1641fe42c0f2a70",
+            "org_id": "org:openalex:I154526488",
+            "type": "paper_90d",
+            "title": "1 on-topic papers in the past 90 days (cached)",
+            "date": "2026-11-24",
+            "evidence_ids": [
+                "evidence:buyers:7943c1641fe42c0f2a70"
+            ]
+        },
+        {
+            "id": "signal:buyers:75d7df2c395fadcfad2b",
+            "org_id": "org:openalex:I154526488",
+            "type": "cites_founder",
+            "title": "At least 4 papers cite sampled founder works (cached)",
+            "date": "2024-12-20",
+            "evidence_ids": [
+                "evidence:buyers:75d7df2c395fadcfad2b",
+                "evidence:buyers:8788381e57b176629061",
+                "evidence:buyers:fb7be9f481eea2793d47",
+                "evidence:buyers:6bf34c3eeb298f01dab3"
+            ]
+        },
+        {
+            "id": "signal:buyers:42a5b9865e127c8e3047",
+            "org_id": "org:openalex:I4405271368",
+            "type": "paper_90d",
+            "title": "1 on-topic papers in the past 90 days (cached)",
+            "date": "2026-11-24",
+            "evidence_ids": [
+                "evidence:buyers:42a5b9865e127c8e3047"
+            ]
+        },
+        {
+            "id": "signal:buyers:4919d36555cd5ef3da95",
+            "org_id": "org:openalex:I4405271368",
+            "type": "cites_founder",
+            "title": "At least 20 papers cite sampled founder works (cached)",
+            "date": "2026-06-01",
+            "evidence_ids": [
+                "evidence:buyers:4919d36555cd5ef3da95",
+                "evidence:buyers:b8ca1d4aff4f1b4be829",
+                "evidence:buyers:5f260336a10e08a9575f",
+                "evidence:buyers:c3c523c8e0daf5cf96ab",
+                "evidence:buyers:c6d2c56d29dda8f5d575",
+                "evidence:buyers:77d7b0b5a5a656c21591",
+                "evidence:buyers:2d005e97a177200c381c",
+                "evidence:buyers:b341f72d9c9e4a5e58c7",
+                "evidence:buyers:f1142b6f4f552f776f05",
+                "evidence:buyers:99c758f1b3165b9df4c7",
+                "evidence:buyers:c2d2bc0f4b5a0066dee6",
+                "evidence:buyers:8b412bb0a83589f07ffa",
+                "evidence:buyers:913d59378145699fddaf",
+                "evidence:buyers:428dee0b200ab1207ea2",
+                "evidence:buyers:61965b1e9dcccf9bdaf5",
+                "evidence:buyers:6214b16a067cd465af58",
+                "evidence:buyers:e84b9c62ffa331628c35",
+                "evidence:buyers:5f132926281730c747cd",
+                "evidence:buyers:244cf59616d28b5ae447",
+                "evidence:buyers:b945fc1a79c1ce6383b8"
+            ]
+        },
+        {
+            "id": "signal:buyers:8aedb8832f87447ddeee",
+            "org_id": "org:openalex:I19820366",
+            "type": "paper_90d",
+            "title": "3 on-topic papers in the past 90 days (cached)",
+            "date": "2026-11-24",
+            "evidence_ids": [
+                "evidence:buyers:8aedb8832f87447ddeee"
+            ]
+        },
+        {
+            "id": "signal:buyers:7991459d8ac013f1d1ef",
+            "org_id": "org:openalex:I19820366",
+            "type": "cites_founder",
+            "title": "At least 22 papers cite sampled founder works (cached)",
+            "date": "2026-10-20",
+            "evidence_ids": [
+                "evidence:buyers:7991459d8ac013f1d1ef",
+                "evidence:buyers:82ebff226f29ca9eae74",
+                "evidence:buyers:55625b861d514f409071",
+                "evidence:buyers:8ce1332ba03eb15f65de",
+                "evidence:buyers:f6dcf5c4932a8122af8b",
+                "evidence:buyers:a382676f6dae7a4d7f5a",
+                "evidence:buyers:47904851e86b960beca8",
+                "evidence:buyers:6767f1a5d64ded6cd113",
+                "evidence:buyers:27d156db62dd7e172675",
+                "evidence:buyers:6fdfec4de5121b8c13c2",
+                "evidence:buyers:47530b08a5ab0b5f375d",
+                "evidence:buyers:e3a6238a16f58df18f5a",
+                "evidence:buyers:8692ce838a8d28234526",
+                "evidence:buyers:c0677b612c4acee56946",
+                "evidence:buyers:61cddff81b940c0bc472",
+                "evidence:buyers:d1da98c322f950f1617d",
+                "evidence:buyers:cd9fd5311f0c07b6eeae",
+                "evidence:buyers:0cbfef42a19e12b1ddcd",
+                "evidence:buyers:9da08c14225c1f8dc19e",
+                "evidence:buyers:9b2386a99f9ea68d05eb",
+                "evidence:buyers:6ec90d4942c28822eefd",
+                "evidence:buyers:cdeaa7839d8d10b993f2"
+            ]
+        },
+        {
+            "id": "signal:buyers:ec0ea09b20ae2c517aa6",
+            "org_id": "org:openalex:I1299303238",
+            "type": "paper_90d",
+            "title": "2 on-topic papers in the past 90 days (cached)",
+            "date": "2026-11-24",
+            "evidence_ids": [
+                "evidence:buyers:ec0ea09b20ae2c517aa6"
+            ]
+        },
+        {
+            "id": "signal:buyers:99bd1b06f269db2b3a12",
+            "org_id": "org:openalex:I1299303238",
+            "type": "cites_founder",
+            "title": "At least 8 papers cite sampled founder works (cached)",
+            "date": "2025-07-21",
+            "evidence_ids": [
+                "evidence:buyers:99bd1b06f269db2b3a12",
+                "evidence:buyers:2a4b2b643970a9fa9237",
+                "evidence:buyers:10a2745524d98da3569f",
+                "evidence:buyers:5c8a71d7e5aaba019858",
+                "evidence:buyers:9986a6973ed92c0a82af",
+                "evidence:buyers:aa50e5313750d7fe5609",
+                "evidence:buyers:eb09bc15a2bc48df9189",
+                "evidence:buyers:b9ebd96cf30e95819e6f"
+            ]
+        },
+        {
+            "id": "signal:buyers:ea4cf157ffb90075aa61",
+            "org_id": "org:openalex:I1329621470",
+            "type": "cites_founder",
+            "title": "At least 18 papers cite sampled founder works (cached)",
+            "date": "2026-06-05",
+            "evidence_ids": [
+                "evidence:buyers:ea4cf157ffb90075aa61",
+                "evidence:buyers:46c13daa79280390b546",
+                "evidence:buyers:5fe64f77ef0636f7b3e6",
+                "evidence:buyers:17a6b727ac6068992f34",
+                "evidence:buyers:01e281af19590f82fc01",
+                "evidence:buyers:2b3b96e665a7502ca627",
+                "evidence:buyers:e70f4cf3f79a1bf0b666",
+                "evidence:buyers:24d3beb51f88a068db97",
+                "evidence:buyers:311e9d0b1a2573101aa2",
+                "evidence:buyers:af137890ea5577dbff1f",
+                "evidence:buyers:8fdd8397943bd9ca50e8",
+                "evidence:buyers:969b6a2d46d39cacb751",
+                "evidence:buyers:75b0e18dad5a3ff19fe9",
+                "evidence:buyers:532376c7a7f3fbc14efd",
+                "evidence:buyers:727026d846262160687a",
+                "evidence:buyers:06f5146883a2cb0f962d",
+                "evidence:buyers:b49f25ecd502d94670eb",
+                "evidence:buyers:c8375715c16bf1ec3223"
+            ]
+        },
+        {
+            "id": "signal:buyers:cd4531ea88218a7aace3",
+            "org_id": "org:openalex:I1282311441",
+            "type": "cites_founder",
+            "title": "At least 8 papers cite sampled founder works (cached)",
+            "date": "2026-09-27",
+            "evidence_ids": [
+                "evidence:buyers:cd4531ea88218a7aace3",
+                "evidence:buyers:6e6f3c13f59f9d21dd62",
+                "evidence:buyers:484adff3945ddeec3ca9",
+                "evidence:buyers:c239ae2b0c8d03d36f51",
+                "evidence:buyers:3bb5f6bbf9514f0f8fe3",
+                "evidence:buyers:ddeda531a7672245062f",
+                "evidence:buyers:e9e63db9b1c1c4d76b46",
+                "evidence:buyers:5cab5bc810239c5b2869"
+            ]
+        },
+        {
+            "id": "signal:buyers:30cf3d4387633f883682",
+            "org_id": "org:openalex:I4210140884",
+            "type": "paper_90d",
+            "title": "1 on-topic papers in the past 90 days (cached)",
+            "date": "2026-11-24",
+            "evidence_ids": [
+                "evidence:buyers:30cf3d4387633f883682"
+            ]
+        },
+        {
+            "id": "signal:buyers:2bf8475ff85c5e8c8439",
+            "org_id": "org:openalex:I4210140884",
+            "type": "cites_founder",
+            "title": "At least 4 papers cite sampled founder works (cached)",
+            "date": "2021-12-01",
+            "evidence_ids": [
+                "evidence:buyers:2bf8475ff85c5e8c8439",
+                "evidence:buyers:d7af3fec8c850a815247",
+                "evidence:buyers:a943631ebf7ab95b8e8c",
+                "evidence:buyers:0717418f4c82d22cba98"
+            ]
+        },
+        {
+            "id": "signal:buyers:28685c91fc19d8846cb6",
+            "org_id": "org:openalex:I4210118725",
+            "type": "paper_90d",
+            "title": "3 on-topic papers in the past 90 days (cached)",
+            "date": "2026-11-24",
+            "evidence_ids": [
+                "evidence:buyers:28685c91fc19d8846cb6"
+            ]
+        },
+        {
+            "id": "signal:buyers:8f18c87419c2af9ede24",
+            "org_id": "org:openalex:I4210118725",
+            "type": "cites_founder",
+            "title": "At least 2 papers cite sampled founder works (cached)",
+            "date": "2025-10-28",
+            "evidence_ids": [
+                "evidence:buyers:8f18c87419c2af9ede24",
+                "evidence:buyers:33f15e0835f11183028c"
+            ]
+        },
+        {
+            "id": "signal:buyers:49ac0bbc9a6e58332054",
+            "org_id": "org:openalex:I4210114217",
+            "type": "paper_90d",
+            "title": "3 on-topic papers in the past 90 days (cached)",
+            "date": "2026-11-24",
+            "evidence_ids": [
+                "evidence:buyers:49ac0bbc9a6e58332054"
+            ]
+        },
+        {
+            "id": "signal:buyers:748289a5db69b08e3958",
+            "org_id": "org:openalex:I4210114217",
+            "type": "cites_founder",
+            "title": "At least 1 papers cite sampled founder works (cached)",
+            "date": "2018-08-25",
+            "evidence_ids": [
+                "evidence:buyers:748289a5db69b08e3958"
+            ]
+        }
+    ]
+}
