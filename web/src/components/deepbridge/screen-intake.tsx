@@ -22,6 +22,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { api, GOLDEN_FOUNDER_ID } from "@/lib/api";
 import type { Evidence, Founder, Icp, Id, IntakeForm, InterviewResponse } from "@/lib/types";
+import { ParticleOrb } from "./particle-orb";
 import { EvidenceChip } from "./evidence-chip";
 
 interface ScreenIntakeProps {
@@ -92,6 +93,7 @@ export function ScreenIntake({
   const [interviewBusy, setInterviewBusy] = React.useState(false);
   const [interviewErr, setInterviewErr] = React.useState<string | null>(null);
   const [listening, setListening] = React.useState(false);
+  const [speaking, setSpeaking] = React.useState(false);
   const [voiceReadback, setVoiceReadback] = React.useState(true);
   const recognitionRef = React.useRef<SpeechRecognitionLike | null>(null);
 
@@ -105,6 +107,9 @@ export function ScreenIntake({
       window.speechSynthesis.cancel();
       const utter = new SpeechSynthesisUtterance(text);
       utter.rate = 1.06;
+      utter.onstart = () => setSpeaking(true);
+      utter.onend = () => setSpeaking(false);
+      utter.onerror = () => setSpeaking(false);
       window.speechSynthesis.speak(utter);
     },
     [voiceReadback],
@@ -256,6 +261,17 @@ export function ScreenIntake({
           </CardHeader>
 
           <CardContent className="px-5 space-y-3">
+            <div className="flex flex-col items-center gap-1 py-1">
+              <ParticleOrb
+                size={150}
+                state={listening ? "listening" : speaking ? "speaking" : interviewBusy ? "thinking" : "idle"}
+                pulseKey={interviewState?.question ?? ""}
+                label="Interview voice activity"
+              />
+              <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                {listening ? "Listening" : speaking ? "Speaking" : interviewBusy ? "Reading the papers" : "Ready"}
+              </span>
+            </div>
             {!interviewState ? (
               <Button
                 type="button"

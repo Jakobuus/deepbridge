@@ -19,7 +19,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { api } from "@/lib/api";
+import { api, API_BASE } from "@/lib/api";
 import { useGraphStream, useStreamSessionParam } from "@/lib/useGraphStream";
 import type {
   BuyerCategory,
@@ -35,6 +35,7 @@ import type {
   Signal,
 } from "@/lib/types";
 import { EvidenceChip } from "./evidence-chip";
+import { ParticleOrb } from "./particle-orb";
 
 type LeadsViewMode = "graph" | "table";
 
@@ -114,6 +115,26 @@ export function ScreenLeads({
   const streamSessionId = useStreamSessionParam();
   const stream = useGraphStream(streamSessionId);
   const live = stream.status === "connecting" || stream.status === "streaming" || stream.status === "done";
+
+  // "Find buyers": asks the backend to publish buyer orgs + warm paths into this live session (POST /graph/discover).
+  const [discover, setDiscover] = React.useState<{ busy: boolean; note: string | null }>({ busy: false, note: null });
+  const runDiscover = async () => {
+    if (!streamSessionId) return;
+    setDiscover({ busy: true, note: null });
+    try {
+      const res = await fetch(`${API_BASE}/graph/discover?session_id=${encodeURIComponent(streamSessionId)}`, { method: "POST" });
+      if (res.status === 202) {
+        const body = (await res.json().catch(() => ({}))) as { eta_s?: number };
+        setDiscover({ busy: false, note: `discovering… ~${Math.round(body.eta_s ?? 10)}s` });
+      } else if (res.status === 409) {
+        setDiscover({ busy: false, note: "buyers already found" });
+      } else {
+        setDiscover({ busy: false, note: `discover unavailable (${res.status})` });
+      }
+    } catch {
+      setDiscover({ busy: false, note: "discover unavailable" });
+    }
+  };
 
   const founder = React.useMemo<Founder | null>(() => {
     if (!live) return founderProp;
@@ -383,6 +404,17 @@ export function ScreenLeads({
             </span>
           )}
           <span>{paths.length} warm paths</span>
+          {streamSessionId && (
+            <button
+              type="button"
+              onClick={() => void runDiscover()}
+              disabled={discover.busy}
+              className="rounded border border-sky-400/50 px-2.5 py-1 font-sans text-xs text-sky-200 transition hover:bg-sky-400/10 disabled:opacity-50"
+            >
+              {discover.busy ? "Finding buyers…" : "Find buyers"}
+            </button>
+          )}
+          {discover.note && <span className="text-sky-300">{discover.note}</span>}
           {orgFilterId && (
             <button type="button" onClick={onClearOrgFilter} className="hover:text-foreground">
               {orgsMap[orgFilterId]?.name ?? orgFilterId} ✕
@@ -498,10 +530,18 @@ export function ScreenLeads({
                     onClick={() => onInspectPerson(graphLayout.founderNodeId)}
                     className="cursor-pointer"
                   >
-                    <circle r={36} fill="url(#founderHalo)" />
-                    <circle r={14} fill="#0b2536" stroke="#38bdf8" strokeWidth={2} />
-                    <circle r={4.5} fill="#ffffff" />
-                    <text y={30} textAnchor="middle" className="fill-white font-sans text-[12px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
+                    {/* Graph core: particle orb that kicks once per incoming stream event. */}
+                    <foreignObject x={-48} y={-48} width={96} height={96} style={{ overflow: "visible" }}>
+                      <ParticleOrb
+                        size={96}
+                        state={stream.status === "streaming" || stream.status === "connecting" ? "thinking" : "idle"}
+                        pulseKey={stream.count}
+                        pulseStrength={0.12}
+                        count={320}
+                        label="Knowledge graph core"
+                      />
+                    </foreignObject>
+                    <text y={54} textAnchor="middle" className="fill-white font-sans text-[12px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
                       {founder?.name ?? "Nicholas C. Harris"}
                     </text>
                   </g>
