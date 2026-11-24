@@ -1,4 +1,4 @@
-"""Evidence-grounded First Hundred intro drafts, replayable without the CLI."""
+"""Evidence-grounded intro drafts, replayable without the CLI."""
 import hashlib
 import json
 import re
@@ -78,7 +78,7 @@ def write_drafts(path: Path, edges: list[Edge], evidence: list[Evidence],
         except (ValueError, KeyError, TypeError):
             pass  # Old or damaged cache: regenerate, never replay unvalidated text.
     prompt = '''Write a short LinkedIn message from a founder to a connection, asking for an intro.
-Port these First Hundred rules: friendly and specific; say exactly who and why in one sentence;
+Follow these rules: friendly and specific; say exactly who and why in one sentence;
 make yes/no easy (one ask, permission to decline); no hype, no emojis. Under 110 words TOTAL,
 including the two-sentence forwardable blurb. Sign with the founder's first name BEFORE the
 final section headed exactly "Blurb you can forward:". That section has exactly 2 sentences
