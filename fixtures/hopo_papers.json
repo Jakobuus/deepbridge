@@ -1,300 +1,84 @@
 {
- "_meta": "HACK: HOPO papers (value_map_hopo evidence), ordered decorporation, lead, 89Zr, gadolinium, rest. Quote = title where known else abstract sentence (OpenAlex rate-limited 24 Nov).",
+ "_meta": "HACK: HOPO papers, real titles + year + DOI; order radiation, lead, 89Zr, gadolinium, Th-227.",
  "papers": [
   {
    "id": "evidence:openalex:W2101984559",
-   "source_url": "https://openalex.org/W2101984559",
-   "quote": "BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE DECORPORATION AGENTS 3,4,3-LI(1,2-HOPO) AND 5-LIO(ME-3,2-HOPO)",
-   "source_date": "2010-08-11",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "source_url": "https://doi.org/10.1097/hp.0b013e3181c21273",
+   "quote": "BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE DECORPORATION AGENTS 3,4,3-LI(1,2-HOPO) AND 5-LIO(ME-3,2-HOPO) (2010)",
+   "source_date": "2010-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
    "id": "evidence:openalex:W2087980883",
-   "source_url": "https://openalex.org/W2087980883",
-   "quote": "they are orally active, and toxicity is acceptably low at effective dosage",
-   "source_date": "2008-10-08",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W1983202946",
-   "source_url": "https://openalex.org/W1983202946",
-   "quote": "Chelation therapy for internally deposited actinides has been shown to reduce acute radiation damage and chemical toxicity and the severity of late radiation effects",
-   "source_date": "1998-10-01",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2036746820",
-   "source_url": "https://openalex.org/W2036746820",
-   "quote": "Eight of the ligands studied promoted significantly more Pu excretion than an equal molar amount of CaNa3-DTPA (the compound in present clinical use)",
-   "source_date": "1995-07-01",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2085453940",
-   "source_url": "https://openalex.org/W2085453940",
-   "quote": "Comparisons with the standard ligand diethylenetriamine pentaacetic acid (DTPA) provide a thermodynamic basis for the observed significantly higher efficacy of 3,4,3-LI(1,2-HOPO) as an in vivo actinide decorporation agent",
-   "source_date": "2013-07-16",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2106156001",
-   "source_url": "https://openalex.org/W2106156001",
-   "quote": "neither ligand is genotoxic, in the presence and absence of metabolic activation",
-   "source_date": "2013-01-04",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2162743494",
-   "source_url": "https://openalex.org/W2162743494",
-   "quote": "to improve its oral bioavailability, 3,4,3-LI(1,2-HOPO) was coformulated with a proprietary permeability enhancer, leading to a notable increase in oral bioavailability of the compound",
-   "source_date": "2015-04-06",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "source_url": "https://doi.org/10.1097/01.hp.0000326345.41816.c2",
+   "quote": "LAURISTON S. TAYLOR LECTURE: THE QUEST FOR THERAPEUTIC ACTINIDE CHELATORS (2008)",
+   "source_date": "2008-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
    "id": "evidence:openalex:W2314954075",
-   "source_url": "https://openalex.org/W2314954075",
-   "quote": "From early prophylaxis to delayed treatment: Establishing the plutonium decorporation activity window of hydroxypyridinonate chelating agents",
-   "source_date": "2016-04-01",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "source_url": "https://doi.org/10.1016/j.cbi.2016.03.034",
+   "quote": "From early prophylaxis to delayed treatment: Establishing the plutonium decorporation activity window of hydroxypyridinonate chelating agents (2016)",
+   "source_date": "2016-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
-   "id": "evidence:openalex:W1543811551",
-   "source_url": "https://openalex.org/W1543811551",
-   "quote": "there is no designated standard animal model for the evaluation of new actinide chelation drugs",
-   "source_date": "2012-08-01",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "id": "evidence:openalex:W2070305029",
+   "source_url": "https://doi.org/10.1016/j.jpba.2014.10.015",
+   "quote": "Characterization, HPLC method development and impurity identification for 3,4,3-LI(1,2-HOPO), a potent actinide chelator for radionuclide decorporation (2014)",
+   "source_date": "2014-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
    "id": "evidence:openalex:W1986786784",
    "source_url": "https://openalex.org/W1986786784",
-   "quote": "In Vitro Metabolism and Stability of the Actinide Chelating Agent 3,4,3-LI(1,2-HOPO)",
-   "source_date": "2015-02-27",
-   "observed_at": "2026-11-24T22:20:00+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2070305029",
-   "source_url": "https://openalex.org/W2070305029",
-   "quote": "Characterization, HPLC method development and impurity identification for 3,4,3-LI(1,2-HOPO), a potent actinide chelator for radionuclide decorporation",
-   "source_date": "2014-10-22",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2079789697",
-   "source_url": "https://openalex.org/W2079789697",
-   "quote": "Identification of process related trace level impurities in the actinide decorporation agent 3,4,3-LI(1,2-HOPO)",
-   "source_date": "2014-08-12",
-   "observed_at": "2026-11-24T22:20:00+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W4366605921",
-   "source_url": "https://openalex.org/W4366605921",
-   "quote": "3,4,3-LI(1,2-HOPO) (abbreviated as HOPO) has been identified as a promising candidate for both chelation and f -element separation technologies, two applications that require optimal performance in radiation environments",
-   "source_date": "2023-04-21",
-   "observed_at": "2026-11-24T22:20:00+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2995121391",
-   "source_url": "https://openalex.org/W2995121391",
-   "quote": "current decorporation protocols to respond to accidental actinide exposure rely on intravenous injections of soluble chelating agents, which are inefficient for treatment of inhaled radionuclides trapped in lungs",
-   "source_date": "2020-01-23",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2888041331",
-   "source_url": "https://openalex.org/W2888041331",
-   "quote": "its release from the nanoparticles to lung fluid, observed in in vitro experiments, exhibited an extended release profile",
-   "source_date": "2018-08-25",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2083451051",
-   "source_url": "https://openalex.org/W2083451051",
-   "quote": "Uranium(VI) (UO2(2+), uranyl) is nephrotoxic",
-   "source_date": "2000-05-01",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "quote": "In Vitro Metabolism and Stability of the Actinide Chelating Agent 3,4,3-LI(1,2-HOPO) (2015)",
+   "source_date": "2015-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
    "id": "evidence:openalex:W2785617025",
-   "source_url": "https://openalex.org/W2785617025",
-   "quote": "Toxic heavy metal \u2013 Pb, Cd, Sn \u2013 complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO)",
+   "source_url": "https://doi.org/10.1039/c7nj04559j",
+   "quote": "Toxic heavy metal \u2013 Pb, Cd, Sn \u2013 complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO) (2018)",
    "source_date": "2018-01-01",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W1991849756",
-   "source_url": "https://openalex.org/W1991849756",
-   "quote": "a randomized, placebo-controlled, double-blind trial of up to three 26-day courses of treatment with succimer, a lead chelator that is administered orally",
-   "source_date": "2001-05-10",
-   "observed_at": "2026-11-24T22:20:00+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2121920115",
-   "source_url": "https://openalex.org/W2121920115",
-   "quote": "These results emphasize the importance of taking environmental measures to prevent exposure to lead.",
-   "source_date": "2004-07-01",
-   "observed_at": "2026-11-24T22:20:00+00:00",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
    "id": "evidence:openalex:W1979550737",
-   "source_url": "https://openalex.org/W1979550737",
-   "quote": "The stability of (89)Zr-HOPO matched or surpassed that of (89)Zr-DFO in every experiment",
-   "source_date": "2014-05-09",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2333732538",
-   "source_url": "https://openalex.org/W2333732538",
-   "quote": "Stability constants log \u03b2110 = 43.1 \u00b1 0.6 and 43.5 \u00b1 0.7 were determined for [Zr(IV)(3,4,3-LI(1,2-HOPO))] and [Pu(IV)(3,4,3-LI(1,2-HOPO))], respectively",
-   "source_date": "2015-03-23",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "source_url": "https://doi.org/10.1021/jm500389b",
+   "quote": "Alternative Chelator for 89Zr Radiopharmaceuticals: Radiolabeling and Evaluation of 3,4,3-(LI-1,2-HOPO) (2014)",
+   "source_date": "2014-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
    "id": "evidence:openalex:W2192838961",
-   "source_url": "https://openalex.org/W2192838961",
-   "quote": "we developed a bifunctional derivative, p-SCN-Bn-HOPO, for conjugation to an antibody",
-   "source_date": "2015-11-25",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2945217543",
-   "source_url": "https://openalex.org/W2945217543",
-   "quote": "343HOPO forms a neutral 1 : 1 complex, [HfIV343HOPO], that exhibits extreme stability in aqueous solution, with a log \u03b2110 value reaching 42.3",
-   "source_date": "2019-06-11",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "source_url": "https://doi.org/10.1021/acs.bioconjchem.5b00572",
+   "quote": "p-SCN-Bn-HOPO: A Superior Bifunctional Chelator for 89Zr ImmunoPET (2015)",
+   "source_date": "2015-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
    "id": "evidence:openalex:W2791769218",
-   "source_url": "https://openalex.org/W2791769218",
-   "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
-   "source_date": "2018-03-13",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2076534859",
-   "source_url": "https://openalex.org/W2076534859",
-   "quote": "The remarkably high affinity of 3,4,3-LI(1,2-HOPO) for lanthanide metal ions and the resulting high complex stabilities",
-   "source_date": "2011-09-07",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2796375015",
-   "source_url": "https://openalex.org/W2796375015",
-   "quote": "the ability of this ligand to either accept or donate electron density as needed from its pyridine rings is found to be key to its extraordinary stability across the actinide series",
-   "source_date": "2018-04-06",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2015995340",
-   "source_url": "https://openalex.org/W2015995340",
-   "quote": "Using the Antenna Effect as a Spectroscopic Tool: Photophysics and Solution Thermodynamics of the Model Luminescent Hydroxypyridonate Complex [EuIII(3,4,3-LI(1,2-HOPO))]\u2212",
-   "source_date": "2009-11-10",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W1965927692",
-   "source_url": "https://openalex.org/W1965927692",
-   "quote": "the Eu(III) and Sm(III) complexes of this ligand undergo a transformation after in situ preparation to yield complexes with higher quantum yield (QY) over time",
-   "source_date": "2015-01-21",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W2963099377",
-   "source_url": "https://openalex.org/W2963099377",
-   "quote": "Enhancing Actinide(III) over Lanthanide(III) Selectivity through Hard-by-Soft Donor Substitution: Exploitation and Implication of Near-Degeneracy-Driven Covalency",
-   "source_date": "2019-07-25",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "source_url": "https://doi.org/10.1038/s41598-018-22511-6",
+   "quote": "Evaluating the potential of chelation therapy to prevent and treat gadolinium deposition from MRI contrast agents (2018)",
+   "source_date": "2018-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   },
   {
    "id": "evidence:openalex:W2899214672",
-   "source_url": "https://openalex.org/W2899214672",
-   "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy",
-   "source_date": "2018-10-29",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W1976659638",
-   "source_url": "https://openalex.org/W1976659638",
-   "quote": "the high affinity for the ferric ion of the discussed linear ligands strongly correlates with their ability to remove iron in vivo",
-   "source_date": "2006-03-29",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W3002510978",
-   "source_url": "https://openalex.org/W3002510978",
-   "quote": "Selective Lanthanide Sensing with Gold Nanoparticles and Hydroxypyridinone Chelators",
-   "source_date": "2020-01-23",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W3031029403",
-   "source_url": "https://openalex.org/W3031029403",
-   "quote": "the proposed system works at pH values as low as 1.5, which simplifies the process by eliminating the need for pH buffers",
-   "source_date": "2020-05-28",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W4381248275",
-   "source_url": "https://openalex.org/W4381248275",
-   "quote": "toxicity of late lanthanides is consistent with disruption of vesicle-mediated transport",
-   "source_date": "2023-06-19",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W3127469982",
-   "source_url": "https://openalex.org/W3127469982",
-   "quote": "Structural and spectroscopic characterization of an einsteinium complex",
-   "source_date": "2021-02-03",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W3111674325",
-   "source_url": "https://openalex.org/W3111674325",
-   "quote": "Hydroxypyridinone-based stabilization of Np(IV) enabling efficient U/Np/Pu separations in the Adapted PUREX process",
-   "source_date": "2020-12-07",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
-   "kind": "paper"
-  },
-  {
-   "id": "evidence:openalex:W1970090127",
-   "source_url": "https://openalex.org/W1970090127",
-   "quote": "Terephthalamide-containing ligands: fast removal of iron from transferrin",
-   "source_date": "2007-11-08",
-   "observed_at": "2026-11-24T21:25:42.296027+00:00",
+   "source_url": "https://doi.org/10.1021/acs.inorgchem.8b02430",
+   "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy (2018)",
+   "source_date": "2018-01-01",
+   "observed_at": "2026-11-24T21:25:42+00:00",
    "kind": "paper"
   }
  ]
