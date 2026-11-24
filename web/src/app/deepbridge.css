@@ -58,8 +58,22 @@
   --glass-diffuse: 0px;
 }
 
-/* Strip any residual blur or lift on flat Onyx Lucite surfaces */
-[data-slot="card"],
+/* Mark 14:40: cards are lustre glass at ~70% opacity over the starfield (see layout data-glass="lustre").
+   No backdrop blur (it erased the 1px stars), so ~30% of the starfield shows through. Flat: no drop shadows. */
+:root {
+  /* "Pure glass at ~70%": lustre's body alone at 0.7 (default 0.8), no extra solidify floor (it stacked to ~94%). */
+  --glass-lustre-a: 0.7;
+  --glass-opacity: 0;
+  --blur-lustre: 0px;
+}
+[data-slot="card"] {
+  --srf-filter: none;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Strip any residual blur or lift on the other flat surfaces */
 [data-slot="badge"],
 [data-slot="table"],
 [data-slot="tabs-list"],
