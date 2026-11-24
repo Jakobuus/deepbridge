@@ -1,0 +1,3411 @@
+[
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading papers and site: Nicholas Harris…",
+  "seq": 1,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:00+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading paper: Deep learning with coherent nanophotonic circuits",
+  "seq": 2,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:02.679000+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading website: Lightmatter® - The photonic (super)computer company.",
+  "seq": 3,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:05.357000+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "person:openalex:A5102978866",
+   "name": "Nicholas C. Harris",
+   "openalex_id": "https://openalex.org/A5102978866",
+   "orcid": "https://orcid.org/0000-0003-3009-563X",
+   "org_id": "org:lightmatter",
+   "affiliation_asof": "2026-11-24",
+   "role": null,
+   "is_bridge_candidate": false,
+   "alignment": null
+  },
+  "seq": 4,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:08.036000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:9ddc7896fa9b2389c7843381",
+   "kind": "feature",
+   "text": "Programmable silicon photonic prototype with a Mach–Zehnder interferometer mesh",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 5,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:10.714000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:d4b5ab7c34de003218255c00",
+   "kind": "feature",
+   "text": "Research prototype: single-chip coherent optical neural network combining matrix processing and nonlinear activations",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 6,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:13.393000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:6651d7b9fd1a3b958fd4eb04",
+   "kind": "feature",
+   "text": "Demonstrated in situ training of an optical neural network without backpropagation",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:e30432dff2d8c055e719b33f"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:e30432dff2d8c055e719b33f",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "backpropagation-free in situ training",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 7,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:16.071000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:1c3a1e9e7a076d74eb9d481c",
+   "kind": "feature",
+   "text": "Low-loss thermo-optic phase modulation in a silicon-on-insulator waveguide",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:2cd74480befbffc8c5a2b55c"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "efficient and low-loss optical phase modulation in a silicon-on-insulator (SOI) waveguide",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 8,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:18.750000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:657be6aac09a698d63ef12fa",
+   "kind": "feature",
+   "text": "Research prototype: rapidly reprogrammable photonic mesh used for quantum transport simulation",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:180731ac83e2857fcd281dc3"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:180731ac83e2857fcd281dc3",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "mesh of 88 generalized beamsplitters programmable on microsecond timescales",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 9,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:21.429000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:9c3764956dd5664991756d62",
+   "kind": "feature",
+   "text": "Electrically reconfigurable circuits for universal linear optical transformations",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 10,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:24.107000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:bb1c1b4b18a05b3780dba3ec",
+   "kind": "benefit",
+   "text": "Potential to perform neural-network inference directly in the optical domain",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 11,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:26.786000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:920b1bb3985ce602663e6972",
+   "from": "value:9ddc7896fa9b2389c7843381",
+   "to": "value:bb1c1b4b18a05b3780dba3ec",
+   "type": "ENABLES",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 12,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:29.464000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:22e6810e85e7f521f2e2ef26",
+   "from": "value:d4b5ab7c34de003218255c00",
+   "to": "value:bb1c1b4b18a05b3780dba3ec",
+   "type": "ENABLES",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 13,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:32.143000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:77aa7752a35f5bedb333b2cc",
+   "from": "value:9c3764956dd5664991756d62",
+   "to": "value:bb1c1b4b18a05b3780dba3ec",
+   "type": "ENABLES",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 14,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:34.821000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:ed27c4ff4b3dac6c6d21b3aa",
+   "kind": "benefit",
+   "text": "Potential to train optical networks on the chip itself, without computing backpropagation digitally",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:e30432dff2d8c055e719b33f"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:e30432dff2d8c055e719b33f",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "backpropagation-free in situ training",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 15,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:37.500000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:79fc07c645cda0b8aaff6ca7",
+   "from": "value:6651d7b9fd1a3b958fd4eb04",
+   "to": "value:ed27c4ff4b3dac6c6d21b3aa",
+   "type": "ENABLES",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:e30432dff2d8c055e719b33f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:e30432dff2d8c055e719b33f",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "backpropagation-free in situ training",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 16,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:40.179000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:abfda7f07d7a4e0582f42e9f",
+   "kind": "benefit",
+   "text": "Potential for dense, low-loss programmable photonic circuits built on CMOS-style fabrication",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "efficient and low-loss optical phase modulation in a silicon-on-insulator (SOI) waveguide",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 17,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:42.857000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:8d7b5e018c0df40ba737a5b1",
+   "from": "value:1c3a1e9e7a076d74eb9d481c",
+   "to": "value:abfda7f07d7a4e0582f42e9f",
+   "type": "ENABLES",
+   "date": "2018-12-20",
+   "evidence_ids": [
+    "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "efficient and low-loss optical phase modulation in a silicon-on-insulator (SOI) waveguide",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 18,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:45.536000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:93d12516740695bfac600b6b",
+   "from": "value:9c3764956dd5664991756d62",
+   "to": "value:abfda7f07d7a4e0582f42e9f",
+   "type": "ENABLES",
+   "date": "2018-12-20",
+   "evidence_ids": [
+    "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "efficient and low-loss optical phase modulation in a silicon-on-insulator (SOI) waveguide",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 19,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:48.214000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:d41f9dd9f11be8efc24a31b1",
+   "kind": "benefit",
+   "text": "Potential for reconfigurable photonic testbeds that run many experiments on one chip",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:180731ac83e2857fcd281dc3",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:180731ac83e2857fcd281dc3",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "mesh of 88 generalized beamsplitters programmable on microsecond timescales",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 20,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:50.893000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:40dc40aa27415845bd7fb317",
+   "from": "value:657be6aac09a698d63ef12fa",
+   "to": "value:d41f9dd9f11be8efc24a31b1",
+   "type": "ENABLES",
+   "date": "2018-12-20",
+   "evidence_ids": [
+    "evidence:value-map:180731ac83e2857fcd281dc3",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:180731ac83e2857fcd281dc3",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "mesh of 88 generalized beamsplitters programmable on microsecond timescales",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 21,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:53.571000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:ca7e61cd1586749b4784b8b5",
+   "from": "value:9c3764956dd5664991756d62",
+   "to": "value:d41f9dd9f11be8efc24a31b1",
+   "type": "ENABLES",
+   "date": "2018-12-20",
+   "evidence_ids": [
+    "evidence:value-map:180731ac83e2857fcd281dc3",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:180731ac83e2857fcd281dc3",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "mesh of 88 generalized beamsplitters programmable on microsecond timescales",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 22,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:56.250000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:54d8e1a8dc702e5082d44b21",
+   "kind": "value",
+   "text": "Potential to lower the energy and time cost of AI workloads for AI hardware operators",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e30432dff2d8c055e719b33f",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e30432dff2d8c055e719b33f",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "backpropagation-free in situ training",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 23,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:00:58.929000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: Potential to lower the energy and time cost of AI workloads for AI hardware operators",
+  "seq": 24,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:01.607000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:f4043090fed87ed1d95b7841",
+   "from": "value:bb1c1b4b18a05b3780dba3ec",
+   "to": "value:54d8e1a8dc702e5082d44b21",
+   "type": "DELIVERS",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e30432dff2d8c055e719b33f",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e30432dff2d8c055e719b33f",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "backpropagation-free in situ training",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 25,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:04.286000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:8cb833ba529a32899ecf6c58",
+   "from": "value:ed27c4ff4b3dac6c6d21b3aa",
+   "to": "value:54d8e1a8dc702e5082d44b21",
+   "type": "DELIVERS",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e30432dff2d8c055e719b33f",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e30432dff2d8c055e719b33f",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "backpropagation-free in situ training",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 26,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:06.964000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:1de151425ce3ca8e5cd403db",
+   "kind": "value",
+   "text": "Potential to let builders of optical-signal systems process signals directly with very fast response",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 27,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:09.643000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: Potential to let builders of optical-signal systems process signals directly with very fast response",
+  "seq": 28,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:12.321000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:e18de68c0c265084f9a652eb",
+   "from": "value:bb1c1b4b18a05b3780dba3ec",
+   "to": "value:1de151425ce3ca8e5cd403db",
+   "type": "DELIVERS",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 29,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:15+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:919cb36f094dc08461a75747",
+   "kind": "value",
+   "text": "Potential for photonic chip integrators to pack more programmable elements per chip with manageable loss and thermal spacing",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "efficient and low-loss optical phase modulation in a silicon-on-insulator (SOI) waveguide",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 30,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:17.679000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: Potential for photonic chip integrators to pack more programmable elements per chip with manageable loss and t",
+  "seq": 31,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:20.357000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:9bbbb87bdcc3a5cf2a6f9db8",
+   "from": "value:abfda7f07d7a4e0582f42e9f",
+   "to": "value:919cb36f094dc08461a75747",
+   "type": "DELIVERS",
+   "date": "2018-12-20",
+   "evidence_ids": [
+    "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "efficient and low-loss optical phase modulation in a silicon-on-insulator (SOI) waveguide",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 32,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:23.036000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:41545594a3c398d8dac1b38f",
+   "kind": "value",
+   "text": "Potential for quantum-simulation labs to explore many parameter settings without rebuilding hardware",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:180731ac83e2857fcd281dc3",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:180731ac83e2857fcd281dc3",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "mesh of 88 generalized beamsplitters programmable on microsecond timescales",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 33,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:25.714000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: Potential for quantum-simulation labs to explore many parameter settings without rebuilding hardware",
+  "seq": 34,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:28.393000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:c72a28e85072c239c6735615",
+   "from": "value:d41f9dd9f11be8efc24a31b1",
+   "to": "value:41545594a3c398d8dac1b38f",
+   "type": "DELIVERS",
+   "date": "2018-12-20",
+   "evidence_ids": [
+    "evidence:value-map:180731ac83e2857fcd281dc3",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:180731ac83e2857fcd281dc3",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "mesh of 88 generalized beamsplitters programmable on microsecond timescales",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 35,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:31.071000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:745a6451789d82b4b4847dfa",
+   "kind": "problem",
+   "text": "AI hardware operators: CMOS electronics are limited by energy consumption and throughput for neural networks",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:dd63c365c01909f9d03ffecf"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:dd63c365c01909f9d03ffecf",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "energy consumption and throughput are emerging as fundamental limitations",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 36,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:33.750000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:13231c0fe3aaa938df70a47f",
+   "from": "value:54d8e1a8dc702e5082d44b21",
+   "to": "value:745a6451789d82b4b4847dfa",
+   "type": "SOLVES",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:dd63c365c01909f9d03ffecf",
+    "evidence:value-map:e30432dff2d8c055e719b33f",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:dd63c365c01909f9d03ffecf",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "energy consumption and throughput are emerging as fundamental limitations",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e30432dff2d8c055e719b33f",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "backpropagation-free in situ training",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 37,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:36.429000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:70a2acd8b2cd13b79bfd0337",
+   "kind": "problem",
+   "text": "Builders of latency-critical optical-signal systems: applications need ultrafast, direct processing of optical signals",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:1fba2299fd326c05304a16a3"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:1fba2299fd326c05304a16a3",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "ultrafast, direct processing of optical signals",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 38,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:39.107000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:420d8a9b8deae918b11a7c1f",
+   "from": "value:1de151425ce3ca8e5cd403db",
+   "to": "value:70a2acd8b2cd13b79bfd0337",
+   "type": "SOLVES",
+   "date": "2024-12-02",
+   "evidence_ids": [
+    "evidence:value-map:1fba2299fd326c05304a16a3",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "evidence:value-map:e6d344ba6a09281a2492c61f"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:1fba2299fd326c05304a16a3",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "ultrafast, direct processing of optical signals",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:9ffc03e152bdd8c2b4bc8a7c",
+    "source_url": "https://www.nature.com/articles/s41566-024-01567-z",
+    "quote": "matrix algebra and nonlinear activation",
+    "source_date": "2024-12-02",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:e6d344ba6a09281a2492c61f",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.93",
+    "quote": "cascaded array of 56 programmable Mach–Zehnder interferometers",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 39,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:41.786000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:e11656a0b77e188009304e88",
+   "kind": "problem",
+   "text": "Quantum-simulation researchers: large photonic systems need low-loss, high-fidelity control over all parameters",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:663ee421f873c920e653dbdb"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:663ee421f873c920e653dbdb",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "low-loss, high-fidelity control over all parameters of the transport problem",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 40,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:44.464000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:c41c73f9821496ff8a38e898",
+   "from": "value:41545594a3c398d8dac1b38f",
+   "to": "value:e11656a0b77e188009304e88",
+   "type": "SOLVES",
+   "date": "2018-12-20",
+   "evidence_ids": [
+    "evidence:value-map:180731ac83e2857fcd281dc3",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "evidence:value-map:663ee421f873c920e653dbdb"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:180731ac83e2857fcd281dc3",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "mesh of 88 generalized beamsplitters programmable on microsecond timescales",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:663ee421f873c920e653dbdb",
+    "source_url": "https://www.nature.com/articles/nphoton.2017.95",
+    "quote": "low-loss, high-fidelity control over all parameters of the transport problem",
+    "source_date": "2017-06-19",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 41,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:47.143000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:410b5555e760acfb7570ae8e",
+   "kind": "problem",
+   "text": "Photonic chip designers: dense integration requires spacing to thermally isolate thermo-optic devices",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:59c24caea86df761cb83fa80"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:59c24caea86df761cb83fa80",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "separation necessary to isolate thermo-optic devices",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 42,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:49.821000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:08d3859ede690956a1842831",
+   "from": "value:919cb36f094dc08461a75747",
+   "to": "value:410b5555e760acfb7570ae8e",
+   "type": "SOLVES",
+   "date": "2018-12-20",
+   "evidence_ids": [
+    "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "evidence:value-map:59c24caea86df761cb83fa80",
+    "evidence:value-map:5dc04986b4e1630ae14cf1f6"
+   ],
+   "confidence": 0.5,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:2cd74480befbffc8c5a2b55c",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "efficient and low-loss optical phase modulation in a silicon-on-insulator (SOI) waveguide",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:59c24caea86df761cb83fa80",
+    "source_url": "https://openalex.org/W2952285760",
+    "quote": "separation necessary to isolate thermo-optic devices",
+    "source_date": "2014-04-23",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:5dc04986b4e1630ae14cf1f6",
+    "source_url": "https://openalex.org/W2905425616",
+    "quote": "electrically reconfigurable optical systems that can implement universal linear optics transformations on spatial mode sets",
+    "source_date": "2018-12-20",
+    "observed_at": "2026-11-24T20:20:11.417865+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 43,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:52.500000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:lightmatter:1",
+   "name": "Operating AI infrastructure networks",
+   "problem_set": [
+    "Meeting bandwidth, density and power-efficiency pressure from AI scale inside the data center",
+    "Running reconfigurable optical switching and optical links at rack and cluster scale",
+    "Keeping optical transceivers and switching reliable while reducing power"
+   ],
+   "value_prop": "The founder’s programmable nanophotonic processor research could inform experiments with reconfigurable optical switching.",
+   "colour": "--cat-1",
+   "org_ids": [
+    "org:cisco",
+    "org:google",
+    "org:meta",
+    "org:microsoft"
+   ],
+   "problem_node_ids": [
+    "icp-need:2"
+   ],
+   "evidence_ids": [
+    "evidence:category:cisco",
+    "evidence:category:google",
+    "evidence:category:meta",
+    "evidence:category:microsoft"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:cisco",
+    "source_url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/cisco-advances-scalability-and-openness-at-ocp-2026.html",
+    "quote": "Inside the data center, AI scale is driving the same need for greater bandwidth, density and power efficiency across silicon, systems and optics.",
+    "source_date": "2026-10-12",
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:category:google",
+    "source_url": "https://docs.cloud.google.com/tpu/docs/system-architecture-tpu-vm?hl=en",
+    "quote": "the boundary links of each 4x4x4 cube are connected through optical links and reconfigurable optical circuit switches (OCS)",
+    "source_date": null,
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:category:meta",
+    "source_url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+    "quote": "A look at why integrated optics matter for rack-scale AI — power, density, disaggregation, and reliability",
+    "source_date": "2026-10-26",
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:category:microsoft",
+    "source_url": "https://www.microsoft.com/en-us/research/theme/future-ai-infrastructure/networking/",
+    "quote": "optical transceiver and switching technologies designed to deliver significantly higher bandwidth and reliability while reducing power consumption and costs.",
+    "source_date": null,
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 44,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:55.179000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:lightmatter:2",
+   "name": "Designing and packaging photonic chips",
+   "problem_set": [
+    "Co-packaging optics with processors and accelerators for AI systems",
+    "Building optical I/O chiplets and optical modules",
+    "Making inverse-designed photonic circuits manufacturable"
+   ],
+   "value_prop": "The founder’s phase-shifter measurements could help chip designers evaluate optical loss and device spacing when integrating photonic components.",
+   "colour": "--cat-2",
+   "org_ids": [
+    "org:amd",
+    "org:ibm",
+    "org:intel",
+    "org:nvidia"
+   ],
+   "problem_node_ids": [
+    "icp-need:1"
+   ],
+   "evidence_ids": [
+    "evidence:buyers:0b42a55d16f825acd54e",
+    "evidence:category:amd",
+    "evidence:category:ibm",
+    "evidence:category:intel"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:amd",
+    "source_url": "https://www.amd.com/en/blogs/2025/amd-acquires-enosemi-to-accelerate-co-packaged-optics-innovation.html",
+    "quote": "AMD Acquires Enosemi to Accelerate Co-Packaged Optics Innovation for AI Systems",
+    "source_date": "2025-05-28",
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:category:ibm",
+    "source_url": "https://research.ibm.com/publications/co-packaged-optics-cpo-technology-full-module-test-vehicle-demonstrations",
+    "quote": "We built co-packaged optics modules having polymer waveguide fiber interfaces successfully.",
+    "source_date": "2025-05-27",
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:category:intel",
+    "source_url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-unveils-first-integrated-optical-io-chiplet.html",
+    "quote": "fully integrated optical compute interconnect (OCI) chiplet co-packaged with an Intel CPU and running live data.",
+    "source_date": "2024-06-26",
+    "observed_at": "2026-11-24T20:15:33.402234+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 45,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:01:57.857000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:lightmatter:3",
+   "name": "Engineering quantum photonic hardware",
+   "problem_set": [
+    "Designing and simulating photonic circuits for quantum hardware",
+    "Validating photonics hardware and packaging optical components"
+   ],
+   "value_prop": "The founder’s programmable nanophotonic circuits could provide a reference design for testing optical transformations in quantum hardware.",
+   "colour": "--cat-3",
+   "org_ids": [
+    "org:psiquantum"
+   ],
+   "problem_node_ids": [
+    "icp-need:1",
+    "icp-need:2"
+   ],
+   "evidence_ids": [
+    "evidence:buyers:1a99a9cd9f4bc5794b96",
+    "evidence:buyers:a4340b3d45d7a9a232a3",
+    "evidence:buyers:ecde9f7dd1860dea84dd",
+    "evidence:category:psiquantum"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:psiquantum",
+    "source_url": "https://www.psiquantum.com/architecture",
+    "quote": "PsiQuantum made a strategic decision from the very beginning to use photons (particles of light).",
+    "source_date": null,
+    "observed_at": "2026-11-24T20:15:33.402234+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 46,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:00.536000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:lightmatter:4",
+   "name": "Laboratory research on photonic computing",
+   "problem_set": [
+    "Scaling photonic computing approaches such as Ising machines to very large problem sizes",
+    "Testing whether photonic hardware can run neural-network-style workloads"
+   ],
+   "value_prop": "The founder’s on-chip deep-learning experiments could give photonic computing labs a reference point for testing other workloads.",
+   "colour": "--cat-4",
+   "org_ids": [
+    "org:ntt"
+   ],
+   "problem_node_ids": [
+    "icp-need:0"
+   ],
+   "evidence_ids": [
+    "evidence:buyers:f8ed12ba9a1b8e000e62"
+   ]
+  },
+  "seq": 47,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:03.214000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "status",
+  "layer": "category",
+  "status": "Found 4 buyer categories",
+  "seq": 48,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:05.893000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:cisco",
+   "name": "Cisco Systems",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I135428043"
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:cisco",
+    "source_url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m10/cisco-advances-scalability-and-openness-at-ocp-2026.html",
+    "quote": "Inside the data center, AI scale is driving the same need for greater bandwidth, density and power efficiency across silicon, systems and optics.",
+    "source_date": "2026-10-12",
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 49,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:08.571000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:1:org:cisco",
+   "from": "category:lightmatter:1",
+   "to": "org:cisco",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Operating AI infrastructure networks"
+  },
+  "seq": 50,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:11.250000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:google",
+   "name": "Google",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I1291425158"
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:google",
+    "source_url": "https://docs.cloud.google.com/tpu/docs/system-architecture-tpu-vm?hl=en",
+    "quote": "the boundary links of each 4x4x4 cube are connected through optical links and reconfigurable optical circuit switches (OCS)",
+    "source_date": null,
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 51,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:13.929000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:1:org:google",
+   "from": "category:lightmatter:1",
+   "to": "org:google",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Operating AI infrastructure networks"
+  },
+  "seq": 52,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:16.607000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:meta",
+   "name": "Meta",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I4210114444"
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:meta",
+    "source_url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+    "quote": "A look at why integrated optics matter for rack-scale AI — power, density, disaggregation, and reliability",
+    "source_date": "2026-10-26",
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 53,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:19.286000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:1:org:meta",
+   "from": "category:lightmatter:1",
+   "to": "org:meta",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Operating AI infrastructure networks"
+  },
+  "seq": 54,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:21.964000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:microsoft",
+   "name": "Microsoft",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I1290206253"
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:microsoft",
+    "source_url": "https://www.microsoft.com/en-us/research/theme/future-ai-infrastructure/networking/",
+    "quote": "optical transceiver and switching technologies designed to deliver significantly higher bandwidth and reliability while reducing power consumption and costs.",
+    "source_date": null,
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 55,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:24.643000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:1:org:microsoft",
+   "from": "category:lightmatter:1",
+   "to": "org:microsoft",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Operating AI infrastructure networks"
+  },
+  "seq": 56,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:27.321000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:amd",
+   "name": "AMD",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I4210137977"
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:amd",
+    "source_url": "https://www.amd.com/en/blogs/2025/amd-acquires-enosemi-to-accelerate-co-packaged-optics-innovation.html",
+    "quote": "AMD Acquires Enosemi to Accelerate Co-Packaged Optics Innovation for AI Systems",
+    "source_date": "2025-05-28",
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 57,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:30+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:2:org:amd",
+   "from": "category:lightmatter:2",
+   "to": "org:amd",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Designing and packaging photonic chips"
+  },
+  "seq": 58,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:32.679000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:ibm",
+   "name": "IBM",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I1341412227"
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:ibm",
+    "source_url": "https://research.ibm.com/publications/co-packaged-optics-cpo-technology-full-module-test-vehicle-demonstrations",
+    "quote": "We built co-packaged optics modules having polymer waveguide fiber interfaces successfully.",
+    "source_date": "2025-05-27",
+    "observed_at": "2026-11-24T20:14:51.972022+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 59,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:35.357000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:2:org:ibm",
+   "from": "category:lightmatter:2",
+   "to": "org:ibm",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Designing and packaging photonic chips"
+  },
+  "seq": 60,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:38.036000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:intel",
+   "name": "Intel",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I1343180700"
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:intel",
+    "source_url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-unveils-first-integrated-optical-io-chiplet.html",
+    "quote": "fully integrated optical compute interconnect (OCI) chiplet co-packaged with an Intel CPU and running live data.",
+    "source_date": "2024-06-26",
+    "observed_at": "2026-11-24T20:15:33.402234+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 61,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:40.714000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:2:org:intel",
+   "from": "category:lightmatter:2",
+   "to": "org:intel",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Designing and packaging photonic chips"
+  },
+  "seq": 62,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:43.393000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:nvidia",
+   "name": "NVIDIA",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I4210127875"
+  },
+  "seq": 63,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:46.071000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:2:org:nvidia",
+   "from": "category:lightmatter:2",
+   "to": "org:nvidia",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Designing and packaging photonic chips"
+  },
+  "seq": 64,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:48.750000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:psiquantum",
+   "name": "PsiQuantum",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I4405263132"
+  },
+  "evidence": [
+   {
+    "id": "evidence:category:psiquantum",
+    "source_url": "https://www.psiquantum.com/architecture",
+    "quote": "PsiQuantum made a strategic decision from the very beginning to use photons (particles of light).",
+    "source_date": null,
+    "observed_at": "2026-11-24T20:15:33.402234+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 65,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:51.429000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:3:org:psiquantum",
+   "from": "category:lightmatter:3",
+   "to": "org:psiquantum",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Engineering quantum photonic hardware"
+  },
+  "seq": 66,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:54.107000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:ntt",
+   "name": "NTT Research",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I4210092597"
+  },
+  "seq": 67,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:56.786000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:lightmatter:4:org:ntt",
+   "from": "category:lightmatter:4",
+   "to": "org:ntt",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Laboratory research on photonic computing"
+  },
+  "seq": 68,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:02:59.464000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "status",
+  "layer": "lead",
+  "status": "0 other buyers",
+  "seq": 69,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:02.143000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:azalia-mirhoseini",
+   "name": "Azalia Mirhoseini",
+   "openalex_id": null,
+   "orcid": null,
+   "org_id": "org:google",
+   "affiliation_asof": "2025-09-03",
+   "role": null,
+   "is_bridge_candidate": false,
+   "alignment": null
+  },
+  "seq": 70,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:04.821000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:harris-google-citation",
+   "from": "person:openalex:A5102978866",
+   "to": "person:azalia-mirhoseini",
+   "type": "CITES",
+   "date": "2025-09-03",
+   "evidence_ids": [
+    "evidence:google-citation"
+   ],
+   "confidence": 0.65,
+   "name_check": "unchecked",
+   "label": "2025 paper cites Harris 2017; no personal link"
+  },
+  "evidence": [
+   {
+    "id": "evidence:google-citation",
+    "source_url": "https://api.openalex.org/works?filter=cites:W2752849906,institutions.type:company&per-page=100&select=id,title,publication_date,authorships",
+    "quote": "id: https://openalex.org/W4413946588; publication_date: 2025-09-03; authorships.author.display_name: Azalia Mirhoseini; authorships.institutions.display_name: Google (United States)",
+    "source_date": "2025-09-03",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 71,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:07.500000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:azalia-google",
+   "from": "person:azalia-mirhoseini",
+   "to": "org:google",
+   "type": "AFFILIATED_AT",
+   "date": "2025-09-03",
+   "evidence_ids": [
+    "evidence:google-citation"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "Google publication affiliation, 2025"
+  },
+  "evidence": [
+   {
+    "id": "evidence:google-citation",
+    "source_url": "https://api.openalex.org/works?filter=cites:W2752849906,institutions.type:company&per-page=100&select=id,title,publication_date,authorships",
+    "quote": "id: https://openalex.org/W4413946588; publication_date: 2025-09-03; authorships.author.display_name: Azalia Mirhoseini; authorships.institutions.display_name: Google (United States)",
+    "source_date": "2025-09-03",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 72,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:10.179000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:google-citation",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:azalia-mirhoseini",
+   "buyer_person_id": "person:azalia-mirhoseini",
+   "buyer_org_id": "org:google",
+   "hops": [
+    "edge:harris-google-citation",
+    "edge:azalia-google"
+   ],
+   "kind": "aligned",
+   "score": 62.0,
+   "weakest_edge_id": "edge:azalia-google",
+   "why_now_signal_ids": [
+    "signal:90d-google",
+    "signal:google-cites"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:google-citation",
+    "source_url": "https://api.openalex.org/works?filter=cites:W2752849906,institutions.type:company&per-page=100&select=id,title,publication_date,authorships",
+    "quote": "id: https://openalex.org/W4413946588; publication_date: 2025-09-03; authorships.author.display_name: Azalia Mirhoseini; authorships.institutions.display_name: Google (United States)",
+    "source_date": "2025-09-03",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 73,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:12.857000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5085311993",
+   "name": "Edward H. Chen",
+   "openalex_id": "https://openalex.org/A5085311993",
+   "orcid": "https://orcid.org/0000-0001-7217-7137",
+   "org_id": "org:microsoft",
+   "affiliation_asof": null,
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 74,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:15.536000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:chen-shared",
+   "from": "person:openalex:A5102978866",
+   "to": "person:openalex:A5085311993",
+   "type": "LAB_MATE",
+   "date": "2015-01-01",
+   "evidence_ids": [
+    "evidence:shared-A5085311993"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "co-authored 2015 (MIT)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5085311993",
+    "source_url": "https://openalex.org/W1520331598",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Edward H. Chen; raw_affiliation_strings: [\"Massachusetts Institute of Technology, United States\", \"Research Laboratory of Electronics Massachusetts Institute of Technology, Cambridge MA 02139\"]",
+    "source_date": "2015-01-01",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 75,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:18.214000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:chen-org",
+   "from": "person:openalex:A5085311993",
+   "to": "org:microsoft",
+   "type": "AFFILIATED_AT",
+   "date": null,
+   "evidence_ids": [
+    "evidence:chen-affiliation"
+   ],
+   "confidence": 0.85,
+   "name_check": "unchecked",
+   "label": "published affiliation as of 2026"
+  },
+  "evidence": [
+   {
+    "id": "evidence:chen-affiliation",
+    "source_url": "https://openalex.org/W7167835520",
+    "quote": "raw_affiliation_strings: Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA; publication_year: 2026",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 76,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:20.893000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:chen",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:openalex:A5085311993",
+   "buyer_person_id": "person:openalex:A5085311993",
+   "buyer_org_id": "org:microsoft",
+   "hops": [
+    "edge:chen-shared",
+    "edge:chen-org"
+   ],
+   "kind": "lab_mate",
+   "score": 78.0,
+   "weakest_edge_id": "edge:chen-org",
+   "why_now_signal_ids": [
+    "signal:90d-microsoft"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5085311993",
+    "source_url": "https://openalex.org/W1520331598",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Edward H. Chen; raw_affiliation_strings: [\"Massachusetts Institute of Technology, United States\", \"Research Laboratory of Electronics Massachusetts Institute of Technology, Cambridge MA 02139\"]",
+    "source_date": "2015-01-01",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:chen-affiliation",
+    "source_url": "https://openalex.org/W7167835520",
+    "quote": "raw_affiliation_strings: Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA; publication_year: 2026",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 77,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:23.571000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5108697414",
+   "name": "Andrew E. Dane",
+   "openalex_id": "https://openalex.org/A5108697414",
+   "orcid": "https://orcid.org/0000-0003-2480-767X",
+   "org_id": "org:ibm",
+   "affiliation_asof": null,
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 78,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:26.250000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:dane-shared",
+   "from": "person:openalex:A5102978866",
+   "to": "person:openalex:A5108697414",
+   "type": "LAB_MATE",
+   "date": "2015-01-09",
+   "evidence_ids": [
+    "evidence:shared-A5108697414"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "co-authored 2015 (MIT)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5108697414",
+    "source_url": "https://openalex.org/W2115213492",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Andrew E. Dane; raw_affiliation_strings: [\"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, Massachusetts 02139, USA\", \"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA\"]",
+    "source_date": "2015-01-09",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 79,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:28.929000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:dane-org",
+   "from": "person:openalex:A5108697414",
+   "to": "org:ibm",
+   "type": "AFFILIATED_AT",
+   "date": null,
+   "evidence_ids": [
+    "evidence:dane-affiliation"
+   ],
+   "confidence": 0.85,
+   "name_check": "unchecked",
+   "label": "published affiliation as of 2026"
+  },
+  "evidence": [
+   {
+    "id": "evidence:dane-affiliation",
+    "source_url": "https://openalex.org/A5108697414",
+    "quote": "affiliations: {\"institution\": {\"id\": \"https://openalex.org/I1341412227\", \"ror\": \"https://ror.org/05hh8d621\", \"display_name\": \"IBM (United States)\", \"country_code\": \"US\", \"type\": \"company\", \"lineage\": [\"https://openalex.org/I1341412227\"]}, \"years\": [2026]}",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 80,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:31.607000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:dane",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:openalex:A5108697414",
+   "buyer_person_id": "person:openalex:A5108697414",
+   "buyer_org_id": "org:ibm",
+   "hops": [
+    "edge:dane-shared",
+    "edge:dane-org"
+   ],
+   "kind": "lab_mate",
+   "score": 78.0,
+   "weakest_edge_id": "edge:dane-org",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5108697414",
+    "source_url": "https://openalex.org/W2115213492",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Andrew E. Dane; raw_affiliation_strings: [\"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, Massachusetts 02139, USA\", \"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA\"]",
+    "source_date": "2015-01-09",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:dane-affiliation",
+    "source_url": "https://openalex.org/A5108697414",
+    "quote": "affiliations: {\"institution\": {\"id\": \"https://openalex.org/I1341412227\", \"ror\": \"https://ror.org/05hh8d621\", \"display_name\": \"IBM (United States)\", \"country_code\": \"US\", \"type\": \"company\", \"lineage\": [\"https://openalex.org/I1341412227\"]}, \"years\": [2026]}",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 81,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:34.286000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5069544756",
+   "name": "Faraz Najafi",
+   "openalex_id": "https://openalex.org/A5069544756",
+   "orcid": null,
+   "org_id": "org:psiquantum",
+   "affiliation_asof": null,
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 82,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:36.964000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:najafi-shared",
+   "from": "person:openalex:A5102978866",
+   "to": "person:openalex:A5069544756",
+   "type": "LAB_MATE",
+   "date": "2015-01-09",
+   "evidence_ids": [
+    "evidence:shared-A5069544756"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "co-authored 2015 (MIT)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5069544756",
+    "source_url": "https://openalex.org/W2115213492",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Faraz Najafi; raw_affiliation_strings: [\"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, Massachusetts 02139, USA\", \"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA\"]",
+    "source_date": "2015-01-09",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 83,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:39.643000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:najafi-org",
+   "from": "person:openalex:A5069544756",
+   "to": "org:psiquantum",
+   "type": "AFFILIATED_AT",
+   "date": null,
+   "evidence_ids": [
+    "evidence:najafi-affiliation"
+   ],
+   "confidence": 0.85,
+   "name_check": "unchecked",
+   "label": "published affiliation as of 2025"
+  },
+  "evidence": [
+   {
+    "id": "evidence:najafi-affiliation",
+    "source_url": "https://openalex.org/A5069544756",
+    "quote": "affiliations: {\"institution\": {\"id\": \"https://openalex.org/I4405263132\", \"ror\": \"https://ror.org/02yw0nw49\", \"display_name\": \"PsiQuantum (United States)\", \"country_code\": \"US\", \"type\": \"company\", \"lineage\": [\"https://openalex.org/I4405263132\"]}, \"years\": [2025]}",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 84,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:42.321000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:najafi",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:openalex:A5069544756",
+   "buyer_person_id": "person:openalex:A5069544756",
+   "buyer_org_id": "org:psiquantum",
+   "hops": [
+    "edge:najafi-shared",
+    "edge:najafi-org"
+   ],
+   "kind": "lab_mate",
+   "score": 78.0,
+   "weakest_edge_id": "edge:najafi-org",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5069544756",
+    "source_url": "https://openalex.org/W2115213492",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Faraz Najafi; raw_affiliation_strings: [\"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, Massachusetts 02139, USA\", \"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA\"]",
+    "source_date": "2015-01-09",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:najafi-affiliation",
+    "source_url": "https://openalex.org/A5069544756",
+    "quote": "affiliations: {\"institution\": {\"id\": \"https://openalex.org/I4405263132\", \"ror\": \"https://ror.org/02yw0nw49\", \"display_name\": \"PsiQuantum (United States)\", \"country_code\": \"US\", \"type\": \"company\", \"lineage\": [\"https://openalex.org/I4405263132\"]}, \"years\": [2025]}",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 85,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:45+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5018701316",
+   "name": "Ren-Jye Shiue",
+   "openalex_id": "https://openalex.org/A5018701316",
+   "orcid": null,
+   "org_id": "org:cisco",
+   "affiliation_asof": null,
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 86,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:47.679000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:shiue-shared",
+   "from": "person:openalex:A5102978866",
+   "to": "person:openalex:A5018701316",
+   "type": "LAB_MATE",
+   "date": "2014-08-04",
+   "evidence_ids": [
+    "evidence:shared-A5018701316"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "co-authored 2014 (MIT)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5018701316",
+    "source_url": "https://openalex.org/W2047964983",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Ren-Jye Shiue; raw_affiliation_strings: [\"Massachusetts Institute of Technology (MIT) 1 Department of Electrical Engineering and Computer Science, , Cambridge, Massachusetts 02139, USA\"]",
+    "source_date": "2014-08-04",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 87,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:50.357000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:shiue-org",
+   "from": "person:openalex:A5018701316",
+   "to": "org:cisco",
+   "type": "AFFILIATED_AT",
+   "date": null,
+   "evidence_ids": [
+    "evidence:shiue-affiliation"
+   ],
+   "confidence": 0.85,
+   "name_check": "unchecked",
+   "label": "published affiliation as of 2025"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shiue-affiliation",
+    "source_url": "https://openalex.org/W4410994200",
+    "quote": "raw_affiliation_strings: Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA; publication_year: 2025",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 88,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:53.036000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:shiue",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:openalex:A5018701316",
+   "buyer_person_id": "person:openalex:A5018701316",
+   "buyer_org_id": "org:cisco",
+   "hops": [
+    "edge:shiue-shared",
+    "edge:shiue-org"
+   ],
+   "kind": "lab_mate",
+   "score": 78.0,
+   "weakest_edge_id": "edge:shiue-org",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5018701316",
+    "source_url": "https://openalex.org/W2047964983",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Ren-Jye Shiue; raw_affiliation_strings: [\"Massachusetts Institute of Technology (MIT) 1 Department of Electrical Engineering and Computer Science, , Cambridge, Massachusetts 02139, USA\"]",
+    "source_date": "2014-08-04",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:shiue-affiliation",
+    "source_url": "https://openalex.org/W4410994200",
+    "quote": "raw_affiliation_strings: Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA; publication_year: 2025",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 89,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:55.714000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:zander",
+   "name": "Jason Zander",
+   "openalex_id": null,
+   "orcid": null,
+   "org_id": "org:microsoft",
+   "affiliation_asof": "2025-03-25",
+   "role": "Leads Strategic Missions and Technologies division (as of 2025-03-25)",
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 90,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:03:58.393000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:harris-zander",
+   "from": "person:openalex:A5102978866",
+   "to": "person:zander",
+   "type": "BOARD",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:lightmatter-board"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "listed on Lightmatter board, observed 2026-11-24"
+  },
+  "evidence": [
+   {
+    "id": "evidence:lightmatter-board",
+    "source_url": "https://lightmatter.com/about/",
+    "quote": "Board of Directors; Nicholas Harris; Jason Zander",
+    "source_date": "2026-11-24",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "board_page"
+   }
+  ],
+  "seq": 91,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:01.071000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:zander-microsoft",
+   "from": "person:zander",
+   "to": "org:microsoft",
+   "type": "AFFILIATED_AT",
+   "date": "2025-03-25",
+   "evidence_ids": [
+    "evidence:zander-microsoft"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "Microsoft role as of 2025-03-25"
+  },
+  "evidence": [
+   {
+    "id": "evidence:zander-microsoft",
+    "source_url": "https://lightmatter.com/press-release/lightmatter-welcomes-industry-leader-jason-zander-to-its-board-of-directors/",
+    "quote": "leads Microsoft’s Strategic Missions and Technologies division",
+    "source_date": "2025-03-25",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "board_page"
+   }
+  ],
+  "seq": 92,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:03.750000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:zander",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:zander",
+   "buyer_person_id": "person:zander",
+   "buyer_org_id": "org:microsoft",
+   "hops": [
+    "edge:harris-zander",
+    "edge:zander-microsoft"
+   ],
+   "kind": "board",
+   "score": 84.0,
+   "weakest_edge_id": "edge:zander-microsoft",
+   "why_now_signal_ids": [
+    "signal:90d-microsoft"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:lightmatter-board",
+    "source_url": "https://lightmatter.com/about/",
+    "quote": "Board of Directors; Nicholas Harris; Jason Zander",
+    "source_date": "2026-11-24",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "board_page"
+   },
+   {
+    "id": "evidence:zander-microsoft",
+    "source_url": "https://lightmatter.com/press-release/lightmatter-welcomes-industry-leader-jason-zander-to-its-board-of-directors/",
+    "quote": "leads Microsoft’s Strategic Missions and Technologies division",
+    "source_date": "2025-03-25",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "board_page"
+   }
+  ],
+  "seq": 93,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:06.429000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5061412493",
+   "name": "Gregory R. Steinbrecher",
+   "openalex_id": "https://openalex.org/A5061412493",
+   "orcid": "https://orcid.org/0000-0001-9895-0191",
+   "org_id": "org:meta",
+   "affiliation_asof": null,
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 94,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:09.107000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:steinbrecher-shared",
+   "from": "person:openalex:A5102978866",
+   "to": "person:openalex:A5061412493",
+   "type": "LAB_MATE",
+   "date": "2017-08-23",
+   "evidence_ids": [
+    "evidence:shared-A5061412493"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "co-authored 2017 (MIT)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5061412493",
+    "source_url": "https://openalex.org/W2746675113",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Gregory R. Steinbrecher; raw_affiliation_strings: [\"Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA\"]",
+    "source_date": "2017-08-23",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 95,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:11.786000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:steinbrecher-org",
+   "from": "person:openalex:A5061412493",
+   "to": "org:meta",
+   "type": "AFFILIATED_AT",
+   "date": null,
+   "evidence_ids": [
+    "evidence:steinbrecher-affiliation"
+   ],
+   "confidence": 0.85,
+   "name_check": "unchecked",
+   "label": "published affiliation as of 2024"
+  },
+  "evidence": [
+   {
+    "id": "evidence:steinbrecher-affiliation",
+    "source_url": "https://openalex.org/W4400495356",
+    "quote": "raw_affiliation_strings: Meta Platforms Inc, San Francisco, California, United States; publication_year: 2024",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 96,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:14.464000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:steinbrecher",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:openalex:A5061412493",
+   "buyer_person_id": "person:openalex:A5061412493",
+   "buyer_org_id": "org:meta",
+   "hops": [
+    "edge:steinbrecher-shared",
+    "edge:steinbrecher-org"
+   ],
+   "kind": "lab_mate",
+   "score": 88.0,
+   "weakest_edge_id": "edge:steinbrecher-org",
+   "why_now_signal_ids": [
+    "signal:90d-meta"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5061412493",
+    "source_url": "https://openalex.org/W2746675113",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Gregory R. Steinbrecher; raw_affiliation_strings: [\"Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA\"]",
+    "source_date": "2017-08-23",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:steinbrecher-affiliation",
+    "source_url": "https://openalex.org/W4400495356",
+    "quote": "raw_affiliation_strings: Meta Platforms Inc, San Francisco, California, United States; publication_year: 2024",
+    "source_date": null,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 97,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:17.143000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5049120533",
+   "name": "Dirk Robert Englund",
+   "openalex_id": "https://openalex.org/A5049120533",
+   "orcid": "https://orcid.org/0000-0002-1043-3489",
+   "org_id": "org:mit",
+   "affiliation_asof": "2017-06-12",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 98,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:19.821000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:harris-englund",
+   "from": "person:openalex:A5102978866",
+   "to": "person:openalex:A5049120533",
+   "type": "CO_AUTHORED",
+   "date": "2017-06-12",
+   "evidence_ids": [
+    "evidence:harris-englund"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "co-authored 2017 (MIT)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:harris-englund",
+    "source_url": "https://openalex.org/W2752849906",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Dirk Robert Englund",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 99,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:22.500000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5092247170",
+   "name": "Louis Follet",
+   "openalex_id": "https://openalex.org/A5092247170",
+   "orcid": null,
+   "org_id": "org:nvidia",
+   "affiliation_asof": "2026-11-18",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 100,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:25.179000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:englund-follet",
+   "from": "person:openalex:A5049120533",
+   "to": "person:openalex:A5092247170",
+   "type": "ADVISOR_LAB",
+   "date": "2026-11-18",
+   "evidence_ids": [
+    "evidence:follet-dual"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "co-authored 2026 (Englund lab orbit)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:follet-dual",
+    "source_url": "https://openalex.org/W7236566979",
+    "quote": "authorships.author.display_name: Louis Follet; Dirk Robert Englund; raw_affiliation_strings: NVIDIA Corporation , Santa Clara , CA , USA; Research Laboratory of Electronics , Massachusetts Institute of Technology , Cambridge , MA 02139 , USA",
+    "source_date": "2026-11-18",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 101,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:27.857000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:follet-nvidia",
+   "from": "person:openalex:A5092247170",
+   "to": "org:nvidia",
+   "type": "DUAL_AFFILIATION",
+   "date": "2026-11-18",
+   "evidence_ids": [
+    "evidence:follet-dual"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "MIT + NVIDIA affiliations, 2026"
+  },
+  "evidence": [
+   {
+    "id": "evidence:follet-dual",
+    "source_url": "https://openalex.org/W7236566979",
+    "quote": "authorships.author.display_name: Louis Follet; Dirk Robert Englund; raw_affiliation_strings: NVIDIA Corporation , Santa Clara , CA , USA; Research Laboratory of Electronics , Massachusetts Institute of Technology , Cambridge , MA 02139 , USA",
+    "source_date": "2026-11-18",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 102,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:30.536000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:follet",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:openalex:A5049120533",
+   "buyer_person_id": "person:openalex:A5092247170",
+   "buyer_org_id": "org:nvidia",
+   "hops": [
+    "edge:harris-englund",
+    "edge:englund-follet",
+    "edge:follet-nvidia"
+   ],
+   "kind": "advisor_lab",
+   "score": 91.0,
+   "weakest_edge_id": "edge:follet-nvidia",
+   "why_now_signal_ids": [
+    "signal:90d-nvidia"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:harris-englund",
+    "source_url": "https://openalex.org/W2752849906",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Dirk Robert Englund",
+    "source_date": "2017-06-12",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:follet-dual",
+    "source_url": "https://openalex.org/W7236566979",
+    "quote": "authorships.author.display_name: Louis Follet; Dirk Robert Englund; raw_affiliation_strings: NVIDIA Corporation , Santa Clara , CA , USA; Research Laboratory of Electronics , Massachusetts Institute of Technology , Cambridge , MA 02139 , USA",
+    "source_date": "2026-11-18",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 103,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:33.214000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5047268098",
+   "name": "Saumil Bandyopadhyay",
+   "openalex_id": "https://openalex.org/A5047268098",
+   "orcid": "https://orcid.org/0000-0002-7761-337X",
+   "org_id": "org:ntt",
+   "affiliation_asof": "2024-12-01",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 104,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:35.893000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:bandyopadhyay-shared",
+   "from": "person:openalex:A5102978866",
+   "to": "person:openalex:A5047268098",
+   "type": "CO_AUTHORED",
+   "date": "2024-12-01",
+   "evidence_ids": [
+    "evidence:shared-A5047268098"
+   ],
+   "confidence": 0.9,
+   "name_check": "ok",
+   "label": "co-authored 2024 (MIT + NTT Research)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5047268098",
+    "source_url": "https://openalex.org/W4404905249",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Saumil Bandyopadhyay; raw_affiliation_strings: [\"NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA\", \"Research Laboratory of Electronics, MIT, Cambridge, MA, USA\"]",
+    "source_date": "2024-12-01",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 105,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:38.571000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:bandyopadhyay-dual",
+   "from": "person:openalex:A5047268098",
+   "to": "org:ntt",
+   "type": "DUAL_AFFILIATION",
+   "date": "2024-12-01",
+   "evidence_ids": [
+    "evidence:shared-A5047268098"
+   ],
+   "confidence": 0.9,
+   "name_check": "ok",
+   "label": "MIT + NTT Research affiliations, 2024"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5047268098",
+    "source_url": "https://openalex.org/W4404905249",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Saumil Bandyopadhyay; raw_affiliation_strings: [\"NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA\", \"Research Laboratory of Electronics, MIT, Cambridge, MA, USA\"]",
+    "source_date": "2024-12-01",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 106,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:41.250000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:bandyopadhyay",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:openalex:A5047268098",
+   "buyer_person_id": "person:openalex:A5047268098",
+   "buyer_org_id": "org:ntt",
+   "hops": [
+    "edge:bandyopadhyay-shared",
+    "edge:bandyopadhyay-dual"
+   ],
+   "kind": "dual_affiliation",
+   "score": 94.0,
+   "weakest_edge_id": "edge:bandyopadhyay-dual",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:moss:9c787c09fd76ab2fdb2b",
+    "source_url": "https://phi.ntt-research.com/phi-people/bandyopadhyay-profile/",
+    "quote": "Saumil Bandyopadhyay\nPostdoctoral Fellow\nSaumil Bandyopadhyay’s research in the PHI Lab is focused on developing photonic systems for artificial intelligence. He received his Ph.D. in Electrical Engineering from MIT, where his S.B and M.Eng. were also conferred. Saumil’s doctoral work focused on building programmable silicon photonic processors for deep neural networks",
+    "source_date": null,
+    "observed_at": "2026-11-24T19:23:51.666003+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:moss:2c59ad2119271c30de2a",
+    "source_url": "https://openalex.org/W4404905249",
+    "quote": "Single-chip photonic deep neural network with forward-only training\nTopic: Neural Networks and Reservoir Computing\nKeywords: photonic neural networks, coherent optical processing, photonic integrated circuits",
+    "source_date": null,
+    "observed_at": "2026-11-24T19:23:51.666082+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:shared-A5047268098",
+    "source_url": "https://openalex.org/W4404905249",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Saumil Bandyopadhyay; raw_affiliation_strings: [\"NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA\", \"Research Laboratory of Electronics, MIT, Cambridge, MA, USA\"]",
+    "source_date": "2024-12-01",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 107,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:43.929000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "status",
+  "layer": "lead",
+  "status": "Moss verified: Saumil Bandyopadhyay, Postdoctoral Fellow at NTT Research",
+  "seq": 108,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:46.607000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5089821617",
+   "name": "Ryan Hamerly",
+   "openalex_id": "https://openalex.org/A5089821617",
+   "orcid": "https://orcid.org/0000-0003-4976-2236",
+   "org_id": "org:ntt",
+   "affiliation_asof": "2024-12-01",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 109,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:49.286000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:hamerly-shared",
+   "from": "person:openalex:A5102978866",
+   "to": "person:openalex:A5089821617",
+   "type": "CO_AUTHORED",
+   "date": "2024-12-01",
+   "evidence_ids": [
+    "evidence:shared-A5089821617"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "co-authored 2024 (MIT + NTT Research)"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5089821617",
+    "source_url": "https://openalex.org/W4404905249",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Ryan Hamerly; raw_affiliation_strings: [\"NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA\", \"Research Laboratory of Electronics, MIT, Cambridge, MA, USA\"]",
+    "source_date": "2024-12-01",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 110,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:51.964000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:hamerly-dual",
+   "from": "person:openalex:A5089821617",
+   "to": "org:ntt",
+   "type": "DUAL_AFFILIATION",
+   "date": "2024-12-01",
+   "evidence_ids": [
+    "evidence:shared-A5089821617"
+   ],
+   "confidence": 0.9,
+   "name_check": "unchecked",
+   "label": "MIT + NTT Research affiliations, 2024"
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5089821617",
+    "source_url": "https://openalex.org/W4404905249",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Ryan Hamerly; raw_affiliation_strings: [\"NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA\", \"Research Laboratory of Electronics, MIT, Cambridge, MA, USA\"]",
+    "source_date": "2024-12-01",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 111,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:54.643000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:hamerly",
+   "founder_id": "person:openalex:A5102978866",
+   "bridge_id": "person:openalex:A5089821617",
+   "buyer_person_id": "person:openalex:A5089821617",
+   "buyer_org_id": "org:ntt",
+   "hops": [
+    "edge:hamerly-shared",
+    "edge:hamerly-dual"
+   ],
+   "kind": "dual_affiliation",
+   "score": 94.0,
+   "weakest_edge_id": "edge:hamerly-dual",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:shared-A5089821617",
+    "source_url": "https://openalex.org/W4404905249",
+    "quote": "authorships.author.display_name: Nicholas C. Harris; Ryan Hamerly; raw_affiliation_strings: [\"NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA\", \"Research Laboratory of Electronics, MIT, Cambridge, MA, USA\"]",
+    "source_date": "2024-12-01",
+    "observed_at": "2026-11-24T18:12:00Z",
+    "kind": "paper"
+   }
+  ],
+  "seq": 112,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:04:57.321000+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "status",
+  "layer": "lead",
+  "status": "10 warm paths to 8 buyer orgs",
+  "seq": 113,
+  "session_id": "demo-lightmatter",
+  "at": "2026-11-24T21:05:00+00:00"
+ }
+]
