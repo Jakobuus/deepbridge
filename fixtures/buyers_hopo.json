@@ -307,7 +307,8 @@
             "evidence_ids": [
                 "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
                 "evidence:buyers:67e7cdff7a6cc46dbeef",
-                "evidence:buyers:a28670ce4c9f4cff7644"
+                "evidence:buyers:a28670ce4c9f4cff7644",
+                "evidence:buyers:36f9a00da843967ce74a"
             ]
         },
         {
@@ -474,7 +475,8 @@
             "openalex_id": "https://openalex.org/I1335289525",
             "category_hint": "lead",
             "evidence_ids": [
-                "evidence:buyers:016635964b94ea12a644"
+                "evidence:buyers:016635964b94ea12a644",
+                "evidence:buyers:68fffcf85023c1c7d9ee"
             ]
         },
         {
@@ -689,7 +691,8 @@
             "openalex_id": "https://openalex.org/I4210092716",
             "category_hint": "lead",
             "evidence_ids": [
-                "evidence:buyers:5cedca18066a2613a061"
+                "evidence:buyers:5cedca18066a2613a061",
+                "evidence:buyers:880621aab421a834a603"
             ]
         },
         {
@@ -701,7 +704,8 @@
             "openalex_id": "https://openalex.org/I1298060332",
             "category_hint": "lead",
             "evidence_ids": [
-                "evidence:buyers:dbd11d6097704b252c18"
+                "evidence:buyers:dbd11d6097704b252c18",
+                "evidence:buyers:1a9cbd65cb30a18fc163"
             ]
         },
         {
@@ -729,6 +733,62 @@
                 "evidence:buyers:6552f39a291f1353b876",
                 "evidence:buyers:2556603a7a2d50376605",
                 "evidence:buyers:d188ef15b106a72b109a"
+            ]
+        },
+        {
+            "id": "org:openalex:I1298353152",
+            "name": "SRI International",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 9,
+            "openalex_id": "https://openalex.org/I1298353152",
+            "category_hint": "radiation",
+            "evidence_ids": [
+                "evidence:buyers:60b25ab244d63d520202",
+                "evidence:buyers:eca3094571e7eb07c087",
+                "evidence:buyers:9a1e3776d993f0dcb505"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210120689",
+            "name": "Universitätsklinikum Aachen",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 9,
+            "openalex_id": "https://openalex.org/I4210120689",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:0ebf8bf293571d4238d0",
+                "evidence:buyers:5cad05965d405630b7ed",
+                "evidence:buyers:9d49bb3a0311c5282c19"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210087915",
+            "name": "Massachusetts General Hospital",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 9,
+            "openalex_id": "https://openalex.org/I4210087915",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:8d8ec6c74cd4e228c592",
+                "evidence:buyers:2fa510aca7413428d9e0",
+                "evidence:buyers:b35b52fb0855de8c0eeb"
+            ]
+        },
+        {
+            "id": "org:openalex:I180297670",
+            "name": "RTI International",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 9,
+            "openalex_id": "https://openalex.org/I180297670",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:608dbb9c8940945ac024",
+                "evidence:buyers:1383c95d3d6984a74ca5",
+                "evidence:buyers:3043be5d6cffd35635cf"
             ]
         }
     ],
@@ -1195,12 +1255,12 @@
             "id": "signal:buyers:deb68e2e097ea2cf478e",
             "org_id": "org:openalex:I4210135976",
             "type": "topic_paper",
-            "date": "2018-07-06",
-            "title": "3 OpenAlex work(s) on lead: Folk prescription for treating rhinitis as a rare cause of childhood lead poisoning: a cas",
+            "date": "2021-06-01",
+            "title": "3 OpenAlex work(s) on lead: Lead Poisoning: An Update",
             "evidence_ids": [
+                "evidence:buyers:36f9a00da843967ce74a",
                 "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
-                "evidence:buyers:a28670ce4c9f4cff7644",
-                "evidence:buyers:67e7cdff7a6cc46dbeef"
+                "evidence:buyers:a28670ce4c9f4cff7644"
             ]
         },
         {
@@ -1338,9 +1398,10 @@
             "org_id": "org:openalex:I1335289525",
             "type": "topic_paper",
             "date": "2020-09-01",
-            "title": "1 OpenAlex work(s) on lead: Low-level lead exposure impairs fronto-executive functions: A call to update the DSM–5 wit",
+            "title": "2 OpenAlex work(s) on lead: Low-level lead exposure impairs fronto-executive functions: A call to update the DSM–5 wit",
             "evidence_ids": [
-                "evidence:buyers:016635964b94ea12a644"
+                "evidence:buyers:016635964b94ea12a644",
+                "evidence:buyers:68fffcf85023c1c7d9ee"
             ]
         },
         {
@@ -1532,9 +1593,10 @@
             "id": "signal:buyers:24607a0a6c4b6edb3ef1",
             "org_id": "org:openalex:I4210092716",
             "type": "topic_paper",
-            "date": "2022-06-06",
-            "title": "1 OpenAlex work(s) on lead: Estimation of blood lead levels in the French population using two complementary approache",
+            "date": "2023-01-01",
+            "title": "2 OpenAlex work(s) on lead: Activities at risk of lead exposure and lead poisoning in children of travellers’ families",
             "evidence_ids": [
+                "evidence:buyers:880621aab421a834a603",
                 "evidence:buyers:5cedca18066a2613a061"
             ]
         },
@@ -1542,9 +1604,10 @@
             "id": "signal:buyers:7c7f7f879788b4988add",
             "org_id": "org:openalex:I1298060332",
             "type": "topic_paper",
-            "date": "2016-02-01",
-            "title": "1 OpenAlex work(s) on lead: Community Engagement and Data Disclosure in Environmental Health Research",
+            "date": "2019-01-24",
+            "title": "2 OpenAlex work(s) on lead: Lead poisoning risk assessment of radiology workers using lead shields",
             "evidence_ids": [
+                "evidence:buyers:1a9cbd65cb30a18fc163",
                 "evidence:buyers:dbd11d6097704b252c18"
             ]
         },
@@ -1569,6 +1632,54 @@
                 "evidence:buyers:6552f39a291f1353b876",
                 "evidence:buyers:2556603a7a2d50376605",
                 "evidence:buyers:d188ef15b106a72b109a"
+            ]
+        },
+        {
+            "id": "signal:buyers:abd475dffc34f20db979",
+            "org_id": "org:openalex:I1298353152",
+            "type": "topic_paper",
+            "date": "2024-11-06",
+            "title": "3 OpenAlex work(s) on radiation: Long-term Radiation Signal Persistence in Urine and Blood: A Two-year Analysis in Non-huma",
+            "evidence_ids": [
+                "evidence:buyers:60b25ab244d63d520202",
+                "evidence:buyers:eca3094571e7eb07c087",
+                "evidence:buyers:9a1e3776d993f0dcb505"
+            ]
+        },
+        {
+            "id": "signal:buyers:ff68f98b5ac5a816db74",
+            "org_id": "org:openalex:I4210120689",
+            "type": "topic_paper",
+            "date": "2026-09-09",
+            "title": "3 OpenAlex work(s) on lead: Heavy metal – habitual licking of a lead tape as rare cause of chronic lead poisoning: a c",
+            "evidence_ids": [
+                "evidence:buyers:0ebf8bf293571d4238d0",
+                "evidence:buyers:5cad05965d405630b7ed",
+                "evidence:buyers:9d49bb3a0311c5282c19"
+            ]
+        },
+        {
+            "id": "signal:buyers:a3cc44e4d2b71c5fa616",
+            "org_id": "org:openalex:I4210087915",
+            "type": "topic_paper",
+            "date": "2026-03-07",
+            "title": "3 OpenAlex work(s) on lead: Lead Screening Among Immigrant Children Seeking Humanitarian Protection in New York and Ma",
+            "evidence_ids": [
+                "evidence:buyers:8d8ec6c74cd4e228c592",
+                "evidence:buyers:2fa510aca7413428d9e0",
+                "evidence:buyers:b35b52fb0855de8c0eeb"
+            ]
+        },
+        {
+            "id": "signal:buyers:30cda6b80332b7cd1552",
+            "org_id": "org:openalex:I180297670",
+            "type": "topic_paper",
+            "date": "2026-10-11",
+            "title": "3 OpenAlex work(s) on lead: Donor age is the major determinant of low‐level blood lead burden in the REDS recalled don",
+            "evidence_ids": [
+                "evidence:buyers:608dbb9c8940945ac024",
+                "evidence:buyers:1383c95d3d6984a74ca5",
+                "evidence:buyers:3043be5d6cffd35635cf"
             ]
         }
     ]

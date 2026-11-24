@@ -30,7 +30,8 @@
       "org:openalex:I4210134534",
       "org:openalex:I4210114391",
       "org:openalex:I4210137840",
-      "org:openalex:I4389425366"
+      "org:openalex:I4389425366",
+      "org:openalex:I1298353152"
     ],
     "problem_node_ids": [
       "value:hopo-p-limited",
@@ -97,7 +98,10 @@
       "evidence:buyers:16af76b20f57319b5d6b",
       "evidence:buyers:c3f206a1bce628a71777",
       "evidence:buyers:d6ef1de061a4f643219d",
-      "evidence:buyers:39d651810faea989ea32"
+      "evidence:buyers:39d651810faea989ea32",
+      "evidence:buyers:60b25ab244d63d520202",
+      "evidence:buyers:eca3094571e7eb07c087",
+      "evidence:buyers:9a1e3776d993f0dcb505"
     ]
   },
   {
@@ -215,7 +219,10 @@
       "org:openalex:I4210092716",
       "org:openalex:I1298060332",
       "org:openalex:I199145359",
-      "org:openalex:I1336243289"
+      "org:openalex:I1336243289",
+      "org:openalex:I4210120689",
+      "org:openalex:I4210087915",
+      "org:openalex:I180297670"
     ],
     "problem_node_ids": [
       "value:hopo-lead-p-pb",
@@ -264,7 +271,20 @@
       "evidence:buyers:4c7a4068b7e5372446ff",
       "evidence:buyers:a28670ce4c9f4cff7644",
       "evidence:buyers:6f6b7d455ea15bf3ee62",
-      "evidence:buyers:b91c4f56ac658e9928df"
+      "evidence:buyers:b91c4f56ac658e9928df",
+      "evidence:buyers:880621aab421a834a603",
+      "evidence:buyers:1a9cbd65cb30a18fc163",
+      "evidence:buyers:0ebf8bf293571d4238d0",
+      "evidence:buyers:5cad05965d405630b7ed",
+      "evidence:buyers:9d49bb3a0311c5282c19",
+      "evidence:buyers:8d8ec6c74cd4e228c592",
+      "evidence:buyers:2fa510aca7413428d9e0",
+      "evidence:buyers:b35b52fb0855de8c0eeb",
+      "evidence:buyers:608dbb9c8940945ac024",
+      "evidence:buyers:1383c95d3d6984a74ca5",
+      "evidence:buyers:3043be5d6cffd35635cf",
+      "evidence:buyers:36f9a00da843967ce74a",
+      "evidence:buyers:68fffcf85023c1c7d9ee"
     ]
   }
 ]
