@@ -108,6 +108,7 @@ class Draft(BaseModel):
     evidence_ids: list[Id]
     content_hash: str
     status: Literal['draft', 'approved', 'rejected', 'stale']
+    checks: list[dict] = Field(default_factory=list)  # automatic copy checks (D2); optional
 
 class Profile(BaseModel):
     kind: Literal['linkedin', 'homepage', 'scholar', 'orcid', 'github', 'other']
