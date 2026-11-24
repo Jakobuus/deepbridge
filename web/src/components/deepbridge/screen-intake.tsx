@@ -68,12 +68,29 @@ interface SpeechRecognitionLike {
   abort: () => void;
 }
 
+// Prefer a human-sounding voice: Edge's "… Online (Natural)" neural voices, then Apple Premium/Enhanced, then any
+// network en-US voice. Falls back to the browser default (the robotic one) only when nothing better exists.
+function pickNaturalVoice(): SpeechSynthesisVoice | null {
+  if (typeof window === "undefined" || !("speechSynthesis" in window)) return null;
+  const en = window.speechSynthesis.getVoices().filter((v) => v.lang?.toLowerCase().startsWith("en"));
+  const us = (v: SpeechSynthesisVoice) => v.lang?.toLowerCase() === "en-us";
+  return (
+    en.find((v) => /natural/i.test(v.name) && us(v)) ??
+    en.find((v) => /natural/i.test(v.name)) ??
+    en.find((v) => /premium|enhanced/i.test(v.name) && us(v)) ??
+    en.find((v) => /google us english/i.test(v.name)) ??
+    en.find((v) => !v.localService && us(v)) ??
+    null
+  );
+}
+
 // Plain-language reasons for the browser's speech errors (they used to be swallowed, so the mic just "died").
 const MIC_ERRORS: Record<string, string> = {
   "not-allowed": "Microphone is blocked. Allow mic access for this site (address bar → site settings), then press Speak again.",
   "service-not-allowed": "This browser's speech service is turned off. Use Chrome, or type your answer below.",
   "audio-capture": "No microphone found. Check System Settings → Sound → Input, or type your answer below.",
-  network: "The browser's speech service is unreachable (Chrome dictation needs internet). Type your answer below.",
+  network:
+    "This browser blocks the speech service (Helium, Brave, Arc and other de-Googled browsers do). Open the app in Microsoft Edge, Chrome or Safari, or type your answer below.",
   "language-not-supported": "Speech recognition doesn't support en-US here. Type your answer below.",
 };
 
@@ -118,6 +135,13 @@ export function ScreenIntake({
   const [interviewErr, setInterviewErr] = React.useState<string | null>(null);
   const [listening, setListening] = React.useState(false);
   const [speaking, setSpeaking] = React.useState(false);
+  React.useEffect(() => {
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    const warm = () => void window.speechSynthesis.getVoices();
+    warm();
+    window.speechSynthesis.addEventListener("voiceschanged", warm);
+    return () => window.speechSynthesis.removeEventListener("voiceschanged", warm);
+  }, []);
 
   // Sidebar orb: voice state while the interview runs.
   React.useEffect(() => {
@@ -141,7 +165,10 @@ export function ScreenIntake({
       }
       window.speechSynthesis.cancel();
       const utter = new SpeechSynthesisUtterance(text);
-      utter.rate = 1.06;
+      const voice = pickNaturalVoice();
+      if (voice) utter.voice = voice;
+      utter.lang = voice?.lang ?? "en-US";
+      utter.rate = 1;
       utter.onstart = () => setSpeaking(true);
       utter.onend = () => setSpeaking(false);
       utter.onerror = () => setSpeaking(false);
