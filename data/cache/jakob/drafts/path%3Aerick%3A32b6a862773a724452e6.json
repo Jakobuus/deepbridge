@@ -1,0 +1,165 @@
+{
+  "context_hash": "2a9cbe6bcffa803c377ac45cac6cb8ac2c4dfe9dbee6940ad9fac1ce14804cf2",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:erick:32b6a862773a724452e6:intro_request",
+      "path_id": "path:erick:32b6a862773a724452e6",
+      "to_person_id": "person:openalex:A5015500305",
+      "kind": "intro_request",
+      "subject": "Forwarding a note to SRI's radiation team",
+      "body": "Hi, we co-authored \"Identifying Toxicity Mechanisms Associated with f-block Radiometals through Genome-wide Toxicogenomics\" (2023). Would you be comfortable forwarding the note below to the relevant team at SRI International (your affiliation as of 2022-05-19), given their November 2024 paper on long-term radiation signal persistence? Entirely fine to say no.\n\nRebecca\n\nNote you can forward:\nRebecca Abergel researches siderophores and actinide chelators, including orally active decorporation agents (2010). Because your team published on long-term radiation signal persistence in nonhuman primates in November 2024, this may be relevant to your work on radiation.",
+      "evidence_ids": [
+        "evidence:erick:770af0ce670722f16f3a",
+        "evidence:erick:2acf868b95526006424b",
+        "evidence:buyers:60b25ab244d63d520202",
+        "evidence:openalex:W2101984559"
+      ],
+      "content_hash": "1f7fad0b95719ed69de850f231cb1b8af1864ae7434c4c2bab09a84fe014a2ae",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_shared_paper_or_lab",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "way_out",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "review": null,
+      "approved_via": null
+    },
+    {
+      "id": "draft:erick:32b6a862773a724452e6:forwardable_note",
+      "path_id": "path:erick:32b6a862773a724452e6",
+      "to_person_id": "person:openalex:A5015500305",
+      "kind": "forwardable_note",
+      "subject": "Actinide chelator research and your radiation work",
+      "body": "Rebecca Abergel researches siderophores and actinide chelators, including orally active decorporation agents (2010). Because your team published on long-term radiation signal persistence in nonhuman primates in November 2024, this may be relevant to your work on radiation.",
+      "evidence_ids": [
+        "evidence:openalex:W2101984559",
+        "evidence:openalex:W2062348077",
+        "evidence:buyers:60b25ab244d63d520202"
+      ],
+      "content_hash": "10f224307b826c81199ae91028b7df34af3ce1a6eaf489dbd59dcf5e572a9f72",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "two_sentences",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_question_marks",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_first_person_i",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "review": null,
+      "approved_via": null
+    }
+  ]
+}

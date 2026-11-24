@@ -1,0 +1,162 @@
+{
+  "context_hash": "04e4f6efa268d5a825022b638cb483e08c466753cbfa7fb4c6942283aedc7c35",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:erick:b71216d7336b332ae634:intro_request",
+      "path_id": "path:erick:b71216d7336b332ae634",
+      "to_person_id": "person:openalex:A5073204417",
+      "kind": "intro_request",
+      "subject": "Forwarding a chelator chemistry note to Lumiphore",
+      "body": "Hello,\n\nWe co-authored \"Formulations of hydroxypyridonate actinide/lanthanide decorporation agents\" (2023). Would you forward the note below to the relevant team at Lumiphore (as of 2011), given its 2017 zirconium-89 chelator work? No problem if not.\n\nRebecca\n\nNote you can forward:\nRebecca Abergel studies bacterial siderophore iron acquisition and hydroxypyridonate decorporation agents for actinides. She would like to learn whether this chelator chemistry is relevant to the team's 2017 work on zirconium-89 chelators.",
+      "evidence_ids": [
+        "evidence:erick:d0a06ab0d3d02259feb8",
+        "evidence:erick:67239e6a11fa749cb8b8",
+        "evidence:buyers:b732f794138ef300fc29",
+        "evidence:openalex:W2062348077",
+        "evidence:openalex:W2101984559"
+      ],
+      "content_hash": "1477c905fd5b9584703f3e900be247c6d877b9636b95d530cc0514dd1a21a528",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_shared_paper_or_lab",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "way_out",
+          "ok": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "id": "draft:erick:b71216d7336b332ae634:forwardable_note",
+      "path_id": "path:erick:b71216d7336b332ae634",
+      "to_person_id": "person:openalex:A5073204417",
+      "kind": "forwardable_note",
+      "subject": "Chelator chemistry and your zirconium-89 work",
+      "body": "Rebecca Abergel studies bacterial siderophore iron acquisition and hydroxypyridonate decorporation agents for actinides. She would like to learn whether this chelator chemistry is relevant to the team's 2017 work on zirconium-89 chelators.",
+      "evidence_ids": [
+        "evidence:openalex:W2062348077",
+        "evidence:openalex:W2101984559",
+        "evidence:buyers:b732f794138ef300fc29"
+      ],
+      "content_hash": "d7ea9393aeffb7fad6f8037b5445bfcbb0a976400c138a0bbc9f94a2b7597b3c",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "two_sentences",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_question_marks",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_first_person_i",
+          "ok": true,
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

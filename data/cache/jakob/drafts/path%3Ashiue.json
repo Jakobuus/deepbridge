@@ -8,7 +8,7 @@
       "to_person_id": "person:openalex:A5018701316",
       "kind": "intro_request",
       "subject": "Could you forward a short note to Cisco?",
-      "body": "Hi Ren-Jye,\n\nWe co-authored a paper at MIT in 2014, and your published affiliation is Cisco as of 2025. Would you be comfortable forwarding the blurb below to the relevant team at Cisco, so they can say whether my 2017 photonics research is relevant to them? Fine to decline.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that research be relevant to your team at Cisco?",
+      "body": "Hi Ren-Jye,\n\nWe co-authored a paper at MIT in 2014, and your published affiliation is Cisco as of 2025. Would you be comfortable forwarding the note below to the relevant team at Cisco, so they can say whether my 2017 photonics research is relevant to them? Fine to decline.\n\nNicholas\n\nNote you can forward:\nNicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that research be relevant to your team at Cisco?",
       "evidence_ids": [
         "evidence:shared-A5018701316",
         "evidence:shiue-affiliation",

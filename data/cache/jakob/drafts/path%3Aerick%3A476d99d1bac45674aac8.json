@@ -1,0 +1,166 @@
+{
+  "context_hash": "61043bf2025a5068fde9c8bfa12379366092afbee6701bb4b9dd8895edf5b8cd",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:erick:476d99d1bac45674aac8:intro_request",
+      "path_id": "path:erick:476d99d1bac45674aac8",
+      "to_person_id": "person:openalex:A5035055430",
+      "kind": "intro_request",
+      "subject": "Forwarding a note to the clinic team",
+      "body": "Hello,\n\nYou and I co-authored \"Gold Nanoparticle-Enabled Fluorescence Sensing of Gadolinium-Based Contrast Agents in Urine\" (2025), and you are affiliated with RWTH Aachen University Clinic as of 2026-10-30. Given a September 2026 case report on lead poisoning listed for the clinic, would you be comfortable forwarding the note below to the relevant team there? No worries if not.\n\nRebecca\n\nNote you can forward:\nRebecca Abergel's research covers siderophores and iron metabolism, including orally active hydroxypyridonate decorporation agents (2010). With a September 2026 case report on chronic lead poisoning listed for your clinic, it may be worth asking whether metal-chelation research is relevant to your team.",
+      "evidence_ids": [
+        "evidence:erick:71040838bb60c4af1756",
+        "evidence:erick:76525df7a7a7188b1bcc",
+        "evidence:buyers:0ebf8bf293571d4238d0",
+        "evidence:openalex:W2062348077",
+        "evidence:openalex:W2101984559"
+      ],
+      "content_hash": "96ce8845ac0982fa254c74bf63243375490d27752e378baa4e1d322074c26a28",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_shared_paper_or_lab",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "way_out",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "review": null,
+      "approved_via": null
+    },
+    {
+      "id": "draft:erick:476d99d1bac45674aac8:forwardable_note",
+      "path_id": "path:erick:476d99d1bac45674aac8",
+      "to_person_id": "person:openalex:A5035055430",
+      "kind": "forwardable_note",
+      "subject": "Metal-chelation research and your clinic",
+      "body": "Rebecca Abergel's research covers siderophores and iron metabolism, including orally active hydroxypyridonate decorporation agents (2010). With a September 2026 case report on chronic lead poisoning listed for your clinic, it may be worth asking whether metal-chelation research is relevant to your team.",
+      "evidence_ids": [
+        "evidence:openalex:W2062348077",
+        "evidence:openalex:W2101984559",
+        "evidence:buyers:0ebf8bf293571d4238d0"
+      ],
+      "content_hash": "8181da42dd2c42051c81d0dbbf86dfa9fc44417bf416fd45f40354443181a051",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": false,
+          "detail": "Features missing from cited quotes: your clinic"
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "two_sentences",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_question_marks",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_first_person_i",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "review": null,
+      "approved_via": null
+    }
+  ]
+}

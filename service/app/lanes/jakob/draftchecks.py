@@ -82,7 +82,7 @@ BEGGING = (
 )
 
 WORD_LIMITS = {'intro_request': 110, 'forwardable_note': 70, 'direct_fallback': 120}
-BLURB = 'Blurb you can forward:'
+BLURB = 'Note you can forward:'
 NUMBER = re.compile(r'\d+(?:,\d{3})*(?:\.\d+)?(?:\s*[%×]|x\b|[km]\b)?', re.I)
 URL = re.compile(r'\b(?:https?://|www\.)\S+', re.I)
 QUOTED = re.compile(r'"[^"\n]*"|“[^”\n]*”')

@@ -1,0 +1,160 @@
+{
+  "context_hash": "4d597f9ae41afac12e2786c7bbd8424219b214821afa5bf230f6975bf9f05792",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:erick:2a3a6b663d84daa75797:intro_request",
+      "path_id": "path:erick:2a3a6b663d84daa75797",
+      "to_person_id": "person:openalex:A5027572313",
+      "kind": "intro_request",
+      "subject": "Forwarding a note to the Bayer team?",
+      "body": "Hello,\n\nOur 2018 paper, \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\", is why I'm writing. With the June 2025 gadoquatrane pharmacokinetics paper in mind, would you be comfortable forwarding the note below to the relevant team at Bayer? Completely fine to decline.\n\nRebecca\n\nNote you can forward:\nRebecca Abergel researches hydroxypyridinone metal chelators, including a Thorium-227 alpha therapy chelator (2018) and actinide decorporation agents (2010). With the 2025 gadoquatrane paper on a gadolinium-based MRI contrast agent in view, she wonders whether her metal-complexation research touches questions your team is working on.",
+      "evidence_ids": [
+        "evidence:erick:bd66a699632a8769a89f",
+        "evidence:openalex:W2101984559",
+        "evidence:buyers:05765ea9f4b4a1af93e4"
+      ],
+      "content_hash": "15ff1a8810a7fc1055d7fffce64992f3ef378fa3146b4e327fe2941fd11697ca",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_shared_paper_or_lab",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "way_out",
+          "ok": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "id": "draft:erick:2a3a6b663d84daa75797:forwardable_note",
+      "path_id": "path:erick:2a3a6b663d84daa75797",
+      "to_person_id": "person:openalex:A5027572313",
+      "kind": "forwardable_note",
+      "subject": "Metal-chelator research and gadoquatrane",
+      "body": "Rebecca Abergel researches hydroxypyridinone metal chelators, including a Thorium-227 alpha therapy chelator (2018) and actinide decorporation agents (2010). With the 2025 gadoquatrane paper on a gadolinium-based MRI contrast agent in view, she wonders whether her metal-complexation research touches questions your team is working on.",
+      "evidence_ids": [
+        "evidence:erick:bd66a699632a8769a89f",
+        "evidence:openalex:W2101984559",
+        "evidence:buyers:05765ea9f4b4a1af93e4"
+      ],
+      "content_hash": "aabd607ad32e13bcac2e3950095a3e9908650df673e450efaa737112746763b2",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "two_sentences",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_question_marks",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_first_person_i",
+          "ok": true,
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

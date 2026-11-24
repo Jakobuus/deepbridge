@@ -8,7 +8,7 @@
       "to_person_id": "person:openalex:A5089821617",
       "kind": "intro_request",
       "subject": "Forward a short note to NTT Research?",
-      "body": "Hi Ryan,\n\nWould you forward the blurb below to the relevant team at NTT Research? We co-authored a paper in December 2024 (as of 2024, you were at NTT Research and MIT's RLE), and I wonder if my nanophotonic work is relevant to them. No worries if you'd rather not.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). He co-authored a December 2024 paper with a researcher at NTT Research's Physics & Informatics Laboratories (as of 2024); might his work be relevant to your team?",
+      "body": "Hi Ryan,\n\nWould you forward the note below to the relevant team at NTT Research? We co-authored a paper in December 2024 (as of 2024, you were at NTT Research and MIT's RLE), and I wonder if my nanophotonic work is relevant to them. No worries if you'd rather not.\n\nNicholas\n\nNote you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). He co-authored a December 2024 paper with a researcher at NTT Research's Physics & Informatics Laboratories (as of 2024); might his work be relevant to your team?",
       "evidence_ids": [
         "evidence:shared-A5089821617",
         "evidence:harris-2017",

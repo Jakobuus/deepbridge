@@ -8,7 +8,7 @@
       "to_person_id": "person:openalex:A5069544756",
       "kind": "intro_request",
       "subject": "Could you forward a note to PsiQuantum?",
-      "body": "Hi Faraz,\n\nWe co-authored a 2015 paper at MIT's EECS department, and your published affiliation is PsiQuantum as of 2025. Would you be comfortable forwarding the note below to the relevant team at PsiQuantum, in case a photonics conversation is useful to them? No problem at all if not.\n\nThanks,\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonics research like this relevant to any team at PsiQuantum?",
+      "body": "Hi Faraz,\n\nWe co-authored a 2015 paper at MIT's EECS department, and your published affiliation is PsiQuantum as of 2025. Would you be comfortable forwarding the note below to the relevant team at PsiQuantum, in case a photonics conversation is useful to them? No problem at all if not.\n\nThanks,\nNicholas\n\nNote you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonics research like this relevant to any team at PsiQuantum?",
       "evidence_ids": [
         "evidence:shared-A5069544756",
         "evidence:najafi-affiliation",

@@ -8,7 +8,7 @@
       "to_person_id": "person:openalex:A5108697414",
       "kind": "intro_request",
       "subject": "Intro to the right team at IBM?",
-      "body": "Hi Andrew,\n\nWe co-authored a paper at MIT in 2015, and your published affiliation is IBM as of 2026. Would you be comfortable forwarding the note below to the relevant team at IBM, to ask whether photonic hardware for deep learning is on their radar? No problem at all if you'd rather not.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, a Lightmatter founder, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017), research on deep learning in photonic circuits. Is photonic hardware for deep learning something your team at IBM is looking at?",
+      "body": "Hi Andrew,\n\nWe co-authored a paper at MIT in 2015, and your published affiliation is IBM as of 2026. Would you be comfortable forwarding the note below to the relevant team at IBM, to ask whether photonic hardware for deep learning is on their radar? No problem at all if you'd rather not.\n\nNicholas\n\nNote you can forward:\nNicholas Harris, a Lightmatter founder, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017), research on deep learning in photonic circuits. Is photonic hardware for deep learning something your team at IBM is looking at?",
       "evidence_ids": [
         "evidence:shared-A5108697414",
         "evidence:dane-affiliation",

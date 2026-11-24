@@ -1,0 +1,159 @@
+{
+  "context_hash": "aabdba5776f0aa722b8b68fb517e5d6c4c31d8eb2f7dbf5accfa8e374bc76a06",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:erick:e8691e1d13091477d524:intro_request",
+      "path_id": "path:erick:e8691e1d13091477d524",
+      "to_person_id": "person:openalex:A5085203145",
+      "kind": "intro_request",
+      "subject": "Forwarding request for the relevant team at Bayer",
+      "body": "Hello,\n\nWe co-authored \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\" (2018), when you were at Bayer AS (as of 2018). Would you be willing to forward the note below to the relevant team at Bayer, given the 2025 gadoquatrane pharmacokinetics paper from Bayer-affiliated authors? Declining is completely fine.\n\nRebecca\n\nNote you can forward:\nRebecca Abergel works on metal complexation with hydroxypyridinone chelators. Bayer-affiliated authors published a June 2025 gadoquatrane pharmacokinetics study in monkeys, so it may be worth exploring whether this chelation chemistry is relevant to your team.",
+      "evidence_ids": [
+        "evidence:erick:bd66a699632a8769a89f",
+        "evidence:erick:891c58aa87148111c4fe",
+        "evidence:buyers:05765ea9f4b4a1af93e4"
+      ],
+      "content_hash": "11da4623ba4c24b56eba826006a8d2a84ed89b633964e5f5562dafa7ffdd3b5d",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_shared_paper_or_lab",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "way_out",
+          "ok": true,
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "id": "draft:erick:e8691e1d13091477d524:forwardable_note",
+      "path_id": "path:erick:e8691e1d13091477d524",
+      "to_person_id": "person:openalex:A5085203145",
+      "kind": "forwardable_note",
+      "subject": "Chelation chemistry and gadoquatrane work",
+      "body": "Rebecca Abergel works on metal complexation with hydroxypyridinone chelators. Bayer-affiliated authors published a June 2025 gadoquatrane pharmacokinetics study in monkeys, so it may be worth exploring whether this chelation chemistry is relevant to your team.",
+      "evidence_ids": [
+        "evidence:erick:bd66a699632a8769a89f",
+        "evidence:buyers:05765ea9f4b4a1af93e4"
+      ],
+      "content_hash": "d2dfdd701011c03286545d4a8185f02ff69e9c157b5e7aaf055cfa1397130e08",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "two_sentences",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_question_marks",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_first_person_i",
+          "ok": true,
+          "detail": ""
+        }
+      ]
+    }
+  ]
+}

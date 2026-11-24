@@ -8,7 +8,7 @@
       "to_person_id": "person:openalex:A5061412493",
       "kind": "intro_request",
       "subject": "Forwarding a note to Meta's photonics team?",
-      "body": "Hi Gregory,\n\nWe co-authored a paper at MIT's Research Laboratory of Electronics in 2017, and your published affiliation is Meta as of 2024. Could you forward the blurb below to the relevant team at Meta working on photonic or optical interconnects? A cached search shows one matching Meta paper since 25 Aug 2026, so I'm asking whether it's timely. Happy for you to say no.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonic or optical interconnect work at Meta relevant, given one matching Meta paper since 25 Aug 2026?",
+      "body": "Hi Gregory,\n\nWe co-authored a paper at MIT's Research Laboratory of Electronics in 2017, and your published affiliation is Meta as of 2024. Could you forward the note below to the relevant team at Meta working on photonic or optical interconnects? A cached search shows one matching Meta paper since 25 Aug 2026, so I'm asking whether it's timely. Happy for you to say no.\n\nNicholas\n\nNote you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonic or optical interconnect work at Meta relevant, given one matching Meta paper since 25 Aug 2026?",
       "evidence_ids": [
         "evidence:shared-A5061412493",
         "evidence:steinbrecher-affiliation",

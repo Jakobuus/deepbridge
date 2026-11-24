@@ -1,0 +1,164 @@
+{
+  "context_hash": "c445962963c0d451dfff3f6241318c78506c3b147990aa0ce3050e7d73d1c1ee",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:erick:f287055fd9ceb7d4cffc:intro_request",
+      "path_id": "path:erick:f287055fd9ceb7d4cffc",
+      "to_person_id": "person:openalex:A5071347045",
+      "kind": "intro_request",
+      "subject": "Intro request: oral chelator and radiation readiness",
+      "body": "Hello,\n\nI'm Rebecca Abergel; we co-authored \"Chelating platform for delivery of radionuclides\" (2023). As of 2026 you are at Lawrence Livermore National Laboratory, where at least 8 papers cite my work (September 2026). Would you forward the note below to the relevant radiation countermeasures team? No problem if not.\n\nRebecca\n\nNote you can forward:\nRebecca Abergel develops oral hydroxypyridonate decorporation chelators (preclinical, 2010), while the approved drug, DTPA, is given by IV. Given papers from your institution citing Rebecca's work (September 2026), an oral option when many need treatment at once may be relevant, and your criteria for an oral candidate or the right programme contact would help.",
+      "evidence_ids": [
+        "evidence:erick:6e6723a62fc019fce553",
+        "evidence:erick:c56cf12316face8f09da",
+        "evidence:buyers:cd4531ea88218a7aace3",
+        "evidence:openalex:W2101984559"
+      ],
+      "content_hash": "7cd365aff326d619b1602f93d35280ace1a5504bed751a3fac06846ad1f2a796",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": false,
+          "detail": "Features missing from cited quotes: your institution, your criteria"
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_shared_paper_or_lab",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "way_out",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "review": null,
+      "approved_via": null
+    },
+    {
+      "id": "draft:erick:f287055fd9ceb7d4cffc:forwardable_note",
+      "path_id": "path:erick:f287055fd9ceb7d4cffc",
+      "to_person_id": "person:openalex:A5071347045",
+      "kind": "forwardable_note",
+      "subject": "Oral chelator option alongside IV DTPA",
+      "body": "Rebecca Abergel develops oral hydroxypyridonate decorporation chelators (preclinical, 2010), while the approved drug, DTPA, is given by IV. Given papers from your institution citing Rebecca's work (September 2026), an oral option when many need treatment at once may be relevant, and your criteria for an oral candidate or the right programme contact would help.",
+      "evidence_ids": [
+        "evidence:openalex:W2101984559",
+        "evidence:buyers:cd4531ea88218a7aace3"
+      ],
+      "content_hash": "52acd32cba18b4a4ab8f51ffd300090bf75141162db323d8e7012453370f66bd",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": false,
+          "detail": "Features missing from cited quotes: your institution, your criteria"
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "two_sentences",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_question_marks",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_first_person_i",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "review": null,
+      "approved_via": null
+    }
+  ]
+}
