@@ -28,9 +28,51 @@
         "status": "completed",
         "verification_passed": true,
         "cost_usd": 0.017605
+      },
+      "person:openalex:A5007513250": {
+        "id": "task_c43552aa57a44c369940f2fc4481e9d8",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.021295
+      },
+      "person:openalex:A5071347045": {
+        "id": "task_1d535fdcb16a482b9167e2c549cb1fa5",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.017959
+      },
+      "person:openalex:A5075803542": {
+        "id": "task_7ef817ff915641419a22211a06c13e9b",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.018082
+      },
+      "person:openalex:A5049491643": {
+        "id": "task_322b988a47ad4f7883de9254a6c01080",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.031031
+      },
+      "person:openalex:A5024946527": {
+        "id": "task_e5a47a1a963f4da298b5695bdb2e1f7d",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.020113
+      },
+      "person:openalex:A5027572313": {
+        "id": "task_95b9c9fa66364ec9a1027767da0a4ee3",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.025265
+      },
+      "person:openalex:A5153248164": {
+        "id": "task_2821ac5fb5ba4b5b980bea80df4bdc6c",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.023226
       }
     },
-    "observed_at": "2026-11-24T21:21:47.010354+00:00"
+    "observed_at": "2026-11-24T21:43:00.635666+00:00"
   },
   "items": [
     {
@@ -50,7 +92,7 @@
           "url": "https://openalex.org/W4404905249"
         }
       ],
-      "assessment": "His research develops photonic systems and programmable silicon-photonic processors for artificial intelligence and deep neural networks, aligning with photonic and optical devices and neural-network computing, including the linked work’s Neural Networks and Reservoir Computing topic classification.",
+      "assessment": "His research develops photonic systems and programmable silicon-photonic processors for artificial intelligence and deep neural networks, aligning with photonic and optical devices and neural-network computing, including the linked work\u2019s Neural Networks and Reservoir Computing topic classification.",
       "source": "moss_task",
       "evidence_ids": [
         "evidence:moss:9c787c09fd76ab2fdb2b",
@@ -168,13 +210,216 @@
         "evidence:moss:79c9f5a4699332c33c82",
         "evidence:moss:92e9975e620f0847aee5"
       ]
+    },
+    {
+      "person_id": "person:openalex:A5007513250",
+      "current_role": "Staff Scientist",
+      "current_org": "Lawrence Livermore National Laboratory",
+      "current_asof": null,
+      "email": "n***@llnl.gov",
+      "email_status": "guessed",
+      "profiles": [
+        {
+          "kind": "homepage",
+          "url": "https://people.llnl.gov/marks23"
+        },
+        {
+          "kind": "homepage",
+          "url": "https://people.llnl.gov/marks23"
+        },
+        {
+          "kind": "other",
+          "url": "https://doi.org/10.1007/s10967-026-10948-3"
+        },
+        {
+          "kind": "other",
+          "url": "https://doi.org/10.1007/s10967-025-10626-w"
+        }
+      ],
+      "assessment": "Her LLNL profile and the linked 2025\u20132026 papers describe nuclear forensics and uranium provenance research; I found no evidence in these sources of work on radiopharmaceuticals, actinide/radiometal chelation, or HOPO ligands. pattern first.last@llnl.gov; domain from https://people.llnl.gov/marks23",
+      "source": "pattern",
+      "evidence_ids": [
+        "evidence:moss:fce1f9464da4adcb75c9",
+        "evidence:moss:ed64b8d528a7a47b8ab2",
+        "evidence:moss:c10c7592802cee8bfc2a",
+        "evidence:moss:1922573402f905bc02b3"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5071347045",
+      "current_role": "Staff Scientist",
+      "current_org": "Lawrence Livermore National Laboratory",
+      "current_asof": null,
+      "email": "g***@llnl.gov",
+      "email_status": "guessed",
+      "profiles": [
+        {
+          "kind": "other",
+          "url": "https://people.llnl.gov/deblonde1"
+        },
+        {
+          "kind": "other",
+          "url": "https://st.llnl.gov/research/people/gauthier-deblonde"
+        }
+      ],
+      "assessment": "His current profile and recent publications support work in radiochemistry, actinide science, and actinide/lanthanide chelation; radiopharmaceutical development and HOPO ligands are documented in earlier publications, but the available evidence does not establish them as current projects. pattern first.last@llnl.gov; domain from https://people.llnl.gov/deblonde1",
+      "source": "pattern",
+      "evidence_ids": [
+        "evidence:moss:cde8394c02e087b7f2ab",
+        "evidence:moss:7a5b9b370714e13a457b"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5075803542",
+      "current_role": "PhD Student, Nuclear Engineering",
+      "current_org": "University of California, Berkeley",
+      "current_asof": "2026-10-19",
+      "email": null,
+      "email_status": "none",
+      "profiles": [
+        {
+          "kind": "orcid",
+          "url": "https://orcid.org/0000-0003-1848-8940"
+        },
+        {
+          "kind": "linkedin",
+          "url": "https://www.linkedin.com/in/kevin-maxwell-736670259"
+        },
+        {
+          "kind": "other",
+          "url": "https://www.osti.gov/biblio/3009204"
+        }
+      ],
+      "assessment": "Verified public records show nuclear-target fabrication and superheavy-element fluoride chemistry, but no evidence of work on radiopharmaceuticals, actinide/radiometal chelation, or HOPO ligands.",
+      "source": "moss_task",
+      "evidence_ids": [
+        "evidence:moss:ae605a6b43f83ef84d71",
+        "evidence:moss:7c03d5c67b69c1c2f183",
+        "evidence:moss:945ee65de257726d42d3"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5049491643",
+      "current_role": "Senior Researcher, Organic Materials (DMO)",
+      "current_org": "Institut de physique et chimie des Mat\u00e9riaux de Strasbourg (IPCMS)",
+      "current_asof": "2025-07-03",
+      "email": null,
+      "email_status": "none",
+      "profiles": [
+        {
+          "kind": "homepage",
+          "url": "https://www.ipcms.fr/en/anthony-daleo/"
+        },
+        {
+          "kind": "other",
+          "url": "https://osc.wp.st-andrews.ac.uk/2025/07/03/anthony-daleo-visit/"
+        },
+        {
+          "kind": "homepage",
+          "url": "https://www.ipcms.fr/en/anthony-daleo/"
+        },
+        {
+          "kind": "homepage",
+          "url": "https://www.ipcms.fr/en/anthony-daleo/"
+        },
+        {
+          "kind": "other",
+          "url": "https://doi.org/10.1021/acs.inorgchem.5b00748"
+        },
+        {
+          "kind": "other",
+          "url": "https://doi.org/10.1021/acs.jpclett.0c01888"
+        }
+      ],
+      "assessment": "The current IPCMS profile describes his work as fluorescent organic dyes for optoelectronics, not radiopharmaceuticals or current actinide/radiometal chelation or HOPO research; publisher records verify earlier HOPO (2015) and curium sensitization (2020) papers.",
+      "source": "moss_task",
+      "evidence_ids": [
+        "evidence:moss:bfd9f7f5b5b4dd68d7c1",
+        "evidence:moss:8b7daa50404369bc475f",
+        "evidence:moss:af296686ac6ad575307f",
+        "evidence:moss:a4a0d8395981bf67b3c5",
+        "evidence:moss:f25feb660a9d3e1ff6ea",
+        "evidence:moss:225b7903b15fddf29590"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5024946527",
+      "current_role": "Nuclear & Radiochemistry Group Leader",
+      "current_org": "Lawrence Livermore National Laboratory",
+      "current_asof": null,
+      "email": "t***@llnl.gov",
+      "email_status": "guessed",
+      "profiles": [
+        {
+          "kind": "homepage",
+          "url": "https://pls.llnl.gov/research-and-development/nuclear-and-chemical-sciences"
+        }
+      ],
+      "assessment": "The current LLNL remit and reviewed 2024\u20132026 publication titles indicate nuclear radiochemistry and radionuclide or actinide analysis, but I found no evidence of specific current work on radiopharmaceuticals, actinide/radiometal chelation, or HOPO ligands. pattern first.last@llnl.gov; domain from https://pls.llnl.gov/research-and-development/nuclear-and-chemical-sciences",
+      "source": "pattern",
+      "evidence_ids": [
+        "evidence:moss:aa2a809cc412beeef6c2"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5027572313",
+      "current_role": "Research Scientist",
+      "current_org": "Bayer Pharmaceuticals",
+      "current_asof": null,
+      "email": null,
+      "email_status": "none",
+      "profiles": [
+        {
+          "kind": "linkedin",
+          "url": "https://no.linkedin.com/in/roger-smeets-82a38a209"
+        },
+        {
+          "kind": "other",
+          "url": "https://www.researchgate.net/profile/Roger-Smeets"
+        }
+      ],
+      "assessment": "Verified publications include a 2018 study of metal complexation with a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy and thorium-227 radiopharmaceutical studies, showing relevant historical work in HOPO chelation and radiopharmaceuticals; the sources reviewed do not establish whether this remains current work.",
+      "source": "moss_task",
+      "evidence_ids": [
+        "evidence:moss:efc4aaabd9f82b68a7d5",
+        "evidence:moss:21895c57ff5624fdd8ca"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5153248164",
+      "current_role": "Staff Scientist, Materials Science Division",
+      "current_org": "Lawrence Livermore National Laboratory",
+      "current_asof": null,
+      "email": null,
+      "email_status": "none",
+      "profiles": [
+        {
+          "kind": "linkedin",
+          "url": "https://www.linkedin.com/in/appie-peterson-3582a2152"
+        },
+        {
+          "kind": "scholar",
+          "url": "https://scholar.google.com/citations?user=Lpv7RBkAAAAJ&hl=en"
+        },
+        {
+          "kind": "scholar",
+          "url": "https://scholar.google.com/citations?user=Lpv7RBkAAAAJ&hl=en"
+        }
+      ],
+      "assessment": "Their public record shows past research on HOPO chelators proposed for thorium-227 and zirconium-89 radiopharmaceuticals and on actinium chelation, but the available sources do not establish that this is part of their current LLNL work.",
+      "source": "moss_task",
+      "evidence_ids": [
+        "evidence:moss:a212f0ebe6b4f702a9d1",
+        "evidence:moss:51a4324ca2f9d061e878",
+        "evidence:moss:fd35f0042bd296d635d7"
+      ]
     }
   ],
   "evidence": [
     {
       "id": "evidence:moss:9c787c09fd76ab2fdb2b",
       "source_url": "https://phi.ntt-research.com/phi-people/bandyopadhyay-profile/",
-      "quote": "Saumil Bandyopadhyay\nPostdoctoral Fellow\nSaumil Bandyopadhyay’s research in the PHI Lab is focused on developing photonic systems for artificial intelligence. He received his Ph.D. in Electrical Engineering from MIT, where his S.B and M.Eng. were also conferred. Saumil’s doctoral work focused on building programmable silicon photonic processors for deep neural networks",
+      "quote": "Saumil Bandyopadhyay\nPostdoctoral Fellow\nSaumil Bandyopadhyay\u2019s research in the PHI Lab is focused on developing photonic systems for artificial intelligence. He received his Ph.D. in Electrical Engineering from MIT, where his S.B and M.Eng. were also conferred. Saumil\u2019s doctoral work focused on building programmable silicon photonic processors for deep neural networks",
       "source_date": null,
       "observed_at": "2026-11-24T19:23:51.666003+00:00",
       "kind": "web"
@@ -254,7 +499,7 @@
     {
       "id": "evidence:moss:e373078d5e4fc929c3c5",
       "source_url": "https://no.linkedin.com/in/alan-cuthbertson-8ba9031",
-      "quote": "Consulting in Radiopharmaceutical R&D · Erfaring: Cuthbertson Radiopharm Consulting",
+      "quote": "Consulting in Radiopharmaceutical R&D \u00b7 Erfaring: Cuthbertson Radiopharm Consulting",
       "source_date": null,
       "observed_at": "2026-11-24T21:21:47.008985+00:00",
       "kind": "web"
@@ -273,6 +518,198 @@
       "quote": "The solution chemistry of a chelator developed for 227Th targeted alpha therapy was probed.",
       "source_date": null,
       "observed_at": "2026-11-24T21:21:47.009168+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:fce1f9464da4adcb75c9",
+      "source_url": "https://people.llnl.gov/marks23",
+      "quote": "Naomi MarksStaff ScientistPLS / Nacsd / Nuclear & Chemical Science Division",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:39.851260+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:ed64b8d528a7a47b8ab2",
+      "source_url": "https://people.llnl.gov/marks23",
+      "quote": "Marks\u2019s recent work has been in developing National Nuclear Forensic Library capabilities and algorithms for provenance assessment for front-end fuel cycle materials, with a particular expertise in uranium ore concentrate.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:39.851307+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:c10c7592802cee8bfc2a",
+      "source_url": "https://doi.org/10.1007/s10967-026-10948-3",
+      "quote": "Weerakkody, E. N., Boro, J. R., Long, O. G., Amon, A., Atabay, S. E., Swift, A. J., Childs, B. C., Ferrier, M. G., Baker, A. A., & Marks, N. E. (2026). Metal alloy microparticle tagging of UO2 fuel pellets for nuclear forensics.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:39.851322+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:1922573402f905bc02b3",
+      "source_url": "https://doi.org/10.1007/s10967-025-10626-w",
+      "quote": "Shulaker, D. Z., Savina, M. R., Isselhardt, B., Raiwa, M., Boro, J., & Marks, N. (2025). RIMS analysis of isotopically tagged uranium particles with application to Intentional Forensics.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:39.851330+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:cde8394c02e087b7f2ab",
+      "source_url": "https://people.llnl.gov/deblonde1",
+      "quote": "Staff scientist, LLNL, 2020-present; Research Interests Radiochemistry, nuclear, actinide and lanthanide sciences, polyoxometalates, hydrometallurgy, metal mining, separation technologies, critical minerals, extraction, speciation, spectroscopy, bioinorganic chemistry, proteins, chelators, heavy metals, niobium, tantalum, tungsten, rare earths, radium, actinium, uranium, plutonium, americium, curium, berkelium, californium and more... 2026 [publication list includes] \u201cBack to Basics: Lanthanide and Heavy Actinide Chelation at High pH by Niobium Polyoxometalates.\u201d",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:39.950614+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:7a5b9b370714e13a457b",
+      "source_url": "https://st.llnl.gov/research/people/gauthier-deblonde",
+      "quote": "As a Staff Scientist at Lawrence Livermore National Laboratory (LLNL), Deblonde synthesizes new compounds containing radioactive elements and heavy metals. Since 2020, he has served as a Staff Scientist. [Publication titles include] \u201cDeveloping Coordination Chemistry to Advance 44Sc/47Sc and 86Y/90Y Theranostic Radiopharmaceuticals\u201d; \u201cSolution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy.\u201d",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:39.950637+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:ae605a6b43f83ef84d71",
+      "source_url": "https://orcid.org/0000-0003-1848-8940",
+      "quote": "\u201cPhD Student\u201d; \u201cNuclear Engineering\u201d; \u201cUniversity of California, Berkeley\u201d; start date \u201c2026-05-04\u201d.",
+      "source_date": "2026-10-19",
+      "observed_at": "2026-11-24T21:42:45.906033+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:7c03d5c67b69c1c2f183",
+      "source_url": "https://www.linkedin.com/in/kevin-maxwell-736670259",
+      "quote": "PhD Student - Nuclear Engineering at University of California, Berkeley \u00b7 Hello! I'm Kevin Maxwell, an aspiring researcher interested in applied nuclear physics and radiochemistry, especially ...",
+      "source_date": "2026-10-19",
+      "observed_at": "2026-11-24T21:42:45.906066+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:945ee65de257726d42d3",
+      "source_url": "https://www.osti.gov/biblio/3009204",
+      "quote": "Traditional polymer-assisted deposition has been shown to produce highly uniform thin films of metal oxides, including actinide oxides. ... Using CeO2 nanoparticles in a polyethyleneimine matrix, we produced targets",
+      "source_date": "2026-10-19",
+      "observed_at": "2026-11-24T21:42:45.906079+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:bfd9f7f5b5b4dd68d7c1",
+      "source_url": "https://www.ipcms.fr/en/anthony-daleo/",
+      "quote": "Anthony D'ALEO Senior Researcher, Organic Materials (DMO)",
+      "source_date": "2025-07-03",
+      "observed_at": "2026-11-24T21:42:52.790730+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:8b7daa50404369bc475f",
+      "source_url": "https://osc.wp.st-andrews.ac.uk/2025/07/03/anthony-daleo-visit/",
+      "quote": "Thursday 3 July 2025. The OSC are pleased to welcome Anthony D\u2019Al\u00e9o, senior researcher at the Institut de Physique et de Chimie des Mat\u00e9riaux de Strasbourg \u2013 IPCMS, who is visiting this week.",
+      "source_date": "2025-07-03",
+      "observed_at": "2026-11-24T21:42:52.790762+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:af296686ac6ad575307f",
+      "source_url": "https://www.ipcms.fr/en/anthony-daleo/",
+      "quote": "Since April 2021, Anthony has joined the IPCMS within the DMO to develop his research themes around fluorescent p-conjugated organic molecules and in-depth study of their photophysical properties for applications mainly in organic electronics.",
+      "source_date": "2025-07-03",
+      "observed_at": "2026-11-24T21:42:52.790772+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:a4a0d8395981bf67b3c5",
+      "source_url": "https://www.ipcms.fr/en/anthony-daleo/",
+      "quote": "All my activities are based on the design and synthesis of organic dyes for application spanning from organic light emitting diodes, organic laser diodes and epsilon-near-zero materials.",
+      "source_date": "2025-07-03",
+      "observed_at": "2026-11-24T21:42:52.790779+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:f25feb660a9d3e1ff6ea",
+      "source_url": "https://doi.org/10.1021/acs.inorgchem.5b00748",
+      "quote": "D\u2019Ale\u0301o, A., Moore, E. G., Xu, J., Daumann, L. J., & Raymond, K. N. (2015). Optimization of the Sensitization Process and Stability of Octadentate Eu(III) 1,2-HOPO Complexes.",
+      "source_date": "2025-07-03",
+      "observed_at": "2026-11-24T21:42:52.790791+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:225b7903b15fddf29590",
+      "source_url": "https://doi.org/10.1021/acs.jpclett.0c01888",
+      "quote": "Pallares, R. M., Sturzbecher-Hoehne, M., Shivaram, N. H., Cryan, J. P., D\u2019Al\u00e9o, A., & Abergel, R. J. (2020). Two-Photon Antenna Sensitization of Curium: Evidencing Metal-Driven Effects on Absorption Cross Section in f-Element Complexes.",
+      "source_date": "2025-07-03",
+      "observed_at": "2026-11-24T21:42:52.790803+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:aa2a809cc412beeef6c2",
+      "source_url": "https://pls.llnl.gov/research-and-development/nuclear-and-chemical-sciences",
+      "quote": "Nuclear & Radiochemistry Group Leader: Tashi Parsons-Davis We perform fundamental and applied research and development in nuclear science, including developing and implementing advanced experimental methods, nuclear target fabrication, radiochemical separations, radioanalytical techniques, and data evaluation and interpretation capabilities.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:54.493183+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:efc4aaabd9f82b68a7d5",
+      "source_url": "https://no.linkedin.com/in/roger-smeets-82a38a209",
+      "quote": "Reseach Scientist at Bayer Pharmaceuticals \u00b7 Erfaring: Bayer Pharmaceuticals \u00b7 Sted: Oslo.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:57.073721+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:21895c57ff5624fdd8ca",
+      "source_url": "https://www.researchgate.net/profile/Roger-Smeets",
+      "quote": "Covalent attachment of a 3,2-HOPO chelator to an antibody enables specific complexation and delivery of the alpha particle emitter thorium-227 to tumor cells.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:57.073740+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:a212f0ebe6b4f702a9d1",
+      "source_url": "https://www.linkedin.com/in/appie-peterson-3582a2152",
+      "quote": "Staff Scientist Materials Science Division - Lawrence Livermore National Lab \u00b7 Experience: Lawrence Livermore National Laboratory",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:57.727638+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:51a4324ca2f9d061e878",
+      "source_url": "https://scholar.google.com/citations?user=Lpv7RBkAAAAJ&hl=en",
+      "quote": "Macrocyclic 1, 2-Hydroxypyridinone-based chelators as potential ligands for Thorium-227 and Zirconium-89 radiopharmaceuticals\nJJ Woods, AG Cosby, JN Wacker, LM Aguirre Quintana, A Peterson, ...\nInorganic Chemistry 62 (50), 20721-20732, 2023",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:57.727673+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:fd35f0042bd296d635d7",
+      "source_url": "https://scholar.google.com/citations?user=Lpv7RBkAAAAJ&hl=en",
+      "quote": "Actinium chelation and crystallization in a macromolecular scaffold\nJN Wacker, JJ Woods, PB Rupert, A Peterson, M Allaire, WW Lukens, ...\nNature Communications 15 (1), 5741, 2024",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:42:57.727683+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:2a10ba84b96719efe989",
+      "source_url": "https://api.crossref.org/works/10.1021/acs.jpca.6c07165",
+      "quote": "The oxidation states were investigated through the production and identification of MFn+ species using the fluorinating gas C3F6.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:43:00.635479+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:9d0d26fd4363764abba8",
+      "source_url": "https://iopscience.iop.org/article/10.1088/1361-6471/ab26cc",
+      "quote": "If harvested, the unused isotopes could enable new research for diverse applications ranging from medical therapy and diagnosis to nuclear security.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:43:00.635494+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:676d7d52cce708b4c7a3",
+      "source_url": "https://openalex.org/A5066171096",
+      "quote": "Mark A. Stoyer",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:43:00.635501+00:00",
       "kind": "web"
     }
   ]
