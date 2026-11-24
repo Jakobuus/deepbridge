@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "cached": true,
+    "case": "Lightmatter / Nicholas C. Harris",
+    "live_run": "Key pending: MOSS_PROJECT_ID and MOSS_PROJECT_KEY are absent from the process environment. No live Moss or Hunter request has been run.",
+    "notes": "Top three unique bridge people by cached path score. Affiliations are dated publication evidence, not verified current employment. New Moss evidence is kept in this contact fixture and restored into the evidence store on contact cache reads.",
+    "tasks": {}
+  },
+  "items": [
+    {
+      "person_id": "person:openalex:A5047268098",
+      "current_role": null,
+      "current_org": "NTT Research",
+      "current_asof": "2024-12-01",
+      "email": null,
+      "email_status": "none",
+      "profiles": [],
+      "assessment": "Cached affiliation only; current employment not verified. Live Moss run pending MOSS_PROJECT_ID and MOSS_PROJECT_KEY.",
+      "source": "cache",
+      "evidence_ids": [
+        "evidence:shared-A5047268098"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5089821617",
+      "current_role": null,
+      "current_org": "NTT Research",
+      "current_asof": "2024-12-01",
+      "email": null,
+      "email_status": "none",
+      "profiles": [],
+      "assessment": "Cached affiliation only; current employment not verified. Live Moss run pending MOSS_PROJECT_ID and MOSS_PROJECT_KEY.",
+      "source": "cache",
+      "evidence_ids": [
+        "evidence:shared-A5089821617"
+      ]
+    },
+    {
+      "person_id": "person:openalex:A5049120533",
+      "current_role": null,
+      "current_org": "Massachusetts Institute of Technology",
+      "current_asof": "2017-06-12",
+      "email": null,
+      "email_status": "none",
+      "profiles": [],
+      "assessment": "Cached affiliation only; current employment not verified. Live Moss run pending MOSS_PROJECT_ID and MOSS_PROJECT_KEY.",
+      "source": "cache",
+      "evidence_ids": [
+        "evidence:follet-dual",
+        "evidence:harris-englund"
+      ]
+    }
+  ],
+  "evidence": []
+}

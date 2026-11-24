@@ -1,0 +1,3037 @@
+{
+  "meta": {
+    "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+    "count": 81,
+    "db_response_time_ms": 12,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "get (A5102978866)'s works, most cited first",
+      "x_new_oql": "get (A5102978866)'s works, most cited first",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "authorships.author.id",
+            "value": "A5102978866"
+          }
+        ],
+        "sort_by": [
+          {
+            "column_id": "cited_by_count",
+            "direction": "desc"
+          }
+        ]
+      },
+      "url": "/works?filter=authorships.author.id:A5102978866&sort=cited_by_count:desc&per_page=5&page=1",
+      "order": "most cited first",
+      "order_default": false
+    },
+    "cost_usd": 0.0001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2752849906",
+      "title": "Deep learning with coherent nanophotonic circuits",
+      "publication_date": "2017-06-12",
+      "topics": [
+        {
+          "id": "https://openalex.org/T12611",
+          "display_name": "Neural Networks and Reservoir Computing",
+          "score": 0.9984999895095825,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10299",
+          "display_name": "Photonic and Optical Devices",
+          "score": 0.0006000000284984708,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10502",
+          "display_name": "Advanced Memory and Neural Computing",
+          "score": 0.00039999998989515007,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5102829836",
+            "display_name": "Yichen Shen",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3800-2143",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3800-2143"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Yichen Shen",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102978866",
+            "display_name": "Nicholas C. Harris",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3009-563X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3009-563X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Nicholas C. Harris",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5078114740",
+            "display_name": "Scott A. Skirlo",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Scott Skirlo",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5106698860",
+            "display_name": "Mihika Prabhu",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-1367-4509",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1367-4509"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Mihika Prabhu",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1367-4509",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109877734",
+            "display_name": "Tom W. Baehr-Jones",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Tom Baehr-Jones",
+          "raw_affiliation_strings": [
+            "Elenion, 171 Madison Avenue, Suite 1100, New York, 10016, New York, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Elenion, 171 Madison Avenue, Suite 1100, New York, 10016, New York, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5016311968",
+            "display_name": "Michael J. Hochberg",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael Hochberg",
+          "raw_affiliation_strings": [
+            "Elenion, 171 Madison Avenue, Suite 1100, New York, 10016, New York, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Elenion, 171 Madison Avenue, Suite 1100, New York, 10016, New York, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Xin Sun",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Xin Sun",
+          "raw_affiliation_strings": [
+            "Department of Mathematics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Mathematics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101615338",
+            "display_name": "Shijie Zhao",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-6609-0710",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6609-0710"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Shijie Zhao",
+          "raw_affiliation_strings": [
+            "Department of Biology, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biology, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5019862529",
+            "display_name": "Hugo Larochelle",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-2960-9288",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2960-9288"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I135117807",
+              "display_name": "Université de Sherbrooke",
+              "ror": "https://ror.org/00kybxq39",
+              "country_code": "CA",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I135117807"
+              ]
+            }
+          ],
+          "countries": [
+            "CA"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Hugo Larochelle",
+          "raw_affiliation_strings": [
+            "Université de Sherbrooke, Administration, 2500 Boulevard de l'Université, Sherbrooke, J1K 2R1, Quebec, Canada"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Université de Sherbrooke, Administration, 2500 Boulevard de l'Université, Sherbrooke, J1K 2R1, Quebec, Canada",
+              "institution_ids": [
+                "https://openalex.org/I135117807"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5049120533",
+            "display_name": "Dirk Robert Englund",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1043-3489",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1043-3489"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Dirk Englund",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5060426875",
+            "display_name": "Marin Soljacic",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-7184-5831",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-7184-5831",
+              "https://orcid.org/0000-0001-8466-0193"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Marin Soljačić",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W1833198276",
+      "title": "Quantum transport simulations in a programmable nanophotonic processor",
+      "publication_date": "2017-06-19",
+      "topics": [
+        {
+          "id": "https://openalex.org/T11996",
+          "display_name": "Random lasers and scattering media",
+          "score": 0.5562000274658203,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3107",
+            "display_name": "Atomic and Molecular Physics, and Optics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11261",
+          "display_name": "Quantum chaos and dynamical systems",
+          "score": 0.07900000363588333,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3109",
+            "display_name": "Statistical and Nonlinear Physics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10622",
+          "display_name": "Quantum Mechanics and Applications",
+          "score": 0.0357000008225441,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3107",
+            "display_name": "Atomic and Molecular Physics, and Optics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5102978866",
+            "display_name": "Nicholas C. Harris",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3009-563X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3009-563X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Nicholas C. Harris",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5061412493",
+            "display_name": "Gregory R. Steinbrecher",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9895-0191",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9895-0191"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Gregory R. Steinbrecher",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5106698860",
+            "display_name": "Mihika Prabhu",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-1367-4509",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1367-4509"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Mihika Prabhu",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-1367-4509",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5001848905",
+            "display_name": "Yoav Lahini",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5952-7144",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5952-7144"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Yoav Lahini",
+          "raw_affiliation_strings": [
+            "Harvard John A. Paulson School of Engineering and Applied Sciences, Harvard University, Cambridge, 02138, Massachusetts, USA",
+            "[Harvard John A. Paulson School of Engineering and Applied Sciences, Harvard University, Cambridge, USA]"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Harvard John A. Paulson School of Engineering and Applied Sciences, Harvard University, Cambridge, 02138, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "[Harvard John A. Paulson School of Engineering and Applied Sciences, Harvard University, Cambridge, USA]",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5110068833",
+            "display_name": "Jacob Mower",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jacob Mower",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5024975994",
+            "display_name": "Darius Bunandar",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-8218-5656",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8218-5656"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Darius Bunandar",
+          "raw_affiliation_strings": [
+            "Department of Physics, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Physics, Massachusetts institute of Technology, Cambridge, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Physics, Massachusetts institute of Technology, Cambridge, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5074269087",
+            "display_name": "Changchen Chen",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-7811-1673",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7811-1673"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Changchen Chen",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, USA#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, USA#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109879992",
+            "display_name": "Franco N. C. Wong",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-1998-6159",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1998-6159"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Franco N. C. Wong",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, USA#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, USA#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109877734",
+            "display_name": "Tom W. Baehr-Jones",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Tom Baehr-Jones",
+          "raw_affiliation_strings": [
+            "Elenion Technologies, 171 Madison Avenue, Suite 1100, New York, 10016, New York, USA",
+            "Elenion Technologies, New York, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Elenion Technologies, 171 Madison Avenue, Suite 1100, New York, 10016, New York, USA",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Elenion Technologies, New York, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Michael Hochberg",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael Hochberg",
+          "raw_affiliation_strings": [
+            "Elenion Technologies, 171 Madison Avenue, Suite 1100, New York, 10016, New York, USA",
+            "Elenion Technologies, New York, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Elenion Technologies, 171 Madison Avenue, Suite 1100, New York, 10016, New York, USA",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Elenion Technologies, New York, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5038060570",
+            "display_name": "Seth Lloyd",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-0353-4529",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0353-4529"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Seth Lloyd",
+          "raw_affiliation_strings": [
+            "Department of Mechanical Engineering, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Mechanical Engineering, Massachusetts Institute of Technology, Cambridge USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Mechanical Engineering, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Mechanical Engineering, Massachusetts Institute of Technology, Cambridge USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5049120533",
+            "display_name": "Dirk Robert Englund",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1043-3489",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1043-3489"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Dirk Englund",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering & Computer Science, Massachusetts Institute of Technology, Cambridge, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2952285760",
+      "title": "Efficient, compact and low loss thermo-optic phase shifter in silicon",
+      "publication_date": "2014-04-23",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10299",
+          "display_name": "Photonic and Optical Devices",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11050",
+          "display_name": "Photorefractive and Nonlinear Optics",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/3107",
+            "display_name": "Atomic and Molecular Physics, and Optics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/31",
+            "display_name": "Physics and Astronomy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10369",
+          "display_name": "Advanced MEMS and NEMS Technologies",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "We": [
+          0
+        ],
+        "design": [
+          1
+        ],
+        "a": [
+          2,
+          14,
+          31,
+          84,
+          97,
+          106
+        ],
+        "resistive": [
+          3
+        ],
+        "heater": [
+          4
+        ],
+        "optimized": [
+          5
+        ],
+        "for": [
+          6,
+          120
+        ],
+        "efficient": [
+          7
+        ],
+        "and": [
+          8,
+          18,
+          50,
+          58,
+          90,
+          105
+        ],
+        "low-loss": [
+          9
+        ],
+        "optical": [
+          10,
+          56,
+          69
+        ],
+        "phase": [
+          11,
+          79
+        ],
+        "modulation": [
+          12,
+          109
+        ],
+        "in": [
+          13,
+          83,
+          151
+        ],
+        "silicon-on-insulator": [
+          15
+        ],
+        "(SOI)": [
+          16
+        ],
+        "waveguide": [
+          17,
+          34
+        ],
+        "characterize": [
+          19
+        ],
+        "the": [
+          20,
+          52,
+          55,
+          59,
+          64,
+          116,
+          134,
+          144,
+          152
+        ],
+        "fabricated": [
+          21,
+          82
+        ],
+        "devices.": [
+          22
+        ],
+        "Modulation": [
+          23
+        ],
+        "is": [
+          24,
+          39
+        ],
+        "achieved": [
+          25
+        ],
+        "by": [
+          26
+        ],
+        "flowing": [
+          27
+        ],
+        "current": [
+          28
+        ],
+        "perpendicular": [
+          29
+        ],
+        "to": [
+          30,
+          45,
+          72,
+          147
+        ],
+        "new": [
+          32
+        ],
+        "ridge": [
+          33
+        ],
+        "geometry.": [
+          35
+        ],
+        "The": [
+          36,
+          94
+        ],
+        "resistance": [
+          37
+        ],
+        "profile": [
+          38
+        ],
+        "engineered": [
+          40
+        ],
+        "using": [
+          41
+        ],
+        "different": [
+          42
+        ],
+        "dopant": [
+          43
+        ],
+        "concentrations": [
+          44
+        ],
+        "obtain": [
+          46
+        ],
+        "localized": [
+          47
+        ],
+        "heat": [
+          48
+        ],
+        "generation": [
+          49
+        ],
+        "maximize": [
+          51
+        ],
+        "overlap": [
+          53
+        ],
+        "between": [
+          54
+        ],
+        "mode": [
+          57
+        ],
+        "high": [
+          60
+        ],
+        "temperature": [
+          61
+        ],
+        "regions": [
+          62
+        ],
+        "of": [
+          63,
+          100,
+          111,
+          136
+        ],
+        "structure,": [
+          65
+        ],
+        "while": [
+          66
+        ],
+        "simultaneously": [
+          67
+        ],
+        "minimizing": [
+          68
+        ],
+        "loss": [
+          70,
+          118
+        ],
+        "due": [
+          71
+        ],
+        "free-carrier": [
+          73
+        ],
+        "absorption.": [
+          74
+        ],
+        "A": [
+          75
+        ],
+        "61.6": [
+          76
+        ],
+        "μm": [
+          77
+        ],
+        "long": [
+          78
+        ],
+        "shifter": [
+          80
+        ],
+        "was": [
+          81,
+          127
+        ],
+        "CMOS": [
+          85
+        ],
+        "process": [
+          86
+        ],
+        "with": [
+          87
+        ],
+        "oxide": [
+          88
+        ],
+        "cladding": [
+          89
+        ],
+        "two": [
+          91
+        ],
+        "metal": [
+          92
+        ],
+        "layers.": [
+          93
+        ],
+        "device": [
+          95
+        ],
+        "features": [
+          96
+        ],
+        "phase-shifting": [
+          98
+        ],
+        "efficiency": [
+          99
+        ],
+        "24.77": [
+          101
+        ],
+        "±": [
+          102,
+          113,
+          130
+        ],
+        "0.43": [
+          103
+        ],
+        "mW/π": [
+          104
+        ],
+        "-3": [
+          107
+        ],
+        "dB": [
+          108
+        ],
+        "bandwidth": [
+          110
+        ],
+        "130.0": [
+          112
+        ],
+        "5.59": [
+          114
+        ],
+        "kHz;": [
+          115
+        ],
+        "insertion": [
+          117
+        ],
+        "measured": [
+          119
+        ],
+        "21": [
+          121
+        ],
+        "devices": [
+          122,
+          150
+        ],
+        "across": [
+          123
+        ],
+        "an": [
+          124
+        ],
+        "8-inch": [
+          125
+        ],
+        "wafer": [
+          126
+        ],
+        "only": [
+          128
+        ],
+        "0.23": [
+          129
+        ],
+        "0.13": [
+          131
+        ],
+        "dB.": [
+          132
+        ],
+        "Considering": [
+          133
+        ],
+        "prospect": [
+          135
+        ],
+        "densely": [
+          137
+        ],
+        "integrated": [
+          138
+        ],
+        "photonic": [
+          139
+        ],
+        "circuits,": [
+          140
+        ],
+        "we": [
+          141
+        ],
+        "also": [
+          142
+        ],
+        "quantify": [
+          143
+        ],
+        "separation": [
+          145
+        ],
+        "necessary": [
+          146
+        ],
+        "isolate": [
+          148
+        ],
+        "thermo-optic": [
+          149
+        ],
+        "standard": [
+          153
+        ],
+        "220": [
+          154
+        ],
+        "nm": [
+          155
+        ],
+        "SOI": [
+          156
+        ],
+        "platform.": [
+          157
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5102978866",
+            "display_name": "Nicholas C. Harris",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3009-563X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3009-563X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Nicholas C. Harris",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5024012582",
+            "display_name": "Yangjin Ma",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I86501945",
+              "display_name": "University of Delaware",
+              "ror": "https://ror.org/01sbq1a82",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I86501945"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Yangjin Ma",
+          "raw_affiliation_strings": [
+            "Department of Electrical and Computer Engineering, University of Delaware, Newark DE 19716, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical and Computer Engineering, University of Delaware, Newark DE 19716, USA",
+              "institution_ids": [
+                "https://openalex.org/I86501945"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5110068833",
+            "display_name": "Jacob Mower",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jacob Mower",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109877734",
+            "display_name": "Tom W. Baehr-Jones",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I86501945",
+              "display_name": "University of Delaware",
+              "ror": "https://ror.org/01sbq1a82",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I86501945"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Tom Baehr-Jones",
+          "raw_affiliation_strings": [
+            "Department of Electrical and Computer Engineering, University of Delaware, Newark DE 19716, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical and Computer Engineering, University of Delaware, Newark DE 19716, USA",
+              "institution_ids": [
+                "https://openalex.org/I86501945"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5049120533",
+            "display_name": "Dirk Robert Englund",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1043-3489",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1043-3489"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Dirk Englund",
+          "raw_affiliation_strings": [
+            "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Michael Hochberg",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I86501945",
+              "display_name": "University of Delaware",
+              "ror": "https://ror.org/01sbq1a82",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I86501945"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael Hochberg",
+          "raw_affiliation_strings": [
+            "Department of Electrical and Computer Engineering, University of Delaware, Newark DE 19716, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Electrical and Computer Engineering, University of Delaware, Newark DE 19716, USA",
+              "institution_ids": [
+                "https://openalex.org/I86501945"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5044090780",
+            "display_name": "Christophe Galland",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5627-0796",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5627-0796"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I5124864",
+              "display_name": "École Polytechnique Fédérale de Lausanne",
+              "ror": "https://ror.org/02s376052",
+              "country_code": "CH",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I2799323385",
+                "https://openalex.org/I5124864"
+              ]
+            }
+          ],
+          "countries": [
+            "CH"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Christophe Galland",
+          "raw_affiliation_strings": [
+            "École Polytechnique Fédérale de Lausanne (EPFL), CH-1015 Lausanne, Switzerland"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "École Polytechnique Fédérale de Lausanne (EPFL), CH-1015 Lausanne, Switzerland",
+              "institution_ids": [
+                "https://openalex.org/I5124864"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2905425616",
+      "title": "Linear programmable nanophotonic processors",
+      "publication_date": "2018-12-20",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10299",
+          "display_name": "Photonic and Optical Devices",
+          "score": 0.538100004196167,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12611",
+          "display_name": "Neural Networks and Reservoir Computing",
+          "score": 0.18359999358654022,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10245",
+          "display_name": "Metamaterials and Metasurfaces Applications",
+          "score": 0.06109999865293503,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2504",
+            "display_name": "Electronic, Optical and Magnetic Materials"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/25",
+            "display_name": "Materials Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "©": [
+          0
+        ],
+        "2018": [
+          1
+        ],
+        "Optical": [
+          2
+        ],
+        "Society": [
+          3
+        ],
+        "of": [
+          4,
+          44
+        ],
+        "America.": [
+          5
+        ],
+        "Advances": [
+          6
+        ],
+        "in": [
+          7,
+          34
+        ],
+        "photonic": [
+          8
+        ],
+        "integrated": [
+          9
+        ],
+        "circuits": [
+          10
+        ],
+        "have": [
+          11
+        ],
+        "recently": [
+          12
+        ],
+        "enabled": [
+          13
+        ],
+        "electrically": [
+          14
+        ],
+        "reconfigurable": [
+          15
+        ],
+        "optical": [
+          16
+        ],
+        "systems": [
+          17
+        ],
+        "that": [
+          18
+        ],
+        "can": [
+          19
+        ],
+        "implement": [
+          20
+        ],
+        "universal": [
+          21
+        ],
+        "linear": [
+          22
+        ],
+        "optics": [
+          23
+        ],
+        "transformations": [
+          24
+        ],
+        "on": [
+          25
+        ],
+        "spatial": [
+          26
+        ],
+        "mode": [
+          27
+        ],
+        "sets.": [
+          28
+        ],
+        "This": [
+          29
+        ],
+        "review": [
+          30
+        ],
+        "paper": [
+          31
+        ],
+        "covers": [
+          32
+        ],
+        "progress": [
+          33
+        ],
+        "such": [
+          35
+        ],
+        "“programmable": [
+          36
+        ],
+        "nanophotonic": [
+          37
+        ],
+        "processors”": [
+          38
+        ],
+        "as": [
+          39,
+          41
+        ],
+        "well": [
+          40
+        ],
+        "emerging": [
+          42
+        ],
+        "applications": [
+          43
+        ],
+        "the": [
+          45
+        ],
+        "technology": [
+          46
+        ],
+        "to": [
+          47
+        ],
+        "problems": [
+          48
+        ],
+        "including": [
+          49
+        ],
+        "classical": [
+          50
+        ],
+        "and": [
+          51,
+          55
+        ],
+        "quantum": [
+          52
+        ],
+        "information": [
+          53
+        ],
+        "processing": [
+          54
+        ],
+        "machine": [
+          56
+        ],
+        "learning.": [
+          57
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5102978866",
+            "display_name": "Nicholas C. Harris",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3009-563X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3009-563X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210099316",
+              "display_name": "Lightmatter (United States)",
+              "ror": "https://ror.org/018extf73",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I4210099316"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Nicholas C. Harris",
+          "raw_affiliation_strings": [
+            "Lightmatter, 61 Chatham St 5th floor, Boston, Massachusetts 02109, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Lightmatter, 61 Chatham St 5th floor, Boston, Massachusetts 02109, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210099316"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5063162379",
+            "display_name": "Jacques Carolan",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5736-2753",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5736-2753"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jacques Carolan",
+          "raw_affiliation_strings": [
+            "Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, Massachusetts 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, Massachusetts 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5024975994",
+            "display_name": "Darius Bunandar",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-8218-5656",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8218-5656"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Darius Bunandar",
+          "raw_affiliation_strings": [
+            "Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, Massachusetts 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, Massachusetts 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5106698860",
+            "display_name": "Mihika Prabhu",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-1367-4509",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-1367-4509"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Mihika Prabhu",
+          "raw_affiliation_strings": [
+            "Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, Massachusetts 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, Massachusetts 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Michael Hochberg",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael Hochberg",
+          "raw_affiliation_strings": [
+            "Elenion Technologies, New York, New York 10016, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Elenion Technologies, New York, New York 10016, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109877734",
+            "display_name": "Tom W. Baehr-Jones",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Tom Baehr-Jones",
+          "raw_affiliation_strings": [
+            "Elenion Technologies, New York, New York 10016, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Elenion Technologies, New York, New York 10016, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5044853147",
+            "display_name": "Michael L. Fanto",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-8406-7100",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8406-7100"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4388482673",
+              "display_name": "U.S. Air Force Research Laboratory Information Directorate",
+              "ror": "https://ror.org/00z65zs77",
+              "country_code": "US",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I1280414376",
+                "https://openalex.org/I1330347796",
+                "https://openalex.org/I4210102105",
+                "https://openalex.org/I4388482673",
+                "https://openalex.org/I4389425425"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael L. Fanto",
+          "raw_affiliation_strings": [
+            "Air Force Research Laboratory, Information Directorate, 525 Brooks Road, Rome, New York 13441, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Air Force Research Laboratory, Information Directorate, 525 Brooks Road, Rome, New York 13441, USA",
+              "institution_ids": [
+                "https://openalex.org/I4388482673"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5063274118",
+            "display_name": "A. Matthew Smith",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-0338-0881",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0338-0881"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4388482673",
+              "display_name": "U.S. Air Force Research Laboratory Information Directorate",
+              "ror": "https://ror.org/00z65zs77",
+              "country_code": "US",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I1280414376",
+                "https://openalex.org/I1330347796",
+                "https://openalex.org/I4210102105",
+                "https://openalex.org/I4388482673",
+                "https://openalex.org/I4389425425"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "A. Matthew Smith",
+          "raw_affiliation_strings": [
+            "Air Force Research Laboratory, Information Directorate, 525 Brooks Road, Rome, New York 13441, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Air Force Research Laboratory, Information Directorate, 525 Brooks Road, Rome, New York 13441, USA",
+              "institution_ids": [
+                "https://openalex.org/I4388482673"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5114030944",
+            "display_name": "Christopher C. Tison",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5745-1724",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5745-1724"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4388482673",
+              "display_name": "U.S. Air Force Research Laboratory Information Directorate",
+              "ror": "https://ror.org/00z65zs77",
+              "country_code": "US",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I1280414376",
+                "https://openalex.org/I1330347796",
+                "https://openalex.org/I4210102105",
+                "https://openalex.org/I4388482673",
+                "https://openalex.org/I4389425425"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Christopher C. Tison",
+          "raw_affiliation_strings": [
+            "Air Force Research Laboratory, Information Directorate, 525 Brooks Road, Rome, New York 13441, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Air Force Research Laboratory, Information Directorate, 525 Brooks Road, Rome, New York 13441, USA",
+              "institution_ids": [
+                "https://openalex.org/I4388482673"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072805864",
+            "display_name": "Paul M. Alsing",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-0467-5200",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0467-5200"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4388482673",
+              "display_name": "U.S. Air Force Research Laboratory Information Directorate",
+              "ror": "https://ror.org/00z65zs77",
+              "country_code": "US",
+              "type": "government",
+              "lineage": [
+                "https://openalex.org/I1280414376",
+                "https://openalex.org/I1330347796",
+                "https://openalex.org/I4210102105",
+                "https://openalex.org/I4388482673",
+                "https://openalex.org/I4389425425"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Paul M. Alsing",
+          "raw_affiliation_strings": [
+            "Air Force Research Laboratory, Information Directorate, 525 Brooks Road, Rome, New York 13441, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Air Force Research Laboratory, Information Directorate, 525 Brooks Road, Rome, New York 13441, USA",
+              "institution_ids": [
+                "https://openalex.org/I4388482673"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5049120533",
+            "display_name": "Dirk Robert Englund",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1043-3489",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1043-3489"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Dirk Englund",
+          "raw_affiliation_strings": [
+            "Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, Massachusetts 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Massachusetts Institute of Technology, 77 Massachusetts Ave, Cambridge, Massachusetts 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4404905249",
+      "title": "Single-chip photonic deep neural network with forward-only training",
+      "publication_date": "2024-12-01",
+      "topics": [
+        {
+          "id": "https://openalex.org/T12611",
+          "display_name": "Neural Networks and Reservoir Computing",
+          "score": 0.9994999766349792,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1702",
+            "display_name": "Artificial Intelligence"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/17",
+            "display_name": "Computer Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10502",
+          "display_name": "Advanced Memory and Neural Computing",
+          "score": 0.00019999999494757503,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10299",
+          "display_name": "Photonic and Optical Devices",
+          "score": 9.999999747378752e-05,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5047268098",
+            "display_name": "Saumil Bandyopadhyay",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-7761-337X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-7761-337X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210092597",
+              "display_name": "NTT (United States)",
+              "ror": "https://ror.org/004cn7092",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I2251713219",
+                "https://openalex.org/I4210092597"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Saumil Bandyopadhyay",
+          "raw_affiliation_strings": [
+            "NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA",
+            "Research Laboratory of Electronics, MIT, Cambridge, MA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-7761-337X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210092597"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, MIT, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5027186207",
+            "display_name": "Alexander Sludds",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-7443-1378",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-7443-1378"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Alexander Sludds",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, MIT, Cambridge, MA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-7443-1378",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, MIT, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5062338571",
+            "display_name": "Stefan Krastanov",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5550-5258",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5550-5258"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Stefan Krastanov",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, MIT, Cambridge, MA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-5550-5258",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, MIT, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5089821617",
+            "display_name": "Ryan Hamerly",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4976-2236",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4976-2236"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210092597",
+              "display_name": "NTT (United States)",
+              "ror": "https://ror.org/004cn7092",
+              "country_code": "US",
+              "type": "company",
+              "lineage": [
+                "https://openalex.org/I2251713219",
+                "https://openalex.org/I4210092597"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Ryan Hamerly",
+          "raw_affiliation_strings": [
+            "NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA",
+            "Research Laboratory of Electronics, MIT, Cambridge, MA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4976-2236",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210092597"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, MIT, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5102978866",
+            "display_name": "Nicholas C. Harris",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3009-563X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3009-563X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Nicholas Harris",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, MIT, Cambridge, MA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3009-563X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, MIT, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5024975994",
+            "display_name": "Darius Bunandar",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-8218-5656",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8218-5656"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Darius Bunandar",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, MIT, Cambridge, MA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, MIT, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5113896456",
+            "display_name": "Matthew Streshinsky",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Matthew Streshinsky",
+          "raw_affiliation_strings": [
+            "Nokia Corporation, New York, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Nokia Corporation, New York, NY, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Michael Hochberg",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael Hochberg",
+          "raw_affiliation_strings": [
+            "Periplous, LLC, New York, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Periplous, LLC, New York, NY, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5049120533",
+            "display_name": "Dirk Robert Englund",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1043-3489",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1043-3489"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Dirk Englund",
+          "raw_affiliation_strings": [
+            "Research Laboratory of Electronics, MIT, Cambridge, MA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1043-3489",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Research Laboratory of Electronics, MIT, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "group_by": []
+}

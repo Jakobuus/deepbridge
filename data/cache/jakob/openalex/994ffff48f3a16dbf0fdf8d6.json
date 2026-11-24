@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+    "count": 3,
+    "db_response_time_ms": 89,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "get authors where text has (Yet-Ming Chiang)",
+      "x_new_oql": "get authors where text has (Yet-Ming Chiang)",
+      "oqo": {
+        "get_rows": "authors",
+        "filter_rows": [
+          {
+            "column_id": "text.search",
+            "value": "Yet-Ming Chiang",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/authors?filter=text.search:Yet-Ming Chiang&per_page=5&page=1",
+      "order": "best matches first",
+      "order_default": true
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/A5060617433",
+      "display_name": "Yet‐Ming Chiang",
+      "cited_by_count": 45307
+    },
+    {
+      "id": "https://openalex.org/A5030295291",
+      "display_name": "Alexander Henry Slocum",
+      "cited_by_count": 8430
+    },
+    {
+      "id": "https://openalex.org/A5162717858",
+      "display_name": "Yet-Ming Chiang",
+      "cited_by_count": 2
+    }
+  ],
+  "group_by": []
+}

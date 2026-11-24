@@ -245,6 +245,46 @@
       "source_date": "2025-09-03",
       "observed_at": "2026-11-24T18:12:00Z",
       "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2752849906",
+      "source_url": "https://openalex.org/W2752849906",
+      "quote": "Deep learning with coherent nanophotonic circuits",
+      "source_date": "2017-06-12",
+      "observed_at": "2026-11-24T19:14:08.330836+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W1833198276",
+      "source_url": "https://openalex.org/W1833198276",
+      "quote": "Quantum transport simulations in a programmable nanophotonic processor",
+      "source_date": "2017-06-19",
+      "observed_at": "2026-11-24T19:14:08.331059+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2952285760",
+      "source_url": "https://openalex.org/W2952285760",
+      "quote": "Efficient, compact and low loss thermo-optic phase shifter in silicon",
+      "source_date": "2014-04-23",
+      "observed_at": "2026-11-24T19:14:08.331072+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2905425616",
+      "source_url": "https://openalex.org/W2905425616",
+      "quote": "Linear programmable nanophotonic processors",
+      "source_date": "2018-12-20",
+      "observed_at": "2026-11-24T19:14:08.331077+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W4404905249",
+      "source_url": "https://openalex.org/W4404905249",
+      "quote": "Single-chip photonic deep neural network with forward-only training",
+      "source_date": "2024-12-01",
+      "observed_at": "2026-11-24T19:14:08.331082+00:00",
+      "kind": "paper"
     }
   ]
 }

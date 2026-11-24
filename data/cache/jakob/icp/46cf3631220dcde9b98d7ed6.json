@@ -1,0 +1,101 @@
+{
+  "fingerprint": "abde062497140d70c948fbc14345dcdf5410a0b86de5cb2394aa91971563ae9c",
+  "cached": true,
+  "icp": {
+    "founder_id": "person:openalex:A5060617433",
+    "buyer_roles": [
+      {
+        "title": "Head of Battery R&D / VP Cell Technology",
+        "why": "Hypothesis: Leaders who own cell chemistry and electrode roadmaps may care about electrode materials and lithium storage performance, as covered in the phospho-olivine and nanowire electrode works.",
+        "evidence_ids": [
+          "evidence:openalex:W2097535432",
+          "evidence:openalex:W1629830706"
+        ]
+      },
+      {
+        "title": "Director of Solid-State / Lithium-Metal Battery Development",
+        "why": "Hypothesis: Teams working on lithium-metal anodes and solid electrolytes may be concerned with dendrite suppression and lithium penetration that causes short circuits, which these works study.",
+        "evidence_ids": [
+          "evidence:openalex:W2265160803",
+          "evidence:openalex:W2725925537"
+        ]
+      },
+      {
+        "title": "Battery Manufacturing Process and Quality Engineering Lead",
+        "why": "Hypothesis: Process leaders may need to link electrolyte surface defects and flaw density to failure onset, since the solid-electrolyte work ties short-circuit onset to defect size and density.",
+        "evidence_ids": [
+          "evidence:openalex:W2725925537"
+        ]
+      }
+    ],
+    "industries": [
+      {
+        "name": "Lithium-ion cell and electrode materials manufacturing",
+        "why": "Hypothesis: The electrode work on phospho-olivines and virus-templated cobalt oxide nanowires points to companies that make or develop electrode materials and cells.",
+        "evidence_ids": [
+          "evidence:openalex:W2097535432",
+          "evidence:openalex:W1629830706"
+        ]
+      },
+      {
+        "name": "Solid-state and lithium-metal battery developers",
+        "why": "Hypothesis: Work on dendrite growth, electrolyte additives and lithium infiltration through inorganic solid electrolytes relates to firms developing next-generation lithium-metal and solid-state cells.",
+        "evidence_ids": [
+          "evidence:openalex:W2265160803",
+          "evidence:openalex:W2725925537"
+        ]
+      },
+      {
+        "name": "Energy storage for decarbonized energy systems",
+        "why": "Hypothesis: The net-zero energy systems review frames the need for reliable low-carbon electricity, which may make storage relevant to utilities and grid-scale storage providers.",
+        "evidence_ids": [
+          "evidence:openalex:W2811133697"
+        ]
+      }
+    ],
+    "needs": [
+      {
+        "text": "Hypothesis: Manufacturing R&D leaders may need ways to suppress lithium dendrite growth and electrolyte decomposition in lithium-metal cells, because the polysulfide and lithium nitrate additive work shows these cause safety problems and low Coulombic efficiency.",
+        "evidence_ids": [
+          "evidence:openalex:W2265160803"
+        ]
+      },
+      {
+        "text": "Hypothesis: Solid-state cell teams may need to control surface cracks and defects in solid electrolytes, because the penetration study finds lithium plating infiltrates at defects above a critical current density and eventually causes short circuits.",
+        "evidence_ids": [
+          "evidence:openalex:W2725925537"
+        ]
+      },
+      {
+        "text": "Hypothesis: Electrode developers may need scalable, controlled methods to synthesize and assemble electrode nanomaterials, because the virus-templated nanowire work addresses material selection and assembly for thin, flexible batteries with improved capacity.",
+        "evidence_ids": [
+          "evidence:openalex:W1629830706"
+        ]
+      }
+    ],
+    "expansion_segments": [
+      {
+        "name": "Grid and long-duration energy storage developers",
+        "why": "Hypothesis: The net-zero review notes that providing reliable electricity is hard to decarbonize, so storage developers serving that need may be an adjacent segment.",
+        "evidence_ids": [
+          "evidence:openalex:W2811133697"
+        ]
+      },
+      {
+        "name": "Battery safety testing and failure-analysis providers",
+        "why": "Hypothesis: The dendrite and short-circuit mechanism studies suggest an adjacent segment of labs and service firms that diagnose lithium-metal and solid-electrolyte failures.",
+        "evidence_ids": [
+          "evidence:openalex:W2265160803",
+          "evidence:openalex:W2725925537"
+        ]
+      },
+      {
+        "name": "Thin and flexible battery makers",
+        "why": "Hypothesis: The virus-templated nanowire work targets thin, flexible lithium ion batteries, suggesting a niche segment of compact-device battery makers.",
+        "evidence_ids": [
+          "evidence:openalex:W1629830706"
+        ]
+      }
+    ]
+  }
+}

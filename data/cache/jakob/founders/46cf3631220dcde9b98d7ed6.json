@@ -1,0 +1,4706 @@
+{
+  "founder": {
+    "id": "person:openalex:A5060617433",
+    "name": "Yet‐Ming Chiang",
+    "company": "",
+    "openalex_id": "https://openalex.org/A5060617433",
+    "topics": [
+      "Lithium- and Sodium-Ion Battery Electrodes",
+      "Solid Electrolytes, Lithium-Metal and Lithium-Sulfur Batteries",
+      "Battery Modeling and Management",
+      "Integrated Energy Systems Optimization",
+      "Climate Change Policy and Economics"
+    ],
+    "summary": "Research topics inferred from 5 top-cited OpenAlex works. Customer segments are hypotheses, not verified demand.",
+    "evidence_ids": [
+      "evidence:openalex:W2097535432",
+      "evidence:openalex:W2811133697",
+      "evidence:openalex:W1629830706",
+      "evidence:openalex:W2265160803",
+      "evidence:openalex:W2725925537"
+    ]
+  },
+  "works": [
+    {
+      "id": "https://openalex.org/W2097535432",
+      "title": "Electronically conductive phospho-olivines as lithium storage electrodes",
+      "publication_date": "2002-09-22",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10018",
+          "display_name": "Lithium- and Sodium-Ion Battery Electrodes",
+          "score": 0.9980000257492065,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10663",
+          "display_name": "Battery Modeling and Management",
+          "score": 0.0007999999797903001,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2203",
+            "display_name": "Automotive Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10281",
+          "display_name": "Solid Electrolytes, Lithium-Metal and Lithium-Sulfur Batteries",
+          "score": 0.0006000000284984708,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5083703475",
+            "display_name": "Sung‐Yoon Chung",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-2260-6201",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2260-6201"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Sung-Yoon Chung",
+          "raw_affiliation_strings": [
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, Massachusetts 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, Massachusetts 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5040471022",
+            "display_name": "Jason T. Bloking",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9372-1146",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9372-1146"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jason T. Bloking",
+          "raw_affiliation_strings": [
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Materials Science and Engineering Massachusetts Institute of Technology, Cambridge, USA#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering Massachusetts Institute of Technology, Cambridge, USA#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5060617433",
+            "display_name": "Yet‐Ming Chiang",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0833-7674",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0833-7674"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Yet-Ming Chiang",
+          "raw_affiliation_strings": [
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+            "Department of Materials Science and Engineering Massachusetts Institute of Technology, Cambridge, USA#TAB#"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering Massachusetts Institute of Technology, Cambridge, USA#TAB#",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2811133697",
+      "title": "Net-zero emissions energy systems",
+      "publication_date": "2018-06-28",
+      "topics": [
+        {
+          "id": "https://openalex.org/T11185",
+          "display_name": "Integrated Energy Systems Optimization",
+          "score": 0.9394999742507935,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10471",
+          "display_name": "Climate Change Policy and Economics",
+          "score": 0.029400000348687172,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2002",
+            "display_name": "Economics and Econometrics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/20",
+            "display_name": "Economics, Econometrics and Finance"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/2",
+            "display_name": "Social Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11007",
+          "display_name": "Hybrid Renewable Energy Systems",
+          "score": 0.007000000216066837,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2102",
+            "display_name": "Energy Engineering and Power Technology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/21",
+            "display_name": "Energy"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "Path": [
+          0
+        ],
+        "to": [
+          1,
+          8,
+          21,
+          40,
+          56,
+          90
+        ],
+        "zero": [
+          2,
+          22
+        ],
+        "carbon": [
+          3,
+          16
+        ],
+        "emissions": [
+          4,
+          18,
+          29
+        ],
+        "Models": [
+          5
+        ],
+        "show": [
+          6,
+          77
+        ],
+        "that": [
+          7
+        ],
+        "avert": [
+          9
+        ],
+        "dangerous": [
+          10
+        ],
+        "levels": [
+          11
+        ],
+        "of": [
+          12,
+          27,
+          43,
+          49,
+          68,
+          81
+        ],
+        "climate": [
+          13
+        ],
+        "change,": [
+          14
+        ],
+        "global": [
+          15
+        ],
+        "dioxide": [
+          17
+        ],
+        "must": [
+          19
+        ],
+        "fall": [
+          20
+        ],
+        "later": [
+          23
+        ],
+        "this": [
+          24,
+          95
+        ],
+        "century.": [
+          25
+        ],
+        "Most": [
+          26
+        ],
+        "these": [
+          28
+        ],
+        "arise": [
+          30
+        ],
+        "from": [
+          31
+        ],
+        "energy": [
+          32,
+          45,
+          51,
+          83
+        ],
+        "use.": [
+          33
+        ],
+        "Daviset": [
+          34
+        ],
+        "al.review": [
+          35
+        ],
+        "what": [
+          36
+        ],
+        "it": [
+          37
+        ],
+        "would": [
+          38
+        ],
+        "take": [
+          39
+        ],
+        "achieve": [
+          41,
+          91
+        ],
+        "decarbonization": [
+          42
+        ],
+        "the": [
+          44,
+          50
+        ],
+        "system.": [
+          46
+        ],
+        "Some": [
+          47
+        ],
+        "parts": [
+          48
+        ],
+        "system": [
+          52
+        ],
+        "are": [
+          53
+        ],
+        "particularly": [
+          54
+        ],
+        "difficult": [
+          55
+        ],
+        "decarbonize,": [
+          57
+        ],
+        "including": [
+          58
+        ],
+        "aviation,": [
+          59
+        ],
+        "long-distance": [
+          60
+        ],
+        "transport,": [
+          61
+        ],
+        "steel": [
+          62
+        ],
+        "and": [
+          63,
+          66,
+          75,
+          85
+        ],
+        "cement": [
+          64
+        ],
+        "production,": [
+          65
+        ],
+        "provision": [
+          67
+        ],
+        "a": [
+          69
+        ],
+        "reliable": [
+          70
+        ],
+        "electricity": [
+          71
+        ],
+        "supply.": [
+          72
+        ],
+        "Current": [
+          73
+        ],
+        "technologies": [
+          74
+        ],
+        "pathways": [
+          76
+        ],
+        "promise,": [
+          78
+        ],
+        "but": [
+          79
+        ],
+        "integration": [
+          80
+        ],
+        "now-discrete": [
+          82
+        ],
+        "sectors": [
+          84
+        ],
+        "industrial": [
+          86
+        ],
+        "processes": [
+          87
+        ],
+        "is": [
+          88
+        ],
+        "vital": [
+          89
+        ],
+        "minimal": [
+          92
+        ],
+        "emissions.": [
+          93
+        ],
+        "Science,": [
+          94
+        ],
+        "issue": [
+          96
+        ],
+        "p.": [
+          97
+        ],
+        "eaas9793": [
+          98
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5021527359",
+            "display_name": "Steven J. Davis",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-9338-0844",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9338-0844"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I204250578",
+              "display_name": "University of California, Irvine",
+              "ror": "https://ror.org/04gyf1771",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I204250578"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Steven J. Davis",
+          "raw_affiliation_strings": [
+            "Department of Civil and Environmental Engineering, University of California, Irvine, Irvine, CA, USA",
+            "Department of Earth System Science, University of California, Irvine, Irvine, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9338-0844",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Civil and Environmental Engineering, University of California, Irvine, Irvine, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I204250578"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Earth System Science, University of California, Irvine, Irvine, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I204250578"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5015008318",
+            "display_name": "Nathan S. Lewis",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5245-0538",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5245-0538"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I122411786",
+              "display_name": "California Institute of Technology",
+              "ror": "https://ror.org/05dxps055",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I122411786"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Nathan S. Lewis",
+          "raw_affiliation_strings": [
+            "Division of Chemistry and Chemical Engineering, California Institute of Technology, Pasadena, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-5245-0538",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Chemistry and Chemical Engineering, California Institute of Technology, Pasadena, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I122411786"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5005134438",
+            "display_name": "Matthew R. Shaner",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4682-9757",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4682-9757"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I196817621",
+              "display_name": "Carnegie Institution for Science",
+              "ror": "https://ror.org/04jr01610",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I196817621"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Matthew Shaner",
+          "raw_affiliation_strings": [
+            "Near Zero, Carnegie Institution for Science, Stanford, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4682-9757",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Near Zero, Carnegie Institution for Science, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I196817621"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5103349363",
+            "display_name": "Sonia Aggarwal",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Sonia Aggarwal",
+          "raw_affiliation_strings": [
+            "Energy Innovation, San Francisco, CA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Energy Innovation, San Francisco, CA, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5007742195",
+            "display_name": "D. J. Arent",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-4219-3950",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4219-3950"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1297288678",
+              "display_name": "National Laboratory of the Rockies",
+              "ror": "https://ror.org/036266993",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1297288678",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I2800842121"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Doug Arent",
+          "raw_affiliation_strings": [
+            "Joint Institute for Strategic Energy Analysis, Golden, CO, USA",
+            "National Renewable Energy Laboratory, Golden, CO, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-4219-3950",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Joint Institute for Strategic Energy Analysis, Golden, CO, USA",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "National Renewable Energy Laboratory, Golden, CO, USA",
+              "institution_ids": [
+                "https://openalex.org/I1297288678"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5009342516",
+            "display_name": "Inês L. Azevedo",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-4755-8656",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4755-8656"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Inês L. Azevedo",
+          "raw_affiliation_strings": [
+            "Engineering and Public Policy, Carnegie Mellon University, Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Engineering and Public Policy, Carnegie Mellon University, Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054164034",
+            "display_name": "Sally M. Benson",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3733-4296",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3733-4296"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Sally M. Benson",
+          "raw_affiliation_strings": [
+            "Department of Energy Resource Engineering, Stanford University, Stanford, CA, USA",
+            "Global Climate and Energy Project, Stanford University, Stanford, CA, USA",
+            "Precourt Institute for Energy, Stanford University, Stanford, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-3733-4296",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Energy Resource Engineering, Stanford University, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Global Climate and Energy Project, Stanford University, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Precourt Institute for Energy, Stanford University, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5025890846",
+            "display_name": "Thomas H. Bradley",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3533-293X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3533-293X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I92446798",
+              "display_name": "Colorado State University",
+              "ror": "https://ror.org/03k1gpj17",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I92446798"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Thomas Bradley",
+          "raw_affiliation_strings": [
+            "Department of Mechanical Engineering, Colorado State University, Fort Collins, CO, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-3533-293X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Mechanical Engineering, Colorado State University, Fort Collins, CO, USA",
+              "institution_ids": [
+                "https://openalex.org/I92446798"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5024111009",
+            "display_name": "Jack Brouwer",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9260-7579",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9260-7579"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I204250578",
+              "display_name": "University of California, Irvine",
+              "ror": "https://ror.org/04gyf1771",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I204250578"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jack Brouwer",
+          "raw_affiliation_strings": [
+            "Advanced Power and Energy Program, University of California, Irvine, CA, USA",
+            "Department of Mechanical and Aerospace Engineering, University of California, Irvine, Irvine, CA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Advanced Power and Energy Program, University of California, Irvine, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I204250578"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Mechanical and Aerospace Engineering, University of California, Irvine, Irvine, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I204250578"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060617433",
+            "display_name": "Yet‐Ming Chiang",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0833-7674",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0833-7674"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Yet-Ming Chiang",
+          "raw_affiliation_strings": [
+            "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-0833-7674",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5053652690",
+            "display_name": "Christopher T. M. Clack",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3280-9747",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3280-9747"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Christopher T. M. Clack",
+          "raw_affiliation_strings": [
+            "Vibrant Clean Energy, Boulder, CO, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Vibrant Clean Energy, Boulder, CO, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5112357320",
+            "display_name": "Armond M. Cohen",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210097705",
+              "display_name": "Clean Air Task Force",
+              "ror": "https://ror.org/00w43nz28",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210097705"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Armond Cohen",
+          "raw_affiliation_strings": [
+            "Clean Air Task Force, Boston, MA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Clean Air Task Force, Boston, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210097705"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Stephen Doig",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1280959780",
+              "display_name": "Rocky Mountain Institute",
+              "ror": "https://ror.org/03anfar33",
+              "country_code": "US",
+              "type": "other",
+              "lineage": [
+                "https://openalex.org/I1280959780"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Stephen Doig",
+          "raw_affiliation_strings": [
+            "Rocky Mountain Institute, Boulder, CO, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Rocky Mountain Institute, Boulder, CO, USA",
+              "institution_ids": [
+                "https://openalex.org/I1280959780"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5079684775",
+            "display_name": "Jae Edmonds",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3210-9209",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3210-9209"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I142606810",
+              "display_name": "Pacific Northwest National Laboratory",
+              "ror": "https://ror.org/05h992307",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1325736334",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I142606810",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jae Edmonds",
+          "raw_affiliation_strings": [
+            "Pacific National Northwestern Laboratory, College Park, MD, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-3210-9209",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Pacific National Northwestern Laboratory, College Park, MD, USA",
+              "institution_ids": [
+                "https://openalex.org/I142606810"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5053737645",
+            "display_name": "Paul S. Fennell",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-6001-5285",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6001-5285"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I47508984",
+              "display_name": "Imperial College London",
+              "ror": "https://ror.org/041kmwe10",
+              "country_code": "GB",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I47508984"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I53012624",
+              "display_name": "Joint BioEnergy Institute",
+              "ror": "https://ror.org/03ww55028",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I53012624"
+              ]
+            }
+          ],
+          "countries": [
+            "GB",
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Paul Fennell",
+          "raw_affiliation_strings": [
+            "Department of Chemical Engineering, South Kensington Campus, Imperial College London, London, UK",
+            "Joint Bioenergy Institute, 5885 Hollis Street, Emeryville, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-6001-5285",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, South Kensington Campus, Imperial College London, London, UK",
+              "institution_ids": [
+                "https://openalex.org/I47508984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Joint Bioenergy Institute, 5885 Hollis Street, Emeryville, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I53012624"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5016455866",
+            "display_name": "Christopher B. Field",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1684-8247",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1684-8247"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Christopher B. Field",
+          "raw_affiliation_strings": [
+            "Woods Institute for the Environment, Stanford University, Stanford, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-1684-8247",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Woods Institute for the Environment, Stanford University, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5089658419",
+            "display_name": "Bryan Hannegan",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-4989-6341",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4989-6341"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210129231",
+              "display_name": "Glens Falls Hospital",
+              "ror": "https://ror.org/037pbyt27",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I4210129231"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Bryan Hannegan",
+          "raw_affiliation_strings": [
+            "Holy Cross Energy, Glenwood Springs, CO, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-4989-6341",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Holy Cross Energy, Glenwood Springs, CO, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210129231"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5040173593",
+            "display_name": "Bri‐Mathias S. Hodge",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-8684-0534",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-8684-0534"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1297288678",
+              "display_name": "National Laboratory of the Rockies",
+              "ror": "https://ror.org/036266993",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1297288678",
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I2800842121"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I167576493",
+              "display_name": "Colorado School of Mines",
+              "ror": "https://ror.org/04raf6v53",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I167576493"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I188538660",
+              "display_name": "University of Colorado Boulder",
+              "ror": "https://ror.org/02ttsq026",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I188538660"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Bri-Mathias Hodge",
+          "raw_affiliation_strings": [
+            "Department of Chemical and Biological Engineering, Colorado School of Mines, Golden, CO, USA",
+            "Department of Electrical, Computer, and Energy Engineering, University of Colorado Boulder, Boulder, CO, USA",
+            "National Renewable Energy Laboratory, Golden, CO, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-8684-0534",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemical and Biological Engineering, Colorado School of Mines, Golden, CO, USA",
+              "institution_ids": [
+                "https://openalex.org/I167576493"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Electrical, Computer, and Energy Engineering, University of Colorado Boulder, Boulder, CO, USA",
+              "institution_ids": [
+                "https://openalex.org/I188538660"
+              ]
+            },
+            {
+              "raw_affiliation_string": "National Renewable Energy Laboratory, Golden, CO, USA",
+              "institution_ids": [
+                "https://openalex.org/I1297288678"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5007707761",
+            "display_name": "Martin I. Hoffert",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I57206974",
+              "display_name": "New York University",
+              "ror": "https://ror.org/0190ak572",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I57206974"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Martin I. Hoffert",
+          "raw_affiliation_strings": [
+            "Department of Physics, New York University, New York, NY, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Physics, New York University, New York, NY, USA",
+              "institution_ids": [
+                "https://openalex.org/I57206974"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5078491193",
+            "display_name": "Eric D. Ingersoll",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3431-2171",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3431-2171"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Eric Ingersoll",
+          "raw_affiliation_strings": [
+            "Lucid Strategy, Cambridge, MA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-3431-2171",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Lucid Strategy, Cambridge, MA, USA",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5012522348",
+            "display_name": "Paulina Jaramillo",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-4214-1106",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4214-1106"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I74973139",
+              "display_name": "Carnegie Mellon University",
+              "ror": "https://ror.org/05x2bcf33",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Paulina Jaramillo",
+          "raw_affiliation_strings": [
+            "Engineering and Public Policy, Carnegie Mellon University, Pittsburgh, PA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-4214-1106",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Engineering and Public Policy, Carnegie Mellon University, Pittsburgh, PA, USA",
+              "institution_ids": [
+                "https://openalex.org/I74973139"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5040701303",
+            "display_name": "Klaus S. Lackner",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5509-6327",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5509-6327"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I55732556",
+              "display_name": "Arizona State University",
+              "ror": "https://ror.org/03efmqc40",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I55732556"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Klaus S. Lackner",
+          "raw_affiliation_strings": [
+            "The Center for Negative Carbon Emissions, Arizona State University, Tempe, AZ, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-5509-6327",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Center for Negative Carbon Emissions, Arizona State University, Tempe, AZ, USA",
+              "institution_ids": [
+                "https://openalex.org/I55732556"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5043613596",
+            "display_name": "Katharine J. Mach",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5591-8148",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5591-8148"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Katharine J. Mach",
+          "raw_affiliation_strings": [
+            "Department of Earth System Science, Stanford University, Stanford, CA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Earth System Science, Stanford University, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5068729001",
+            "display_name": "Michael D. Mastrandrea",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-6668-6493",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6668-6493"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I196817621",
+              "display_name": "Carnegie Institution for Science",
+              "ror": "https://ror.org/04jr01610",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I196817621"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael Mastrandrea",
+          "raw_affiliation_strings": [
+            "Near Zero, Carnegie Institution for Science, Stanford, CA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Near Zero, Carnegie Institution for Science, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I196817621"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5006604632",
+            "display_name": "Joan M. Ogden",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-2776-9130",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2776-9130"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I84218800",
+              "display_name": "University of California, Davis",
+              "ror": "https://ror.org/05rrcem69",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I84218800"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Joan Ogden",
+          "raw_affiliation_strings": [
+            "Environmental Science and Policy, University of California, Davis, Davis, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-2776-9130",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Environmental Science and Policy, University of California, Davis, Davis, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I84218800"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5038404881",
+            "display_name": "Per F. Peterson",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4645-9397",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4645-9397"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Per F. Peterson",
+          "raw_affiliation_strings": [
+            "Department of Nuclear Engineering, University of California, Berkeley, Berkeley, CA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Nuclear Engineering, University of California, Berkeley, Berkeley, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5016864843",
+            "display_name": "Daniel L. Sanchez",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9281-5685",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9281-5685"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I196817621",
+              "display_name": "Carnegie Institution for Science",
+              "ror": "https://ror.org/04jr01610",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I196817621"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Daniel L. Sanchez",
+          "raw_affiliation_strings": [
+            "Department of Global Ecology, Carnegie Institution for Science, Stanford, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9281-5685",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Global Ecology, Carnegie Institution for Science, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I196817621"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5022663599",
+            "display_name": "Daniel Sperling",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-4371-7736",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4371-7736",
+              "https://orcid.org/0000-0002-8744-7651"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I84218800",
+              "display_name": "University of California, Davis",
+              "ror": "https://ror.org/05rrcem69",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I84218800"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Daniel Sperling",
+          "raw_affiliation_strings": [
+            "Institute of Transportation Studies, University of California, Davis, Davis, CA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Transportation Studies, University of California, Davis, Davis, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I84218800"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060482940",
+            "display_name": "Joseph Stagner",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6140-6643",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6140-6643"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Joseph Stagner",
+          "raw_affiliation_strings": [
+            "Department of Sustainability and Energy Management, Stanford University, Stanford, CA, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-6140-6643",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Sustainability and Energy Management, Stanford University, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054758866",
+            "display_name": "Jessika E. Trancik",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6305-2105",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6305-2105"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1308548392",
+              "display_name": "Santa Fe Institute",
+              "ror": "https://ror.org/01arysc35",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I1308548392"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jessika E. Trancik",
+          "raw_affiliation_strings": [
+            "Institute for Data, Systems, and Society, Massachusetts Institute of Technology, Cambridge, MA, USA",
+            "Santa Fe Institute, Santa Fe, NM, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute for Data, Systems, and Society, Massachusetts Institute of Technology, Cambridge, MA, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Santa Fe Institute, Santa Fe, NM, USA",
+              "institution_ids": [
+                "https://openalex.org/I1308548392"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5028286414",
+            "display_name": "Chi-Jen Yang",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0940-3901",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0940-3901",
+              "https://orcid.org/0000-0002-4810-3901"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [],
+          "countries": [],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Chi-Jen Yang",
+          "raw_affiliation_strings": [
+            "Independent researcher"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-4810-3901",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Independent researcher",
+              "institution_ids": []
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5052404353",
+            "display_name": "Ken Caldeira",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-4591-643X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4591-643X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I196817621",
+              "display_name": "Carnegie Institution for Science",
+              "ror": "https://ror.org/04jr01610",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I196817621"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Ken Caldeira",
+          "raw_affiliation_strings": [
+            "Department of Global Ecology, Carnegie Institution for Science, Stanford, CA, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Global Ecology, Carnegie Institution for Science, Stanford, CA, USA",
+              "institution_ids": [
+                "https://openalex.org/I196817621"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W1629830706",
+      "title": "Virus-Enabled Synthesis and Assembly of Nanowires for Lithium Ion Battery Electrodes",
+      "publication_date": "2006-04-06",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10018",
+          "display_name": "Lithium- and Sodium-Ion Battery Electrodes",
+          "score": 0.9452999830245972,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11419",
+          "display_name": "Supramolecular Self-Assembly in Materials",
+          "score": 0.014800000004470348,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2502",
+            "display_name": "Biomaterials"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/25",
+            "display_name": "Materials Science"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10281",
+          "display_name": "Solid Electrolytes, Lithium-Metal and Lithium-Sulfur Batteries",
+          "score": 0.0071000000461936,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0
+        ],
+        "selection": [
+          1
+        ],
+        "and": [
+          2,
+          25,
+          42,
+          76
+        ],
+        "assembly": [
+          3,
+          81
+        ],
+        "of": [
+          4,
+          12,
+          45,
+          82
+        ],
+        "materials": [
+          5
+        ],
+        "are": [
+          6
+        ],
+        "central": [
+          7
+        ],
+        "issues": [
+          8
+        ],
+        "in": [
+          9
+        ],
+        "the": [
+          10,
+          56,
+          73
+        ],
+        "development": [
+          11
+        ],
+        "smaller,": [
+          13
+        ],
+        "more": [
+          14
+        ],
+        "flexible": [
+          15,
+          98
+        ],
+        "batteries.": [
+          16,
+          36,
+          101
+        ],
+        "Cobalt": [
+          17
+        ],
+        "oxide": [
+          18,
+          47,
+          63
+        ],
+        "has": [
+          19
+        ],
+        "shown": [
+          20
+        ],
+        "excellent": [
+          21
+        ],
+        "electrochemical": [
+          22
+        ],
+        "cycling": [
+          23
+        ],
+        "properties": [
+          24
+        ],
+        "is": [
+          26
+        ],
+        "thus": [
+          27
+        ],
+        "under": [
+          28
+        ],
+        "consideration": [
+          29
+        ],
+        "as": [
+          30
+        ],
+        "an": [
+          31
+        ],
+        "electrode": [
+          32
+        ],
+        "for": [
+          33,
+          78,
+          91
+        ],
+        "advanced": [
+          34
+        ],
+        "lithium": [
+          35,
+          99
+        ],
+        "We": [
+          37
+        ],
+        "used": [
+          38
+        ],
+        "viruses": [
+          39,
+          83
+        ],
+        "to": [
+          40,
+          95
+        ],
+        "synthesize": [
+          41
+        ],
+        "assemble": [
+          43
+        ],
+        "nanowires": [
+          44
+        ],
+        "cobalt": [
+          46
+        ],
+        "at": [
+          48,
+          72
+        ],
+        "room": [
+          49
+        ],
+        "temperature.": [
+          50
+        ],
+        "By": [
+          51
+        ],
+        "incorporating": [
+          52
+        ],
+        "gold-binding": [
+          53
+        ],
+        "peptides": [
+          54
+        ],
+        "into": [
+          55
+        ],
+        "filament": [
+          57
+        ],
+        "coat,": [
+          58
+        ],
+        "we": [
+          59
+        ],
+        "formed": [
+          60
+        ],
+        "hybrid": [
+          61
+        ],
+        "gold-cobalt": [
+          62
+        ],
+        "wires": [
+          64
+        ],
+        "that": [
+          65
+        ],
+        "improved": [
+          66
+        ],
+        "battery": [
+          67
+        ],
+        "capacity.": [
+          68
+        ],
+        "Combining": [
+          69
+        ],
+        "virus-templated": [
+          70
+        ],
+        "synthesis": [
+          71
+        ],
+        "peptide": [
+          74
+        ],
+        "level": [
+          75
+        ],
+        "methods": [
+          77
+        ],
+        "controlling": [
+          79
+        ],
+        "two-dimensional": [
+          80
+        ],
+        "on": [
+          84
+        ],
+        "polyelectrolyte": [
+          85
+        ],
+        "multilayers": [
+          86
+        ],
+        "provides": [
+          87
+        ],
+        "a": [
+          88
+        ],
+        "systematic": [
+          89
+        ],
+        "platform": [
+          90
+        ],
+        "integrating": [
+          92
+        ],
+        "these": [
+          93
+        ],
+        "nanomaterials": [
+          94
+        ],
+        "form": [
+          96
+        ],
+        "thin,": [
+          97
+        ],
+        "ion": [
+          100
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5011336008",
+            "display_name": "Ki Tae Nam",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6353-8877",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6353-8877"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210109539",
+              "display_name": "Institute for Soldier Nanotechnologies",
+              "ror": "https://ror.org/01t9bgr30",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Ki Tae Nam",
+          "raw_affiliation_strings": [
+            "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5100638261",
+            "display_name": "Dong‐Wan Kim",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5124-7132",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5124-7132"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210109539",
+              "display_name": "Institute for Soldier Nanotechnologies",
+              "ror": "https://ror.org/01t9bgr30",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Dong-Wan Kim",
+          "raw_affiliation_strings": [
+            "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008459970",
+            "display_name": "Pil Jin Yoo",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5499-6566",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5499-6566"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210109539",
+              "display_name": "Institute for Soldier Nanotechnologies",
+              "ror": "https://ror.org/01t9bgr30",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Pil J. Yoo",
+          "raw_affiliation_strings": [
+            "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5056298135",
+            "display_name": "C.‐Y. Chiang",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210109539",
+              "display_name": "Institute for Soldier Nanotechnologies",
+              "ror": "https://ror.org/01t9bgr30",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Chung-Yi Chiang",
+          "raw_affiliation_strings": [
+            "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5032130893",
+            "display_name": "Nonglak Meethong",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5627-7581",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5627-7581"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210109539",
+              "display_name": "Institute for Soldier Nanotechnologies",
+              "ror": "https://ror.org/01t9bgr30",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Nonglak Meethong",
+          "raw_affiliation_strings": [
+            "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5069094503",
+            "display_name": "Paula Therese Hammond",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-9835-192X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9835-192X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210109539",
+              "display_name": "Institute for Soldier Nanotechnologies",
+              "ror": "https://ror.org/01t9bgr30",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Paula T. Hammond",
+          "raw_affiliation_strings": [
+            "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060617433",
+            "display_name": "Yet‐Ming Chiang",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0833-7674",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0833-7674"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210109539",
+              "display_name": "Institute for Soldier Nanotechnologies",
+              "ror": "https://ror.org/01t9bgr30",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Yet-Ming Chiang",
+          "raw_affiliation_strings": [
+            "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5042451179",
+            "display_name": "Angela M. Belcher",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9353-7453",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9353-7453"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210109539",
+              "display_name": "Institute for Soldier Nanotechnologies",
+              "ror": "https://ror.org/01t9bgr30",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Angela M. Belcher",
+          "raw_affiliation_strings": [
+            "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+            "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Biological Engineering Division, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute for Soldier Nanotechnologies, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109539",
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Collaborative Biotechnology, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2265160803",
+      "title": "The synergetic effect of lithium polysulfide and lithium nitrate to prevent lithium dendrite growth",
+      "publication_date": "2015-06-17",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10281",
+          "display_name": "Solid Electrolytes, Lithium-Metal and Lithium-Sulfur Batteries",
+          "score": 0.9994999766349792,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10018",
+          "display_name": "Lithium- and Sodium-Ion Battery Electrodes",
+          "score": 9.999999747378752e-05,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11690",
+          "display_name": "Aqueous and Flow Batteries",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "Lithium": [
+          0
+        ],
+        "metal": [
+          1,
+          146
+        ],
+        "has": [
+          2,
+          72
+        ],
+        "shown": [
+          3
+        ],
+        "great": [
+          4
+        ],
+        "promise": [
+          5
+        ],
+        "as": [
+          6,
+          33,
+          35,
+          76,
+          108
+        ],
+        "an": [
+          7
+        ],
+        "anode": [
+          8
+        ],
+        "material": [
+          9
+        ],
+        "for": [
+          10,
+          123
+        ],
+        "high-energy": [
+          11
+        ],
+        "storage": [
+          12
+        ],
+        "systems,": [
+          13
+        ],
+        "owing": [
+          14
+        ],
+        "to": [
+          15,
+          97
+        ],
+        "its": [
+          16
+        ],
+        "high": [
+          17
+        ],
+        "theoretical": [
+          18
+        ],
+        "specific": [
+          19
+        ],
+        "capacity": [
+          20
+        ],
+        "and": [
+          21,
+          29,
+          46,
+          68,
+          88,
+          105,
+          116,
+          133,
+          136
+        ],
+        "low": [
+          22,
+          47
+        ],
+        "negative": [
+          23
+        ],
+        "electrochemical": [
+          24
+        ],
+        "potential.": [
+          25
+        ],
+        "Unfortunately,": [
+          26
+        ],
+        "uncontrolled": [
+          27
+        ],
+        "dendritic": [
+          28
+        ],
+        "mossy": [
+          30
+        ],
+        "lithium": [
+          31,
+          40,
+          57,
+          67,
+          69,
+          103,
+          106,
+          129,
+          131,
+          134,
+          145
+        ],
+        "growth,": [
+          32
+        ],
+        "well": [
+          34
+        ],
+        "electrolyte": [
+          36,
+          91,
+          118
+        ],
+        "decomposition": [
+          37
+        ],
+        "inherent": [
+          38
+        ],
+        "in": [
+          39,
+          80,
+          110
+        ],
+        "metal-based": [
+          41
+        ],
+        "batteries,": [
+          42
+        ],
+        "cause": [
+          43
+        ],
+        "safety": [
+          44
+        ],
+        "issues": [
+          45
+        ],
+        "Coulombic": [
+          48
+        ],
+        "efficiency.": [
+          49
+        ],
+        "Here": [
+          50
+        ],
+        "we": [
+          51
+        ],
+        "demonstrate": [
+          52
+        ],
+        "that": [
+          53,
+          85
+        ],
+        "the": [
+          54,
+          64,
+          126,
+          141
+        ],
+        "growth": [
+          55,
+          115
+        ],
+        "of": [
+          56,
+          101,
+          125
+        ],
+        "dendrites": [
+          58
+        ],
+        "can": [
+          59
+        ],
+        "be": [
+          60
+        ],
+        "suppressed": [
+          61
+        ],
+        "by": [
+          62
+        ],
+        "exploiting": [
+          63
+        ],
+        "reaction": [
+          65
+        ],
+        "between": [
+          66
+        ],
+        "polysulfide,": [
+          70,
+          130
+        ],
+        "which": [
+          71
+        ],
+        "long": [
+          73
+        ],
+        "been": [
+          74
+        ],
+        "considered": [
+          75
+        ],
+        "a": [
+          77,
+          86,
+          98
+        ],
+        "critical": [
+          78
+        ],
+        "flaw": [
+          79
+        ],
+        "lithium-sulfur": [
+          81
+        ],
+        "batteries.": [
+          82
+        ],
+        "We": [
+          83
+        ],
+        "show": [
+          84
+        ],
+        "stable": [
+          87
+        ],
+        "uniform": [
+          89
+        ],
+        "solid": [
+          90
+        ],
+        "interphase": [
+          92
+        ],
+        "layer": [
+          93
+        ],
+        "is": [
+          94
+        ],
+        "formed": [
+          95
+        ],
+        "due": [
+          96
+        ],
+        "synergetic": [
+          99
+        ],
+        "effect": [
+          100
+        ],
+        "both": [
+          102
+        ],
+        "polysulfide": [
+          104
+        ],
+        "nitrate": [
+          107,
+          132
+        ],
+        "additives": [
+          109
+        ],
+        "ether-based": [
+          111
+        ],
+        "electrolyte,": [
+          112
+        ],
+        "preventing": [
+          113
+        ],
+        "dendrite": [
+          114
+        ],
+        "minimizing": [
+          117
+        ],
+        "decomposition.": [
+          119
+        ],
+        "Our": [
+          120
+        ],
+        "findings": [
+          121
+        ],
+        "allow": [
+          122
+        ],
+        "re-evaluation": [
+          124
+        ],
+        "reactions": [
+          127
+        ],
+        "regarding": [
+          128
+        ],
+        "metal,": [
+          135
+        ],
+        "provide": [
+          137
+        ],
+        "insights": [
+          138
+        ],
+        "into": [
+          139
+        ],
+        "solving": [
+          140
+        ],
+        "problems": [
+          142
+        ],
+        "associated": [
+          143
+        ],
+        "with": [
+          144
+        ],
+        "anodes.": [
+          147
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5010566708",
+            "display_name": "Weiyang Li",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5827-415X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5827-415X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Weiyang Li",
+          "raw_affiliation_strings": [
+            "Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA",
+            "Department of Materials Science and Engineering, Stanford University, Stanford, 94305, California, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Stanford University, Stanford, 94305, California, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5056404427",
+            "display_name": "Hong‐Bin Yao",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-2901-0160",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2901-0160"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Hongbin Yao",
+          "raw_affiliation_strings": [
+            "Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA",
+            "Department of Materials Science and Engineering, Stanford University, Stanford, 94305, California, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Stanford University, Stanford, 94305, California, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Kai Yan",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Kai Yan",
+          "raw_affiliation_strings": [
+            "Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA",
+            "Department of Materials Science and Engineering, Stanford University, Stanford, 94305, California, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Stanford University, Stanford, 94305, California, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054938555",
+            "display_name": "Guangyuan Wesley Zheng",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-0286-5908",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-0286-5908"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Guangyuan Zheng",
+          "raw_affiliation_strings": [
+            "Department of Chemical Engineering, Stanford University, Stanford, California 94305, USA",
+            "Department of Chemical Engineering, Stanford University, Stanford, 94305, California, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Stanford University, Stanford, California 94305, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemical Engineering, Stanford University, Stanford, 94305, California, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5027442022",
+            "display_name": "Zheng Liang",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9137-0338",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9137-0338"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Zheng Liang",
+          "raw_affiliation_strings": [
+            "Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA",
+            "Department of Materials Science and Engineering, Stanford University, Stanford, 94305, California, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Stanford University, Stanford, 94305, California, USA",
+              "institution_ids": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060617433",
+            "display_name": "Yet‐Ming Chiang",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0833-7674",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0833-7674"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Yet-Ming Chiang",
+          "raw_affiliation_strings": [
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA",
+            "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Materials Science and Engineering, Massachusetts Institute of Technology, Cambridge, 02139, Massachusetts, USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5071127149",
+            "display_name": "Yi Cui",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-6103-6352",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6103-6352"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I2801935854",
+              "display_name": "SLAC National Accelerator Laboratory",
+              "ror": "https://ror.org/05gzmn429",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I2801935854",
+                "https://openalex.org/I39565521",
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I97018004",
+              "display_name": "Stanford University",
+              "ror": "https://ror.org/00f54p054",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I97018004"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Yi Cui",
+          "raw_affiliation_strings": [
+            "1] Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA [2] Stanford Institute for Materials and Energy Sciences, SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, California 94025, USA",
+            "Stanford Institute for Materials and Energy Sciences, SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, 94025, California, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "1] Department of Materials Science and Engineering, Stanford University, Stanford, California 94305, USA [2] Stanford Institute for Materials and Energy Sciences, SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, California 94025, USA",
+              "institution_ids": [
+                "https://openalex.org/I2801935854",
+                "https://openalex.org/I97018004"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Stanford Institute for Materials and Energy Sciences, SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, 94025, California, USA",
+              "institution_ids": [
+                "https://openalex.org/I2801935854"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2725925537",
+      "title": "Mechanism of Lithium Metal Penetration through Inorganic Solid Electrolytes",
+      "publication_date": "2017-07-06",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10281",
+          "display_name": "Solid Electrolytes, Lithium-Metal and Lithium-Sulfur Batteries",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10018",
+          "display_name": "Lithium- and Sodium-Ion Battery Electrodes",
+          "score": 9.999999747378752e-05,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2208",
+            "display_name": "Electrical and Electronic Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10663",
+          "display_name": "Battery Modeling and Management",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2203",
+            "display_name": "Automotive Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "Li": [
+          0,
+          30,
+          47,
+          147,
+          169
+        ],
+        "deposition": [
+          1
+        ],
+        "is": [
+          2,
+          149
+        ],
+        "observed": [
+          3
+        ],
+        "and": [
+          4,
+          43,
+          45,
+          73,
+          101,
+          115,
+          141,
+          182
+        ],
+        "measured": [
+          5
+        ],
+        "on": [
+          6,
+          60,
+          74,
+          110,
+          172
+        ],
+        "a": [
+          7,
+          14,
+          86,
+          94,
+          158
+        ],
+        "solid": [
+          8,
+          23,
+          154
+        ],
+        "electrolyte": [
+          9,
+          174
+        ],
+        "in": [
+          10,
+          93,
+          131,
+          177
+        ],
+        "the": [
+          11,
+          61,
+          64,
+          75,
+          98,
+          102,
+          111,
+          121,
+          179
+        ],
+        "vicinity": [
+          12
+        ],
+        "of": [
+          13,
+          20,
+          56,
+          63,
+          145,
+          168
+        ],
+        "metallic": [
+          15
+        ],
+        "current": [
+          16,
+          65,
+          76,
+          88,
+          99
+        ],
+        "collector.": [
+          17
+        ],
+        "Four": [
+          18
+        ],
+        "types": [
+          19
+        ],
+        "ion‐conducting,": [
+          21
+        ],
+        "inorganic": [
+          22
+        ],
+        "electrolytes": [
+          24,
+          112,
+          155
+        ],
+        "are": [
+          25,
+          116
+        ],
+        "tested:": [
+          26
+        ],
+        "Amorphous": [
+          27
+        ],
+        "70/30": [
+          28
+        ],
+        "mol%": [
+          29
+        ],
+        "2": [
+          31,
+          33
+        ],
+        "S‐P": [
+          32
+        ],
+        "S": [
+          34
+        ],
+        "5": [
+          35
+        ],
+        ",": [
+          36,
+          42
+        ],
+        "polycrystalline": [
+          37,
+          44
+        ],
+        "β‐Li": [
+          38
+        ],
+        "3": [
+          39,
+          50
+        ],
+        "PS": [
+          40
+        ],
+        "4": [
+          41
+        ],
+        "single‐crystalline": [
+          46
+        ],
+        "6": [
+          48
+        ],
+        "La": [
+          49
+        ],
+        "ZrTaO": [
+          51
+        ],
+        "12": [
+          52
+        ],
+        "garnet.": [
+          53
+        ],
+        "The": [
+          54,
+          126,
+          166
+        ],
+        "nature": [
+          55
+        ],
+        "lithium": [
+          57
+        ],
+        "plating": [
+          58,
+          79
+        ],
+        "depends": [
+          59,
+          171
+        ],
+        "proximity": [
+          62
+        ],
+        "collector": [
+          66,
+          100
+        ],
+        "to": [
+          67
+        ],
+        "defects": [
+          68
+        ],
+        "such": [
+          69
+        ],
+        "as": [
+          70
+        ],
+        "surface": [
+          71,
+          175
+        ],
+        "cracks": [
+          72
+        ],
+        "density.": [
+          77,
+          89,
+          183
+        ],
+        "Lithium": [
+          78,
+          151
+        ],
+        "penetrates/infiltrates": [
+          80
+        ],
+        "at": [
+          81
+        ],
+        "defects,": [
+          82
+        ],
+        "but": [
+          83
+        ],
+        "only": [
+          84
+        ],
+        "above": [
+          85
+        ],
+        "critical": [
+          87
+        ],
+        "Eventually,": [
+          90
+        ],
+        "infiltration": [
+          91,
+          148,
+          170
+        ],
+        "results": [
+          92,
+          106
+        ],
+        "short": [
+          95
+        ],
+        "circuit": [
+          96
+        ],
+        "between": [
+          97
+        ],
+        "Li‐source": [
+          103
+        ],
+        "(anode).": [
+          104
+        ],
+        "These": [
+          105
+        ],
+        "do": [
+          107
+        ],
+        "not": [
+          108,
+          118
+        ],
+        "depend": [
+          109
+        ],
+        "shear": [
+          113
+        ],
+        "modulus": [
+          114
+        ],
+        "thus": [
+          117
+        ],
+        "consistent": [
+          119
+        ],
+        "with": [
+          120
+        ],
+        "Monroe–Newman": [
+          122
+        ],
+        "model": [
+          123,
+          144
+        ],
+        "for": [
+          124
+        ],
+        "“dendrites.”": [
+          125
+        ],
+        "observations": [
+          127
+        ],
+        "suggest": [
+          128
+        ],
+        "that": [
+          129
+        ],
+        "Li‐plating": [
+          130
+        ],
+        "pre‐existing": [
+          132
+        ],
+        "flaws": [
+          133
+        ],
+        "produces": [
+          134
+        ],
+        "crack‐tip": [
+          135
+        ],
+        "stresses": [
+          136
+        ],
+        "which": [
+          137
+        ],
+        "drive": [
+          138
+        ],
+        "crack": [
+          139
+        ],
+        "propagation,": [
+          140
+        ],
+        "an": [
+          142
+        ],
+        "electrochemomechanical": [
+          143
+        ],
+        "plating‐induced": [
+          146
+        ],
+        "proposed.": [
+          150
+        ],
+        "short‐circuits": [
+          152
+        ],
+        "through": [
+          153,
+          157,
+          163
+        ],
+        "occurs": [
+          156
+        ],
+        "fundamentally": [
+          159
+        ],
+        "different": [
+          160
+        ],
+        "process": [
+          161
+        ],
+        "than": [
+          162
+        ],
+        "liquid": [
+          164
+        ],
+        "electrolytes.": [
+          165
+        ],
+        "onset": [
+          167
+        ],
+        "solid‐state": [
+          173
+        ],
+        "morphology,": [
+          176
+        ],
+        "particular": [
+          178
+        ],
+        "defect": [
+          180
+        ],
+        "size": [
+          181
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5045172193",
+            "display_name": "Lukas Porz",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3163-085X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3163-085X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I31512782",
+              "display_name": "Technische Universität Darmstadt",
+              "ror": "https://ror.org/05n911h24",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I31512782"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "DE",
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Lukas Porz",
+          "raw_affiliation_strings": [
+            "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA",
+            "Institute of Materials Science Technische Universität Darmstadt  Darmstadt 64287 Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Institute of Materials Science Technische Universität Darmstadt  Darmstadt 64287 Germany",
+              "institution_ids": [
+                "https://openalex.org/I31512782"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5090211537",
+            "display_name": "Tushar Swamy",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5248-8621",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5248-8621"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Tushar Swamy",
+          "raw_affiliation_strings": [
+            "Department of Mechanical Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5248-8621",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Mechanical Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5085691864",
+            "display_name": "Brian W. Sheldon",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-9593-891X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9593-891X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I27804330",
+              "display_name": "Brown University",
+              "ror": "https://ror.org/05gq02987",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I27804330"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Brian W. Sheldon",
+          "raw_affiliation_strings": [
+            "School of Engineering, Brown University, Providence, RI, 02912 USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "School of Engineering, Brown University, Providence, RI, 02912 USA",
+              "institution_ids": [
+                "https://openalex.org/I27804330"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5017547610",
+            "display_name": "Daniel Rettenwander",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-2074-941X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2074-941X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Daniel Rettenwander",
+          "raw_affiliation_strings": [
+            "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5075187923",
+            "display_name": "Till Frömling",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-8827-1926",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8827-1926"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I31512782",
+              "display_name": "Technische Universität Darmstadt",
+              "ror": "https://ror.org/05n911h24",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I31512782"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Till Frömling",
+          "raw_affiliation_strings": [
+            "Institute of Material Science Technische Universität Darmstadt  64287 Darmstadt Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute of Material Science Technische Universität Darmstadt  64287 Darmstadt Germany",
+              "institution_ids": [
+                "https://openalex.org/I31512782"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5028113899",
+            "display_name": "Henry L. Thaman",
+            "type": null,
+            "orcid": "https://orcid.org/0009-0008-7615-3325",
+            "observed_orcids": [
+              "https://orcid.org/0009-0008-7615-3325"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Henry L. Thaman",
+          "raw_affiliation_strings": [
+            "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5058679048",
+            "display_name": "Stefan Berendts",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4781-7141",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4781-7141"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4577782",
+              "display_name": "Technische Universität Berlin",
+              "ror": "https://ror.org/03v4gjf40",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I4577782"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Stefan Berendts",
+          "raw_affiliation_strings": [
+            "Department of Chemistry Technische Universität Berlin  10623 Berlin Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry Technische Universität Berlin  10623 Berlin Germany",
+              "institution_ids": [
+                "https://openalex.org/I4577782"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109521103",
+            "display_name": "Reinhard Uecker",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I858866802",
+              "display_name": "Leibniz Institute for Crystal Growth",
+              "ror": "https://ror.org/037p86664",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I315704651",
+                "https://openalex.org/I858866802"
+              ]
+            }
+          ],
+          "countries": [
+            "DE"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Reinhard Uecker",
+          "raw_affiliation_strings": [
+            "Leibniz Institute for Crystal Growth (IKZ), 12489 Berlin, Germany"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Leibniz Institute for Crystal Growth (IKZ), 12489 Berlin, Germany",
+              "institution_ids": [
+                "https://openalex.org/I858866802"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5089998070",
+            "display_name": "W. Craig Carter",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-7564-7173",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7564-7173"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "W. Craig Carter",
+          "raw_affiliation_strings": [
+            "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5060617433",
+            "display_name": "Yet‐Ming Chiang",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0833-7674",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0833-7674"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I63966007",
+              "display_name": "Massachusetts Institute of Technology",
+              "ror": "https://ror.org/042nb2s44",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Yet‐Ming Chiang",
+          "raw_affiliation_strings": [
+            "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Material Science and Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139 USA",
+              "institution_ids": [
+                "https://openalex.org/I63966007"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence:openalex:W2097535432",
+      "source_url": "https://openalex.org/W2097535432",
+      "quote": "Electronically conductive phospho-olivines as lithium storage electrodes",
+      "source_date": "2002-09-22",
+      "observed_at": "2026-11-24T19:16:35.424070+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2811133697",
+      "source_url": "https://openalex.org/W2811133697",
+      "quote": "Net-zero emissions energy systems",
+      "source_date": "2018-06-28",
+      "observed_at": "2026-11-24T19:16:35.424081+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W1629830706",
+      "source_url": "https://openalex.org/W1629830706",
+      "quote": "Virus-Enabled Synthesis and Assembly of Nanowires for Lithium Ion Battery Electrodes",
+      "source_date": "2006-04-06",
+      "observed_at": "2026-11-24T19:16:35.424084+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2265160803",
+      "source_url": "https://openalex.org/W2265160803",
+      "quote": "The synergetic effect of lithium polysulfide and lithium nitrate to prevent lithium dendrite growth",
+      "source_date": "2015-06-17",
+      "observed_at": "2026-11-24T19:16:35.424085+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2725925537",
+      "source_url": "https://openalex.org/W2725925537",
+      "quote": "Mechanism of Lithium Metal Penetration through Inorganic Solid Electrolytes",
+      "source_date": "2017-07-06",
+      "observed_at": "2026-11-24T19:16:35.424086+00:00",
+      "kind": "paper"
+    }
+  ],
+  "persona": "Battery manufacturing R&D leaders"
+}

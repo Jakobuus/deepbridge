@@ -1,45 +1,105 @@
 {
   "_meta": {
     "cached": true,
-    "observed_at": "2026-11-24T18:12:00Z",
+    "observed_at": "2026-11-24T19:14:08.330836+00:00",
     "case": "Lightmatter / Nicholas C. Harris",
-    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength.",
-    "sample": true
+    "generator": "claude -p --model sonnet",
+    "notes": "Customer segments are hypotheses inferred from five top-cited OpenAlex works; not verified demand."
   },
   "founder_id": "person:openalex:A5102978866",
   "buyer_roles": [
     {
-      "title": "Photonics research lead",
-      "why": "Evaluate optical computing and interconnect research fit.",
+      "title": "Photonic integrated circuit (PIC) R&D lead",
+      "why": "Hypothesis: Teams designing silicon photonic chips may care about low-loss, CMOS-compatible building blocks such as thermo-optic phase shifters and programmable processors, as described in these works.",
       "evidence_ids": [
-        "evidence:harris-2017"
+        "evidence:openalex:W2952285760",
+        "evidence:openalex:W2905425616"
+      ]
+    },
+    {
+      "title": "AI hardware or accelerator architect",
+      "why": "Hypothesis: Architects exploring alternatives to electronic compute may be interested in photonic neural network demonstrations, including forward-only training on a single chip.",
+      "evidence_ids": [
+        "evidence:openalex:W4404905249",
+        "evidence:openalex:W2752849906"
+      ]
+    },
+    {
+      "title": "Quantum photonics research lead",
+      "why": "Hypothesis: Groups simulating quantum transport or running linear-optics experiments may be interested in programmable nanophotonic processors.",
+      "evidence_ids": [
+        "evidence:openalex:W1833198276",
+        "evidence:openalex:W2905425616"
       ]
     }
   ],
   "industries": [
     {
-      "name": "AI infrastructure and semiconductor research",
-      "why": "Buyer organizations publish on photonics and optical I/O.",
+      "name": "AI infrastructure and data-center compute",
+      "why": "Hypothesis: Photonic neural network work suggests possible interest from teams evaluating optical computing for machine learning workloads. This is not verified demand.",
       "evidence_ids": [
-        "evidence:90d-nvidia",
-        "evidence:90d-intel"
+        "evidence:openalex:W2752849906",
+        "evidence:openalex:W4404905249"
+      ]
+    },
+    {
+      "name": "Silicon photonics design and foundry ecosystem",
+      "why": "Hypothesis: A phase shifter fabricated in a CMOS process, with loss measured across an 8-inch wafer, points to possible relevance for teams building photonic devices on standard platforms.",
+      "evidence_ids": [
+        "evidence:openalex:W2952285760"
+      ]
+    },
+    {
+      "name": "Quantum information technology",
+      "why": "Hypothesis: Programmable nanophotonic processors are described as applicable to quantum information processing, which may interest quantum hardware groups.",
+      "evidence_ids": [
+        "evidence:openalex:W2905425616",
+        "evidence:openalex:W1833198276"
       ]
     }
   ],
   "needs": [
     {
-      "text": "Assess photonic compute and optical interconnect integration.",
+      "text": "Hypothesis: R&D teams evaluating optical computing may need ways to test whether programmable photonic processors can run neural network workloads. Reasoning: the circuit and single-chip network works demonstrate deep learning on photonic hardware.",
       "evidence_ids": [
-        "evidence:harris-2017"
+        "evidence:openalex:W2752849906",
+        "evidence:openalex:W4404905249"
+      ]
+    },
+    {
+      "text": "Hypothesis: Teams integrating many photonic components may need efficient, low-loss phase control and guidance on spacing between thermo-optic devices. Reasoning: the phase shifter paper reports efficiency and loss figures and quantifies the isolation separation needed.",
+      "evidence_ids": [
+        "evidence:openalex:W2952285760"
+      ]
+    },
+    {
+      "text": "Hypothesis: Groups working on reconfigurable optics may need programmable platforms that implement universal linear transformations for several applications. Reasoning: the review covers classical and quantum information processing and machine learning uses.",
+      "evidence_ids": [
+        "evidence:openalex:W2905425616",
+        "evidence:openalex:W1833198276"
       ]
     }
   ],
   "expansion_segments": [
     {
-      "name": "Industrial quantum research",
-      "why": "MIT and NTT Research dual affiliations give a research bridge.",
+      "name": "Quantum simulation research labs",
+      "why": "Hypothesis: Quantum transport simulation on a programmable processor suggests adjacent academic and industrial labs that might use photonic chips for simulation. Unverified.",
       "evidence_ids": [
-        "evidence:shared-A5089821617"
+        "evidence:openalex:W1833198276"
+      ]
+    },
+    {
+      "name": "Photonic chip packaging and test tooling vendors",
+      "why": "Hypothesis: Wafer-level loss measurements and device-spacing analysis suggest adjacent teams that may need characterization and test support. Unverified.",
+      "evidence_ids": [
+        "evidence:openalex:W2952285760"
+      ]
+    },
+    {
+      "name": "Machine learning researchers exploring alternative training methods",
+      "why": "Hypothesis: Forward-only training on a photonic network may interest researchers studying training methods suited to analog or optical hardware. Unverified.",
+      "evidence_ids": [
+        "evidence:openalex:W4404905249"
       ]
     }
   ]
