@@ -18,7 +18,8 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[4]
 CACHE = ROOT / 'data/cache/erick'
-_LOCK = threading.RLock()
+_LOCK = threading.RLock()  # serialises OpenAlex pulls (slow, network)
+_STATE_LOCK = threading.RLock()  # guards in-memory graph state only (fast); never held during network calls
 _LAST_REQUEST = 0.0
 
 

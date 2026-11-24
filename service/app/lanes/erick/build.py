@@ -188,7 +188,7 @@ def build_graph(founder_id):
                     edge(apid, person_id(aid), 'ADVISOR_LAB', work.get('publication_date'), [aeid, eid],
                          'co-authored with founder’s sourced advisor', noise(aid))
 
-    with pull._LOCK:
+    with pull._STATE_LOCK:
         for item in edges.values():
             item.name_check = NAME_CHECKS.get(item.id, 'unchecked')
         COMPUTED_EDGES.update(edges)

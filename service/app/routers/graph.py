@@ -37,7 +37,7 @@ def graph(response: Response, founder_id: str | None = None):
 
 @router.post('/name-check', response_model=Edge)
 def name_check(body: NameCheckRequest):
-    with pull._LOCK:
+    with pull._STATE_LOCK:
         if body.edge_id in build.COMPUTED_EDGES:
             edge = build.COMPUTED_EDGES[body.edge_id]
             build.NAME_CHECKS[edge.id] = body.decision
