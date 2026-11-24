@@ -140,6 +140,26 @@ export interface KnowledgeGraph {
   evidence: Evidence[];
 }
 
+/** Live graph building (Jakob 12:35): while the AI reads the founder's sources and during the interview, the graph
+ *  grows on screen and warm-path candidates light up. Every producer publishes GraphEvents; the UI follows the stream.
+ *  Fast-forward = replay of a session's events at speed N (video / stage). */
+export interface GraphEvent {
+  seq: number; at: Iso; session_id: string;
+  phase: "reading" | "interview" | "discovery" | "paths";
+  kind: "node" | "edge" | "path" | "category" | "status";
+  layer: "core" | "category" | "lead";
+  node?: ValueNode | Person | Org | BuyerCategory; edge?: Edge; path?: Path; evidence?: Evidence[];
+  status?: string;                    // short human line, e.g. "Reading paper: 'Deep learning with coherent…'"
+}
+export interface SourceDoc { kind: "paper" | "website" | "notes" | "notion" | "gdoc"; url: string | null; title: string; text: string; }
+export interface Briefing {
+  session_id: string; founder: Founder; sources: { kind: SourceDoc["kind"]; url: string | null; title: string }[];
+  understanding: string;              // one sentence the interviewer reads back ("Here's how I read your paper…")
+  claims: { text: string; source: SourceDoc["kind"]; evidence_ids: Id[] }[];
+  gaps: string[];                     // what the sources don't say -> asked first in the interview
+  interviewer_instructions: string;   // full system prompt for the live voice session (stage or full mode)
+}
+
 /** HTTP API (FastAPI, base http://localhost:8000). All GETs accept ?founder_id=. */
 export interface Api {
   "POST /intake": { body: IntakeForm | { query: string }; res: Founder }; // form, or a name/DOI for "try any founder"
@@ -161,5 +181,13 @@ export interface Api {
   "GET /value-map": { res: { value_nodes: ValueNode[]; edges: Edge[]; evidence: Evidence[] } }; // from papers + interview
   "POST /value-map": { body: { session_id?: string }; res: { value_nodes: ValueNode[]; edges: Edge[]; evidence: Evidence[] } };
   "GET /categories": { res: BuyerCategory[] };
-  "GET /knowledge-graph": { res: KnowledgeGraph };                  // the one layered view                    // shown masked on stage; nothing is sent
+  "GET /knowledge-graph": { res: KnowledgeGraph };                  // the one layered view
+  "POST /interview/brief": { body: { founder_name: string; startup_name?: string; paper_links: string[]; website?: string;
+      notes?: string; notion_urls?: string[]; gdoc_urls?: string[]; mode: "stage" | "full" }; res: Briefing }; // publishes "reading" events
+  "GET /interview/brief/{session_id}": { res: Briefing };           // the voice app fetches its instructions here
+  "POST /interview/turn": { body: { session_id: string; role: "founder" | "interviewer"; text: string }; res: { ok: true } }; // publishes "interview" events
+  "POST /interview/transcript": { body: { session_id?: string; founder_name: string; startup_name?: string; paper_link?: string;
+      abstract?: string; transcript: string | { role: string; text: string }[] }; res: { session_id: string; value_proposition: unknown } };
+  "GET /graph/stream": { query: { session_id: string; speed?: number; from_seq?: number }; res: "text/event-stream of GraphEvent" };
+  "GET /graph/events": { query: { session_id: string }; res: GraphEvent[] };  // full log for replay                    // shown masked on stage; nothing is sent
 }
