@@ -82,7 +82,7 @@ export interface Path {
 }
 
 export interface Signal {
-  id: Id; org_id: Id; type: "paper_90d" | "job_post" | "cites_founder" | "letter_of_support" | "filing";
+  id: Id; org_id: Id; type: "paper_90d" | "job_post" | "cites_founder" | "topic_paper" | "letter_of_support" | "filing";
   title: string; date: Iso | null; evidence_ids: Id[];
 }
 

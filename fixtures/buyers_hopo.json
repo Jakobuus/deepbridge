@@ -39,7 +39,9 @@
             "evidence_ids": [
                 "evidence:buyers:bb2c824cf05c0fa2adc0",
                 "evidence:buyers:7bea845b8d7290ee3793",
-                "evidence:buyers:677c1013e80d95e4a462"
+                "evidence:buyers:677c1013e80d95e4a462",
+                "evidence:buyers:33876be0f6044d29f974",
+                "evidence:buyers:42e078fb43c7fac96999"
             ]
         },
         {
@@ -158,6 +160,336 @@
             "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
             "evidence_ids": [
                 "evidence:buyers:fe0d739e9703a0edf127"
+            ]
+        },
+        {
+            "id": "org:openalex:I2801182042",
+            "name": "Biomedical Advanced Research and Development Authority",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 9.0,
+            "openalex_id": "https://openalex.org/I2801182042",
+            "category_hint": "radiation",
+            "evidence_ids": [
+                "evidence:buyers:45551d9ddab21671f8cc",
+                "evidence:buyers:c003bc2b6a5b7252b63f",
+                "evidence:buyers:eea947041dfb7b990067",
+                "evidence:buyers:c4fe60f717db7fc9fa2a"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210155143",
+            "name": "Orano (France)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 9.0,
+            "openalex_id": "https://openalex.org/I4210155143",
+            "category_hint": "radiation",
+            "evidence_ids": [
+                "evidence:buyers:7ec55d9aecf08d3c9c01",
+                "evidence:buyers:d98b109e4ee25c1591d8",
+                "evidence:buyers:acbdb493d26a44ebe0ee"
+            ]
+        },
+        {
+            "id": "org:openalex:I120615911",
+            "name": "Guerbet (France)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 9.0,
+            "openalex_id": "https://openalex.org/I120615911",
+            "category_hint": "gd",
+            "evidence_ids": [
+                "evidence:buyers:9c412e33422f05510e3b",
+                "evidence:buyers:4fdc9cd7b27d6c2d663b",
+                "evidence:buyers:f86e462ac21f681ebea9"
+            ]
+        },
+        {
+            "id": "org:openalex:I1293448361",
+            "name": "Institut de Radioprotection et de S\u00fbret\u00e9 Nucl\u00e9aire",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 9.0,
+            "openalex_id": "https://openalex.org/I1293448361",
+            "category_hint": "radiation",
+            "evidence_ids": [
+                "evidence:buyers:d38f4659d04ed080fbfc",
+                "evidence:buyers:8daffcfa238fe6381fac",
+                "evidence:buyers:2122350e22bb09f73760"
+            ]
+        },
+        {
+            "id": "org:openalex:I1289490764",
+            "name": "Centers for Disease Control and Prevention",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 9.0,
+            "openalex_id": "https://openalex.org/I1289490764",
+            "category_hint": "radiation",
+            "evidence_ids": [
+                "evidence:buyers:6cfdf91808cda4e56ec0",
+                "evidence:buyers:cedb67e41bf018be1006",
+                "evidence:buyers:f66461f7088eb47a7b48"
+            ]
+        },
+        {
+            "id": "org:openalex:I17937529",
+            "name": "German Cancer Research Center",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 9.0,
+            "openalex_id": "https://openalex.org/I17937529",
+            "category_hint": "gd",
+            "evidence_ids": [
+                "evidence:buyers:ce3597f73dcbd0bc2831",
+                "evidence:buyers:ec6b5f80a9a4c21e3092",
+                "evidence:buyers:3143dd5272e31feefb56"
+            ]
+        },
+        {
+            "id": "org:openalex:I183934855",
+            "name": "Genentech",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 6.0,
+            "openalex_id": "https://openalex.org/I183934855",
+            "category_hint": "pet",
+            "evidence_ids": [
+                "evidence:buyers:f1d8e445c60b23479a10",
+                "evidence:buyers:1de34d00aa1f9355ae87"
+            ]
+        },
+        {
+            "id": "org:openalex:I133593841",
+            "name": "Lundbeck (Denmark)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 6.0,
+            "openalex_id": "https://openalex.org/I133593841",
+            "category_hint": "pet",
+            "evidence_ids": [
+                "evidence:buyers:5d546cfcb35a9955765e",
+                "evidence:buyers:fd5b387cfa7d3b75d921"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210135976",
+            "name": "Children's Hospital at Montefiore",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 6.0,
+            "openalex_id": "https://openalex.org/I4210135976",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
+                "evidence:buyers:67e7cdff7a6cc46dbeef"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210088792",
+            "name": "United States Army",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 6.0,
+            "openalex_id": "https://openalex.org/I4210088792",
+            "category_hint": "radiation",
+            "evidence_ids": [
+                "evidence:buyers:355bad917e84cf0f72d9",
+                "evidence:buyers:53715da0309a65d233f3"
+            ]
+        },
+        {
+            "id": "org:openalex:I4405257904",
+            "name": "JFE Engineering Corporation (Japan)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 6.0,
+            "openalex_id": "https://openalex.org/I4405257904",
+            "category_hint": "pet",
+            "evidence_ids": [
+                "evidence:buyers:50ba59012f770b0ef833",
+                "evidence:buyers:435ff557a4ba74bea1a7"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210147582",
+            "name": "Lumiphore (United States)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210147582",
+            "category_hint": "pet",
+            "evidence_ids": [
+                "evidence:buyers:b732f794138ef300fc29"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210132761",
+            "name": "Bracco (Italy)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210132761",
+            "category_hint": "gd",
+            "evidence_ids": [
+                "evidence:buyers:1a351874fa78d1b41148"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210150350",
+            "name": "PDX Pharmaceuticals (United States)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210150350",
+            "category_hint": "gd",
+            "evidence_ids": [
+                "evidence:buyers:08105fdd3b7e0b4b01d1"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210136340",
+            "name": "Comer Children's Hospital",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210136340",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:cd6584c431e5f63bbdfa"
+            ]
+        },
+        {
+            "id": "org:openalex:I1288882113",
+            "name": "Boston Children's Hospital",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I1288882113",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:3e348adff49202347ff8"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210104433",
+            "name": "National Institute for Public Health and the Environment",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210104433",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:c6702633a85101f6b214"
+            ]
+        },
+        {
+            "id": "org:openalex:I1302368450",
+            "name": "Environmental Protection Agency",
+            "type": "government",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I1302368450",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:5c798d9337b6eb395124"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210087865",
+            "name": "University of Chicago Medical Center",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210087865",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:eec547e0351f6e620a80"
+            ]
+        },
+        {
+            "id": "org:openalex:I186523950",
+            "name": "Regeneron (United States)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I186523950",
+            "category_hint": "pet",
+            "evidence_ids": [
+                "evidence:buyers:8a508a337779418dd233"
+            ]
+        },
+        {
+            "id": "org:openalex:I25763013",
+            "name": "South African Nuclear Energy Corporation (South Africa)",
+            "type": "company",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I25763013",
+            "category_hint": "pet",
+            "evidence_ids": [
+                "evidence:buyers:a88584eb3807b35e71b1"
+            ]
+        },
+        {
+            "id": "org:openalex:I30558944",
+            "name": "Oklahoma Medical Research Foundation",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I30558944",
+            "category_hint": "gd",
+            "evidence_ids": [
+                "evidence:buyers:9a59d27ca2f19b9734f6"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210150312",
+            "name": "Flushing Hospital Medical Center",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210150312",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:1499e2e854e32c98a617"
+            ]
+        },
+        {
+            "id": "org:openalex:I1335289525",
+            "name": "Montefiore Medical Center",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I1335289525",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:016635964b94ea12a644"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210110933",
+            "name": "Washington Poison Center",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210110933",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:71bdfa8e89f9d51da6b2"
+            ]
+        },
+        {
+            "id": "org:openalex:I4210106432",
+            "name": "Institut National d'Hygi\u00e8ne du Maroc",
+            "type": "other",
+            "is_buyer": true,
+            "buyer_score": 3.0,
+            "openalex_id": "https://openalex.org/I4210106432",
+            "category_hint": "lead",
+            "evidence_ids": [
+                "evidence:buyers:58be9a6233d8b0c702c1"
             ]
         }
     ],
@@ -497,6 +829,294 @@
             "date": "2018-08-25",
             "evidence_ids": [
                 "evidence:buyers:748289a5db69b08e3958"
+            ]
+        },
+        {
+            "id": "signal:buyers:18d72a95b5a2d7139fef",
+            "org_id": "org:openalex:I2801182042",
+            "type": "topic_paper",
+            "title": "3 OpenAlex work(s) on radiation: Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emer",
+            "date": "2025-07-21",
+            "evidence_ids": [
+                "evidence:buyers:45551d9ddab21671f8cc",
+                "evidence:buyers:c4fe60f717db7fc9fa2a",
+                "evidence:buyers:c003bc2b6a5b7252b63f"
+            ]
+        },
+        {
+            "id": "signal:buyers:2b277623b93bdb514ec2",
+            "org_id": "org:openalex:I4210155143",
+            "type": "topic_paper",
+            "title": "3 OpenAlex work(s) on radiation: Liposomal DTPA as a good strategy for enhancing Pu decorporation regardless of treatment r",
+            "date": "2019-05-07",
+            "evidence_ids": [
+                "evidence:buyers:7ec55d9aecf08d3c9c01",
+                "evidence:buyers:d98b109e4ee25c1591d8",
+                "evidence:buyers:acbdb493d26a44ebe0ee"
+            ]
+        },
+        {
+            "id": "signal:buyers:8602642c4fcf0355ce3d",
+            "org_id": "org:openalex:I183934855",
+            "type": "topic_paper",
+            "title": "2 OpenAlex work(s) on pet: Head-to-head comparison of DFO* and DFO chelators: selection of the best candidate for cli",
+            "date": "2020-09-05",
+            "evidence_ids": [
+                "evidence:buyers:f1d8e445c60b23479a10",
+                "evidence:buyers:1de34d00aa1f9355ae87"
+            ]
+        },
+        {
+            "id": "signal:buyers:4a753ce5b2908ab16c60",
+            "org_id": "org:openalex:I133593841",
+            "type": "topic_paper",
+            "title": "2 OpenAlex work(s) on pet: New prospects for 89Zr-immuno-PET in brain applications \u2013 Alpha-synucleinopathies",
+            "date": "2024-11-12",
+            "evidence_ids": [
+                "evidence:buyers:5d546cfcb35a9955765e",
+                "evidence:buyers:fd5b387cfa7d3b75d921"
+            ]
+        },
+        {
+            "id": "signal:buyers:d2b63ed6998a6a2c148e",
+            "org_id": "org:openalex:I4210147582",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on pet: Evaluation of macrocyclic hydroxyisophthalamide ligands as chelators for zirconium-89",
+            "date": "2017-06-02",
+            "evidence_ids": [
+                "evidence:buyers:b732f794138ef300fc29"
+            ]
+        },
+        {
+            "id": "signal:buyers:88503079e62d9541c9f9",
+            "org_id": "org:openalex:I120615911",
+            "type": "topic_paper",
+            "title": "3 OpenAlex work(s) on gd: Long-term Gadolinium Retention in the Healthy Rat Brain: Comparison between Gadopiclenol, ",
+            "date": "2022-06-21",
+            "evidence_ids": [
+                "evidence:buyers:9c412e33422f05510e3b",
+                "evidence:buyers:4fdc9cd7b27d6c2d663b",
+                "evidence:buyers:f86e462ac21f681ebea9"
+            ]
+        },
+        {
+            "id": "signal:buyers:48c9b4f6e6ab6c760b5a",
+            "org_id": "org:openalex:I4210132761",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on gd: Differences in gadolinium retention after repeated injections of macrocyclic MR contrast a",
+            "date": "2017-07-21",
+            "evidence_ids": [
+                "evidence:buyers:1a351874fa78d1b41148"
+            ]
+        },
+        {
+            "id": "signal:buyers:a94aca3247ed46136475",
+            "org_id": "org:openalex:I4210150350",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on gd: Removal of a gadolinium based contrast agent by a novel sorbent hemoperfusion in a chronic",
+            "date": "2019-01-24",
+            "evidence_ids": [
+                "evidence:buyers:08105fdd3b7e0b4b01d1"
+            ]
+        },
+        {
+            "id": "signal:buyers:710793edac972fee71e8",
+            "org_id": "org:openalex:I1299303238",
+            "type": "topic_paper",
+            "title": "2 OpenAlex work(s) on gd: Gadolinium deposition: practical guidelines in the face of uncertainty",
+            "date": "2017-06-14",
+            "evidence_ids": [
+                "evidence:buyers:33876be0f6044d29f974",
+                "evidence:buyers:42e078fb43c7fac96999"
+            ]
+        },
+        {
+            "id": "signal:buyers:36373f963cf694e80e1e",
+            "org_id": "org:openalex:I4210136340",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: Pediatric Lead Chelation Managed During Critical Medication Shortages: Case Report and Lit",
+            "date": "2024-10-01",
+            "evidence_ids": [
+                "evidence:buyers:cd6584c431e5f63bbdfa"
+            ]
+        },
+        {
+            "id": "signal:buyers:ea515571207dfe43e985",
+            "org_id": "org:openalex:I1288882113",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: Trends in Shortages of Lead Chelators From 2001 to 2022.",
+            "date": "2024-06-01",
+            "evidence_ids": [
+                "evidence:buyers:3e348adff49202347ff8"
+            ]
+        },
+        {
+            "id": "signal:buyers:deb68e2e097ea2cf478e",
+            "org_id": "org:openalex:I4210135976",
+            "type": "topic_paper",
+            "title": "2 OpenAlex work(s) on lead: Folk prescription for treating rhinitis as a rare cause of childhood lead poisoning: a cas",
+            "date": "2018-07-06",
+            "evidence_ids": [
+                "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
+                "evidence:buyers:67e7cdff7a6cc46dbeef"
+            ]
+        },
+        {
+            "id": "signal:buyers:ab42a51e63b1d1e0f0e1",
+            "org_id": "org:openalex:I4210104433",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: Modeling the effect of succimer (DMSA; dimercaptosuccinic acid) chelation therapy in patie",
+            "date": "2016-12-05",
+            "evidence_ids": [
+                "evidence:buyers:c6702633a85101f6b214"
+            ]
+        },
+        {
+            "id": "signal:buyers:f37f25fbc743b6d074cd",
+            "org_id": "org:openalex:I1302368450",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: How Effective Are Secondary Interventions at Improving Health Outcomes in Children Exposed",
+            "date": "2024-06-01",
+            "evidence_ids": [
+                "evidence:buyers:5c798d9337b6eb395124"
+            ]
+        },
+        {
+            "id": "signal:buyers:2c78db1c12bfdb5e9914",
+            "org_id": "org:openalex:I4210087865",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: Pediatric Lead Chelation Managed During Critical Medication Shortages: Case Report and Lit",
+            "date": "2024-10-01",
+            "evidence_ids": [
+                "evidence:buyers:eec547e0351f6e620a80"
+            ]
+        },
+        {
+            "id": "signal:buyers:c00475563ea398635da5",
+            "org_id": "org:openalex:I1293448361",
+            "type": "topic_paper",
+            "title": "3 OpenAlex work(s) on radiation: Development of Evidence-based Guidelines on Assessment and Management of Internal Contamin",
+            "date": "2025-06-20",
+            "evidence_ids": [
+                "evidence:buyers:d38f4659d04ed080fbfc",
+                "evidence:buyers:8daffcfa238fe6381fac",
+                "evidence:buyers:2122350e22bb09f73760"
+            ]
+        },
+        {
+            "id": "signal:buyers:a831cb8aa58d3ec7f690",
+            "org_id": "org:openalex:I1289490764",
+            "type": "topic_paper",
+            "title": "3 OpenAlex work(s) on radiation: Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emer",
+            "date": "2025-07-21",
+            "evidence_ids": [
+                "evidence:buyers:6cfdf91808cda4e56ec0",
+                "evidence:buyers:cedb67e41bf018be1006",
+                "evidence:buyers:f66461f7088eb47a7b48"
+            ]
+        },
+        {
+            "id": "signal:buyers:ab799d0d68a5641b1262",
+            "org_id": "org:openalex:I4210088792",
+            "type": "topic_paper",
+            "title": "2 OpenAlex work(s) on radiation: Modeling Plutonium Decorporation in a Female Nuclear Worker Treated with Ca-DTPA after Inh",
+            "date": "2024-07-22",
+            "evidence_ids": [
+                "evidence:buyers:355bad917e84cf0f72d9",
+                "evidence:buyers:53715da0309a65d233f3"
+            ]
+        },
+        {
+            "id": "signal:buyers:8090d0d3b5dad1cc0e85",
+            "org_id": "org:openalex:I186523950",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on pet: Abstract 3033: Immuno-PET detection of LAG-3 expressing intratumoral lymphocytes using the",
+            "date": "2018-07-01",
+            "evidence_ids": [
+                "evidence:buyers:8a508a337779418dd233"
+            ]
+        },
+        {
+            "id": "signal:buyers:c6b64175b75f54ae4b7f",
+            "org_id": "org:openalex:I4405257904",
+            "type": "topic_paper",
+            "title": "2 OpenAlex work(s) on pet: Click Chemistry Enables [89Zr]Zr-DOTA Radioimmunoconjugation for Theranostic 89Zr-immunoPE",
+            "date": "2024-08-16",
+            "evidence_ids": [
+                "evidence:buyers:50ba59012f770b0ef833",
+                "evidence:buyers:435ff557a4ba74bea1a7"
+            ]
+        },
+        {
+            "id": "signal:buyers:ccc9ae529f45cc96d801",
+            "org_id": "org:openalex:I25763013",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on pet: Highlighting New Research Trends on Zirconium-89 Radiopharmaceuticals Beyond Antibodies",
+            "date": "2024-10-28",
+            "evidence_ids": [
+                "evidence:buyers:a88584eb3807b35e71b1"
+            ]
+        },
+        {
+            "id": "signal:buyers:1a3d210a45d478544aff",
+            "org_id": "org:openalex:I30558944",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on gd: Analysis of retention of gadolinium by brain, bone, and blood following linear gadolinium\u2010",
+            "date": "2019-11-01",
+            "evidence_ids": [
+                "evidence:buyers:9a59d27ca2f19b9734f6"
+            ]
+        },
+        {
+            "id": "signal:buyers:1c084ee7d7eced1c219c",
+            "org_id": "org:openalex:I17937529",
+            "type": "topic_paper",
+            "title": "3 OpenAlex work(s) on gd: Gadolinium Deposition in the Brain in a Large Animal Model: Comparison of Linear and Macro",
+            "date": "2019-07-01",
+            "evidence_ids": [
+                "evidence:buyers:ce3597f73dcbd0bc2831",
+                "evidence:buyers:ec6b5f80a9a4c21e3092",
+                "evidence:buyers:3143dd5272e31feefb56"
+            ]
+        },
+        {
+            "id": "signal:buyers:601b271545387f9574cc",
+            "org_id": "org:openalex:I4210150312",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: Lead toxicity in a new-born due to in utero exposure",
+            "date": "2017-12-21",
+            "evidence_ids": [
+                "evidence:buyers:1499e2e854e32c98a617"
+            ]
+        },
+        {
+            "id": "signal:buyers:706ea5f24d61f9b2dccd",
+            "org_id": "org:openalex:I1335289525",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: Low-level lead exposure impairs fronto-executive functions: A call to update the DSM\u20135 wit",
+            "date": "2020-09-01",
+            "evidence_ids": [
+                "evidence:buyers:016635964b94ea12a644"
+            ]
+        },
+        {
+            "id": "signal:buyers:cb5b1dbe64900fada09b",
+            "org_id": "org:openalex:I4210110933",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: Lead poisoning; a neglected potential diagnosis in abdominal pain",
+            "date": "2020-05-06",
+            "evidence_ids": [
+                "evidence:buyers:71bdfa8e89f9d51da6b2"
+            ]
+        },
+        {
+            "id": "signal:buyers:53bcddba6af45171436c",
+            "org_id": "org:openalex:I4210106432",
+            "type": "topic_paper",
+            "title": "1 OpenAlex work(s) on lead: Lead poisoning in children: a case report",
+            "date": "2016-01-01",
+            "evidence_ids": [
+                "evidence:buyers:58be9a6233d8b0c702c1"
             ]
         }
     ]

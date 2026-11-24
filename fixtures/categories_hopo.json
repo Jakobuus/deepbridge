@@ -14,7 +14,12 @@
       "org:openalex:I4405271368",
       "org:openalex:I2738703131",
       "org:openalex:I1329621470",
-      "org:openalex:I1282311441"
+      "org:openalex:I1282311441",
+      "org:openalex:I2801182042",
+      "org:openalex:I4210155143",
+      "org:openalex:I1293448361",
+      "org:openalex:I1289490764",
+      "org:openalex:I4210088792"
     ],
     "problem_node_ids": [
       "value:hopo-p-limited"
@@ -28,7 +33,21 @@
       "evidence:buyers:46c13daa79280390b546",
       "evidence:buyers:4919d36555cd5ef3da95",
       "evidence:buyers:b8ca1d4aff4f1b4be829",
-      "evidence:buyers:feae6c8c9b806e56b85d"
+      "evidence:buyers:feae6c8c9b806e56b85d",
+      "evidence:buyers:45551d9ddab21671f8cc",
+      "evidence:buyers:c003bc2b6a5b7252b63f",
+      "evidence:buyers:c4fe60f717db7fc9fa2a",
+      "evidence:buyers:7ec55d9aecf08d3c9c01",
+      "evidence:buyers:d98b109e4ee25c1591d8",
+      "evidence:buyers:acbdb493d26a44ebe0ee",
+      "evidence:buyers:d38f4659d04ed080fbfc",
+      "evidence:buyers:8daffcfa238fe6381fac",
+      "evidence:buyers:2122350e22bb09f73760",
+      "evidence:buyers:6cfdf91808cda4e56ec0",
+      "evidence:buyers:cedb67e41bf018be1006",
+      "evidence:buyers:f66461f7088eb47a7b48",
+      "evidence:buyers:355bad917e84cf0f72d9",
+      "evidence:buyers:53715da0309a65d233f3"
     ]
   },
   {
@@ -45,7 +64,13 @@
       "org:openalex:I4210140884",
       "org:openalex:I154526488",
       "org:openalex:I4210118725",
-      "org:openalex:I1294671590"
+      "org:openalex:I1294671590",
+      "org:openalex:I183934855",
+      "org:openalex:I133593841",
+      "org:openalex:I4210147582",
+      "org:openalex:I186523950",
+      "org:openalex:I4405257904",
+      "org:openalex:I25763013"
     ],
     "problem_node_ids": [
       "value:hopo-p-dfo"
@@ -54,7 +79,16 @@
       "evidence:buyers:2bf8475ff85c5e8c8439",
       "evidence:buyers:33f15e0835f11183028c",
       "evidence:buyers:42bb8894058d9e1823a9",
-      "evidence:buyers:6bf34c3eeb298f01dab3"
+      "evidence:buyers:6bf34c3eeb298f01dab3",
+      "evidence:buyers:f1d8e445c60b23479a10",
+      "evidence:buyers:1de34d00aa1f9355ae87",
+      "evidence:buyers:5d546cfcb35a9955765e",
+      "evidence:buyers:fd5b387cfa7d3b75d921",
+      "evidence:buyers:b732f794138ef300fc29",
+      "evidence:buyers:8a508a337779418dd233",
+      "evidence:buyers:50ba59012f770b0ef833",
+      "evidence:buyers:435ff557a4ba74bea1a7",
+      "evidence:buyers:a88584eb3807b35e71b1"
     ]
   },
   {
@@ -69,7 +103,13 @@
     "colour": "--cat-3",
     "org_ids": [
       "org:openalex:I67348948",
-      "org:openalex:I19820366"
+      "org:openalex:I19820366",
+      "org:openalex:I120615911",
+      "org:openalex:I4210132761",
+      "org:openalex:I4210150350",
+      "org:openalex:I1299303238",
+      "org:openalex:I30558944",
+      "org:openalex:I17937529"
     ],
     "problem_node_ids": [
       "value:hopo-p-gd"
@@ -78,7 +118,18 @@
       "evidence:buyers:05765ea9f4b4a1af93e4",
       "evidence:buyers:4042ac57ab7fa479591e",
       "evidence:buyers:6767f1a5d64ded6cd113",
-      "evidence:buyers:bbaf8bea339b4a738593"
+      "evidence:buyers:bbaf8bea339b4a738593",
+      "evidence:buyers:9c412e33422f05510e3b",
+      "evidence:buyers:4fdc9cd7b27d6c2d663b",
+      "evidence:buyers:f86e462ac21f681ebea9",
+      "evidence:buyers:1a351874fa78d1b41148",
+      "evidence:buyers:08105fdd3b7e0b4b01d1",
+      "evidence:buyers:33876be0f6044d29f974",
+      "evidence:buyers:42e078fb43c7fac96999",
+      "evidence:buyers:9a59d27ca2f19b9734f6",
+      "evidence:buyers:ce3597f73dcbd0bc2831",
+      "evidence:buyers:ec6b5f80a9a4c21e3092",
+      "evidence:buyers:3143dd5272e31feefb56"
     ]
   },
   {
@@ -88,10 +139,33 @@
       "Removal of toxic heavy metals such as lead and cadmium",
       "Oral chelation options for metal exposure"
     ],
-    "value_prop": "A published study reports Pb, Cd and Sn complexation by 3,4,3-LI(1,2-HOPO); no buyer in the current list shows a lead or cadmium signal yet.",
+    "value_prop": "A published study reports Pb, Cd and Sn complexation by 3,4,3-LI(1,2-HOPO). Listed hospitals, agencies and poison centres are linked to OpenAlex works on lead-poisoning chelation (succimer/DMSA, EDTA); the link is a research signal, not a purchase intent.",
     "colour": "--cat-4",
-    "org_ids": [],
+    "org_ids": [
+      "org:openalex:I4210136340",
+      "org:openalex:I1288882113",
+      "org:openalex:I4210135976",
+      "org:openalex:I4210104433",
+      "org:openalex:I1302368450",
+      "org:openalex:I4210087865",
+      "org:openalex:I4210150312",
+      "org:openalex:I1335289525",
+      "org:openalex:I4210110933",
+      "org:openalex:I4210106432"
+    ],
     "problem_node_ids": [],
-    "evidence_ids": []
+    "evidence_ids": [
+      "evidence:buyers:cd6584c431e5f63bbdfa",
+      "evidence:buyers:3e348adff49202347ff8",
+      "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
+      "evidence:buyers:67e7cdff7a6cc46dbeef",
+      "evidence:buyers:c6702633a85101f6b214",
+      "evidence:buyers:5c798d9337b6eb395124",
+      "evidence:buyers:eec547e0351f6e620a80",
+      "evidence:buyers:1499e2e854e32c98a617",
+      "evidence:buyers:016635964b94ea12a644",
+      "evidence:buyers:71bdfa8e89f9d51da6b2",
+      "evidence:buyers:58be9a6233d8b0c702c1"
+    ]
   }
 ]

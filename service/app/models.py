@@ -93,7 +93,7 @@ class Path(BaseModel):
 class Signal(BaseModel):
     id: Id
     org_id: Id
-    type: Literal['paper_90d', 'job_post', 'cites_founder', 'letter_of_support', 'filing']
+    type: Literal['paper_90d', 'job_post', 'cites_founder', 'topic_paper', 'letter_of_support', 'filing']
     title: str
     date: Iso | None
     evidence_ids: list[Id]

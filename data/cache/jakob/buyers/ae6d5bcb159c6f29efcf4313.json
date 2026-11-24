@@ -1,1 +1,2979 @@
-{"_meta":{"cached":true,"founder_id":"person:openalex:A5043992375","fingerprint":"2a52d3118d897070814140e2db5a4ea1fa68860ffea1100081b1231753f02499","notes":"Heuristic buyer hypotheses; citation counts are lower bounds. Publication affiliations do not establish current employment."},"orgs":[{"id":"org:openalex:I67348948","name":"Bayer (Germany)","type":"company","is_buyer":true,"buyer_score":75,"openalex_id":"https://openalex.org/I67348948"},{"id":"org:openalex:I83308685","name":"Canadian Light Source (Canada)","type":"company","is_buyer":true,"buyer_score":50,"openalex_id":"https://openalex.org/I83308685"},{"id":"org:openalex:I4210091812","name":"Bristol-Myers Squibb (United States)","type":"company","is_buyer":true,"buyer_score":45,"openalex_id":"https://openalex.org/I4210091812"},{"id":"org:openalex:I2948539688","name":"AbbVie (United States)","type":"company","is_buyer":true,"buyer_score":40,"openalex_id":"https://openalex.org/I2948539688"},{"id":"org:openalex:I1341412227","name":"IBM (United States)","type":"company","is_buyer":true,"buyer_score":40,"openalex_id":"https://openalex.org/I1341412227"},{"id":"org:openalex:I1343180700","name":"Intel (United States)","type":"company","is_buyer":true,"buyer_score":40,"openalex_id":"https://openalex.org/I1343180700"},{"id":"org:openalex:I2251713219","name":"NTT (Japan)","type":"company","is_buyer":true,"buyer_score":40,"openalex_id":"https://openalex.org/I2251713219"},{"id":"org:openalex:I4210117619","name":"Novartis (United States)","type":"company","is_buyer":true,"buyer_score":40,"openalex_id":"https://openalex.org/I4210117619"},{"id":"org:openalex:I180857899","name":"Pfizer (United States)","type":"company","is_buyer":true,"buyer_score":40,"openalex_id":"https://openalex.org/I180857899"},{"id":"org:openalex:I4210143116","name":"Électricité de France (France)","type":"company","is_buyer":true,"buyer_score":40,"openalex_id":"https://openalex.org/I4210143116"}],"signals":[{"id":"signal:buyers:79e237da1dbc0b8a9d4d","org_id":"org:openalex:I180857899","type":"paper_90d","title":"292 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:79e237da1dbc0b8a9d4d"]},{"id":"signal:buyers:3a13ea7e993c21c5f302","org_id":"org:openalex:I1341412227","type":"paper_90d","title":"146 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:3a13ea7e993c21c5f302"]},{"id":"signal:buyers:dfd3eec467f8ba91de11","org_id":"org:openalex:I2948539688","type":"paper_90d","title":"155 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:dfd3eec467f8ba91de11"]},{"id":"signal:buyers:96c397e386f47cb0bb25","org_id":"org:openalex:I4210091812","type":"paper_90d","title":"148 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:96c397e386f47cb0bb25"]},{"id":"signal:buyers:7ac0ebf208f7cb087ed4","org_id":"org:openalex:I4210091812","type":"cites_founder","title":"At least 1 papers cite sampled founder works (cached)","date":"2022-02-21","evidence_ids":["evidence:buyers:7ac0ebf208f7cb087ed4"]},{"id":"signal:buyers:05be0c1bee4c7eae1258","org_id":"org:openalex:I2251713219","type":"paper_90d","title":"132 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:05be0c1bee4c7eae1258"]},{"id":"signal:buyers:0f36487716255db6abce","org_id":"org:openalex:I67348948","type":"paper_90d","title":"108 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:0f36487716255db6abce"]},{"id":"signal:buyers:02b07d1612cef72757a0","org_id":"org:openalex:I67348948","type":"cites_founder","title":"At least 11 papers cite sampled founder works (cached)","date":"2023-06-29","evidence_ids":["evidence:buyers:02b07d1612cef72757a0","evidence:buyers:f85e435a675fc85a6184","evidence:buyers:8e6775372900a77c7c25","evidence:buyers:c4340c5d56d2d8dca287","evidence:buyers:5a09c7c0023edc9f575c","evidence:buyers:8341858538e236bb22af","evidence:buyers:55ebcd06a8c7765a6b86","evidence:buyers:35453fabe25fe2a4511b","evidence:buyers:3ffc710f6755a1774e3c","evidence:buyers:0e80241fc05b090eae97","evidence:buyers:034f3e1de6196cb81a20"]},{"id":"signal:buyers:ecb59cb7f99991d11ed3","org_id":"org:openalex:I1343180700","type":"paper_90d","title":"70 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:ecb59cb7f99991d11ed3"]},{"id":"signal:buyers:abbbdde3f90b7baa3606","org_id":"org:openalex:I4210143116","type":"paper_90d","title":"51 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:abbbdde3f90b7baa3606"]},{"id":"signal:buyers:ed6dc0dae5f0e98f4b2e","org_id":"org:openalex:I4210117619","type":"paper_90d","title":"35 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:ed6dc0dae5f0e98f4b2e"]},{"id":"signal:buyers:9b219c8002a6075aa504","org_id":"org:openalex:I83308685","type":"paper_90d","title":"33 on-topic papers in the past 90 days (cached)","date":"2026-11-24","evidence_ids":["evidence:buyers:9b219c8002a6075aa504"]},{"id":"signal:buyers:9f7d7ea7d3c33160e2ee","org_id":"org:openalex:I83308685","type":"cites_founder","title":"At least 2 papers cite sampled founder works (cached)","date":"2026-02-17","evidence_ids":["evidence:buyers:9f7d7ea7d3c33160e2ee","evidence:buyers:904f201f936ac0b090f2"]}],"evidence":[{"id":"evidence:buyers:02b07d1612cef72757a0","source_url":"https://openalex.org/W4382792533","quote":"Efficacy of a HER2-Targeted Thorium-227 Conjugate in a HER2-Positive Breast Cancer Bone Metastasis Model","source_date":"2023-06-29","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:034f3e1de6196cb81a20","source_url":"https://openalex.org/W2898102107","quote":"Impact of Treatment With Chelating Agents Depends on the Stability of Administered GBCAs: A Comparative Study in Rats","source_date":"2018-10-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:05be0c1bee4c7eae1258","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I2251713219; count: 132","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:0e80241fc05b090eae97","source_url":"https://openalex.org/W2921520187","quote":"Synergistic Effect of a Mesothelin-Targeted 227Th Conjugate in Combination with DNA Damage Response Inhibitors in Ovarian Cancer Xenograft Models","source_date":"2019-03-08","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:0f36487716255db6abce","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I67348948; count: 108","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:35453fabe25fe2a4511b","source_url":"https://openalex.org/W2944344108","quote":"Mesothelin-Targeted Thorium-227 Conjugate (MSLN-TTC): Preclinical Evaluation of a New Targeted Alpha Therapy for Mesothelin-Positive Cancers","source_date":"2019-08-01","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:3a13ea7e993c21c5f302","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I1341412227; count: 146","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:3ffc710f6755a1774e3c","source_url":"https://openalex.org/W2955542525","quote":"Preclinical Combination Studies of an FGFR2 Targeted Thorium-227 Conjugate and the ATR Inhibitor BAY 1895344","source_date":"2019-06-27","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:55ebcd06a8c7765a6b86","source_url":"https://openalex.org/W2980577188","quote":"Synergistic Effect of a HER2 Targeted Thorium-227 Conjugate in Combination with Olaparib in a BRCA2 Deficient Xenograft Model","source_date":"2019-10-15","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:5a09c7c0023edc9f575c","source_url":"https://openalex.org/W3015002607","quote":"Advances in Precision Oncology: Targeted Thorium-227 Conjugates As a New Modality in Targeted Alpha Therapy","source_date":"2020-08-31","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:79e237da1dbc0b8a9d4d","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I180857899; count: 292","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:7ac0ebf208f7cb087ed4","source_url":"https://openalex.org/W4213262497","quote":"d 0 Metal-Catalyzed Alkyl–Alkyl Cross-Coupling Enabled by a Redox-Active Ligand","source_date":"2022-02-21","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:8341858538e236bb22af","source_url":"https://openalex.org/W2996077865","quote":"Preclinical Efficacy of a PSMA-Targeted Thorium-227 Conjugate (PSMA-TTC), a Targeted Alpha Therapy for Prostate Cancer","source_date":"2020-04-15","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:8e6775372900a77c7c25","source_url":"https://openalex.org/W4223907846","quote":"89Zr-3,2-HOPO-mesothelin antibody PET imaging reflects tumor uptake of mesothelin targeted 227Th-conjugate therapy in mice","source_date":"2022-04-14","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:904f201f936ac0b090f2","source_url":"https://openalex.org/W2471921558","quote":"A Macrocyclic Chelator That Selectively Binds Ln4+ over Ln3+ by a Factor of 1029","source_date":"2016-06-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:96c397e386f47cb0bb25","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I4210091812; count: 148","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:9b219c8002a6075aa504","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I83308685; count: 33","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:9f7d7ea7d3c33160e2ee","source_url":"https://openalex.org/W7129601963","quote":"Correlative X-ray spectromicroscopy for quantitative cerium speciation in mammalian cells","source_date":"2026-02-17","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:abbbdde3f90b7baa3606","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I4210143116; count: 51","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:c4340c5d56d2d8dca287","source_url":"https://openalex.org/W3160048097","quote":"In Vitro and In Vivo Comparison of 3,2-HOPO Versus Deferoxamine-Based Chelation of Zirconium-89 to the Antimesothelin Antibody Anetumab","source_date":"2021-05-01","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:dfd3eec467f8ba91de11","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I2948539688; count: 155","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:ecb59cb7f99991d11ed3","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I1343180700; count: 70","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:ed6dc0dae5f0e98f4b2e","source_url":"https://api.openalex.org/works?filter=institutions.id%3AI180857899%7CI1341412227%7CI2948539688%7CI4210091812%7CI2251713219%7CI67348948%7CI1343180700%7CI4210143116%7CI4210117619%7CI83308685%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24%2Ctitle_and_abstract.search%3Abacterial+OR+genetics+OR+biotechnology+OR+bacillus+OR+francisella+OR+iron+OR+metabolism+OR+disorders+OR+escherichia+OR+coli+OR+studies+OR+biofilms+OR+quorum+OR+sensing+OR+organizations+OR+developing+OR+antibacterials+OR+ways+OR+target+OR+siderophore+OR+synthesis+OR+uptake+OR+that+OR+bypass+OR+exploit+OR+host+OR+immune+OR+evasion+OR+reasoning+OR+iroa+OR+glucosylation+OR+petrobactin&page=1&group_by=institutions.id&per-page=200","quote":"key: https://openalex.org/I4210117619; count: 35","source_date":"2026-11-24","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"},{"id":"evidence:buyers:f85e435a675fc85a6184","source_url":"https://openalex.org/W4324147290","quote":"Tackling Issues Observed during the Development of a Liquid Chromatography Method for Small Molecule Quantification in Antibody-Chelator Conjugate","source_date":"2023-03-14","observed_at":"2026-11-24T21:10:32.971708+00:00","kind":"paper"}]}
+{
+ "_meta": {
+  "cached": true,
+  "founder_id": "person:openalex:A5043992375",
+  "fingerprint": "b6232327586f77cbefd0066956643ed5e2b1171fb846cab4a7a8a104237be57d",
+  "notes": "Heuristic buyer hypotheses; citation counts are lower bounds. Publication affiliations do not establish current employment."
+ },
+ "orgs": [
+  {
+   "id": "org:openalex:I1294671590",
+   "name": "Centre National de la Recherche Scientifique",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 51,
+   "openalex_id": "https://openalex.org/I1294671590",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:03706f2addd91a21cec8",
+    "evidence:buyers:fff88ed2058f0e7927d9",
+    "evidence:buyers:d0627c1de6119cba304a"
+   ]
+  },
+  {
+   "id": "org:openalex:I19820366",
+   "name": "Chinese Academy of Sciences",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 47,
+   "openalex_id": "https://openalex.org/I19820366",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:4042ac57ab7fa479591e",
+    "evidence:buyers:c2605982cf478de5f8b9",
+    "evidence:buyers:722b9f301e625c1fbc89"
+   ]
+  },
+  {
+   "id": "org:openalex:I1299303238",
+   "name": "National Institutes of Health",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 43,
+   "openalex_id": "https://openalex.org/I1299303238",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:bb2c824cf05c0fa2adc0",
+    "evidence:buyers:7bea845b8d7290ee3793",
+    "evidence:buyers:677c1013e80d95e4a462",
+    "evidence:buyers:33876be0f6044d29f974",
+    "evidence:buyers:42e078fb43c7fac96999"
+   ]
+  },
+  {
+   "id": "org:openalex:I4405271368",
+   "name": "State Key Laboratory of Radiation Medicine and Protection",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 39,
+   "openalex_id": "https://openalex.org/I4405271368",
+   "category_hint": "Biodefense and radiological/nuclear medical countermeasures (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:0ab0701704682397ce71"
+   ]
+  },
+  {
+   "id": "org:openalex:I67348948",
+   "name": "Bayer (Germany)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 35,
+   "openalex_id": "https://openalex.org/I67348948",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:05765ea9f4b4a1af93e4",
+    "evidence:buyers:95767d23a042338c141f",
+    "evidence:buyers:0e536a54448e3ba727e3"
+   ]
+  },
+  {
+   "id": "org:openalex:I2738703131",
+   "name": "Commissariat \u00e0 l'\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 35,
+   "openalex_id": "https://openalex.org/I2738703131",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:832077c158a882430b18",
+    "evidence:buyers:c5509addc4946ce89924",
+    "evidence:buyers:bf0c4a0aea5ae3f220de"
+   ]
+  },
+  {
+   "id": "org:openalex:I1329621470",
+   "name": "Bhabha Atomic Research Centre",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 35,
+   "openalex_id": "https://openalex.org/I1329621470",
+   "category_hint": "Biodefense and radiological/nuclear medical countermeasures (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:119bf50e893167fbb754"
+   ]
+  },
+  {
+   "id": "org:openalex:I1282311441",
+   "name": "Lawrence Livermore National Laboratory",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 35,
+   "openalex_id": "https://openalex.org/I1282311441",
+   "category_hint": "Biodefense and radiological/nuclear medical countermeasures (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:e629a99a2a1445cc98e3",
+    "evidence:buyers:ed3112a8f95e335128dd",
+    "evidence:buyers:feae6c8c9b806e56b85d"
+   ]
+  },
+  {
+   "id": "org:openalex:I154526488",
+   "name": "Inserm",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 24,
+   "openalex_id": "https://openalex.org/I154526488",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:a8ffc062b8a71e4dded4",
+    "evidence:buyers:efb01f4fab65dfaae2d3",
+    "evidence:buyers:6e114ee32dcadbaeafac"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210140884",
+   "name": "National Cancer Institute",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 24,
+   "openalex_id": "https://openalex.org/I4210140884",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:863b86284c6cbde39bdb",
+    "evidence:buyers:afa9e1c022deee9c0daa",
+    "evidence:buyers:57f65d944e0024d7e34c"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210118725",
+   "name": "Laboratoire Chimie Electrochimie Mol\u00e9culaires et Chimie Analytique",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 22,
+   "openalex_id": "https://openalex.org/I4210118725",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:f05fd53b86cc0803b0bc"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210114217",
+   "name": "National Institutes for Quantum Science and Technology",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 17,
+   "openalex_id": "https://openalex.org/I4210114217",
+   "category_hint": "Metal-chelation and radiopharmaceutical chemistry (hypothesis)",
+   "evidence_ids": [
+    "evidence:buyers:fe0d739e9703a0edf127"
+   ]
+  },
+  {
+   "id": "org:openalex:I2801182042",
+   "name": "Biomedical Advanced Research and Development Authority",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I2801182042",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:45551d9ddab21671f8cc",
+    "evidence:buyers:c003bc2b6a5b7252b63f",
+    "evidence:buyers:eea947041dfb7b990067",
+    "evidence:buyers:c4fe60f717db7fc9fa2a"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210155143",
+   "name": "Orano (France)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I4210155143",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:7ec55d9aecf08d3c9c01",
+    "evidence:buyers:d98b109e4ee25c1591d8",
+    "evidence:buyers:acbdb493d26a44ebe0ee"
+   ]
+  },
+  {
+   "id": "org:openalex:I183934855",
+   "name": "Genentech",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I183934855",
+   "category_hint": "pet",
+   "evidence_ids": [
+    "evidence:buyers:f1d8e445c60b23479a10",
+    "evidence:buyers:1de34d00aa1f9355ae87"
+   ]
+  },
+  {
+   "id": "org:openalex:I133593841",
+   "name": "Lundbeck (Denmark)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I133593841",
+   "category_hint": "pet",
+   "evidence_ids": [
+    "evidence:buyers:5d546cfcb35a9955765e",
+    "evidence:buyers:fd5b387cfa7d3b75d921"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210147582",
+   "name": "Lumiphore (United States)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210147582",
+   "category_hint": "pet",
+   "evidence_ids": [
+    "evidence:buyers:b732f794138ef300fc29"
+   ]
+  },
+  {
+   "id": "org:openalex:I120615911",
+   "name": "Guerbet (France)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I120615911",
+   "category_hint": "gd",
+   "evidence_ids": [
+    "evidence:buyers:9c412e33422f05510e3b",
+    "evidence:buyers:4fdc9cd7b27d6c2d663b",
+    "evidence:buyers:f86e462ac21f681ebea9"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210132761",
+   "name": "Bracco (Italy)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210132761",
+   "category_hint": "gd",
+   "evidence_ids": [
+    "evidence:buyers:1a351874fa78d1b41148"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210150350",
+   "name": "PDX Pharmaceuticals (United States)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210150350",
+   "category_hint": "gd",
+   "evidence_ids": [
+    "evidence:buyers:08105fdd3b7e0b4b01d1"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210136340",
+   "name": "Comer Children's Hospital",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210136340",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:cd6584c431e5f63bbdfa"
+   ]
+  },
+  {
+   "id": "org:openalex:I1288882113",
+   "name": "Boston Children's Hospital",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I1288882113",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:3e348adff49202347ff8"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210135976",
+   "name": "Children's Hospital at Montefiore",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I4210135976",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
+    "evidence:buyers:67e7cdff7a6cc46dbeef"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210104433",
+   "name": "National Institute for Public Health and the Environment",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210104433",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:c6702633a85101f6b214"
+   ]
+  },
+  {
+   "id": "org:openalex:I1302368450",
+   "name": "Environmental Protection Agency",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I1302368450",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:5c798d9337b6eb395124"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210087865",
+   "name": "University of Chicago Medical Center",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210087865",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:eec547e0351f6e620a80"
+   ]
+  },
+  {
+   "id": "org:openalex:I1293448361",
+   "name": "Institut de Radioprotection et de S\u00fbret\u00e9 Nucl\u00e9aire",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I1293448361",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:d38f4659d04ed080fbfc",
+    "evidence:buyers:8daffcfa238fe6381fac",
+    "evidence:buyers:2122350e22bb09f73760"
+   ]
+  },
+  {
+   "id": "org:openalex:I1289490764",
+   "name": "Centers for Disease Control and Prevention",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I1289490764",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:6cfdf91808cda4e56ec0",
+    "evidence:buyers:cedb67e41bf018be1006",
+    "evidence:buyers:f66461f7088eb47a7b48"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210088792",
+   "name": "United States Army",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I4210088792",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:355bad917e84cf0f72d9",
+    "evidence:buyers:53715da0309a65d233f3"
+   ]
+  },
+  {
+   "id": "org:openalex:I186523950",
+   "name": "Regeneron (United States)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I186523950",
+   "category_hint": "pet",
+   "evidence_ids": [
+    "evidence:buyers:8a508a337779418dd233"
+   ]
+  },
+  {
+   "id": "org:openalex:I4405257904",
+   "name": "JFE Engineering Corporation (Japan)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I4405257904",
+   "category_hint": "pet",
+   "evidence_ids": [
+    "evidence:buyers:50ba59012f770b0ef833",
+    "evidence:buyers:435ff557a4ba74bea1a7"
+   ]
+  },
+  {
+   "id": "org:openalex:I25763013",
+   "name": "South African Nuclear Energy Corporation (South Africa)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I25763013",
+   "category_hint": "pet",
+   "evidence_ids": [
+    "evidence:buyers:a88584eb3807b35e71b1"
+   ]
+  },
+  {
+   "id": "org:openalex:I30558944",
+   "name": "Oklahoma Medical Research Foundation",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I30558944",
+   "category_hint": "gd",
+   "evidence_ids": [
+    "evidence:buyers:9a59d27ca2f19b9734f6"
+   ]
+  },
+  {
+   "id": "org:openalex:I17937529",
+   "name": "German Cancer Research Center",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I17937529",
+   "category_hint": "gd",
+   "evidence_ids": [
+    "evidence:buyers:ce3597f73dcbd0bc2831",
+    "evidence:buyers:ec6b5f80a9a4c21e3092",
+    "evidence:buyers:3143dd5272e31feefb56"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210150312",
+   "name": "Flushing Hospital Medical Center",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210150312",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:1499e2e854e32c98a617"
+   ]
+  },
+  {
+   "id": "org:openalex:I1335289525",
+   "name": "Montefiore Medical Center",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I1335289525",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:016635964b94ea12a644"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210110933",
+   "name": "Washington Poison Center",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210110933",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:71bdfa8e89f9d51da6b2"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210106432",
+   "name": "Institut National d'Hygi\u00e8ne du Maroc",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210106432",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:58be9a6233d8b0c702c1"
+   ]
+  }
+ ],
+ "signals": [
+  {
+   "id": "signal:buyers:590a67e5d490b4321a5e",
+   "org_id": "org:openalex:I1294671590",
+   "type": "paper_90d",
+   "title": "4 on-topic papers in the past 90 days (cached)",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:buyers:590a67e5d490b4321a5e"
+   ]
+  },
+  {
+   "id": "signal:buyers:42bb8894058d9e1823a9",
+   "org_id": "org:openalex:I1294671590",
+   "type": "cites_founder",
+   "title": "At least 26 papers cite sampled founder works (cached)",
+   "date": "2025-10-28",
+   "evidence_ids": [
+    "evidence:buyers:42bb8894058d9e1823a9",
+    "evidence:buyers:0233113714bcc60960c0",
+    "evidence:buyers:cac0a51346d535601aa0",
+    "evidence:buyers:41baf0716777c413fb3e",
+    "evidence:buyers:e104317b3f0de740fe3c",
+    "evidence:buyers:0db633fb00d0eae40a4f",
+    "evidence:buyers:265a8032a25c60fe9fea",
+    "evidence:buyers:8984ba90ee6c94e664f3",
+    "evidence:buyers:5091c9926e716181a721",
+    "evidence:buyers:c0fbcf8f8d0150d19420",
+    "evidence:buyers:7eb09c197f98e4998f7d",
+    "evidence:buyers:f5d3bfa21abbadc13e45",
+    "evidence:buyers:5a96af790145878b5564",
+    "evidence:buyers:d32a86e67dafed93ca98",
+    "evidence:buyers:b271aed80cee692227b9",
+    "evidence:buyers:7bf8805fbe892a8349d5",
+    "evidence:buyers:fab035898da30e5d2dd4",
+    "evidence:buyers:3cd169ff80539957579a",
+    "evidence:buyers:e7d0c18644ac557edd0b",
+    "evidence:buyers:64930f096f6fb6ec3716",
+    "evidence:buyers:df2cd8051462860504ea",
+    "evidence:buyers:f80327d96a76aeabf550",
+    "evidence:buyers:7165944738807d545b55",
+    "evidence:buyers:f130d38bd69fe9407143",
+    "evidence:buyers:cf06f0cc7dbdec601456",
+    "evidence:buyers:432aad4e17a4d2cef307"
+   ]
+  },
+  {
+   "id": "signal:buyers:efe4992678cca269609d",
+   "org_id": "org:openalex:I67348948",
+   "type": "cites_founder",
+   "title": "At least 11 papers cite sampled founder works (cached)",
+   "date": "2023-06-29",
+   "evidence_ids": [
+    "evidence:buyers:efe4992678cca269609d",
+    "evidence:buyers:f1db0fb9dcb68254f1c2",
+    "evidence:buyers:af7029d5baa78fa3c98d",
+    "evidence:buyers:46b86763b5ccd01b0017",
+    "evidence:buyers:c073a6dca0f800014109",
+    "evidence:buyers:69711c488e3e1f965f0e",
+    "evidence:buyers:4a882504222c722b15f5",
+    "evidence:buyers:b3af7be1bdb622818d51",
+    "evidence:buyers:ef56a1df1084ccff000a",
+    "evidence:buyers:6d6540ccb1f8c41a0005",
+    "evidence:buyers:bbaf8bea339b4a738593"
+   ]
+  },
+  {
+   "id": "signal:buyers:5f3fa3eae10b0fa4d5f1",
+   "org_id": "org:openalex:I2738703131",
+   "type": "cites_founder",
+   "title": "At least 25 papers cite sampled founder works (cached)",
+   "date": "2026-09-09",
+   "evidence_ids": [
+    "evidence:buyers:5f3fa3eae10b0fa4d5f1",
+    "evidence:buyers:1cf3093b86c334fc4d32",
+    "evidence:buyers:dbca522d17551134a5c6",
+    "evidence:buyers:2d94a3884ddaf3ddb742",
+    "evidence:buyers:6d72863809de9f372b6e",
+    "evidence:buyers:6cb71eded7dd53156ff6",
+    "evidence:buyers:31595466fe6f52e64c91",
+    "evidence:buyers:3968028b58e305988ddc",
+    "evidence:buyers:abb95107f2ee2242fce9",
+    "evidence:buyers:18602840492b4380c1a0",
+    "evidence:buyers:af63dd21b89cc8a114df",
+    "evidence:buyers:c308ea8d457b8827ffdd",
+    "evidence:buyers:a49353b0ac0388d516a6",
+    "evidence:buyers:558f98af4fa29e0f8c75",
+    "evidence:buyers:2a2f7ac55d381288dd53",
+    "evidence:buyers:ea0e611dd6dcb401a0ca",
+    "evidence:buyers:d85bff09cd2060b2529b",
+    "evidence:buyers:8901cf48b6bd7eafd324",
+    "evidence:buyers:6595ce9049113e2f89b2",
+    "evidence:buyers:140ba885076793ccba7d",
+    "evidence:buyers:0623d52ad18a574896d2",
+    "evidence:buyers:4b1128601942f5181c02",
+    "evidence:buyers:958e632ea278ca0a030d",
+    "evidence:buyers:51dccdc5905c6246ade4",
+    "evidence:buyers:01d1f31928d33f5a2522"
+   ]
+  },
+  {
+   "id": "signal:buyers:7943c1641fe42c0f2a70",
+   "org_id": "org:openalex:I154526488",
+   "type": "paper_90d",
+   "title": "1 on-topic papers in the past 90 days (cached)",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:buyers:7943c1641fe42c0f2a70"
+   ]
+  },
+  {
+   "id": "signal:buyers:75d7df2c395fadcfad2b",
+   "org_id": "org:openalex:I154526488",
+   "type": "cites_founder",
+   "title": "At least 4 papers cite sampled founder works (cached)",
+   "date": "2024-12-20",
+   "evidence_ids": [
+    "evidence:buyers:75d7df2c395fadcfad2b",
+    "evidence:buyers:8788381e57b176629061",
+    "evidence:buyers:fb7be9f481eea2793d47",
+    "evidence:buyers:6bf34c3eeb298f01dab3"
+   ]
+  },
+  {
+   "id": "signal:buyers:42a5b9865e127c8e3047",
+   "org_id": "org:openalex:I4405271368",
+   "type": "paper_90d",
+   "title": "1 on-topic papers in the past 90 days (cached)",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:buyers:42a5b9865e127c8e3047"
+   ]
+  },
+  {
+   "id": "signal:buyers:4919d36555cd5ef3da95",
+   "org_id": "org:openalex:I4405271368",
+   "type": "cites_founder",
+   "title": "At least 20 papers cite sampled founder works (cached)",
+   "date": "2026-06-01",
+   "evidence_ids": [
+    "evidence:buyers:4919d36555cd5ef3da95",
+    "evidence:buyers:b8ca1d4aff4f1b4be829",
+    "evidence:buyers:5f260336a10e08a9575f",
+    "evidence:buyers:c3c523c8e0daf5cf96ab",
+    "evidence:buyers:c6d2c56d29dda8f5d575",
+    "evidence:buyers:77d7b0b5a5a656c21591",
+    "evidence:buyers:2d005e97a177200c381c",
+    "evidence:buyers:b341f72d9c9e4a5e58c7",
+    "evidence:buyers:f1142b6f4f552f776f05",
+    "evidence:buyers:99c758f1b3165b9df4c7",
+    "evidence:buyers:c2d2bc0f4b5a0066dee6",
+    "evidence:buyers:8b412bb0a83589f07ffa",
+    "evidence:buyers:913d59378145699fddaf",
+    "evidence:buyers:428dee0b200ab1207ea2",
+    "evidence:buyers:61965b1e9dcccf9bdaf5",
+    "evidence:buyers:6214b16a067cd465af58",
+    "evidence:buyers:e84b9c62ffa331628c35",
+    "evidence:buyers:5f132926281730c747cd",
+    "evidence:buyers:244cf59616d28b5ae447",
+    "evidence:buyers:b945fc1a79c1ce6383b8"
+   ]
+  },
+  {
+   "id": "signal:buyers:8aedb8832f87447ddeee",
+   "org_id": "org:openalex:I19820366",
+   "type": "paper_90d",
+   "title": "3 on-topic papers in the past 90 days (cached)",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:buyers:8aedb8832f87447ddeee"
+   ]
+  },
+  {
+   "id": "signal:buyers:7991459d8ac013f1d1ef",
+   "org_id": "org:openalex:I19820366",
+   "type": "cites_founder",
+   "title": "At least 22 papers cite sampled founder works (cached)",
+   "date": "2026-10-20",
+   "evidence_ids": [
+    "evidence:buyers:7991459d8ac013f1d1ef",
+    "evidence:buyers:82ebff226f29ca9eae74",
+    "evidence:buyers:55625b861d514f409071",
+    "evidence:buyers:8ce1332ba03eb15f65de",
+    "evidence:buyers:f6dcf5c4932a8122af8b",
+    "evidence:buyers:a382676f6dae7a4d7f5a",
+    "evidence:buyers:47904851e86b960beca8",
+    "evidence:buyers:6767f1a5d64ded6cd113",
+    "evidence:buyers:27d156db62dd7e172675",
+    "evidence:buyers:6fdfec4de5121b8c13c2",
+    "evidence:buyers:47530b08a5ab0b5f375d",
+    "evidence:buyers:e3a6238a16f58df18f5a",
+    "evidence:buyers:8692ce838a8d28234526",
+    "evidence:buyers:c0677b612c4acee56946",
+    "evidence:buyers:61cddff81b940c0bc472",
+    "evidence:buyers:d1da98c322f950f1617d",
+    "evidence:buyers:cd9fd5311f0c07b6eeae",
+    "evidence:buyers:0cbfef42a19e12b1ddcd",
+    "evidence:buyers:9da08c14225c1f8dc19e",
+    "evidence:buyers:9b2386a99f9ea68d05eb",
+    "evidence:buyers:6ec90d4942c28822eefd",
+    "evidence:buyers:cdeaa7839d8d10b993f2"
+   ]
+  },
+  {
+   "id": "signal:buyers:ec0ea09b20ae2c517aa6",
+   "org_id": "org:openalex:I1299303238",
+   "type": "paper_90d",
+   "title": "2 on-topic papers in the past 90 days (cached)",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:buyers:ec0ea09b20ae2c517aa6"
+   ]
+  },
+  {
+   "id": "signal:buyers:99bd1b06f269db2b3a12",
+   "org_id": "org:openalex:I1299303238",
+   "type": "cites_founder",
+   "title": "At least 8 papers cite sampled founder works (cached)",
+   "date": "2025-07-21",
+   "evidence_ids": [
+    "evidence:buyers:99bd1b06f269db2b3a12",
+    "evidence:buyers:2a4b2b643970a9fa9237",
+    "evidence:buyers:10a2745524d98da3569f",
+    "evidence:buyers:5c8a71d7e5aaba019858",
+    "evidence:buyers:9986a6973ed92c0a82af",
+    "evidence:buyers:aa50e5313750d7fe5609",
+    "evidence:buyers:eb09bc15a2bc48df9189",
+    "evidence:buyers:b9ebd96cf30e95819e6f"
+   ]
+  },
+  {
+   "id": "signal:buyers:ea4cf157ffb90075aa61",
+   "org_id": "org:openalex:I1329621470",
+   "type": "cites_founder",
+   "title": "At least 18 papers cite sampled founder works (cached)",
+   "date": "2026-06-05",
+   "evidence_ids": [
+    "evidence:buyers:ea4cf157ffb90075aa61",
+    "evidence:buyers:46c13daa79280390b546",
+    "evidence:buyers:5fe64f77ef0636f7b3e6",
+    "evidence:buyers:17a6b727ac6068992f34",
+    "evidence:buyers:01e281af19590f82fc01",
+    "evidence:buyers:2b3b96e665a7502ca627",
+    "evidence:buyers:e70f4cf3f79a1bf0b666",
+    "evidence:buyers:24d3beb51f88a068db97",
+    "evidence:buyers:311e9d0b1a2573101aa2",
+    "evidence:buyers:af137890ea5577dbff1f",
+    "evidence:buyers:8fdd8397943bd9ca50e8",
+    "evidence:buyers:969b6a2d46d39cacb751",
+    "evidence:buyers:75b0e18dad5a3ff19fe9",
+    "evidence:buyers:532376c7a7f3fbc14efd",
+    "evidence:buyers:727026d846262160687a",
+    "evidence:buyers:06f5146883a2cb0f962d",
+    "evidence:buyers:b49f25ecd502d94670eb",
+    "evidence:buyers:c8375715c16bf1ec3223"
+   ]
+  },
+  {
+   "id": "signal:buyers:cd4531ea88218a7aace3",
+   "org_id": "org:openalex:I1282311441",
+   "type": "cites_founder",
+   "title": "At least 8 papers cite sampled founder works (cached)",
+   "date": "2026-09-27",
+   "evidence_ids": [
+    "evidence:buyers:cd4531ea88218a7aace3",
+    "evidence:buyers:6e6f3c13f59f9d21dd62",
+    "evidence:buyers:484adff3945ddeec3ca9",
+    "evidence:buyers:c239ae2b0c8d03d36f51",
+    "evidence:buyers:3bb5f6bbf9514f0f8fe3",
+    "evidence:buyers:ddeda531a7672245062f",
+    "evidence:buyers:e9e63db9b1c1c4d76b46",
+    "evidence:buyers:5cab5bc810239c5b2869"
+   ]
+  },
+  {
+   "id": "signal:buyers:30cf3d4387633f883682",
+   "org_id": "org:openalex:I4210140884",
+   "type": "paper_90d",
+   "title": "1 on-topic papers in the past 90 days (cached)",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:buyers:30cf3d4387633f883682"
+   ]
+  },
+  {
+   "id": "signal:buyers:2bf8475ff85c5e8c8439",
+   "org_id": "org:openalex:I4210140884",
+   "type": "cites_founder",
+   "title": "At least 4 papers cite sampled founder works (cached)",
+   "date": "2021-12-01",
+   "evidence_ids": [
+    "evidence:buyers:2bf8475ff85c5e8c8439",
+    "evidence:buyers:d7af3fec8c850a815247",
+    "evidence:buyers:a943631ebf7ab95b8e8c",
+    "evidence:buyers:0717418f4c82d22cba98"
+   ]
+  },
+  {
+   "id": "signal:buyers:28685c91fc19d8846cb6",
+   "org_id": "org:openalex:I4210118725",
+   "type": "paper_90d",
+   "title": "3 on-topic papers in the past 90 days (cached)",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:buyers:28685c91fc19d8846cb6"
+   ]
+  },
+  {
+   "id": "signal:buyers:8f18c87419c2af9ede24",
+   "org_id": "org:openalex:I4210118725",
+   "type": "cites_founder",
+   "title": "At least 2 papers cite sampled founder works (cached)",
+   "date": "2025-10-28",
+   "evidence_ids": [
+    "evidence:buyers:8f18c87419c2af9ede24",
+    "evidence:buyers:33f15e0835f11183028c"
+   ]
+  },
+  {
+   "id": "signal:buyers:49ac0bbc9a6e58332054",
+   "org_id": "org:openalex:I4210114217",
+   "type": "paper_90d",
+   "title": "3 on-topic papers in the past 90 days (cached)",
+   "date": "2026-11-24",
+   "evidence_ids": [
+    "evidence:buyers:49ac0bbc9a6e58332054"
+   ]
+  },
+  {
+   "id": "signal:buyers:748289a5db69b08e3958",
+   "org_id": "org:openalex:I4210114217",
+   "type": "cites_founder",
+   "title": "At least 1 papers cite sampled founder works (cached)",
+   "date": "2018-08-25",
+   "evidence_ids": [
+    "evidence:buyers:748289a5db69b08e3958"
+   ]
+  },
+  {
+   "id": "signal:buyers:18d72a95b5a2d7139fef",
+   "org_id": "org:openalex:I2801182042",
+   "type": "topic_paper",
+   "date": "2025-07-21",
+   "title": "3 OpenAlex work(s) on radiation: Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emer",
+   "evidence_ids": [
+    "evidence:buyers:45551d9ddab21671f8cc",
+    "evidence:buyers:c4fe60f717db7fc9fa2a",
+    "evidence:buyers:c003bc2b6a5b7252b63f"
+   ]
+  },
+  {
+   "id": "signal:buyers:2b277623b93bdb514ec2",
+   "org_id": "org:openalex:I4210155143",
+   "type": "topic_paper",
+   "date": "2019-05-07",
+   "title": "3 OpenAlex work(s) on radiation: Liposomal DTPA as a good strategy for enhancing Pu decorporation regardless of treatment r",
+   "evidence_ids": [
+    "evidence:buyers:7ec55d9aecf08d3c9c01",
+    "evidence:buyers:d98b109e4ee25c1591d8",
+    "evidence:buyers:acbdb493d26a44ebe0ee"
+   ]
+  },
+  {
+   "id": "signal:buyers:8602642c4fcf0355ce3d",
+   "org_id": "org:openalex:I183934855",
+   "type": "topic_paper",
+   "date": "2020-09-05",
+   "title": "2 OpenAlex work(s) on pet: Head-to-head comparison of DFO* and DFO chelators: selection of the best candidate for cli",
+   "evidence_ids": [
+    "evidence:buyers:f1d8e445c60b23479a10",
+    "evidence:buyers:1de34d00aa1f9355ae87"
+   ]
+  },
+  {
+   "id": "signal:buyers:4a753ce5b2908ab16c60",
+   "org_id": "org:openalex:I133593841",
+   "type": "topic_paper",
+   "date": "2024-11-12",
+   "title": "2 OpenAlex work(s) on pet: New prospects for 89Zr-immuno-PET in brain applications \u2013 Alpha-synucleinopathies",
+   "evidence_ids": [
+    "evidence:buyers:5d546cfcb35a9955765e",
+    "evidence:buyers:fd5b387cfa7d3b75d921"
+   ]
+  },
+  {
+   "id": "signal:buyers:d2b63ed6998a6a2c148e",
+   "org_id": "org:openalex:I4210147582",
+   "type": "topic_paper",
+   "date": "2017-06-02",
+   "title": "1 OpenAlex work(s) on pet: Evaluation of macrocyclic hydroxyisophthalamide ligands as chelators for zirconium-89",
+   "evidence_ids": [
+    "evidence:buyers:b732f794138ef300fc29"
+   ]
+  },
+  {
+   "id": "signal:buyers:88503079e62d9541c9f9",
+   "org_id": "org:openalex:I120615911",
+   "type": "topic_paper",
+   "date": "2022-06-21",
+   "title": "3 OpenAlex work(s) on gd: Long-term Gadolinium Retention in the Healthy Rat Brain: Comparison between Gadopiclenol, ",
+   "evidence_ids": [
+    "evidence:buyers:9c412e33422f05510e3b",
+    "evidence:buyers:4fdc9cd7b27d6c2d663b",
+    "evidence:buyers:f86e462ac21f681ebea9"
+   ]
+  },
+  {
+   "id": "signal:buyers:48c9b4f6e6ab6c760b5a",
+   "org_id": "org:openalex:I4210132761",
+   "type": "topic_paper",
+   "date": "2017-07-21",
+   "title": "1 OpenAlex work(s) on gd: Differences in gadolinium retention after repeated injections of macrocyclic MR contrast a",
+   "evidence_ids": [
+    "evidence:buyers:1a351874fa78d1b41148"
+   ]
+  },
+  {
+   "id": "signal:buyers:a94aca3247ed46136475",
+   "org_id": "org:openalex:I4210150350",
+   "type": "topic_paper",
+   "date": "2019-01-24",
+   "title": "1 OpenAlex work(s) on gd: Removal of a gadolinium based contrast agent by a novel sorbent hemoperfusion in a chronic",
+   "evidence_ids": [
+    "evidence:buyers:08105fdd3b7e0b4b01d1"
+   ]
+  },
+  {
+   "id": "signal:buyers:710793edac972fee71e8",
+   "org_id": "org:openalex:I1299303238",
+   "type": "topic_paper",
+   "date": "2017-06-14",
+   "title": "2 OpenAlex work(s) on gd: Gadolinium deposition: practical guidelines in the face of uncertainty",
+   "evidence_ids": [
+    "evidence:buyers:33876be0f6044d29f974",
+    "evidence:buyers:42e078fb43c7fac96999"
+   ]
+  },
+  {
+   "id": "signal:buyers:36373f963cf694e80e1e",
+   "org_id": "org:openalex:I4210136340",
+   "type": "topic_paper",
+   "date": "2024-10-01",
+   "title": "1 OpenAlex work(s) on lead: Pediatric Lead Chelation Managed During Critical Medication Shortages: Case Report and Lit",
+   "evidence_ids": [
+    "evidence:buyers:cd6584c431e5f63bbdfa"
+   ]
+  },
+  {
+   "id": "signal:buyers:ea515571207dfe43e985",
+   "org_id": "org:openalex:I1288882113",
+   "type": "topic_paper",
+   "date": "2024-06-01",
+   "title": "1 OpenAlex work(s) on lead: Trends in Shortages of Lead Chelators From 2001 to 2022.",
+   "evidence_ids": [
+    "evidence:buyers:3e348adff49202347ff8"
+   ]
+  },
+  {
+   "id": "signal:buyers:deb68e2e097ea2cf478e",
+   "org_id": "org:openalex:I4210135976",
+   "type": "topic_paper",
+   "date": "2018-07-06",
+   "title": "2 OpenAlex work(s) on lead: Folk prescription for treating rhinitis as a rare cause of childhood lead poisoning: a cas",
+   "evidence_ids": [
+    "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
+    "evidence:buyers:67e7cdff7a6cc46dbeef"
+   ]
+  },
+  {
+   "id": "signal:buyers:ab42a51e63b1d1e0f0e1",
+   "org_id": "org:openalex:I4210104433",
+   "type": "topic_paper",
+   "date": "2016-12-05",
+   "title": "1 OpenAlex work(s) on lead: Modeling the effect of succimer (DMSA; dimercaptosuccinic acid) chelation therapy in patie",
+   "evidence_ids": [
+    "evidence:buyers:c6702633a85101f6b214"
+   ]
+  },
+  {
+   "id": "signal:buyers:f37f25fbc743b6d074cd",
+   "org_id": "org:openalex:I1302368450",
+   "type": "topic_paper",
+   "date": "2024-06-01",
+   "title": "1 OpenAlex work(s) on lead: How Effective Are Secondary Interventions at Improving Health Outcomes in Children Exposed",
+   "evidence_ids": [
+    "evidence:buyers:5c798d9337b6eb395124"
+   ]
+  },
+  {
+   "id": "signal:buyers:2c78db1c12bfdb5e9914",
+   "org_id": "org:openalex:I4210087865",
+   "type": "topic_paper",
+   "date": "2024-10-01",
+   "title": "1 OpenAlex work(s) on lead: Pediatric Lead Chelation Managed During Critical Medication Shortages: Case Report and Lit",
+   "evidence_ids": [
+    "evidence:buyers:eec547e0351f6e620a80"
+   ]
+  },
+  {
+   "id": "signal:buyers:c00475563ea398635da5",
+   "org_id": "org:openalex:I1293448361",
+   "type": "topic_paper",
+   "date": "2025-06-20",
+   "title": "3 OpenAlex work(s) on radiation: Development of Evidence-based Guidelines on Assessment and Management of Internal Contamin",
+   "evidence_ids": [
+    "evidence:buyers:d38f4659d04ed080fbfc",
+    "evidence:buyers:8daffcfa238fe6381fac",
+    "evidence:buyers:2122350e22bb09f73760"
+   ]
+  },
+  {
+   "id": "signal:buyers:a831cb8aa58d3ec7f690",
+   "org_id": "org:openalex:I1289490764",
+   "type": "topic_paper",
+   "date": "2025-07-21",
+   "title": "3 OpenAlex work(s) on radiation: Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emer",
+   "evidence_ids": [
+    "evidence:buyers:6cfdf91808cda4e56ec0",
+    "evidence:buyers:cedb67e41bf018be1006",
+    "evidence:buyers:f66461f7088eb47a7b48"
+   ]
+  },
+  {
+   "id": "signal:buyers:ab799d0d68a5641b1262",
+   "org_id": "org:openalex:I4210088792",
+   "type": "topic_paper",
+   "date": "2024-07-22",
+   "title": "2 OpenAlex work(s) on radiation: Modeling Plutonium Decorporation in a Female Nuclear Worker Treated with Ca-DTPA after Inh",
+   "evidence_ids": [
+    "evidence:buyers:355bad917e84cf0f72d9",
+    "evidence:buyers:53715da0309a65d233f3"
+   ]
+  },
+  {
+   "id": "signal:buyers:8090d0d3b5dad1cc0e85",
+   "org_id": "org:openalex:I186523950",
+   "type": "topic_paper",
+   "date": "2018-07-01",
+   "title": "1 OpenAlex work(s) on pet: Abstract 3033: Immuno-PET detection of LAG-3 expressing intratumoral lymphocytes using the",
+   "evidence_ids": [
+    "evidence:buyers:8a508a337779418dd233"
+   ]
+  },
+  {
+   "id": "signal:buyers:c6b64175b75f54ae4b7f",
+   "org_id": "org:openalex:I4405257904",
+   "type": "topic_paper",
+   "date": "2024-08-16",
+   "title": "2 OpenAlex work(s) on pet: Click Chemistry Enables [89Zr]Zr-DOTA Radioimmunoconjugation for Theranostic 89Zr-immunoPE",
+   "evidence_ids": [
+    "evidence:buyers:50ba59012f770b0ef833",
+    "evidence:buyers:435ff557a4ba74bea1a7"
+   ]
+  },
+  {
+   "id": "signal:buyers:ccc9ae529f45cc96d801",
+   "org_id": "org:openalex:I25763013",
+   "type": "topic_paper",
+   "date": "2024-10-28",
+   "title": "1 OpenAlex work(s) on pet: Highlighting New Research Trends on Zirconium-89 Radiopharmaceuticals Beyond Antibodies",
+   "evidence_ids": [
+    "evidence:buyers:a88584eb3807b35e71b1"
+   ]
+  },
+  {
+   "id": "signal:buyers:1a3d210a45d478544aff",
+   "org_id": "org:openalex:I30558944",
+   "type": "topic_paper",
+   "date": "2019-11-01",
+   "title": "1 OpenAlex work(s) on gd: Analysis of retention of gadolinium by brain, bone, and blood following linear gadolinium\u2010",
+   "evidence_ids": [
+    "evidence:buyers:9a59d27ca2f19b9734f6"
+   ]
+  },
+  {
+   "id": "signal:buyers:1c084ee7d7eced1c219c",
+   "org_id": "org:openalex:I17937529",
+   "type": "topic_paper",
+   "date": "2019-07-01",
+   "title": "3 OpenAlex work(s) on gd: Gadolinium Deposition in the Brain in a Large Animal Model: Comparison of Linear and Macro",
+   "evidence_ids": [
+    "evidence:buyers:ce3597f73dcbd0bc2831",
+    "evidence:buyers:ec6b5f80a9a4c21e3092",
+    "evidence:buyers:3143dd5272e31feefb56"
+   ]
+  },
+  {
+   "id": "signal:buyers:601b271545387f9574cc",
+   "org_id": "org:openalex:I4210150312",
+   "type": "topic_paper",
+   "date": "2017-12-21",
+   "title": "1 OpenAlex work(s) on lead: Lead toxicity in a new-born due to in utero exposure",
+   "evidence_ids": [
+    "evidence:buyers:1499e2e854e32c98a617"
+   ]
+  },
+  {
+   "id": "signal:buyers:706ea5f24d61f9b2dccd",
+   "org_id": "org:openalex:I1335289525",
+   "type": "topic_paper",
+   "date": "2020-09-01",
+   "title": "1 OpenAlex work(s) on lead: Low-level lead exposure impairs fronto-executive functions: A call to update the DSM\u20135 wit",
+   "evidence_ids": [
+    "evidence:buyers:016635964b94ea12a644"
+   ]
+  },
+  {
+   "id": "signal:buyers:cb5b1dbe64900fada09b",
+   "org_id": "org:openalex:I4210110933",
+   "type": "topic_paper",
+   "date": "2020-05-06",
+   "title": "1 OpenAlex work(s) on lead: Lead poisoning; a neglected potential diagnosis in abdominal pain",
+   "evidence_ids": [
+    "evidence:buyers:71bdfa8e89f9d51da6b2"
+   ]
+  },
+  {
+   "id": "signal:buyers:53bcddba6af45171436c",
+   "org_id": "org:openalex:I4210106432",
+   "type": "topic_paper",
+   "date": "2016-01-01",
+   "title": "1 OpenAlex work(s) on lead: Lead poisoning in children: a case report",
+   "evidence_ids": [
+    "evidence:buyers:58be9a6233d8b0c702c1"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "id": "evidence:buyers:01d1f31928d33f5a2522",
+   "source_url": "https://openalex.org/W2169340555",
+   "quote": "Decorporation Approach Following Rat Lung Contamination with a Moderately Soluble Compound of Plutonium Using Local and Systemic Ca-DTPA Combined Chelation",
+   "source_date": "2012-09-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:01e281af19590f82fc01",
+   "source_url": "https://openalex.org/W4406485821",
+   "quote": "Tuning the lanthanide binding tags for preferential actinide chelation: an all atom molecular dynamics study",
+   "source_date": "2025-02-06",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0233113714bcc60960c0",
+   "source_url": "https://openalex.org/W4408406599",
+   "quote": "The Advancement of Targeted Alpha Therapy and the Role of Click Chemistry Therein",
+   "source_date": "2025-03-13",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:03706f2addd91a21cec8",
+   "source_url": "https://openalex.org/W7223780679",
+   "quote": "Design Strategy of T 1-Weighted MRI Contrast Agents for High Relaxivity Based on a Self-Folding Macromolecular Architecture",
+   "source_date": "2026-10-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:05765ea9f4b4a1af93e4",
+   "source_url": "https://openalex.org/W4411217863",
+   "quote": "Pharmacokinetics, Excretion, and Organ Distribution of the Novel Gadolinium-Based MRI Contrast Agent Gadoquatrane in Female Cynomolgus Monkeys",
+   "source_date": "2025-06-11",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0623d52ad18a574896d2",
+   "source_url": "https://openalex.org/W2516908424",
+   "quote": "Spectroscopic, electrochemical, and structural aspects of the Ce(IV)/Ce(III) DOTA redox couple chemistry in aqueous solutions",
+   "source_date": "2016-08-29",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:06f5146883a2cb0f962d",
+   "source_url": "https://openalex.org/W2896671541",
+   "quote": "The coordination chemistry of lanthanide and actinide metal ions with hydroxypyridinone-based decorporation agents: orbital and density based analyses",
+   "source_date": "2018-11-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0717418f4c82d22cba98",
+   "source_url": "https://openalex.org/W2070305029",
+   "quote": "Characterization, HPLC method development and impurity identification for 3,4,3-LI(1,2-HOPO), a potent actinide chelator for radionuclide decorporation",
+   "source_date": "2014-10-22",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0ab0701704682397ce71",
+   "source_url": "https://openalex.org/W7202287214",
+   "quote": "Biomimetic Design in a Flexible Macrocyclic Chelator Enables Efficient Uranium Decorporation from Bones",
+   "source_date": "2026-10-09",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0cbfef42a19e12b1ddcd",
+   "source_url": "https://openalex.org/W2990907698",
+   "quote": "Complexation of trivalent lanthanides and actinides with diethylenetriaminepentaacetic acid: Theoretical unraveling of bond covalency",
+   "source_date": "2019-11-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0db633fb00d0eae40a4f",
+   "source_url": "https://openalex.org/W4283774835",
+   "quote": "Environmental Chemistry of Radionuclides : Open Questions and Perspectives",
+   "source_date": "2022-07-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0e536a54448e3ba727e3",
+   "source_url": "https://openalex.org/W2899214672",
+   "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy",
+   "source_date": "2018-10-29",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:10a2745524d98da3569f",
+   "source_url": "https://openalex.org/W4392168760",
+   "quote": "Product Development within the National Institutes of Health Radiation and Nuclear Countermeasures Program",
+   "source_date": "2024-02-26",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:119bf50e893167fbb754",
+   "source_url": "https://openalex.org/W7128490792",
+   "quote": "Uranium Chelation by Pyrazine-2-amidoxime: Speciation, Decorporation, and Computational Studies",
+   "source_date": "2026-02-10",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:140ba885076793ccba7d",
+   "source_url": "https://openalex.org/W2747123756",
+   "quote": "Structural and thermodynamic investigation of An IV LI(O)HOPO",
+   "source_date": "2017-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:17a6b727ac6068992f34",
+   "source_url": "https://openalex.org/W4413091613",
+   "quote": "Highly efficient separation of Np(IV) with three Benzene-centered tripodal diglycolamides: solvent extraction and supported liquid membrane transport studies",
+   "source_date": "2025-07-18",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:18602840492b4380c1a0",
+   "source_url": "https://openalex.org/W2989862385",
+   "quote": "Recent advances in uranyl binding in proteins thanks to biomimetic peptides",
+   "source_date": "2019-11-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:1cf3093b86c334fc4d32",
+   "source_url": "https://openalex.org/W4401022920",
+   "quote": "A new in vitro uranium sequestration assay to analyze the effectiveness of 3,4,3-LI(1,2-HOPO) in reducing the harmful effects of this actinide on bone cells",
+   "source_date": "2024-07-26",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:244cf59616d28b5ae447",
+   "source_url": "https://openalex.org/W2954519978",
+   "quote": "A 3,2-Hydroxypyridinone-based Decorporation Agent that Removes Uranium from Bones In Vivo",
+   "source_date": "2019-06-25",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:24d3beb51f88a068db97",
+   "source_url": "https://openalex.org/W4281693294",
+   "quote": "Liquid\u2013Liquid Extraction and Supported Liquid Membrane Transport of Neptunium(IV) Across a Flat-Sheet Supported Liquid Membrane Containing a TREN-DGA Derivative",
+   "source_date": "2022-05-29",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:265a8032a25c60fe9fea",
+   "source_url": "https://openalex.org/W3177493668",
+   "quote": "Overview of the Most Promising Radionuclides for Targeted Alpha Therapy: The \u201cHopeful Eight\u201d",
+   "source_date": "2021-06-18",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:27d156db62dd7e172675",
+   "source_url": "https://openalex.org/W4292360924",
+   "quote": "The Speciation of Americium Cations in Neat Water Implicated from DFT Studies",
+   "source_date": "2022-08-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:28685c91fc19d8846cb6",
+   "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1294671590%7CI4210118525%7CI4210132761%7CI120615911%7CI67348948%7CI2738703131%7CI154526488%7CI1330165540%7CI4210134458%7CI4210145258%7CI205582932%7CI4405271368%7CI4405270142%7CI19820366%7CI17937529%7CI1299303238%7CI4391768003%7CI1329621470%7CI4210145798%7CI4391767962%7CI71824836%7CI4210128116%7CI4210096046%7CI4210162381%7CI4210118429%7CI4210136779%7CI4210109533%7CI4210155712%7CI223893228%7CI134421475%7CI1285933455%7CI4210115639%7CI4210147247%7CI1282311441%7CI4210112925%7CI4210140884%7CI1321296531%7CI1313323035%7CI4210131217%7CI4210149999%7CI142395110%7CI4210127055%7CI4405256652%7CI4210139777%7CI24768866%7CI142207940%7CI4210149717%7CI4210112162%7CI4210138704%7CI4210130096%7CI4210115082%7CI2801345734%7CI4210140493%7CI4210154143%7CI4210128293%7CI2802561039%7CI4405272746%7CI4387152734%7CI4392021095%7CI84279003%7CI2801843802%7CI4210133140%7CI4210159433%7CI4210151753%7CI4210157108%7CI4391012563%7CI4210146419%7CI4210159312%7CI4210137074%7CI4405286826%7CI4210156028%7CI4210088122%7CI4210164724%7CI4210148771%7CI4391767761%7CI4210141319%7CI4210164255%7CI160013858%7CI4210134310%7CI30771326%7CI4210088603%7CI4210110734%7CI4210118725%7CI4405259047%7CI4210161065%7CI4210162872%7CI4210166168%7CI4387153642%7CI4210128557%7CI4210108652%7CI4210144782%7CI4210106489%7CI4210110767%7CI4210164369%7CI4210114217%7CI4210086647%7CI4210122849%7CI4405274953%7CI99542240%7CI4210109975%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24&page=1&search.title_and_abstract=%22HOPO%22+OR+%22hydroxypyridinone%22+OR+%22hydroxypyridonate%22+OR+%22gadolinium+deposition%22+OR+%22gadolinium+retention%22+OR+%22gadolinium+chelation%22+OR+%22MRI+contrast+agent%22+OR+%22MRI+contrast+agents%22+OR+%22gadolinium+based+contrast+agents%22+OR+%22zirconium+89%22+OR+%2289Zr+PET%22+OR+%22radiopharmaceutical+chelation%22+OR+%22metal+chelation%22+OR+%22actinide+chelator%22+OR+%22actinide+chelation%22+OR+%22actinide+decorporation%22+OR+%22radiological+countermeasures%22+OR+%22radionuclide+decorporation%22+OR+%22uranium+decorporation%22+OR+%22plutonium+decorporation%22&group_by=institutions.id&per-page=200",
+   "quote": "key: https://openalex.org/I4210118725; count: 3",
+   "source_date": "2026-11-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:2a2f7ac55d381288dd53",
+   "source_url": "https://openalex.org/W4234307991",
+   "quote": "Structural Snapshots of Cluster Growth from {U6} to {U38} During the Hydrolysis of UCl4",
+   "source_date": "2019-01-21",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:2a4b2b643970a9fa9237",
+   "source_url": "https://openalex.org/W4412512821",
+   "quote": "Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emergency",
+   "source_date": "2025-07-21",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:2b3b96e665a7502ca627",
+   "source_url": "https://openalex.org/W4397003175",
+   "quote": "Decorporation of Radionuclides",
+   "source_date": "2024-05-18",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:2bf8475ff85c5e8c8439",
+   "source_url": "https://openalex.org/W3160048097",
+   "quote": "In Vitro and In Vivo Comparison of 3,2-HOPO Versus Deferoxamine-Based Chelation of Zirconium-89 to the Antimesothelin Antibody Anetumab",
+   "source_date": "2021-05-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:2d005e97a177200c381c",
+   "source_url": "https://openalex.org/W4292360924",
+   "quote": "The Speciation of Americium Cations in Neat Water Implicated from DFT Studies",
+   "source_date": "2022-08-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:2d94a3884ddaf3ddb742",
+   "source_url": "https://openalex.org/W4364356873",
+   "quote": "Chelation therapy with 3,4,3-Li(1,2-HOPO) after pulmonary exposure to plutonium in rats",
+   "source_date": "2023-04-11",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:30cf3d4387633f883682",
+   "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1294671590%7CI4210118525%7CI4210132761%7CI120615911%7CI67348948%7CI2738703131%7CI154526488%7CI1330165540%7CI4210134458%7CI4210145258%7CI205582932%7CI4405271368%7CI4405270142%7CI19820366%7CI17937529%7CI1299303238%7CI4391768003%7CI1329621470%7CI4210145798%7CI4391767962%7CI71824836%7CI4210128116%7CI4210096046%7CI4210162381%7CI4210118429%7CI4210136779%7CI4210109533%7CI4210155712%7CI223893228%7CI134421475%7CI1285933455%7CI4210115639%7CI4210147247%7CI1282311441%7CI4210112925%7CI4210140884%7CI1321296531%7CI1313323035%7CI4210131217%7CI4210149999%7CI142395110%7CI4210127055%7CI4405256652%7CI4210139777%7CI24768866%7CI142207940%7CI4210149717%7CI4210112162%7CI4210138704%7CI4210130096%7CI4210115082%7CI2801345734%7CI4210140493%7CI4210154143%7CI4210128293%7CI2802561039%7CI4405272746%7CI4387152734%7CI4392021095%7CI84279003%7CI2801843802%7CI4210133140%7CI4210159433%7CI4210151753%7CI4210157108%7CI4391012563%7CI4210146419%7CI4210159312%7CI4210137074%7CI4405286826%7CI4210156028%7CI4210088122%7CI4210164724%7CI4210148771%7CI4391767761%7CI4210141319%7CI4210164255%7CI160013858%7CI4210134310%7CI30771326%7CI4210088603%7CI4210110734%7CI4210118725%7CI4405259047%7CI4210161065%7CI4210162872%7CI4210166168%7CI4387153642%7CI4210128557%7CI4210108652%7CI4210144782%7CI4210106489%7CI4210110767%7CI4210164369%7CI4210114217%7CI4210086647%7CI4210122849%7CI4405274953%7CI99542240%7CI4210109975%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24&page=1&search.title_and_abstract=%22HOPO%22+OR+%22hydroxypyridinone%22+OR+%22hydroxypyridonate%22+OR+%22gadolinium+deposition%22+OR+%22gadolinium+retention%22+OR+%22gadolinium+chelation%22+OR+%22MRI+contrast+agent%22+OR+%22MRI+contrast+agents%22+OR+%22gadolinium+based+contrast+agents%22+OR+%22zirconium+89%22+OR+%2289Zr+PET%22+OR+%22radiopharmaceutical+chelation%22+OR+%22metal+chelation%22+OR+%22actinide+chelator%22+OR+%22actinide+chelation%22+OR+%22actinide+decorporation%22+OR+%22radiological+countermeasures%22+OR+%22radionuclide+decorporation%22+OR+%22uranium+decorporation%22+OR+%22plutonium+decorporation%22&group_by=institutions.id&per-page=200",
+   "quote": "key: https://openalex.org/I4210140884; count: 1",
+   "source_date": "2026-11-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:311e9d0b1a2573101aa2",
+   "source_url": "https://openalex.org/W3121049770",
+   "quote": "Characterization of Thorium-Pyrazinoic acid complexation and its decorporation efficacy in human cells and blood",
+   "source_date": "2021-01-07",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:31595466fe6f52e64c91",
+   "source_url": "https://openalex.org/W3197911064",
+   "quote": "Treatment of radiological contamination: a review",
+   "source_date": "2021-11-10",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:33f15e0835f11183028c",
+   "source_url": "https://openalex.org/W2593127371",
+   "quote": "Investigation of the complexation of nat Zr( iv ) and 89 Zr( iv ) by hydroxypyridinones for the development of chelators for PET imaging applications",
+   "source_date": "2017-04-05",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:3968028b58e305988ddc",
+   "source_url": "https://openalex.org/W3136699172",
+   "quote": "Current state of partitioning and transmutation studies for advanced nuclear fuel cycles",
+   "source_date": "2021-03-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:3bb5f6bbf9514f0f8fe3",
+   "source_url": "https://openalex.org/W3126474137",
+   "quote": "Probing electronic structure in berkelium and californium via an electron microscopy nanosampling approach",
+   "source_date": "2021-02-11",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:3cd169ff80539957579a",
+   "source_url": "https://openalex.org/W2588953603",
+   "quote": "Electronic structure theory to decipher the chemical bonding in actinide systems",
+   "source_date": "2017-02-13",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:4042ac57ab7fa479591e",
+   "source_url": "https://openalex.org/W4410186446",
+   "quote": "Cell Labeling with Responsive MRI Contrast Agents is Enabled through Solid-Phase Synthesis",
+   "source_date": "2025-05-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:41baf0716777c413fb3e",
+   "source_url": "https://openalex.org/W4401022920",
+   "quote": "A new in vitro uranium sequestration assay to analyze the effectiveness of 3,4,3-LI(1,2-HOPO) in reducing the harmful effects of this actinide on bone cells",
+   "source_date": "2024-07-26",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:428dee0b200ab1207ea2",
+   "source_url": "https://openalex.org/W4285262705",
+   "quote": "Decorporation of uranyl in kidneys using an engineered nanocomposite",
+   "source_date": "2022-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:42a5b9865e127c8e3047",
+   "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1294671590%7CI4210118525%7CI4210132761%7CI120615911%7CI67348948%7CI2738703131%7CI154526488%7CI1330165540%7CI4210134458%7CI4210145258%7CI205582932%7CI4405271368%7CI4405270142%7CI19820366%7CI17937529%7CI1299303238%7CI4391768003%7CI1329621470%7CI4210145798%7CI4391767962%7CI71824836%7CI4210128116%7CI4210096046%7CI4210162381%7CI4210118429%7CI4210136779%7CI4210109533%7CI4210155712%7CI223893228%7CI134421475%7CI1285933455%7CI4210115639%7CI4210147247%7CI1282311441%7CI4210112925%7CI4210140884%7CI1321296531%7CI1313323035%7CI4210131217%7CI4210149999%7CI142395110%7CI4210127055%7CI4405256652%7CI4210139777%7CI24768866%7CI142207940%7CI4210149717%7CI4210112162%7CI4210138704%7CI4210130096%7CI4210115082%7CI2801345734%7CI4210140493%7CI4210154143%7CI4210128293%7CI2802561039%7CI4405272746%7CI4387152734%7CI4392021095%7CI84279003%7CI2801843802%7CI4210133140%7CI4210159433%7CI4210151753%7CI4210157108%7CI4391012563%7CI4210146419%7CI4210159312%7CI4210137074%7CI4405286826%7CI4210156028%7CI4210088122%7CI4210164724%7CI4210148771%7CI4391767761%7CI4210141319%7CI4210164255%7CI160013858%7CI4210134310%7CI30771326%7CI4210088603%7CI4210110734%7CI4210118725%7CI4405259047%7CI4210161065%7CI4210162872%7CI4210166168%7CI4387153642%7CI4210128557%7CI4210108652%7CI4210144782%7CI4210106489%7CI4210110767%7CI4210164369%7CI4210114217%7CI4210086647%7CI4210122849%7CI4405274953%7CI99542240%7CI4210109975%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24&page=1&search.title_and_abstract=%22HOPO%22+OR+%22hydroxypyridinone%22+OR+%22hydroxypyridonate%22+OR+%22gadolinium+deposition%22+OR+%22gadolinium+retention%22+OR+%22gadolinium+chelation%22+OR+%22MRI+contrast+agent%22+OR+%22MRI+contrast+agents%22+OR+%22gadolinium+based+contrast+agents%22+OR+%22zirconium+89%22+OR+%2289Zr+PET%22+OR+%22radiopharmaceutical+chelation%22+OR+%22metal+chelation%22+OR+%22actinide+chelator%22+OR+%22actinide+chelation%22+OR+%22actinide+decorporation%22+OR+%22radiological+countermeasures%22+OR+%22radionuclide+decorporation%22+OR+%22uranium+decorporation%22+OR+%22plutonium+decorporation%22&group_by=institutions.id&per-page=200",
+   "quote": "key: https://openalex.org/I4405271368; count: 1",
+   "source_date": "2026-11-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:42bb8894058d9e1823a9",
+   "source_url": "https://openalex.org/W4415614218",
+   "quote": "Chemical Tools to Characterize the Coordination Chemistry of Radionuclides for Radiopharmaceutical Applications",
+   "source_date": "2025-10-28",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:432aad4e17a4d2cef307",
+   "source_url": "https://openalex.org/W2169340555",
+   "quote": "Decorporation Approach Following Rat Lung Contamination with a Moderately Soluble Compound of Plutonium Using Local and Systemic Ca-DTPA Combined Chelation",
+   "source_date": "2012-09-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:46b86763b5ccd01b0017",
+   "source_url": "https://openalex.org/W3160048097",
+   "quote": "In Vitro and In Vivo Comparison of 3,2-HOPO Versus Deferoxamine-Based Chelation of Zirconium-89 to the Antimesothelin Antibody Anetumab",
+   "source_date": "2021-05-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:46c13daa79280390b546",
+   "source_url": "https://openalex.org/W7128490792",
+   "quote": "Uranium Chelation by Pyrazine-2-amidoxime: Speciation, Decorporation, and Computational Studies",
+   "source_date": "2026-02-10",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:47530b08a5ab0b5f375d",
+   "source_url": "https://openalex.org/W4224246534",
+   "quote": "Theoretical insights into the reduction mechanism of neptunyl nitrate by hydrazine derivatives",
+   "source_date": "2022-04-21",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:47904851e86b960beca8",
+   "source_url": "https://openalex.org/W4307178392",
+   "quote": "Theoretical insights into the separation of Am( iii )/Eu( iii ): designing ligands based on a preorganization strategy",
+   "source_date": "2022-11-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:484adff3945ddeec3ca9",
+   "source_url": "https://openalex.org/W3134788571",
+   "quote": "Efficient discrimination of transplutonium actinides by in vivo models",
+   "source_date": "2021-03-10",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:4919d36555cd5ef3da95",
+   "source_url": "https://openalex.org/W7165735963",
+   "quote": "Micron-sized phosphonate functionalized metal-organic framework as gastrointestinal adsorbent for in vivo uranium detoxification",
+   "source_date": "2026-06-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:49ac0bbc9a6e58332054",
+   "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1294671590%7CI4210118525%7CI4210132761%7CI120615911%7CI67348948%7CI2738703131%7CI154526488%7CI1330165540%7CI4210134458%7CI4210145258%7CI205582932%7CI4405271368%7CI4405270142%7CI19820366%7CI17937529%7CI1299303238%7CI4391768003%7CI1329621470%7CI4210145798%7CI4391767962%7CI71824836%7CI4210128116%7CI4210096046%7CI4210162381%7CI4210118429%7CI4210136779%7CI4210109533%7CI4210155712%7CI223893228%7CI134421475%7CI1285933455%7CI4210115639%7CI4210147247%7CI1282311441%7CI4210112925%7CI4210140884%7CI1321296531%7CI1313323035%7CI4210131217%7CI4210149999%7CI142395110%7CI4210127055%7CI4405256652%7CI4210139777%7CI24768866%7CI142207940%7CI4210149717%7CI4210112162%7CI4210138704%7CI4210130096%7CI4210115082%7CI2801345734%7CI4210140493%7CI4210154143%7CI4210128293%7CI2802561039%7CI4405272746%7CI4387152734%7CI4392021095%7CI84279003%7CI2801843802%7CI4210133140%7CI4210159433%7CI4210151753%7CI4210157108%7CI4391012563%7CI4210146419%7CI4210159312%7CI4210137074%7CI4405286826%7CI4210156028%7CI4210088122%7CI4210164724%7CI4210148771%7CI4391767761%7CI4210141319%7CI4210164255%7CI160013858%7CI4210134310%7CI30771326%7CI4210088603%7CI4210110734%7CI4210118725%7CI4405259047%7CI4210161065%7CI4210162872%7CI4210166168%7CI4387153642%7CI4210128557%7CI4210108652%7CI4210144782%7CI4210106489%7CI4210110767%7CI4210164369%7CI4210114217%7CI4210086647%7CI4210122849%7CI4405274953%7CI99542240%7CI4210109975%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24&page=1&search.title_and_abstract=%22HOPO%22+OR+%22hydroxypyridinone%22+OR+%22hydroxypyridonate%22+OR+%22gadolinium+deposition%22+OR+%22gadolinium+retention%22+OR+%22gadolinium+chelation%22+OR+%22MRI+contrast+agent%22+OR+%22MRI+contrast+agents%22+OR+%22gadolinium+based+contrast+agents%22+OR+%22zirconium+89%22+OR+%2289Zr+PET%22+OR+%22radiopharmaceutical+chelation%22+OR+%22metal+chelation%22+OR+%22actinide+chelator%22+OR+%22actinide+chelation%22+OR+%22actinide+decorporation%22+OR+%22radiological+countermeasures%22+OR+%22radionuclide+decorporation%22+OR+%22uranium+decorporation%22+OR+%22plutonium+decorporation%22&group_by=institutions.id&per-page=200",
+   "quote": "key: https://openalex.org/I4210114217; count: 3",
+   "source_date": "2026-11-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:4a882504222c722b15f5",
+   "source_url": "https://openalex.org/W2980577188",
+   "quote": "Synergistic Effect of a HER2 Targeted Thorium-227 Conjugate in Combination with Olaparib in a BRCA2 Deficient Xenograft Model",
+   "source_date": "2019-10-15",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:4b1128601942f5181c02",
+   "source_url": "https://openalex.org/W2398057206",
+   "quote": "Preorganized Peptide Scaffolds as Mimics of Phosphorylated Proteins Binding Sites with a High Affinity for Uranyl",
+   "source_date": "2015-11-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5091c9926e716181a721",
+   "source_url": "https://openalex.org/W2989862385",
+   "quote": "Recent advances in uranyl binding in proteins thanks to biomimetic peptides",
+   "source_date": "2019-11-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:51dccdc5905c6246ade4",
+   "source_url": "https://openalex.org/W1590734507",
+   "quote": "Rational Design of Copper and Iron Chelators to Treat Wilson's Disease and Hemochromatosis",
+   "source_date": "2014-05-02",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:532376c7a7f3fbc14efd",
+   "source_url": "https://openalex.org/W2963099377",
+   "quote": "Enhancing Actinide(III) over Lanthanide(III) Selectivity through Hard-by-Soft Donor Substitution: Exploitation and Implication of Near-Degeneracy-Driven Covalency",
+   "source_date": "2019-07-25",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:55625b861d514f409071",
+   "source_url": "https://openalex.org/W4407615233",
+   "quote": "Geochemical characteristics and source analysis of rare earth elements in Qinghai Lake sediments",
+   "source_date": "2025-02-17",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:558f98af4fa29e0f8c75",
+   "source_url": "https://openalex.org/W2907878497",
+   "quote": "Structural Snapshots of Cluster Growth from {U6} to {U38} During the Hydrolysis of UCl4",
+   "source_date": "2019-01-21",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:57f65d944e0024d7e34c",
+   "source_url": "https://openalex.org/W1986786784",
+   "quote": "In Vitro Metabolism and Stability of the Actinide Chelating Agent 3,4,3-LI(1,2-HOPO)",
+   "source_date": "2015-02-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:590a67e5d490b4321a5e",
+   "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1294671590%7CI4210118525%7CI4210132761%7CI120615911%7CI67348948%7CI2738703131%7CI154526488%7CI1330165540%7CI4210134458%7CI4210145258%7CI205582932%7CI4405271368%7CI4405270142%7CI19820366%7CI17937529%7CI1299303238%7CI4391768003%7CI1329621470%7CI4210145798%7CI4391767962%7CI71824836%7CI4210128116%7CI4210096046%7CI4210162381%7CI4210118429%7CI4210136779%7CI4210109533%7CI4210155712%7CI223893228%7CI134421475%7CI1285933455%7CI4210115639%7CI4210147247%7CI1282311441%7CI4210112925%7CI4210140884%7CI1321296531%7CI1313323035%7CI4210131217%7CI4210149999%7CI142395110%7CI4210127055%7CI4405256652%7CI4210139777%7CI24768866%7CI142207940%7CI4210149717%7CI4210112162%7CI4210138704%7CI4210130096%7CI4210115082%7CI2801345734%7CI4210140493%7CI4210154143%7CI4210128293%7CI2802561039%7CI4405272746%7CI4387152734%7CI4392021095%7CI84279003%7CI2801843802%7CI4210133140%7CI4210159433%7CI4210151753%7CI4210157108%7CI4391012563%7CI4210146419%7CI4210159312%7CI4210137074%7CI4405286826%7CI4210156028%7CI4210088122%7CI4210164724%7CI4210148771%7CI4391767761%7CI4210141319%7CI4210164255%7CI160013858%7CI4210134310%7CI30771326%7CI4210088603%7CI4210110734%7CI4210118725%7CI4405259047%7CI4210161065%7CI4210162872%7CI4210166168%7CI4387153642%7CI4210128557%7CI4210108652%7CI4210144782%7CI4210106489%7CI4210110767%7CI4210164369%7CI4210114217%7CI4210086647%7CI4210122849%7CI4405274953%7CI99542240%7CI4210109975%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24&page=1&search.title_and_abstract=%22HOPO%22+OR+%22hydroxypyridinone%22+OR+%22hydroxypyridonate%22+OR+%22gadolinium+deposition%22+OR+%22gadolinium+retention%22+OR+%22gadolinium+chelation%22+OR+%22MRI+contrast+agent%22+OR+%22MRI+contrast+agents%22+OR+%22gadolinium+based+contrast+agents%22+OR+%22zirconium+89%22+OR+%2289Zr+PET%22+OR+%22radiopharmaceutical+chelation%22+OR+%22metal+chelation%22+OR+%22actinide+chelator%22+OR+%22actinide+chelation%22+OR+%22actinide+decorporation%22+OR+%22radiological+countermeasures%22+OR+%22radionuclide+decorporation%22+OR+%22uranium+decorporation%22+OR+%22plutonium+decorporation%22&group_by=institutions.id&per-page=200",
+   "quote": "key: https://openalex.org/I1294671590; count: 4",
+   "source_date": "2026-11-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5a96af790145878b5564",
+   "source_url": "https://openalex.org/W2907878497",
+   "quote": "Structural Snapshots of Cluster Growth from {U6} to {U38} During the Hydrolysis of UCl4",
+   "source_date": "2019-01-21",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5c8a71d7e5aaba019858",
+   "source_url": "https://openalex.org/W4392060314",
+   "quote": "Radiation and Chemical Program Research for Multi-Utility and Repurposed Countermeasures: A US Department of Health and Human Services Agencies Perspective",
+   "source_date": "2024-02-22",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5cab5bc810239c5b2869",
+   "source_url": "https://openalex.org/W3025030829",
+   "quote": "Developing scandium and yttrium coordination chemistry to advance theranostic radiopharmaceuticals",
+   "source_date": "2020-05-15",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5f132926281730c747cd",
+   "source_url": "https://openalex.org/W4254773241",
+   "quote": "In Vivo Uranium Sequestration using a Nanoscale Metal\u2013Organic Framework",
+   "source_date": "2020-11-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5f260336a10e08a9575f",
+   "source_url": "https://openalex.org/W4384925033",
+   "quote": "Lesson Learned from a Case of Radioactive Contamination",
+   "source_date": "2023-07-20",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5f3fa3eae10b0fa4d5f1",
+   "source_url": "https://openalex.org/W7212034261",
+   "quote": "Bioavailability Characterization of Actinides Recovered From Filter Swipes to Predict Lung Biodistribution Following Accidental Intake",
+   "source_date": "2026-09-09",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5fe64f77ef0636f7b3e6",
+   "source_url": "https://openalex.org/W7125263183",
+   "quote": "Interactions of actinides with biomolecules in body fluids",
+   "source_date": "2026-01-21",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:61965b1e9dcccf9bdaf5",
+   "source_url": "https://openalex.org/W3161923824",
+   "quote": "Melanin nanoparticles as an actinide in vivo sequestration agent with radiation protection effect",
+   "source_date": "2021-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:61cddff81b940c0bc472",
+   "source_url": "https://openalex.org/W3181706407",
+   "quote": "Theoretical Insights into the Reduction Mechanism of Np(VI) with Phenylhydrazine",
+   "source_date": "2021-07-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6214b16a067cd465af58",
+   "source_url": "https://openalex.org/W3107219406",
+   "quote": "Study of the decorporation efficacy and toxicity of tetradentate 3-hydroxy-2-pyridinone ligands at the cellular level",
+   "source_date": "2020-11-30",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:64930f096f6fb6ec3716",
+   "source_url": "https://openalex.org/W2747123756",
+   "quote": "Structural and thermodynamic investigation of An IV LI(O)HOPO",
+   "source_date": "2017-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6595ce9049113e2f89b2",
+   "source_url": "https://openalex.org/W2579143206",
+   "quote": "A Combined Spectroscopic/Molecular Dynamic Study for Investigating a Methyl-Carboxylated PEI as a Potential Uranium Decorporation Agent",
+   "source_date": "2017-01-17",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6767f1a5d64ded6cd113",
+   "source_url": "https://openalex.org/W4293156325",
+   "quote": "PDGF-B conjugating mesoporous IO/GdO nanocomposites for accurate diagnosis of orthotopic prostatic cancer through T1-T2 dual-modal MRI contrast enhancement",
+   "source_date": "2022-08-26",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:677c1013e80d95e4a462",
+   "source_url": "https://openalex.org/W1986786784",
+   "quote": "In Vitro Metabolism and Stability of the Actinide Chelating Agent 3,4,3-LI(1,2-HOPO)",
+   "source_date": "2015-02-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:69711c488e3e1f965f0e",
+   "source_url": "https://openalex.org/W2996077865",
+   "quote": "Preclinical Efficacy of a PSMA-Targeted Thorium-227 Conjugate (PSMA-TTC), a Targeted Alpha Therapy for Prostate Cancer",
+   "source_date": "2020-04-15",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6bf34c3eeb298f01dab3",
+   "source_url": "https://openalex.org/W2593127371",
+   "quote": "Investigation of the complexation of nat Zr( iv ) and 89 Zr( iv ) by hydroxypyridinones for the development of chelators for PET imaging applications",
+   "source_date": "2017-04-05",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6cb71eded7dd53156ff6",
+   "source_url": "https://openalex.org/W4295759373",
+   "quote": "DOTP versus DOTA as Ligands for Lanthanide Cations: Novel Structurally Characterized CeIV and CeIII Cyclen\u2010Based Complexes and Clusters in Aqueous Solutions",
+   "source_date": "2022-10-06",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6d6540ccb1f8c41a0005",
+   "source_url": "https://openalex.org/W2921520187",
+   "quote": "Synergistic Effect of a Mesothelin-Targeted 227Th Conjugate in Combination with DNA Damage Response Inhibitors in Ovarian Cancer Xenograft Models",
+   "source_date": "2019-03-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6d72863809de9f372b6e",
+   "source_url": "https://openalex.org/W4388077686",
+   "quote": "Developing and downscaling a method by HILIC coupled simultaneously to ESIMS and ICPMS to determine the affinity of lanthanide chelating molecules using specific isotope dilution",
+   "source_date": "2023-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6e114ee32dcadbaeafac",
+   "source_url": "https://openalex.org/W2015995340",
+   "quote": "Using the Antenna Effect as a Spectroscopic Tool: Photophysics and Solution Thermodynamics of the Model Luminescent Hydroxypyridonate Complex [EuIII(3,4,3-LI(1,2-HOPO))]\u2212",
+   "source_date": "2009-11-10",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6e6f3c13f59f9d21dd62",
+   "source_url": "https://openalex.org/W3184579895",
+   "quote": "The coordination properties and ionic radius of actinium: A 120-year-old enigma",
+   "source_date": "2021-07-23",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6ec90d4942c28822eefd",
+   "source_url": "https://openalex.org/W2807129643",
+   "quote": "Structural and thermodynamic stability of uranyl\u2013deferiprone complexes and the removal efficacy of U( vi ) at the cellular level",
+   "source_date": "2018-07-03",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6fdfec4de5121b8c13c2",
+   "source_url": "https://openalex.org/W4292332195",
+   "quote": "Foreword to the special virtual issue on Actinide physics and chemistry with synchrotron radiation",
+   "source_date": "2022-08-10",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:7165944738807d545b55",
+   "source_url": "https://openalex.org/W2074142492",
+   "quote": "Experimental and computational exploration of the UV-visible properties of hexaniobate and hexatantalate ions",
+   "source_date": "2015-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:722b9f301e625c1fbc89",
+   "source_url": "https://openalex.org/W3111674325",
+   "quote": "Hydroxypyridinone-based stabilization of Np(IV) enabling efficient U/Np/Pu separations in the Adapted PUREX process",
+   "source_date": "2020-12-07",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:727026d846262160687a",
+   "source_url": "https://openalex.org/W2918510034",
+   "quote": "Uncovering Heavy Actinide Covalency: Implications for Minor Actinide Partitioning",
+   "source_date": "2019-03-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:748289a5db69b08e3958",
+   "source_url": "https://openalex.org/W2888351353",
+   "quote": "AN ACCIDENT OF INTERNAL CONTAMINATION WITH PLUTONIUM AND AMERICIUM AT A NUCLEAR FACILITY IN JAPAN: A PRELIMINARY REPORT AND THE POSSIBILITY OF DTPA ADMINISTRATION ADDING TO THE DIAGNOSIS",
+   "source_date": "2018-08-25",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:75b0e18dad5a3ff19fe9",
+   "source_url": "https://openalex.org/W2975511760",
+   "quote": "Lanthanide and actinide doped B 12 H 12 2\u2212 and Al 12 H 12 2\u2212 clusters: new magnetic superatoms with f-block elements",
+   "source_date": "2019-11-14",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:75d7df2c395fadcfad2b",
+   "source_url": "https://openalex.org/W4405650628",
+   "quote": "Alpha Atlas: Mapping global production of \u03b1-emitting radionuclides for targeted alpha therapy",
+   "source_date": "2024-12-20",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:77d7b0b5a5a656c21591",
+   "source_url": "https://openalex.org/W4292061756",
+   "quote": "Effective mitigation of gadolinium deposition using the bidentate hydroxypyridinone ligand Me-3,2-HOPO",
+   "source_date": "2022-08-30",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:7943c1641fe42c0f2a70",
+   "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1294671590%7CI4210118525%7CI4210132761%7CI120615911%7CI67348948%7CI2738703131%7CI154526488%7CI1330165540%7CI4210134458%7CI4210145258%7CI205582932%7CI4405271368%7CI4405270142%7CI19820366%7CI17937529%7CI1299303238%7CI4391768003%7CI1329621470%7CI4210145798%7CI4391767962%7CI71824836%7CI4210128116%7CI4210096046%7CI4210162381%7CI4210118429%7CI4210136779%7CI4210109533%7CI4210155712%7CI223893228%7CI134421475%7CI1285933455%7CI4210115639%7CI4210147247%7CI1282311441%7CI4210112925%7CI4210140884%7CI1321296531%7CI1313323035%7CI4210131217%7CI4210149999%7CI142395110%7CI4210127055%7CI4405256652%7CI4210139777%7CI24768866%7CI142207940%7CI4210149717%7CI4210112162%7CI4210138704%7CI4210130096%7CI4210115082%7CI2801345734%7CI4210140493%7CI4210154143%7CI4210128293%7CI2802561039%7CI4405272746%7CI4387152734%7CI4392021095%7CI84279003%7CI2801843802%7CI4210133140%7CI4210159433%7CI4210151753%7CI4210157108%7CI4391012563%7CI4210146419%7CI4210159312%7CI4210137074%7CI4405286826%7CI4210156028%7CI4210088122%7CI4210164724%7CI4210148771%7CI4391767761%7CI4210141319%7CI4210164255%7CI160013858%7CI4210134310%7CI30771326%7CI4210088603%7CI4210110734%7CI4210118725%7CI4405259047%7CI4210161065%7CI4210162872%7CI4210166168%7CI4387153642%7CI4210128557%7CI4210108652%7CI4210144782%7CI4210106489%7CI4210110767%7CI4210164369%7CI4210114217%7CI4210086647%7CI4210122849%7CI4405274953%7CI99542240%7CI4210109975%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24&page=1&search.title_and_abstract=%22HOPO%22+OR+%22hydroxypyridinone%22+OR+%22hydroxypyridonate%22+OR+%22gadolinium+deposition%22+OR+%22gadolinium+retention%22+OR+%22gadolinium+chelation%22+OR+%22MRI+contrast+agent%22+OR+%22MRI+contrast+agents%22+OR+%22gadolinium+based+contrast+agents%22+OR+%22zirconium+89%22+OR+%2289Zr+PET%22+OR+%22radiopharmaceutical+chelation%22+OR+%22metal+chelation%22+OR+%22actinide+chelator%22+OR+%22actinide+chelation%22+OR+%22actinide+decorporation%22+OR+%22radiological+countermeasures%22+OR+%22radionuclide+decorporation%22+OR+%22uranium+decorporation%22+OR+%22plutonium+decorporation%22&group_by=institutions.id&per-page=200",
+   "quote": "key: https://openalex.org/I154526488; count: 1",
+   "source_date": "2026-11-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:7991459d8ac013f1d1ef",
+   "source_url": "https://openalex.org/W7223025509",
+   "quote": "Tuned 4,7-Methoxy-Derivatized DAPhen Ligands with Enhanced Selectivity for Am/Eu and An/Np Separations",
+   "source_date": "2026-10-20",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:7bea845b8d7290ee3793",
+   "source_url": "https://openalex.org/A5113536746",
+   "quote": "affiliations.institution.display_name: National Institutes of Health",
+   "source_date": "2007",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "affiliation"
+  },
+  {
+   "id": "evidence:buyers:7bf8805fbe892a8349d5",
+   "source_url": "https://openalex.org/W2604665717",
+   "quote": "Enzymatic activity of the CaM-PDE1 system upon addition of actinyl ions",
+   "source_date": "2017-04-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:7eb09c197f98e4998f7d",
+   "source_url": "https://openalex.org/W2947718839",
+   "quote": "Phosphate\u2010Rich Biomimetic Peptides Shed Light on High\u2010Affinity Hyperphosphorylated Uranyl Binding Sites in Phosphoproteins",
+   "source_date": "2019-05-30",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:82ebff226f29ca9eae74",
+   "source_url": "https://openalex.org/W7134181218",
+   "quote": "Cerium\u2010Based Materials for Theranostics: Building a Bridge Across the Divide From Antioxidant Therapy to Diagnostic Signals",
+   "source_date": "2026-03-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:832077c158a882430b18",
+   "source_url": "https://openalex.org/W7201969365",
+   "quote": "Proof of feasibility of photon-counting CT pulmonary angiography using a gadolinium-based contrast agent for pulmonary embolism detection",
+   "source_date": "2026-08-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:863b86284c6cbde39bdb",
+   "source_url": "https://openalex.org/W7168131813",
+   "quote": "Multi-Field Relaxation Dynamics of Parahydrogen-Hyperpolarized Propane Gas MRI Contrast Agent",
+   "source_date": "2026-10-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8692ce838a8d28234526",
+   "source_url": "https://openalex.org/W4214592490",
+   "quote": "Theoretical Probing of Size-Selective Crown Ether Macrocycle Ligands for Transplutonium Element Separation",
+   "source_date": "2022-03-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8788381e57b176629061",
+   "source_url": "https://openalex.org/W4401022920",
+   "quote": "A new in vitro uranium sequestration assay to analyze the effectiveness of 3,4,3-LI(1,2-HOPO) in reducing the harmful effects of this actinide on bone cells",
+   "source_date": "2024-07-26",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8901cf48b6bd7eafd324",
+   "source_url": "https://openalex.org/W2588953603",
+   "quote": "Electronic structure theory to decipher the chemical bonding in actinide systems",
+   "source_date": "2017-02-13",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8984ba90ee6c94e664f3",
+   "source_url": "https://openalex.org/W3040923931",
+   "quote": "Two-Photon Antenna Sensitization of Curium: Evidencing Metal-Driven Effects on Absorption Cross Section in f-Element Complexes",
+   "source_date": "2020-07-07",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8aedb8832f87447ddeee",
+   "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1294671590%7CI4210118525%7CI4210132761%7CI120615911%7CI67348948%7CI2738703131%7CI154526488%7CI1330165540%7CI4210134458%7CI4210145258%7CI205582932%7CI4405271368%7CI4405270142%7CI19820366%7CI17937529%7CI1299303238%7CI4391768003%7CI1329621470%7CI4210145798%7CI4391767962%7CI71824836%7CI4210128116%7CI4210096046%7CI4210162381%7CI4210118429%7CI4210136779%7CI4210109533%7CI4210155712%7CI223893228%7CI134421475%7CI1285933455%7CI4210115639%7CI4210147247%7CI1282311441%7CI4210112925%7CI4210140884%7CI1321296531%7CI1313323035%7CI4210131217%7CI4210149999%7CI142395110%7CI4210127055%7CI4405256652%7CI4210139777%7CI24768866%7CI142207940%7CI4210149717%7CI4210112162%7CI4210138704%7CI4210130096%7CI4210115082%7CI2801345734%7CI4210140493%7CI4210154143%7CI4210128293%7CI2802561039%7CI4405272746%7CI4387152734%7CI4392021095%7CI84279003%7CI2801843802%7CI4210133140%7CI4210159433%7CI4210151753%7CI4210157108%7CI4391012563%7CI4210146419%7CI4210159312%7CI4210137074%7CI4405286826%7CI4210156028%7CI4210088122%7CI4210164724%7CI4210148771%7CI4391767761%7CI4210141319%7CI4210164255%7CI160013858%7CI4210134310%7CI30771326%7CI4210088603%7CI4210110734%7CI4210118725%7CI4405259047%7CI4210161065%7CI4210162872%7CI4210166168%7CI4387153642%7CI4210128557%7CI4210108652%7CI4210144782%7CI4210106489%7CI4210110767%7CI4210164369%7CI4210114217%7CI4210086647%7CI4210122849%7CI4405274953%7CI99542240%7CI4210109975%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24&page=1&search.title_and_abstract=%22HOPO%22+OR+%22hydroxypyridinone%22+OR+%22hydroxypyridonate%22+OR+%22gadolinium+deposition%22+OR+%22gadolinium+retention%22+OR+%22gadolinium+chelation%22+OR+%22MRI+contrast+agent%22+OR+%22MRI+contrast+agents%22+OR+%22gadolinium+based+contrast+agents%22+OR+%22zirconium+89%22+OR+%2289Zr+PET%22+OR+%22radiopharmaceutical+chelation%22+OR+%22metal+chelation%22+OR+%22actinide+chelator%22+OR+%22actinide+chelation%22+OR+%22actinide+decorporation%22+OR+%22radiological+countermeasures%22+OR+%22radionuclide+decorporation%22+OR+%22uranium+decorporation%22+OR+%22plutonium+decorporation%22&group_by=institutions.id&per-page=200",
+   "quote": "key: https://openalex.org/I19820366; count: 3",
+   "source_date": "2026-11-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8b412bb0a83589f07ffa",
+   "source_url": "https://openalex.org/W4220983838",
+   "quote": "ssDNA functionalized nanodiamonds for uranium decorporation",
+   "source_date": "2022-03-16",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8ce1332ba03eb15f65de",
+   "source_url": "https://openalex.org/W4322492753",
+   "quote": "Chelation Behaviors of 3,4,3-LI(1,2-HOPO) with Lanthanides and Actinides Implicated by Molecular Dynamics Simulations",
+   "source_date": "2023-02-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8f18c87419c2af9ede24",
+   "source_url": "https://openalex.org/W4415614218",
+   "quote": "Chemical Tools to Characterize the Coordination Chemistry of Radionuclides for Radiopharmaceutical Applications",
+   "source_date": "2025-10-28",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8fdd8397943bd9ca50e8",
+   "source_url": "https://openalex.org/W3009793877",
+   "quote": "Periodic trends and complexation chemistry of tetravalent actinide ions with a potential actinide decorporation agent 5\u2010LIO(Me\u20103,2\u2010HOPO): A relativistic density functional theory exploration",
+   "source_date": "2020-03-03",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:913d59378145699fddaf",
+   "source_url": "https://openalex.org/W4214627075",
+   "quote": "Hinokitiol, an Advanced Bidentate Ligand for Uranyl Decorporation",
+   "source_date": "2022-02-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:95767d23a042338c141f",
+   "source_url": "https://openalex.org/A5063128206",
+   "quote": "affiliations.institution.display_name: Bayer (Germany)",
+   "source_date": "2023",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "affiliation"
+  },
+  {
+   "id": "evidence:buyers:958e632ea278ca0a030d",
+   "source_url": "https://openalex.org/W1985619357",
+   "quote": "Engineering Short Peptide Sequences for Uranyl Binding",
+   "source_date": "2014-10-16",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:969b6a2d46d39cacb751",
+   "source_url": "https://openalex.org/W3001186499",
+   "quote": "Molecular dynamics simulations of plutonium binding and its decorporation from the binding-cleft of human serum transferrin",
+   "source_date": "2020-01-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:9986a6973ed92c0a82af",
+   "source_url": "https://openalex.org/W3174474291",
+   "quote": "United States medical preparedness for nuclear and radiological emergencies",
+   "source_date": "2021-12-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:99bd1b06f269db2b3a12",
+   "source_url": "https://openalex.org/W3160048097",
+   "quote": "In Vitro and In Vivo Comparison of 3,2-HOPO Versus Deferoxamine-Based Chelation of Zirconium-89 to the Antimesothelin Antibody Anetumab",
+   "source_date": "2021-05-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:99c758f1b3165b9df4c7",
+   "source_url": "https://openalex.org/W4282926049",
+   "quote": "In Vivo Uranium Decorporation by a Tailor-Made Hexadentate Ligand",
+   "source_date": "2022-06-14",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:9b2386a99f9ea68d05eb",
+   "source_url": "https://openalex.org/W2911573692",
+   "quote": "3-Hydroxy-2-Pyrrolidinone as a Potential Bidentate Ligand for in Vivo Chelation of Uranyl with Low Cytotoxicity and Moderate Decorporation Efficacy: A Solution Thermodynamics, Structural Chemistry, and in Vivo Uranyl Removal Survey",
+   "source_date": "2019-02-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:9da08c14225c1f8dc19e",
+   "source_url": "https://openalex.org/W2960517288",
+   "quote": "Theoretical Insights into the Selective Extraction of Americium(III) over Europium(III) with Dithioamide-Based Ligands",
+   "source_date": "2019-07-09",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:a382676f6dae7a4d7f5a",
+   "source_url": "https://openalex.org/W4309848263",
+   "quote": "Folding Dynamics of 3,4,3-LI(1,2-HOPO) in Its Free and Bound State with U4+ Implicated by MD Simulations",
+   "source_date": "2022-11-23",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:a49353b0ac0388d516a6",
+   "source_url": "https://openalex.org/W2904541369",
+   "quote": "Is hydroxypyridonate 3,4,3-LI(1,2-HOPO) a good competitor of fetuin for uranyl metabolism?",
+   "source_date": "2019-02-20",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:a8ffc062b8a71e4dded4",
+   "source_url": "https://openalex.org/W7201969365",
+   "quote": "Proof of feasibility of photon-counting CT pulmonary angiography using a gadolinium-based contrast agent for pulmonary embolism detection",
+   "source_date": "2026-08-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:a943631ebf7ab95b8e8c",
+   "source_url": "https://openalex.org/W2593127371",
+   "quote": "Investigation of the complexation of nat Zr( iv ) and 89 Zr( iv ) by hydroxypyridinones for the development of chelators for PET imaging applications",
+   "source_date": "2017-04-05",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:aa50e5313750d7fe5609",
+   "source_url": "https://openalex.org/W3186234896",
+   "quote": "Scientific research and product development in the United States to address injuries from a radiation public health emergency",
+   "source_date": "2021-07-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:abb95107f2ee2242fce9",
+   "source_url": "https://openalex.org/W3016314722",
+   "quote": "Research on the Radiotoxicology of Plutonium Using Animals: Consideration of the 3Rs\u2014Replace, Reduce, Refine",
+   "source_date": "2020-04-15",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:af137890ea5577dbff1f",
+   "source_url": "https://openalex.org/W3115622693",
+   "quote": "Solvent extraction systems for mutual separation of Am(III) and Cm(III) from nitric acid solutions. A review of recent state-of-the-art",
+   "source_date": "2020-12-21",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:af63dd21b89cc8a114df",
+   "source_url": "https://openalex.org/W2978443494",
+   "quote": "Carboxylate- and Phosphonate-Modified Polyethylenimine: Toward the Design of Actinide Decorporation Agents",
+   "source_date": "2019-10-02",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:af7029d5baa78fa3c98d",
+   "source_url": "https://openalex.org/W4223907846",
+   "quote": "89Zr-3,2-HOPO-mesothelin antibody PET imaging reflects tumor uptake of mesothelin targeted 227Th-conjugate therapy in mice",
+   "source_date": "2022-04-14",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:afa9e1c022deee9c0daa",
+   "source_url": "https://openalex.org/A5113536746",
+   "quote": "affiliations.institution.display_name: National Cancer Institute",
+   "source_date": "2007",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "affiliation"
+  },
+  {
+   "id": "evidence:buyers:b271aed80cee692227b9",
+   "source_url": "https://openalex.org/W2755791314",
+   "quote": "Polyethyleneimine methylphosphonate: towards the design of a new class of macromolecular actinide chelating agents in the case of human exposition",
+   "source_date": "2017-10-17",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b341f72d9c9e4a5e58c7",
+   "source_url": "https://openalex.org/W4292332195",
+   "quote": "Foreword to the special virtual issue on Actinide physics and chemistry with synchrotron radiation",
+   "source_date": "2022-08-10",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b3af7be1bdb622818d51",
+   "source_url": "https://openalex.org/W2944344108",
+   "quote": "Mesothelin-Targeted Thorium-227 Conjugate (MSLN-TTC): Preclinical Evaluation of a New Targeted Alpha Therapy for Mesothelin-Positive Cancers",
+   "source_date": "2019-08-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b49f25ecd502d94670eb",
+   "source_url": "https://openalex.org/W2901270563",
+   "quote": "Thorium decorporation efficacy of rationally-selected biocompatible compounds with relevance to human application",
+   "source_date": "2018-11-12",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b8ca1d4aff4f1b4be829",
+   "source_url": "https://openalex.org/W4394772176",
+   "quote": "Efficient removal of uranium from the kidneys by a picolinate-based pentadentate chelator",
+   "source_date": "2024-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b945fc1a79c1ce6383b8",
+   "source_url": "https://openalex.org/W2911573692",
+   "quote": "3-Hydroxy-2-Pyrrolidinone as a Potential Bidentate Ligand for in Vivo Chelation of Uranyl with Low Cytotoxicity and Moderate Decorporation Efficacy: A Solution Thermodynamics, Structural Chemistry, and in Vivo Uranyl Removal Survey",
+   "source_date": "2019-02-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b9ebd96cf30e95819e6f",
+   "source_url": "https://openalex.org/W2070305029",
+   "quote": "Characterization, HPLC method development and impurity identification for 3,4,3-LI(1,2-HOPO), a potent actinide chelator for radionuclide decorporation",
+   "source_date": "2014-10-22",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:bb2c824cf05c0fa2adc0",
+   "source_url": "https://openalex.org/W7168131813",
+   "quote": "Multi-Field Relaxation Dynamics of Parahydrogen-Hyperpolarized Propane Gas MRI Contrast Agent",
+   "source_date": "2026-10-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:bbaf8bea339b4a738593",
+   "source_url": "https://openalex.org/W2898102107",
+   "quote": "Impact of Treatment With Chelating Agents Depends on the Stability of Administered GBCAs: A Comparative Study in Rats",
+   "source_date": "2018-10-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:bf0c4a0aea5ae3f220de",
+   "source_url": "https://openalex.org/W3002510978",
+   "quote": "Selective Lanthanide Sensing with Gold Nanoparticles and Hydroxypyridinone Chelators",
+   "source_date": "2020-01-23",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c0677b612c4acee56946",
+   "source_url": "https://openalex.org/W3202488983",
+   "quote": "Theoretical insights into the possible applications of amidoxime-based adsorbents in neptunium and plutonium separation",
+   "source_date": "2021-11-09",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c073a6dca0f800014109",
+   "source_url": "https://openalex.org/W3015002607",
+   "quote": "Advances in Precision Oncology: Targeted Thorium-227 Conjugates As a New Modality in Targeted Alpha Therapy",
+   "source_date": "2020-08-31",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c0fbcf8f8d0150d19420",
+   "source_url": "https://openalex.org/W2978443494",
+   "quote": "Carboxylate- and Phosphonate-Modified Polyethylenimine: Toward the Design of Actinide Decorporation Agents",
+   "source_date": "2019-10-02",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c239ae2b0c8d03d36f51",
+   "source_url": "https://openalex.org/W3139346393",
+   "quote": "Combining the Best of Two Chelating Titans: A Hydroxypyridinone\u2010Decorated Macrocyclic Ligand for Efficient and Concomitant Complexation and Sensitized Luminescence of f\u2010Elements",
+   "source_date": "2021-03-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c2605982cf478de5f8b9",
+   "source_url": "https://openalex.org/A5100374828",
+   "quote": "affiliations.institution.display_name: Chinese Academy of Sciences",
+   "source_date": "2026",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "affiliation"
+  },
+  {
+   "id": "evidence:buyers:c2d2bc0f4b5a0066dee6",
+   "source_url": "https://openalex.org/W4223545313",
+   "quote": "The development of molecular and nano actinide decorporation agents",
+   "source_date": "2022-04-11",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c308ea8d457b8827ffdd",
+   "source_url": "https://openalex.org/W2947718839",
+   "quote": "Phosphate\u2010Rich Biomimetic Peptides Shed Light on High\u2010Affinity Hyperphosphorylated Uranyl Binding Sites in Phosphoproteins",
+   "source_date": "2019-05-30",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c3c523c8e0daf5cf96ab",
+   "source_url": "https://openalex.org/W4322492753",
+   "quote": "Chelation Behaviors of 3,4,3-LI(1,2-HOPO) with Lanthanides and Actinides Implicated by Molecular Dynamics Simulations",
+   "source_date": "2023-02-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c5509addc4946ce89924",
+   "source_url": "https://openalex.org/A5042499206",
+   "quote": "affiliations.institution.display_name: Commissariat \u00e0 l'\u00c9nergie Atomique et aux \u00c9nergies Alternatives",
+   "source_date": "2022",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "affiliation"
+  },
+  {
+   "id": "evidence:buyers:c6d2c56d29dda8f5d575",
+   "source_url": "https://openalex.org/W4313418833",
+   "quote": "Sequential Extraction of 239+240Pu and the Vertical Distribution of 239+240Pu, 137Cs, and Heavy Metals in Chang-Bai Mountains\u2019 Grassland Soil",
+   "source_date": "2022-12-28",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c8375715c16bf1ec3223",
+   "source_url": "https://openalex.org/W2253220460",
+   "quote": "The interaction of human serum albumin with selected lanthanide and actinide ions: Binding affinities, protein unfolding and conformational changes",
+   "source_date": "2016-01-25",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:cac0a51346d535601aa0",
+   "source_url": "https://openalex.org/W4405650628",
+   "quote": "Alpha Atlas: Mapping global production of \u03b1-emitting radionuclides for targeted alpha therapy",
+   "source_date": "2024-12-20",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:cd4531ea88218a7aace3",
+   "source_url": "https://openalex.org/W7214620956",
+   "quote": "\u03c48: an Angle-Based Geometry Index for 8-Coordinate Complexes",
+   "source_date": "2026-09-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:cd9fd5311f0c07b6eeae",
+   "source_url": "https://openalex.org/W3047626854",
+   "quote": "Theoretical Prediction of the Potential Applications of Phenanthroline Derivatives in Separation of Transplutonium Elements",
+   "source_date": "2020-08-06",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:cdeaa7839d8d10b993f2",
+   "source_url": "https://openalex.org/W2589127304",
+   "quote": "Inorganic Synthesis of Actinides",
+   "source_date": "2017-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:cf06f0cc7dbdec601456",
+   "source_url": "https://openalex.org/W1997159028",
+   "quote": "A 4-tert-butylcalix[4]arene tetrahydroxamate podand based on the 1-oxypiperidine-2-one (1,2-PIPO \u2212 ) chelate. Self-assembly into a supramolecular ionophore driven by coordination of tetravalent zirconium or hafnium( iv )",
+   "source_date": "2014-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d0627c1de6119cba304a",
+   "source_url": "https://openalex.org/W2015995340",
+   "quote": "Using the Antenna Effect as a Spectroscopic Tool: Photophysics and Solution Thermodynamics of the Model Luminescent Hydroxypyridonate Complex [EuIII(3,4,3-LI(1,2-HOPO))]\u2212",
+   "source_date": "2009-11-10",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d1da98c322f950f1617d",
+   "source_url": "https://openalex.org/W3179093758",
+   "quote": "Theoretical Insights into Transplutonium Element Separation with Electronically Modulated Phenanthroline-Derived Bis-Triazine Ligands",
+   "source_date": "2021-07-07",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d32a86e67dafed93ca98",
+   "source_url": "https://openalex.org/W4234307991",
+   "quote": "Structural Snapshots of Cluster Growth from {U6} to {U38} During the Hydrolysis of UCl4",
+   "source_date": "2019-01-21",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d7af3fec8c850a815247",
+   "source_url": "https://openalex.org/W3174474291",
+   "quote": "United States medical preparedness for nuclear and radiological emergencies",
+   "source_date": "2021-12-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d85bff09cd2060b2529b",
+   "source_url": "https://openalex.org/W2604665717",
+   "quote": "Enzymatic activity of the CaM-PDE1 system upon addition of actinyl ions",
+   "source_date": "2017-04-08",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:dbca522d17551134a5c6",
+   "source_url": "https://openalex.org/W4390263715",
+   "quote": "Macrocyclic Ligand Coordinating Amide-Arm Hydrolysis Reaction Activation in Aqueous Solutions: Tetravalent Uranium Does It Better",
+   "source_date": "2023-12-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:ddeda531a7672245062f",
+   "source_url": "https://openalex.org/W3121770407",
+   "quote": "Spectrophotometric methods to probe the solution chemistry of lanthanide complexes with macromolecules",
+   "source_date": "2021-01-01",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:df2cd8051462860504ea",
+   "source_url": "https://openalex.org/W2296051002",
+   "quote": "Intramolecular sensitization of americium luminescence in solution: shining light on short-lived forbidden 5f transitions",
+   "source_date": "2016-06-14",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e104317b3f0de740fe3c",
+   "source_url": "https://openalex.org/W4323846328",
+   "quote": "An Electrolyte-Gated Graphene Field-Effect Transistor for Detection of Gadolinium(III) in Aqueous Media",
+   "source_date": "2023-03-09",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e3a6238a16f58df18f5a",
+   "source_url": "https://openalex.org/W4220983838",
+   "quote": "ssDNA functionalized nanodiamonds for uranium decorporation",
+   "source_date": "2022-03-16",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e629a99a2a1445cc98e3",
+   "source_url": "https://openalex.org/W7133209279",
+   "quote": "Back to Basics: Lanthanide and Heavy Actinide Chelation at High pH by Niobium Polyoxometalates",
+   "source_date": "2026-03-02",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e70f4cf3f79a1bf0b666",
+   "source_url": "https://openalex.org/W4396958679",
+   "quote": "Highlight selection of radiochemistry and radiopharmacy developments by editorial board",
+   "source_date": "2024-05-16",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e7d0c18644ac557edd0b",
+   "source_url": "https://openalex.org/W2579143206",
+   "quote": "A Combined Spectroscopic/Molecular Dynamic Study for Investigating a Methyl-Carboxylated PEI as a Potential Uranium Decorporation Agent",
+   "source_date": "2017-01-17",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e84b9c62ffa331628c35",
+   "source_url": "https://openalex.org/W3092338059",
+   "quote": "In Vivo Uranium Sequestration using a Nanoscale Metal\u2013Organic Framework",
+   "source_date": "2020-11-19",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e9e63db9b1c1c4d76b46",
+   "source_url": "https://openalex.org/W3115721827",
+   "quote": "Controlling the Reduction of Chelated Uranyl to Stable Tetravalent Uranium Coordination Complexes in Aqueous Solution",
+   "source_date": "2020-12-28",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:ea0e611dd6dcb401a0ca",
+   "source_url": "https://openalex.org/W2914908269",
+   "quote": "New paradigms in nuclear human decorporation using macromolecular systems",
+   "source_date": "2018-01-11",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:ea4cf157ffb90075aa61",
+   "source_url": "https://openalex.org/W7163685646",
+   "quote": "Process intensification in spent nuclear fuel reprocessing: A critical review of global technologies",
+   "source_date": "2026-06-05",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:eb09bc15a2bc48df9189",
+   "source_url": "https://openalex.org/W2593127371",
+   "quote": "Investigation of the complexation of nat Zr( iv ) and 89 Zr( iv ) by hydroxypyridinones for the development of chelators for PET imaging applications",
+   "source_date": "2017-04-05",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:ec0ea09b20ae2c517aa6",
+   "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1294671590%7CI4210118525%7CI4210132761%7CI120615911%7CI67348948%7CI2738703131%7CI154526488%7CI1330165540%7CI4210134458%7CI4210145258%7CI205582932%7CI4405271368%7CI4405270142%7CI19820366%7CI17937529%7CI1299303238%7CI4391768003%7CI1329621470%7CI4210145798%7CI4391767962%7CI71824836%7CI4210128116%7CI4210096046%7CI4210162381%7CI4210118429%7CI4210136779%7CI4210109533%7CI4210155712%7CI223893228%7CI134421475%7CI1285933455%7CI4210115639%7CI4210147247%7CI1282311441%7CI4210112925%7CI4210140884%7CI1321296531%7CI1313323035%7CI4210131217%7CI4210149999%7CI142395110%7CI4210127055%7CI4405256652%7CI4210139777%7CI24768866%7CI142207940%7CI4210149717%7CI4210112162%7CI4210138704%7CI4210130096%7CI4210115082%7CI2801345734%7CI4210140493%7CI4210154143%7CI4210128293%7CI2802561039%7CI4405272746%7CI4387152734%7CI4392021095%7CI84279003%7CI2801843802%7CI4210133140%7CI4210159433%7CI4210151753%7CI4210157108%7CI4391012563%7CI4210146419%7CI4210159312%7CI4210137074%7CI4405286826%7CI4210156028%7CI4210088122%7CI4210164724%7CI4210148771%7CI4391767761%7CI4210141319%7CI4210164255%7CI160013858%7CI4210134310%7CI30771326%7CI4210088603%7CI4210110734%7CI4210118725%7CI4405259047%7CI4210161065%7CI4210162872%7CI4210166168%7CI4387153642%7CI4210128557%7CI4210108652%7CI4210144782%7CI4210106489%7CI4210110767%7CI4210164369%7CI4210114217%7CI4210086647%7CI4210122849%7CI4405274953%7CI99542240%7CI4210109975%2Cfrom_publication_date%3A2026-08-26%2Cto_publication_date%3A2026-11-24&page=1&search.title_and_abstract=%22HOPO%22+OR+%22hydroxypyridinone%22+OR+%22hydroxypyridonate%22+OR+%22gadolinium+deposition%22+OR+%22gadolinium+retention%22+OR+%22gadolinium+chelation%22+OR+%22MRI+contrast+agent%22+OR+%22MRI+contrast+agents%22+OR+%22gadolinium+based+contrast+agents%22+OR+%22zirconium+89%22+OR+%2289Zr+PET%22+OR+%22radiopharmaceutical+chelation%22+OR+%22metal+chelation%22+OR+%22actinide+chelator%22+OR+%22actinide+chelation%22+OR+%22actinide+decorporation%22+OR+%22radiological+countermeasures%22+OR+%22radionuclide+decorporation%22+OR+%22uranium+decorporation%22+OR+%22plutonium+decorporation%22&group_by=institutions.id&per-page=200",
+   "quote": "key: https://openalex.org/I1299303238; count: 2",
+   "source_date": "2026-11-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:ed3112a8f95e335128dd",
+   "source_url": "https://openalex.org/A5037193921",
+   "quote": "affiliations.institution.display_name: Lawrence Livermore National Laboratory",
+   "source_date": "2026",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "affiliation"
+  },
+  {
+   "id": "evidence:buyers:ef56a1df1084ccff000a",
+   "source_url": "https://openalex.org/W2955542525",
+   "quote": "Preclinical Combination Studies of an FGFR2 Targeted Thorium-227 Conjugate and the ATR Inhibitor BAY 1895344",
+   "source_date": "2019-06-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:efb01f4fab65dfaae2d3",
+   "source_url": "https://openalex.org/A5049491643",
+   "quote": "affiliations.institution.display_name: Inserm",
+   "source_date": "2008",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "affiliation"
+  },
+  {
+   "id": "evidence:buyers:efe4992678cca269609d",
+   "source_url": "https://openalex.org/W4382792533",
+   "quote": "Efficacy of a HER2-Targeted Thorium-227 Conjugate in a HER2-Positive Breast Cancer Bone Metastasis Model",
+   "source_date": "2023-06-29",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f05fd53b86cc0803b0bc",
+   "source_url": "https://openalex.org/W7221419666",
+   "quote": "RECOVERY OF GADOLINIUM FROM RESIDUAL GADOLINIUM-BASED CONTRAST AGENTS",
+   "source_date": "2026-10-06",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f1142b6f4f552f776f05",
+   "source_url": "https://openalex.org/W4282024663",
+   "quote": "Improving in vivo Uranyl Removal Efficacy of a Nano\u2010Metal Organic Framework by Interior Functionalization with 3\u2010Hydroxy \u20102\u2010pyridinone",
+   "source_date": "2022-06-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f130d38bd69fe9407143",
+   "source_url": "https://openalex.org/W1590734507",
+   "quote": "Rational Design of Copper and Iron Chelators to Treat Wilson's Disease and Hemochromatosis",
+   "source_date": "2014-05-02",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f1db0fb9dcb68254f1c2",
+   "source_url": "https://openalex.org/W4324147290",
+   "quote": "Tackling Issues Observed during the Development of a Liquid Chromatography Method for Small Molecule Quantification in Antibody-Chelator Conjugate",
+   "source_date": "2023-03-14",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f5d3bfa21abbadc13e45",
+   "source_url": "https://openalex.org/W2904541369",
+   "quote": "Is hydroxypyridonate 3,4,3-LI(1,2-HOPO) a good competitor of fetuin for uranyl metabolism?",
+   "source_date": "2019-02-20",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f6dcf5c4932a8122af8b",
+   "source_url": "https://openalex.org/W4318066784",
+   "quote": "Experimental and theoretical studies on the extraction behavior of Cf( iii ) by NTAamide(C8) ligand and the separation of Cf( iii )/Cm( iii )",
+   "source_date": "2023-01-24",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f80327d96a76aeabf550",
+   "source_url": "https://openalex.org/W767146398",
+   "quote": "Novel drug delivery systems for actinides (uranium and plutonium) decontamination agents",
+   "source_date": "2015-07-04",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:fab035898da30e5d2dd4",
+   "source_url": "https://openalex.org/W2593127371",
+   "quote": "Investigation of the complexation of nat Zr( iv ) and 89 Zr( iv ) by hydroxypyridinones for the development of chelators for PET imaging applications",
+   "source_date": "2017-04-05",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:fb7be9f481eea2793d47",
+   "source_url": "https://openalex.org/W3177493668",
+   "quote": "Overview of the Most Promising Radionuclides for Targeted Alpha Therapy: The \u201cHopeful Eight\u201d",
+   "source_date": "2021-06-18",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:fe0d739e9703a0edf127",
+   "source_url": "https://openalex.org/W7223780679",
+   "quote": "Design Strategy of T 1-Weighted MRI Contrast Agents for High Relaxivity Based on a Self-Folding Macromolecular Architecture",
+   "source_date": "2026-10-27",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:feae6c8c9b806e56b85d",
+   "source_url": "https://openalex.org/W2101984559",
+   "quote": "BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE DECORPORATION AGENTS 3,4,3-LI(1,2-HOPO) AND 5-LIO(ME-3,2-HOPO)",
+   "source_date": "2010-08-11",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:fff88ed2058f0e7927d9",
+   "source_url": "https://openalex.org/A5049491643",
+   "quote": "affiliations.institution.display_name: Centre National de la Recherche Scientifique",
+   "source_date": "2026",
+   "observed_at": "2026-11-24T21:29:27.923909+00:00",
+   "kind": "affiliation"
+  },
+  {
+   "id": "evidence:buyers:45551d9ddab21671f8cc",
+   "source_url": "https://openalex.org/W4412512821",
+   "quote": "Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emergency",
+   "source_date": "2025-07-21",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c003bc2b6a5b7252b63f",
+   "source_url": "https://openalex.org/W3174474291",
+   "quote": "United States medical preparedness for nuclear and radiological emergencies",
+   "source_date": "2021-12-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:eea947041dfb7b990067",
+   "source_url": "https://openalex.org/W2517248789",
+   "quote": "UNITED STATES DEPARTMENT OF HEALTH AND HUMAN SERVICES BIODOSIMETRY AND RADIOLOGICAL/NUCLEAR MEDICAL COUNTERMEASURE PROGRAMS",
+   "source_date": "2016-09-01",
+   "observed_at": "2026-11-24T21:40:25.892383+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:7ec55d9aecf08d3c9c01",
+   "source_url": "https://openalex.org/W2943992914",
+   "quote": "Liposomal DTPA as a good strategy for enhancing Pu decorporation regardless of treatment regimen.",
+   "source_date": "2019-05-07",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d98b109e4ee25c1591d8",
+   "source_url": "https://openalex.org/W2944253097",
+   "quote": "Bringing up to date the French database of nuclear workers contaminated with plutonium and/or americium and treated with Ca-DTPA",
+   "source_date": "2019-05-07",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:acbdb493d26a44ebe0ee",
+   "source_url": "https://openalex.org/W2922978426",
+   "quote": "A quick and simple in vitro assay to predict bioavailability of actinides following accidental exposure",
+   "source_date": "2019-03-21",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f1d8e445c60b23479a10",
+   "source_url": "https://openalex.org/W3083221182",
+   "quote": "Head-to-head comparison of DFO* and DFO chelators: selection of the best candidate for clinical 89Zr-immuno-PET",
+   "source_date": "2020-09-05",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:1de34d00aa1f9355ae87",
+   "source_url": "https://openalex.org/W2975257318",
+   "quote": "Total-Body PET and Highly Stable Chelators Together Enable Meaningful 89Zr-Antibody PET Studies up to 30 Days After Injection",
+   "source_date": "2019-09-27",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5d546cfcb35a9955765e",
+   "source_url": "https://openalex.org/W4404290089",
+   "quote": "New prospects for 89Zr-immuno-PET in brain applications \u2013 Alpha-synucleinopathies",
+   "source_date": "2024-11-12",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:fd5b387cfa7d3b75d921",
+   "source_url": "https://openalex.org/W4307228102",
+   "quote": "Advancing 89 Zr-immuno-PET in neuroscience with a bispecific anti-amyloid-beta monoclonal antibody - The choice of chelator is essential",
+   "source_date": "2022-01-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b732f794138ef300fc29",
+   "source_url": "https://openalex.org/W2620846126",
+   "quote": "Evaluation of macrocyclic hydroxyisophthalamide ligands as chelators for zirconium-89",
+   "source_date": "2017-06-02",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:9c412e33422f05510e3b",
+   "source_url": "https://openalex.org/W4283259974",
+   "quote": "Long-term Gadolinium Retention in the Healthy Rat Brain: Comparison between Gadopiclenol, Gadobutrol, and Gadodiamide",
+   "source_date": "2022-06-21",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:4fdc9cd7b27d6c2d663b",
+   "source_url": "https://openalex.org/W2998893802",
+   "quote": "Long-Term Evaluation of Gadolinium Retention in Rat Brain After Single Injection of a Clinically Relevant Dose of Gadolinium-Based Contrast Agents",
+   "source_date": "2020-01-09",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f86e462ac21f681ebea9",
+   "source_url": "https://openalex.org/W2172582143",
+   "quote": "Linear Gadolinium-Based Contrast Agents Are Associated With Brain Gadolinium Retention in Healthy Rats",
+   "source_date": "2015-11-25",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:1a351874fa78d1b41148",
+   "source_url": "https://openalex.org/W2737069440",
+   "quote": "Differences in gadolinium retention after repeated injections of macrocyclic MR contrast agents to rats",
+   "source_date": "2017-07-21",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:08105fdd3b7e0b4b01d1",
+   "source_url": "https://openalex.org/W2912465232",
+   "quote": "Removal of a gadolinium based contrast agent by a novel sorbent hemoperfusion in a chronic kidney disease (CKD) rodent model",
+   "source_date": "2019-01-24",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:33876be0f6044d29f974",
+   "source_url": "https://openalex.org/W2626690406",
+   "quote": "Gadolinium deposition: practical guidelines in the face of uncertainty",
+   "source_date": "2017-06-14",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:42e078fb43c7fac96999",
+   "source_url": "https://openalex.org/W2251858503",
+   "quote": "National Institutes of Health Perspective on Reports of Gadolinium Deposition in the Brain",
+   "source_date": "2016-01-23",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:cd6584c431e5f63bbdfa",
+   "source_url": "https://openalex.org/W4403400510",
+   "quote": "Pediatric Lead Chelation Managed During Critical Medication Shortages: Case Report and Literature Review",
+   "source_date": "2024-10-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:3e348adff49202347ff8",
+   "source_url": "https://openalex.org/W4399597413",
+   "quote": "Trends in Shortages of Lead Chelators From 2001 to 2022.",
+   "source_date": "2024-06-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
+   "source_url": "https://openalex.org/W2847097624",
+   "quote": "Folk prescription for treating rhinitis as a rare cause of childhood lead poisoning: a case series",
+   "source_date": "2018-07-06",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:67e7cdff7a6cc46dbeef",
+   "source_url": "https://openalex.org/W2592420943",
+   "quote": "Case 2: A Neonate Affected by Maternal Pica",
+   "source_date": "2017-03-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c6702633a85101f6b214",
+   "source_url": "https://openalex.org/W2560467450",
+   "quote": "Modeling the effect of succimer (DMSA; dimercaptosuccinic acid) chelation therapy in patients poisoned by lead",
+   "source_date": "2016-12-05",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5c798d9337b6eb395124",
+   "source_url": "https://openalex.org/W4401382272",
+   "quote": "How Effective Are Secondary Interventions at Improving Health Outcomes in Children Exposed to Lead in Early Childhood?",
+   "source_date": "2024-06-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:eec547e0351f6e620a80",
+   "source_url": "https://openalex.org/W4403400510",
+   "quote": "Pediatric Lead Chelation Managed During Critical Medication Shortages: Case Report and Literature Review",
+   "source_date": "2024-10-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c4fe60f717db7fc9fa2a",
+   "source_url": "https://openalex.org/W4392060314",
+   "quote": "Radiation and Chemical Program Research for Multi-Utility and Repurposed Countermeasures: A US Department of Health and Human Services Agencies Perspective",
+   "source_date": "2024-02-22",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d38f4659d04ed080fbfc",
+   "source_url": "https://openalex.org/W4411501063",
+   "quote": "Development of Evidence-based Guidelines on Assessment and Management of Internal Contamination with Transuranic Actinides",
+   "source_date": "2025-06-20",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8daffcfa238fe6381fac",
+   "source_url": "https://openalex.org/W4388534882",
+   "quote": "Nanotechnologies and controlled release formulations for the administration of bisphosphonates and their potential in radiation protection",
+   "source_date": "2023-11-09",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:2122350e22bb09f73760",
+   "source_url": "https://openalex.org/W4387599837",
+   "quote": "Modelling DTPA therapy following Am contamination in rats",
+   "source_date": "2023-10-13",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6cfdf91808cda4e56ec0",
+   "source_url": "https://openalex.org/W4412512821",
+   "quote": "Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emergency",
+   "source_date": "2025-07-21",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:cedb67e41bf018be1006",
+   "source_url": "https://openalex.org/W4411501063",
+   "quote": "Development of Evidence-based Guidelines on Assessment and Management of Internal Contamination with Transuranic Actinides",
+   "source_date": "2025-06-20",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:f66461f7088eb47a7b48",
+   "source_url": "https://openalex.org/W4221091001",
+   "quote": "Public health response and medical management of internal contamination in past radiological or nuclear incidents: A narrative review",
+   "source_date": "2022-03-30",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:355bad917e84cf0f72d9",
+   "source_url": "https://openalex.org/W4400883289",
+   "quote": "Modeling Plutonium Decorporation in a Female Nuclear Worker Treated with Ca-DTPA after Inhalation Intake",
+   "source_date": "2024-07-22",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:53715da0309a65d233f3",
+   "source_url": "https://openalex.org/W4221091001",
+   "quote": "Public health response and medical management of internal contamination in past radiological or nuclear incidents: A narrative review",
+   "source_date": "2022-03-30",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8a508a337779418dd233",
+   "source_url": "https://openalex.org/W2886946821",
+   "quote": "Abstract 3033: Immuno-PET detection of LAG-3 expressing intratumoral lymphocytes using the zirconium-89 radiolabeled fully human anti-LAG-3 antibody REGN3767",
+   "source_date": "2018-07-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:50ba59012f770b0ef833",
+   "source_url": "https://openalex.org/W4401630642",
+   "quote": "Click Chemistry Enables [89Zr]Zr-DOTA Radioimmunoconjugation for Theranostic 89Zr-immunoPET",
+   "source_date": "2024-08-16",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:435ff557a4ba74bea1a7",
+   "source_url": "https://openalex.org/W3193558140",
+   "quote": "Re-Evaluations of Zr-DFO Complex Coordination Chemistry for the Estimation of Radiochemical Yields and Chelator-to-Antibody Ratios of 89Zr Immune-PET Tracers",
+   "source_date": "2021-08-17",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:a88584eb3807b35e71b1",
+   "source_url": "https://openalex.org/W4403814764",
+   "quote": "Highlighting New Research Trends on Zirconium-89 Radiopharmaceuticals Beyond Antibodies",
+   "source_date": "2024-10-28",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:9a59d27ca2f19b9734f6",
+   "source_url": "https://openalex.org/W2985146109",
+   "quote": "Analysis of retention of gadolinium by brain, bone, and blood following linear gadolinium\u2010based contrast agent administration in rats with experimental sepsis",
+   "source_date": "2019-11-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:ce3597f73dcbd0bc2831",
+   "source_url": "https://openalex.org/W2955410492",
+   "quote": "Gadolinium Deposition in the Brain in a Large Animal Model: Comparison of Linear and Macrocyclic Gadolinium-Based Contrast Agents",
+   "source_date": "2019-07-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:ec6b5f80a9a4c21e3092",
+   "source_url": "https://openalex.org/W2768496180",
+   "quote": "Chelated or dechelated gadolinium deposition",
+   "source_date": "2017-11-15",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:3143dd5272e31feefb56",
+   "source_url": "https://openalex.org/W2400913366",
+   "quote": "High-Signal Intensity in the Dentate Nucleus and Globus Pallidus on Unenhanced T1-Weighted Images: Evaluation of the Macrocyclic Gadolinium-Based Contrast Agent Gadobutrol",
+   "source_date": "2015-10-31",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:1499e2e854e32c98a617",
+   "source_url": "https://openalex.org/W2778093500",
+   "quote": "Lead toxicity in a new-born due to in utero exposure",
+   "source_date": "2017-12-21",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:016635964b94ea12a644",
+   "source_url": "https://openalex.org/W3036913692",
+   "quote": "Low-level lead exposure impairs fronto-executive functions: A call to update the DSM\u20135 with lead poisoning as a neurodevelopmental disorder.",
+   "source_date": "2020-09-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:71bdfa8e89f9d51da6b2",
+   "source_url": "https://openalex.org/W3022031221",
+   "quote": "Lead poisoning; a neglected potential diagnosis in abdominal pain",
+   "source_date": "2020-05-06",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:58be9a6233d8b0c702c1",
+   "source_url": "https://openalex.org/W2509184816",
+   "quote": "Lead poisoning in children: a case report",
+   "source_date": "2016-01-01",
+   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "kind": "paper"
+  }
+ ]
+}
