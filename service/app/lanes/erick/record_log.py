@@ -17,7 +17,7 @@ OUT = OUTDIR / 'demo-hopo.json'
 SESSIONS = ('demo-hopo', 'demo-lightmatter')
 FOUNDER = 'person:openalex:A5043992375'
 HERO = 'person:openalex:A5085203145'
-MAX_PATHS = 12
+MAX_PATHS = 1000  # all paths (BlueLake #128: VO says 50)
 SPAN = 300  # seconds covered by the recording
 START = datetime(2026, 11, 24, 21, 0, 0, tzinfo=UTC)  # fixed so re-runs do not change the file
 
