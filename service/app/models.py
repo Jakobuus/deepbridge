@@ -109,6 +109,22 @@ class Draft(BaseModel):
     content_hash: str
     status: Literal['draft', 'approved', 'rejected', 'stale']
 
+class Profile(BaseModel):
+    kind: Literal['linkedin', 'homepage', 'scholar', 'orcid', 'github', 'other']
+    url: str
+
+class Contact(BaseModel):
+    person_id: Id
+    current_role: str | None
+    current_org: str | None
+    current_asof: Iso | None
+    email: str | None
+    email_status: Literal['verified', 'guessed', 'none']
+    profiles: list[Profile]
+    assessment: str | None
+    source: Literal['moss_task', 'hunter', 'pattern', 'cache']
+    evidence_ids: list[Id]
+
 class Approval(BaseModel):
     draft_id: Id
     content_hash: str
@@ -163,7 +179,15 @@ class Metrics(BaseModel):
     by_actor: list[ActorMetrics]
 
 class IntakeRequest(BaseModel):
-    query: str
+    """Either the sign-up form (IntakeForm fields) or a bare query (name or DOI)."""
+    query: str | None = None
+    name: str | None = None
+    expertise: str | None = None
+    paper_links: list[str] = []
+    startup_url: str | None = None
+    customer_persona: str | None = None
+    interview_transcript: str | None = None
+
 
 class NameCheckRequest(BaseModel):
     edge_id: Id

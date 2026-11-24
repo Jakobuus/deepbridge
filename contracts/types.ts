@@ -14,6 +14,12 @@ export interface Evidence {
   kind: "paper" | "affiliation" | "job_post" | "filing" | "grant" | "web" | "board_page";
 }
 
+/** Sign-up / intake form (Jakob 11:10: name, area of expertise, paper links, startup link, customer persona). */
+export interface IntakeForm {
+  name: string; expertise: string; paper_links: string[]; startup_url: string | null;
+  customer_persona: string; interview_transcript: string | null; // optional voice interview (stretch)
+}
+
 export interface Founder {
   id: Id; name: string; company: string;
   openalex_id: string | null; topics: string[]; summary: string; evidence_ids: Id[];
@@ -84,6 +90,14 @@ export interface Draft {
   status: "draft" | "approved" | "rejected" | "stale"; // stale = edited after approval
 }
 
+/** Verified contact resolution for a bridge or buyer person (Moss Tasks API, then Hunter, then pattern). */
+export interface Contact {
+  person_id: Id; current_role: string | null; current_org: string | null; current_asof: Iso | null;
+  email: string | null; email_status: "verified" | "guessed" | "none";
+  profiles: { kind: "linkedin" | "homepage" | "scholar" | "orcid" | "github" | "other"; url: string }[];
+  assessment: string | null; source: "moss_task" | "hunter" | "pattern" | "cache"; evidence_ids: Id[];
+}
+
 export interface Approval { draft_id: Id; content_hash: string; decision: "approve" | "reject"; by: string; at: Iso; }
 
 export type Stage = "found" | "path_checked" | "draft" | "approved" | "intro_asked" | "intro_made" | "pilot";
@@ -103,7 +117,7 @@ export interface Metrics {
 
 /** HTTP API (FastAPI, base http://localhost:8000). All GETs accept ?founder_id=. */
 export interface Api {
-  "POST /intake": { body: { query: string }; res: Founder };          // name or DOI
+  "POST /intake": { body: IntakeForm | { query: string }; res: Founder }; // form, or a name/DOI for "try any founder"
   "GET /icp": { res: Icp };
   "GET /buyers": { res: { orgs: Org[]; signals: Signal[] } };
   "GET /graph": { res: { people: Person[]; orgs: Org[]; edges: Edge[]; evidence: Evidence[] } };
@@ -118,4 +132,5 @@ export interface Api {
   "GET /credits": { res: Credits };
   "GET /search": { query: { q: string }; res: { people: Person[]; ms: number; engine: "moss" | "cache" } };
   "GET /evidence/{id}": { res: Evidence };
+  "GET /contacts/{person_id}": { res: Contact };                    // shown masked on stage; nothing is sent
 }
