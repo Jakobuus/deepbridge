@@ -96,19 +96,27 @@ def _seed_works(aid):
     return list(works.values())
 
 
-def _works(aid, sort='publication_date:desc', pages=1):
+def _works(aid, sort='publication_date:desc', pages=1, per_page=25):
     works = []
     for page in range(1, pages + 1):
         result = request('works', {'filter': 'author.id:' + aid, 'sort': sort, 'page': page,
-                                  'per-page': 25, 'select': 'id,title,publication_date,authorships,topics,referenced_works'})
+                                  'per-page': per_page, 'select': 'id,title,publication_date,authorships,topics,referenced_works'})
         works.extend(result.get('results', []))
-        if len(result.get('results', [])) < 25:
+        if len(result.get('results', [])) < per_page:
             break
     return works
 
 
+MAX_FOUNDER_WORKS = 500
+
+
+def _all_works(aid):
+    """All of a founder's works, newest first, paged until results run out (cap MAX_FOUNDER_WORKS)."""
+    return _works(aid, pages=-(-MAX_FOUNDER_WORKS // 200), per_page=200)[:MAX_FOUNDER_WORKS]
+
+
 def pull_founder(openalex_author_id, advisor_id=None):
-    """Pull up to 50 recent + 25 cited works, 30 coauthors, and bounded expansion.
+    """Pull all founder works (cap 500), 30 coauthors, and bounded expansion.
 
     advisor_id requires an independently verified advisor.json in the founder cache;
     neither coauthorship nor author order is taken as proof of supervision.
@@ -128,8 +136,7 @@ def pull_founder(openalex_author_id, advisor_id=None):
         budget_blocked = False
         works = _seed_works(aid)
         try:
-            works += _works(aid, pages=2)
-            works += _works(aid, sort='cited_by_count:desc')
+            works += _all_works(aid)
         except OpenAlexUnavailable as exc:
             budget_blocked = True
             warnings.append(str(exc))
@@ -185,7 +192,7 @@ def pull_founder(openalex_author_id, advisor_id=None):
                          'coauthor_works': coauthor_works, 'citing_works': citing_works,
                          'advisor': advisor, 'advisor_works': advisor_works, 'topic_works': [],
                          'observed_at': observed, 'cached': True, 'warnings': warnings,
-                         'limits': {'founder_works': 75, 'coauthor_profiles': 30,
+                         'limits': {'founder_works': MAX_FOUNDER_WORKS, 'coauthor_profiles': 30,
                                     'coauthors_found': len(counts), 'citing_works': 25},
                          'notes': 'Bounded publication sample, not an exhaustive relationship graph. '
                                   'Profile-only affiliations are unchecked and have low confidence.'})

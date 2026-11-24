@@ -41,16 +41,24 @@ def buyer_orgs(founder_id):
 
 
 def match_buyers(buyer_list, graph_orgs):
-    """Map graph org id -> buyer Org. Match by id, then OpenAlex institution id, then normalised name."""
+    """Map graph org id -> buyer Org. Match by id, then OpenAlex institution id, then normalised name.
+    Name matching ignores a trailing '(Country)' so 'Bayer (Norway)' is the buyer 'Bayer (Germany)'; it
+    only applies to company/other orgs, never to universities, labs or government bodies."""
     by_id = {o.id: o for o in graph_orgs}
     by_oa = {o.openalex_id.rsplit('/', 1)[-1]: o.id for o in graph_orgs if o.openalex_id}
-    by_name = {_norm(o.name): o.id for o in graph_orgs if _norm(o.name)}
+    by_name = defaultdict(list)
+    for o in graph_orgs:
+        if o.type not in ('university', 'lab', 'government') and _norm(o.name):
+            by_name[_norm(o.name)].append(o.id)
     matched = {}
     for b in buyer_list:
-        gid = (b.id if b.id in by_id else
-               by_oa.get((b.openalex_id or '').rsplit('/', 1)[-1]) or by_name.get(_norm(b.name)))
-        if gid:
-            matched[gid] = b
+        gids = [b.id] if b.id in by_id else []
+        if oa := by_oa.get((b.openalex_id or '').rsplit('/', 1)[-1]):
+            gids.append(oa)
+        if b.type not in ('university', 'lab', 'government'):
+            gids += by_name.get(_norm(b.name), [])
+        for gid in gids:
+            matched.setdefault(gid, b)
     return matched
 
 
@@ -64,9 +72,6 @@ def path_categories(founder_id):
     except Exception:  # noqa: BLE001 - categories are optional decoration
         return {}
     cat_of = {oid: c.id for c in cats for oid in c.org_ids}
-    orgs = build_graph(founder_id)[1]
-    matched = match_buyers(buyer_orgs(founder_id), orgs)
-    cat_of = {gid: cat_of[b.id] for gid, b in matched.items() if b.id in cat_of}
     return {p.id: cat_of[p.buyer_org_id] for p in find_paths(founder_id) if p.buyer_org_id in cat_of}
 
 
@@ -74,7 +79,7 @@ def find_paths(founder_id, buyer_org_ids=None):
     """Warm paths ending at the founder's buyer orgs, best first by warmth x buyer score (0-100)."""
     _, orgs, edges, _ = build_graph(founder_id)
     fid = 'person:openalex:' + author_id(founder_id)
-    buyer_score = {}
+    buyer_score, buyer_id = {}, {}
     if buyer_org_ids is not None:
         targets = set(buyer_org_ids)
     else:
@@ -83,6 +88,7 @@ def find_paths(founder_id, buyer_org_ids=None):
         except HTTPException:  # no intake research / buyers yet for this founder: old behaviour
             matched = {o.id: o for o in orgs if o.is_buyer}
         targets = set(matched)
+        buyer_id = {gid: b.id for gid, b in matched.items()}
         buyer_score = {gid: b.buyer_score for gid, b in matched.items() if b.buyer_score}
     adjacency = defaultdict(list)
     for edge in edges:
@@ -103,7 +109,7 @@ def find_paths(founder_id, buyer_org_ids=None):
             kind = next((KINDS[k] for k in ('DUAL_AFFILIATION', 'LAB_MATE', 'ADVISOR_LAB')
                          if any(e.type == k for e in hops)), KINDS.get(hops[0].type, 'aligned'))
             results.append(Path(id=stable('path:erick', fid, *(e.id for e in hops)), founder_id=fid,
-                                bridge_id=hops[0].to, buyer_person_id=hops[-1].from_, buyer_org_id=node,
+                                bridge_id=hops[0].to, buyer_person_id=hops[-1].from_, buyer_org_id=buyer_id.get(node, node),
                                 hops=[e.id for e in hops], kind=kind, score=round(score, 2),
                                 weakest_edge_id=hops[weights.index(min(weights))].id, why_now_signal_ids=[]))
             return
