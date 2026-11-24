@@ -113,7 +113,7 @@ def buyer_key(org_id: str, hint: str = '') -> str:
     return ''
 
 
-ASKS = {'radiation': 'the team that works on radiation countermeasures',
+ASKS = {'radiation': 'the radiation countermeasures team',
         'lead': 'a paediatric lead specialist',
         'pet': 'whoever leads chelation chemistry for imaging',
         'gd': 'the team working on contrast-agent safety research',
@@ -131,6 +131,12 @@ def assert_from_hannah(drafts) -> None:
         if re.search(r'(?im)^\s*(?:rebecca|abergel)\b', text) or re.search(r'(?i)\b(?:we|i)\s+co-?authored', text) \
                 or re.search(r'(?i)(?:^|\n)\s*(?:rebecca|abergel|rebecca j\. abergel)\s*$', text):
             raise ValueError('HOPO draft must not be voiced or signed by Rebecca Abergel')
+
+
+def short_org(name: str) -> str:
+    """Common short form: 'Lawrence Livermore National Laboratory' -> 'Lawrence Livermore'."""
+    short = re.sub(r'\s+(?:National Laborator(?:y|ies)|International|Inc\.?|Ltd\.?|LLC|Corporation|Corp\.?|GmbH)$', '', name.strip())
+    return short or name
 
 
 def first_name(full: str) -> str:
@@ -169,32 +175,28 @@ def template_drafts(path: Path, path_edges: list[Edge], edges: list[Edge], evide
     key = buyer_key(path.buyer_org_id, getattr(org, 'category_hint', '') or '')
     target = ASKS[key]
     at_buyer = path.bridge_id == path.buyer_person_id
-    where = f' at {org_name}' if org_name else ''
+    where = f' at {short_org(org_name)}' if org_name else ''
     if at_buyer:
-        ask = f'Would you be open to a short call, or pointing me to {target}{where}?'
+        ask = f'Would you be open to a short call, or to pointing me to {target}{where}?'
     else:
         ask = f'Would you be open to introducing me to {target}{where}?'
-    paper_line = f'You co-authored "{title}" with Rebecca Abergel in {year}.'
+    paper_line = f'You co-authored "{title}" with Rebecca Abergel in {year};'
     pitch = 'we\u2019re turning her Berkeley Lab molecule into a pill that clears radioactive metals and lead.'
     out = 'If it\u2019s not a fit, no worries at all.'
-    notes = [f'Hannah Weber, CEO of HOPO Therapeutics, is developing an oral chelator from Rebecca '
-             f'Abergel\u2019s Berkeley Lab research. She would value a short call with {target}{where}.',
-             f'Hannah Weber, CEO of HOPO Therapeutics, develops an oral chelator from Rebecca '
-             f'Abergel\u2019s Berkeley Lab research. She would value a short call with {target}{where}.']
+    opener = 'I\u2019m Hannah Weber, CEO of HOPO Therapeutics.'
+    note = (f'Hannah Weber of HOPO Therapeutics would value a short call with {target}{where}. HOPO develops an '
+            f'oral chelator from Rebecca Abergel\u2019s Berkeley Lab research.')
     # Fullest wording first; fall back to leaner wording only if a long title blows the word limit.
-    short = f'Hannah Weber of HOPO Therapeutics would value a short call with {target}{where}. HOPO develops an oral ' \
-            f'chelator from Rebecca Abergel\u2019s Berkeley Lab research.'
-    cap = pitch[0].upper() + pitch[1:]
-    variants = [(f'At HOPO Therapeutics {pitch}', out, 'I\u2019ve added a short note below you can forward as is.', notes[0]),
-                (f'At HOPO Therapeutics {pitch}', out, 'I\u2019ve added a note below you can forward.', notes[0]),
-                (cap, out, 'Note below to forward.', notes[0]),
-                (cap, 'No worries if not.', 'Note below to forward.', notes[1]),
-                (cap, 'No worries if not.', '', short),
-                (cap, 'No worries if not.', '', short.replace(' at ' + org_name, ''))]
+    variants = [(opener, out, 'I\u2019ve put a short note below in case you\u2019d like to forward it.', ask),
+                (opener, out, 'Short note below to forward.', ask),
+                (opener, 'No worries if not.', 'Short note below to forward.', ask),
+                (opener, 'No worries if not.', '', ask),
+                ('I\u2019m Hannah Weber of HOPO Therapeutics.', 'No worries if not.', '', ask),
+                ('I\u2019m Hannah Weber of HOPO Therapeutics.', 'No worries if not.', '', ask.replace(where, ''))]
     base = f'draft:{path.id.removeprefix("path:")}'
     result = None
-    for pitch_line, out, fwd, note in variants:
-        intro = (f'Hi {first},\n\n{paper_line} {pitch_line} {ask} {out}' + (' ' + fwd if fwd else '') + '\n\n'
+    for opener, out, fwd, ask in variants:
+        intro = (f'Hi {first},\n\n{opener} {paper_line} {pitch} {ask} {out}' + (' ' + fwd if fwd else '') + '\n\n'
                  f'Hannah\n\n{BLURB}\n{note}')
         items = [('intro_request', path.bridge_id, 'A warm intro ask via your paper with Rebecca Abergel', intro),
                  ('forwardable_note', path.buyer_person_id or path.bridge_id,
