@@ -82,15 +82,14 @@ export function VoiceGraph({ stream }: { stream: GraphStreamState }) {
         {catPos.map(({ c, i, x, y }) => {
           const col = catColor(c.colour, i);
           const w = typeof (c as { weight?: number }).weight === "number" ? (c as { weight?: number }).weight! : 0;
-          const anchor = x < CX - 10 ? "end" : x > CX + 10 ? "start" : "middle";
-          const dx = anchor === "end" ? -14 : anchor === "start" ? 14 : 0;
-          const dy = anchor === "middle" ? (y < CY ? -16 : 24) : 4;
+          // Labels centred above/below the dot so side categories never clip; short name (text before ":" / "(").
+          const dy = y < CY - 10 ? -16 : 26;
           return (
             <motion.g key={c.id} {...pop}>
               <circle cx={x} cy={y} r={9 + Math.min(6, w * 6)} fill={col} fillOpacity={0.18} />
               <circle cx={x} cy={y} r={6} fill={col} />
-              <text x={x + dx} y={y + dy} textAnchor={anchor} className="fill-slate-100 font-sans text-[12px]" stroke="#020510" strokeWidth={4} paintOrder="stroke">
-                {short(c.name, 26)}
+              <text x={x} y={y + dy} textAnchor="middle" className="fill-slate-100 font-sans text-[12px]" stroke="#020510" strokeWidth={4} paintOrder="stroke">
+                {short(c.name.split(/[:(]/)[0], 20)}
               </text>
             </motion.g>
           );

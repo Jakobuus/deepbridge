@@ -48,7 +48,10 @@ function VoiceStageInner({ onStart }: { onStart: () => void }) {
   const [error, setError] = React.useState<string | null>(null);
 
   const conversation = useConversation({
-    onMessage: ({ message, role }) => {
+    onMessage: ({ message: raw, role }) => {
+      // Strip expressive-voice cues like "[happy]" (spoken style hints, not words).
+      const message = raw.replace(/\[[^\]]{1,24}\]\s*/g, "").trim();
+      if (!message) return;
       const who = role === "user" ? "You" : "Interviewer";
       setLastLine({ who, text: message });
       postTurn(role === "user" ? "founder" : "interviewer", message);
