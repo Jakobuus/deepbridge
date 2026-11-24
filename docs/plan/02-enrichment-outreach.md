@@ -9,7 +9,7 @@ that uses the buyer's real signal, and an approval gate that cannot be bypassed 
 | Warm paths: lab mates, dual-affiliation co-authors, advisor's lab, co-authors, boards, citers, aligned | Erick | ✅ (any founder) | `GET /paths` |
 | Path scoring (warmth × recency × name check), weakest link shown | Erick | ⬜ | `lanes/erick/paths.py` |
 | Name check (homonyms) by a human | Erick / Mark | ✅ API · ⬜ UI | `POST /name-check` |
-| Current-role verification via Moss web agent (e.g. Hamerly: NTT → CTO Opticore) | Jakob | ✅ | `GET/POST /contacts/{id}` |
+| Current-role verification via Moss web agent (e.g. Hamerly: NTT Research on 2024 papers; since Jan 2026 also CTO of Opticore) | Jakob | ✅ | `GET/POST /contacts/{id}` |
 | Named buyer-side technical people via Moss prospecting | Jakob | ✅ | `POST /prospect` |
 | Intro request to the bridge + forwardable note, only cited facts | Jakob | ✅ engine · ⬜ template (Jakob) | `POST /drafts` |
 | Hash-bound approval (edit = stale; 409 on mismatch), nothing sent | Jakob | ✅ | `POST /approve` |

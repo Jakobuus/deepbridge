@@ -24,7 +24,7 @@ people who can introduce them, every link with a cited, dated source. A human ap
    sit at a university AND a company, the PhD advisor's lab, co-authors, shared boards, buyer scientists who cite the
    founder, topic-aligned researchers. Affiliations are "as of <date>", never "current" unless verified.
 5. **Verify:** Moss web agent checks a bridge person's current role (example: a co-author listed at NTT Research in
-   2024 papers is now CTO of Opticore) and finds named technical people at a buyer.
+   2024 papers is, since January 2026, also CTO of Opticore) and finds named technical people at a buyer.
 6. **Intro draft** to the bridge person + 2-sentence forwardable note (template owned by Jakob) → **human approval**
    bound to the exact text (edit = re-approve) → **pipeline** (stages, agent vs human attribution, conversion analytics).
 7. **Credits:** paid steps (drafts, live checks, prospecting) are metered (Flexprice; local counter as fallback).
