@@ -6,7 +6,6 @@ import json
 import os
 import re
 import socket
-import subprocess
 import time
 from html.parser import HTMLParser
 from pathlib import Path
@@ -19,6 +18,7 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from pydantic import BaseModel, Field
 from ...openalex import with_key
+from .pdftext import MAX_BYTES, pdf_text
 
 try:
     import httpx
@@ -183,7 +183,7 @@ def _decode(body, headers):
 
 def _openalex(ref):
     global _last_request
-    fields = 'id,doi,title,publication_date,abstract_inverted_index,open_access'
+    fields = 'id,doi,title,publication_date,abstract_inverted_index,open_access,best_oa_location'
     url = _OPENALEX + 'works/' + quote(ref, safe=':/') + '?' + urlencode({'select': fields})
     path = _CACHE / (hashlib.sha256(url.encode()).hexdigest()[:24] + '.json')
     try:
@@ -230,19 +230,12 @@ def _paper_ref(value):
 
 
 def _paper_full_text(url):
-    body, headers, final_url = _get(url, limit=15_000_000, public=True)
-    content_type = headers.get('content-type', '').lower()
-    if body.startswith(b'%PDF-') or 'application/pdf' in content_type:
-        result = subprocess.run(['pdftotext', '-l', '20', '-', '-'], input=body, capture_output=True,
-                                check=True, timeout=10)
-        text = result.stdout.decode('utf-8', errors='replace')
-    elif 'html' in content_type or body.lstrip().startswith(b'<'):
-        text = _HTML(_decode(body, headers)).text
-    elif 'text/plain' in content_type:
-        text = _decode(body, headers)
-    else:
-        text = ''
-    return ' '.join(text.split())[:15_000], final_url
+    body, headers, final_url = _get(url, limit=MAX_BYTES + 1, public=True)
+    content_type = headers.get('content-type', '').partition(';')[0].strip().lower()
+    pdf_path = urlsplit(url).path.lower().endswith('.pdf') or urlsplit(final_url).path.lower().endswith('.pdf')
+    if pdf_path or content_type == 'application/pdf' or body.startswith(b'%PDF-'):
+        return pdf_text(body)['text'][:40_000].rstrip(), final_url
+    return '', final_url
 
 
 def read_paper(value, on_title=None) -> SourceDoc:
@@ -250,19 +243,24 @@ def read_paper(value, on_title=None) -> SourceDoc:
     title = work['title']
     if on_title:
         on_title(title, cached)
-    words = sorted((pos, word) for word, positions in (work.get('abstract_inverted_index') or {}).items()
-                   for pos in positions)
-    abstract = ' '.join(word for _, word in words)
-    url = work.get('doi') or work['id']
-    full_text = ''
-    if oa_url := (work.get('open_access') or {}).get('oa_url'):
+    best_pdf = (work.get('best_oa_location') or {}).get('pdf_url')
+    oa_url = (work.get('open_access') or {}).get('oa_url')
+    for candidate in dict.fromkeys((best_pdf, oa_url)):
+        if not candidate:
+            continue
         try:
-            full_text, final_url = _paper_full_text(oa_url)
-            if full_text:
-                url = final_url
-        except (OSError, SourceError, subprocess.SubprocessError):
-            pass  # OpenAlex metadata and abstract remain usable without a full-text copy.
-    return SourceDoc(kind='paper', url=url, title=title, text='\n\n'.join(filter(None, (title, abstract, full_text))),
+            text, url = _paper_full_text(candidate)
+        except (OSError, ValueError):
+            continue
+        if text:
+            break
+    else:
+        words = sorted((pos, word) for word, positions in (work.get('abstract_inverted_index') or {}).items()
+                       for pos in positions)
+        abstract = ' '.join(word for _, word in words)
+        text = '\n\n'.join(filter(None, (title, abstract)))
+        url = work.get('doi') or work['id']
+    return SourceDoc(kind='paper', url=url, title=title, text=text,
                      source_date=work.get('publication_date'), cached=cached)
 
 

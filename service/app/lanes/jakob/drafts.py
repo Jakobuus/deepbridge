@@ -2,17 +2,53 @@
 import hashlib
 import json
 import re
-import subprocess
-from ...llm import run_claude
 from pathlib import Path as FilePath
 from urllib.parse import quote
 
+from ...llm import run_claude
 from ...models import Draft, Edge, Evidence, Founder, Path, Signal
-from ...store import content_hash
+from ...store import content_hash, store
+from ..erick import build, pull
+from ..erick.paths import find_paths
+from .draftchecks import BLURB, CheckedDraft, check_draft, passed, shared_work_urls
+from .icp import load_research
 
 CACHE_DIR = FilePath(__file__).resolve().parents[4] / 'data/cache/jakob/drafts'
-CACHE_VERSION = 2
-BLURB = 'Blurb you can forward:'
+CACHE_VERSION = 3
+
+
+def computed_path(path_id: str, founder_id: str | None = None):
+    """Resolve opaque path IDs against graphs already built by the paths endpoint."""
+    if not path_id.startswith('path:erick:'):
+        return None
+    if founder_id is not None:
+        try:
+            author_ids = [pull.author_id(founder_id)]
+        except ValueError:
+            return None
+    else:
+        author_ids = sorted(file.parent.name for file in pull.CACHE.glob('A[0-9]*/dataset.json'))
+    for author_id in author_ids:
+        # A path ID can only be known once the dataset is cached.
+        if not (pull.CACHE / author_id / 'dataset.json').is_file():
+            continue
+        selected = 'person:openalex:' + author_id
+        path = next((path for path in find_paths(selected) if path.id == path_id), None)
+        if path is None:
+            continue
+        people, _, edges, evidence = build.build_graph(selected)
+        try:
+            research = load_research(selected)
+        except ValueError:
+            person = next(person for person in people if person.id == selected)
+            founder = Founder(id=person.id, name=person.name, openalex_id=person.openalex_id,
+                              company='', topics=[], summary='Cached OpenAlex author record.',
+                              evidence_ids=[])
+        else:
+            founder = Founder.model_validate(research['founder'])
+            evidence.extend(Evidence.model_validate(item) for item in research['evidence'])
+        return path, edges, evidence, founder
+    return None
 
 
 def _validate(items, path, allowed_ids, has_bridge):
@@ -26,17 +62,11 @@ def _validate(items, path, allowed_ids, has_bridge):
             raise ValueError('Draft text is missing')
         if not isinstance(ids, list) or not ids or any(not isinstance(i, str) or i not in allowed_ids for i in ids):
             raise ValueError('Draft cites missing or unrelated evidence')
-        if len(body.split()) >= 110 or re.search(r'\bknows?\b', body, re.I):
-            raise ValueError('Draft is too long or claims a personal relationship')
         if item['kind'] == 'intro_request' and body.count(BLURB) != 1:
             raise ValueError('Intro must end with a forwardable blurb')
         if item['kind'] == 'forwardable_note':
             if body.strip() != items[0]['body'].split(BLURB, 1)[1].strip():
                 raise ValueError('Forwardable note must match the intro blurb')
-            # Ignore initials in names when counting sentences.
-            sentences = re.split(r'(?<=[.!?])\s+', re.sub(r'\b[A-Z]\.', '', body.strip()))
-            if len(sentences) != 2 or body.strip()[-1] not in '.!?':
-                raise ValueError('Forwardable note must be two sentences')
         recipient = path.bridge_id if item['kind'] == 'intro_request' else path.buyer_person_id or path.bridge_id
         if not recipient:
             raise ValueError('Path has no recipient')
@@ -49,8 +79,8 @@ def _validate(items, path, allowed_ids, has_bridge):
 
 
 def write_drafts(path: Path, edges: list[Edge], evidence: list[Evidence],
-                 signals: list[Signal], founder: Founder) -> list[Draft]:
-    """Generate once per grounding context; never use unrelated graph facts."""
+                 signals: list[Signal], founder: Founder) -> list[CheckedDraft]:
+    """Generate drafts and retry failed copy checks once per grounding context."""
     path_edges = [e for e in edges if e.id in path.hops]
     signal = next((s for signal_id in path.why_now_signal_ids for s in signals
                    if s.id == signal_id and s.org_id == path.buyer_org_id and s.evidence_ids), None)
@@ -64,17 +94,28 @@ def write_drafts(path: Path, edges: list[Edge], evidence: list[Evidence],
     if not allowed_ids:
         raise ValueError('No supporting evidence for this path')
     has_bridge = bool(path.bridge_id and path.bridge_id != founder.id and path.kind != 'aligned')
+    buyer_org = getattr(store, 'orgs', {}).get(path.buyer_org_id)
+    buyer_name = buyer_org.name if buyer_org else ''
+    bridge_work_urls = shared_work_urls(path, path_edges, sources)
+
+    def checked(items):
+        drafts = _validate(items, path, allowed_ids, has_bridge)
+        return [CheckedDraft(**draft.model_dump(), checks=check_draft(
+            draft, sources, buyer_org=buyer_name, bridge_work_urls=bridge_work_urls))
+            for draft in drafts]
+
     context = dict(path=path.model_dump(), founder=founder.model_dump(),
                    edges=[e.model_dump(by_alias=True) for e in path_edges],
                    signal=signal.model_dump() if signal else None,
                    evidence=[e.model_dump() for e in sources], version=CACHE_VERSION)
-    fingerprint = hashlib.sha256(json.dumps(context, sort_keys=True).encode()).hexdigest()
+    cache_context = dict(context, buyer_org=buyer_name)
+    fingerprint = hashlib.sha256(json.dumps(cache_context, sort_keys=True).encode()).hexdigest()
     cache_file = CACHE_DIR / (quote(path.id, safe='') + '.json')
     if cache_file.exists():
         try:
             cached = json.loads(cache_file.read_text())
             if cached['context_hash'] == fingerprint:
-                return _validate(cached['items'], path, allowed_ids, has_bridge)
+                return checked(cached['items'])
         except (ValueError, KeyError, TypeError):
             pass  # Old or damaged cache: regenerate, never replay unvalidated text.
     prompt = '''Write a short LinkedIn message from a founder to a connection, asking for an intro.
@@ -118,11 +159,21 @@ use evidence-based relevance and one easy yes/no ask. Same word limit and ground
 Use valid JSON (double quotes). Do not return ids, recipients, status, or hashes.
 '''
     prompt += '\nHAS_BRIDGE: ' + json.dumps(has_bridge) + '\nGROUNDING:\n' + json.dumps(context)
-    raw = run_claude(prompt).strip()
-    if raw.startswith('```'):
-        raw = re.sub(r'^```(?:json)?\s*', '', raw, count=1)
-        raw = re.sub(r'\s*```$', '', raw)
-    drafts = _validate(json.loads(raw), path, allowed_ids, has_bridge)
+
+    def generate(text):
+        raw = run_claude(text).strip()
+        if raw.startswith('```'):
+            raw = re.sub(r'^```(?:json)?\s*', '', raw, count=1)
+            raw = re.sub(r'\s*```$', '', raw)
+        return checked(json.loads(raw))
+
+    drafts = generate(prompt)
+    if any(not passed(draft.checks) for draft in drafts):
+        feedback = '\n'.join(f'{draft.kind}: ' + ', '.join(
+            check['name'] for check in draft.checks if not check['ok'])
+            for draft in drafts if not passed(draft.checks))
+        # Keep the template verbatim and append only the validator's feedback.
+        drafts = generate(prompt + '\n\nRegenerate the complete JSON array. Fix these failed checks:\n' + feedback)
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     temporary = cache_file.with_suffix('.tmp')
     temporary.write_text(json.dumps(dict(context_hash=fingerprint, cached=True,

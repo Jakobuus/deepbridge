@@ -13,32 +13,158 @@
       "path_id": "path:steinbrecher",
       "to_person_id": "person:openalex:A5061412493",
       "kind": "intro_request",
-      "subject": "Forwarding a note to Meta's photonics team?",
-      "body": "Hi Gregory,\n\nWe co-authored a paper at MIT's Research Laboratory of Electronics in 2017, and your published affiliation is Meta as of 2024. Could you forward the blurb below to the relevant team at Meta working on photonic or optical interconnects? A cached search shows one matching Meta paper since 25 Aug 2026, so I'm asking whether it's timely. Happy for you to say no.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonic or optical interconnect work at Meta relevant, given one matching Meta paper since 25 Aug 2026?",
+      "subject": "Forwarding a note to a Meta team",
+      "body": "Hi Gregory,\n\nWe co-authored at MIT’s Research Laboratory of Electronics, and your published affiliation was Meta as of 2024. Would you forward the blurb below to the relevant Meta team, given the AR metrology paper a cached search matched to Meta? No worries if you’d rather not.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, a Lightmatter founder, co-authored “Deep learning with coherent nanophotonic circuits.” A cached search matched “AI-driven scalable metrology solutions for smart glasses and AR wearables,” published on 2026-10-09, to Meta, and Nicholas would like to learn whether his photonics research is relevant to your team.",
       "evidence_ids": [
         "evidence:shared-A5061412493",
         "evidence:steinbrecher-affiliation",
         "evidence:90d-meta",
+        "evidence:recent-meta",
         "evidence:harris-2017",
         "evidence:lightmatter-board"
       ],
-      "content_hash": "be71ab4044f76da4893b5f2bf5de01ac17fc3ea357d2435f107b367db4f0cabe",
-      "status": "draft"
+      "content_hash": "6ee2adbfff2f953aa9f7fc78795649fc885d28d60c3800fc9898f3f9a5acaf4d",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_shared_paper_or_lab",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "way_out",
+          "ok": true,
+          "detail": ""
+        }
+      ]
     },
     {
       "id": "draft:steinbrecher:forwardable_note",
       "path_id": "path:steinbrecher",
       "to_person_id": "person:openalex:A5061412493",
       "kind": "forwardable_note",
-      "subject": "Photonic interconnects at Meta",
-      "body": "Nicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonic or optical interconnect work at Meta relevant, given one matching Meta paper since 25 Aug 2026?",
+      "subject": "Photonics research and Meta",
+      "body": "Nicholas Harris, a Lightmatter founder, co-authored “Deep learning with coherent nanophotonic circuits.” A cached search matched “AI-driven scalable metrology solutions for smart glasses and AR wearables,” published on 2026-10-09, to Meta, and Nicholas would like to learn whether his photonics research is relevant to your team.",
       "evidence_ids": [
         "evidence:harris-2017",
         "evidence:lightmatter-board",
-        "evidence:90d-meta"
+        "evidence:90d-meta",
+        "evidence:recent-meta"
       ],
-      "content_hash": "9c55a8c67f7050ff4f358e52dad0f7d03a8d28549dc4da1f2d4f51f44ef2de5a",
-      "status": "draft"
+      "content_hash": "f8bfbfca5d8b52b53705a98fbf5c4ff635dd3442a2b1e85b06b53adec4482947",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "two_sentences",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_question_marks",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_first_person_i",
+          "ok": true,
+          "detail": ""
+        }
+      ]
     },
     {
       "id": "draft:chen:intro_request",
@@ -172,29 +298,153 @@
       "path_id": "path:bandyopadhyay",
       "to_person_id": "person:openalex:A5047268098",
       "kind": "intro_request",
-      "subject": "Forwarding a short note to the right team at NTT Research?",
-      "body": "Hi Saumil,\n\nWe co-authored a 2024 paper, when your affiliations were NTT Research (Physics & Informatics Laboratories) and MIT RLE as of 2024. Would you be comfortable forwarding the blurb below to the relevant team at NTT Research, in case my photonic computing background is useful to them? Happy to hear no.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that photonic research be relevant to your team at NTT Research?",
+      "subject": "Forwarding a note to the team at NTT Research",
+      "body": "Hi Saumil,\n\nWe co-authored at MIT’s Research Laboratory of Electronics. Would you be comfortable forwarding the blurb below to the relevant team at NTT Research to see whether this photonic computing work is relevant? Fine to decline.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris founded Lightmatter and co-authored “Deep learning with coherent nanophotonic circuits.” Nicholas would welcome a short conversation with the NTT Research team about whether that research relates to its work.",
       "evidence_ids": [
         "evidence:shared-A5047268098",
         "evidence:harris-2017",
         "evidence:lightmatter-board"
       ],
-      "content_hash": "96f005e93afe24a5002ac5111afd6d77b8eb3d606800437ae491ca26bdde03de",
-      "status": "draft"
+      "content_hash": "e737256008d47e683dbdd327d1f68402ed88cefe38208c123f3f774fd1458305",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_shared_paper_or_lab",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "way_out",
+          "ok": true,
+          "detail": ""
+        }
+      ]
     },
     {
       "id": "draft:bandyopadhyay:forwardable_note",
       "path_id": "path:bandyopadhyay",
       "to_person_id": "person:openalex:A5047268098",
       "kind": "forwardable_note",
-      "subject": "Nicholas Harris (Lightmatter): photonic research, relevant to NTT Research?",
-      "body": "Nicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that photonic research be relevant to your team at NTT Research?",
+      "subject": "Introduction from Nicholas Harris, Lightmatter",
+      "body": "Nicholas Harris founded Lightmatter and co-authored “Deep learning with coherent nanophotonic circuits.” Nicholas would welcome a short conversation with the NTT Research team about whether that research relates to its work.",
       "evidence_ids": [
         "evidence:harris-2017",
         "evidence:lightmatter-board"
       ],
-      "content_hash": "17c95038a6f44826788e8bd93aa9dedbb3fa3fc1847b7591e6a64626b405e45a",
-      "status": "draft"
+      "content_hash": "16ef5caf15d0be29845210e4d39d71e875490634594ada508c35a9aedfa869ea",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "two_sentences",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_question_marks",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_first_person_i",
+          "ok": true,
+          "detail": ""
+        }
+      ]
     },
     {
       "id": "draft:hamerly:intro_request",
@@ -297,16 +547,72 @@
       "path_id": "path:google-citation",
       "to_person_id": "person:azalia-mirhoseini",
       "kind": "direct_fallback",
-      "subject": "Your 2025 paper citing my 2017 photonics paper",
-      "body": "Hi Azalia,\n\nI'm Nicholas Harris from Lightmatter. A 2025 paper listing you, with Google as your affiliation as of September 2025, cites my 2017 paper, Deep learning with coherent nanophotonic circuits.\n\nSeparately, a cached search finds 2 Google papers since 25 August 2026 matching photonic and optical interconnect terms. Would you be open to a short call about whether this research could be relevant to your team? A plain no is fine.\n\nNicholas",
+      "subject": "Your 2025 paper citing my photonics paper",
+      "body": "Hi Azalia,\n\nA 2025 paper listing you as an author, with a Google affiliation as of September 2025, cites my paper, Deep learning with coherent nanophotonic circuits. A cached search also found 2 photonic or optical-interconnect papers from Google since August 25, 2026, so I wondered whether photonic computing is relevant to your work. Would you be open to a short conversation about it? A no is completely fine.\n\nNicholas",
       "evidence_ids": [
         "evidence:harris-2017",
         "evidence:google-citation",
-        "evidence:90d-google",
-        "evidence:lightmatter-board"
+        "evidence:90d-google"
       ],
-      "content_hash": "6ece41e8a64228115d87278e5b89c85ef81f99b904cdd2b4b0010e7a7f0abafd",
-      "status": "draft"
+      "content_hash": "20a49ee331c48fcd6e13094396eb7ca6dfff91f3936fb53dffaedea24404eefe",
+      "status": "draft",
+      "checks": [
+        {
+          "name": "length",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "grounded",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_repeated_numbers",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_made_up_features",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "banned",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_begging",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_exclamation",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_emoji",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "no_knows",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "one_ask",
+          "ok": true,
+          "detail": ""
+        },
+        {
+          "name": "names_buyer_org",
+          "ok": true,
+          "detail": ""
+        }
+      ]
     }
   ]
 }
