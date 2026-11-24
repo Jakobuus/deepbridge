@@ -22,7 +22,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { api, GOLDEN_FOUNDER_ID, HOPO_DISPLAY, HOPO_FOUNDER_ID } from "@/lib/api";
 import type { Evidence, Founder, Icp, Id, IntakeForm, InterviewResponse } from "@/lib/types";
-import { ParticleOrb } from "./particle-orb";
+import { orbBus } from "@/lib/orb-bus";
 import { EvidenceChip } from "./evidence-chip";
 
 interface ScreenIntakeProps {
@@ -118,6 +118,15 @@ export function ScreenIntake({
   const [interviewErr, setInterviewErr] = React.useState<string | null>(null);
   const [listening, setListening] = React.useState(false);
   const [speaking, setSpeaking] = React.useState(false);
+
+  // Sidebar orb: voice state while the interview runs.
+  React.useEffect(() => {
+    orbBus.setState(
+      listening ? "listening" : speaking ? "speaking" : interviewBusy ? "thinking" : "idle",
+      listening ? "Listening" : speaking ? "Interviewer speaking" : interviewBusy ? "Reading the papers" : null,
+    );
+  }, [listening, speaking, interviewBusy]);
+  React.useEffect(() => () => orbBus.setState("idle", null), []);
   const [voiceReadback, setVoiceReadback] = React.useState(true);
   const recognitionRef = React.useRef<SpeechRecognitionLike | null>(null);
   const wantMicRef = React.useRef(false);
@@ -154,6 +163,8 @@ export function ScreenIntake({
         founder_id: founder?.id ?? null,
       });
       setInterviewState(res);
+      orbBus.pulse();
+      orbBus.bumpProgress(0.08, 0.4); // each answered turn adds to the graph core
       if (res.paper_evidence?.length) {
         onEvidenceLoaded(res.paper_evidence);
       }
@@ -177,6 +188,8 @@ export function ScreenIntake({
         answer: interviewAnswer.trim(),
       });
       setInterviewState(res);
+      orbBus.pulse();
+      orbBus.bumpProgress(0.08, 0.4); // each answered turn adds to the graph core
       setInterviewAnswer("");
       if (res.paper_evidence?.length) {
         onEvidenceLoaded(res.paper_evidence);
@@ -362,17 +375,6 @@ export function ScreenIntake({
           </CardHeader>
 
           <CardContent className="px-5 space-y-3">
-            <div className="flex flex-col items-center gap-1 py-1">
-              <ParticleOrb
-                size={150}
-                state={listening ? "listening" : speaking ? "speaking" : interviewBusy ? "thinking" : "idle"}
-                pulseKey={interviewState?.question ?? ""}
-                label="Interview voice activity"
-              />
-              <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                {listening ? "Listening" : speaking ? "Speaking" : interviewBusy ? "Reading the papers" : "Ready"}
-              </span>
-            </div>
             {!interviewState ? (
               <Button
                 type="button"

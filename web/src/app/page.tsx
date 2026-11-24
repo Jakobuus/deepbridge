@@ -48,6 +48,7 @@ import type {
   Person,
   Signal,
 } from "@/lib/types";
+import { SidebarOrb } from "@/components/deepbridge/sidebar-orb";
 
 type ScreenKey = "intake" | "buyers" | "leads" | "drafts" | "pipeline";
 
@@ -402,7 +403,7 @@ export default function DeepBridgeWorkspace() {
   return (
     <div className="db-grid-bg flex min-h-screen flex-col lg:flex-row">
       {/* LEFT NAVIGATION RAIL — STRICT FLAT LUCITE ONYX */}
-      <aside className="flex w-full shrink-0 flex-col justify-between border-b border-white/10 bg-[#060709] lg:w-56 lg:border-b-0 lg:border-r">
+      <aside className="flex w-full shrink-0 flex-col justify-between border-b border-white/10 bg-[#060709] lg:sticky lg:top-0 lg:h-screen lg:w-56 lg:border-b-0 lg:border-r">
         <div>
           <div className="px-5 py-5 text-sm font-semibold tracking-tight">DeepBridge</div>
 
@@ -432,6 +433,8 @@ export default function DeepBridgeWorkspace() {
             })}
           </nav>
         </div>
+
+        <SidebarOrb />
 
         <div className="hidden p-5 text-[11px] leading-relaxed text-muted-foreground lg:block">
           Every claim cites a source. Nothing is sent without your approval.

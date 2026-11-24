@@ -1,6 +1,8 @@
 "use client";
 
 import { ExternalLink, FileCheck2 } from "lucide-react";
+import { motion } from "motion/react";
+import * as React from "react";
 import type { Evidence, Id } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -24,8 +26,17 @@ export function EvidenceChip({
   const year = ev?.source_date ? ev.source_date.slice(0, 4) : null;
   const kindTag = ev?.kind ? ev.kind.replace("_", " ").toUpperCase() : "PROOF";
 
+  // The source-link icon stays hidden and pops in (Motion spring) on hover or keyboard focus of the chip.
+  const [shown, setShown] = React.useState(false);
+
   return (
-    <span className={cn("inline-flex items-center gap-1", className)}>
+    <span
+      className={cn("inline-flex items-center gap-1", className)}
+      onMouseEnter={() => setShown(true)}
+      onMouseLeave={() => setShown(false)}
+      onFocus={() => setShown(true)}
+      onBlur={() => setShown(false)}
+    >
       <button
         type="button"
         onClick={(e) => {
@@ -39,16 +50,21 @@ export function EvidenceChip({
         <span>{compact ? shortSlug : `${kindTag}${year ? ` · ${year}` : ""} · ${shortSlug}`}</span>
       </button>
       {ev?.source_url && (
-        <a
+        <motion.a
           href={ev.source_url}
           target="_blank"
           rel="noreferrer"
           onClick={(e) => e.stopPropagation()}
           title={`Open source: ${ev.source_url}`}
-          className="inline-flex items-center justify-center rounded border border-white/15 bg-white/5 p-1 text-muted-foreground transition hover:border-white/40 hover:text-foreground"
+          aria-label={`Open source: ${ev.source_url}`}
+          initial={false}
+          animate={shown ? { opacity: 1, scale: 1, x: 0 } : { opacity: 0, scale: 0.5, x: -6 }}
+          transition={{ type: "spring", stiffness: 520, damping: 26 }}
+          style={{ pointerEvents: shown ? "auto" : "none" }}
+          className="inline-flex items-center justify-center rounded border border-white/15 bg-white/5 p-1 text-muted-foreground hover:border-white/40 hover:text-foreground"
         >
           <ExternalLink className="size-2.5" />
-        </a>
+        </motion.a>
       )}
     </span>
   );
