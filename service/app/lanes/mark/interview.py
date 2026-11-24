@@ -13,7 +13,7 @@ from urllib.request import Request, urlopen
 from uuid import uuid4
 
 from fastapi import HTTPException
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from ...llm import MAX_PROMPT_CHARS, run_claude
 
@@ -88,12 +88,42 @@ class TranscriptTurn(BaseModel):
 
 
 class TranscriptRequest(BaseModel):
-    model_config = ConfigDict(str_strip_whitespace=True)
-    founder_name: str = Field(min_length=1, max_length=200)
-    startup_name: str = Field(min_length=1, max_length=200)
-    paper_link: str = Field(min_length=1, max_length=2000)
-    abstract: str = Field(max_length=5000)
+    model_config = ConfigDict(str_strip_whitespace=True, extra='ignore')
+    session_id: str | None = Field(default=None, max_length=64)
+    founder_name: str = Field(default='Founder', min_length=1, max_length=200)
+    startup_name: str = Field(default='Startup', min_length=1, max_length=200)
+    paper_link: str = Field(default='not provided', min_length=1, max_length=2000)
+    abstract: str = Field(default='', max_length=5000)
     transcript: str | list[TranscriptTurn]
+
+    @model_validator(mode='before')
+    @classmethod
+    def fill_from_session(cls, data):
+        """The hosted voice app sends only session_id + transcript when it ran from a briefing: fill the rest."""
+        if not isinstance(data, dict):
+            return data
+        data = {k: v for k, v in data.items() if v not in (None, '')}
+        turns = data.get('transcript')
+        if isinstance(turns, list):
+            data['transcript'] = [
+                {'role': str(t.get('role') or t.get('speaker') or 'unknown'),
+                 'text': str(t.get('text') or t.get('content') or '').strip()}
+                for t in turns if isinstance(t, dict) and str(t.get('text') or t.get('content') or '').strip()]
+        sid = data.get('session_id')
+        if sid:
+            try:
+                from ..jakob.briefing import get_session
+                session = get_session(sid)
+            except Exception:  # noqa: BLE001 - best effort enrichment
+                session = None
+            if session is not None:
+                founder = session.briefing.founder
+                data.setdefault('founder_name', founder.name)
+                data.setdefault('startup_name', founder.company or 'Startup')
+                sources = [s for s in session.briefing.sources if s.url]
+                if sources:
+                    data.setdefault('paper_link', sources[0].url)
+        return data
 
     @field_validator('transcript', mode='before')
     @classmethod

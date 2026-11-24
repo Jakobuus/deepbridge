@@ -1,53 +1,52 @@
 {
-  "fingerprint": "abde062497140d70c948fbc14345dcdf5410a0b86de5cb2394aa91971563ae9c",
+  "fingerprint": "8a4c5478a8bf0a736f2b7acc4b27e8073e7203b01b155e3bc5506061756871da",
   "cached": true,
   "icp": {
     "founder_id": "person:openalex:A5060617433",
     "buyer_roles": [
       {
-        "title": "Head of Battery R&D / VP Cell Technology",
-        "why": "Hypothesis: Leaders who own cell chemistry and electrode roadmaps may care about electrode materials and lithium storage performance, as covered in the phospho-olivine and nanowire electrode works.",
+        "title": "Hypothesis: VP/Head of Battery R&D at a cell or EV maker",
+        "why": "Hypothesis: Work on phospho-olivine electrodes, lithium-metal anodes and dendrite suppression targets teams that choose electrode materials and cell chemistries to raise energy density and safety.",
         "evidence_ids": [
           "evidence:openalex:W2097535432",
-          "evidence:openalex:W1629830706"
+          "evidence:openalex:W2265160803"
         ]
       },
       {
-        "title": "Director of Solid-State / Lithium-Metal Battery Development",
-        "why": "Hypothesis: Teams working on lithium-metal anodes and solid electrolytes may be concerned with dendrite suppression and lithium penetration that causes short circuits, which these works study.",
+        "title": "Hypothesis: Director of Solid-State Battery Development",
+        "why": "Hypothesis: Findings on lithium penetration through inorganic solid electrolytes, tied to defect size and critical current density, are relevant to leaders deciding electrolyte materials, processing and failure-mode tests for solid-state cells.",
         "evidence_ids": [
-          "evidence:openalex:W2265160803",
           "evidence:openalex:W2725925537"
         ]
       },
       {
-        "title": "Battery Manufacturing Process and Quality Engineering Lead",
-        "why": "Hypothesis: Process leaders may need to link electrolyte surface defects and flaw density to failure onset, since the solid-electrolyte work ties short-circuit onset to defect size and density.",
+        "title": "Hypothesis: Head of Decarbonization or Energy Storage Strategy at an industrial or utility firm",
+        "why": "Hypothesis: The net-zero energy systems review points to planners who must integrate storage and reliable electricity supply into decarbonization pathways.",
         "evidence_ids": [
-          "evidence:openalex:W2725925537"
+          "evidence:openalex:W2811133697"
         ]
       }
     ],
     "industries": [
       {
-        "name": "Lithium-ion cell and electrode materials manufacturing",
-        "why": "Hypothesis: The electrode work on phospho-olivines and virus-templated cobalt oxide nanowires points to companies that make or develop electrode materials and cells.",
+        "name": "Hypothesis: Lithium-ion and lithium-metal battery manufacturing",
+        "why": "Hypothesis: Electrode materials and lithium-metal anode stability work map directly to cell producers seeking higher capacity and safer cycling.",
         "evidence_ids": [
           "evidence:openalex:W2097535432",
+          "evidence:openalex:W2265160803",
           "evidence:openalex:W1629830706"
         ]
       },
       {
-        "name": "Solid-state and lithium-metal battery developers",
-        "why": "Hypothesis: Work on dendrite growth, electrolyte additives and lithium infiltration through inorganic solid electrolytes relates to firms developing next-generation lithium-metal and solid-state cells.",
+        "name": "Hypothesis: Solid-state battery and solid electrolyte developers",
+        "why": "Hypothesis: Analysis of lithium infiltration through sulfide and garnet electrolytes addresses a core failure mode for this segment.",
         "evidence_ids": [
-          "evidence:openalex:W2265160803",
           "evidence:openalex:W2725925537"
         ]
       },
       {
-        "name": "Energy storage for decarbonized energy systems",
-        "why": "Hypothesis: The net-zero energy systems review frames the need for reliable low-carbon electricity, which may make storage relevant to utilities and grid-scale storage providers.",
+        "name": "Hypothesis: Grid-scale and long-duration energy storage",
+        "why": "Hypothesis: The decarbonization review stresses reliable electricity supply, which suggests demand for storage technologies, though no buyer demand is verified here.",
         "evidence_ids": [
           "evidence:openalex:W2811133697"
         ]
@@ -55,45 +54,47 @@
     ],
     "needs": [
       {
-        "text": "Hypothesis: Manufacturing R&D leaders may need ways to suppress lithium dendrite growth and electrolyte decomposition in lithium-metal cells, because the polysulfide and lithium nitrate additive work shows these cause safety problems and low Coulombic efficiency.",
+        "text": "Hypothesis: Battery developers need ways to suppress lithium dendrites and electrolyte decomposition in lithium-metal cells. Reasoning: the polysulfide and nitrate additive work describes these as safety and Coulombic efficiency problems.",
         "evidence_ids": [
           "evidence:openalex:W2265160803"
         ]
       },
       {
-        "text": "Hypothesis: Solid-state cell teams may need to control surface cracks and defects in solid electrolytes, because the penetration study finds lithium plating infiltrates at defects above a critical current density and eventually causes short circuits.",
+        "text": "Hypothesis: Solid-state cell makers need to understand and prevent short circuits caused by lithium infiltration at electrolyte defects. Reasoning: infiltration is reported to start above a critical current density near surface flaws, so defect control and characterization may matter.",
         "evidence_ids": [
           "evidence:openalex:W2725925537"
         ]
       },
       {
-        "text": "Hypothesis: Electrode developers may need scalable, controlled methods to synthesize and assemble electrode nanomaterials, because the virus-templated nanowire work addresses material selection and assembly for thin, flexible batteries with improved capacity.",
+        "text": "Hypothesis: Electrode makers need conductive, scalable cathode and nanostructured electrode materials. Reasoning: the phospho-olivine and virus-templated nanowire work address electronic conductivity and room-temperature synthesis and assembly for thin, flexible batteries.",
         "evidence_ids": [
+          "evidence:openalex:W2097535432",
           "evidence:openalex:W1629830706"
         ]
       }
     ],
     "expansion_segments": [
       {
-        "name": "Grid and long-duration energy storage developers",
-        "why": "Hypothesis: The net-zero review notes that providing reliable electricity is hard to decarbonize, so storage developers serving that need may be an adjacent segment.",
-        "evidence_ids": [
-          "evidence:openalex:W2811133697"
-        ]
-      },
-      {
-        "name": "Battery safety testing and failure-analysis providers",
-        "why": "Hypothesis: The dendrite and short-circuit mechanism studies suggest an adjacent segment of labs and service firms that diagnose lithium-metal and solid-electrolyte failures.",
-        "evidence_ids": [
-          "evidence:openalex:W2265160803",
-          "evidence:openalex:W2725925537"
-        ]
-      },
-      {
-        "name": "Thin and flexible battery makers",
-        "why": "Hypothesis: The virus-templated nanowire work targets thin, flexible lithium ion batteries, suggesting a niche segment of compact-device battery makers.",
+        "name": "Hypothesis: Flexible and thin-film battery makers",
+        "why": "Hypothesis: Virus-templated nanowire assembly is framed around smaller, more flexible batteries, which may suit compact or wearable power devices.",
         "evidence_ids": [
           "evidence:openalex:W1629830706"
+        ]
+      },
+      {
+        "name": "Hypothesis: Hard-to-decarbonize sectors such as aviation, long-distance transport and heavy industry",
+        "why": "Hypothesis: The review names these sectors as difficult to decarbonize, so higher-energy-density or safer storage could be relevant to them.",
+        "evidence_ids": [
+          "evidence:openalex:W2811133697",
+          "evidence:openalex:W2265160803"
+        ]
+      },
+      {
+        "name": "Hypothesis: Battery testing, failure analysis and materials characterization services",
+        "why": "Hypothesis: Mechanistic studies of dendrite and crack-driven lithium penetration suggest a need for diagnostics and defect analysis tools.",
+        "evidence_ids": [
+          "evidence:openalex:W2725925537",
+          "evidence:openalex:W2265160803"
         ]
       }
     ]
