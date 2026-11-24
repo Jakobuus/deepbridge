@@ -77,7 +77,6 @@
     "evidence_ids": [
       "evidence:buyers:05765ea9f4b4a1af93e4",
       "evidence:buyers:4042ac57ab7fa479591e",
-      "evidence:buyers:646f9137ef3f80bba15f",
       "evidence:buyers:6767f1a5d64ded6cd113",
       "evidence:buyers:bbaf8bea339b4a738593"
     ]
@@ -93,8 +92,6 @@
     "colour": "--cat-4",
     "org_ids": [],
     "problem_node_ids": [],
-    "evidence_ids": [
-      "evidence:buyers:ed4745e871919dd054ab"
-    ]
+    "evidence_ids": []
   }
 ]
