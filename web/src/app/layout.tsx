@@ -29,7 +29,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
-      data-glass="lucite"
+      data-glass="lustre"
       data-glass-tint="onyx"
     >
       <body className="min-h-full flex flex-col font-sans bg-background text-foreground selection:bg-sky-500/30 selection:text-white">
