@@ -2,19 +2,17 @@
 
 import {
   ArrowRight,
-  Building2,
   Compass,
   Layers,
   Radar,
   Search,
   Sparkles,
-  Target,
   Zap,
 } from "lucide-react";
 import * as React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { api } from "@/lib/api";
 import type { Evidence, Founder, Icp, Id, Org, Path, Person, SearchBundle, Signal } from "@/lib/types";
@@ -93,8 +91,234 @@ export function ScreenBuyers({
         </div>
       )}
 
+      {/* RANKED COMMERCIAL BUYER ORGS + DATED WHY-NOW SIGNALS */}
+      <div className="space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 className="text-lg font-bold tracking-tight flex items-center gap-2">
+              
+              <span>Buyers ({orgs.length})</span>
+            </h2>
+
+          </div>
+          <Button variant="default" flat onClick={() => onSelectOrgForPaths(null)}>
+            <span>See {paths.length} warm paths</span>
+            <ArrowRight className="size-4" />
+          </Button>
+        </div>
+
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {orgs.map((org) => {
+            const orgSignals = signalsByOrg[org.id] ?? [];
+            const warmPathsCount = pathCountByOrg[org.id] ?? 0;
+            const score = org.buyer_score ?? 0;
+
+            return (
+              <Card
+                key={org.id}
+                flat
+                border
+                className="border-white/10 bg-white/[0.02] py-4 gap-3 justify-between"
+              >
+                <CardHeader className="px-4 pb-0">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <CardTitle className="text-base font-semibold">{org.name}</CardTitle>
+                    <span className="font-mono text-xs text-muted-foreground" title="buyer fit 0–100">{score}</span>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="px-4 space-y-3">
+                  {orgSignals.length > 0 ? (
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-1 text-[11px] text-amber-300">
+                        <Zap className="size-3" />
+                        <span>Why now</span>
+                      </div>
+                      {orgSignals.slice(0, 1).map((sig) => (
+                        <div
+                          key={sig.id}
+                          className="space-y-1.5"
+                        >
+                          <div className="text-[10px] text-muted-foreground">
+                            {sig.type.replace(/_/g, " ")} · {sig.date ?? "recent"}
+                          </div>
+                          <div className="text-xs leading-snug text-foreground">{sig.title}</div>
+                          <div className="flex flex-wrap gap-1 pt-0.5">
+                            {sig.evidence_ids.map((eid) => (
+                              <EvidenceChip
+                                key={eid}
+                                evidenceId={eid}
+                                evidenceMap={evidenceMap}
+                                onInspect={onInspectEvidence}
+                                compact
+                              />
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                      {orgSignals.length > 1 && (
+                        <div className="text-[11px] text-muted-foreground">+{orgSignals.length - 1} more signals</div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="text-[11px] text-muted-foreground">
+                      Matched via co-author affiliation graph (no separate 90d signal cached).
+                    </div>
+                  )}
+
+                  <Button
+                    size="sm"
+                    variant="ghost"
+                    flat
+                    onClick={() => onSelectOrgForPaths(org.id)}
+                    className="w-full text-xs text-muted-foreground"
+                  >
+                    <span>
+                      {warmPathsCount > 0
+                        ? `Inspect ${warmPathsCount} Warm Path${warmPathsCount > 1 ? "s" : ""} →`
+                        : "Open Warm-Path Graph →"}
+                    </span>
+                  </Button>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* STRUCTURED 4-PART ICP WITH EVIDENCE CHIPS */}
+      {icp && (
+        <div className="space-y-3 pt-2">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-lg font-bold tracking-tight flex items-center gap-2">
+                
+                <span>Ideal customer profile</span>
+              </h2>
+
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            {/* Buyer Roles */}
+            <Card flat border className="border-white/10 bg-transparent py-4 gap-3">
+              <CardHeader className="px-5">
+                <CardTitle className="text-sm font-semibold flex items-center gap-2 text-foreground">
+                  <Compass className="size-4" />
+                  <span>Buyer roles</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="px-5 space-y-3">
+                {icp.buyer_roles.map((role, i) => (
+                  <div key={`${role.title}-${i}`} className="space-y-1.5">
+                    <div className="text-sm font-semibold">{role.title}</div>
+                    <p className="text-xs leading-relaxed text-muted-foreground">{role.why}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {role.evidence_ids.map((eid) => (
+                        <EvidenceChip
+                          key={eid}
+                          evidenceId={eid}
+                          evidenceMap={evidenceMap}
+                          onInspect={onInspectEvidence}
+                          compact
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            {/* Industries */}
+            <Card flat border className="border-white/10 bg-transparent py-4 gap-3">
+              <CardHeader className="px-5">
+                <CardTitle className="text-sm font-semibold flex items-center gap-2 text-foreground">
+                  <Layers className="size-4" />
+                  <span>Industries</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="px-5 space-y-3">
+                {icp.industries.map((ind, i) => (
+                  <div key={`${ind.name}-${i}`} className="space-y-1.5">
+                    <div className="text-sm font-semibold">{ind.name}</div>
+                    <p className="text-xs leading-relaxed text-muted-foreground">{ind.why}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {ind.evidence_ids.map((eid) => (
+                        <EvidenceChip
+                          key={eid}
+                          evidenceId={eid}
+                          evidenceMap={evidenceMap}
+                          onInspect={onInspectEvidence}
+                          compact
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            {/* Technical Needs */}
+            <Card flat border className="border-white/10 bg-transparent py-4 gap-3">
+              <CardHeader className="px-5">
+                <CardTitle className="text-sm font-semibold flex items-center gap-2 text-foreground">
+                  <Radar className="size-4" />
+                  <span>Needs</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="px-5 space-y-3">
+                {icp.needs.map((need, i) => (
+                  <div key={i} className="space-y-1.5">
+                    <p className="text-xs leading-relaxed text-foreground">{need.text}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {need.evidence_ids.map((eid) => (
+                        <EvidenceChip
+                          key={eid}
+                          evidenceId={eid}
+                          evidenceMap={evidenceMap}
+                          onInspect={onInspectEvidence}
+                          compact
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            {/* Expansion Segments */}
+            <Card flat border className="border-white/10 bg-transparent py-4 gap-3">
+              <CardHeader className="px-5">
+                <CardTitle className="text-sm font-semibold flex items-center gap-2 text-foreground">
+                  <Sparkles className="size-4" />
+                  <span>Expansion segments</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="px-5 space-y-3">
+                {icp.expansion_segments.map((seg, i) => (
+                  <div key={`${seg.name}-${i}`} className="space-y-1.5">
+                    <div className="text-sm font-semibold">{seg.name}</div>
+                    <p className="text-xs leading-relaxed text-muted-foreground">{seg.why}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {seg.evidence_ids.map((eid) => (
+                        <EvidenceChip
+                          key={eid}
+                          evidenceId={eid}
+                          evidenceMap={evidenceMap}
+                          onInspect={onInspectEvidence}
+                          compact
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      )}
       {/* TOP BAR: INSTANT RESEARCHER / BRIDGE SEARCH (GET /search) */}
-      <Card flat border className="border-white/15 bg-white/[0.02] py-4 gap-3">
+      <Card flat border className="border-white/10 bg-transparent py-4 gap-3">
         <CardContent className="px-5 space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-sky-300">
@@ -171,247 +395,6 @@ export function ScreenBuyers({
         </CardContent>
       </Card>
 
-      {/* RANKED COMMERCIAL BUYER ORGS + DATED WHY-NOW SIGNALS */}
-      <div className="space-y-3">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <div>
-            <h2 className="text-lg font-bold tracking-tight flex items-center gap-2">
-              <Building2 className="size-5 text-sky-300" />
-              <span>Ranked Commercial Buyer Organizations ({orgs.length})</span>
-            </h2>
-            <p className="text-xs text-muted-foreground">
-              Ranked by heuristic buyer fit (0–100) from on-topic publications and dated 90-day activity signals.
-            </p>
-          </div>
-          <Button variant="default" flat onClick={() => onSelectOrgForPaths(null)}>
-            <span>03 · Explore All {paths.length} Warm Paths</span>
-            <ArrowRight className="size-4" />
-          </Button>
-        </div>
-
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {orgs.map((org) => {
-            const orgSignals = signalsByOrg[org.id] ?? [];
-            const warmPathsCount = pathCountByOrg[org.id] ?? 0;
-            const score = org.buyer_score ?? 0;
-
-            return (
-              <Card
-                key={org.id}
-                flat
-                border
-                className="border-white/15 bg-white/[0.025] py-4 gap-3 justify-between"
-              >
-                <CardHeader className="px-4 pb-0">
-                  <div className="flex items-center justify-between gap-2">
-                    <Badge flat className="font-mono text-[10px] uppercase border-white/20">
-                      {org.type}
-                    </Badge>
-                    <div className="flex items-center gap-1.5 font-mono text-xs font-bold text-emerald-300">
-                      <span>SCORE</span>
-                      <span className="rounded border border-emerald-400/40 bg-emerald-500/15 px-1.5 py-0.5">
-                        {score}
-                      </span>
-                    </div>
-                  </div>
-                  <CardTitle className="pt-1 text-base font-bold">{org.name}</CardTitle>
-                  <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/10">
-                    <div
-                      className="h-full bg-gradient-to-r from-sky-400 to-emerald-400"
-                      style={{ width: `${Math.min(100, Math.max(8, score))}%` }}
-                    />
-                  </div>
-                </CardHeader>
-
-                <CardContent className="px-4 space-y-3">
-                  {orgSignals.length > 0 ? (
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-amber-300">
-                        <Zap className="size-3" />
-                        <span>Why Now ({orgSignals.length})</span>
-                      </div>
-                      {orgSignals.map((sig) => (
-                        <div
-                          key={sig.id}
-                          className="rounded border border-white/10 bg-black/40 p-2.5 space-y-1.5"
-                        >
-                          <div className="flex items-center justify-between gap-1 font-mono text-[10px] text-muted-foreground">
-                            <span className="uppercase text-amber-200">{sig.type.replace(/_/g, " ")}</span>
-                            <span>{sig.date ?? "Recent"}</span>
-                          </div>
-                          <div className="text-xs leading-snug text-foreground">{sig.title}</div>
-                          <div className="flex flex-wrap gap-1 pt-0.5">
-                            {sig.evidence_ids.map((eid) => (
-                              <EvidenceChip
-                                key={eid}
-                                evidenceId={eid}
-                                evidenceMap={evidenceMap}
-                                onInspect={onInspectEvidence}
-                                compact
-                              />
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <div className="rounded border border-white/10 bg-black/25 p-2.5 font-mono text-[11px] text-muted-foreground">
-                      Matched via co-author affiliation graph (no separate 90d signal cached).
-                    </div>
-                  )}
-
-                  <Button
-                    size="sm"
-                    flat
-                    onClick={() => onSelectOrgForPaths(org.id)}
-                    className="w-full border border-white/20 font-mono text-xs"
-                  >
-                    <span>
-                      {warmPathsCount > 0
-                        ? `Inspect ${warmPathsCount} Warm Path${warmPathsCount > 1 ? "s" : ""} →`
-                        : "Open Warm-Path Graph →"}
-                    </span>
-                  </Button>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* STRUCTURED 4-PART ICP WITH EVIDENCE CHIPS */}
-      {icp && (
-        <div className="space-y-3 pt-2">
-          <div className="flex items-center justify-between">
-            <div>
-              <h2 className="text-lg font-bold tracking-tight flex items-center gap-2">
-                <Target className="size-5 text-sky-300" />
-                <span>Evidence-Backed Ideal Customer Profile ({founder?.company ?? icp.founder_id})</span>
-              </h2>
-              <p className="text-xs text-muted-foreground">
-                Every buyer role, vertical, technical pain point, and expansion wedge is anchored to verifiable evidence.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-            {/* Buyer Roles */}
-            <Card flat border className="border-white/15 bg-white/[0.02] py-4 gap-3">
-              <CardHeader className="px-5">
-                <CardTitle className="text-sm font-mono uppercase tracking-wider text-sky-300 flex items-center gap-2">
-                  <Compass className="size-4" />
-                  <span>Target Buyer Personas ({icp.buyer_roles.length})</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="px-5 space-y-3">
-                {icp.buyer_roles.map((role, i) => (
-                  <div key={`${role.title}-${i}`} className="rounded border border-white/10 bg-black/35 p-3 space-y-2">
-                    <div className="text-sm font-semibold">{role.title}</div>
-                    <p className="text-xs leading-relaxed text-muted-foreground">{role.why}</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {role.evidence_ids.map((eid) => (
-                        <EvidenceChip
-                          key={eid}
-                          evidenceId={eid}
-                          evidenceMap={evidenceMap}
-                          onInspect={onInspectEvidence}
-                          compact
-                        />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            {/* Industries */}
-            <Card flat border className="border-white/15 bg-white/[0.02] py-4 gap-3">
-              <CardHeader className="px-5">
-                <CardTitle className="text-sm font-mono uppercase tracking-wider text-emerald-300 flex items-center gap-2">
-                  <Layers className="size-4" />
-                  <span>Primary Commercial Verticals ({icp.industries.length})</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="px-5 space-y-3">
-                {icp.industries.map((ind, i) => (
-                  <div key={`${ind.name}-${i}`} className="rounded border border-white/10 bg-black/35 p-3 space-y-2">
-                    <div className="text-sm font-semibold">{ind.name}</div>
-                    <p className="text-xs leading-relaxed text-muted-foreground">{ind.why}</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {ind.evidence_ids.map((eid) => (
-                        <EvidenceChip
-                          key={eid}
-                          evidenceId={eid}
-                          evidenceMap={evidenceMap}
-                          onInspect={onInspectEvidence}
-                          compact
-                        />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            {/* Technical Needs */}
-            <Card flat border className="border-white/15 bg-white/[0.02] py-4 gap-3">
-              <CardHeader className="px-5">
-                <CardTitle className="text-sm font-mono uppercase tracking-wider text-amber-300 flex items-center gap-2">
-                  <Radar className="size-4" />
-                  <span>Urgent Technical Buyer Needs ({icp.needs.length})</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="px-5 space-y-3">
-                {icp.needs.map((need, i) => (
-                  <div key={i} className="rounded border border-white/10 bg-black/35 p-3 space-y-2">
-                    <p className="text-xs leading-relaxed text-foreground">{need.text}</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {need.evidence_ids.map((eid) => (
-                        <EvidenceChip
-                          key={eid}
-                          evidenceId={eid}
-                          evidenceMap={evidenceMap}
-                          onInspect={onInspectEvidence}
-                          compact
-                        />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-
-            {/* Expansion Segments */}
-            <Card flat border className="border-white/15 bg-white/[0.02] py-4 gap-3">
-              <CardHeader className="px-5">
-                <CardTitle className="text-sm font-mono uppercase tracking-wider text-purple-300 flex items-center gap-2">
-                  <Sparkles className="size-4" />
-                  <span>Adjacent Expansion Wedges ({icp.expansion_segments.length})</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="px-5 space-y-3">
-                {icp.expansion_segments.map((seg, i) => (
-                  <div key={`${seg.name}-${i}`} className="rounded border border-white/10 bg-black/35 p-3 space-y-2">
-                    <div className="text-sm font-semibold">{seg.name}</div>
-                    <p className="text-xs leading-relaxed text-muted-foreground">{seg.why}</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {seg.evidence_ids.map((eid) => (
-                        <EvidenceChip
-                          key={eid}
-                          evidenceId={eid}
-                          evidenceMap={evidenceMap}
-                          onInspect={onInspectEvidence}
-                          compact
-                        />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
