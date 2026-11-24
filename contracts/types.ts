@@ -57,7 +57,11 @@ export type EdgeType =
   | "TOPIC_ALIGNED"     // publishes on the same topic (passion/alignment), no shared paper
   | "AFFILIATED_AT"     // person -> org, as of a date
   | "BOARD"             // shared board/advisor listing
-  | "PERSONAL";         // from the owner's own network (Connect The Dots), labelled
+  | "PERSONAL"          // from the owner's own network (Connect The Dots), labelled
+  | "ENABLES"           // value map: feature -> benefit
+  | "DELIVERS"          // value map: benefit -> value
+  | "SOLVES"            // value map: value -> problem (a buyer category's problem set)
+  | "FITS";             // buyer category -> org (this org has that problem set, with evidence)
 
 export interface Edge {
   id: Id; from: Id; to: Id; type: EdgeType;
@@ -115,6 +119,27 @@ export interface Metrics {
   by_actor: { actor: string; actor_kind: "agent" | "human"; actions: number }[];
 }
 
+/** Layered knowledge graph (Jakob 12:12): one interface, core layer = founder + papers + value map,
+ *  outer layers = buyer categories (colour per category, by problem set) -> leads/paths. */
+export interface ValueNode {
+  id: Id; kind: "feature" | "benefit" | "value" | "problem";
+  text: string; source: "paper" | "founder" | "inferred"; evidence_ids: Id[];
+}
+export interface BuyerCategory {
+  id: Id; name: string;               // e.g. "Hyperscale AI infrastructure"
+  problem_set: string[];              // problems this category has
+  value_prop: string;                 // how the founder's value fits these problems (one line, grounded)
+  colour: string;                     // design token name, e.g. "--cat-1"; UI maps it to a colour
+  org_ids: Id[]; problem_node_ids: Id[]; evidence_ids: Id[];
+}
+export interface KnowledgeGraph {
+  founder: Founder;
+  core: { value_nodes: ValueNode[]; edges: Edge[] };              // ENABLES / DELIVERS / SOLVES
+  categories: BuyerCategory[];                                   // FITS edges are in leads.edges
+  leads: { people: Person[]; orgs: Org[]; edges: Edge[]; paths: Path[] };
+  evidence: Evidence[];
+}
+
 /** HTTP API (FastAPI, base http://localhost:8000). All GETs accept ?founder_id=. */
 export interface Api {
   "POST /intake": { body: IntakeForm | { query: string }; res: Founder }; // form, or a name/DOI for "try any founder"
@@ -132,5 +157,9 @@ export interface Api {
   "GET /credits": { res: Credits };
   "GET /search": { query: { q: string }; res: { people: Person[]; ms: number; engine: "moss" | "cache" } };
   "GET /evidence/{id}": { res: Evidence };
-  "GET /contacts/{person_id}": { res: Contact };                    // shown masked on stage; nothing is sent
+  "GET /contacts/{person_id}": { res: Contact };
+  "GET /value-map": { res: { value_nodes: ValueNode[]; edges: Edge[]; evidence: Evidence[] } }; // from papers + interview
+  "POST /value-map": { body: { session_id?: string }; res: { value_nodes: ValueNode[]; edges: Edge[]; evidence: Evidence[] } };
+  "GET /categories": { res: BuyerCategory[] };
+  "GET /knowledge-graph": { res: KnowledgeGraph };                  // the one layered view                    // shown masked on stage; nothing is sent
 }

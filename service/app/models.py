@@ -4,7 +4,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 Iso = str
 Id = str
-EdgeType = Literal['LAB_MATE', 'DUAL_AFFILIATION', 'ADVISOR_LAB', 'CO_AUTHORED', 'CITES', 'TOPIC_ALIGNED', 'AFFILIATED_AT', 'BOARD', 'PERSONAL']
+EdgeType = Literal['LAB_MATE', 'DUAL_AFFILIATION', 'ADVISOR_LAB', 'CO_AUTHORED', 'CITES', 'TOPIC_ALIGNED', 'AFFILIATED_AT', 'BOARD', 'PERSONAL', 'ENABLES', 'DELIVERS', 'SOLVES', 'FITS']
 Stage = Literal['found', 'path_checked', 'draft', 'approved', 'intro_asked', 'intro_made', 'pilot']
 PathKind = Literal['lab_mate', 'dual_affiliation', 'advisor_lab', 'co_author', 'aligned', 'board', 'personal']
 STAGES = ('found', 'path_checked', 'draft', 'approved', 'intro_asked', 'intro_made', 'pilot')
@@ -257,3 +257,21 @@ class Api(BaseModel):
     credits: ResponseEnvelope[Credits] = Field(alias='GET /credits')
     search: SearchEnvelope = Field(alias='GET /search')
     evidence: ResponseEnvelope[Evidence] = Field(alias='GET /evidence/{id}')
+
+
+class ValueNode(BaseModel):
+    id: Id
+    kind: Literal['feature', 'benefit', 'value', 'problem']
+    text: str
+    source: Literal['paper', 'founder', 'inferred']
+    evidence_ids: list[Id]
+
+class BuyerCategory(BaseModel):
+    id: Id
+    name: str
+    problem_set: list[str]
+    value_prop: str
+    colour: str
+    org_ids: list[Id]
+    problem_node_ids: list[Id]
+    evidence_ids: list[Id]
