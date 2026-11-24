@@ -619,14 +619,15 @@
       "path_id": "path:erick:e8691e1d13091477d524",
       "to_person_id": "person:openalex:A5085203145",
       "kind": "intro_request",
-      "subject": "Thorium-227 chelation and Bayer radiopharma",
-      "body": "Hi Åsmund,\n\nHannah Weber, HOPO CEO. HOPO's molecule comes from Rebecca Abergel's Berkeley Lab research; she co-authored \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\" with you in 2018. You are a Radiopharmaceuticals manager at Bayer as of 2024, and Bayer authors published on a thorium-227 conjugate in 2023. Could you point me to the right Bayer contact, or forward this? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics' molecule comes from Rebecca Abergel's Berkeley Lab research; she co-authored a 2018 paper on a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy. We would welcome a short conversation.",
+      "subject": "Your 2018 thorium-227 chelator paper and Bayer",
+      "body": "Hi Åsmund,\n\nHannah Weber, CEO of HOPO Therapeutics. We develop 3,4,3-LI(1,2-HOPO), the Berkeley Lab chelator in \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\", which you co-authored with Rebecca Abergel in 2018. Given Bayer's 2023 thorium-227 conjugate work, who at Bayer handles chelator chemistry for radiopharmaceuticals? No is fine.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics, led by CEO Hannah Weber, develops 3,4,3-LI(1,2-HOPO), the Berkeley Lab chelator studied for thorium-227 targeted alpha therapy in a 2018 paper with Åsmund Larsen (Bayer as of 2024). Hannah would like a short call with whoever works on chelators for radiopharmaceuticals at Bayer.",
       "evidence_ids": [
         "evidence:erick:bd66a699632a8769a89f",
         "evidence:moss:ed2c79c085f83555d5bc",
-        "evidence:buyers:efe4992678cca269609d"
+        "evidence:buyers:efe4992678cca269609d",
+        "evidence:openalex:W2101984559"
       ],
-      "content_hash": "05e74641eb146f090927ffe8431c1a55332c448dd9b6d383f8bdf539d4c83465",
+      "content_hash": "43f52cfdaee4256be9dd812ca0dabe8de81c1286a016a7547a44b2121357bd13",
       "status": "draft",
       "checks": [
         {
@@ -696,13 +697,14 @@
       "path_id": "path:erick:e8691e1d13091477d524",
       "to_person_id": "person:openalex:A5085203145",
       "kind": "forwardable_note",
-      "subject": "HOPO Therapeutics and Bayer radiopharmaceuticals",
-      "body": "HOPO Therapeutics' molecule comes from Rebecca Abergel's Berkeley Lab research; she co-authored a 2018 paper on a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy. We would welcome a short conversation.",
+      "subject": "HOPO Therapeutics: a chelator for thorium-227 work at Bayer",
+      "body": "HOPO Therapeutics, led by CEO Hannah Weber, develops 3,4,3-LI(1,2-HOPO), the Berkeley Lab chelator studied for thorium-227 targeted alpha therapy in a 2018 paper with Åsmund Larsen (Bayer as of 2024). Hannah would like a short call with whoever works on chelators for radiopharmaceuticals at Bayer.",
       "evidence_ids": [
         "evidence:erick:bd66a699632a8769a89f",
-        "evidence:moss:ed2c79c085f83555d5bc"
+        "evidence:moss:ed2c79c085f83555d5bc",
+        "evidence:openalex:W2101984559"
       ],
-      "content_hash": "50b35a80c5295e673995f2e7a75b9486bdf94d00fc727ebe79f647003868273e",
+      "content_hash": "de1a876e3bf953855e1094f1a50596171f50c136c978d6621d45d7d712ef5899",
       "status": "draft",
       "checks": [
         {
@@ -772,16 +774,15 @@
       "path_id": "path:erick:b71216d7336b332ae634",
       "to_person_id": "person:openalex:A5073204417",
       "kind": "intro_request",
-      "subject": "Forwarding a chelator chemistry note to Lumiphore",
-      "body": "Hi Kenneth,\n\nHannah Weber, CEO of HOPO Therapeutics. Rebecca Abergel of Berkeley Lab co-authored \"Formulations of hydroxypyridonate actinide/lanthanide decorporation agents\" with you in 2023, and you were at Lumiphore as of 2011. Would you forward the blurb below to the relevant team at Lumiphore, given its 2017 zirconium-89 chelator work? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics' molecule comes from the Berkeley Lab research of Rebecca Abergel, who studies hydroxypyridonate decorporation agents for actinides. We would like to learn whether this chelator chemistry is relevant to the team's 2017 work on zirconium-89 chelators.",
+      "subject": "Your 2023 HOPO formulations paper and Lumiphore",
+      "body": "Hi Kenneth,\n\nHannah Weber, CEO of HOPO Therapeutics. We develop 3,4,3-LI(1,2-HOPO) from Rebecca Abergel's Berkeley Lab, and you co-authored \"Formulations of hydroxypyridonate actinide/lanthanide decorporation agents\" with her in 2023. Lumiphore published on hydroxyisophthalamide chelators for zirconium-89 in 2017, so the chemistry may overlap. Who at Lumiphore would be the right person for a short call on chelation science? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics, led by CEO Hannah Weber, develops the orally active hydroxypyridonate chelator 3,4,3-LI(1,2-HOPO) from Rebecca Abergel's Berkeley Lab. Hannah would like a short call with the Lumiphore team behind the 2017 zirconium-89 chelator paper to compare chelation science.",
       "evidence_ids": [
         "evidence:erick:d0a06ab0d3d02259feb8",
         "evidence:erick:67239e6a11fa749cb8b8",
         "evidence:buyers:b732f794138ef300fc29",
-        "evidence:openalex:W2062348077",
         "evidence:openalex:W2101984559"
       ],
-      "content_hash": "3d72b300007d2bb44ed5bffa434012e82232a06b3deed453d9c457fc2c781273",
+      "content_hash": "e4d8ee077e90b3568cadd4e59ca4e50ab15fc02e23bb1bc0302db3ac660a651d",
       "status": "draft",
       "checks": [
         {
@@ -851,14 +852,13 @@
       "path_id": "path:erick:b71216d7336b332ae634",
       "to_person_id": "person:openalex:A5073204417",
       "kind": "forwardable_note",
-      "subject": "Chelator chemistry and your zirconium-89 work",
-      "body": "HOPO Therapeutics' molecule comes from the Berkeley Lab research of Rebecca Abergel, who studies hydroxypyridonate decorporation agents for actinides. We would like to learn whether this chelator chemistry is relevant to the team's 2017 work on zirconium-89 chelators.",
+      "subject": "HOPO Therapeutics and zirconium-89 chelator work at Lumiphore",
+      "body": "HOPO Therapeutics, led by CEO Hannah Weber, develops the orally active hydroxypyridonate chelator 3,4,3-LI(1,2-HOPO) from Rebecca Abergel's Berkeley Lab. Hannah would like a short call with the Lumiphore team behind the 2017 zirconium-89 chelator paper to compare chelation science.",
       "evidence_ids": [
         "evidence:buyers:b732f794138ef300fc29",
-        "evidence:openalex:W2062348077",
         "evidence:openalex:W2101984559"
       ],
-      "content_hash": "85e2f10b53ca94fedfff25b559024f511dfb1e76e826c4f2de62f8f569f8a49a",
+      "content_hash": "9bf4a8a0cfe2a8debe794cf690080b59bf87cf0ca07094f2a98d140d2c1408c2",
       "status": "draft",
       "checks": [
         {
@@ -928,8 +928,8 @@
       "path_id": "path:erick:32b6a862773a724452e6",
       "to_person_id": "person:openalex:A5015500305",
       "kind": "intro_request",
-      "subject": "Oral decorporation and SRI radiation work",
-      "body": "Hi Polly,\n\nHannah Weber, CEO of HOPO Therapeutics. HOPO's molecule comes from Rebecca Abergel's Berkeley Lab research; you and Rebecca co-authored \"Identifying Toxicity Mechanisms Associated with f-block Radiometals through Genome-wide Toxicogenomics\" in 2023,. Would you forward the note below to whoever leads radiation countermeasure work at SRI? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics' molecule comes from Rebecca Abergel's Berkeley Lab research on orally active hydroxypyridonate decorporation agents, while DTPA is FDA-approved for intravenous treatment of plutonium, americium and curium contamination. Hannah Weber would welcome a twenty-minute call on how an oral option could fit radiation countermeasure planning.",
+      "subject": "An oral option next to IV DTPA, via your 2023 paper",
+      "body": "Hi Polly,\n\nHannah Weber, CEO of HOPO Therapeutics. You co-authored \"Identifying Toxicity Mechanisms Associated with f-block Radiometals through Genome-wide Toxicogenomics\" with Rebecca Abergel in 2023; we develop her Berkeley Lab chelator as a pill. The approved drug, DTPA, needs an IV, which is slow in a mass-casualty event. Could you forward the note below to whoever runs radiation countermeasure studies at SRI? No pressure.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics, led by CEO Hannah Weber, develops an oral chelator from Rebecca Abergel's Berkeley Lab; DTPA, the approved drug for plutonium contamination, is given intravenously. Hannah would like to know which criteria SRI would apply to an oral radiation countermeasure.",
       "evidence_ids": [
         "evidence:erick:770af0ce670722f16f3a",
         "evidence:erick:2acf868b95526006424b",
@@ -938,7 +938,7 @@
         "evidence:value-map:remm-iv",
         "evidence:value-map:hopo-oral"
       ],
-      "content_hash": "719f275b4ea866b0e6740cc7af12096fdcade4e7b57ca2c91007e5e049d20789",
+      "content_hash": "984fe7fbf1303ddc0bc225d0085a780942ee849d2c42fe87aca0c7bfa8cfdea7",
       "status": "draft",
       "checks": [
         {
@@ -1008,16 +1008,15 @@
       "path_id": "path:erick:32b6a862773a724452e6",
       "to_person_id": "person:openalex:A5015500305",
       "kind": "forwardable_note",
-      "subject": "An oral decorporation option next to IV DTPA",
-      "body": "HOPO Therapeutics' molecule comes from Rebecca Abergel's Berkeley Lab research on orally active hydroxypyridonate decorporation agents, while DTPA is FDA-approved for intravenous treatment of plutonium, americium and curium contamination. Hannah Weber would welcome a twenty-minute call on how an oral option could fit radiation countermeasure planning.",
+      "subject": "An oral chelator for internal contamination: criteria question for SRI",
+      "body": "HOPO Therapeutics, led by CEO Hannah Weber, develops an oral chelator from Rebecca Abergel's Berkeley Lab; DTPA, the approved drug for plutonium contamination, is given intravenously. Hannah would like to know which criteria SRI would apply to an oral radiation countermeasure.",
       "evidence_ids": [
         "evidence:openalex:W2101984559",
-        "evidence:openalex:W2062348077",
         "evidence:buyers:60b25ab244d63d520202",
         "evidence:value-map:remm-iv",
         "evidence:value-map:hopo-oral"
       ],
-      "content_hash": "62ac7a7bfa15a2029c182f78c6b9191621ac270274d39cc1142ad3a21aa33cbc",
+      "content_hash": "edfb2780a01fd7218c30819889559126218a8c428b795de8012e7d1b09873e35",
       "status": "draft",
       "checks": [
         {
@@ -1087,18 +1086,17 @@
       "path_id": "path:erick:476d99d1bac45674aac8",
       "to_person_id": "person:openalex:A5035055430",
       "kind": "intro_request",
-      "subject": "A question for a paediatric toxicologist in Aachen",
-      "body": "Hi Roger,\n\nHannah Weber, CEO of HOPO Therapeutics. HOPO's molecule comes from Rebecca Abergel's Berkeley Lab research; you and Rebecca co-authored \"Gold Nanoparticle-Enabled Fluorescence Sensing of Gadolinium-Based Contrast Agents in Urine\" in 2025, and the clinic has published a case report on chronic lead poisoning. Would you forward the note below to a paediatric toxicologist there? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics' molecule comes from Rebecca Abergel's Berkeley Lab research; a 2018 study reports lead and cadmium complexation by the same ligand, in solution chemistry only. Hannah Weber would like to ask a paediatric toxicologist what a children's lead-chelation study would have to show.",
+      "subject": "Advice from a paediatric lead specialist in Aachen",
+      "body": "Hi Roger,\n\nHannah Weber, CEO of HOPO Therapeutics. You co-authored \"Gold Nanoparticle-Enabled Fluorescence Sensing of Gadolinium-Based Contrast Agents in Urine\" with Rebecca Abergel in 2025; we develop her Berkeley Lab chelator. We want clinical advice early on lead poisoning in children. Could you forward the note below to a paediatric lead specialist at Uniklinik RWTH Aachen? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics, led by CEO Hannah Weber, develops an investigational oral chelator from Rebecca Abergel's Berkeley Lab; its lead binding is shown in solution chemistry only (2018). Hannah would value a short call on what a children's lead study would need to show against succimer.",
       "evidence_ids": [
         "evidence:erick:71040838bb60c4af1756",
         "evidence:erick:76525df7a7a7188b1bcc",
         "evidence:buyers:0ebf8bf293571d4238d0",
-        "evidence:openalex:W2062348077",
         "evidence:openalex:W2101984559",
         "evidence:value-map:hopo-pb",
         "evidence:moss:783bfbbcf846a40f7c36"
       ],
-      "content_hash": "d0d94dc4e8f27670f6a7a8d4e7031f7d3f9034fa9bd36cebfbfe5273ebefea4e",
+      "content_hash": "65f6ec1287a6d4c32a3562ce1cfc50e015df39c273f3d33a3a3e0de39c94b9c0",
       "status": "draft",
       "checks": [
         {
@@ -1168,15 +1166,14 @@
       "path_id": "path:erick:476d99d1bac45674aac8",
       "to_person_id": "person:openalex:A5035055430",
       "kind": "forwardable_note",
-      "subject": "What a children's lead-chelation study must show",
-      "body": "HOPO Therapeutics' molecule comes from Rebecca Abergel's Berkeley Lab research; a 2018 study reports lead and cadmium complexation by the same ligand, in solution chemistry only. Hannah Weber would like to ask a paediatric toxicologist what a children's lead-chelation study would have to show.",
+      "subject": "What a children's lead study would need to show",
+      "body": "HOPO Therapeutics, led by CEO Hannah Weber, develops an investigational oral chelator from Rebecca Abergel's Berkeley Lab; its lead binding is shown in solution chemistry only (2018). Hannah would value a short call on what a children's lead study would need to show against succimer.",
       "evidence_ids": [
-        "evidence:openalex:W2062348077",
         "evidence:openalex:W2101984559",
         "evidence:buyers:0ebf8bf293571d4238d0",
         "evidence:value-map:hopo-pb"
       ],
-      "content_hash": "b46884feac5c084c671ac24e98facc7ed02925a77ef6e3ae78568f565d389351",
+      "content_hash": "fa1b9f11b32913f2cce59d5a99b02ceb9df2484b7cf15598cb1f0532b7de1ebe",
       "status": "draft",
       "checks": [
         {

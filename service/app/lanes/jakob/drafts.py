@@ -51,6 +51,42 @@ def computed_path(path_id: str, founder_id: str | None = None):
     return None
 
 
+# HACK: buyer-type angles for intro drafts; category found by keyword in the cached category files.
+BUYER_ANGLES = {
+    'radiation': 'BUYER TYPE: government / radiation countermeasures. Angle: mission and readiness. State plainly '
+                 'that the approved drug (DTPA) is given by IV and this chelator is developed as an oral option, '
+                 'which matters when many people need treatment at once. Ask for their criteria for an oral '
+                 'candidate, or the right programme contact. No efficacy claims beyond cited preclinical work.',
+    'pet': 'BUYER TYPE: radiopharma / PET imaging. Angle: shared chelation science, anchored on the co-authored '
+           'paper. Ask only for the right contact for chelator chemistry. No deal terms, no lead-poisoning story.',
+    'gd': 'BUYER TYPE: gadolinium contrast. Research-partner framing only: an open scientific question about '
+          'retention and clearance. Never imply their agent harms patients and never call this a companion drug.',
+    'lead': 'BUYER TYPE: clinical / lead poisoning. An advice ask to a paediatric lead specialist: what would a '
+            "children's study need to show against succimer. Zero efficacy claims; say what is shown so far only "
+            'if cited.',
+}
+ANGLE_KEYS = (('radiation', ('radiation', 'countermeasure', 'defense')), ('gd', ('gadolinium', ':gd', 'contrast')),
+              ('lead', ('lead', 'paediatric', 'pediatric')), ('pet', ('pet', 'radiopharm', 'imaging')))
+
+
+def buyer_angle(org_id: str) -> str:
+    root = FilePath(__file__).resolve().parents[4]
+    for file in [*sorted((root / 'fixtures').glob('categories*.json')),
+                 *sorted((root / 'data/cache/jakob/categories').glob('*.json'))]:
+        try:
+            data = json.loads(file.read_text())
+        except (OSError, ValueError):
+            continue
+        for category in (data if isinstance(data, list) else data.get('categories', [])):
+            if not isinstance(category, dict) or org_id not in (category.get('org_ids') or []):
+                continue
+            label = (str(category.get('id', '')) + ' ' + str(category.get('name', ''))).lower()
+            for key, words in ANGLE_KEYS:
+                if any(word in label for word in words):
+                    return BUYER_ANGLES[key]
+    return ''
+
+
 def _validate(items, path, allowed_ids, has_bridge):
     expected = ['intro_request', 'forwardable_note'] if has_bridge else ['direct_fallback']
     if not isinstance(items, list) or [d.get('kind') for d in items if isinstance(d, dict)] != expected:
@@ -163,7 +199,15 @@ If HAS_BRIDGE is false, there is no personal bridge: return ONLY one object in t
 kind direct_fallback, addressed directly to the buyer. No intro request or forwardable section;
 use evidence-based relevance and one easy yes/no ask. Same word limit and grounding rules.
 Use valid JSON (double quotes). Do not return ids, recipients, status, or hashes.
+
+STYLE: sound like a busy founder writing one person, not marketing. Open with who you are and the
+real co-authored paper (title + year) as the reason; one small clear ask; an easy out. No hype words,
+no em dashes, no "I hope this finds you well", no "quick question", no flattery, no fake familiarity.
+The forwardable blurb must read correctly if forwarded unchanged to a stranger.
 '''
+    angle = buyer_angle(path.buyer_org_id)
+    if angle:
+        prompt += angle + '\n'
     prompt += '\nHAS_BRIDGE: ' + json.dumps(has_bridge) + '\nGROUNDING:\n' + json.dumps(context)
 
     def generate(text):
