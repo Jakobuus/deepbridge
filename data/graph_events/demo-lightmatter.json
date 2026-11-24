@@ -269,7 +269,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -318,7 +319,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -367,7 +369,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -441,7 +444,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -509,7 +513,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -549,7 +554,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -625,7 +631,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -665,7 +672,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -770,7 +778,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -828,7 +837,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -939,7 +949,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -1032,7 +1043,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -1117,7 +1129,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -1187,7 +1200,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -1280,7 +1294,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -1364,7 +1379,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -1440,7 +1456,8 @@
    ],
    "confidence": 0.5,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -2150,7 +2167,8 @@
    ],
    "confidence": 0.65,
    "name_check": "unchecked",
-   "label": "2025 paper cites Harris 2017; no personal link"
+   "label": "2025 paper cites Harris 2017; no personal link",
+   "warmth_label": "2025 paper cites Harris 2017; no personal link"
   },
   "evidence": [
    {
@@ -2181,7 +2199,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "Google publication affiliation, 2025"
+   "label": "Google publication affiliation, 2025",
+   "warmth_label": "Google publication affiliation, 2025"
   },
   "evidence": [
    {
@@ -2217,7 +2236,9 @@
    "why_now_signal_ids": [
     "signal:90d-google",
     "signal:google-cites"
-   ]
+   ],
+   "warmth_type": "same_institution",
+   "warmth_label": "Same institution now · as of Sep 2025"
   },
   "evidence": [
    {
@@ -2267,7 +2288,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "co-authored 2015 (MIT)"
+   "label": "co-authored 2015 (MIT)",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -2298,7 +2320,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "published affiliation as of 2026"
+   "label": "published affiliation as of 2026",
+   "warmth_label": "published affiliation as of 2026"
   },
   "evidence": [
    {
@@ -2333,7 +2356,9 @@
    "weakest_edge_id": "edge:chen-org",
    "why_now_signal_ids": [
     "signal:90d-microsoft"
-   ]
+   ],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -2391,7 +2416,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "co-authored 2015 (MIT)"
+   "label": "co-authored 2015 (MIT)",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -2422,7 +2448,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "published affiliation as of 2026"
+   "label": "published affiliation as of 2026",
+   "warmth_label": "published affiliation as of 2026"
   },
   "evidence": [
    {
@@ -2455,7 +2482,9 @@
    "kind": "lab_mate",
    "score": 78.0,
    "weakest_edge_id": "edge:dane-org",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -2513,7 +2542,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "co-authored 2015 (MIT)"
+   "label": "co-authored 2015 (MIT)",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -2544,7 +2574,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "published affiliation as of 2025"
+   "label": "published affiliation as of 2025",
+   "warmth_label": "published affiliation as of 2025"
   },
   "evidence": [
    {
@@ -2577,7 +2608,9 @@
    "kind": "lab_mate",
    "score": 78.0,
    "weakest_edge_id": "edge:najafi-org",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -2635,7 +2668,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "co-authored 2014 (MIT)"
+   "label": "co-authored 2014 (MIT)",
+   "warmth_label": "Research peer · co-authored 2014"
   },
   "evidence": [
    {
@@ -2666,7 +2700,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "published affiliation as of 2025"
+   "label": "published affiliation as of 2025",
+   "warmth_label": "published affiliation as of 2025"
   },
   "evidence": [
    {
@@ -2699,7 +2734,9 @@
    "kind": "lab_mate",
    "score": 78.0,
    "weakest_edge_id": "edge:shiue-org",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2014"
   },
   "evidence": [
    {
@@ -2757,7 +2794,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "listed on Lightmatter board, observed 2026-11-24"
+   "label": "listed on Lightmatter board, observed 2026-11-24",
+   "warmth_label": "listed on Lightmatter board, observed 2026-11-24"
   },
   "evidence": [
    {
@@ -2788,7 +2826,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "Microsoft role as of 2025-03-25"
+   "label": "Microsoft role as of 2025-03-25",
+   "warmth_label": "Microsoft role as of 2025-03-25"
   },
   "evidence": [
    {
@@ -2823,7 +2862,9 @@
    "weakest_edge_id": "edge:zander-microsoft",
    "why_now_signal_ids": [
     "signal:90d-microsoft"
-   ]
+   ],
+   "warmth_type": "same_institution",
+   "warmth_label": "Same institution now · as of Mar 2025"
   },
   "evidence": [
    {
@@ -2881,7 +2922,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "co-authored 2017 (MIT)"
+   "label": "co-authored 2017 (MIT)",
+   "warmth_label": "Research peer · co-authored 2017"
   },
   "evidence": [
    {
@@ -2912,7 +2954,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "published affiliation as of 2024"
+   "label": "published affiliation as of 2024",
+   "warmth_label": "published affiliation as of 2024"
   },
   "evidence": [
    {
@@ -2947,7 +2990,9 @@
    "weakest_edge_id": "edge:steinbrecher-org",
    "why_now_signal_ids": [
     "signal:90d-meta"
-   ]
+   ],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2017"
   },
   "evidence": [
    {
@@ -3005,7 +3050,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "co-authored 2017 (MIT)"
+   "label": "co-authored 2017 (MIT)",
+   "warmth_label": "Research peer · co-authored 2017"
   },
   "evidence": [
    {
@@ -3055,7 +3101,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "co-authored 2026 (Englund lab orbit)"
+   "label": "co-authored 2026 (Englund lab orbit)",
+   "warmth_label": "Advisor's lab · 2026"
   },
   "evidence": [
    {
@@ -3086,7 +3133,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "MIT + NVIDIA affiliations, 2026"
+   "label": "MIT + NVIDIA affiliations, 2026",
+   "warmth_label": "Same institution now · as of Nov 2026"
   },
   "evidence": [
    {
@@ -3122,7 +3170,9 @@
    "weakest_edge_id": "edge:follet-nvidia",
    "why_now_signal_ids": [
     "signal:90d-nvidia"
-   ]
+   ],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2017"
   },
   "evidence": [
    {
@@ -3180,7 +3230,8 @@
    ],
    "confidence": 0.9,
    "name_check": "ok",
-   "label": "co-authored 2024 (MIT + NTT Research)"
+   "label": "co-authored 2024 (MIT + NTT Research)",
+   "warmth_label": "Research peer · co-authored 2024"
   },
   "evidence": [
    {
@@ -3211,7 +3262,8 @@
    ],
    "confidence": 0.9,
    "name_check": "ok",
-   "label": "MIT + NTT Research affiliations, 2024"
+   "label": "MIT + NTT Research affiliations, 2024",
+   "warmth_label": "Same institution now · as of Dec 2024"
   },
   "evidence": [
    {
@@ -3244,7 +3296,10 @@
    "kind": "dual_affiliation",
    "score": 94.0,
    "weakest_edge_id": "edge:bandyopadhyay-dual",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2024 · Moss-verified",
+   "moss_verified": true
   },
   "evidence": [
    {
@@ -3319,7 +3374,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "co-authored 2024 (MIT + NTT Research)"
+   "label": "co-authored 2024 (MIT + NTT Research)",
+   "warmth_label": "Research peer · co-authored 2024"
   },
   "evidence": [
    {
@@ -3350,7 +3406,8 @@
    ],
    "confidence": 0.9,
    "name_check": "unchecked",
-   "label": "MIT + NTT Research affiliations, 2024"
+   "label": "MIT + NTT Research affiliations, 2024",
+   "warmth_label": "Same institution now · as of Dec 2024"
   },
   "evidence": [
    {
@@ -3383,7 +3440,9 @@
    "kind": "dual_affiliation",
    "score": 94.0,
    "weakest_edge_id": "edge:hamerly-dual",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2024"
   },
   "evidence": [
    {

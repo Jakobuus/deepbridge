@@ -61,8 +61,25 @@ def check(sid):
     return len(errs)
 
 
+def test_warmth():
+    log = build_log('demo-hopo')
+    ps = [e['path'] for e in log if e['kind'] == 'path']
+    assert ps
+    for p in ps:
+        assert p['warmth_type'] in ('research_peer', 'former_colleague', 'same_institution', 'other'), p
+        assert p['warmth_label'] and 'knows' not in p['warmth_label'].lower(), p
+    assert all(e['edge'].get('warmth_label') for e in log if e['kind'] == 'edge' and e['phase'] == 'paths')
+
+
 def main():
-    return 1 if sum(check(sid) for sid in SESSIONS) else 0
+    failures = sum(check(sid) for sid in SESSIONS)
+    try:
+        test_warmth()
+        print('warmth OK')
+    except AssertionError as exc:
+        print('warmth FAIL', exc)
+        failures += 1
+    return 1 if failures else 0
 
 
 if __name__ == '__main__':
