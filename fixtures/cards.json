@@ -379,6 +379,75 @@
           "actor_kind": "agent"
         }
       ]
+    },
+    {
+      "id": "card:hopo:chang",
+      "path_id": "path:erick:32b6a862773a724452e6",
+      "stage": "draft",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T22:14:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T22:17:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "draft",
+          "at": "2026-11-24T22:20:00Z",
+          "actor": "Draft agent",
+          "actor_kind": "agent"
+        }
+      ]
+    },
+    {
+      "id": "card:hopo:pallares",
+      "path_id": "path:erick:476d99d1bac45674aac8",
+      "stage": "draft",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T22:15:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T22:18:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "draft",
+          "at": "2026-11-24T22:21:00Z",
+          "actor": "Draft agent",
+          "actor_kind": "agent"
+        }
+      ]
+    },
+    {
+      "id": "card:hopo:chamseddine",
+      "path_id": "path:erick:4c175abf6b7cade32cc9",
+      "stage": "path_checked",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T22:16:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T22:19:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        }
+      ]
     }
   ]
 }

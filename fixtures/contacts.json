@@ -76,9 +76,15 @@
         "status": "completed",
         "verification_passed": true,
         "cost_usd": 0.02415
+      },
+      "person:openalex:A5035055430": {
+        "id": "task_47f74e2112564c9ca7efead4b450b266",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.016366
       }
     },
-    "observed_at": "2026-11-24T21:45:11.938792+00:00"
+    "observed_at": "2026-11-24T22:18:41.579037+00:00"
   },
   "items": [
     {
@@ -443,6 +449,35 @@
         "evidence:moss:f984c9ecd6a35ee23c82",
         "evidence:moss:960989a533bff1840918"
       ]
+    },
+    {
+      "person_id": "person:openalex:A5035055430",
+      "current_role": "Group Leader, Biohybrid Nanomedical Materials research group",
+      "current_org": "Institute for Experimental Molecular Imaging, RWTH Aachen University Clinic (Uniklinik RWTH Aachen)",
+      "current_asof": "2026-06-30",
+      "email": null,
+      "email_status": "none",
+      "profiles": [
+        {
+          "kind": "other",
+          "url": "https://www.rwth-aachen.de/go/id/brecxf/lidx/1"
+        },
+        {
+          "kind": "homepage",
+          "url": "https://www.exmi.rwth-aachen.de/cms/exmi/Das-Institut/Leitungsteam/~qwkgj/Roger-Molto-Pallares/?lidx=1&allou=1"
+        },
+        {
+          "kind": "orcid",
+          "url": "https://orcid.org/0000-0001-7423-8706"
+        }
+      ],
+      "assessment": "His work has clear overlap with optical and photonic applications through gold-nanostar optical-property research and photoacoustic imaging, and some neural-network relevance through a generative-adversarial-network study, but I found no evidence of reservoir-computing research.",
+      "source": "moss_task",
+      "evidence_ids": [
+        "evidence:moss:783bfbbcf846a40f7c36",
+        "evidence:moss:9d0982e6be630e69b8bd",
+        "evidence:moss:b46d448a7d38c67f3065"
+      ]
     }
   ],
   "evidence": [
@@ -780,6 +815,30 @@
       "quote": "An angle-based geometry index for the direct comparison of 8-coordinate molecular complexes is presented herein.",
       "source_date": null,
       "observed_at": "2026-11-24T21:45:11.938355+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:783bfbbcf846a40f7c36",
+      "source_url": "https://www.rwth-aachen.de/go/id/brecxf/lidx/1",
+      "quote": "Pallares is a researcher at RWTH\u2019s Institute for Experimental Molecular Imaging and at Uniklinik RWTH Aachen. In 2021, he joined the RWTH Institute for Experimental Molecular Imaging, headed by Professor Fabian Kie\u00dfling, as a group leader, where he founded the Biohybrid Nanomedical Materials research group.",
+      "source_date": "2026-06-30",
+      "observed_at": "2026-11-24T22:18:41.575688+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:9d0982e6be630e69b8bd",
+      "source_url": "https://www.exmi.rwth-aachen.de/cms/exmi/Das-Institut/Leitungsteam/~qwkgj/Roger-Molto-Pallares/?lidx=1&allou=1",
+      "quote": "His research lies at the interface of nanotechnology, molecular imaging, and healthcare. His group develops bio-inspired and biohybrid nanomaterials, imaging probes, and soft material systems to visualize, monitor, and manipulate biological processes in vivo. Nanoscale Engineering of Gold Nanostars for Enhanced Photoacoustic Imaging.",
+      "source_date": "2026-06-30",
+      "observed_at": "2026-11-24T22:18:41.575731+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:b46d448a7d38c67f3065",
+      "source_url": "https://orcid.org/0000-0001-7423-8706",
+      "quote": "Machine learning to predict gold nanostar optical properties. ... A Generative Adversarial Network Approach to Predict Nanoparticle Size in Microfluidics",
+      "source_date": "2026-06-30",
+      "observed_at": "2026-11-24T22:18:41.575746+00:00",
       "kind": "web"
     }
   ]
