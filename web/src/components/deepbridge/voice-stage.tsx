@@ -2,7 +2,7 @@
 
 import { ConversationProvider, useConversation } from "@elevenlabs/react";
 import { Mic, PhoneOff } from "lucide-react";
-import { motion, useReducedMotion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import * as React from "react";
 import { API_BASE } from "@/lib/api";
 import { orbBus } from "@/lib/orb-bus";
@@ -19,13 +19,13 @@ const SESSION_ID = "demo-hopo";
 const GRAPH_SPEED = 4;
 
 /** Large orb floating in space with one Speak button (ElevenLabs Agents), and the knowledge graph building beside it. */
-export function VoiceStage() {
+export function VoiceStage({ onEnded }: { onEnded?: () => void }) {
   const [graphOn, setGraphOn] = React.useState(false);
   const stream = useGraphStream(graphOn ? SESSION_ID : null, GRAPH_SPEED);
   return (
     <div className="grid grid-cols-1 items-center gap-8 xl:grid-cols-2">
       <ConversationProvider>
-        <VoiceStageInner onStart={() => setGraphOn(true)} />
+        <VoiceStageInner onStart={() => setGraphOn(true)} onEnded={onEnded} />
       </ConversationProvider>
       <VoiceGraph stream={stream} />
     </div>
@@ -41,11 +41,22 @@ function postTurn(role: "founder" | "interviewer", text: string) {
   }).catch(() => undefined);
 }
 
-function VoiceStageInner({ onStart }: { onStart: () => void }) {
+type Line = { id: number; who: "You" | "Interviewer"; text: string };
+
+function VoiceStageInner({ onStart, onEnded }: { onStart: () => void; onEnded?: () => void }) {
   const reduced = useReducedMotion();
   const levelRef = React.useRef(0);
-  const [lastLine, setLastLine] = React.useState<{ who: "You" | "Interviewer"; text: string } | null>(null);
+  // The last few lines, newest last: each one fades in on its own, older ones dim.
+  const [lines, setLines] = React.useState<Line[]>([]);
+  const lineId = React.useRef(0);
+  const lastLine = lines[lines.length - 1] ?? null;
   const [error, setError] = React.useState<string | null>(null);
+  const [ended, setEnded] = React.useState(false);
+  const wasLive = React.useRef(false);
+  const endTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  React.useEffect(() => () => {
+    if (endTimer.current) clearTimeout(endTimer.current);
+  }, []);
 
   const conversation = useConversation({
     onMessage: ({ message: raw, role }) => {
@@ -53,10 +64,23 @@ function VoiceStageInner({ onStart }: { onStart: () => void }) {
       const message = raw.replace(/\[[^\]]{1,24}\]\s*/g, "").trim();
       if (!message) return;
       const who = role === "user" ? "You" : "Interviewer";
-      setLastLine({ who, text: message });
+      lineId.current += 1;
+      const next = { id: lineId.current, who, text: message } as Line;
+      setLines((prev) => [...prev, next].slice(-3));
       postTurn(role === "user" ? "founder" : "interviewer", message);
       orbBus.pulse();
       if (role === "user") orbBus.bumpProgress(0.06, 0.45);
+    },
+    onConnect: () => {
+      wasLive.current = true;
+      setEnded(false);
+    },
+    // Interview over (the agent hangs up after "Thanks, Hannah", or End is pressed): go to the next step.
+    onDisconnect: () => {
+      if (!wasLive.current) return;
+      wasLive.current = false;
+      setEnded(true);
+      if (onEnded) endTimer.current = setTimeout(onEnded, 2200);
     },
     onError: (msg) => setError(typeof msg === "string" ? msg : "Voice connection error"),
   });
@@ -133,18 +157,41 @@ function VoiceStageInner({ onStart }: { onStart: () => void }) {
         {live ? "End interview" : connecting ? "Connecting…" : "Speak"}
       </motion.button>
 
-      <div className="min-h-[3.5rem] max-w-xl text-center" aria-live="polite">
+      <div className="flex min-h-[6.5rem] w-full max-w-xl flex-col items-center justify-end gap-1.5 text-center" aria-live="polite">
         {error ? (
           <p className="text-sm text-rose-300">{error}</p>
-        ) : lastLine ? (
-          <p className="text-sm text-slate-300">
-            <span className="mr-1.5 font-mono text-[10px] uppercase tracking-widest text-sky-300">{lastLine.who}</span>
-            {lastLine.text}
-          </p>
+        ) : lines.length ? (
+          <AnimatePresence initial={false}>
+            {lines.map((l, i) => (
+              <motion.p
+                key={l.id}
+                layout={!reduced}
+                initial={reduced ? false : { opacity: 0, y: 10, filter: "blur(4px)" }}
+                animate={{ opacity: i === lines.length - 1 ? 1 : 0.4, y: 0, filter: "blur(0px)" }}
+                exit={reduced ? undefined : { opacity: 0, y: -8 }}
+                transition={{ type: "spring", stiffness: 200, damping: 26 }}
+                className={i === lines.length - 1 ? "text-sm text-slate-200" : "text-xs text-slate-400"}
+              >
+                <span className={`mr-1.5 font-mono text-[10px] uppercase tracking-widest ${l.who === "You" ? "text-white" : "text-sky-300"}`}>
+                  {l.who === "You" ? "Hannah" : l.who}
+                </span>
+                {l.text}
+              </motion.p>
+            ))}
+          </AnimatePresence>
         ) : (
           <p className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
             Real-voice interview · ElevenLabs
           </p>
+        )}
+        {ended && !error && (
+          <motion.p
+            initial={reduced ? false : { opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="pt-1 font-mono text-[10px] uppercase tracking-widest text-sky-300"
+          >
+            Interview done · opening the knowledge graph…
+          </motion.p>
         )}
       </div>
     </section>
