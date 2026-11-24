@@ -70,9 +70,15 @@
         "status": "completed",
         "verification_passed": true,
         "cost_usd": 0.023226
+      },
+      "person:openalex:A5153375758": {
+        "id": "task_a047fb07d7bf432899dd0aa813551b8f",
+        "status": "completed",
+        "verification_passed": true,
+        "cost_usd": 0.02415
       }
     },
-    "observed_at": "2026-11-24T21:43:00.635666+00:00"
+    "observed_at": "2026-11-24T21:45:11.938792+00:00"
   },
   "items": [
     {
@@ -413,6 +419,30 @@
         "evidence:moss:51a4324ca2f9d061e878",
         "evidence:moss:fd35f0042bd296d635d7"
       ]
+    },
+    {
+      "person_id": "person:openalex:A5153375758",
+      "current_role": "Staff Scientist",
+      "current_org": "Lawrence Livermore National Laboratory",
+      "current_asof": null,
+      "email": null,
+      "email_status": "none",
+      "profiles": [
+        {
+          "kind": "other",
+          "url": "https://nextgen.lbl.gov/people/alumni"
+        },
+        {
+          "kind": "other",
+          "url": "https://chemrxiv.org/doi/10.26434/chemrxiv.15009510/v1"
+        }
+      ],
+      "assessment": "In the identified 2026 work, no radiopharmaceutical, actinide/radiometal-chelation, or HOPO-ligand application is described; it presents an angle-based geometry index for 8-coordinate molecular complexes.",
+      "source": "moss_task",
+      "evidence_ids": [
+        "evidence:moss:f984c9ecd6a35ee23c82",
+        "evidence:moss:960989a533bff1840918"
+      ]
     }
   ],
   "evidence": [
@@ -710,6 +740,46 @@
       "quote": "Mark A. Stoyer",
       "source_date": null,
       "observed_at": "2026-11-24T21:43:00.635501+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:ba1c9d6716854c35fba6",
+      "source_url": "https://iopscience.iop.org/article/10.1088/1361-6471/ae996f",
+      "quote": "Comparing the fluorination of Pb and Po: insights into p-block relativistic effects for superheavy elements\nJennifer L Pore*, E Marina Lykiardopoulou, Rodney Orford, Jacklyn M Gates, M Cole Bishop, Mirza Grebo, Yuliia Hrabar, Erich Leistenschneider and Mark A Stoyer\nPublished 28 August 2026",
+      "source_date": "2026-08-28",
+      "observed_at": "2026-11-24T21:44:50.926975+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:910bb01a7ec270f8a40e",
+      "source_url": "https://openalex.org/W2899214672",
+      "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy; Year: 2018; Authors: ... Olav B. Ryan ...",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:44:59.917867+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:fe1305cc4a164d000482",
+      "source_url": "https://doi.org/10.1021/acs.inorgchem.8b02430",
+      "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:44:59.917888+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:f984c9ecd6a35ee23c82",
+      "source_url": "https://nextgen.lbl.gov/people/alumni",
+      "quote": "S. Olivia Gunther. Staff Scientist, Lawrence Livermore National Laboratory. Cohort 1 Hoffman Fellow Alum.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:45:11.938339+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:moss:960989a533bff1840918",
+      "source_url": "https://chemrxiv.org/doi/10.26434/chemrxiv.15009510/v1",
+      "quote": "An angle-based geometry index for the direct comparison of 8-coordinate molecular complexes is presented herein.",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:45:11.938355+00:00",
       "kind": "web"
     }
   ]
