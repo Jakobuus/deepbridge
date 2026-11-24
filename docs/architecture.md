@@ -25,7 +25,7 @@ flowchart LR
 
 ## 2. Query logic
 
-**Founder to data (OpenAlex, built).** `lanes/erick/pull.py` takes an OpenAlex author ID. It pulls the founder's works (up to 75), co-author profiles (up to 30), the advisor's works, and works that cite the founder (up to 25). OpenAlex works without a key. `OPENALEX_API_KEY` is optional and is never written into a cache key. Calls are spaced at least 210 ms apart. Each response is stored under `data/cache/erick/raw/`, so the second run needs no network. Routes report cache state in `X-Graph-Data` and `X-Graph-Partial`.
+**Founder to data (OpenAlex, built).** `lanes/erick/pull.py` takes an OpenAlex author ID. It pulls all of the founder's works (capped at 500; 202 for the HOPO founder), co-author profiles (up to 30), the advisor's works, and works that cite the founder (up to 25). OpenAlex works without a key. `OPENALEX_API_KEY` is optional and is never written into a cache key. Calls are spaced at least 210 ms apart. Each response is stored under `data/cache/erick/raw/`, so the second run needs no network. Routes report cache state in `X-Graph-Data` and `X-Graph-Partial`.
 
 **Buyer discovery (built).** `GET /buyers` ranks organisations from public signals: recent papers on the topic, job posts, and citations of the founder's work. Each signal has evidence. The score is a heuristic. Results are cached per founder. The HOPO buyer list is a committed fixture.
 
@@ -97,5 +97,5 @@ Lanes call `events.publish(session_id, phase, kind, layer, ...)`. Each event get
 - Pulls are samples with size limits. A rate-limited pull can be partial. The response headers say so.
 - Buyer and path scores rank public signals. They do not show purchase intent or relationship strength.
 - Seeded pipeline history is simulated.
-- Known issues for the event stream are in `service/app/lanes/erick/KNOWN_ISSUES.md`. Examples: a payload field can override `seq`, and a log reload during replay can splice the stream. None is high severity.
+- Known issues for the event stream are in `service/app/lanes/erick/KNOWN_ISSUES.md`. Example: reloading a recorded log while the same session is replaying can splice the stream. None is high severity.
 - Planned: web animation from the SSE stream, the Lightmatter fallback log, live Flexprice verification.
