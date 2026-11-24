@@ -119,6 +119,12 @@ export interface Draft {
   evidence_ids: Id[];
   content_hash: string;
   status: "draft" | "approved" | "rejected" | "stale";
+  // Optional: Band review room (multi-agent review before the human gate). Absent → strip hidden.
+  review?: {
+    status?: string;
+    room_url?: string | null;
+    steps?: { agent?: string; name?: string; role?: string; status?: string; detail?: string; checks?: string }[];
+  } | null;
 }
 
 export interface Contact {
@@ -163,6 +169,8 @@ export interface Metrics {
   conversion: { from: Stage; to: Stage; rate: number }[];
   by_path_kind: { kind: Path["kind"]; count: number; approved: number }[];
   by_actor: { actor: string; actor_kind: "agent" | "human"; actions: number }[];
+  cost_per_lead?: number | null; // credits per lead, if the API provides it
+  cost_per_lead_credits?: number | null;
 }
 
 export interface ValueNode {
