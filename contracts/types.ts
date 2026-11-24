@@ -65,7 +65,7 @@ export interface Edge {
 export interface Path {
   id: Id; founder_id: Id; bridge_id: Id; buyer_person_id: Id | null; buyer_org_id: Id;
   hops: Id[];                   // edge ids in order founder -> ... -> buyer
-  kind: "lab_mate" | "dual_affiliation" | "advisor_lab" | "co_author" | "aligned" | "personal";
+  kind: "lab_mate" | "dual_affiliation" | "advisor_lab" | "co_author" | "aligned" | "board" | "personal";
   score: number;                // 0-100
   weakest_edge_id: Id;
   why_now_signal_ids: Id[];

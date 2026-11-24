@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength."
+  },
+  "id": "person:openalex:A5102978866",
+  "name": "Nicholas C. Harris",
+  "company": "Lightmatter",
+  "openalex_id": "https://openalex.org/A5102978866",
+  "topics": [
+    "Photonic and Optical Devices",
+    "Neural Networks and Reservoir Computing"
+  ],
+  "summary": "Lightmatter founder; MIT co-author on Deep learning with coherent nanophotonic circuits (2017). Cached research graph with dated publication affiliations.",
+  "evidence_ids": [
+    "evidence:harris-2017",
+    "evidence:lightmatter-board"
+  ]
+}

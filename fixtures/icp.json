@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength.",
+    "sample": true
+  },
+  "founder_id": "person:openalex:A5102978866",
+  "buyer_roles": [
+    {
+      "title": "Photonics research lead",
+      "why": "Evaluate optical computing and interconnect research fit.",
+      "evidence_ids": [
+        "evidence:harris-2017"
+      ]
+    }
+  ],
+  "industries": [
+    {
+      "name": "AI infrastructure and semiconductor research",
+      "why": "Buyer organizations publish on photonics and optical I/O.",
+      "evidence_ids": [
+        "evidence:90d-nvidia",
+        "evidence:90d-intel"
+      ]
+    }
+  ],
+  "needs": [
+    {
+      "text": "Assess photonic compute and optical interconnect integration.",
+      "evidence_ids": [
+        "evidence:harris-2017"
+      ]
+    }
+  ],
+  "expansion_segments": [
+    {
+      "name": "Industrial quantum research",
+      "why": "MIT and NTT Research dual affiliations give a research bridge.",
+      "evidence_ids": [
+        "evidence:shared-A5089821617"
+      ]
+    }
+  ]
+}

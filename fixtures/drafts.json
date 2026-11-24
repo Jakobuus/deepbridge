@@ -1,0 +1,285 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; evidence and labels preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred.",
+    "sample": true
+  },
+  "items": [
+    {
+      "id": "draft:steinbrecher:intro_request",
+      "path_id": "path:steinbrecher",
+      "to_person_id": "person:openalex:A5061412493",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with Meta",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Gregory R. Steinbrecher,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Meta. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5061412493",
+        "evidence:steinbrecher-affiliation"
+      ],
+      "content_hash": "42a1f3c49a94a4b878fd38854acbe920bbfce3eb0b26f649fc25ca9e5cdd4728",
+      "status": "draft"
+    },
+    {
+      "id": "draft:steinbrecher:forwardable_note",
+      "path_id": "path:steinbrecher",
+      "to_person_id": "person:openalex:A5061412493",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with Meta",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Gregory R. Steinbrecher,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Meta. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5061412493",
+        "evidence:steinbrecher-affiliation"
+      ],
+      "content_hash": "42a1f3c49a94a4b878fd38854acbe920bbfce3eb0b26f649fc25ca9e5cdd4728",
+      "status": "draft"
+    },
+    {
+      "id": "draft:chen:intro_request",
+      "path_id": "path:chen",
+      "to_person_id": "person:openalex:A5085311993",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with Microsoft",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Edward H. Chen,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Microsoft. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5085311993",
+        "evidence:chen-affiliation"
+      ],
+      "content_hash": "6c3e9b0d01a5cc295c8f6253eff6bd05ad24ce91e5bb91e6bb8cc21a36c7e09a",
+      "status": "draft"
+    },
+    {
+      "id": "draft:chen:forwardable_note",
+      "path_id": "path:chen",
+      "to_person_id": "person:openalex:A5085311993",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with Microsoft",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Edward H. Chen,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Microsoft. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5085311993",
+        "evidence:chen-affiliation"
+      ],
+      "content_hash": "6c3e9b0d01a5cc295c8f6253eff6bd05ad24ce91e5bb91e6bb8cc21a36c7e09a",
+      "status": "draft"
+    },
+    {
+      "id": "draft:shiue:intro_request",
+      "path_id": "path:shiue",
+      "to_person_id": "person:openalex:A5018701316",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with Cisco Systems",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Ren-Jye Shiue,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Cisco Systems. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5018701316",
+        "evidence:shiue-affiliation"
+      ],
+      "content_hash": "fee55ef8b2d93db798f4ce63099ce28bcdaf1824a8c713aa93240a93c5e41441",
+      "status": "draft"
+    },
+    {
+      "id": "draft:shiue:forwardable_note",
+      "path_id": "path:shiue",
+      "to_person_id": "person:openalex:A5018701316",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with Cisco Systems",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Ren-Jye Shiue,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Cisco Systems. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5018701316",
+        "evidence:shiue-affiliation"
+      ],
+      "content_hash": "fee55ef8b2d93db798f4ce63099ce28bcdaf1824a8c713aa93240a93c5e41441",
+      "status": "draft"
+    },
+    {
+      "id": "draft:najafi:intro_request",
+      "path_id": "path:najafi",
+      "to_person_id": "person:openalex:A5069544756",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with PsiQuantum",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Faraz Najafi,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to PsiQuantum. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5069544756",
+        "evidence:najafi-affiliation"
+      ],
+      "content_hash": "e1a2f439500567ca656a8e6497de3cd80fe99f059b288d981dd2664fb96afba3",
+      "status": "draft"
+    },
+    {
+      "id": "draft:najafi:forwardable_note",
+      "path_id": "path:najafi",
+      "to_person_id": "person:openalex:A5069544756",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with PsiQuantum",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Faraz Najafi,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to PsiQuantum. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5069544756",
+        "evidence:najafi-affiliation"
+      ],
+      "content_hash": "e1a2f439500567ca656a8e6497de3cd80fe99f059b288d981dd2664fb96afba3",
+      "status": "draft"
+    },
+    {
+      "id": "draft:dane:intro_request",
+      "path_id": "path:dane",
+      "to_person_id": "person:openalex:A5108697414",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with IBM",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Andrew E. Dane,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to IBM. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5108697414",
+        "evidence:dane-affiliation"
+      ],
+      "content_hash": "11511844baecb21f48ce59ee3d2899690ede29fecc1f5ac55ae3923e1b5616a1",
+      "status": "draft"
+    },
+    {
+      "id": "draft:dane:forwardable_note",
+      "path_id": "path:dane",
+      "to_person_id": "person:openalex:A5108697414",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with IBM",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Andrew E. Dane,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to IBM. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5108697414",
+        "evidence:dane-affiliation"
+      ],
+      "content_hash": "11511844baecb21f48ce59ee3d2899690ede29fecc1f5ac55ae3923e1b5616a1",
+      "status": "draft"
+    },
+    {
+      "id": "draft:bandyopadhyay:intro_request",
+      "path_id": "path:bandyopadhyay",
+      "to_person_id": "person:openalex:A5047268098",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with NTT Research",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Saumil Bandyopadhyay,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NTT Research. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5047268098"
+      ],
+      "content_hash": "2607548c1e95af05d3b67a3d281cf5d79b5e9a1ee7427cb9a7bd43467ddc6676",
+      "status": "draft"
+    },
+    {
+      "id": "draft:bandyopadhyay:forwardable_note",
+      "path_id": "path:bandyopadhyay",
+      "to_person_id": "person:openalex:A5047268098",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with NTT Research",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Saumil Bandyopadhyay,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NTT Research. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5047268098"
+      ],
+      "content_hash": "2607548c1e95af05d3b67a3d281cf5d79b5e9a1ee7427cb9a7bd43467ddc6676",
+      "status": "draft"
+    },
+    {
+      "id": "draft:hamerly:intro_request",
+      "path_id": "path:hamerly",
+      "to_person_id": "person:openalex:A5089821617",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with NTT Research",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Ryan Hamerly,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NTT Research. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5089821617"
+      ],
+      "content_hash": "c589f6c494998bd09b9a1dab81005ce8780e95bbdb361a1769c358f33f071751",
+      "status": "draft"
+    },
+    {
+      "id": "draft:hamerly:forwardable_note",
+      "path_id": "path:hamerly",
+      "to_person_id": "person:openalex:A5089821617",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with NTT Research",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Ryan Hamerly,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NTT Research. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:shared-A5089821617"
+      ],
+      "content_hash": "c589f6c494998bd09b9a1dab81005ce8780e95bbdb361a1769c358f33f071751",
+      "status": "draft"
+    },
+    {
+      "id": "draft:follet:intro_request",
+      "path_id": "path:follet",
+      "to_person_id": "person:openalex:A5049120533",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with NVIDIA",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Dirk Robert Englund,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NVIDIA. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:harris-englund",
+        "evidence:follet-dual"
+      ],
+      "content_hash": "ee096ec083fa499c97893013ccc8dae402f124836df1c6213bc595bb6859ae68",
+      "status": "draft"
+    },
+    {
+      "id": "draft:follet:forwardable_note",
+      "path_id": "path:follet",
+      "to_person_id": "person:openalex:A5092247170",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with NVIDIA",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Dirk Robert Englund,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NVIDIA. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:harris-englund",
+        "evidence:follet-dual"
+      ],
+      "content_hash": "ee096ec083fa499c97893013ccc8dae402f124836df1c6213bc595bb6859ae68",
+      "status": "draft"
+    },
+    {
+      "id": "draft:zander:intro_request",
+      "path_id": "path:zander",
+      "to_person_id": "person:zander",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with Microsoft",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Jason Zander,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Microsoft. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:lightmatter-board",
+        "evidence:zander-microsoft"
+      ],
+      "content_hash": "dad216d0fc27622b6d8e79ec7594a33f6f96d8fdd57420fe14a854601d9e5013",
+      "status": "draft"
+    },
+    {
+      "id": "draft:zander:forwardable_note",
+      "path_id": "path:zander",
+      "to_person_id": "person:zander",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with Microsoft",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Jason Zander,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Microsoft. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:lightmatter-board",
+        "evidence:zander-microsoft"
+      ],
+      "content_hash": "dad216d0fc27622b6d8e79ec7594a33f6f96d8fdd57420fe14a854601d9e5013",
+      "status": "draft"
+    },
+    {
+      "id": "draft:google-citation:intro_request",
+      "path_id": "path:google-citation",
+      "to_person_id": "person:azalia-mirhoseini",
+      "kind": "intro_request",
+      "subject": "Sample: technical discussion with Google",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Azalia Mirhoseini,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Google. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:google-citation"
+      ],
+      "content_hash": "4aade80fe054b90211893041c17080baed45132b40b3368974312c9a4f76cf84",
+      "status": "draft"
+    },
+    {
+      "id": "draft:google-citation:forwardable_note",
+      "path_id": "path:google-citation",
+      "to_person_id": "person:azalia-mirhoseini",
+      "kind": "forwardable_note",
+      "subject": "Sample: technical discussion with Google",
+      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Azalia Mirhoseini,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Google. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "evidence_ids": [
+        "evidence:google-citation"
+      ],
+      "content_hash": "4aade80fe054b90211893041c17080baed45132b40b3368974312c9a4f76cf84",
+      "status": "draft"
+    }
+  ]
+}

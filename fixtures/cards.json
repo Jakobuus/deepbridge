@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; evidence and labels preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred.",
+    "sample": true
+  },
+  "items": [
+    {
+      "id": "card:steinbrecher",
+      "path_id": "path:steinbrecher",
+      "stage": "found",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        }
+      ]
+    },
+    {
+      "id": "card:chen",
+      "path_id": "path:chen",
+      "stage": "path_checked",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        }
+      ]
+    },
+    {
+      "id": "card:shiue",
+      "path_id": "path:shiue",
+      "stage": "draft",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "draft",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Draft agent",
+          "actor_kind": "agent"
+        }
+      ]
+    },
+    {
+      "id": "card:najafi",
+      "path_id": "path:najafi",
+      "stage": "approved",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "approved",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Jakob",
+          "actor_kind": "human"
+        }
+      ]
+    },
+    {
+      "id": "card:dane",
+      "path_id": "path:dane",
+      "stage": "intro_asked",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "intro_asked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Jakob",
+          "actor_kind": "human"
+        }
+      ]
+    },
+    {
+      "id": "card:bandyopadhyay",
+      "path_id": "path:bandyopadhyay",
+      "stage": "intro_made",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "intro_made",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Jakob",
+          "actor_kind": "human"
+        }
+      ]
+    },
+    {
+      "id": "card:hamerly",
+      "path_id": "path:hamerly",
+      "stage": "pilot",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "pilot",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Jakob",
+          "actor_kind": "human"
+        }
+      ]
+    },
+    {
+      "id": "card:follet",
+      "path_id": "path:follet",
+      "stage": "found",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        }
+      ]
+    },
+    {
+      "id": "card:zander",
+      "path_id": "path:zander",
+      "stage": "path_checked",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        }
+      ]
+    },
+    {
+      "id": "card:google-citation",
+      "path_id": "path:google-citation",
+      "stage": "draft",
+      "history": [
+        {
+          "stage": "found",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Discovery agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "path_checked",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Path agent",
+          "actor_kind": "agent"
+        },
+        {
+          "stage": "draft",
+          "at": "2026-11-24T18:12:00Z",
+          "actor": "Draft agent",
+          "actor_kind": "agent"
+        }
+      ]
+    }
+  ]
+}

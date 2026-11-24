@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; evidence and labels preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred."
+  },
+  "items": [
+    {
+      "id": "org:mit",
+      "name": "Massachusetts Institute of Technology",
+      "type": "university",
+      "is_buyer": false,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I63966007"
+    },
+    {
+      "id": "org:lightmatter",
+      "name": "Lightmatter",
+      "type": "company",
+      "is_buyer": false,
+      "buyer_score": null,
+      "openalex_id": null
+    },
+    {
+      "id": "org:meta",
+      "name": "Meta",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I4210114444"
+    },
+    {
+      "id": "org:ntt",
+      "name": "NTT Research",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I4210092597"
+    },
+    {
+      "id": "org:nvidia",
+      "name": "NVIDIA",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I4210127875"
+    },
+    {
+      "id": "org:microsoft",
+      "name": "Microsoft",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I1290206253"
+    },
+    {
+      "id": "org:google",
+      "name": "Google",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I1291425158"
+    },
+    {
+      "id": "org:cisco",
+      "name": "Cisco Systems",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I135428043"
+    },
+    {
+      "id": "org:psiquantum",
+      "name": "PsiQuantum",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I4405263132"
+    },
+    {
+      "id": "org:ibm",
+      "name": "IBM",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I1341412227"
+    },
+    {
+      "id": "org:intel",
+      "name": "Intel",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I1343180700"
+    },
+    {
+      "id": "org:amd",
+      "name": "AMD",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": null,
+      "openalex_id": "https://openalex.org/I4210137977"
+    }
+  ]
+}

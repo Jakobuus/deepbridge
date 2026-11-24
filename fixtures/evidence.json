@@ -1,0 +1,250 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; the evidence quote and edge label preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred."
+  },
+  "items": [
+    {
+      "id": "evidence:lightmatter-board",
+      "source_url": "https://lightmatter.com/about/",
+      "quote": "Board of Directors; Nicholas Harris; Jason Zander",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "board_page"
+    },
+    {
+      "id": "evidence:harris-2017",
+      "source_url": "https://openalex.org/W2752849906",
+      "quote": "title: Deep learning with coherent nanophotonic circuits; authorships.author.display_name: Nicholas C. Harris",
+      "source_date": "2017-06-12",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:harris-englund",
+      "source_url": "https://openalex.org/W2752849906",
+      "quote": "authorships.author.display_name: Nicholas C. Harris; Dirk Robert Englund",
+      "source_date": "2017-06-12",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:90d-google",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id:I1291425158,from_publication_date:2026-08-25&search=photonic%20OR%20optical%20interconnect%20OR%20silicon%20photonics%20OR%20co-packaged%20optics",
+      "quote": "count: 2; from_publication_date: 2026-08-25",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:recent-google",
+      "source_url": "https://doi.org/10.48550/arxiv.2611.26300",
+      "quote": "title: A Tensor-Algebraic No-Go Theorem for High-Dimensional Photonic Greenberger--Horne--Zeiling; publication_date: 2026-11-19",
+      "source_date": "2026-11-19",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:90d-microsoft",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id:I1290206253,from_publication_date:2026-08-25&search=photonic%20OR%20optical%20interconnect%20OR%20silicon%20photonics%20OR%20co-packaged%20optics",
+      "quote": "count: 1; from_publication_date: 2026-08-25",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:recent-microsoft",
+      "source_url": "https://doi.org/10.1038/s42254-026-01010-y",
+      "quote": "title: Photonic Ising machines towards and beyond a million spins; publication_date: 2026-11-19",
+      "source_date": "2026-11-19",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:90d-nvidia",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id:I4210127875,from_publication_date:2026-08-25&search=photonic%20OR%20optical%20interconnect%20OR%20silicon%20photonics%20OR%20co-packaged%20optics",
+      "quote": "count: 6; from_publication_date: 2026-08-25",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:recent-nvidia",
+      "source_url": "https://doi.org/10.1145/3831710",
+      "quote": "title: PRISM: Photonics-Informed Inverse Lithography for Manufacturable Inverse-Designed Photonic; publication_date: 2026-11-13",
+      "source_date": "2026-11-13",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:90d-intel",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id:I1343180700,from_publication_date:2026-08-25&search=photonic%20OR%20optical%20interconnect%20OR%20silicon%20photonics%20OR%20co-packaged%20optics",
+      "quote": "count: 3; from_publication_date: 2026-08-25",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:recent-intel",
+      "source_url": "https://doi.org/10.4071/001c.173850",
+      "quote": "title: From Theory to Foundry: Scaling Co-Packaged Optics through Packaging & Test; publication_date: 2026-11-09",
+      "source_date": "2026-11-09",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:90d-amd",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id:I4210137977,from_publication_date:2026-08-25&search=photonic%20OR%20optical%20interconnect%20OR%20silicon%20photonics%20OR%20co-packaged%20optics",
+      "quote": "count: 1; from_publication_date: 2026-08-25",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:recent-amd",
+      "source_url": "https://doi.org/10.48550/arxiv.2611.13630",
+      "quote": "title: Machine-learning decoders for fusion-based quantum computing in real time; publication_date: 2026-11-10",
+      "source_date": "2026-11-10",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:90d-meta",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id:I4210114444,from_publication_date:2026-08-25&search=photonic%20OR%20optical%20interconnect%20OR%20silicon%20photonics%20OR%20co-packaged%20optics",
+      "quote": "count: 1; from_publication_date: 2026-08-25",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:recent-meta",
+      "source_url": "https://doi.org/10.1117/12.3114946",
+      "quote": "title: AI-driven scalable metrology solutions for smart glasses and AR wearables; publication_date: 2026-10-09",
+      "source_date": "2026-10-09",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:shared-A5061412493",
+      "source_url": "https://openalex.org/W2746675113",
+      "quote": "authorships.author.display_name: Nicholas C. Harris; Gregory R. Steinbrecher; raw_affiliation_strings: [\"Research Laboratory of Electronics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA\"]",
+      "source_date": "2017-08-23",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:steinbrecher-affiliation",
+      "source_url": "https://openalex.org/W4400495356",
+      "quote": "raw_affiliation_strings: Meta Platforms Inc, San Francisco, California, United States; publication_year: 2024",
+      "source_date": null,
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "affiliation"
+    },
+    {
+      "id": "evidence:shared-A5085311993",
+      "source_url": "https://openalex.org/W1520331598",
+      "quote": "authorships.author.display_name: Nicholas C. Harris; Edward H. Chen; raw_affiliation_strings: [\"Massachusetts Institute of Technology, United States\", \"Research Laboratory of Electronics Massachusetts Institute of Technology, Cambridge MA 02139\"]",
+      "source_date": "2015-01-01",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:chen-affiliation",
+      "source_url": "https://openalex.org/W7167835520",
+      "quote": "raw_affiliation_strings: Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA; publication_year: 2026",
+      "source_date": null,
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "affiliation"
+    },
+    {
+      "id": "evidence:shared-A5018701316",
+      "source_url": "https://openalex.org/W2047964983",
+      "quote": "authorships.author.display_name: Nicholas C. Harris; Ren-Jye Shiue; raw_affiliation_strings: [\"Massachusetts Institute of Technology (MIT) 1 Department of Electrical Engineering and Computer Science, , Cambridge, Massachusetts 02139, USA\"]",
+      "source_date": "2014-08-04",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:shiue-affiliation",
+      "source_url": "https://openalex.org/W4410994200",
+      "quote": "raw_affiliation_strings: Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA; publication_year: 2025",
+      "source_date": null,
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "affiliation"
+    },
+    {
+      "id": "evidence:shared-A5069544756",
+      "source_url": "https://openalex.org/W2115213492",
+      "quote": "authorships.author.display_name: Nicholas C. Harris; Faraz Najafi; raw_affiliation_strings: [\"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, Massachusetts 02139, USA\", \"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA\"]",
+      "source_date": "2015-01-09",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:najafi-affiliation",
+      "source_url": "https://openalex.org/A5069544756",
+      "quote": "affiliations: {\"institution\": {\"id\": \"https://openalex.org/I4405263132\", \"ror\": \"https://ror.org/02yw0nw49\", \"display_name\": \"PsiQuantum (United States)\", \"country_code\": \"US\", \"type\": \"company\", \"lineage\": [\"https://openalex.org/I4405263132\"]}, \"years\": [2025]}",
+      "source_date": null,
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "affiliation"
+    },
+    {
+      "id": "evidence:shared-A5108697414",
+      "source_url": "https://openalex.org/W2115213492",
+      "quote": "authorships.author.display_name: Nicholas C. Harris; Andrew E. Dane; raw_affiliation_strings: [\"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, Massachusetts 02139, USA\", \"Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, 02139, Massachusetts, USA\"]",
+      "source_date": "2015-01-09",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:dane-affiliation",
+      "source_url": "https://openalex.org/A5108697414",
+      "quote": "affiliations: {\"institution\": {\"id\": \"https://openalex.org/I1341412227\", \"ror\": \"https://ror.org/05hh8d621\", \"display_name\": \"IBM (United States)\", \"country_code\": \"US\", \"type\": \"company\", \"lineage\": [\"https://openalex.org/I1341412227\"]}, \"years\": [2026]}",
+      "source_date": null,
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "affiliation"
+    },
+    {
+      "id": "evidence:shared-A5047268098",
+      "source_url": "https://openalex.org/W4404905249",
+      "quote": "authorships.author.display_name: Nicholas C. Harris; Saumil Bandyopadhyay; raw_affiliation_strings: [\"NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA\", \"Research Laboratory of Electronics, MIT, Cambridge, MA, USA\"]",
+      "source_date": "2024-12-01",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:shared-A5089821617",
+      "source_url": "https://openalex.org/W4404905249",
+      "quote": "authorships.author.display_name: Nicholas C. Harris; Ryan Hamerly; raw_affiliation_strings: [\"NTT Research Inc., Physics & Informatics Laboratories, Sunnyvale, CA, USA\", \"Research Laboratory of Electronics, MIT, Cambridge, MA, USA\"]",
+      "source_date": "2024-12-01",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:follet-dual",
+      "source_url": "https://openalex.org/W7236566979",
+      "quote": "authorships.author.display_name: Louis Follet; Dirk Robert Englund; raw_affiliation_strings: NVIDIA Corporation , Santa Clara , CA , USA; Research Laboratory of Electronics , Massachusetts Institute of Technology , Cambridge , MA 02139 , USA",
+      "source_date": "2026-11-18",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "affiliation"
+    },
+    {
+      "id": "evidence:zander-microsoft",
+      "source_url": "https://lightmatter.com/press-release/lightmatter-welcomes-industry-leader-jason-zander-to-its-board-of-directors/",
+      "quote": "leads Microsoft’s Strategic Missions and Technologies division",
+      "source_date": "2025-03-25",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "board_page"
+    },
+    {
+      "id": "evidence:google-citation",
+      "source_url": "https://api.openalex.org/works?filter=cites:W2752849906,institutions.type:company&per-page=100&select=id,title,publication_date,authorships",
+      "quote": "id: https://openalex.org/W4413946588; publication_date: 2025-09-03; authorships.author.display_name: Azalia Mirhoseini; authorships.institutions.display_name: Google (United States)",
+      "source_date": "2025-09-03",
+      "observed_at": "2026-11-24T18:12:00Z",
+      "kind": "paper"
+    }
+  ]
+}

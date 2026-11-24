@@ -1,0 +1,172 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; evidence and labels preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred."
+  },
+  "items": [
+    {
+      "id": "path:steinbrecher",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:openalex:A5061412493",
+      "buyer_person_id": "person:openalex:A5061412493",
+      "buyer_org_id": "org:meta",
+      "hops": [
+        "edge:steinbrecher-shared",
+        "edge:steinbrecher-org"
+      ],
+      "kind": "lab_mate",
+      "score": 88,
+      "weakest_edge_id": "edge:steinbrecher-org",
+      "why_now_signal_ids": [
+        "signal:90d-meta"
+      ]
+    },
+    {
+      "id": "path:chen",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:openalex:A5085311993",
+      "buyer_person_id": "person:openalex:A5085311993",
+      "buyer_org_id": "org:microsoft",
+      "hops": [
+        "edge:chen-shared",
+        "edge:chen-org"
+      ],
+      "kind": "lab_mate",
+      "score": 78,
+      "weakest_edge_id": "edge:chen-org",
+      "why_now_signal_ids": [
+        "signal:90d-microsoft"
+      ]
+    },
+    {
+      "id": "path:shiue",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:openalex:A5018701316",
+      "buyer_person_id": "person:openalex:A5018701316",
+      "buyer_org_id": "org:cisco",
+      "hops": [
+        "edge:shiue-shared",
+        "edge:shiue-org"
+      ],
+      "kind": "lab_mate",
+      "score": 78,
+      "weakest_edge_id": "edge:shiue-org",
+      "why_now_signal_ids": []
+    },
+    {
+      "id": "path:najafi",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:openalex:A5069544756",
+      "buyer_person_id": "person:openalex:A5069544756",
+      "buyer_org_id": "org:psiquantum",
+      "hops": [
+        "edge:najafi-shared",
+        "edge:najafi-org"
+      ],
+      "kind": "lab_mate",
+      "score": 78,
+      "weakest_edge_id": "edge:najafi-org",
+      "why_now_signal_ids": []
+    },
+    {
+      "id": "path:dane",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:openalex:A5108697414",
+      "buyer_person_id": "person:openalex:A5108697414",
+      "buyer_org_id": "org:ibm",
+      "hops": [
+        "edge:dane-shared",
+        "edge:dane-org"
+      ],
+      "kind": "lab_mate",
+      "score": 78,
+      "weakest_edge_id": "edge:dane-org",
+      "why_now_signal_ids": []
+    },
+    {
+      "id": "path:bandyopadhyay",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:openalex:A5047268098",
+      "buyer_person_id": "person:openalex:A5047268098",
+      "buyer_org_id": "org:ntt",
+      "hops": [
+        "edge:bandyopadhyay-shared",
+        "edge:bandyopadhyay-dual"
+      ],
+      "kind": "dual_affiliation",
+      "score": 94,
+      "weakest_edge_id": "edge:bandyopadhyay-dual",
+      "why_now_signal_ids": []
+    },
+    {
+      "id": "path:hamerly",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:openalex:A5089821617",
+      "buyer_person_id": "person:openalex:A5089821617",
+      "buyer_org_id": "org:ntt",
+      "hops": [
+        "edge:hamerly-shared",
+        "edge:hamerly-dual"
+      ],
+      "kind": "dual_affiliation",
+      "score": 94,
+      "weakest_edge_id": "edge:hamerly-dual",
+      "why_now_signal_ids": []
+    },
+    {
+      "id": "path:follet",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:openalex:A5049120533",
+      "buyer_person_id": "person:openalex:A5092247170",
+      "buyer_org_id": "org:nvidia",
+      "hops": [
+        "edge:harris-englund",
+        "edge:englund-follet",
+        "edge:follet-nvidia"
+      ],
+      "kind": "advisor_lab",
+      "score": 91,
+      "weakest_edge_id": "edge:follet-nvidia",
+      "why_now_signal_ids": [
+        "signal:90d-nvidia"
+      ]
+    },
+    {
+      "id": "path:zander",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:zander",
+      "buyer_person_id": "person:zander",
+      "buyer_org_id": "org:microsoft",
+      "hops": [
+        "edge:harris-zander",
+        "edge:zander-microsoft"
+      ],
+      "kind": "board",
+      "score": 84,
+      "weakest_edge_id": "edge:zander-microsoft",
+      "why_now_signal_ids": [
+        "signal:90d-microsoft"
+      ]
+    },
+    {
+      "id": "path:google-citation",
+      "founder_id": "person:openalex:A5102978866",
+      "bridge_id": "person:azalia-mirhoseini",
+      "buyer_person_id": "person:azalia-mirhoseini",
+      "buyer_org_id": "org:google",
+      "hops": [
+        "edge:harris-google-citation",
+        "edge:azalia-google"
+      ],
+      "kind": "aligned",
+      "score": 62,
+      "weakest_edge_id": "edge:azalia-google",
+      "why_now_signal_ids": [
+        "signal:90d-google",
+        "signal:google-cites"
+      ]
+    }
+  ]
+}

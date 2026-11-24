@@ -1,0 +1,142 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; the evidence quote and edge label preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred."
+  },
+  "items": [
+    {
+      "id": "person:openalex:A5102978866",
+      "name": "Nicholas C. Harris",
+      "openalex_id": "https://openalex.org/A5102978866",
+      "orcid": "https://orcid.org/0000-0003-3009-563X",
+      "org_id": "org:lightmatter",
+      "affiliation_asof": "2026-11-24",
+      "role": null,
+      "is_bridge_candidate": false,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5049120533",
+      "name": "Dirk Robert Englund",
+      "openalex_id": "https://openalex.org/A5049120533",
+      "orcid": "https://orcid.org/0000-0002-1043-3489",
+      "org_id": "org:mit",
+      "affiliation_asof": "2017-06-12",
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5061412493",
+      "name": "Gregory R. Steinbrecher",
+      "openalex_id": "https://openalex.org/A5061412493",
+      "orcid": "https://orcid.org/0000-0001-9895-0191",
+      "org_id": "org:meta",
+      "affiliation_asof": null,
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5085311993",
+      "name": "Edward H. Chen",
+      "openalex_id": "https://openalex.org/A5085311993",
+      "orcid": "https://orcid.org/0000-0001-7217-7137",
+      "org_id": "org:microsoft",
+      "affiliation_asof": null,
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5018701316",
+      "name": "Ren-Jye Shiue",
+      "openalex_id": "https://openalex.org/A5018701316",
+      "orcid": null,
+      "org_id": "org:cisco",
+      "affiliation_asof": null,
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5069544756",
+      "name": "Faraz Najafi",
+      "openalex_id": "https://openalex.org/A5069544756",
+      "orcid": null,
+      "org_id": "org:psiquantum",
+      "affiliation_asof": null,
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5108697414",
+      "name": "Andrew E. Dane",
+      "openalex_id": "https://openalex.org/A5108697414",
+      "orcid": "https://orcid.org/0000-0003-2480-767X",
+      "org_id": "org:ibm",
+      "affiliation_asof": null,
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5047268098",
+      "name": "Saumil Bandyopadhyay",
+      "openalex_id": "https://openalex.org/A5047268098",
+      "orcid": "https://orcid.org/0000-0002-7761-337X",
+      "org_id": "org:ntt",
+      "affiliation_asof": "2024-12-01",
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5089821617",
+      "name": "Ryan Hamerly",
+      "openalex_id": "https://openalex.org/A5089821617",
+      "orcid": "https://orcid.org/0000-0003-4976-2236",
+      "org_id": "org:ntt",
+      "affiliation_asof": "2024-12-01",
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:openalex:A5092247170",
+      "name": "Louis Follet",
+      "openalex_id": "https://openalex.org/A5092247170",
+      "orcid": null,
+      "org_id": "org:nvidia",
+      "affiliation_asof": "2026-11-18",
+      "role": null,
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:zander",
+      "name": "Jason Zander",
+      "openalex_id": null,
+      "orcid": null,
+      "org_id": "org:microsoft",
+      "affiliation_asof": "2025-03-25",
+      "role": "Leads Strategic Missions and Technologies division (as of 2025-03-25)",
+      "is_bridge_candidate": true,
+      "alignment": null
+    },
+    {
+      "id": "person:azalia-mirhoseini",
+      "name": "Azalia Mirhoseini",
+      "openalex_id": null,
+      "orcid": null,
+      "org_id": "org:google",
+      "affiliation_asof": "2025-09-03",
+      "role": null,
+      "is_bridge_candidate": false,
+      "alignment": null
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; evidence and labels preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred."
+  },
+  "items": [
+    {
+      "id": "signal:90d-google",
+      "org_id": "org:google",
+      "type": "paper_90d",
+      "title": "2 matching buyer papers in cached 90-day query (since 2026-08-25)",
+      "date": "2026-11-24",
+      "evidence_ids": [
+        "evidence:90d-google",
+        "evidence:recent-google"
+      ]
+    },
+    {
+      "id": "signal:90d-microsoft",
+      "org_id": "org:microsoft",
+      "type": "paper_90d",
+      "title": "1 matching buyer papers in cached 90-day query (since 2026-08-25)",
+      "date": "2026-11-24",
+      "evidence_ids": [
+        "evidence:90d-microsoft",
+        "evidence:recent-microsoft"
+      ]
+    },
+    {
+      "id": "signal:90d-nvidia",
+      "org_id": "org:nvidia",
+      "type": "paper_90d",
+      "title": "6 matching buyer papers in cached 90-day query (since 2026-08-25)",
+      "date": "2026-11-24",
+      "evidence_ids": [
+        "evidence:90d-nvidia",
+        "evidence:recent-nvidia"
+      ]
+    },
+    {
+      "id": "signal:90d-intel",
+      "org_id": "org:intel",
+      "type": "paper_90d",
+      "title": "3 matching buyer papers in cached 90-day query (since 2026-08-25)",
+      "date": "2026-11-24",
+      "evidence_ids": [
+        "evidence:90d-intel",
+        "evidence:recent-intel"
+      ]
+    },
+    {
+      "id": "signal:90d-amd",
+      "org_id": "org:amd",
+      "type": "paper_90d",
+      "title": "1 matching buyer papers in cached 90-day query (since 2026-08-25)",
+      "date": "2026-11-24",
+      "evidence_ids": [
+        "evidence:90d-amd",
+        "evidence:recent-amd"
+      ]
+    },
+    {
+      "id": "signal:90d-meta",
+      "org_id": "org:meta",
+      "type": "paper_90d",
+      "title": "1 matching buyer papers in cached 90-day query (since 2026-08-25)",
+      "date": "2026-11-24",
+      "evidence_ids": [
+        "evidence:90d-meta",
+        "evidence:recent-meta"
+      ]
+    },
+    {
+      "id": "signal:google-cites",
+      "org_id": "org:google",
+      "type": "cites_founder",
+      "title": "Google-affiliated 2025 paper cites Harris 2017 paper (work-level signal)",
+      "date": "2025-09-03",
+      "evidence_ids": [
+        "evidence:google-citation"
+      ]
+    }
+  ]
+}

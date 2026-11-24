@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; evidence and labels preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred.",
+    "sample": true
+  },
+  "balance": 5,
+  "unit": "credit",
+  "events": [
+    {
+      "at": "2026-11-24T18:12:00Z",
+      "action": "demo allocation",
+      "delta": 5,
+      "blocked": false
+    }
+  ],
+  "source": "local"
+}

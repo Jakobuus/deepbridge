@@ -1,0 +1,283 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T18:12:00Z",
+    "case": "Lightmatter / Nicholas C. Harris",
+    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; the evidence quote and edge label preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred."
+  },
+  "items": [
+    {
+      "id": "edge:harris-englund",
+      "from": "person:openalex:A5102978866",
+      "to": "person:openalex:A5049120533",
+      "type": "CO_AUTHORED",
+      "date": "2017-06-12",
+      "evidence_ids": [
+        "evidence:harris-englund"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2017 (MIT)"
+    },
+    {
+      "id": "edge:steinbrecher-shared",
+      "from": "person:openalex:A5102978866",
+      "to": "person:openalex:A5061412493",
+      "type": "LAB_MATE",
+      "date": "2017-08-23",
+      "evidence_ids": [
+        "evidence:shared-A5061412493"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2017 (MIT)"
+    },
+    {
+      "id": "edge:steinbrecher-org",
+      "from": "person:openalex:A5061412493",
+      "to": "org:meta",
+      "type": "AFFILIATED_AT",
+      "date": null,
+      "evidence_ids": [
+        "evidence:steinbrecher-affiliation"
+      ],
+      "confidence": 0.85,
+      "name_check": "unchecked",
+      "label": "published affiliation as of 2024"
+    },
+    {
+      "id": "edge:chen-shared",
+      "from": "person:openalex:A5102978866",
+      "to": "person:openalex:A5085311993",
+      "type": "LAB_MATE",
+      "date": "2015-01-01",
+      "evidence_ids": [
+        "evidence:shared-A5085311993"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2015 (MIT)"
+    },
+    {
+      "id": "edge:chen-org",
+      "from": "person:openalex:A5085311993",
+      "to": "org:microsoft",
+      "type": "AFFILIATED_AT",
+      "date": null,
+      "evidence_ids": [
+        "evidence:chen-affiliation"
+      ],
+      "confidence": 0.85,
+      "name_check": "unchecked",
+      "label": "published affiliation as of 2026"
+    },
+    {
+      "id": "edge:shiue-shared",
+      "from": "person:openalex:A5102978866",
+      "to": "person:openalex:A5018701316",
+      "type": "LAB_MATE",
+      "date": "2014-08-04",
+      "evidence_ids": [
+        "evidence:shared-A5018701316"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2014 (MIT)"
+    },
+    {
+      "id": "edge:shiue-org",
+      "from": "person:openalex:A5018701316",
+      "to": "org:cisco",
+      "type": "AFFILIATED_AT",
+      "date": null,
+      "evidence_ids": [
+        "evidence:shiue-affiliation"
+      ],
+      "confidence": 0.85,
+      "name_check": "unchecked",
+      "label": "published affiliation as of 2025"
+    },
+    {
+      "id": "edge:najafi-shared",
+      "from": "person:openalex:A5102978866",
+      "to": "person:openalex:A5069544756",
+      "type": "LAB_MATE",
+      "date": "2015-01-09",
+      "evidence_ids": [
+        "evidence:shared-A5069544756"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2015 (MIT)"
+    },
+    {
+      "id": "edge:najafi-org",
+      "from": "person:openalex:A5069544756",
+      "to": "org:psiquantum",
+      "type": "AFFILIATED_AT",
+      "date": null,
+      "evidence_ids": [
+        "evidence:najafi-affiliation"
+      ],
+      "confidence": 0.85,
+      "name_check": "unchecked",
+      "label": "published affiliation as of 2025"
+    },
+    {
+      "id": "edge:dane-shared",
+      "from": "person:openalex:A5102978866",
+      "to": "person:openalex:A5108697414",
+      "type": "LAB_MATE",
+      "date": "2015-01-09",
+      "evidence_ids": [
+        "evidence:shared-A5108697414"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2015 (MIT)"
+    },
+    {
+      "id": "edge:dane-org",
+      "from": "person:openalex:A5108697414",
+      "to": "org:ibm",
+      "type": "AFFILIATED_AT",
+      "date": null,
+      "evidence_ids": [
+        "evidence:dane-affiliation"
+      ],
+      "confidence": 0.85,
+      "name_check": "unchecked",
+      "label": "published affiliation as of 2026"
+    },
+    {
+      "id": "edge:bandyopadhyay-shared",
+      "from": "person:openalex:A5102978866",
+      "to": "person:openalex:A5047268098",
+      "type": "CO_AUTHORED",
+      "date": "2024-12-01",
+      "evidence_ids": [
+        "evidence:shared-A5047268098"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2024 (MIT + NTT Research)"
+    },
+    {
+      "id": "edge:bandyopadhyay-dual",
+      "from": "person:openalex:A5047268098",
+      "to": "org:ntt",
+      "type": "DUAL_AFFILIATION",
+      "date": "2024-12-01",
+      "evidence_ids": [
+        "evidence:shared-A5047268098"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "MIT + NTT Research affiliations, 2024"
+    },
+    {
+      "id": "edge:hamerly-shared",
+      "from": "person:openalex:A5102978866",
+      "to": "person:openalex:A5089821617",
+      "type": "CO_AUTHORED",
+      "date": "2024-12-01",
+      "evidence_ids": [
+        "evidence:shared-A5089821617"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2024 (MIT + NTT Research)"
+    },
+    {
+      "id": "edge:hamerly-dual",
+      "from": "person:openalex:A5089821617",
+      "to": "org:ntt",
+      "type": "DUAL_AFFILIATION",
+      "date": "2024-12-01",
+      "evidence_ids": [
+        "evidence:shared-A5089821617"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "MIT + NTT Research affiliations, 2024"
+    },
+    {
+      "id": "edge:englund-follet",
+      "from": "person:openalex:A5049120533",
+      "to": "person:openalex:A5092247170",
+      "type": "ADVISOR_LAB",
+      "date": "2026-11-18",
+      "evidence_ids": [
+        "evidence:follet-dual"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "co-authored 2026 (Englund lab orbit)"
+    },
+    {
+      "id": "edge:follet-nvidia",
+      "from": "person:openalex:A5092247170",
+      "to": "org:nvidia",
+      "type": "DUAL_AFFILIATION",
+      "date": "2026-11-18",
+      "evidence_ids": [
+        "evidence:follet-dual"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "MIT + NVIDIA affiliations, 2026"
+    },
+    {
+      "id": "edge:harris-zander",
+      "from": "person:openalex:A5102978866",
+      "to": "person:zander",
+      "type": "BOARD",
+      "date": "2026-11-24",
+      "evidence_ids": [
+        "evidence:lightmatter-board"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "listed on Lightmatter board, observed 2026-11-24"
+    },
+    {
+      "id": "edge:zander-microsoft",
+      "from": "person:zander",
+      "to": "org:microsoft",
+      "type": "AFFILIATED_AT",
+      "date": "2025-03-25",
+      "evidence_ids": [
+        "evidence:zander-microsoft"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "Microsoft role as of 2025-03-25"
+    },
+    {
+      "id": "edge:harris-google-citation",
+      "from": "person:openalex:A5102978866",
+      "to": "person:azalia-mirhoseini",
+      "type": "CITES",
+      "date": "2025-09-03",
+      "evidence_ids": [
+        "evidence:google-citation"
+      ],
+      "confidence": 0.65,
+      "name_check": "unchecked",
+      "label": "2025 paper cites Harris 2017; no personal link"
+    },
+    {
+      "id": "edge:azalia-google",
+      "from": "person:azalia-mirhoseini",
+      "to": "org:google",
+      "type": "AFFILIATED_AT",
+      "date": "2025-09-03",
+      "evidence_ids": [
+        "evidence:google-citation"
+      ],
+      "confidence": 0.9,
+      "name_check": "unchecked",
+      "label": "Google publication affiliation, 2025"
+    }
+  ]
+}
