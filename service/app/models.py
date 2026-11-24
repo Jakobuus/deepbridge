@@ -155,7 +155,8 @@ class Credits(BaseModel):
     balance: float
     unit: Literal['credit']
     events: list[CreditEvent]
-    source: Literal['flexprice', 'local']
+    source: Literal['flexprice', 'local', 'local (Flexprice unreachable)']
+    dashboard_url: str | None = None  # Flexprice usage page when source is flexprice
 
 class Conversion(BaseModel):
     model_config = ConfigDict(populate_by_name=True, serialize_by_alias=True)

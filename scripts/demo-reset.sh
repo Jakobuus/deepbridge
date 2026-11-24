@@ -3,6 +3,10 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 export DEMO_ROOT="$ROOT" DEMO_PORT="${DEMO_PORT:-8000}"
+# Flexprice live: put the wallets back to DEMO_CREDITS (default 5) so /credits matches below.
+if python3 -c "import re,sys;sys.exit(0 if any(re.match(r'FLEXPRICE_API_KEY=.+',l) for l in open('$ROOT/.env')) else 1)" 2>/dev/null; then
+  python3 "$ROOT/scripts/flexprice_topup.py" --set "${DEMO_CREDITS:-5}" || echo "WARN: Flexprice wallet reset failed; service falls back to local counter"
+fi
 python3 - <<'PY'
 import json, os, pathlib, shutil, signal, subprocess, tempfile, time
 from urllib.request import urlopen
