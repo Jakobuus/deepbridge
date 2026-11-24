@@ -9,6 +9,7 @@ import {
   Kanban,
   MailCheck,
   RefreshCw,
+  MoreHorizontal,
 } from "lucide-react";
 import * as React from "react";
 import {
@@ -138,6 +139,7 @@ function parseIntegrations(data: unknown): { name: string; live: boolean; detail
 
 export default function DeepBridgeWorkspace() {
   const [activeScreen, setActiveScreen] = React.useState<ScreenKey>("intake");
+  const [showStatus, setShowStatus] = React.useState(false);
 
   // Core Domain State
   const [founder, setFounder] = React.useState<Founder | null>(null);
@@ -450,25 +452,29 @@ export default function DeepBridgeWorkspace() {
 
       {/* MAIN WORKSPACE COLUMN — FLAT SOLID HEADER (NO FROSTED BLUR) */}
       <div className="flex min-w-0 flex-1 flex-col">
-        <header className="db-glass-bar sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-6 py-3">
+        <header className="relative z-30 flex items-center justify-between gap-3 px-6 pt-5">
           <div className="flex flex-wrap items-baseline gap-3">
-            <span className="text-sm font-medium">
+            <span className="text-base font-semibold tracking-tight">
               {founder
                 ? founder.id === HOPO_FOUNDER_ID
                   ? `${HOPO_DISPLAY.name} · ${HOPO_DISPLAY.company}`
                   : `${founder.name} · ${founder.company}`
                 : "Loading..."}
             </span>
-            <span className="text-[11px] text-muted-foreground">
-              {founder?.id === HOPO_FOUNDER_ID
-                ? `science: ${HOPO_DISPLAY.science} · cached research replay`
-                : founder?.id === GOLDEN_FOUNDER_ID
-                  ? "cached research replay"
-                  : "live OpenAlex graph"}
-            </span>
           </div>
 
-          <div className="flex flex-wrap items-center gap-4">
+          {/* Status (integrations, credits, sources, reload) tucked behind one quiet button. */}
+          <button
+            type="button"
+            onClick={() => setShowStatus((v) => !v)}
+            aria-expanded={showStatus}
+            title="Status"
+            className="rounded-full p-1.5 text-muted-foreground transition hover:bg-white/5 hover:text-foreground"
+          >
+            <MoreHorizontal className="size-4" />
+          </button>
+          {showStatus && (
+          <div className="db-glass-bar absolute right-6 top-14 flex flex-wrap items-center gap-4 rounded-xl border border-white/10 px-4 py-2.5">
             {integrations.length > 0 && (
               <div className="flex items-center gap-3 text-[11px] text-muted-foreground">
                 {integrations.map((it) => (
@@ -522,6 +528,7 @@ export default function DeepBridgeWorkspace() {
               <RefreshCw className={`size-3.5 ${booting ? "animate-spin" : ""}`} />
             </Button>
           </div>
+          )}
         </header>
 
         <main className="flex-1 p-6">
