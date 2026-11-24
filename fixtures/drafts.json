@@ -620,13 +620,13 @@
       "to_person_id": "person:openalex:A5085203145",
       "kind": "intro_request",
       "subject": "Thorium-227 chelation and Bayer radiopharma",
-      "body": "Hi Åsmund,\n\nHannah Weber, CEO of HOPO Therapeutics. Our founder Rebecca Abergel co-authored \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\" with you in 2018. You are a Radiopharmaceuticals manager at Bayer as of 2024, and Bayer-affiliated authors published on a thorium-227 conjugate in 2023. Could you point me to the right Bayer radiopharmaceuticals contact, or forward this? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics builds on hydroxypyridinone chelation research by Rebecca Abergel, who co-authored a 2018 paper on a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy. We would welcome a short conversation.",
+      "body": "Hi Åsmund,\n\nHannah Weber, HOPO CEO. HOPO's molecule comes from Rebecca Abergel's Berkeley Lab research; she co-authored \"Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy\" with you in 2018. You are a Radiopharmaceuticals manager at Bayer as of 2024, and Bayer authors published on a thorium-227 conjugate in 2023. Could you point me to the right Bayer contact, or forward this? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics' molecule comes from Rebecca Abergel's Berkeley Lab research; she co-authored a 2018 paper on a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy. We would welcome a short conversation.",
       "evidence_ids": [
         "evidence:erick:bd66a699632a8769a89f",
         "evidence:moss:ed2c79c085f83555d5bc",
         "evidence:buyers:efe4992678cca269609d"
       ],
-      "content_hash": "2163e940130c447cbc98a2b6df236c0133bbead218561c2b726c4296c477b18a",
+      "content_hash": "05e74641eb146f090927ffe8431c1a55332c448dd9b6d383f8bdf539d4c83465",
       "status": "draft",
       "checks": [
         {
@@ -697,12 +697,12 @@
       "to_person_id": "person:openalex:A5085203145",
       "kind": "forwardable_note",
       "subject": "HOPO Therapeutics and Bayer radiopharmaceuticals",
-      "body": "HOPO Therapeutics builds on hydroxypyridinone chelation research by Rebecca Abergel, who co-authored a 2018 paper on a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy. We would welcome a short conversation.",
+      "body": "HOPO Therapeutics' molecule comes from Rebecca Abergel's Berkeley Lab research; she co-authored a 2018 paper on a hydroxypyridinone chelator designed for thorium-227 targeted alpha therapy. We would welcome a short conversation.",
       "evidence_ids": [
         "evidence:erick:bd66a699632a8769a89f",
         "evidence:moss:ed2c79c085f83555d5bc"
       ],
-      "content_hash": "639b8bd4e50c548f6a84f948c3e5dc1e90b75f71d7837c64b44156524b74c932",
+      "content_hash": "50b35a80c5295e673995f2e7a75b9486bdf94d00fc727ebe79f647003868273e",
       "status": "draft",
       "checks": [
         {
@@ -773,7 +773,7 @@
       "to_person_id": "person:openalex:A5073204417",
       "kind": "intro_request",
       "subject": "Forwarding a chelator chemistry note to Lumiphore",
-      "body": "Hello,\n\nWe co-authored \"Formulations of hydroxypyridonate actinide/lanthanide decorporation agents\" (2023). Would you forward the blurb below to the relevant team at Lumiphore (as of 2011), given its 2017 zirconium-89 chelator work? No problem if not.\n\nRebecca\n\nBlurb you can forward:\nRebecca Abergel studies bacterial siderophore iron acquisition and hydroxypyridonate decorporation agents for actinides. She would like to learn whether this chelator chemistry is relevant to the team's 2017 work on zirconium-89 chelators.",
+      "body": "Hi Kenneth,\n\nHannah Weber, CEO of HOPO Therapeutics. Rebecca Abergel of Berkeley Lab co-authored \"Formulations of hydroxypyridonate actinide/lanthanide decorporation agents\" with you in 2023, and you were at Lumiphore as of 2011. Would you forward the blurb below to the relevant team at Lumiphore, given its 2017 zirconium-89 chelator work? No problem if not.\n\nHannah\n\nBlurb you can forward:\nHOPO Therapeutics' molecule comes from the Berkeley Lab research of Rebecca Abergel, who studies hydroxypyridonate decorporation agents for actinides. We would like to learn whether this chelator chemistry is relevant to the team's 2017 work on zirconium-89 chelators.",
       "evidence_ids": [
         "evidence:erick:d0a06ab0d3d02259feb8",
         "evidence:erick:67239e6a11fa749cb8b8",
@@ -781,7 +781,7 @@
         "evidence:openalex:W2062348077",
         "evidence:openalex:W2101984559"
       ],
-      "content_hash": "1477c905fd5b9584703f3e900be247c6d877b9636b95d530cc0514dd1a21a528",
+      "content_hash": "3d72b300007d2bb44ed5bffa434012e82232a06b3deed453d9c457fc2c781273",
       "status": "draft",
       "checks": [
         {
@@ -852,13 +852,13 @@
       "to_person_id": "person:openalex:A5073204417",
       "kind": "forwardable_note",
       "subject": "Chelator chemistry and your zirconium-89 work",
-      "body": "Rebecca Abergel studies bacterial siderophore iron acquisition and hydroxypyridonate decorporation agents for actinides. She would like to learn whether this chelator chemistry is relevant to the team's 2017 work on zirconium-89 chelators.",
+      "body": "HOPO Therapeutics' molecule comes from the Berkeley Lab research of Rebecca Abergel, who studies hydroxypyridonate decorporation agents for actinides. We would like to learn whether this chelator chemistry is relevant to the team's 2017 work on zirconium-89 chelators.",
       "evidence_ids": [
+        "evidence:buyers:b732f794138ef300fc29",
         "evidence:openalex:W2062348077",
-        "evidence:openalex:W2101984559",
-        "evidence:buyers:b732f794138ef300fc29"
+        "evidence:openalex:W2101984559"
       ],
-      "content_hash": "d7ea9393aeffb7fad6f8037b5445bfcbb0a976400c138a0bbc9f94a2b7597b3c",
+      "content_hash": "85e2f10b53ca94fedfff25b559024f511dfb1e76e826c4f2de62f8f569f8a49a",
       "status": "draft",
       "checks": [
         {
