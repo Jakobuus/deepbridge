@@ -58,6 +58,7 @@ const NAV_ITEMS: {
   label: string;
   sub: string;
   icon: React.ComponentType<{ className?: string }>;
+  hidden?: boolean; // kept in code, not shown in the nav (not part of the demo)
 }[] = [
   {
     key: "intake",
@@ -68,28 +69,29 @@ const NAV_ITEMS: {
   },
   {
     key: "buyers",
-    step: "02",
+    step: "—",
     label: "ICP & Buyers",
     sub: "Why-Now Signals + Search",
     icon: Building2,
+    hidden: true, // Erick 14:55: not demoed; screen kept (ScreenBuyers) and reachable by setting activeScreen
   },
   {
     key: "leads",
-    step: "03",
+    step: "02",
     label: "Knowledge Graph",
     sub: "3-Ring Cosmos ↔ Flat Table",
     icon: GitBranch,
   },
   {
     key: "drafts",
-    step: "04",
+    step: "03",
     label: "Draft & Approve",
     sub: "HITL Hash + Credit Gate",
     icon: MailCheck,
   },
   {
     key: "pipeline",
-    step: "05",
+    step: "04",
     label: "Pipeline & Metrics",
     sub: "7-Stage Kanban + Audit",
     icon: Kanban,
@@ -408,7 +410,7 @@ export default function DeepBridgeWorkspace() {
           <div className="px-5 py-5 text-sm font-semibold tracking-tight">DeepBridge</div>
 
           <nav className="flex flex-row gap-1 overflow-x-auto p-3 lg:flex-col">
-            {NAV_ITEMS.map((item) => {
+            {NAV_ITEMS.filter((item) => !item.hidden).map((item) => {
               const Icon = item.icon;
               const isActive = activeScreen === item.key;
               return (
@@ -549,7 +551,7 @@ export default function DeepBridgeWorkspace() {
                   onSubmitForm={handleIntakeForm}
                   onInspectEvidence={openEvidence}
                   onEvidenceLoaded={mergeEvidenceList}
-                  onGoToBuyers={() => setActiveScreen("buyers")}
+                  onGoToBuyers={() => setActiveScreen("leads")}
                 />
               )}
 
