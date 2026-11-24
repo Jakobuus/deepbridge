@@ -88,7 +88,10 @@
    "evidence_ids": [
     "evidence:buyers:832077c158a882430b18",
     "evidence:buyers:c5509addc4946ce89924",
-    "evidence:buyers:bf0c4a0aea5ae3f220de"
+    "evidence:buyers:bf0c4a0aea5ae3f220de",
+    "evidence:buyers:c3f206a1bce628a71777",
+    "evidence:buyers:d6ef1de061a4f643219d",
+    "evidence:buyers:39d651810faea989ea32"
    ]
   },
   {
@@ -295,7 +298,9 @@
    "openalex_id": "https://openalex.org/I1288882113",
    "category_hint": "lead",
    "evidence_ids": [
-    "evidence:buyers:3e348adff49202347ff8"
+    "evidence:buyers:3e348adff49202347ff8",
+    "evidence:buyers:6644ab5525febc601fcb",
+    "evidence:buyers:4c7a4068b7e5372446ff"
    ]
   },
   {
@@ -308,7 +313,8 @@
    "category_hint": "lead",
    "evidence_ids": [
     "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
-    "evidence:buyers:67e7cdff7a6cc46dbeef"
+    "evidence:buyers:67e7cdff7a6cc46dbeef",
+    "evidence:buyers:a28670ce4c9f4cff7644"
    ]
   },
   {
@@ -332,7 +338,9 @@
    "openalex_id": "https://openalex.org/I1302368450",
    "category_hint": "lead",
    "evidence_ids": [
-    "evidence:buyers:5c798d9337b6eb395124"
+    "evidence:buyers:5c798d9337b6eb395124",
+    "evidence:buyers:6f6b7d455ea15bf3ee62",
+    "evidence:buyers:b91c4f56ac658e9928df"
    ]
   },
   {
@@ -372,7 +380,8 @@
    "evidence_ids": [
     "evidence:buyers:6cfdf91808cda4e56ec0",
     "evidence:buyers:cedb67e41bf018be1006",
-    "evidence:buyers:f66461f7088eb47a7b48"
+    "evidence:buyers:f66461f7088eb47a7b48",
+    "evidence:buyers:149cfdff6dc24eb4c513"
    ]
   },
   {
@@ -497,6 +506,236 @@
    "category_hint": "lead",
    "evidence_ids": [
     "evidence:buyers:58be9a6233d8b0c702c1"
+   ]
+  },
+  {
+   "id": "org:openalex:I4387154209",
+   "name": "Administration for Strategic Preparedness and Response",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I4387154209",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:c14edd361b1c25cf637c",
+    "evidence:buyers:b4cb4e89542b8440d104"
+   ]
+  },
+  {
+   "id": "org:openalex:I4387155235",
+   "name": "Institut f\u00fcr Radiobiologie der Bundeswehr",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I4387155235",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:5bfdf5b7b787c68d0665",
+    "evidence:buyers:e49bcce9a9f3870ea5fd",
+    "evidence:buyers:1e78ade8cc8671bee4e7"
+   ]
+  },
+  {
+   "id": "org:openalex:I4387153084",
+   "name": "UK Health Security Agency",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I4387153084",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:b869791a9c698d9343a9",
+    "evidence:buyers:8c3055ac0a1bc4810eb9"
+   ]
+  },
+  {
+   "id": "org:openalex:I1288894424",
+   "name": "Health Canada",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I1288894424",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:51103c29a66855fa5927",
+    "evidence:buyers:4e811ecfa539def09bf3",
+    "evidence:buyers:5724e89958ca35744749"
+   ]
+  },
+  {
+   "id": "org:openalex:I148314036",
+   "name": "Uniformed Services University of the Health Sciences",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I148314036",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:d991a4ac2c2eb9f5fcaa",
+    "evidence:buyers:3cbc17bef2ebe29d92e2",
+    "evidence:buyers:d3294488d9fdb3b727aa"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210134534",
+   "name": "National Institute of Allergy and Infectious Diseases",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I4210134534",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:e92d26afc1c050a6c6c2",
+    "evidence:buyers:5fe5c8c1ae0a11a3de5d",
+    "evidence:buyers:6bacb224f167837ae4ae"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210114391",
+   "name": "Belgian Nuclear Research Centre",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I4210114391",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:bcb65fbdd12809e0a3c3",
+    "evidence:buyers:aaf0f6accc8a2594badb",
+    "evidence:buyers:037791f89fec3c0aeb45"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210137840",
+   "name": "Federal Office for Radiation Protection",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I4210137840",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:e0195c22629c95669c16",
+    "evidence:buyers:265040078bdb2f7e0303",
+    "evidence:buyers:fdc6f634fd62284c179d"
+   ]
+  },
+  {
+   "id": "org:openalex:I4389425366",
+   "name": "Oak Ridge Institute for Science and Education",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I4389425366",
+   "category_hint": "radiation",
+   "evidence_ids": [
+    "evidence:buyers:efc69d12eea9a48070b5",
+    "evidence:buyers:392b8682297edc3c37a2",
+    "evidence:buyers:16af76b20f57319b5d6b"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210092468",
+   "name": "National Center for Environmental Health",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I4210092468",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:b502c021da06f993762f",
+    "evidence:buyers:80a428028c52759fdd59",
+    "evidence:buyers:40696ebfded61b010153"
+   ]
+  },
+  {
+   "id": "org:openalex:I169222155",
+   "name": "Chicago Department of Public Health",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I169222155",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:6fff33b98aad4417e2ec",
+    "evidence:buyers:0c2a6e3b89687b0c6f1e"
+   ]
+  },
+  {
+   "id": "org:openalex:I1285204247",
+   "name": "Cincinnati Children's Hospital Medical Center",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I1285204247",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:043adcbc0be72fc11d4b",
+    "evidence:buyers:6d23534c5485052de8bf",
+    "evidence:buyers:0e0c6da70648ecb4e9eb"
+   ]
+  },
+  {
+   "id": "org:openalex:I103043317",
+   "name": "Wisconsin Department of Health Services",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I103043317",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:0ccda5942d1ea29e64f6",
+    "evidence:buyers:af5f746056baf2736bef",
+    "evidence:buyers:fb4b9da4635248ca26a6"
+   ]
+  },
+  {
+   "id": "org:openalex:I4210092716",
+   "name": "Sant\u00e9 Publique France",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I4210092716",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:5cedca18066a2613a061"
+   ]
+  },
+  {
+   "id": "org:openalex:I1298060332",
+   "name": "New York State Department of Health",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 3,
+   "openalex_id": "https://openalex.org/I1298060332",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:dbd11d6097704b252c18"
+   ]
+  },
+  {
+   "id": "org:openalex:I199145359",
+   "name": "Agency for Toxic Substances and Disease Registry",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 6,
+   "openalex_id": "https://openalex.org/I199145359",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:617f72c6d626a1c6ea83",
+    "evidence:buyers:aad95a42cfe6e763a8c9"
+   ]
+  },
+  {
+   "id": "org:openalex:I1336243289",
+   "name": "National Center for Healthy Housing",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9,
+   "openalex_id": "https://openalex.org/I1336243289",
+   "category_hint": "lead",
+   "evidence_ids": [
+    "evidence:buyers:6552f39a291f1353b876",
+    "evidence:buyers:2556603a7a2d50376605",
+    "evidence:buyers:d188ef15b106a72b109a"
    ]
   }
  ],
@@ -951,10 +1190,12 @@
    "id": "signal:buyers:ea515571207dfe43e985",
    "org_id": "org:openalex:I1288882113",
    "type": "topic_paper",
-   "date": "2024-06-01",
-   "title": "1 OpenAlex work(s) on lead: Trends in Shortages of Lead Chelators From 2001 to 2022.",
+   "date": "2024-06-27",
+   "title": "3 OpenAlex work(s) on lead: Addressing Disparities in Pediatric Congenital Heart Disease: A Call for Equitable Health ",
    "evidence_ids": [
-    "evidence:buyers:3e348adff49202347ff8"
+    "evidence:buyers:6644ab5525febc601fcb",
+    "evidence:buyers:3e348adff49202347ff8",
+    "evidence:buyers:4c7a4068b7e5372446ff"
    ]
   },
   {
@@ -962,9 +1203,10 @@
    "org_id": "org:openalex:I4210135976",
    "type": "topic_paper",
    "date": "2018-07-06",
-   "title": "2 OpenAlex work(s) on lead: Folk prescription for treating rhinitis as a rare cause of childhood lead poisoning: a cas",
+   "title": "3 OpenAlex work(s) on lead: Folk prescription for treating rhinitis as a rare cause of childhood lead poisoning: a cas",
    "evidence_ids": [
     "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
+    "evidence:buyers:a28670ce4c9f4cff7644",
     "evidence:buyers:67e7cdff7a6cc46dbeef"
    ]
   },
@@ -983,9 +1225,11 @@
    "org_id": "org:openalex:I1302368450",
    "type": "topic_paper",
    "date": "2024-06-01",
-   "title": "1 OpenAlex work(s) on lead: How Effective Are Secondary Interventions at Improving Health Outcomes in Children Exposed",
+   "title": "3 OpenAlex work(s) on lead: How Effective Are Secondary Interventions at Improving Health Outcomes in Children Exposed",
    "evidence_ids": [
-    "evidence:buyers:5c798d9337b6eb395124"
+    "evidence:buyers:5c798d9337b6eb395124",
+    "evidence:buyers:6f6b7d455ea15bf3ee62",
+    "evidence:buyers:b91c4f56ac658e9928df"
    ]
   },
   {
@@ -1019,7 +1263,7 @@
    "evidence_ids": [
     "evidence:buyers:6cfdf91808cda4e56ec0",
     "evidence:buyers:cedb67e41bf018be1006",
-    "evidence:buyers:f66461f7088eb47a7b48"
+    "evidence:buyers:149cfdff6dc24eb4c513"
    ]
   },
   {
@@ -1124,6 +1368,214 @@
    "title": "1 OpenAlex work(s) on lead: Lead poisoning in children: a case report",
    "evidence_ids": [
     "evidence:buyers:58be9a6233d8b0c702c1"
+   ]
+  },
+  {
+   "id": "signal:buyers:8df0002f7442b0cced7e",
+   "org_id": "org:openalex:I4387154209",
+   "type": "topic_paper",
+   "date": "2025-07-21",
+   "title": "2 OpenAlex work(s) on radiation: Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emer",
+   "evidence_ids": [
+    "evidence:buyers:c14edd361b1c25cf637c",
+    "evidence:buyers:b4cb4e89542b8440d104"
+   ]
+  },
+  {
+   "id": "signal:buyers:7f0c12dc80ad83a5056c",
+   "org_id": "org:openalex:I4387155235",
+   "type": "topic_paper",
+   "date": "2026-05-06",
+   "title": "3 OpenAlex work(s) on radiation: National Institute of Allergy and Infectious Diseases (NIAID) \u2013 Bundeswehr Institute of Ra",
+   "evidence_ids": [
+    "evidence:buyers:5bfdf5b7b787c68d0665",
+    "evidence:buyers:e49bcce9a9f3870ea5fd",
+    "evidence:buyers:1e78ade8cc8671bee4e7"
+   ]
+  },
+  {
+   "id": "signal:buyers:ea27ade6973fec80eec9",
+   "org_id": "org:openalex:I4387153084",
+   "type": "topic_paper",
+   "date": "2025-06-20",
+   "title": "2 OpenAlex work(s) on radiation: Development of Evidence-based Guidelines on Assessment and Management of Internal Contamin",
+   "evidence_ids": [
+    "evidence:buyers:b869791a9c698d9343a9",
+    "evidence:buyers:8c3055ac0a1bc4810eb9"
+   ]
+  },
+  {
+   "id": "signal:buyers:c826f55116d89b0a3491",
+   "org_id": "org:openalex:I1288894424",
+   "type": "topic_paper",
+   "date": "2025-06-20",
+   "title": "3 OpenAlex work(s) on radiation: Development of Evidence-based Guidelines on Assessment and Management of Internal Contamin",
+   "evidence_ids": [
+    "evidence:buyers:51103c29a66855fa5927",
+    "evidence:buyers:4e811ecfa539def09bf3",
+    "evidence:buyers:5724e89958ca35744749"
+   ]
+  },
+  {
+   "id": "signal:buyers:03feea16316fff87d784",
+   "org_id": "org:openalex:I148314036",
+   "type": "topic_paper",
+   "date": "2023-01-02",
+   "title": "3 OpenAlex work(s) on radiation: Development of gamma-tocotrienol as a radiation medical countermeasure for the acute radia",
+   "evidence_ids": [
+    "evidence:buyers:d991a4ac2c2eb9f5fcaa",
+    "evidence:buyers:3cbc17bef2ebe29d92e2",
+    "evidence:buyers:d3294488d9fdb3b727aa"
+   ]
+  },
+  {
+   "id": "signal:buyers:9680bab2c5659ec934af",
+   "org_id": "org:openalex:I4210134534",
+   "type": "topic_paper",
+   "date": "2026-10-08",
+   "title": "3 OpenAlex work(s) on radiation: Regulatory Overview and Considerations for Medical Countermeasures Developed for Radiologi",
+   "evidence_ids": [
+    "evidence:buyers:e92d26afc1c050a6c6c2",
+    "evidence:buyers:5fe5c8c1ae0a11a3de5d",
+    "evidence:buyers:6bacb224f167837ae4ae"
+   ]
+  },
+  {
+   "id": "signal:buyers:36b92e7757e2f014cacb",
+   "org_id": "org:openalex:I4210114391",
+   "type": "topic_paper",
+   "date": "2023-09-24",
+   "title": "3 OpenAlex work(s) on radiation: Radioprotectors, Radiomitigators, and Radiosensitizers",
+   "evidence_ids": [
+    "evidence:buyers:bcb65fbdd12809e0a3c3",
+    "evidence:buyers:aaf0f6accc8a2594badb",
+    "evidence:buyers:037791f89fec3c0aeb45"
+   ]
+  },
+  {
+   "id": "signal:buyers:caa6dcc57e08f08c2e35",
+   "org_id": "org:openalex:I4210137840",
+   "type": "topic_paper",
+   "date": "2025-11-14",
+   "title": "3 OpenAlex work(s) on radiation: European Approach for Acute Radiation Syndrome\u2019s Management Facing Radiological and Nuclea",
+   "evidence_ids": [
+    "evidence:buyers:e0195c22629c95669c16",
+    "evidence:buyers:265040078bdb2f7e0303",
+    "evidence:buyers:fdc6f634fd62284c179d"
+   ]
+  },
+  {
+   "id": "signal:buyers:6c786b90a83fba8419f9",
+   "org_id": "org:openalex:I4389425366",
+   "type": "topic_paper",
+   "date": "2023-12-01",
+   "title": "3 OpenAlex work(s) on radiation: CDC Division of Reproductive Health's Emergency Preparedness Resources and Activities for ",
+   "evidence_ids": [
+    "evidence:buyers:efc69d12eea9a48070b5",
+    "evidence:buyers:392b8682297edc3c37a2",
+    "evidence:buyers:16af76b20f57319b5d6b"
+   ]
+  },
+  {
+   "id": "signal:buyers:ac9e51ceab1f296873df",
+   "org_id": "org:openalex:I2738703131",
+   "type": "topic_paper",
+   "date": "2026-02-04",
+   "title": "3 OpenAlex work(s) on radiation: Development of Tunable Materials From Well\u2010Defined Alendronic Acid Functionalized Polyacry",
+   "evidence_ids": [
+    "evidence:buyers:c3f206a1bce628a71777",
+    "evidence:buyers:d6ef1de061a4f643219d",
+    "evidence:buyers:39d651810faea989ea32"
+   ]
+  },
+  {
+   "id": "signal:buyers:1c496e49aea008f13f6a",
+   "org_id": "org:openalex:I4210092468",
+   "type": "topic_paper",
+   "date": "2024-10-01",
+   "title": "3 OpenAlex work(s) on lead: State-Level Childhood Lead Poisoning Prevention Policies and Practices in the United State",
+   "evidence_ids": [
+    "evidence:buyers:b502c021da06f993762f",
+    "evidence:buyers:80a428028c52759fdd59",
+    "evidence:buyers:40696ebfded61b010153"
+   ]
+  },
+  {
+   "id": "signal:buyers:16178cefb23c41b30b18",
+   "org_id": "org:openalex:I169222155",
+   "type": "topic_paper",
+   "date": "2020-09-16",
+   "title": "2 OpenAlex work(s) on lead: Validation of a Machine Learning Model to Predict Childhood Lead Poisoning",
+   "evidence_ids": [
+    "evidence:buyers:6fff33b98aad4417e2ec",
+    "evidence:buyers:0c2a6e3b89687b0c6f1e"
+   ]
+  },
+  {
+   "id": "signal:buyers:d4cfda737d6f33a58206",
+   "org_id": "org:openalex:I1285204247",
+   "type": "topic_paper",
+   "date": "2026-07-10",
+   "title": "3 OpenAlex work(s) on lead: A Research Agenda for Acute Pediatric Mental and Behavioral Health Emergencies",
+   "evidence_ids": [
+    "evidence:buyers:043adcbc0be72fc11d4b",
+    "evidence:buyers:6d23534c5485052de8bf",
+    "evidence:buyers:0e0c6da70648ecb4e9eb"
+   ]
+  },
+  {
+   "id": "signal:buyers:156d486002fb95c54455",
+   "org_id": "org:openalex:I103043317",
+   "type": "topic_paper",
+   "date": "2019-04-01",
+   "title": "3 OpenAlex work(s) on lead: Childhood Lead Poisoning in Wisconsin.",
+   "evidence_ids": [
+    "evidence:buyers:0ccda5942d1ea29e64f6",
+    "evidence:buyers:af5f746056baf2736bef",
+    "evidence:buyers:fb4b9da4635248ca26a6"
+   ]
+  },
+  {
+   "id": "signal:buyers:24607a0a6c4b6edb3ef1",
+   "org_id": "org:openalex:I4210092716",
+   "type": "topic_paper",
+   "date": "2022-06-06",
+   "title": "1 OpenAlex work(s) on lead: Estimation of blood lead levels in the French population using two complementary approache",
+   "evidence_ids": [
+    "evidence:buyers:5cedca18066a2613a061"
+   ]
+  },
+  {
+   "id": "signal:buyers:7c7f7f879788b4988add",
+   "org_id": "org:openalex:I1298060332",
+   "type": "topic_paper",
+   "date": "2016-02-01",
+   "title": "1 OpenAlex work(s) on lead: Community Engagement and Data Disclosure in Environmental Health Research",
+   "evidence_ids": [
+    "evidence:buyers:dbd11d6097704b252c18"
+   ]
+  },
+  {
+   "id": "signal:buyers:526aac190f0921bbc509",
+   "org_id": "org:openalex:I199145359",
+   "type": "topic_paper",
+   "date": "2024-03-15",
+   "title": "2 OpenAlex work(s) on lead: An Update on Pediatric Environmental Health Specialty Units: Activities and Impacts, 2015\u2013",
+   "evidence_ids": [
+    "evidence:buyers:617f72c6d626a1c6ea83",
+    "evidence:buyers:aad95a42cfe6e763a8c9"
+   ]
+  },
+  {
+   "id": "signal:buyers:ca4f0a607e1b9b6e675f",
+   "org_id": "org:openalex:I1336243289",
+   "type": "topic_paper",
+   "date": "2022-11-22",
+   "title": "3 OpenAlex work(s) on lead: Childhood Lead Poisoning 1970-2022: Charting Progress and Needed Reforms",
+   "evidence_ids": [
+    "evidence:buyers:6552f39a291f1353b876",
+    "evidence:buyers:2556603a7a2d50376605",
+    "evidence:buyers:d188ef15b106a72b109a"
    ]
   }
  ],
@@ -2613,7 +3065,7 @@
    "source_url": "https://openalex.org/W4412512821",
    "quote": "Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emergency",
    "source_date": "2025-07-21",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2621,7 +3073,7 @@
    "source_url": "https://openalex.org/W3174474291",
    "quote": "United States medical preparedness for nuclear and radiological emergencies",
    "source_date": "2021-12-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2637,7 +3089,7 @@
    "source_url": "https://openalex.org/W2943992914",
    "quote": "Liposomal DTPA as a good strategy for enhancing Pu decorporation regardless of treatment regimen.",
    "source_date": "2019-05-07",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2645,7 +3097,7 @@
    "source_url": "https://openalex.org/W2944253097",
    "quote": "Bringing up to date the French database of nuclear workers contaminated with plutonium and/or americium and treated with Ca-DTPA",
    "source_date": "2019-05-07",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2653,7 +3105,7 @@
    "source_url": "https://openalex.org/W2922978426",
    "quote": "A quick and simple in vitro assay to predict bioavailability of actinides following accidental exposure",
    "source_date": "2019-03-21",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2661,7 +3113,7 @@
    "source_url": "https://openalex.org/W3083221182",
    "quote": "Head-to-head comparison of DFO* and DFO chelators: selection of the best candidate for clinical 89Zr-immuno-PET",
    "source_date": "2020-09-05",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2669,7 +3121,7 @@
    "source_url": "https://openalex.org/W2975257318",
    "quote": "Total-Body PET and Highly Stable Chelators Together Enable Meaningful 89Zr-Antibody PET Studies up to 30 Days After Injection",
    "source_date": "2019-09-27",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2677,7 +3129,7 @@
    "source_url": "https://openalex.org/W4404290089",
    "quote": "New prospects for 89Zr-immuno-PET in brain applications \u2013 Alpha-synucleinopathies",
    "source_date": "2024-11-12",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2685,7 +3137,7 @@
    "source_url": "https://openalex.org/W4307228102",
    "quote": "Advancing 89 Zr-immuno-PET in neuroscience with a bispecific anti-amyloid-beta monoclonal antibody - The choice of chelator is essential",
    "source_date": "2022-01-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2693,7 +3145,7 @@
    "source_url": "https://openalex.org/W2620846126",
    "quote": "Evaluation of macrocyclic hydroxyisophthalamide ligands as chelators for zirconium-89",
    "source_date": "2017-06-02",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2701,7 +3153,7 @@
    "source_url": "https://openalex.org/W4283259974",
    "quote": "Long-term Gadolinium Retention in the Healthy Rat Brain: Comparison between Gadopiclenol, Gadobutrol, and Gadodiamide",
    "source_date": "2022-06-21",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2709,7 +3161,7 @@
    "source_url": "https://openalex.org/W2998893802",
    "quote": "Long-Term Evaluation of Gadolinium Retention in Rat Brain After Single Injection of a Clinically Relevant Dose of Gadolinium-Based Contrast Agents",
    "source_date": "2020-01-09",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2717,7 +3169,7 @@
    "source_url": "https://openalex.org/W2172582143",
    "quote": "Linear Gadolinium-Based Contrast Agents Are Associated With Brain Gadolinium Retention in Healthy Rats",
    "source_date": "2015-11-25",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2725,7 +3177,7 @@
    "source_url": "https://openalex.org/W2737069440",
    "quote": "Differences in gadolinium retention after repeated injections of macrocyclic MR contrast agents to rats",
    "source_date": "2017-07-21",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2733,7 +3185,7 @@
    "source_url": "https://openalex.org/W2912465232",
    "quote": "Removal of a gadolinium based contrast agent by a novel sorbent hemoperfusion in a chronic kidney disease (CKD) rodent model",
    "source_date": "2019-01-24",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2741,7 +3193,7 @@
    "source_url": "https://openalex.org/W2626690406",
    "quote": "Gadolinium deposition: practical guidelines in the face of uncertainty",
    "source_date": "2017-06-14",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2749,7 +3201,7 @@
    "source_url": "https://openalex.org/W2251858503",
    "quote": "National Institutes of Health Perspective on Reports of Gadolinium Deposition in the Brain",
    "source_date": "2016-01-23",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2757,7 +3209,7 @@
    "source_url": "https://openalex.org/W4403400510",
    "quote": "Pediatric Lead Chelation Managed During Critical Medication Shortages: Case Report and Literature Review",
    "source_date": "2024-10-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2765,7 +3217,7 @@
    "source_url": "https://openalex.org/W4399597413",
    "quote": "Trends in Shortages of Lead Chelators From 2001 to 2022.",
    "source_date": "2024-06-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2773,7 +3225,7 @@
    "source_url": "https://openalex.org/W2847097624",
    "quote": "Folk prescription for treating rhinitis as a rare cause of childhood lead poisoning: a case series",
    "source_date": "2018-07-06",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2781,7 +3233,7 @@
    "source_url": "https://openalex.org/W2592420943",
    "quote": "Case 2: A Neonate Affected by Maternal Pica",
    "source_date": "2017-03-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2789,7 +3241,7 @@
    "source_url": "https://openalex.org/W2560467450",
    "quote": "Modeling the effect of succimer (DMSA; dimercaptosuccinic acid) chelation therapy in patients poisoned by lead",
    "source_date": "2016-12-05",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2797,7 +3249,7 @@
    "source_url": "https://openalex.org/W4401382272",
    "quote": "How Effective Are Secondary Interventions at Improving Health Outcomes in Children Exposed to Lead in Early Childhood?",
    "source_date": "2024-06-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2805,7 +3257,7 @@
    "source_url": "https://openalex.org/W4403400510",
    "quote": "Pediatric Lead Chelation Managed During Critical Medication Shortages: Case Report and Literature Review",
    "source_date": "2024-10-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2813,7 +3265,7 @@
    "source_url": "https://openalex.org/W4392060314",
    "quote": "Radiation and Chemical Program Research for Multi-Utility and Repurposed Countermeasures: A US Department of Health and Human Services Agencies Perspective",
    "source_date": "2024-02-22",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2821,7 +3273,7 @@
    "source_url": "https://openalex.org/W4411501063",
    "quote": "Development of Evidence-based Guidelines on Assessment and Management of Internal Contamination with Transuranic Actinides",
    "source_date": "2025-06-20",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2829,7 +3281,7 @@
    "source_url": "https://openalex.org/W4388534882",
    "quote": "Nanotechnologies and controlled release formulations for the administration of bisphosphonates and their potential in radiation protection",
    "source_date": "2023-11-09",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2837,7 +3289,7 @@
    "source_url": "https://openalex.org/W4387599837",
    "quote": "Modelling DTPA therapy following Am contamination in rats",
    "source_date": "2023-10-13",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2845,7 +3297,7 @@
    "source_url": "https://openalex.org/W4412512821",
    "quote": "Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emergency",
    "source_date": "2025-07-21",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2853,7 +3305,7 @@
    "source_url": "https://openalex.org/W4411501063",
    "quote": "Development of Evidence-based Guidelines on Assessment and Management of Internal Contamination with Transuranic Actinides",
    "source_date": "2025-06-20",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2869,7 +3321,7 @@
    "source_url": "https://openalex.org/W4400883289",
    "quote": "Modeling Plutonium Decorporation in a Female Nuclear Worker Treated with Ca-DTPA after Inhalation Intake",
    "source_date": "2024-07-22",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2877,7 +3329,7 @@
    "source_url": "https://openalex.org/W4221091001",
    "quote": "Public health response and medical management of internal contamination in past radiological or nuclear incidents: A narrative review",
    "source_date": "2022-03-30",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2885,7 +3337,7 @@
    "source_url": "https://openalex.org/W2886946821",
    "quote": "Abstract 3033: Immuno-PET detection of LAG-3 expressing intratumoral lymphocytes using the zirconium-89 radiolabeled fully human anti-LAG-3 antibody REGN3767",
    "source_date": "2018-07-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2893,7 +3345,7 @@
    "source_url": "https://openalex.org/W4401630642",
    "quote": "Click Chemistry Enables [89Zr]Zr-DOTA Radioimmunoconjugation for Theranostic 89Zr-immunoPET",
    "source_date": "2024-08-16",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2901,7 +3353,7 @@
    "source_url": "https://openalex.org/W3193558140",
    "quote": "Re-Evaluations of Zr-DFO Complex Coordination Chemistry for the Estimation of Radiochemical Yields and Chelator-to-Antibody Ratios of 89Zr Immune-PET Tracers",
    "source_date": "2021-08-17",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2909,7 +3361,7 @@
    "source_url": "https://openalex.org/W4403814764",
    "quote": "Highlighting New Research Trends on Zirconium-89 Radiopharmaceuticals Beyond Antibodies",
    "source_date": "2024-10-28",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2917,7 +3369,7 @@
    "source_url": "https://openalex.org/W2985146109",
    "quote": "Analysis of retention of gadolinium by brain, bone, and blood following linear gadolinium\u2010based contrast agent administration in rats with experimental sepsis",
    "source_date": "2019-11-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2925,7 +3377,7 @@
    "source_url": "https://openalex.org/W2955410492",
    "quote": "Gadolinium Deposition in the Brain in a Large Animal Model: Comparison of Linear and Macrocyclic Gadolinium-Based Contrast Agents",
    "source_date": "2019-07-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2933,7 +3385,7 @@
    "source_url": "https://openalex.org/W2768496180",
    "quote": "Chelated or dechelated gadolinium deposition",
    "source_date": "2017-11-15",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2941,7 +3393,7 @@
    "source_url": "https://openalex.org/W2400913366",
    "quote": "High-Signal Intensity in the Dentate Nucleus and Globus Pallidus on Unenhanced T1-Weighted Images: Evaluation of the Macrocyclic Gadolinium-Based Contrast Agent Gadobutrol",
    "source_date": "2015-10-31",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2949,7 +3401,7 @@
    "source_url": "https://openalex.org/W2778093500",
    "quote": "Lead toxicity in a new-born due to in utero exposure",
    "source_date": "2017-12-21",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2957,7 +3409,7 @@
    "source_url": "https://openalex.org/W3036913692",
    "quote": "Low-level lead exposure impairs fronto-executive functions: A call to update the DSM\u20135 with lead poisoning as a neurodevelopmental disorder.",
    "source_date": "2020-09-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2965,7 +3417,7 @@
    "source_url": "https://openalex.org/W3022031221",
    "quote": "Lead poisoning; a neglected potential diagnosis in abdominal pain",
    "source_date": "2020-05-06",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   },
   {
@@ -2973,7 +3425,423 @@
    "source_url": "https://openalex.org/W2509184816",
    "quote": "Lead poisoning in children: a case report",
    "source_date": "2016-01-01",
-   "observed_at": "2026-11-24T21:40:54.768168+00:00",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:149cfdff6dc24eb4c513",
+   "source_url": "https://openalex.org/W4389327136",
+   "quote": "CDC Division of Reproductive Health's Emergency Preparedness Resources and Activities for Radiation Emergencies: Public Health Considerations for Women's Reproductive Health",
+   "source_date": "2023-12-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c14edd361b1c25cf637c",
+   "source_url": "https://openalex.org/W4412512821",
+   "quote": "Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emergency",
+   "source_date": "2025-07-21",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b4cb4e89542b8440d104",
+   "source_url": "https://openalex.org/W4392060314",
+   "quote": "Radiation and Chemical Program Research for Multi-Utility and Repurposed Countermeasures: A US Department of Health and Human Services Agencies Perspective",
+   "source_date": "2024-02-22",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5bfdf5b7b787c68d0665",
+   "source_url": "https://openalex.org/W7160528538",
+   "quote": "National Institute of Allergy and Infectious Diseases (NIAID) \u2013 Bundeswehr Institute of Radiobiology (BIR) Joint Programmatic Workshop on a Global Approach to Medical Countermeasure Development in Radiological Public Health Preparedness",
+   "source_date": "2026-05-06",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e49bcce9a9f3870ea5fd",
+   "source_url": "https://openalex.org/W4411501063",
+   "quote": "Development of Evidence-based Guidelines on Assessment and Management of Internal Contamination with Transuranic Actinides",
+   "source_date": "2025-06-20",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:1e78ade8cc8671bee4e7",
+   "source_url": "https://openalex.org/W4312885684",
+   "quote": "The properties and health hazards from early nuclear weapon fallout: The Castle Bravo incident revisited",
+   "source_date": "2022-10-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b869791a9c698d9343a9",
+   "source_url": "https://openalex.org/W4411501063",
+   "quote": "Development of Evidence-based Guidelines on Assessment and Management of Internal Contamination with Transuranic Actinides",
+   "source_date": "2025-06-20",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:8c3055ac0a1bc4810eb9",
+   "source_url": "https://openalex.org/W4386982533",
+   "quote": "Radiobiology of Accidental, Public, and Occupational Exposures",
+   "source_date": "2023-09-24",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:51103c29a66855fa5927",
+   "source_url": "https://openalex.org/W4411501063",
+   "quote": "Development of Evidence-based Guidelines on Assessment and Management of Internal Contamination with Transuranic Actinides",
+   "source_date": "2025-06-20",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:4e811ecfa539def09bf3",
+   "source_url": "https://openalex.org/W4386982533",
+   "quote": "Radiobiology of Accidental, Public, and Occupational Exposures",
+   "source_date": "2023-09-24",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5724e89958ca35744749",
+   "source_url": "https://openalex.org/W4221091001",
+   "quote": "Public health response and medical management of internal contamination in past radiological or nuclear incidents: A narrative review",
+   "source_date": "2022-03-30",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d991a4ac2c2eb9f5fcaa",
+   "source_url": "https://openalex.org/W4317435920",
+   "quote": "Development of gamma-tocotrienol as a radiation medical countermeasure for the acute radiation syndrome: current status and future perspectives",
+   "source_date": "2023-01-02",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:3cbc17bef2ebe29d92e2",
+   "source_url": "https://openalex.org/W4221091001",
+   "quote": "Public health response and medical management of internal contamination in past radiological or nuclear incidents: A narrative review",
+   "source_date": "2022-03-30",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d3294488d9fdb3b727aa",
+   "source_url": "https://openalex.org/W3185940973",
+   "quote": "Nutraceuticals as Potential Radionuclide Decorporation Agents",
+   "source_date": "2021-07-25",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e92d26afc1c050a6c6c2",
+   "source_url": "https://openalex.org/W7221060954",
+   "quote": "Regulatory Overview and Considerations for Medical Countermeasures Developed for Radiological/Nuclear Incident Responses",
+   "source_date": "2026-10-08",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5fe5c8c1ae0a11a3de5d",
+   "source_url": "https://openalex.org/W7160528538",
+   "quote": "National Institute of Allergy and Infectious Diseases (NIAID) \u2013 Bundeswehr Institute of Radiobiology (BIR) Joint Programmatic Workshop on a Global Approach to Medical Countermeasure Development in Radiological Public Health Preparedness",
+   "source_date": "2026-05-06",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6bacb224f167837ae4ae",
+   "source_url": "https://openalex.org/W4412512821",
+   "quote": "Advanced Medical Countermeasures and Devices for Use During a Radiological or Nuclear Emergency",
+   "source_date": "2025-07-21",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:bcb65fbdd12809e0a3c3",
+   "source_url": "https://openalex.org/W4386982195",
+   "quote": "Radioprotectors, Radiomitigators, and Radiosensitizers",
+   "source_date": "2023-09-24",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:aaf0f6accc8a2594badb",
+   "source_url": "https://openalex.org/W4386982533",
+   "quote": "Radiobiology of Accidental, Public, and Occupational Exposures",
+   "source_date": "2023-09-24",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:037791f89fec3c0aeb45",
+   "source_url": "https://openalex.org/W3036801172",
+   "quote": "Communicating nuclear and radiological emergencies to the public: How and to what extent are European countries prepared?",
+   "source_date": "2020-06-23",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:e0195c22629c95669c16",
+   "source_url": "https://openalex.org/W4416196937",
+   "quote": "European Approach for Acute Radiation Syndrome\u2019s Management Facing Radiological and Nuclear Threats: A Call for Arms",
+   "source_date": "2025-11-14",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:265040078bdb2f7e0303",
+   "source_url": "https://openalex.org/W4387599837",
+   "quote": "Modelling DTPA therapy following Am contamination in rats",
+   "source_date": "2023-10-13",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:fdc6f634fd62284c179d",
+   "source_url": "https://openalex.org/W4386982533",
+   "quote": "Radiobiology of Accidental, Public, and Occupational Exposures",
+   "source_date": "2023-09-24",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:efc69d12eea9a48070b5",
+   "source_url": "https://openalex.org/W4389327136",
+   "quote": "CDC Division of Reproductive Health's Emergency Preparedness Resources and Activities for Radiation Emergencies: Public Health Considerations for Women's Reproductive Health",
+   "source_date": "2023-12-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:392b8682297edc3c37a2",
+   "source_url": "https://openalex.org/W4224117620",
+   "quote": "Internal contamination cases: The REAC/TS experience",
+   "source_date": "2022-04-18",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:16af76b20f57319b5d6b",
+   "source_url": "https://openalex.org/W2478429263",
+   "quote": "Radiological and Nuclear Terrorism: The Oncologic Emergency Response",
+   "source_date": "2016-05-14",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:c3f206a1bce628a71777",
+   "source_url": "https://openalex.org/W7127578916",
+   "quote": "Development of Tunable Materials From Well\u2010Defined Alendronic Acid Functionalized Polyacrylamide: An Opportunity for Actinide Decontamination",
+   "source_date": "2026-02-04",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d6ef1de061a4f643219d",
+   "source_url": "https://openalex.org/W4388648604",
+   "quote": "Chelation Modeling of a Plutonium-238 Inhalation Incident Treated with Delayed DTPA",
+   "source_date": "2023-11-13",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:39d651810faea989ea32",
+   "source_url": "https://openalex.org/W4387599837",
+   "quote": "Modelling DTPA therapy following Am contamination in rats",
+   "source_date": "2023-10-13",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b502c021da06f993762f",
+   "source_url": "https://openalex.org/W4403037423",
+   "quote": "State-Level Childhood Lead Poisoning Prevention Policies and Practices in the United States: 2022\u20132023",
+   "source_date": "2024-10-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:80a428028c52759fdd59",
+   "source_url": "https://openalex.org/W3028189682",
+   "quote": "PIH30 ASSESSING THE RELIABILITY OF LEAD POISONING DIAGNOSIS CODES IN CLAIMS DATA TO IDENTIFY CHILDREN AGE <72 MONTHS WITH ELEVATED BLOOD LEAD",
+   "source_date": "2020-05-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:40696ebfded61b010153",
+   "source_url": "https://openalex.org/W2903107413",
+   "quote": "Childhood Lead Poisoning: A Perpetual Environmental Justice Issue?",
+   "source_date": "2018-11-30",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6fff33b98aad4417e2ec",
+   "source_url": "https://openalex.org/W3087059313",
+   "quote": "Validation of a Machine Learning Model to Predict Childhood Lead Poisoning",
+   "source_date": "2020-09-16",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0c2a6e3b89687b0c6f1e",
+   "source_url": "https://openalex.org/W2036749867",
+   "quote": "Predictive Modeling for Public Health: Preventing Childhood Lead Poisoning",
+   "source_date": "2015-08-10",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:043adcbc0be72fc11d4b",
+   "source_url": "https://openalex.org/W7167915461",
+   "quote": "A Research Agenda for Acute Pediatric Mental and Behavioral Health Emergencies",
+   "source_date": "2026-07-10",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6d23534c5485052de8bf",
+   "source_url": "https://openalex.org/W4402348613",
+   "quote": "Prescriptions (Rx) for Prevention: Clinical Tools for Integrating Environmental Health into Pediatric Clinical Care",
+   "source_date": "2024-09-09",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0e0c6da70648ecb4e9eb",
+   "source_url": "https://openalex.org/W3172145928",
+   "quote": "Residential Dust Lead Levels and the Risk of Childhood Lead Poisoning in United States Children",
+   "source_date": "2020-10-26",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:0ccda5942d1ea29e64f6",
+   "source_url": "https://openalex.org/W2997972153",
+   "quote": "Childhood Lead Poisoning in Wisconsin.",
+   "source_date": "2019-04-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:af5f746056baf2736bef",
+   "source_url": "https://openalex.org/W2902279558",
+   "quote": "Using Medicaid Data to Improve Childhood Lead Poisoning Prevention Program Outcomes and Blood Lead Surveillance",
+   "source_date": "2018-11-30",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:fb4b9da4635248ca26a6",
+   "source_url": "https://openalex.org/W2593361627",
+   "quote": "Severe lead toxicity attributed to bullet fragments retained in soft tissue",
+   "source_date": "2017-03-08",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:5cedca18066a2613a061",
+   "source_url": "https://openalex.org/W4281990963",
+   "quote": "Estimation of blood lead levels in the French population using two complementary approaches: Esteban (2014\u20132016) as part of the human biomonitoring program and the national surveillance system for childhood lead poisoning (2015\u20132018)",
+   "source_date": "2022-06-06",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:dbd11d6097704b252c18",
+   "source_url": "https://openalex.org/W2405794342",
+   "quote": "Community Engagement and Data Disclosure in Environmental Health Research",
+   "source_date": "2016-02-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:617f72c6d626a1c6ea83",
+   "source_url": "https://openalex.org/W4392858230",
+   "quote": "An Update on Pediatric Environmental Health Specialty Units: Activities and Impacts, 2015\u201319",
+   "source_date": "2024-03-15",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:aad95a42cfe6e763a8c9",
+   "source_url": "https://openalex.org/W2504466389",
+   "quote": "A Multimedia E-Book\u2014 A Story of Health : Filling a Gap in Environmental Health Literacy for Health Professionals",
+   "source_date": "2016-08-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6552f39a291f1353b876",
+   "source_url": "https://openalex.org/W4310102459",
+   "quote": "Childhood Lead Poisoning 1970-2022: Charting Progress and Needed Reforms",
+   "source_date": "2022-11-22",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:2556603a7a2d50376605",
+   "source_url": "https://openalex.org/W3172145928",
+   "quote": "Residential Dust Lead Levels and the Risk of Childhood Lead Poisoning in United States Children",
+   "source_date": "2020-10-26",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:d188ef15b106a72b109a",
+   "source_url": "https://openalex.org/W3045839343",
+   "quote": "Residential dust lead levels and the risk of childhood lead poisoning in United States children",
+   "source_date": "2020-07-28",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6644ab5525febc601fcb",
+   "source_url": "https://openalex.org/W4400084966",
+   "quote": "Addressing Disparities in Pediatric Congenital Heart Disease: A Call for Equitable Health Care",
+   "source_date": "2024-06-27",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:4c7a4068b7e5372446ff",
+   "source_url": "https://openalex.org/W4392858230",
+   "quote": "An Update on Pediatric Environmental Health Specialty Units: Activities and Impacts, 2015\u201319",
+   "source_date": "2024-03-15",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:a28670ce4c9f4cff7644",
+   "source_url": "https://openalex.org/W2766207672",
+   "quote": "Sources, symptoms and characteristics of childhood lead poisoning: experience from a lead specialty clinic in China",
+   "source_date": "2017-10-27",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:6f6b7d455ea15bf3ee62",
+   "source_url": "https://openalex.org/W4392858230",
+   "quote": "An Update on Pediatric Environmental Health Specialty Units: Activities and Impacts, 2015\u201319",
+   "source_date": "2024-03-15",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
+   "kind": "paper"
+  },
+  {
+   "id": "evidence:buyers:b91c4f56ac658e9928df",
+   "source_url": "https://openalex.org/W2557552863",
+   "quote": "Two Decades of Enhancing Children\u2019s Environmental Health Protection at the U.S. Environmental Protection Agency",
+   "source_date": "2016-12-01",
+   "observed_at": "2026-11-24T22:14:02.713505+00:00",
    "kind": "paper"
   }
  ]

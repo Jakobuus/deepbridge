@@ -11,10 +11,10 @@ KEY = next((v for k, v in os.environ.items() if k.startswith('OPENALEX') and 'KE
 FID = 'person:openalex:A5043992375'
 CACHE = ROOT / 'data/cache/jakob/buyers/ae6d5bcb159c6f29efcf4313.json'
 CATS = {
- 'radiation': (['medical countermeasures radiological nuclear emergency', 'actinide decorporation DTPA plutonium', 'radiation countermeasure medical countermeasure radionuclide decorporation'], ['I2801182042', 'I4210155143', 'I1293448361', 'I1289490764', 'I4210088792']),
+ 'radiation': (['medical countermeasures radiological nuclear emergency', 'actinide decorporation DTPA plutonium', 'radiation countermeasure medical countermeasure radionuclide decorporation', 'internal contamination radionuclide treatment Prussian blue DTPA'], ['I2801182042', 'I4210155143', 'I1293448361', 'I1289490764', 'I4210088792', 'I4387154209', 'I4387155235', 'I4387153084', 'I1288894424', 'I148314036', 'I4210134534', 'I4210114391', 'I4210137840', 'I4389425366', 'I2738703131']),
  'pet': (['89Zr immuno-PET zirconium-89 chelator', 'zirconium-89 radiopharmaceutical desferrioxamine'], ['I183934855', 'I133593841', 'I4210147582', 'I186523950', 'I4405257904', 'I25763013']),
  'gd': (['gadolinium retention deposition contrast agent brain', 'gadolinium deposition macrocyclic contrast', 'Removal of gadolinium contrast agent sorbent hemoperfusion'], ['I120615911', 'I4210132761', 'I4210150350', 'I1299303238', 'I30558944', 'I17937529']),
- 'lead': (['lead poisoning chelation therapy children succimer', 'childhood lead poisoning chelation DMSA EDTA'], ['I4210136340', 'I1288882113', 'I4210135976', 'I4210104433', 'I1302368450', 'I4210087865', 'I4210150312', 'I1335289525', 'I4210110933', 'I4210106432']),
+ 'lead': (['lead poisoning chelation therapy children succimer', 'childhood lead poisoning chelation DMSA EDTA', 'childhood lead poisoning blood lead children', 'pediatric environmental health specialty unit lead'], ['I4210092468', 'I169222155', 'I1285204247', 'I103043317', 'I4210092716', 'I1298060332', 'I199145359', 'I1336243289', 'I4210136340', 'I1288882113', 'I4210135976', 'I4210104433', 'I1302368450', 'I4210087865', 'I4210150312', 'I1335289525', 'I4210110933', 'I4210106432']),
 }
 KIND = {'company': 'company', 'government': 'government'}
 def q(s):
