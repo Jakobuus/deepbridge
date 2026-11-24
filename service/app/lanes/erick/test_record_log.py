@@ -72,7 +72,14 @@ def test_warmth():
 
 
 def main():
-    return 1 if sum(check(sid) for sid in SESSIONS) else 0
+    failures = sum(check(sid) for sid in SESSIONS)
+    try:
+        test_warmth()
+        print('warmth OK')
+    except AssertionError as exc:
+        print('warmth FAIL', exc)
+        failures += 1
+    return 1 if failures else 0
 
 
 if __name__ == '__main__':
