@@ -12,7 +12,7 @@ STYLE_RULES = [
     'No lists, no jargon, no long preambles; if interrupted, stop and listen.',
     'Never invent facts, numbers or customers; only reflect what the founder said.',
     'Never mention the current treatment, IV, drips, injections or DTPA; say what the pill does, not what it replaces.',
-    'Close with a read-back of two plain sentences in the founder\'s own terms, then thank them.',
+    'Close with a read-back of two short sentences from the founder\'s own words, then "Thanks, <first name>."',
 ]
 # Topic order for both modes; stage mode uses the first three.
 TOPICS = ('the real value in one line', 'who buys it first', 'who they already know there',
@@ -41,15 +41,17 @@ def first_name(name: str | None) -> str:
     return (name or '').split()[0] if (name or '').strip() else ''
 
 
-def stage_questions(name: str | None = None, hopo: bool = False) -> list[str]:
+def stage_questions(name: str | None = None, hopo: bool = False, summary: str | None = None) -> list[str]:
+    """Stage template: Q1 value (opens with a one-sentence everyday summary), Q2 buyers, Q3 people."""
     hello = f'Hi {first_name(name)}.' if first_name(name) else 'Hi.'
-    read = (' In plain words: your papers describe a pill that pulls radioactive metals and lead out of the body.'
-            if hopo else ' I\'ve read your papers.')
-    return [
-        f'{hello}{read} What\'s the value, and for whom?',
-        'Who would buy it first?',
-        'Who do you already know there?',
-    ]
+    if hopo:
+        q1 = (f'{hello} In plain words: your papers describe a pill that pulls radioactive metals and lead out of '
+              'the body. What\'s the value, and for whom?')
+    else:
+        q1 = f'{hello} {(summary or "I\'ve read your papers.").strip()} What\'s the value, and for whom?'
+    return [q1,
+            'Have you already talked to people who are interested? What caught their attention most?',
+            'Who do you already know there, or who should we meet?']
 
 
 def full_questions(hopo: bool = False) -> list[str]:
@@ -87,13 +89,22 @@ def instructions(name: str | None, company: str | None, summary: str, gaps: list
     hopo = is_hopo(company)
     rules = '\n'.join('- ' + rule for rule in STYLE_RULES)
     flow = (
-        'STAGE MODE (about 75 seconds, on a live stage): open with the one-sentence plain summary and the first '
-        'question in the same turn, exactly as written below. Then ask the other two questions in order, each after a '
-        'few words acknowledging the last answer; no follow-ups. End with a read-back of two short sentences, then '
+        'STAGE MODE (about 75 seconds, on a live stage): open with ONE everyday sentence summarising the founder\'s '
+        'work, written from the briefing below (no jargon, chemical names, acronyms, numbers or titles), then ask '
+        'question 1 in the same turn. Then ask questions 2 and 3 in order, each after a few words acknowledging the '
+        'last answer; no follow-ups. End with a read-back of two short sentences from their own words, then '
         '"Thanks, <first name>."'
         if mode == 'stage' else
-        'FULL MODE: five to seven questions. Start with the three below, then ask what proof the buyer needs, '
-        'how buyers find out, and the timeline. One short follow-up when an answer is vague, at most two in total.'
+        'LIVE MODE: six adaptive blocks, skipping what is already answered, one question at a time. '
+        'check: "Here\'s what I read in one sentence... what did I get wrong?" '
+        'value: "Who is this a must-have for? What do they do today instead?" '
+        'buyers: "Who pays? Whose budget? Who signs, who could block?" then "Have you talked to interested people? '
+        'What caught their attention?" '
+        'proof: "What would that buyer need to see before saying yes?" '
+        'people: "Who do you already know there? How do you know them? Who\'s the best person you haven\'t met?" '
+        'priority: "If you could get one meeting next month, with whom?" '
+        'Ask for names ("Can you name one?" once if vague). End with a three-sentence read-back, then '
+        '"What should I fix?"'
     )
     return (
         f'You are {PERSONA}\nYou are interviewing {name or "a founder"}'

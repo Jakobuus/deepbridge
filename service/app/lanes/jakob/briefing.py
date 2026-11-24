@@ -500,9 +500,9 @@ def sharpen_turn(session: Session, index: int) -> dict | None:
     topic = min(len(founder) - 1, 2)
     if asked:
         last = asked[-1]
-        topic = (2 if re.search(r'\bknow\b|talk to|introduc', last, re.I) else
-                 1 if re.search(r'\bbuy|\bpay|budget|customer', last, re.I) else
-                 0 if re.search(r'value|what does', last, re.I) else min(len(asked) - 1, 2))
+        topic = (2 if re.search(r'\bknow\b|\bmeet\b|introduc', last, re.I) else
+                 1 if re.search(r'\bbuy|\bpay|budget|customer|interested|talked to|talk to|sign', last, re.I) else
+                 0 if re.search(r'value|what does|must-have', last, re.I) else min(len(asked) - 1, 2))
     def llm_entities(text):  # slow path, bounded to 2 s inside sharpen.send
         from ..mark.interview import _llm_entities
         return _llm_entities(text)
