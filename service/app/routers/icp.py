@@ -44,7 +44,7 @@ def intake(body: IntakeRequest):
         _register(load_research(founder.id))
         if founder.id == 'person:openalex:A5043992375':
             # HACK: Abergel's top-cited OpenAlex works are off-topic for HOPO; show the HOPO papers instead.
-            papers = json.loads((FIXTURES / 'hopo_papers.json').read_text())['papers'][:8]
+            papers = json.loads((FIXTURES / 'hopo_papers.json').read_text())['papers']
             with store.lock:
                 for paper in papers:
                     store.evidence[paper['id']] = Evidence.model_validate(paper)

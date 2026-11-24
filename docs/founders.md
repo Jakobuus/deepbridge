@@ -145,19 +145,19 @@ Input `10.1103/PhysRevLett.87.037901`. Incomplete in 36.281s.
 <!-- founder-run da2581c5abbeb1cc -->
 ## Rebecca J. Abergel
 
-Input `Rebecca J. Abergel`. Incomplete in 70.399s.
+Input `Rebecca J. Abergel`. Incomplete in 77.756s.
 
 | Request | Status | Time | Counts and notes |
 | --- | --- | ---: | --- |
-| `POST /intake` | 200 | 0.630s | Rebecca J. Abergel (person:openalex:A5043992375), 5 topics, 5 evidence ids |
-| `GET /icp` | 200 | 14.220s | 3 buyer roles, 3 industries, 3 needs, 3 expansion segments |
-| `GET /buyers` | 200 | 11.226s | 10 orgs, 13 signals |
-| `GET /graph` | 200 | 15.122s | 1022 people, 274 orgs, 1784 edges, 954 evidence · computed from cached OpenAlex responses · PhD advisor not independently resolved; no advisor relationship inferred. |
-| `GET /paths` | 200 | 0.071s | 12 paths · computed from cached OpenAlex responses; scores are heuristics · PhD advisor not independently resolved; no advisor relationship inferred. |
-| `GET /value-map` | 200 | 28.954s | 15 value nodes, 16 edges, 9 evidence · generated from founder research |
-| `GET /categories` | 404 | 0.001s | Founder not in cached demo |
-| `GET /knowledge-graph` | 200 | 0.171s | core has 15 value nodes, 16 edges, 1 categories, leads have 1022 people, 274 orgs, 1784 edges, 12 paths, 968 evidence · computed from cached OpenAlex responses; scores are heuristics · PhD advisor not independently resolved; no advisor relationship inferred. · Buyer categories unavailable. Showing All buyers. |
-| `POST /drafts (path:erick:c0c9b39aec13bc62be1a)` | 404 | 0.002s | Founder not in cached demo |
+| `POST /intake` | 200 | 0.013s | Rebecca J. Abergel (person:openalex:A5043992375), 5 topics, 5 evidence ids |
+| `GET /icp` | 200 | 0.002s | 3 buyer roles, 3 industries, 3 needs, 3 expansion segments |
+| `GET /buyers` | 200 | 3.937s | 12 orgs, 20 signals |
+| `GET /graph` | 200 | 0.106s | 1022 people, 274 orgs, 1784 edges, 954 evidence · computed from cached OpenAlex responses · PhD advisor not independently resolved; no advisor relationship inferred. |
+| `GET /paths` | 200 | 0.112s | 12 paths · computed from cached OpenAlex responses; scores are heuristics · PhD advisor not independently resolved; no advisor relationship inferred. |
+| `GET /value-map` | 502 | 22.954s | Value-map generation failed or returned invalid evidence |
+| `GET /categories` | 200 | 0.007s | 3 categories · inferred from cached buyer evidence |
+| `GET /knowledge-graph` | 200 | 50.623s | core has 13 value nodes, 13 edges, 3 categories, leads have 1022 people, 274 orgs, 1784 edges, 12 paths, 1000 evidence · computed from cached OpenAlex responses; scores are heuristics · PhD advisor not independently resolved; no advisor relationship inferred. |
+| `POST /drafts (path:erick:c0c9b39aec13bc62be1a)` | 404 | 0.001s | Founder not in cached demo |
 | `POST /drafts (path:erick:a28bddc4634f28ee5d9e)` | 404 | 0.001s | Founder not in cached demo |
 | `POST /drafts (path:erick:cb0d5043358f6aafbf4a)` | 404 | 0.001s | Founder not in cached demo |
 
