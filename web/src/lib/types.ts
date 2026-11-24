@@ -119,11 +119,12 @@ export interface Draft {
   evidence_ids: Id[];
   content_hash: string;
   status: "draft" | "approved" | "rejected" | "stale";
+  checks?: { name: string; ok: boolean; detail?: string | null }[]; // automatic copy checks
   // Optional: Band review room (multi-agent review before the human gate). Absent → strip hidden.
   review?: {
     status?: string;
     room_url?: string | null;
-    steps?: { agent?: string; name?: string; role?: string; status?: string; detail?: string; checks?: string }[];
+    steps?: { agent?: string; verdict?: string; at?: string }[];
   } | null;
 }
 

@@ -349,27 +349,49 @@ export function ScreenDrafts({
                           ))}
                         </div>
 
+                        {(draft.checks?.length ?? 0) > 0 && (
+                          <details className="text-xs text-muted-foreground">
+                            <summary className="cursor-pointer list-none">
+                              <span className={draft.checks!.every((c) => c.ok) ? "text-emerald-300" : "text-amber-300"}>
+                                {draft.checks!.every((c) => c.ok) ? "✓" : "!"}
+                              </span>{" "}
+                              {draft.checks!.filter((c) => c.ok).length}/{draft.checks!.length} checks pass
+                            </summary>
+                            <div className="mt-1.5 grid grid-cols-1 gap-x-6 gap-y-0.5 sm:grid-cols-2">
+                              {draft.checks!.map((c) => (
+                                <div key={c.name} className={c.ok ? "" : "text-amber-200"} title={c.detail ?? undefined}>
+                                  {c.ok ? "✓" : "✗"} {c.name}
+                                </div>
+                              ))}
+                            </div>
+                          </details>
+                        )}
+
                         {/* Band review strip (only when the API returns draft.review) */}
                         {steps.length > 0 && (
                           <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
                             <span>Reviewed in Band:</span>
                             {steps.map((st, i) => {
-                              const label = st.agent ?? st.name ?? st.role ?? `step ${i + 1}`;
-                              const done = /done|ok|pass|approved|complete/i.test(st.status ?? "");
+                              const label = st.agent ?? `step ${i + 1}`;
+                              const extra = label === "Reviewer" && st.verdict ? ` ${st.verdict}` : "";
                               return (
                                 <React.Fragment key={`${label}-${i}`}>
                                   {i > 0 && <span>→</span>}
-                                  <span className={done ? "text-foreground" : ""}>
-                                    {done && <span className="mr-0.5 text-emerald-300">✓</span>}
+                                  <span className="text-foreground" title={st.verdict}>
+                                    <span className="mr-0.5 text-emerald-300">✓</span>
                                     {label}
-                                    {st.checks ? ` ${st.checks}` : ""}
+                                    {extra}
                                   </span>
                                 </React.Fragment>
                               );
                             })}
                             <span>→</span>
                             <span className="text-amber-200">
-                              {draft.status === "approved" ? "approved by Jakob" : "awaiting Jakob"}
+                              {draft.status === "approved"
+                                ? "approved by Jakob"
+                                : review?.status === "in_review" && steps.length < 4
+                                  ? "reviewing…"
+                                  : "awaiting Jakob"}
                             </span>
                             {review?.room_url && (
                               <a
