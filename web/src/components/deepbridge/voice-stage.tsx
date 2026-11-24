@@ -6,18 +6,29 @@ import { motion, useReducedMotion } from "motion/react";
 import * as React from "react";
 import { API_BASE } from "@/lib/api";
 import { orbBus } from "@/lib/orb-bus";
+import { useGraphStream } from "@/lib/useGraphStream";
 import { ParticleOrb } from "./particle-orb";
+import { VoiceGraph } from "./voice-graph";
 
 // HACK: public ElevenLabs agent "DeepBridge Interviewer (HOPO demo)" in Mark's workspace (no auth, agent id only).
 const AGENT_ID = process.env.NEXT_PUBLIC_ELEVENLABS_AGENT_ID || "agent_4301m87wdsfcf4z87ac1fkw8xne1";
 const SESSION_ID = "demo-hopo";
 
-/** Large orb floating in space with one Speak button: a real-voice interview (ElevenLabs Agents). */
+// The recorded demo-hopo build spans ~300 s; speed 4 plays it over the ~75 s stage interview, then the stream
+// keeps listening (live-tail) so nodes from her spoken answers (POST /interview/turn → /graph/sharpen) appear live.
+const GRAPH_SPEED = 4;
+
+/** Large orb floating in space with one Speak button (ElevenLabs Agents), and the knowledge graph building beside it. */
 export function VoiceStage() {
+  const [graphOn, setGraphOn] = React.useState(false);
+  const stream = useGraphStream(graphOn ? SESSION_ID : null, GRAPH_SPEED);
   return (
-    <ConversationProvider>
-      <VoiceStageInner />
-    </ConversationProvider>
+    <div className="grid grid-cols-1 items-center gap-8 xl:grid-cols-2">
+      <ConversationProvider>
+        <VoiceStageInner onStart={() => setGraphOn(true)} />
+      </ConversationProvider>
+      <VoiceGraph stream={stream} />
+    </div>
   );
 }
 
@@ -30,7 +41,7 @@ function postTurn(role: "founder" | "interviewer", text: string) {
   }).catch(() => undefined);
 }
 
-function VoiceStageInner() {
+function VoiceStageInner({ onStart }: { onStart: () => void }) {
   const reduced = useReducedMotion();
   const levelRef = React.useRef(0);
   const [lastLine, setLastLine] = React.useState<{ who: "You" | "Interviewer"; text: string } | null>(null);
@@ -83,6 +94,7 @@ function VoiceStageInner() {
       return;
     }
     conversation.startSession({ agentId: AGENT_ID, connectionType: "webrtc" });
+    onStart();
   };
 
   return (

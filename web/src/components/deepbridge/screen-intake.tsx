@@ -136,6 +136,7 @@ export function ScreenIntake({
   const [interviewErr, setInterviewErr] = React.useState<string | null>(null);
   const [listening, setListening] = React.useState(false);
   const [speaking, setSpeaking] = React.useState(false);
+  const [showDetails, setShowDetails] = React.useState(false);
   React.useEffect(() => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
     const warm = () => void window.speechSynthesis.getVoices();
@@ -370,11 +371,24 @@ export function ScreenIntake({
   const vp = interviewState?.value_proposition;
 
   return (
-    <div className="grid grid-cols-1 gap-6 xl:grid-cols-12">
-      {/* Real-voice interview: large orb floating in space + one Speak button (ElevenLabs Agents). */}
-      <div className="xl:col-span-12">
-        <VoiceStage />
+    <div className="space-y-6">
+      {/* Real-voice interview: large orb floating in space + Speak, with the knowledge graph building beside it. */}
+      <VoiceStage />
+
+      {/* Everything else stays out of sight until asked for. */}
+      <div className="flex justify-center">
+        <button
+          type="button"
+          onClick={() => setShowDetails((v) => !v)}
+          aria-expanded={showDetails}
+          className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground transition hover:text-foreground"
+        >
+          {showDetails ? "Hide details" : "Details · typed interview, papers, sources"}
+        </button>
       </div>
+
+      {showDetails && (
+    <div className="grid grid-cols-1 gap-6 xl:grid-cols-12">
 
       {/* LEFT: VOICE PAPER-GRILLING INTERVIEW + INTAKE (typed fallback) */}
       <div className="xl:col-span-5 space-y-5">
@@ -796,6 +810,8 @@ export function ScreenIntake({
           </Card>
         )}
       </div>
+    </div>
+      )}
     </div>
   );
 }
