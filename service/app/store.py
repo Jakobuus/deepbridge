@@ -49,7 +49,14 @@ class Store:
 
     def check_founder(self, founder_id=None):
         if founder_id is not None and founder_id != self.founder.id:
-            raise HTTPException(404, 'Founder not in cached demo')
+            # HACK: any founder with a cached OpenAlex dataset is demo-able (HOPO).
+            from .lanes.erick import pull
+            try:
+                cached = (pull.CACHE / pull.author_id(founder_id) / 'dataset.json').is_file()
+            except ValueError:
+                cached = False
+            if not cached:
+                raise HTTPException(404, 'Founder not in cached demo')
 
     def update_name_check(self, edge_id, decision):
         with self.lock:

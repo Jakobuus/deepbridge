@@ -40,7 +40,8 @@ async def meter_action(request: Request, _=Depends(check_founder)):
     elif request.url.path.startswith('/contacts/'):
         person_id = request.path_params.get('person_id')
         with store.lock:
-            store.get('people', person_id)
+            if contacts._cached(person_id) is None:
+                store.get('people', person_id)
         refresh = request.method == 'POST' and request.url.path.endswith('/refresh')
         if refresh or contacts._cached(person_id) is None:
             await asyncio.to_thread(gate, 'contacts:' + person_id)

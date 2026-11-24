@@ -36,9 +36,11 @@ def _cached(person_id):
 
 async def _contact(person_id, refresh=False):
     person = store.people.get(person_id)
-    if person is None:
-        raise HTTPException(404, 'unknown person')
     cached = _cached(person_id)
+    if person is None:
+        if cached is not None:  # HACK: HOPO contacts are only in the contact fixture, not the Lightmatter store
+            return cached
+        raise HTTPException(404, 'unknown person')
     if cached is not None and not refresh:
         return cached
     try:

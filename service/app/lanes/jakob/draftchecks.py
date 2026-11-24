@@ -93,6 +93,7 @@ EMOJI = re.compile(
 )
 WAY_OUT = re.compile(
     r"\b(?:no (?:pressure|worries|problem|obligation|need to (?:reply|respond|forward)|(?:is|would be) (?:completely |totally )?fine)"
+    r"|declin\w* is (?:completely |totally )?(?:fine|okay|ok)"
     r"|(?:fine|okay|ok|free) to (?:decline|pass|say no|skip)"
     r"|(?:fine|happy|okay) (?:for you )?to (?:hear|say) no"
     r"|(?:feel free to|you can) (?:say no|decline|pass|skip|ignore)"
@@ -250,7 +251,7 @@ def check_draft(draft: Draft, evidence: Iterable[Evidence], *, buyer_org: str | 
     full = f'{draft.subject}\n{body}'
     lower = _normalize(full)
     claims = URL.sub(' ', full)
-    known_numbers = set(_numbers(quotes))
+    known_numbers = set(_numbers(quotes + '\n' + '\n'.join(e.source_date or '' for e in sources)))  # HACK: source dates count as cited
     missing = list(dict.fromkeys(n for n in _numbers(claims) if n not in known_numbers))
     repeated = repeated_numbers(claims)
     invented = made_up_features(full, buyer_org, quotes)

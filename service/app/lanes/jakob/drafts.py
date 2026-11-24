@@ -106,7 +106,7 @@ def write_drafts(path: Path, edges: list[Edge], evidence: list[Evidence],
 
     def checked(items):
         drafts = _validate(items, path, allowed_ids, has_bridge)
-        return [CheckedDraft(**draft.model_dump(), checks=check_draft(
+        return [CheckedDraft(**draft.model_dump(exclude={'checks'}), checks=check_draft(
             draft, sources, buyer_org=buyer_name, bridge_work_urls=bridge_work_urls))
             for draft in drafts]
 
