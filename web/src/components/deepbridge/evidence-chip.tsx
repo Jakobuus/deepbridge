@@ -1,6 +1,8 @@
 "use client";
 
+import * as React from "react";
 import { ExternalLink, FileCheck2 } from "lucide-react";
+import { API_BASE } from "@/lib/api";
 import type { Evidence, Id } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +14,26 @@ interface EvidenceChipProps {
   className?: string;
 }
 
+// Evidence missing from the page's map (e.g. buyer signals: /buyers returns ids only) is fetched once from
+// GET /evidence/{id} and cached for the session, so the chip shows the paper/link title instead of the id slug.
+const evidenceCache = new Map<Id, Promise<Evidence | null>>();
+
+function fetchEvidence(id: Id): Promise<Evidence | null> {
+  let p = evidenceCache.get(id);
+  if (!p) {
+    p = fetch(`${API_BASE}/evidence/${encodeURIComponent(id)}`)
+      .then((r) => (r.ok ? (r.json() as Promise<Evidence>) : null))
+      .catch(() => null);
+    evidenceCache.set(id, p);
+  }
+  return p;
+}
+
+function shorten(text: string, max: number): string {
+  const t = text.replace(/\s+/g, " ").trim();
+  return t.length > max ? `${t.slice(0, max - 1).trimEnd()}…` : t;
+}
+
 export function EvidenceChip({
   evidenceId,
   evidenceMap,
@@ -19,13 +41,32 @@ export function EvidenceChip({
   compact = false,
   className,
 }: EvidenceChipProps) {
-  const ev = evidenceMap[evidenceId];
+  const mapped = evidenceMap[evidenceId];
+  const [fetched, setFetched] = React.useState<Evidence | null>(null);
+
+  React.useEffect(() => {
+    if (mapped) return;
+    let alive = true;
+    fetchEvidence(evidenceId).then((ev) => {
+      if (alive) setFetched(ev);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [evidenceId, mapped]);
+
+  const ev = mapped ?? fetched ?? undefined;
   const shortSlug = evidenceId.replace(/^evidence:/, "").slice(0, 18);
   const year = ev?.source_date ? ev.source_date.slice(0, 4) : null;
-  const kindTag = ev?.kind ? ev.kind.replace("_", " ").toUpperCase() : "PROOF";
+  // Paper/link title first (cleaner); the id slug shows only while loading or when the source has no quote.
+  // "field: https://…" quotes (API query evidence) read better as the source name than as a raw URL.
+  const fieldUrl = ev?.quote?.match(/^[a-z_ ]+:\s*https?:\/\/(?:api\.)?([^/\s]+)/i);
+  const sourceName = fieldUrl ? `${fieldUrl[1].replace(/\.(org|com|net)$/, "").replace(/^\w/, (c) => c.toUpperCase())} query` : null;
+  const title = sourceName ?? (ev?.quote ? shorten(ev.quote, compact ? 34 : 56) : shortSlug);
+  const label = year && !compact ? `${title} · ${year}` : title;
 
   return (
-    <span className={cn("inline-flex items-center gap-1", className)}>
+    <span className={cn("inline-flex max-w-full items-center gap-1", className)}>
       <button
         type="button"
         onClick={(e) => {
@@ -33,10 +74,10 @@ export function EvidenceChip({
           onInspect(evidenceId);
         }}
         title={ev ? `${ev.quote} (${ev.source_url})` : `Inspect ${evidenceId}`}
-        className="inline-flex items-center gap-1.5 rounded border border-sky-400/35 bg-sky-500/10 px-2 py-0.5 font-mono text-[11px] font-medium text-sky-200 transition hover:border-sky-300 hover:bg-sky-500/20"
+        className="inline-flex min-w-0 max-w-full items-center gap-1.5 rounded border border-sky-400/35 bg-sky-500/10 px-2 py-0.5 text-left text-[11px] font-medium text-sky-200 transition hover:border-sky-300 hover:bg-sky-500/20"
       >
-        <FileCheck2 className="size-3 text-sky-300" />
-        <span>{compact ? shortSlug : `${kindTag}${year ? ` · ${year}` : ""} · ${shortSlug}`}</span>
+        <FileCheck2 className="size-3 shrink-0 text-sky-300" />
+        <span className={cn("truncate", !ev?.quote && "font-mono")}>{label}</span>
       </button>
       {ev?.source_url && (
         <a
@@ -45,7 +86,7 @@ export function EvidenceChip({
           rel="noreferrer"
           onClick={(e) => e.stopPropagation()}
           title={`Open source: ${ev.source_url}`}
-          className="inline-flex items-center justify-center rounded border border-white/15 bg-white/5 p-1 text-muted-foreground transition hover:border-white/40 hover:text-foreground"
+          className="inline-flex shrink-0 items-center justify-center rounded border border-white/15 bg-white/5 p-1 text-muted-foreground transition hover:border-white/40 hover:text-foreground"
         >
           <ExternalLink className="size-2.5" />
         </a>
