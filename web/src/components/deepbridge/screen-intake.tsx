@@ -1,0 +1,675 @@
+"use client";
+
+import {
+  ArrowRight,
+  BookOpen,
+  CheckCircle2,
+  Cpu,
+  ExternalLink,
+  FlaskConical,
+  Mic,
+  MicOff,
+  RotateCcw,
+  Search,
+  Send,
+  Sparkles,
+  Volume2,
+  VolumeX,
+} from "lucide-react";
+import * as React from "react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { api, GOLDEN_FOUNDER_ID } from "@/lib/api";
+import type { Evidence, Founder, Icp, Id, IntakeForm, InterviewResponse } from "@/lib/types";
+import { EvidenceChip } from "./evidence-chip";
+
+interface ScreenIntakeProps {
+  founder: Founder | null;
+  icp: Icp | null;
+  evidenceMap: Record<Id, Evidence>;
+  loadingIntake: boolean;
+  intakeError: string | null;
+  onSubmitQuery: (query: string) => Promise<void>;
+  onSubmitForm: (form: IntakeForm) => Promise<void>;
+  onInspectEvidence: (evidenceId: Id) => void;
+  onEvidenceLoaded: (list: Evidence[]) => void;
+  onGoToBuyers: () => void;
+}
+
+interface SpeechRecognitionAlternativeLike {
+  transcript: string;
+}
+
+interface SpeechRecognitionResultLike {
+  0: SpeechRecognitionAlternativeLike;
+}
+
+interface SpeechRecognitionEventLike {
+  results: ArrayLike<SpeechRecognitionResultLike>;
+}
+
+interface SpeechRecognitionLike {
+  lang: string;
+  interimResults: boolean;
+  continuous: boolean;
+  onresult: ((event: SpeechRecognitionEventLike) => void) | null;
+  onerror: (() => void) | null;
+  onend: (() => void) | null;
+  start: () => void;
+  stop: () => void;
+}
+
+export function ScreenIntake({
+  founder,
+  icp,
+  evidenceMap,
+  loadingIntake,
+  intakeError,
+  onSubmitQuery,
+  onSubmitForm,
+  onInspectEvidence,
+  onEvidenceLoaded,
+  onGoToBuyers,
+}: ScreenIntakeProps) {
+  const [quickQuery, setQuickQuery] = React.useState("Nicholas C. Harris");
+  const [name, setName] = React.useState("Nicholas C. Harris");
+  const [expertise, setExpertise] = React.useState(
+    "Coherent nanophotonic circuits, silicon photonics, and optical interconnects for AI compute clusters",
+  );
+  const [paperLinksRaw, setPaperLinksRaw] = React.useState(
+    "https://doi.org/10.1038/nphoton.2017.93",
+  );
+  const [startupUrl, setStartupUrl] = React.useState("https://lightmatter.co");
+  const [customerPersona, setCustomerPersona] = React.useState(
+    "Hyperscale AI infrastructure, optical interconnect architecture, and silicon photonics R&D leads",
+  );
+  const [interviewTranscript, setInterviewTranscript] = React.useState("");
+
+  // Live Paper-Grilling Voice / Text Interview State (POST /interview)
+  const [interviewState, setInterviewState] = React.useState<InterviewResponse | null>(null);
+  const [interviewAnswer, setInterviewAnswer] = React.useState("");
+  const [interviewBusy, setInterviewBusy] = React.useState(false);
+  const [interviewErr, setInterviewErr] = React.useState<string | null>(null);
+  const [listening, setListening] = React.useState(false);
+  const [voiceReadback, setVoiceReadback] = React.useState(true);
+  const recognitionRef = React.useRef<SpeechRecognitionLike | null>(null);
+
+  const isGoldenReplay = founder?.id === GOLDEN_FOUNDER_ID;
+
+  const speakQuestion = React.useCallback(
+    (text: string | null | undefined) => {
+      if (!voiceReadback || !text || typeof window === "undefined" || !("speechSynthesis" in window)) {
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.rate = 1.06;
+      window.speechSynthesis.speak(utter);
+    },
+    [voiceReadback],
+  );
+
+  const startPaperInterview = async () => {
+    setInterviewBusy(true);
+    setInterviewErr(null);
+    try {
+      const links = paperLinksRaw
+        .split(/[\n,]+/)
+        .map((s) => s.trim())
+        .filter(Boolean);
+      const res = await api.interview({
+        paper_links: links,
+        founder_id: founder?.id ?? null,
+      });
+      setInterviewState(res);
+      if (res.paper_evidence?.length) {
+        onEvidenceLoaded(res.paper_evidence);
+      }
+      speakQuestion(res.question);
+    } catch (err) {
+      setInterviewErr(err instanceof Error ? err.message : "Failed to start interview");
+    } finally {
+      setInterviewBusy(false);
+    }
+  };
+
+  const sendInterviewTurn = async (e?: React.FormEvent) => {
+    e?.preventDefault();
+    if (!interviewState || !interviewAnswer.trim()) return;
+    setInterviewBusy(true);
+    setInterviewErr(null);
+    try {
+      const res = await api.interview({
+        session_id: interviewState.session_id,
+        answer: interviewAnswer.trim(),
+      });
+      setInterviewState(res);
+      setInterviewAnswer("");
+      if (res.paper_evidence?.length) {
+        onEvidenceLoaded(res.paper_evidence);
+      }
+      if (res.form.name) setName(res.form.name);
+      if (res.form.expertise) setExpertise(res.form.expertise);
+      if (res.form.customer_persona) setCustomerPersona(res.form.customer_persona);
+      if (res.form.startup_url) setStartupUrl(res.form.startup_url);
+      if (res.form.interview_transcript) setInterviewTranscript(res.form.interview_transcript);
+      if (res.question) speakQuestion(res.question);
+    } catch (err) {
+      setInterviewErr(err instanceof Error ? err.message : "Failed to send answer");
+    } finally {
+      setInterviewBusy(false);
+    }
+  };
+
+  const toggleMic = () => {
+    if (typeof window === "undefined") return;
+    if (listening && recognitionRef.current) {
+      recognitionRef.current.stop();
+      setListening(false);
+      return;
+    }
+    const w = window as unknown as {
+      SpeechRecognition?: new () => SpeechRecognitionLike;
+      webkitSpeechRecognition?: new () => SpeechRecognitionLike;
+    };
+    const Ctor = w.SpeechRecognition ?? w.webkitSpeechRecognition;
+    if (!Ctor) {
+      setInterviewErr("Speech recognition is not supported in this browser; type your answer below.");
+      return;
+    }
+    const rec = new Ctor();
+    rec.lang = "en-US";
+    rec.interimResults = true;
+    rec.continuous = false;
+    rec.onresult = (ev) => {
+      const chunks: string[] = [];
+      for (let i = 0; i < ev.results.length; i++) {
+        chunks.push(ev.results[i][0].transcript);
+      }
+      setInterviewAnswer(chunks.join(" "));
+    };
+    rec.onerror = () => setListening(false);
+    rec.onend = () => setListening(false);
+    recognitionRef.current = rec;
+    setListening(true);
+    rec.start();
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const links = paperLinksRaw
+      .split(/[\n,]+/)
+      .map((s) => s.trim())
+      .filter(Boolean);
+    await onSubmitForm({
+      name: name.trim(),
+      expertise: expertise.trim(),
+      paper_links: links,
+      startup_url: startupUrl.trim() || null,
+      customer_persona: customerPersona.trim(),
+      interview_transcript: interviewTranscript.trim() || null,
+    });
+  };
+
+  const handleQuickLookup = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!quickQuery.trim()) return;
+    await onSubmitQuery(quickQuery.trim());
+  };
+
+  const topBuyerRole = icp?.buyer_roles?.[0];
+  const topNeed = icp?.needs?.[0];
+  const vp = interviewState?.value_proposition;
+
+  return (
+    <div className="grid grid-cols-1 gap-6 xl:grid-cols-12">
+      {/* LEFT: VOICE PAPER-GRILLING INTERVIEW + INTAKE */}
+      <div className="xl:col-span-5 space-y-5">
+        {/* 1. LIVE PAPER-GRILLING VOICE INTERVIEW (POST /interview · Moss fastlane-1) */}
+        <Card flat border className="border-sky-400/45 bg-[#0f1117] py-5 gap-4">
+          <CardHeader className="px-5">
+            <div className="flex items-center justify-between gap-2">
+              <span className="font-mono text-[11px] uppercase tracking-widest text-sky-300">
+                Paper-Grounded Voice Grilling
+              </span>
+              <div className="flex items-center gap-1.5">
+                {interviewState && (
+                  <Badge flat className="border-emerald-400/40 bg-emerald-950/60 font-mono text-[10px] text-emerald-200">
+                    {interviewState.ms.toFixed(0)}ms · {interviewState.engine}
+                  </Badge>
+                )}
+                <button
+                  type="button"
+                  onClick={() => setVoiceReadback((v) => !v)}
+                  title="Toggle spoken interviewer voice"
+                  className="rounded border border-white/20 bg-[#151922] p-1 text-muted-foreground hover:text-foreground"
+                >
+                  {voiceReadback ? <Volume2 className="size-3.5 text-sky-300" /> : <VolumeX className="size-3.5" />}
+                </button>
+              </div>
+            </div>
+            <CardTitle className="text-lg">Live AI Value-Prop Interview</CardTitle>
+            <CardDescription className="text-xs">
+              Drop a paper DOI/link and let the interviewer drill down until your commercial buyer, measurable gain, and PO signer are sharp.
+            </CardDescription>
+          </CardHeader>
+
+          <CardContent className="px-5 space-y-3">
+            {!interviewState ? (
+              <Button
+                type="button"
+                variant="default"
+                flat
+                disabled={interviewBusy}
+                onClick={() => void startPaperInterview()}
+                className="w-full"
+              >
+                <Mic className="size-4" />
+                {interviewBusy ? "Reading Paper & Starting..." : "Start Live Paper Grilling"}
+              </Button>
+            ) : (
+              <div className="space-y-3">
+                {interviewState.question && !interviewState.done && (
+                  <div className="rounded border-2 border-sky-400/50 bg-[#0b2536] p-3.5 space-y-1.5">
+                    <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-wider text-sky-300">
+                      <span>Interviewer Question</span>
+                      <span>{listening ? "● LISTENING..." : "SPEAK OR TYPE"}</span>
+                    </div>
+                    <div className="text-sm font-bold leading-snug text-white">
+                      {interviewState.question}
+                    </div>
+                  </div>
+                )}
+
+                {!interviewState.done && (
+                  <form onSubmit={(e) => void sendInterviewTurn(e)} className="space-y-2">
+                    <Textarea
+                      value={interviewAnswer}
+                      onChange={(e) => setInterviewAnswer(e.target.value)}
+                      rows={2}
+                      placeholder="Speak with mic or type concrete buyer + metric answer..."
+                      className="font-mono text-xs"
+                    />
+                    <div className="flex items-center gap-2">
+                      <Button
+                        type="button"
+                        size="sm"
+                        flat
+                        onClick={toggleMic}
+                        className={`border font-mono text-xs ${
+                          listening
+                            ? "border-red-400 bg-red-950/60 text-red-100"
+                            : "border-white/25 bg-[#151922]"
+                        }`}
+                      >
+                        {listening ? <MicOff className="size-3.5" /> : <Mic className="size-3.5 text-sky-300" />}
+                        {listening ? "Stop Mic" : "Speak"}
+                      </Button>
+                      <Button
+                        type="submit"
+                        size="sm"
+                        variant="default"
+                        flat
+                        disabled={interviewBusy || !interviewAnswer.trim()}
+                        className="flex-1"
+                      >
+                        <Send className="size-3.5" />
+                        {interviewBusy ? "Analyzing..." : "Submit Turn"}
+                      </Button>
+                      <Button
+                        type="button"
+                        size="sm"
+                        flat
+                        onClick={() => void startPaperInterview()}
+                        className="border border-white/20 font-mono text-xs"
+                      >
+                        Reset
+                      </Button>
+                    </div>
+                  </form>
+                )}
+
+                {vp && (
+                  <div className="rounded border-2 border-emerald-400/50 bg-[#07291e] p-3.5 space-y-2">
+                    <div className="font-mono text-[10px] font-bold uppercase tracking-wider text-emerald-300">
+                      Synthesized Value Proposition (Grounded in Paper + Answers)
+                    </div>
+                    <div className="text-xs font-bold text-white">{vp.one_liner}</div>
+                    <div className="font-mono text-[11px] text-emerald-100/90">
+                      <strong>Buyer:</strong> {vp.for_whom} · <strong>Pain:</strong> {vp.pain}
+                    </div>
+                    <Button
+                      type="button"
+                      size="sm"
+                      variant="default"
+                      flat
+                      onClick={() =>
+                        void onSubmitForm({
+                          name: name.trim(),
+                          expertise: expertise.trim(),
+                          paper_links: paperLinksRaw
+                            .split(/[\n,]+/)
+                            .map((s) => s.trim())
+                            .filter(Boolean),
+                          startup_url: startupUrl.trim() || null,
+                          customer_persona: customerPersona.trim(),
+                          interview_transcript: interviewTranscript.trim() || null,
+                        })
+                      }
+                      className="w-full"
+                    >
+                      Use This Value Prop → Run Intake
+                    </Button>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {interviewErr && (
+              <div className="rounded border border-red-500/50 bg-[#2d0a0e] p-2 font-mono text-[11px] text-red-200">
+                {interviewErr}
+              </div>
+            )}
+          </CardContent>
+        </Card>
+
+        {/* 2. QUICK OPENALEX AUTHOR / DOI LOOKUP */}
+        <Card flat border className="border-white/20 bg-[#0f1117] py-5 gap-4">
+          <CardHeader className="px-5">
+            <div className="flex items-center justify-between gap-2">
+              <span className="font-mono text-[11px] uppercase tracking-widest text-sky-300">
+                Quick Research Lookup
+              </span>
+              <Badge flat className="font-mono text-[10px] border-white/20">
+                POST /intake
+              </Badge>
+            </div>
+            <CardTitle className="text-lg">Try Any Deep-Tech Founder or DOI</CardTitle>
+          </CardHeader>
+          <CardContent className="px-5 space-y-3">
+            <form onSubmit={handleQuickLookup} className="flex gap-2">
+              <Input
+                value={quickQuery}
+                onChange={(e) => setQuickQuery(e.target.value)}
+                placeholder="e.g. Nicholas C. Harris, Dirk Englund, 10.1038/nphoton.2017.93"
+                className="font-mono text-xs"
+              />
+              <Button type="submit" variant="default" flat disabled={loadingIntake}>
+                <Search className="size-3.5" />
+                {loadingIntake ? "Resolving..." : "Resolve"}
+              </Button>
+            </form>
+
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="font-mono text-[10px] uppercase text-muted-foreground">Presets:</span>
+              <button
+                type="button"
+                onClick={() => {
+                  setQuickQuery("Nicholas C. Harris");
+                  void onSubmitQuery("Nicholas C. Harris");
+                }}
+                className="rounded border border-emerald-400/45 bg-[#07291e] px-2 py-0.5 font-mono text-[11px] text-emerald-200"
+              >
+                ★ Nicholas C. Harris (Lightmatter)
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setQuickQuery("10.1038/nphoton.2017.93");
+                  void onSubmitQuery("10.1038/nphoton.2017.93");
+                }}
+                className="rounded border border-white/20 bg-[#151922] px-2 py-0.5 font-mono text-[11px] text-muted-foreground hover:text-foreground"
+              >
+                DOI: 10.1038/nphoton.2017.93
+              </button>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* 3. FULL FOUNDER SIGN-UP FORM */}
+        <Card flat border className="border-white/20 bg-[#0f1117] py-5 gap-4">
+          <CardHeader className="px-5">
+            <div className="flex items-center justify-between">
+              <span className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+                Structured Founder Sign-Up
+              </span>
+              {!isGoldenReplay && founder && (
+                <Button
+                  size="xs"
+                  flat
+                  onClick={() => void onSubmitQuery("Nicholas C. Harris")}
+                  className="border border-amber-400/45 bg-[#2b1d05] font-mono text-[10px] text-amber-100"
+                >
+                  <RotateCcw className="size-3" />
+                  Restore Lightmatter Replay
+                </Button>
+              )}
+            </div>
+            <CardTitle className="text-lg">Founder & Lab-to-Market Form</CardTitle>
+          </CardHeader>
+          <CardContent className="px-5">
+            <form onSubmit={handleFormSubmit} className="space-y-3">
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div className="space-y-1">
+                  <label className="font-mono text-[11px] uppercase text-muted-foreground">
+                    Founder Name
+                  </label>
+                  <Input value={name} onChange={(e) => setName(e.target.value)} required className="text-xs" />
+                </div>
+                <div className="space-y-1">
+                  <label className="font-mono text-[11px] uppercase text-muted-foreground">
+                    Startup URL
+                  </label>
+                  <Input
+                    value={startupUrl}
+                    onChange={(e) => setStartupUrl(e.target.value)}
+                    placeholder="https://..."
+                    className="font-mono text-xs"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-1">
+                <label className="font-mono text-[11px] uppercase text-muted-foreground">
+                  Technical Expertise & Breakthrough
+                </label>
+                <Input value={expertise} onChange={(e) => setExpertise(e.target.value)} required className="text-xs" />
+              </div>
+
+              <div className="space-y-1">
+                <label className="font-mono text-[11px] uppercase text-muted-foreground">
+                  Anchor Paper DOIs / OpenAlex Links
+                </label>
+                <Input value={paperLinksRaw} onChange={(e) => setPaperLinksRaw(e.target.value)} className="font-mono text-xs" />
+              </div>
+
+              <div className="space-y-1">
+                <label className="font-mono text-[11px] uppercase text-muted-foreground">
+                  Customer Persona Hypothesis
+                </label>
+                <Textarea value={customerPersona} onChange={(e) => setCustomerPersona(e.target.value)} rows={2} className="text-xs" />
+              </div>
+
+              {intakeError && (
+                <div className="rounded border border-red-500/50 bg-[#2d0a0e] p-2.5 font-mono text-xs text-red-200">
+                  {intakeError}
+                </div>
+              )}
+
+              <Button type="submit" flat className="w-full border border-white/25" disabled={loadingIntake}>
+                <FlaskConical className="size-4" />
+                {loadingIntake ? "Synthesizing Founder Graph..." : "Run Founder Intake"}
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* RIGHT: RESOLVED FOUNDER PROFILE + STORY TRANSLATION */}
+      <div className="xl:col-span-7 space-y-5">
+        {founder ? (
+          <>
+            <Card flat border className="border-white/25 bg-[#0f1117] py-5 gap-4">
+              <CardHeader className="px-6">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <Badge
+                      flat
+                      className={
+                        isGoldenReplay
+                          ? "border-emerald-400/50 bg-[#07291e] text-emerald-200 font-mono text-[10px]"
+                          : "border-sky-400/50 bg-[#0b2536] text-sky-200 font-mono text-[10px]"
+                      }
+                    >
+                      {isGoldenReplay ? "CACHED RESEARCH REPLAY" : "LIVE OPENALEX INTAKE"}
+                    </Badge>
+                    <span className="font-mono text-xs text-muted-foreground">{founder.id}</span>
+                  </div>
+                  {founder.openalex_id && (
+                    <a
+                      href={founder.openalex_id}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 rounded border border-white/20 bg-[#151922] px-2.5 py-1 font-mono text-xs hover:border-white/45"
+                    >
+                      OpenAlex Profile <ExternalLink className="size-3" />
+                    </a>
+                  )}
+                </div>
+
+                <div className="pt-1">
+                  <CardTitle className="text-2xl font-bold tracking-tight">
+                    {founder.name}{" "}
+                    <span className="font-normal text-muted-foreground">· {founder.company}</span>
+                  </CardTitle>
+                  <CardDescription className="mt-1.5 text-sm leading-relaxed text-foreground/90">
+                    {founder.summary}
+                  </CardDescription>
+                </div>
+              </CardHeader>
+
+              <CardContent className="px-6 space-y-4">
+                <div className="space-y-1.5">
+                  <div className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+                    Indexed Research Domains ({founder.topics.length})
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {founder.topics.map((topic) => (
+                      <Badge
+                        key={topic}
+                        flat
+                        className="border-white/20 bg-[#151922] px-3 py-1 font-mono text-xs text-foreground"
+                      >
+                        <Cpu className="mr-1 size-3 text-sky-300" />
+                        {topic}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-1.5">
+                  <div className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+                    Verified Anchor Evidence ({founder.evidence_ids.length})
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {founder.evidence_ids.map((eid) => (
+                      <EvidenceChip
+                        key={eid}
+                        evidenceId={eid}
+                        evidenceMap={evidenceMap}
+                        onInspect={onInspectEvidence}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* STORY TRANSLATION / VALUE MAP PREVIEW */}
+            <Card flat border className="border-sky-400/40 bg-[#0f1117] py-5 gap-4">
+              <CardHeader className="px-6">
+                <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-sky-300">
+                  <Sparkles className="size-3.5" />
+                  <span>Value Map Core · Feature → Benefit → Commercial Problem</span>
+                </div>
+                <CardTitle className="text-lg">
+                  From Academic Publication Language → Commercial Buyer Urgency
+                </CardTitle>
+                <CardDescription className="text-xs">
+                  Technical founders write in circuit physics; enterprise buyers sign POs for cluster throughput, power head-room, and roadmap velocity.
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="px-6 space-y-4">
+                <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+                  <div className="rounded border border-white/20 bg-[#151922] p-4 space-y-2">
+                    <div className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wider text-amber-300">
+                      <BookOpen className="size-3.5" />
+                      <span>Paper Primitive (Lab Frame)</span>
+                    </div>
+                    <p className="text-xs leading-relaxed text-foreground/90">
+                      Co-authored research in{" "}
+                      <span className="font-semibold text-white">
+                        {founder.topics.join(" & ") || "deep-tech systems"}
+                      </span>{" "}
+                      — programmable Mach-Zehnder interferometer meshes and coherent nanophotonic circuits demonstrated at MIT.
+                    </p>
+                  </div>
+
+                  <div className="rounded border border-emerald-400/45 bg-[#07291e] p-4 space-y-2">
+                    <div className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wider text-emerald-300">
+                      <CheckCircle2 className="size-3.5" />
+                      <span>Buyer Value Map (Commercial Frame)</span>
+                    </div>
+                    <p className="text-xs leading-relaxed text-foreground/95">
+                      {vp ? (
+                        vp.one_liner
+                      ) : topBuyerRole ? (
+                        <>
+                          <span className="font-semibold text-emerald-200">{topBuyerRole.title}:</span>{" "}
+                          {topBuyerRole.why}
+                        </>
+                      ) : (
+                        "Eliminate electrical interconnect bottlenecks between AI accelerators using silicon-photonic optical links."
+                      )}
+                    </p>
+                    {topNeed && (
+                      <div className="pt-1 flex flex-wrap gap-1.5">
+                        {topNeed.evidence_ids.slice(0, 2).map((eid) => (
+                          <EvidenceChip
+                            key={eid}
+                            evidenceId={eid}
+                            evidenceMap={evidenceMap}
+                            onInspect={onInspectEvidence}
+                            compact
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/15 pt-4">
+                  <div className="font-mono text-xs text-muted-foreground">
+                    Next: Inspect buyer categories, 90-day signals, and layered warm paths.
+                  </div>
+                  <Button variant="default" flat onClick={onGoToBuyers}>
+                    <span>02 · Find Buyers & Why-Now Signals</span>
+                    <ArrowRight className="size-4" />
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </>
+        ) : (
+          <Card flat border className="border-white/20 bg-[#0f1117] p-8 text-center font-mono text-xs text-muted-foreground">
+            Loading founder research profile...
+          </Card>
+        )}
+      </div>
+    </div>
+  );
+}
