@@ -5,7 +5,9 @@
     "problem_set": [
       "Treating internalized plutonium, uranium and other actinides after a radiological or nuclear incident",
       "Current therapies for radionuclide contamination are limited",
-      "Oral options for emergency medical use"
+      "Oral options for emergency medical use",
+      "DTPA is approved for intravenous use only (nebulised: adults only)",
+      "Stockpiling countermeasures for radiological and nuclear threats"
     ],
     "value_prop": "The founder's papers report that 3,4,3-LI(1,2-HOPO) showed much higher actinide-removal efficacy than DTPA in preclinical work and was well tolerated orally in rats.",
     "colour": "--cat-1",
@@ -26,7 +28,9 @@
       "value:hopo-rad-p-harm",
       "value:hopo-rad-p-dtpa",
       "value:hopo-rad-p-lung",
-      "value:hopo-rad-p-u"
+      "value:hopo-rad-p-u",
+      "value:hopo-rad-p-iv",
+      "value:hopo-rad-p-sns"
     ],
     "evidence_ids": [
       "evidence:buyers:10a2745524d98da3569f",
@@ -51,7 +55,11 @@
       "evidence:buyers:cedb67e41bf018be1006",
       "evidence:buyers:f66461f7088eb47a7b48",
       "evidence:buyers:355bad917e84cf0f72d9",
-      "evidence:buyers:53715da0309a65d233f3"
+      "evidence:buyers:53715da0309a65d233f3",
+      "evidence:value-map:remm-iv",
+      "evidence:value-map:aspr-sns",
+      "evidence:value-map:radiolysis",
+      "evidence:value-map:metab"
     ]
   },
   {
@@ -145,7 +153,9 @@
     "name": "Lead & heavy-metal poisoning (public health)",
     "problem_set": [
       "Removal of toxic heavy metals such as lead and cadmium",
-      "Oral chelation options for metal exposure"
+      "Oral chelation options for metal exposure",
+      "Childhood lead exposure: no safe blood lead level in children (CDC)",
+      "What a children's chelation study must show, given succimer is already oral"
     ],
     "value_prop": "A published study reports Pb, Cd and Sn complexation by 3,4,3-LI(1,2-HOPO). Listed hospitals, agencies and poison centres are linked to OpenAlex works on lead-poisoning chelation (succimer/DMSA, EDTA); the link is a research signal, not a purchase intent.",
     "colour": "--cat-4",
@@ -162,7 +172,12 @@
       "org:openalex:I4210106432"
     ],
     "problem_node_ids": [
-      "value:hopo-lead-p-pb"
+      "value:hopo-lead-p-pb",
+      "value:hopo-lead-p-cdc",
+      "value:hopo-lead-p-blrv",
+      "value:hopo-lead-p-tlc",
+      "value:hopo-lead-p-env",
+      "value:hopo-lead-p-need"
     ],
     "evidence_ids": [
       "evidence:buyers:cd6584c431e5f63bbdfa",
@@ -175,7 +190,12 @@
       "evidence:buyers:1499e2e854e32c98a617",
       "evidence:buyers:016635964b94ea12a644",
       "evidence:buyers:71bdfa8e89f9d51da6b2",
-      "evidence:buyers:58be9a6233d8b0c702c1"
+      "evidence:buyers:58be9a6233d8b0c702c1",
+      "evidence:value-map:cdc-nosafe",
+      "evidence:value-map:cdc-delay",
+      "evidence:value-map:tlc-nocog",
+      "evidence:value-map:tlc-env",
+      "evidence:value-map:pb-topical"
     ]
   }
 ]

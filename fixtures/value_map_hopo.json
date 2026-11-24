@@ -508,6 +508,139 @@
         "evidence:value-map:hopo-pb",
         "evidence:value-map:hopo-taylor-oral"
       ]
+    },
+    {
+      "id": "value:hopo-lead-p-cdc",
+      "kind": "problem",
+      "text": "Children (context, CDC): no safe blood lead level in children has been identified; even low levels are linked to developmental delays and learning difficulty",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:cdc-nosafe",
+        "evidence:value-map:cdc-delay"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-p-blrv",
+      "kind": "problem",
+      "text": "Paediatric screening (context, CDC): children are flagged against a blood lead reference value of 3.5 µg/dL",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:cdc-blrv",
+        "evidence:value-map:cdc-nosafe"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-p-tlc",
+      "kind": "problem",
+      "text": "Paediatric toxicologists (context, TLC trial): oral succimer lowered blood lead but did not improve cognition or behaviour in children below 45 µg/dL",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:tlc-nocog",
+        "evidence:value-map:tlc-oral"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-p-env",
+      "kind": "problem",
+      "text": "Lead programmes (context, TLC follow-up): preventing exposure comes first; any new chelator must show what succimer did not",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:tlc-env",
+        "evidence:value-map:tlc-nocog"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-p-need",
+      "kind": "problem",
+      "text": "Need: an oral, child-friendly chelation option with a clear study endpoint; succimer is already oral, so the open question is what a children's study must show",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:tlc-oral",
+        "evidence:value-map:tlc-nocog",
+        "evidence:value-map:cdc-nosafe"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-f-pb",
+      "kind": "feature",
+      "text": "Pb and Cd complexation by 3,4,3-LI(1,2-HOPO), characterised in a 2018 study (binding chemistry only, no efficacy data in people)",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb",
+        "evidence:value-map:pb-topical"
+      ]
+    },
+    {
+      "id": "value:hopo-lead-v-study",
+      "kind": "value",
+      "text": "Paediatric environmental-health units could tell HOPO what a children's lead study would have to show before any clinical claim",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:tlc-nocog",
+        "evidence:value-map:tlc-env",
+        "evidence:value-map:hopo-pb"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-p-iv",
+      "kind": "problem",
+      "text": "Emergency medicine (context, HHS REMM): DTPA is FDA-approved for intravenous treatment of Am, Cm and Pu contamination only; nebulised use is adults-only",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:remm-iv",
+        "evidence:value-map:remm-neb"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-p-sns",
+      "kind": "problem",
+      "text": "Stockpile planners (context, ASPR): the Strategic National Stockpile is \"a critical part of the federal medical response infrastructure\", including for radiological and nuclear threats",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:aspr-sns",
+        "evidence:value-map:hopo-bomb"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-f-window",
+      "kind": "feature",
+      "text": "Decorporation activity window: plutonium removal studied from early prophylaxis to delayed treatment",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-window",
+        "evidence:value-map:hopo-taylor-more"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-f-cmc",
+      "kind": "feature",
+      "text": "Drug-substance work: in vitro metabolism and stability, impurity identification and an HPLC method for 3,4,3-LI(1,2-HOPO)",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:metab",
+        "evidence:value-map:impur",
+        "evidence:value-map:hopo-hplc"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-f-radio",
+      "kind": "feature",
+      "text": "Radiation robustness: the ligand and its complexes were tested under radiolysis, relevant to use in radiation environments",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:radiolysis"
+      ]
+    },
+    {
+      "id": "value:hopo-rad-v-sns",
+      "kind": "value",
+      "text": "ASPR/BARDA and the SNS could weigh an oral decorporation candidate next to IV-only DTPA for mass-casualty plans",
+      "source": "inferred",
+      "evidence_ids": [
+        "evidence:value-map:aspr-sns",
+        "evidence:value-map:remm-iv",
+        "evidence:value-map:hopo-taylor-oral"
+      ]
     }
   ],
   "edges": [
@@ -1263,6 +1396,194 @@
       "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-56",
+      "from": "value:hopo-lead-f-pb",
+      "to": "value:hopo-lead-b-pb",
+      "type": "ENABLES",
+      "date": "2018-01-01",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb",
+        "evidence:value-map:pb-topical"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-57",
+      "from": "value:hopo-c-oral",
+      "to": "value:hopo-lead-v-study",
+      "type": "ENABLES",
+      "date": "2008-10-08",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-oral"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-58",
+      "from": "value:hopo-lead-f-pb",
+      "to": "value:hopo-lead-v-study",
+      "type": "ENABLES",
+      "date": "2018-01-01",
+      "evidence_ids": [
+        "evidence:value-map:hopo-pb"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-59",
+      "from": "value:hopo-lead-v-study",
+      "to": "value:hopo-lead-p-need",
+      "type": "SOLVES",
+      "date": "2001-05-10",
+      "evidence_ids": [
+        "evidence:value-map:tlc-nocog"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-60",
+      "from": "value:hopo-lead-v-study",
+      "to": "value:hopo-lead-p-tlc",
+      "type": "SOLVES",
+      "date": "2001-05-10",
+      "evidence_ids": [
+        "evidence:value-map:tlc-nocog"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-61",
+      "from": "value:hopo-lead-v-pb",
+      "to": "value:hopo-lead-p-cdc",
+      "type": "SOLVES",
+      "date": "2018-01-01",
+      "evidence_ids": [
+        "evidence:value-map:cdc-nosafe",
+        "evidence:value-map:hopo-pb"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-62",
+      "from": "value:hopo-lead-v-pb",
+      "to": "value:hopo-lead-p-blrv",
+      "type": "SOLVES",
+      "date": "2018-01-01",
+      "evidence_ids": [
+        "evidence:value-map:cdc-blrv"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-63",
+      "from": "value:hopo-lead-v-study",
+      "to": "value:hopo-lead-p-env",
+      "type": "SOLVES",
+      "date": "2004-07-01",
+      "evidence_ids": [
+        "evidence:value-map:tlc-env"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-64",
+      "from": "value:hopo-rad-f-window",
+      "to": "value:hopo-rad-b-reg",
+      "type": "ENABLES",
+      "date": "2016-04-01",
+      "evidence_ids": [
+        "evidence:value-map:hopo-window"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-65",
+      "from": "value:hopo-rad-f-cmc",
+      "to": "value:hopo-rad-b-reg",
+      "type": "ENABLES",
+      "date": "2015-02-27",
+      "evidence_ids": [
+        "evidence:value-map:metab",
+        "evidence:value-map:impur"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-66",
+      "from": "value:hopo-rad-f-radio",
+      "to": "value:hopo-rad-b-reg",
+      "type": "ENABLES",
+      "date": "2023-04-21",
+      "evidence_ids": [
+        "evidence:value-map:radiolysis"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-67",
+      "from": "value:hopo-rad-b-oral",
+      "to": "value:hopo-rad-v-sns",
+      "type": "DELIVERS",
+      "date": "2008-10-08",
+      "evidence_ids": [
+        "evidence:value-map:hopo-taylor-oral",
+        "evidence:value-map:remm-iv"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Delivers"
+    },
+    {
+      "id": "edge:value-map:hopo-68",
+      "from": "value:hopo-rad-v-sns",
+      "to": "value:hopo-rad-p-iv",
+      "type": "SOLVES",
+      "date": "2008-10-08",
+      "evidence_ids": [
+        "evidence:value-map:remm-iv",
+        "evidence:value-map:hopo-taylor-dtpa"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
+    },
+    {
+      "id": "edge:value-map:hopo-69",
+      "from": "value:hopo-rad-v-sns",
+      "to": "value:hopo-rad-p-sns",
+      "type": "SOLVES",
+      "date": "2010-08-11",
+      "evidence_ids": [
+        "evidence:value-map:aspr-sns",
+        "evidence:value-map:hopo-bomb"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Addresses"
     }
   ],
   "evidence": [
@@ -1728,6 +2049,110 @@
       "quote": "Characterization, HPLC method development and impurity identification for 3,4,3-LI(1,2-HOPO), a potent actinide chelator for radionuclide decorporation",
       "source_date": "2014-10-22",
       "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:cdc-nosafe",
+      "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+      "quote": "No safe blood lead level (BLL) in children has been identified.",
+      "source_date": null,
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:value-map:cdc-delay",
+      "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+      "quote": "Even low levels of lead in blood are associated with developmental delays, difficulty learning, and behavioral issues.",
+      "source_date": null,
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:value-map:cdc-blrv",
+      "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+      "quote": "CDC uses a blood lead reference value (BLRV) of 3.5 micrograms per deciliter (µg/dL).",
+      "source_date": null,
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:value-map:tlc-oral",
+      "source_url": "https://openalex.org/W1991849756",
+      "quote": "a randomized, placebo-controlled, double-blind trial of up to three 26-day courses of treatment with succimer, a lead chelator that is administered orally",
+      "source_date": "2001-05-10",
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:tlc-nocog",
+      "source_url": "https://openalex.org/W1991849756",
+      "quote": "Treatment with succimer lowered blood lead levels but did not improve scores on tests of cognition, behavior, or neuropsychological function in children with blood lead levels below 45 microg per deciliter.",
+      "source_date": "2001-05-10",
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:tlc-env",
+      "source_url": "https://openalex.org/W2121920115",
+      "quote": "These results emphasize the importance of taking environmental measures to prevent exposure to lead.",
+      "source_date": "2004-07-01",
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:pb-topical",
+      "source_url": "https://openalex.org/W2785617025",
+      "quote": "The toxicity of heavy metals such as lead (Pb), cadmium (Cd) and tin (Sn) has long been known but accidental exposures of large populations to these elements remain unfortunately a topical issue.",
+      "source_date": "2018-01-01",
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:remm-iv",
+      "source_url": "https://remm.hhs.gov/int_contamination.htm",
+      "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+      "source_date": null,
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:value-map:remm-neb",
+      "source_url": "https://remm.hhs.gov/int_contamination.htm",
+      "quote": "DTPA is FDA-approved for nebulized inhalation in adults only, and if the only route of contamination is through inhalation",
+      "source_date": null,
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:value-map:aspr-sns",
+      "source_url": "https://www.aspr.gov/SNS/Pages/default.aspx",
+      "quote": "a critical part of the federal medical response infrastructure",
+      "source_date": null,
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "web"
+    },
+    {
+      "id": "evidence:value-map:metab",
+      "source_url": "https://openalex.org/W1986786784",
+      "quote": "In Vitro Metabolism and Stability of the Actinide Chelating Agent 3,4,3-LI(1,2-HOPO)",
+      "source_date": "2015-02-27",
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:radiolysis",
+      "source_url": "https://openalex.org/W4366605921",
+      "quote": "3,4,3-LI(1,2-HOPO) (abbreviated as HOPO) has been identified as a promising candidate for both chelation and f -element separation technologies, two applications that require optimal performance in radiation environments",
+      "source_date": "2023-04-21",
+      "observed_at": "2026-11-24T22:20:00+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:impur",
+      "source_url": "https://openalex.org/W2079789697",
+      "quote": "Identification of process related trace level impurities in the actinide decorporation agent 3,4,3-LI(1,2-HOPO)",
+      "source_date": "2014-08-12",
+      "observed_at": "2026-11-24T22:20:00+00:00",
       "kind": "paper"
     }
   ]
