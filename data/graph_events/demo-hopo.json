@@ -1,0 +1,2654 @@
+[
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading Berkeley Lab papers (Abergel group)…",
+  "seq": 1,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:07.670649+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading paper: BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE",
+  "seq": 2,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:10.500838+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading paper: Alternative Chelator for 89Zr Radiopharmaceuticals: Radiolabeling and Evaluation of 3,4,3-(LI-1,2-HOPO)",
+  "seq": 3,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:13.331026+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading paper: Evaluating the potential of chelation therapy to prevent and treat gadolinium deposition from MRI contrast age",
+  "seq": 4,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:16.161215+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading paper: Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI",
+  "seq": 5,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:18.991404+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading website: Removing heavy metals, promoting human health | HOPO Therapeutics",
+  "seq": 6,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:21.821592+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading notes: Founder notes",
+  "seq": 7,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:24.651781+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "person:openalex:A5043992375",
+   "name": "Rebecca J. Abergel",
+   "openalex_id": "https://openalex.org/A5043992375",
+   "orcid": "https://orcid.org/0000-0002-3906-8761",
+   "org_id": "org:openalex:I148283060",
+   "affiliation_asof": "2026-11-20",
+   "role": null,
+   "is_bridge_candidate": false,
+   "alignment": null
+  },
+  "seq": 8,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:27.481970+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-f-decorp",
+   "kind": "feature",
+   "text": "3,4,3-LI(1,2-HOPO): an orally active actinide decorporation agent (plutonium, uranium, americium, neptunium), preclinical, well tolerated in rats at high oral doses",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-dtpa",
+    "evidence:value-map:hopo-oral"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-dtpa",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "Both ligands show much higher actinide-removal efficacy than the currently approved agent, diethylenetriaminepentaacetic acid (DTPA), with different selectivity for the tested isotopes of plutonium, americium, uranium and neptunium",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-oral",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "both ligands were well tolerated in rats when orally administered daily at high doses",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 9,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:30.312158+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Feature: 3,4,3-LI(1,2-HOPO): an orally active actinide decorporation agent (plutonium, uranium, americium, neptunium), ",
+  "seq": 10,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:33.142347+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-f-affinity",
+   "kind": "feature",
+   "text": "High affinity for hard metal ions (lanthanides, actinides, and the toxic heavy metals Pb and Cd) from one octadentate hydroxypyridonate ligand",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-unrivaled",
+    "evidence:value-map:hopo-ln",
+    "evidence:value-map:hopo-pb"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-unrivaled",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "siderophore-inspired multidentate hydroxypyridonate ligands have been designed and are unrivaled in terms of actinide-affinity, selectivity, and efficiency",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-ln",
+    "source_url": "https://openalex.org/W2076534859",
+    "quote": "The remarkably high affinity of 3,4,3-LI(1,2-HOPO) for lanthanide metal ions and the resulting high complex stabilities",
+    "source_date": "2011-09-07",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-pb",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 11,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:35.972536+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Feature: High affinity for hard metal ions (lanthanides, actinides, and the toxic heavy metals Pb and Cd) from one octa",
+  "seq": 12,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:38.802724+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-f-zr",
+   "kind": "feature",
+   "text": "89Zr PET chelation: Zr-HOPO complex matched or surpassed the stability of the current DFO chelator and cleared rapidly in healthy mice",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-zr",
+    "evidence:value-map:hopo-zrclear"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-zr",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "The stability of (89)Zr-HOPO matched or surpassed that of (89)Zr-DFO in every experiment",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-zrclear",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "In healthy mice, (89)Zr-HOPO cleared the body rapidly with no signs of demetalation",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 13,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:41.632913+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Feature: 89Zr PET chelation: Zr-HOPO complex matched or surpassed the stability of the current DFO chelator and cleared",
+  "seq": 14,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:44.463102+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-f-gd",
+   "kind": "feature",
+   "text": "Gadolinium removal: more effective than DTPA at chelating and removing gadolinium from the body in a preclinical study",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-gd"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-gd",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 15,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:47.293291+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Feature: Gadolinium removal: more effective than DTPA at chelating and removing gadolinium from the body in a preclinic",
+  "seq": 16,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:50.123479+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-b-dtpa",
+   "kind": "benefit",
+   "text": "Could remove internalized plutonium and uranium more effectively than the approved agent DTPA, as an oral drug",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:hopo-dtpa",
+    "evidence:value-map:hopo-oral"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-dtpa",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "Both ligands show much higher actinide-removal efficacy than the currently approved agent, diethylenetriaminepentaacetic acid (DTPA), with different selectivity for the tested isotopes of plutonium, americium, uranium and neptunium",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-oral",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "both ligands were well tolerated in rats when orally administered daily at high doses",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 17,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:52.953668+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Benefit: Could remove internalized plutonium and uranium more effectively than the approved agent DTPA, as an oral drug",
+  "seq": 18,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:55.783857+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-1",
+   "from": "value:hopo-f-decorp",
+   "to": "value:hopo-b-dtpa",
+   "type": "ENABLES",
+   "date": "2010-08-11",
+   "evidence_ids": [
+    "evidence:value-map:hopo-dtpa",
+    "evidence:value-map:hopo-oral"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-dtpa",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "Both ligands show much higher actinide-removal efficacy than the currently approved agent, diethylenetriaminepentaacetic acid (DTPA), with different selectivity for the tested isotopes of plutonium, americium, uranium and neptunium",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-oral",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "both ligands were well tolerated in rats when orally administered daily at high doses",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 19,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:37:58.614045+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-2",
+   "from": "value:hopo-f-affinity",
+   "to": "value:hopo-b-dtpa",
+   "type": "ENABLES",
+   "date": "2010-08-11",
+   "evidence_ids": [
+    "evidence:value-map:hopo-unrivaled"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-unrivaled",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "siderophore-inspired multidentate hydroxypyridonate ligands have been designed and are unrivaled in terms of actinide-affinity, selectivity, and efficiency",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 20,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:01.444234+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-b-pet",
+   "kind": "benefit",
+   "text": "Could give a safer PET tracer with reduced background radiation dose by stopping 89Zr release",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:hopo-safer",
+    "evidence:value-map:hopo-zr"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-safer",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "An improved chelator for (89)Zr(4+) could eliminate the release of osteophilic (89)Zr(4+) and lead to a safer PET tracer with reduced background radiation dose",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-zr",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "The stability of (89)Zr-HOPO matched or surpassed that of (89)Zr-DFO in every experiment",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 21,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:04.274423+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Benefit: Could give a safer PET tracer with reduced background radiation dose by stopping 89Zr release",
+  "seq": 22,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:07.104611+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-4",
+   "from": "value:hopo-f-zr",
+   "to": "value:hopo-b-pet",
+   "type": "ENABLES",
+   "date": "2014-05-09",
+   "evidence_ids": [
+    "evidence:value-map:hopo-zr",
+    "evidence:value-map:hopo-safer"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-zr",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "The stability of (89)Zr-HOPO matched or surpassed that of (89)Zr-DFO in every experiment",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-safer",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "An improved chelator for (89)Zr(4+) could eliminate the release of osteophilic (89)Zr(4+) and lead to a safer PET tracer with reduced background radiation dose",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 23,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:09.934800+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-b-gd",
+   "kind": "benefit",
+   "text": "Could mitigate gadolinium retention in patients who need contrast-enhanced MRI",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:hopo-mitigate",
+    "evidence:value-map:hopo-gd"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-mitigate",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the prophylactic or post-hoc therapeutic use of 3,4,3-LI(1,2-HOPO) may provide a means to mitigate Gd retention in patients requiring contrast-enhanced MRI",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-gd",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 24,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:12.764989+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Benefit: Could mitigate gadolinium retention in patients who need contrast-enhanced MRI",
+  "seq": 25,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:15.595177+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-3",
+   "from": "value:hopo-f-affinity",
+   "to": "value:hopo-b-gd",
+   "type": "ENABLES",
+   "date": "2018-03-13",
+   "evidence_ids": [
+    "evidence:value-map:hopo-ln",
+    "evidence:value-map:hopo-gd"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-ln",
+    "source_url": "https://openalex.org/W2076534859",
+    "quote": "The remarkably high affinity of 3,4,3-LI(1,2-HOPO) for lanthanide metal ions and the resulting high complex stabilities",
+    "source_date": "2011-09-07",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-gd",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 26,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:18.425366+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-5",
+   "from": "value:hopo-f-gd",
+   "to": "value:hopo-b-gd",
+   "type": "ENABLES",
+   "date": "2018-03-13",
+   "evidence_ids": [
+    "evidence:value-map:hopo-gd",
+    "evidence:value-map:hopo-mitigate"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-gd",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-mitigate",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the prophylactic or post-hoc therapeutic use of 3,4,3-LI(1,2-HOPO) may provide a means to mitigate Gd retention in patients requiring contrast-enhanced MRI",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 27,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:21.255555+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-v-prep",
+   "kind": "value",
+   "text": "Radiological-emergency planners and defense stockpiles could gain an oral decorporation option beyond DTPA",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:hopo-dtpa",
+    "evidence:value-map:hopo-bomb",
+    "evidence:value-map:hopo-oral"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-dtpa",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "Both ligands show much higher actinide-removal efficacy than the currently approved agent, diethylenetriaminepentaacetic acid (DTPA), with different selectivity for the tested isotopes of plutonium, americium, uranium and neptunium",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-bomb",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "The threat of a dirty bomb or other major radiological contamination presents a danger of large-scale radiation exposure of the population",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-oral",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "both ligands were well tolerated in rats when orally administered daily at high doses",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 28,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:24.085743+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: Radiological-emergency planners and defense stockpiles could gain an oral decorporation option beyond DTPA",
+  "seq": 29,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:26.915932+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-6",
+   "from": "value:hopo-b-dtpa",
+   "to": "value:hopo-v-prep",
+   "type": "DELIVERS",
+   "date": "2010-08-11",
+   "evidence_ids": [
+    "evidence:value-map:hopo-dtpa",
+    "evidence:value-map:hopo-bomb"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-dtpa",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "Both ligands show much higher actinide-removal efficacy than the currently approved agent, diethylenetriaminepentaacetic acid (DTPA), with different selectivity for the tested isotopes of plutonium, americium, uranium and neptunium",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-bomb",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "The threat of a dirty bomb or other major radiological contamination presents a danger of large-scale radiation exposure of the population",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 30,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:29.746121+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-v-pet",
+   "kind": "value",
+   "text": "Radiopharmaceutical and PET-imaging developers could swap DFO for a more stable 89Zr chelator",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:hopo-safer",
+    "evidence:value-map:hopo-zr"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-safer",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "An improved chelator for (89)Zr(4+) could eliminate the release of osteophilic (89)Zr(4+) and lead to a safer PET tracer with reduced background radiation dose",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-zr",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "The stability of (89)Zr-HOPO matched or surpassed that of (89)Zr-DFO in every experiment",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 31,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:32.576309+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: Radiopharmaceutical and PET-imaging developers could swap DFO for a more stable 89Zr chelator",
+  "seq": 32,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:35.406498+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-7",
+   "from": "value:hopo-b-pet",
+   "to": "value:hopo-v-pet",
+   "type": "DELIVERS",
+   "date": "2014-05-09",
+   "evidence_ids": [
+    "evidence:value-map:hopo-safer"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-safer",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "An improved chelator for (89)Zr(4+) could eliminate the release of osteophilic (89)Zr(4+) and lead to a safer PET tracer with reduced background radiation dose",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 33,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:38.236687+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-v-gd",
+   "kind": "value",
+   "text": "MRI contrast-agent makers and clinicians could offer a post-hoc remedy for gadolinium deposition",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:hopo-mitigate",
+    "evidence:value-map:hopo-gd"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-mitigate",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the prophylactic or post-hoc therapeutic use of 3,4,3-LI(1,2-HOPO) may provide a means to mitigate Gd retention in patients requiring contrast-enhanced MRI",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-gd",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 34,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:41.066875+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: MRI contrast-agent makers and clinicians could offer a post-hoc remedy for gadolinium deposition",
+  "seq": 35,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:43.897064+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-8",
+   "from": "value:hopo-b-gd",
+   "to": "value:hopo-v-gd",
+   "type": "DELIVERS",
+   "date": "2018-03-13",
+   "evidence_ids": [
+    "evidence:value-map:hopo-mitigate"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-mitigate",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the prophylactic or post-hoc therapeutic use of 3,4,3-LI(1,2-HOPO) may provide a means to mitigate Gd retention in patients requiring contrast-enhanced MRI",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 36,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:46.727253+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-p-limited",
+   "kind": "problem",
+   "text": "Emergency-preparedness planners: current therapies for radionuclide contamination are limited",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-limited",
+    "evidence:value-map:hopo-bomb"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-limited",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "Current therapies for the treatment of radionuclide contamination are limited",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-bomb",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "The threat of a dirty bomb or other major radiological contamination presents a danger of large-scale radiation exposure of the population",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 37,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:49.557441+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Problem: Emergency-preparedness planners: current therapies for radionuclide contamination are limited",
+  "seq": 38,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:52.387630+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-9",
+   "from": "value:hopo-v-prep",
+   "to": "value:hopo-p-limited",
+   "type": "SOLVES",
+   "date": "2010-08-11",
+   "evidence_ids": [
+    "evidence:value-map:hopo-limited",
+    "evidence:value-map:hopo-dtpa"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-limited",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "Current therapies for the treatment of radionuclide contamination are limited",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-dtpa",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "Both ligands show much higher actinide-removal efficacy than the currently approved agent, diethylenetriaminepentaacetic acid (DTPA), with different selectivity for the tested isotopes of plutonium, americium, uranium and neptunium",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 39,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:55.217819+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-p-dfo",
+   "kind": "problem",
+   "text": "Radiopharmaceutical developers: 89Zr appears to be released from DFO in vivo and accumulates in bone",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-dfo",
+    "evidence:value-map:hopo-safer"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-dfo",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "accumulation of (89)Zr in the bones of mice suggests that (89)Zr(4+) is released from DFO in vivo",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-safer",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "An improved chelator for (89)Zr(4+) could eliminate the release of osteophilic (89)Zr(4+) and lead to a safer PET tracer with reduced background radiation dose",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 40,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:38:58.048007+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Problem: Radiopharmaceutical developers: 89Zr appears to be released from DFO in vivo and accumulates in bone",
+  "seq": 41,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:00.878196+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-10",
+   "from": "value:hopo-v-pet",
+   "to": "value:hopo-p-dfo",
+   "type": "SOLVES",
+   "date": "2014-05-09",
+   "evidence_ids": [
+    "evidence:value-map:hopo-dfo",
+    "evidence:value-map:hopo-zr"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-dfo",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "accumulation of (89)Zr in the bones of mice suggests that (89)Zr(4+) is released from DFO in vivo",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-zr",
+    "source_url": "https://openalex.org/W1979550737",
+    "quote": "The stability of (89)Zr-HOPO matched or surpassed that of (89)Zr-DFO in every experiment",
+    "source_date": "2014-05-09",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 42,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:03.708385+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-p-gd",
+   "kind": "problem",
+   "text": "MRI contrast-agent users: gadolinium deposits remain in brain, bones and other organs",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-deposits",
+    "evidence:value-map:hopo-gd"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-deposits",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "Several MRI contrast agent clinical formulations are now known to leave deposits of the heavy metal gadolinium in the brain, bones, and other organs of patients",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-gd",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 43,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:06.538574+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Problem: MRI contrast-agent users: gadolinium deposits remain in brain, bones and other organs",
+  "seq": 44,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:09.368762+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-11",
+   "from": "value:hopo-v-gd",
+   "to": "value:hopo-p-gd",
+   "type": "SOLVES",
+   "date": "2018-03-13",
+   "evidence_ids": [
+    "evidence:value-map:hopo-deposits",
+    "evidence:value-map:hopo-gd"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-deposits",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "Several MRI contrast agent clinical formulations are now known to leave deposits of the heavy metal gadolinium in the brain, bones, and other organs of patients",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-gd",
+    "source_url": "https://openalex.org/W2791769218",
+    "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
+    "source_date": "2018-03-13",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 45,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:12.198951+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:hopo:radiation",
+   "name": "Radiation countermeasures: government stockpiles & defense",
+   "problem_set": [
+    "Treating internalized plutonium, uranium and other actinides after a radiological or nuclear incident",
+    "Current therapies for radionuclide contamination are limited",
+    "Oral options for emergency medical use"
+   ],
+   "value_prop": "The founder's papers report that 3,4,3-LI(1,2-HOPO) showed much higher actinide-removal efficacy than DTPA in preclinical work and was well tolerated orally in rats.",
+   "colour": "--cat-1",
+   "org_ids": [
+    "org:openalex:I1299303238",
+    "org:openalex:I4405271368",
+    "org:openalex:I2738703131",
+    "org:openalex:I1329621470",
+    "org:openalex:I1282311441"
+   ],
+   "problem_node_ids": [
+    "value:hopo-p-limited"
+   ],
+   "evidence_ids": [
+    "evidence:buyers:10a2745524d98da3569f",
+    "evidence:buyers:1cf3093b86c334fc4d32",
+    "evidence:buyers:2a4b2b643970a9fa9237",
+    "evidence:buyers:2b3b96e665a7502ca627",
+    "evidence:buyers:2d94a3884ddaf3ddb742",
+    "evidence:buyers:46c13daa79280390b546",
+    "evidence:buyers:4919d36555cd5ef3da95",
+    "evidence:buyers:b8ca1d4aff4f1b4be829",
+    "evidence:buyers:feae6c8c9b806e56b85d"
+   ]
+  },
+  "seq": 46,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:15.029140+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:hopo:pet",
+   "name": "Radiopharmaceutical imaging (89Zr PET)",
+   "problem_set": [
+    "Chelators that hold 89Zr stably in vivo",
+    "89Zr released from DFO accumulates in bone",
+    "Background radiation dose from PET tracers"
+   ],
+   "value_prop": "The founder's 89Zr paper reports Zr-HOPO stability that matched or surpassed DFO in every experiment, with rapid clearance in healthy mice.",
+   "colour": "--cat-2",
+   "org_ids": [
+    "org:openalex:I4210140884",
+    "org:openalex:I154526488",
+    "org:openalex:I4210118725",
+    "org:openalex:I1294671590"
+   ],
+   "problem_node_ids": [
+    "value:hopo-p-dfo"
+   ],
+   "evidence_ids": [
+    "evidence:buyers:2bf8475ff85c5e8c8439",
+    "evidence:buyers:33f15e0835f11183028c",
+    "evidence:buyers:42bb8894058d9e1823a9",
+    "evidence:buyers:6bf34c3eeb298f01dab3"
+   ]
+  },
+  "seq": 47,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:17.859328+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:hopo:gd",
+   "name": "Gadolinium removal after MRI contrast (contrast-agent makers)",
+   "problem_set": [
+    "Gadolinium deposits in brain, bones and other organs after MRI",
+    "Regulatory pressure on gadolinium-based contrast agents",
+    "Remedy for patients who need contrast-enhanced MRI"
+   ],
+   "value_prop": "The founder's gadolinium paper reports that 3,4,3-LI(1,2-HOPO) was more effective than DTPA at chelating and removing gadolinium and may mitigate Gd retention.",
+   "colour": "--cat-3",
+   "org_ids": [
+    "org:openalex:I67348948",
+    "org:openalex:I19820366"
+   ],
+   "problem_node_ids": [
+    "value:hopo-p-gd"
+   ],
+   "evidence_ids": [
+    "evidence:buyers:05765ea9f4b4a1af93e4",
+    "evidence:buyers:4042ac57ab7fa479591e",
+    "evidence:buyers:6767f1a5d64ded6cd113",
+    "evidence:buyers:bbaf8bea339b4a738593"
+   ]
+  },
+  "seq": 48,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:20.689517+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:hopo:lead",
+   "name": "Lead & heavy-metal poisoning (public health)",
+   "problem_set": [
+    "Removal of toxic heavy metals such as lead and cadmium",
+    "Oral chelation options for metal exposure"
+   ],
+   "value_prop": "A published study reports Pb, Cd and Sn complexation by 3,4,3-LI(1,2-HOPO); no buyer in the current list shows a lead or cadmium signal yet.",
+   "colour": "--cat-4",
+   "org_ids": [],
+   "problem_node_ids": [],
+   "evidence_ids": []
+  },
+  "seq": 49,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:23.519706+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "status",
+  "layer": "category",
+  "status": "Found 4 buyer categories",
+  "seq": 50,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:26.349894+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1299303238",
+   "name": "National Institutes of Health",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 43.0,
+   "openalex_id": "https://openalex.org/I1299303238"
+  },
+  "seq": 51,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:29.180083+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I1299303238",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I1299303238",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 52,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:32.010272+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4405271368",
+   "name": "State Key Laboratory of Radiation Medicine and Protection",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 39.0,
+   "openalex_id": "https://openalex.org/I4405271368"
+  },
+  "seq": 53,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:34.840460+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I4405271368",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I4405271368",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 54,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:37.670649+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I2738703131",
+   "name": "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 35.0,
+   "openalex_id": "https://openalex.org/I2738703131"
+  },
+  "seq": 55,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:40.500838+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I2738703131",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I2738703131",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 56,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:43.331026+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1329621470",
+   "name": "Bhabha Atomic Research Centre",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 35.0,
+   "openalex_id": "https://openalex.org/I1329621470"
+  },
+  "seq": 57,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:46.161215+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I1329621470",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I1329621470",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 58,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:48.991404+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1282311441",
+   "name": "Lawrence Livermore National Laboratory",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 35.0,
+   "openalex_id": "https://openalex.org/I1282311441"
+  },
+  "seq": 59,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:51.821592+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I1282311441",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I1282311441",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 60,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:54.651781+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210140884",
+   "name": "National Cancer Institute",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 24.0,
+   "openalex_id": "https://openalex.org/I4210140884"
+  },
+  "seq": 61,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:39:57.481970+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I4210140884",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I4210140884",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 62,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:00.312158+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I154526488",
+   "name": "Inserm",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 24.0,
+   "openalex_id": "https://openalex.org/I154526488"
+  },
+  "seq": 63,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:03.142347+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I154526488",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I154526488",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 64,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:05.972536+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210118725",
+   "name": "Laboratoire Chimie Electrochimie Moléculaires et Chimie Analytique",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 22.0,
+   "openalex_id": "https://openalex.org/I4210118725"
+  },
+  "seq": 65,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:08.802724+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I4210118725",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I4210118725",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 66,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:11.632913+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1294671590",
+   "name": "Centre National de la Recherche Scientifique",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 51.0,
+   "openalex_id": "https://openalex.org/I1294671590"
+  },
+  "seq": 67,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:14.463102+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I1294671590",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I1294671590",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 68,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:17.293291+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I67348948",
+   "name": "Bayer (Germany)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 35.0,
+   "openalex_id": "https://openalex.org/I67348948"
+  },
+  "seq": 69,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:20.123479+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I67348948",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I67348948",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 70,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:22.953668+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I19820366",
+   "name": "Chinese Academy of Sciences",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 47.0,
+   "openalex_id": "https://openalex.org/I19820366"
+  },
+  "seq": 71,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:25.783857+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I19820366",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I19820366",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 72,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:28.614045+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5085203145",
+   "name": "Åsmund Larsen",
+   "openalex_id": "https://openalex.org/A5085203145",
+   "orcid": null,
+   "org_id": "org:openalex:I1321897675",
+   "affiliation_asof": "2018-10-29",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 73,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:31.444234+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:75dd97ebfecc2231acb6",
+   "from": "person:openalex:A5043992375",
+   "to": "person:openalex:A5085203145",
+   "type": "CO_AUTHORED",
+   "date": "2018-10-29",
+   "evidence_ids": [
+    "evidence:erick:bd66a699632a8769a89f"
+   ],
+   "confidence": 0.45,
+   "name_check": "ok",
+   "label": "co-authored 2018 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:bd66a699632a8769a89f",
+    "source_url": "https://openalex.org/W2899214672",
+    "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy",
+    "source_date": "2018-10-29",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 74,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:34.274423+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1321897675",
+   "name": "Bayer (Norway)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": null,
+   "openalex_id": "https://openalex.org/I1321897675"
+  },
+  "seq": 75,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:37.104611+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:20babe4e93f1c9144e74",
+   "from": "person:openalex:A5085203145",
+   "to": "org:openalex:I1321897675",
+   "type": "AFFILIATED_AT",
+   "date": "2018-10-29",
+   "evidence_ids": [
+    "evidence:erick:891c58aa87148111c4fe"
+   ],
+   "confidence": 0.45,
+   "name_check": "ok",
+   "label": "affiliated as of 2018-10-29 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:891c58aa87148111c4fe",
+    "source_url": "https://openalex.org/W2899214672",
+    "quote": "Department of Thorium Conjugate Research, Bayer AS, 0283 Oslo, Norway",
+    "source_date": "2018-10-29",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 76,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:39.934800+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:erick:e8691e1d13091477d524",
+   "founder_id": "person:openalex:A5043992375",
+   "bridge_id": "person:openalex:A5085203145",
+   "buyer_person_id": "person:openalex:A5085203145",
+   "buyer_org_id": "org:openalex:I67348948",
+   "hops": [
+    "edge:erick:75dd97ebfecc2231acb6",
+    "edge:erick:20babe4e93f1c9144e74"
+   ],
+   "kind": "co_author",
+   "score": 2.74,
+   "weakest_edge_id": "edge:erick:75dd97ebfecc2231acb6",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:moss:ed2c79c085f83555d5bc",
+    "source_url": "https://orcid.org/0009-0008-9375-5715",
+    "quote": "Bayer (Germany): Leverkusen, DE\nRadiopharmaceuticals manager\nEmployment",
+    "source_date": "2024-03-21",
+    "observed_at": "2026-11-24T21:21:40.956667+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:moss:cd6c1ed8117b5b7cecf5",
+    "source_url": "https://no.linkedin.com/in/%C3%A5smund-larsen-52601430",
+    "quote": "Pharmaceuticals Development Manager at Bayer",
+    "source_date": "2024-03-21",
+    "observed_at": "2026-11-24T21:21:40.956725+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:moss:f469d448687e64a82a0c",
+    "source_url": "https://openalex.org/A5085203145",
+    "quote": "Radiopharmaceutical Chemistry and Applications",
+    "source_date": "2024-03-21",
+    "observed_at": "2026-11-24T21:21:40.956744+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:moss:792b1e382f6c4d74fda3",
+    "source_url": "https://doi.org/10.1021/acs.inorgchem.8b02430",
+    "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy",
+    "source_date": "2024-03-21",
+    "observed_at": "2026-11-24T21:21:40.956759+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:erick:bd66a699632a8769a89f",
+    "source_url": "https://openalex.org/W2899214672",
+    "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy",
+    "source_date": "2018-10-29",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:erick:891c58aa87148111c4fe",
+    "source_url": "https://openalex.org/W2899214672",
+    "quote": "Department of Thorium Conjugate Research, Bayer AS, 0283 Oslo, Norway",
+    "source_date": "2018-10-29",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 77,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:42.764989+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5007513250",
+   "name": "Naomi E. Marks",
+   "openalex_id": "https://openalex.org/A5007513250",
+   "orcid": null,
+   "org_id": "org:openalex:I1282311441",
+   "affiliation_asof": "2026-02-04",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 78,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:45.595177+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:1f9ad2a9bb4c9c8de2ac",
+   "from": "person:openalex:A5043992375",
+   "to": "person:openalex:A5007513250",
+   "type": "CO_AUTHORED",
+   "date": "2026-02-04",
+   "evidence_ids": [
+    "evidence:erick:1b9336c3cd6d59095647"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "co-authored 2026 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:1b9336c3cd6d59095647",
+    "source_url": "https://openalex.org/W7127579217",
+    "quote": "Adapting Nuclear Forensics from Light Water to Molten Salt Reactors: A Survey of Emerging Needs",
+    "source_date": "2026-02-04",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 79,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:48.425366+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:75e0c4f4db999a49e6df",
+   "from": "person:openalex:A5007513250",
+   "to": "org:openalex:I1282311441",
+   "type": "AFFILIATED_AT",
+   "date": "2026-02-04",
+   "evidence_ids": [
+    "evidence:erick:09eb4a45bce85624421c"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "affiliated as of 2026-02-04 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:09eb4a45bce85624421c",
+    "source_url": "https://openalex.org/W7127579217",
+    "quote": "Lawrence Livermore National Laboratory",
+    "source_date": "2026-02-04",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 80,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:51.255555+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:erick:9ca1f096a3173b9d29e7",
+   "founder_id": "person:openalex:A5043992375",
+   "bridge_id": "person:openalex:A5007513250",
+   "buyer_person_id": "person:openalex:A5007513250",
+   "buyer_org_id": "org:openalex:I1282311441",
+   "hops": [
+    "edge:erick:1f9ad2a9bb4c9c8de2ac",
+    "edge:erick:75e0c4f4db999a49e6df"
+   ],
+   "kind": "co_author",
+   "score": 3.06,
+   "weakest_edge_id": "edge:erick:1f9ad2a9bb4c9c8de2ac",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:1b9336c3cd6d59095647",
+    "source_url": "https://openalex.org/W7127579217",
+    "quote": "Adapting Nuclear Forensics from Light Water to Molten Salt Reactors: A Survey of Emerging Needs",
+    "source_date": "2026-02-04",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:erick:09eb4a45bce85624421c",
+    "source_url": "https://openalex.org/W7127579217",
+    "quote": "Lawrence Livermore National Laboratory",
+    "source_date": "2026-02-04",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 81,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:54.085743+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5153375758",
+   "name": "S. Olivia Gunther",
+   "openalex_id": "https://openalex.org/A5153375758",
+   "orcid": null,
+   "org_id": "org:openalex:I1282311441",
+   "affiliation_asof": "2026-09-27",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 82,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:56.915932+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:411d5517ac9068331a69",
+   "from": "person:openalex:A5043992375",
+   "to": "person:openalex:A5153375758",
+   "type": "CO_AUTHORED",
+   "date": "2026-09-27",
+   "evidence_ids": [
+    "evidence:erick:c72b2b0baec496248de8"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "co-authored 2026 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:c72b2b0baec496248de8",
+    "source_url": "https://openalex.org/W7214620956",
+    "quote": "τ8: an Angle-Based Geometry Index for 8-Coordinate Complexes",
+    "source_date": "2026-09-27",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 83,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:40:59.746121+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:08fd52367846fe7addc9",
+   "from": "person:openalex:A5153375758",
+   "to": "org:openalex:I1282311441",
+   "type": "AFFILIATED_AT",
+   "date": "2026-09-27",
+   "evidence_ids": [
+    "evidence:erick:cdc09849a935c1c061b2"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "affiliated as of 2026-09-27 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:cdc09849a935c1c061b2",
+    "source_url": "https://openalex.org/W7214620956",
+    "quote": "Chemical Sciences Division, Berkeley\nLawrence Berkeley National Laboratory\nLawrence Livermore National Laboratory\nPhysical and Life Sciences Directorate, Livermore",
+    "source_date": "2026-09-27",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 84,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:02.576309+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:erick:5982c5ff0739ad468423",
+   "founder_id": "person:openalex:A5043992375",
+   "bridge_id": "person:openalex:A5153375758",
+   "buyer_person_id": "person:openalex:A5153375758",
+   "buyer_org_id": "org:openalex:I1282311441",
+   "hops": [
+    "edge:erick:411d5517ac9068331a69",
+    "edge:erick:08fd52367846fe7addc9"
+   ],
+   "kind": "co_author",
+   "score": 3.27,
+   "weakest_edge_id": "edge:erick:411d5517ac9068331a69",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:c72b2b0baec496248de8",
+    "source_url": "https://openalex.org/W7214620956",
+    "quote": "τ8: an Angle-Based Geometry Index for 8-Coordinate Complexes",
+    "source_date": "2026-09-27",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:erick:cdc09849a935c1c061b2",
+    "source_url": "https://openalex.org/W7214620956",
+    "quote": "Chemical Sciences Division, Berkeley\nLawrence Berkeley National Laboratory\nLawrence Livermore National Laboratory\nPhysical and Life Sciences Directorate, Livermore",
+    "source_date": "2026-09-27",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 85,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:05.406498+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5153248164",
+   "name": "Appie Peterson",
+   "openalex_id": "https://openalex.org/A5153248164",
+   "orcid": null,
+   "org_id": "org:openalex:I1282311441",
+   "affiliation_asof": "2026-09-27",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 86,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:08.236687+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:c10c9826fa6bf22adf80",
+   "from": "person:openalex:A5043992375",
+   "to": "person:openalex:A5153248164",
+   "type": "CO_AUTHORED",
+   "date": "2026-09-27",
+   "evidence_ids": [
+    "evidence:erick:c72b2b0baec496248de8"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "co-authored 2026 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:c72b2b0baec496248de8",
+    "source_url": "https://openalex.org/W7214620956",
+    "quote": "τ8: an Angle-Based Geometry Index for 8-Coordinate Complexes",
+    "source_date": "2026-09-27",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 87,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:11.066875+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:f2a8a756e20ca3de28d6",
+   "from": "person:openalex:A5153248164",
+   "to": "org:openalex:I1282311441",
+   "type": "AFFILIATED_AT",
+   "date": "2026-09-27",
+   "evidence_ids": [
+    "evidence:erick:cdc09849a935c1c061b2"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "affiliated as of 2026-09-27 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:cdc09849a935c1c061b2",
+    "source_url": "https://openalex.org/W7214620956",
+    "quote": "Chemical Sciences Division, Berkeley\nLawrence Berkeley National Laboratory\nLawrence Livermore National Laboratory\nPhysical and Life Sciences Directorate, Livermore",
+    "source_date": "2026-09-27",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 88,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:13.897064+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:erick:cd0d1947b946ccf7735a",
+   "founder_id": "person:openalex:A5043992375",
+   "bridge_id": "person:openalex:A5153248164",
+   "buyer_person_id": "person:openalex:A5153248164",
+   "buyer_org_id": "org:openalex:I1282311441",
+   "hops": [
+    "edge:erick:c10c9826fa6bf22adf80",
+    "edge:erick:f2a8a756e20ca3de28d6"
+   ],
+   "kind": "co_author",
+   "score": 3.27,
+   "weakest_edge_id": "edge:erick:c10c9826fa6bf22adf80",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:c72b2b0baec496248de8",
+    "source_url": "https://openalex.org/W7214620956",
+    "quote": "τ8: an Angle-Based Geometry Index for 8-Coordinate Complexes",
+    "source_date": "2026-09-27",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:erick:cdc09849a935c1c061b2",
+    "source_url": "https://openalex.org/W7214620956",
+    "quote": "Chemical Sciences Division, Berkeley\nLawrence Berkeley National Laboratory\nLawrence Livermore National Laboratory\nPhysical and Life Sciences Directorate, Livermore",
+    "source_date": "2026-09-27",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 89,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:16.727253+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5024946527",
+   "name": "Tashi Parsons‐Davis",
+   "openalex_id": "https://openalex.org/A5024946527",
+   "orcid": null,
+   "org_id": "org:openalex:I1282311441",
+   "affiliation_asof": "2026-11-20",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 90,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:19.557441+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:c2ca7e2be69a2df8d1a6",
+   "from": "person:openalex:A5043992375",
+   "to": "person:openalex:A5024946527",
+   "type": "CO_AUTHORED",
+   "date": "2026-11-20",
+   "evidence_ids": [
+    "evidence:erick:2d6a44c6b5892b323f84"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "co-authored 2026 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:2d6a44c6b5892b323f84",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Establishing a Gas-phase Benchmark for the Determination of Superheavy Element Oxidation States from the Production of Fluoride Molecules",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 91,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:22.387630+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:f5e31927279b8126a9b2",
+   "from": "person:openalex:A5024946527",
+   "to": "org:openalex:I1282311441",
+   "type": "AFFILIATED_AT",
+   "date": "2026-11-20",
+   "evidence_ids": [
+    "evidence:erick:42b719e7c81c925b5b3f"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "affiliated as of 2026-11-20 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:42b719e7c81c925b5b3f",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Lawrence Livermore National Laboratory, Livermore, California, United States, 94550",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 92,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:25.217819+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:erick:756967150c0997db3b35",
+   "founder_id": "person:openalex:A5043992375",
+   "bridge_id": "person:openalex:A5024946527",
+   "buyer_person_id": "person:openalex:A5024946527",
+   "buyer_org_id": "org:openalex:I1282311441",
+   "hops": [
+    "edge:erick:c2ca7e2be69a2df8d1a6",
+    "edge:erick:f5e31927279b8126a9b2"
+   ],
+   "kind": "co_author",
+   "score": 3.32,
+   "weakest_edge_id": "edge:erick:c2ca7e2be69a2df8d1a6",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:2d6a44c6b5892b323f84",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Establishing a Gas-phase Benchmark for the Determination of Superheavy Element Oxidation States from the Production of Fluoride Molecules",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:erick:42b719e7c81c925b5b3f",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Lawrence Livermore National Laboratory, Livermore, California, United States, 94550",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 93,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:28.048007+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5066171096",
+   "name": "Mark A. Stoyer",
+   "openalex_id": "https://openalex.org/A5066171096",
+   "orcid": null,
+   "org_id": "org:openalex:I1282311441",
+   "affiliation_asof": "2026-11-20",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 94,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:30.878196+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:c5179dddb5c6c9a8bdca",
+   "from": "person:openalex:A5043992375",
+   "to": "person:openalex:A5066171096",
+   "type": "CO_AUTHORED",
+   "date": "2026-11-20",
+   "evidence_ids": [
+    "evidence:erick:2d6a44c6b5892b323f84"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "co-authored 2026 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:2d6a44c6b5892b323f84",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Establishing a Gas-phase Benchmark for the Determination of Superheavy Element Oxidation States from the Production of Fluoride Molecules",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 95,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:33.708385+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:7bfa76eadd4b7fce6d11",
+   "from": "person:openalex:A5066171096",
+   "to": "org:openalex:I1282311441",
+   "type": "AFFILIATED_AT",
+   "date": "2026-11-20",
+   "evidence_ids": [
+    "evidence:erick:42b719e7c81c925b5b3f"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "affiliated as of 2026-11-20 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:42b719e7c81c925b5b3f",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Lawrence Livermore National Laboratory, Livermore, California, United States, 94550",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 96,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:36.538574+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:erick:9f724346ce0d738baa12",
+   "founder_id": "person:openalex:A5043992375",
+   "bridge_id": "person:openalex:A5066171096",
+   "buyer_person_id": "person:openalex:A5066171096",
+   "buyer_org_id": "org:openalex:I1282311441",
+   "hops": [
+    "edge:erick:c5179dddb5c6c9a8bdca",
+    "edge:erick:7bfa76eadd4b7fce6d11"
+   ],
+   "kind": "co_author",
+   "score": 3.32,
+   "weakest_edge_id": "edge:erick:c5179dddb5c6c9a8bdca",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:2d6a44c6b5892b323f84",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Establishing a Gas-phase Benchmark for the Determination of Superheavy Element Oxidation States from the Production of Fluoride Molecules",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:erick:42b719e7c81c925b5b3f",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Lawrence Livermore National Laboratory, Livermore, California, United States, 94550",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 97,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:39.368762+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5075803542",
+   "name": "Kevin J. Maxwell",
+   "openalex_id": "https://openalex.org/A5075803542",
+   "orcid": null,
+   "org_id": "org:openalex:I1282311441",
+   "affiliation_asof": "2026-11-20",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 98,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:42.198951+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:f3bb41f2116857dd8806",
+   "from": "person:openalex:A5043992375",
+   "to": "person:openalex:A5075803542",
+   "type": "CO_AUTHORED",
+   "date": "2026-11-20",
+   "evidence_ids": [
+    "evidence:erick:2d6a44c6b5892b323f84"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "co-authored 2026 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:2d6a44c6b5892b323f84",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Establishing a Gas-phase Benchmark for the Determination of Superheavy Element Oxidation States from the Production of Fluoride Molecules",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 99,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:45.029140+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:cfd2f68df3d9c169ab56",
+   "from": "person:openalex:A5075803542",
+   "to": "org:openalex:I1282311441",
+   "type": "AFFILIATED_AT",
+   "date": "2026-11-20",
+   "evidence_ids": [
+    "evidence:erick:42b719e7c81c925b5b3f"
+   ],
+   "confidence": 0.45,
+   "name_check": "unchecked",
+   "label": "affiliated as of 2026-11-20 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:42b719e7c81c925b5b3f",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Lawrence Livermore National Laboratory, Livermore, California, United States, 94550",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 100,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:47.859328+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:erick:fa8f5416df2b5eddc92f",
+   "founder_id": "person:openalex:A5043992375",
+   "bridge_id": "person:openalex:A5075803542",
+   "buyer_person_id": "person:openalex:A5075803542",
+   "buyer_org_id": "org:openalex:I1282311441",
+   "hops": [
+    "edge:erick:f3bb41f2116857dd8806",
+    "edge:erick:cfd2f68df3d9c169ab56"
+   ],
+   "kind": "co_author",
+   "score": 3.32,
+   "weakest_edge_id": "edge:erick:f3bb41f2116857dd8806",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:2d6a44c6b5892b323f84",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Establishing a Gas-phase Benchmark for the Determination of Superheavy Element Oxidation States from the Production of Fluoride Molecules",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:erick:42b719e7c81c925b5b3f",
+    "source_url": "https://openalex.org/W7237074050",
+    "quote": "Lawrence Livermore National Laboratory, Livermore, California, United States, 94550",
+    "source_date": "2026-11-20",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 101,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:50.689517+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "person:openalex:A5071347045",
+   "name": "Gauthier J.‐P. Deblonde",
+   "openalex_id": "https://openalex.org/A5071347045",
+   "orcid": "https://orcid.org/0000-0002-0825-8714",
+   "org_id": "org:openalex:I1282311441",
+   "affiliation_asof": "2026-11-22",
+   "role": null,
+   "is_bridge_candidate": true,
+   "alignment": null
+  },
+  "seq": 102,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:53.519706+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:a84a3ae6c274e8da0cad",
+   "from": "person:openalex:A5043992375",
+   "to": "person:openalex:A5071347045",
+   "type": "CO_AUTHORED",
+   "date": "2023-03-16",
+   "evidence_ids": [
+    "evidence:erick:6e6723a62fc019fce553"
+   ],
+   "confidence": 0.85,
+   "name_check": "unchecked",
+   "label": "co-authored 2023 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:6e6723a62fc019fce553",
+    "source_url": "https://openalex.org/W4327631728",
+    "quote": "Chelating platform for delivery of radionuclides",
+    "source_date": "2023-03-16",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 103,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:56.349894+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:erick:45b606449849676b8d51",
+   "from": "person:openalex:A5071347045",
+   "to": "org:openalex:I1282311441",
+   "type": "AFFILIATED_AT",
+   "date": "2026-11-22",
+   "evidence_ids": [
+    "evidence:erick:c56cf12316face8f09da"
+   ],
+   "confidence": 0.85,
+   "name_check": "unchecked",
+   "label": "affiliated as of 2026-11-22 [cached OpenAlex]"
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:c56cf12316face8f09da",
+    "source_url": "https://openalex.org/W7238871266",
+    "quote": "Lawrence Livermore National Laboratory, Livermore, USA",
+    "source_date": "2026-11-22",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 104,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:41:59.180083+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "path",
+  "layer": "lead",
+  "path": {
+   "id": "path:erick:f287055fd9ceb7d4cffc",
+   "founder_id": "person:openalex:A5043992375",
+   "bridge_id": "person:openalex:A5071347045",
+   "buyer_person_id": "person:openalex:A5071347045",
+   "buyer_org_id": "org:openalex:I1282311441",
+   "hops": [
+    "edge:erick:a84a3ae6c274e8da0cad",
+    "edge:erick:45b606449849676b8d51"
+   ],
+   "kind": "co_author",
+   "score": 6.68,
+   "weakest_edge_id": "edge:erick:a84a3ae6c274e8da0cad",
+   "why_now_signal_ids": []
+  },
+  "evidence": [
+   {
+    "id": "evidence:erick:6e6723a62fc019fce553",
+    "source_url": "https://openalex.org/W4327631728",
+    "quote": "Chelating platform for delivery of radionuclides",
+    "source_date": "2023-03-16",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:erick:c56cf12316face8f09da",
+    "source_url": "https://openalex.org/W7238871266",
+    "quote": "Lawrence Livermore National Laboratory, Livermore, USA",
+    "source_date": "2026-11-22",
+    "observed_at": "2026-11-24T21:23:33.907182+00:00",
+    "kind": "affiliation"
+   }
+  ],
+  "seq": 105,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:42:02.010272+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "status",
+  "layer": "lead",
+  "status": "Moss verified: Åsmund Larsen, Radiopharmaceuticals manager at Bayer (as of Mar 2024)",
+  "seq": 106,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:42:04.840460+00:00"
+ },
+ {
+  "phase": "paths",
+  "kind": "status",
+  "layer": "lead",
+  "status": "8 warm paths to 2 buyer orgs",
+  "seq": 107,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:42:07.670649+00:00"
+ }
+]
