@@ -4,23 +4,19 @@ DeepBridge helps a deep-tech founder—a researcher building a company around sc
 It turns public research into buyer hypotheses and cited introduction paths through co-authors and lab networks.
 The founder checks the evidence, reviews a draft, and approves its exact text. Nothing is sent.
 
-> **Screenshot placeholder:** buyer graph, dated evidence, and draft approval screen.
+Built at HackwithBay 4.0, 24 Nov 2026. The judge case follows **Hannah Weber / HOPO Therapeutics** and the science of Rebecca J. Abergel. The local smoke flow replays cached **Lightmatter / Nicholas C. Harris** data. See the [system design](docs/system-design.md).
 
-Built at HackwithBay 4.0, 24 Nov 2026. The stage case is **Lightmatter / Nicholas C. Harris**, replayed from cached research.
+## Run it
 
-## Quick start
+Requires Python 3.12, uv, lsof, curl, and Node.js with npm. [Install uv](https://docs.astral.sh/uv/).
 
-Requires Python 3.12, [uv](https://docs.astral.sh/uv/), and Node.js with npm for the web app.
-
-From the repository root, start the service:
+From the repository root, restore committed demo fixtures and start the service:
 
 ```sh
-cd service
-uv sync
-uv run uvicorn app.main:app --reload --port 8000
+bash scripts/demo-reset.sh
 ```
 
-In another terminal, start the web app when the `web/` directory is available:
+In another terminal, start the web app:
 
 ```sh
 cd web
@@ -28,7 +24,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. The API explorer is at http://localhost:8000/docs and works without the web app. This checkout currently contains the service; the web app is a separate team deliverable.
+Open http://localhost:3000. The API explorer is at http://localhost:8000/docs. The reset script restores committed fixture files and restarts this checkout’s service.
 
 The cached stage case needs no provider credentials. For optional live lookups, copy the template from the repository root:
 
@@ -40,7 +36,7 @@ cp .env.example .env
 |---|---|
 | `MOSS_PROJECT_ID`, `MOSS_PROJECT_KEY` | Enable live Moss contact checks; cached contacts remain available without them. |
 | `OPENALEX_API_KEY` | Optional key for OpenAlex research lookups. |
-| `FLEXPRICE_API_KEY`, `FLEXPRICE_BASE_URL` | Reserved for the planned Flexprice connection; the current credit gate is local. |
+| `FLEXPRICE_API_KEY`, `FLEXPRICE_BASE_URL` | Enable the optional Flexprice adapter. The credential-free demo uses the local credit counter. |
 
 Keep credentials out of version control. New-founder ICP generation and uncached drafts also require an authenticated Claude CLI; the service invokes it with tools and MCP disabled. The cached stage flow makes no generation calls.
 
@@ -50,7 +46,7 @@ With a freshly started service, verify the demo from the repository root:
 bash service/smoke.sh
 ```
 
-The smoke check changes in-memory drafts, pipeline stages, and credits. Restart the service before presenting. See [DEMO.md](DEMO.md) for rehearsal, reset, warm-cache, and offline fallback steps.
+The smoke check changes in-memory drafts, pipeline stages, and credits. Run the reset script again before presenting. See [DEMO.md](DEMO.md) for rehearsal, reset, warm-cache, and offline fallback steps.
 
 ## Five modules
 
@@ -64,13 +60,13 @@ The smoke check changes in-memory drafts, pipeline stages, and credits. Restart 
 
 ## Sponsor integrations
 
-- **Moss Tasks — built, credentials required for live use.** A browser task checks a person's role and public profiles using `moss-fast`, structured output, verification, and runtime/cost limits. Cached results support stage replay. Moss is not asked for emails or phone numbers. **Moss fast inference for voice intake is planned**, with no live inference flow in this checkout.
-- **Flexprice — connection planned.** The working local gate starts with five demo credits, charges for draft requests, and returns HTTP 402 when exhausted. `/credits` exposes the balance, events, and `source`. Flexprice wallet lookup and usage metering are planned; the demo currently reports `source: local`.
+- **Moss Tasks — built, credentials required for live use.** A browser task checks a person's role and public profiles using `moss-fast`, structured output, verification, and runtime/cost limits. Cached results support stage replay. Moss is not asked for emails or phone numbers. The service also accepts voice interview turns and transcripts.
+- **Credits.** The local credit counter starts with five demo credits and returns HTTP 402 when exhausted. The optional Flexprice adapter supports wallet lookup and usage metering. `/credits` exposes the balance, events, and source.
 - **OpenAlex — built.** Public papers support founder intake, buyer research, and source links. Research responses are cached.
 
 ## What the demo claims
 
-Cached research and replayed contacts are labelled. Seeded pipeline history is simulated. ICP needs and segments are hypotheses; buyer scores rank public signals, not purchase intent. Graph paths and scores come from demo fixtures; building paths for arbitrary founders is planned.
+Cached research and replayed contacts are labelled. Seeded pipeline history is simulated. ICP needs and segments are hypotheses; buyer scores rank public signals, not purchase intent. The default paths come from demo fixtures. Computed paths use OpenAlex research and heuristic scores.
 
 Every factual claim needs evidence with a `source_url`. A link says “co-authored 2017,” never that two people know each other. Publication affiliations are stated **as of their cited date** and do not establish current employment. Live contact checks carry separate sources and dates.
 
