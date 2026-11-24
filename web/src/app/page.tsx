@@ -37,6 +37,7 @@ import {
 import type {
   Briefing,
   BuyerCategory,
+  BuyersBundle,
   Card,
   Credits,
   Draft,
@@ -251,7 +252,12 @@ export default function DeepBridgeWorkspace() {
 
       const [buyersRes, graphRes, pathsRes, kgRes, pipelineRes, metricsRes, creditsRes] =
         await Promise.all([
-          api.getBuyers(resolvedFounder.id).catch(() => api.getBuyers()),
+          // HACK: /buyers can 503 (OpenAlex 429) for a non-cached founder; an empty list must not
+          // knock the whole HOPO workspace back to Lightmatter.
+          api
+            .getBuyers(resolvedFounder.id)
+            .catch(() => api.getBuyers())
+            .catch((): BuyersBundle => ({ orgs: [], signals: [] })),
           api.getGraph(resolvedFounder.id).catch(() => api.getGraph()),
           api.getPaths(resolvedFounder.id).catch(() => api.getPaths()),
           api.getKnowledgeGraph(resolvedFounder.id).catch(() => null),
@@ -293,7 +299,27 @@ export default function DeepBridgeWorkspace() {
 
       const activePaths = kgRes?.leads.paths ?? pathsRes;
       const topPath = [...activePaths].sort((a, b) => b.score - a.score)[0];
-      setSelectedPathId(topPath ? topPath.id : null);
+      // HACK: the HOPO stage story (DEMO.md) is Abergel -> Larsen -> Bayer; pre-select that path.
+      const activeOrgs = kgRes?.leads.orgs ?? graphRes.orgs;
+      const bayerOrgIds = new Set(
+        activeOrgs.filter((o) => /bayer/i.test(o.name)).map((o) => o.id),
+      );
+      const larsenIds = new Set(
+        (kgRes?.leads.people ?? graphRes.people)
+          .filter((p) => /larsen/i.test(p.name))
+          .map((p) => p.id),
+      );
+      const bayerPaths =
+        resolvedFounder.id === HOPO_FOUNDER_ID
+          ? activePaths.filter((p) => bayerOrgIds.has(p.buyer_org_id))
+          : [];
+      const heroPath =
+        bayerPaths.find(
+          (p) => larsenIds.has(p.bridge_id ?? "") || larsenIds.has(p.buyer_person_id ?? ""),
+        ) ??
+        [...bayerPaths].sort((a, b) => b.score - a.score)[0];
+      const initialPath = heroPath ?? topPath;
+      setSelectedPathId(initialPath ? initialPath.id : null);
     },
     [mergeEvidenceList],
   );
