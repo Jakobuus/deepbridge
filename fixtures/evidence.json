@@ -293,6 +293,54 @@
       "source_date": "2025-06-11",
       "observed_at": "2026-11-24T21:29:27.923909+00:00",
       "kind": "paper"
+    },
+    {
+      "id": "evidence:erick:891c58aa87148111c4fe",
+      "source_url": "https://openalex.org/W2899214672",
+      "quote": "Department of Thorium Conjugate Research, Bayer AS, 0283 Oslo, Norway",
+      "source_date": "2018-10-29",
+      "observed_at": "2026-11-24T21:23:33.907182+00:00",
+      "kind": "affiliation"
+    },
+    {
+      "id": "evidence:erick:67239e6a11fa749cb8b8",
+      "source_url": "https://openalex.org/A5073204417",
+      "quote": "institution.display_name: Lumiphore (United States); years: 2011",
+      "source_date": null,
+      "observed_at": "2026-11-24T21:23:33.907182+00:00",
+      "kind": "affiliation"
+    },
+    {
+      "id": "evidence:erick:d0a06ab0d3d02259feb8",
+      "source_url": "https://openalex.org/W4389529495",
+      "quote": "Formulations of hydroxypyridonate actinide/lanthanide decorporation agents",
+      "source_date": "2023-12-08",
+      "observed_at": "2026-11-24T21:23:33.907182+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:erick:bd66a699632a8769a89f",
+      "source_url": "https://openalex.org/W2899214672",
+      "quote": "Solution Thermodynamics and Kinetics of Metal Complexation with a Hydroxypyridinone Chelator Designed for Thorium-227 Targeted Alpha Therapy",
+      "source_date": "2018-10-29",
+      "observed_at": "2026-11-24T21:23:33.907182+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2062348077",
+      "source_url": "https://openalex.org/W2062348077",
+      "quote": "Siderophores of Bacillus anthracis, Bacillus cereus, and Bacillus thuringiensis",
+      "source_date": "2006-07-21",
+      "observed_at": "2026-11-24T21:24:52.255884+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2101984559",
+      "source_url": "https://openalex.org/W2101984559",
+      "quote": "BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE DECORPORATION AGENTS 3,4,3-LI(1,2-HOPO) AND 5-LIO(ME-3,2-HOPO)",
+      "source_date": "2010-08-11",
+      "observed_at": "2026-11-24T21:24:52.255892+00:00",
+      "kind": "paper"
     }
   ]
 }
