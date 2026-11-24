@@ -42,6 +42,16 @@ def intake(body: IntakeRequest):
     try:
         founder = fetch_founder(form)
         _register(load_research(founder.id))
+        if founder.id == 'person:openalex:A5043992375':
+            # HACK: Abergel's top-cited OpenAlex works are off-topic for HOPO; show the HOPO papers instead.
+            papers = json.loads((FIXTURES / 'hopo_papers.json').read_text())['papers'][:8]
+            with store.lock:
+                for paper in papers:
+                    store.evidence[paper['id']] = Evidence.model_validate(paper)
+            founder = founder.model_copy(update={'evidence_ids': [p['id'] for p in papers],
+                      'topics': ['Radionuclide decorporation', 'Hydroxypyridinone (HOPO) chelators', 'Heavy metal and lead chelation', '89Zr PET imaging chelators', 'Gadolinium decorporation'],
+                      'summary': 'HOPO chelator papers from the Abergel lab (decorporation, heavy metals, 89Zr, gadolinium). Customer segments are hypotheses, not verified demand.'})
+            store.jakob_founders[founder.id] = founder
         store.jakob_active_founder_id = founder.id
         return founder
     except FounderNotFound as exc:
