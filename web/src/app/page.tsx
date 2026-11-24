@@ -436,7 +436,8 @@ export default function DeepBridgeWorkspace() {
           </nav>
         </div>
 
-        <SidebarOrb />
+        {/* Intake has its own large stage orb; one orb on screen at a time. */}
+        {activeScreen !== "intake" ? <SidebarOrb /> : <div className="flex-1" />}
 
         <div className="hidden p-5 text-[11px] leading-relaxed text-muted-foreground lg:block">
           Every claim cites a source. Nothing is sent without your approval.
