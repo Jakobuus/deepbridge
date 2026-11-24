@@ -3,14 +3,12 @@
 import {
   ArrowRight,
   CheckCircle2,
-  GitBranch,
   Orbit,
   ShieldCheck,
   Table2,
   XCircle,
 } from "lucide-react";
 import * as React from "react";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -705,12 +703,11 @@ export function ScreenLeads({
 
       {/* FLAT NEO-BRUTALIST LEADS & WARM PATHS TABLE */}
       {viewMode === "table" && (
-        <Card flat border className="border-white/20 bg-[#0f1117] py-4 gap-3">
+        <Card flat border className="border-white/10 bg-transparent py-4 gap-3">
           <CardHeader className="px-5 pb-1">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <CardTitle className="text-base font-bold flex items-center gap-2">
-                <GitBranch className="size-4 text-emerald-300" />
-                <span>Ranked Warm-Path Leads Table ({sortedPaths.length})</span>
+                                <span>Warm paths ({sortedPaths.length})</span>
               </CardTitle>
             </div>
           </CardHeader>
@@ -719,11 +716,10 @@ export function ScreenLeads({
               <TableHeader>
                 <TableRow>
                   <TableHead className="font-mono text-[11px] uppercase">Score</TableHead>
-                  <TableHead className="font-mono text-[11px] uppercase">Target Buyer</TableHead>
-                  <TableHead className="font-mono text-[11px] uppercase">Bridge Connector</TableHead>
-                  <TableHead className="font-mono text-[11px] uppercase">Path Kind</TableHead>
-                  <TableHead className="font-mono text-[11px] uppercase">Dated Hop Chain (Never &ldquo;Knows&rdquo;)</TableHead>
-                  <TableHead className="font-mono text-[11px] uppercase">Weakest Hop Check</TableHead>
+                  <TableHead className="font-mono text-[11px] uppercase">Buyer</TableHead>
+                  <TableHead className="font-mono text-[11px] uppercase">Bridge</TableHead>
+                  <TableHead className="font-mono text-[11px] uppercase">Dated hops</TableHead>
+                  <TableHead className="font-mono text-[11px] uppercase">Check</TableHead>
                   <TableHead className="font-mono text-[11px] uppercase text-right">Action</TableHead>
                 </TableRow>
               </TableHeader>
@@ -741,7 +737,7 @@ export function ScreenLeads({
                       onClick={() => onSelectPath(path.id)}
                       className="cursor-pointer"
                     >
-                      <TableCell className="font-mono font-bold text-emerald-300">
+                      <TableCell className="font-mono text-muted-foreground" title={KIND_LABELS[path.kind] ?? path.kind}>
                         {path.score}
                       </TableCell>
                       <TableCell className="font-semibold">
@@ -767,11 +763,6 @@ export function ScreenLeads({
                           )}
                         </button>
                       </TableCell>
-                      <TableCell>
-                        <Badge flat className="font-mono text-[10px]">
-                          {KIND_LABELS[path.kind] ?? path.kind}
-                        </Badge>
-                      </TableCell>
                       <TableCell className="max-w-md">
                         <div className="flex flex-wrap items-center gap-1.5 font-mono text-xs">
                           {path.hops.map((eid, i) => {
@@ -785,7 +776,7 @@ export function ScreenLeads({
                                     e.stopPropagation();
                                     onInspectEdge(eid);
                                   }}
-                                  className="rounded border border-white/20 bg-[#151922] px-2 py-0.5 text-[11px] hover:border-sky-400/60"
+                                  className="text-left text-[11px] text-slate-300 hover:text-white hover:underline"
                                 >
                                   {edge?.label ?? eid}
                                 </button>
