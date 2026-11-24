@@ -105,6 +105,25 @@
   animation: db-photon-flow 1.2s linear infinite;
 }
 
+/* Graph replay (?session=demo-hopo): new SVG elements fade in, node shapes pop in once on mount. */
+@keyframes db-stream-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes db-stream-pop {
+  0% { transform: scale(0); }
+  70% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+.db-stream-on g,
+.db-stream-on path:not(.db-edge-active) {
+  animation: db-stream-fade 0.6s ease-out both;
+}
+.db-stream-on circle,
+.db-stream-on rect {
+  animation: db-stream-pop 0.5s ease-out both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .db-edge-active {
     animation: none;

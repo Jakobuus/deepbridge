@@ -28,6 +28,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { api } from "@/lib/api";
+import { useGraphStream, useStreamSessionParam } from "@/lib/useGraphStream";
 import type {
   BuyerCategory,
   Edge,
@@ -95,18 +96,18 @@ const KIND_LABELS: Record<Path["kind"], string> = {
 };
 
 export function ScreenLeads({
-  founder,
+  founder: founderProp,
   icp,
-  knowledgeGraph,
-  paths,
-  orgs,
-  edges,
-  peopleMap,
-  orgsMap,
-  edgesMap,
+  knowledgeGraph: knowledgeGraphProp,
+  paths: pathsProp,
+  orgs: orgsProp,
+  edges: edgesProp,
+  peopleMap: peopleMapProp,
+  orgsMap: orgsMapProp,
+  edgesMap: edgesMapProp,
   signalsMap,
-  evidenceMap,
-  selectedPathId,
+  evidenceMap: evidenceMapProp,
+  selectedPathId: selectedPathIdProp,
   orgFilterId,
   onSelectPath,
   onClearOrgFilter,
@@ -116,6 +117,67 @@ export function ScreenLeads({
   onEdgeUpdated,
   onDraftForPath,
 }: ScreenLeadsProps) {
+  // Live replay from GET /graph/stream when the URL has ?session=<id> (or ?stream=1).
+  // While connecting/streaming/done the graph grows from the stream; on error (or no param) the static props render.
+  const streamSessionId = useStreamSessionParam();
+  const stream = useGraphStream(streamSessionId);
+  const live = stream.status === "connecting" || stream.status === "streaming" || stream.status === "done";
+
+  const founder = React.useMemo<Founder | null>(() => {
+    if (!live) return founderProp;
+    if (!stream.founderPersonId) return null;
+    if (founderProp?.id === stream.founderPersonId) return founderProp;
+    return {
+      id: stream.founderPersonId,
+      name: stream.founderName ?? "",
+      company: "Berkeley Lab", // HACK: demo-hopo founder affiliation; not in the stream payload
+      openalex_id: null,
+      topics: [],
+      summary: "",
+      evidence_ids: [],
+    };
+  }, [live, founderProp, stream.founderPersonId, stream.founderName]);
+  const knowledgeGraph = React.useMemo<KnowledgeGraph | null>(() => {
+    if (!live) return knowledgeGraphProp;
+    // Only categories are read from it; an empty list falls back to synthesized ones, so pass a stub.
+    return { ...(knowledgeGraphProp ?? ({} as KnowledgeGraph)), categories: stream.categories };
+  }, [live, knowledgeGraphProp, stream.categories]);
+  const paths = live ? stream.paths : pathsProp;
+  const orgs = live ? stream.orgs : orgsProp;
+  const edges = live ? stream.edges : edgesProp;
+  const peopleMap = React.useMemo(() => {
+    if (!live) return peopleMapProp;
+    const m: Record<Id, Person> = {};
+    for (const p of stream.people) m[p.id] = p;
+    return m;
+  }, [live, peopleMapProp, stream.people]);
+  const orgsMap = React.useMemo(() => {
+    if (!live) return orgsMapProp;
+    const m: Record<Id, Org> = { ...orgsMapProp };
+    for (const o of stream.orgs) m[o.id] = o;
+    return m;
+  }, [live, orgsMapProp, stream.orgs]);
+  const edgesMap = React.useMemo(() => {
+    if (!live) return edgesMapProp;
+    const m: Record<Id, Edge> = {};
+    for (const e of stream.edges) m[e.id] = e;
+    return m;
+  }, [live, edgesMapProp, stream.edges]);
+  const evidenceMap = React.useMemo(() => {
+    if (!live) return evidenceMapProp;
+    const m: Record<Id, Evidence> = { ...evidenceMapProp };
+    for (const ev of stream.evidence) m[ev.id] = ev;
+    return m;
+  }, [live, evidenceMapProp, stream.evidence]);
+  // While streaming, light the newest warm path; once done, the best path (user clicks still win).
+  const selectedPathId = !live
+    ? selectedPathIdProp
+    : stream.status === "done"
+      ? (selectedPathIdProp && stream.paths.some((p) => p.id === selectedPathIdProp)
+          ? selectedPathIdProp
+          : stream.bestPathId)
+      : stream.latestPathId;
+
   const [viewMode, setViewMode] = React.useState<LeadsViewMode>("split");
   const [showCategoryLayer, setShowCategoryLayer] = React.useState<boolean>(true);
   const [kindFilter, setKindFilter] = React.useState<string>("all");
@@ -402,6 +464,12 @@ export function ScreenLeads({
               <Badge flat className="border-sky-400/50 bg-[#0b2536] font-mono text-[10px] tracking-widest text-sky-100">
                 ✦ DEEP-SPACE KNOWLEDGE GRAPH · CORE → CATEGORIES → WARM PATHS
               </Badge>
+              {live && (
+                <Badge flat className="border-emerald-400/50 bg-[#062018] font-mono text-[10px] text-emerald-100">
+                  {stream.status === "done" ? "● REPLAY DONE" : "● LIVE"} · {stream.count} events
+                  {stream.statusText ? ` · ${stream.statusText.slice(0, 60)}` : ""}
+                </Badge>
+              )}
               {categories.map((cat, idx) => {
                 const color = resolveCatColor(cat.colour, idx);
                 const isCatSelected = selectedCatId === cat.id;
@@ -442,7 +510,7 @@ export function ScreenLeads({
           <div className="w-full overflow-x-auto">
             <svg
               viewBox={`0 0 ${graphLayout.width} ${graphLayout.height}`}
-              className="h-[460px] min-w-[960px] w-full select-none"
+              className={`h-[460px] min-w-[960px] w-full select-none${live ? " db-stream-on" : ""}`}
             >
               <defs>
                 <radialGradient id="founderHalo" cx="50%" cy="50%" r="50%">
