@@ -108,7 +108,7 @@ function apply(s: GraphStreamState, e: GraphEvent): GraphStreamState {
   return next;
 }
 
-export function useGraphStream(sessionId: string | null, speed = 8): GraphStreamState {
+export function useGraphStream(sessionId: string | null, speed = 24): GraphStreamState {
   const [state, setState] = React.useState<GraphStreamState>(EMPTY);
 
   React.useEffect(() => {
