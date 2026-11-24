@@ -203,7 +203,7 @@ def main():
            f'✓ send gate: approval needs the human decision on content hash {draft["content_hash"][:10]}')
     request_id = band.say('SECURITY', f'Security review:\n{sec}\n'
                           f'{first}, approve or reject this intro to Larsen (Bayer)? '
-                          f'Reply "@{band.people["SECURITY"].get("handle") or "Security"} approve" or "reject".', 'HUMAN')
+                          'Reply here with "@Security approve" or "@Security reject".', 'HUMAN')
     band.attention('SECURITY', f'Approve or reject the Abergel -> Larsen (Bayer) intro draft {draft["id"]}?')
     if a.no_wait:
         print('request posted; not waiting')
