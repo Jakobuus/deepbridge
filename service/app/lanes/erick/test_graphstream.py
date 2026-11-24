@@ -351,6 +351,46 @@ def test_discover():
     assert _post(f'{base}/graph/discover?session_id={_sid("x")}&founder_id=nope')[0] == 404
 
 
+def _post_json(url, body):
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), method='POST',
+                                 headers={'Content-Type': 'application/json'})
+    try:
+        r = urllib.request.urlopen(req, timeout=30)
+        return r.status, json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        return e.code, None
+
+
+def test_sharpen():
+    base = _start()
+    sid = _sid('sharp')
+    st, body = _post(f'{base}/graph/discover?session_id={sid}&pace=0.05')
+    assert st == 202
+    deadline, last, evs = time.time() + 30, -1, []
+    while time.time() < deadline:
+        evs = json.loads(urllib.request.urlopen(f'{base}/graph/events?session_id={sid}').read())
+        if len(evs) == body['queued'] and len(evs) == last:
+            break
+        last = len(evs)
+        time.sleep(0.5)
+    cats = json.loads(urllib.request.urlopen(f'{base}/graph/categories?session_id={sid}').read())
+    assert cats and {'id', 'name', 'keyword'} <= set(cats[0]) and cats[0]['keyword'] == 'radiation', cats
+    org = next(e['node']['id'] for e in evs if e['kind'] == 'node' and e['layer'] == 'lead' and e['node']['id'].startswith('org:'))
+    core = next(e['node']['id'] for e in evs if e['kind'] == 'node' and e['layer'] == 'core')
+    n0 = len(evs)
+    url = f'{base}/graph/sharpen?session_id={sid}'
+    st, r = _post_json(url, {'confirm': [core, 'nope:1'], 'fade': [org], 'category_weights': {'Radiation': 1.7, 'zzz': 0.5}})
+    assert st == 200, st
+    assert r['confirmed'] == [core] and r['faded'] == [org] and r['ignored'] == 2, r
+    assert r['weights'] == {cats[0]['id']: 1.0} and r['published'] == 4, r
+    new = json.loads(urllib.request.urlopen(f'{base}/graph/events?session_id={sid}').read())[n0:]
+    assert [(e['kind'], e.get('state'), e['phase']) for e in new[:2]] == [('node', 'confirmed', 'interview'), ('node', 'faded', 'interview')]
+    assert new[1]['layer'] == 'lead' and new[0]['layer'] == 'core'
+    assert new[2]['kind'] == 'category' and new[2]['weight'] == 1.0 and new[2]['node']['id'] == cats[0]['id']
+    assert new[3]['kind'] == 'status' and '1 confirmed, 1 faded' in new[3]['status']
+    assert _post_json(f'{base}/graph/sharpen?session_id=bad%20id', {})[0] == 422
+
+
 def _main():
     failed = 0
     for name, fn in sorted(globals().items()):

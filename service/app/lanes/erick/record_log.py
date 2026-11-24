@@ -29,6 +29,41 @@ CENTRE_EDGE = {'id': 'edge:hopo:science', 'from': 'company:hopo', 'to': 'person:
                'label': 'science from (Berkeley Lab)'}
 
 
+def _yr(d):
+    return str(d)[:4] if d else None
+
+
+def _edge_why(e, buyer_org_id=None):
+    """(warmth_type, label) for one edge, from edge type/date/org data only."""
+    t, d = e['type'], e.get('date')
+    if t in ('CO_AUTHORED', 'LAB_MATE') and d:
+        return 'research_peer', f'Research peer · co-authored {_yr(d)}'
+    if t == 'ADVISOR_LAB' and d:
+        return 'research_peer', f"Advisor's lab · {_yr(d)}"
+    if t in ('AFFILIATED_AT', 'DUAL_AFFILIATION') and (t == 'DUAL_AFFILIATION' or e['to'] == buyer_org_id):
+        try:
+            dt = datetime.fromisoformat(str(d)).replace(tzinfo=UTC)
+        except (TypeError, ValueError):
+            dt = None
+        if t == 'DUAL_AFFILIATION' or (dt and dt >= START - timedelta(days=730)):
+            when = f" · as of {dt.strftime('%b %Y')}" if dt else ''
+            return 'same_institution', f'Same institution now{when}'
+        if dt:
+            return 'former_colleague', f'Former colleague · {{org}} ({dt.year})'
+    return 'other', e['label']
+
+
+_PRIO = {'research_peer': 0, 'same_institution': 1, 'former_colleague': 2, 'other': 3}
+
+
+def _path_why(edges, buyer_org_id, org_name, verified):
+    best = min((_edge_why(e, buyer_org_id) for e in edges), key=lambda x: _PRIO[x[0]])
+    wtype, label = best[0], best[1].replace('{org}', org_name.split(' (')[0])
+    if verified:
+        label += ' · Moss-verified'
+    return wtype, label
+
+
 def _load(name):
     return json.loads((FIX / name).read_text(encoding='utf-8'))
 
@@ -164,6 +199,7 @@ def build_log(session_id='demo-hopo'):
         d = _dump(e)
         if d['id'] in seen_edges:
             return
+        d['warmth_label'] = _edge_why(d, None)[1].replace('{org}', 'org')
         seen_edges.add(d['id'])
         emit(phase, 'edge', layer, edge=d, evidence=evidence if evidence is not None else _ev(d['evidence_ids'], pool))
 
@@ -245,7 +281,12 @@ def build_log(session_id='demo-hopo'):
         pe = _ev(c['evidence_ids'], pool) if c else []
         for h in p.hops:
             pe += [x for x in _ev(ed[h].evidence_ids, pool) if x not in pe]
-        emit('paths', 'path', 'lead', path=_dump(p), evidence=pe)
+        pd = _dump(p)
+        pd['warmth_type'], pd['warmth_label'] = _path_why([_dump(ed[h]) for h in p.hops], p.buyer_org_id,
+                                                          buyer.name, bool(c))
+        if c:
+            pd['moss_verified'] = True
+        emit('paths', 'path', 'lead', path=pd, evidence=pe)
         if c:
             asof = f" (as of {datetime.fromisoformat(c['current_asof']).strftime('%b %Y')})" if c['current_asof'] else ''
             emit('paths', 'status', 'lead', status=f"Moss verified: {person_by[p.bridge_id].name}, "

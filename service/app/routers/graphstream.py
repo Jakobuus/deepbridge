@@ -9,6 +9,7 @@ from datetime import datetime
 
 from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import StreamingResponse
+from pydantic import BaseModel
 
 from .. import events
 
@@ -193,3 +194,79 @@ async def graph_discover(session_id: str, founder_id: str = 'person:openalex:A50
         raise
     n = len(evs) + 1
     return {'session_id': session_id, 'founder_id': founder_id, 'queued': n, 'pace': pace, 'eta_s': round(n * pace, 1)}
+
+
+_KW = (('radiation', r'radiation|decorporation|actinide'), ('lead', r'lead|heavy metal|cadmium'),
+       ('pet', r'\bpet\b|imaging'), ('gd', r'\bgd\b|gadolinium'))
+
+
+def _keyword(name: str) -> str | None:
+    return next((k for k, rx in _KW if re.search(rx, name.lower())), None)
+
+
+def _categories(session_id: str) -> list[dict]:
+    from ..lanes.erick import record_log
+    nodes = [e['node'] for e in events.events(session_id) if e.get('kind') == 'category' and e.get('node')]
+    if not nodes:
+        nodes = [{'id': c['id'], 'name': c['name']} for c in record_log._load('categories_hopo.json')]
+    seen, out = set(), []
+    for n in nodes:
+        if n['id'] not in seen:
+            seen.add(n['id'])
+            out.append({'id': n['id'], 'name': n['name'], 'keyword': _keyword(n['name'])})
+    return out
+
+
+@router.get('/graph/categories')
+async def graph_categories(session_id: str):
+    if not _SID.fullmatch(session_id):
+        raise HTTPException(422, 'invalid session_id')
+    return _categories(session_id)
+
+
+class Sharpen(BaseModel):
+    confirm: list[str] = []
+    fade: list[str] = []
+    category_weights: dict[str, float] = {}
+    note: str | None = None
+
+
+@router.post('/graph/sharpen')
+async def graph_sharpen(session_id: str, body: Sharpen):
+    if not _SID.fullmatch(session_id):
+        raise HTTPException(422, 'invalid session_id')
+    log = events.events(session_id)
+    layer_of = {}
+    for e in log:
+        n = e.get('node')
+        if n and n.get('id') and e.get('kind') in ('node', 'category'):
+            layer_of.setdefault(n['id'], e['layer'])
+    cats = _categories(session_id)
+    cat_ids = {c['id'] for c in cats}
+    ignored, confirmed, faded, weights = 0, [], [], {}
+    for ids, out in ((body.confirm, confirmed), (body.fade, faded)):
+        for i in dict.fromkeys(ids):
+            if i in layer_of or i in cat_ids:
+                out.append(i)
+            else:
+                ignored += 1
+    for key, w in body.category_weights.items():
+        k = key.strip().lower()
+        hit = next((c for c in cats if c['id'] == key or (c['keyword'] and (
+            c['keyword'] == k or (k == 'gadolinium' and c['keyword'] == 'gd')))), None)
+        if hit:
+            weights[hit['id']] = min(1.0, max(0.0, w))
+        else:
+            ignored += 1
+    n = 0
+    for state, ids in (('confirmed', confirmed), ('faded', faded)):
+        for i in ids:
+            events.publish(session_id, 'interview', 'node', layer_of.get(i, 'core'), node={'id': i}, state=state)
+            n += 1
+    for cid, w in weights.items():
+        events.publish(session_id, 'interview', 'category', 'category', node={'id': cid}, weight=w)
+        n += 1
+    events.publish(session_id, 'interview', 'status', 'core', status=body.note or
+                   f'Interview sharpened the graph: {len(confirmed)} confirmed, {len(faded)} faded')
+    return {'session_id': session_id, 'published': n + 1, 'confirmed': confirmed, 'faded': faded,
+            'weights': weights, 'ignored': ignored}

@@ -110,7 +110,8 @@
    "evidence_ids": [],
    "confidence": 1.0,
    "name_check": "ok",
-   "label": "science from (Berkeley Lab)"
+   "label": "science from (Berkeley Lab)",
+   "warmth_label": "science from (Berkeley Lab)"
   },
   "seq": 10,
   "session_id": "demo-hopo",
@@ -924,7 +925,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -963,7 +965,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1031,7 +1034,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1107,7 +1111,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1147,7 +1152,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1232,7 +1238,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1326,7 +1333,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1366,7 +1374,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1406,7 +1415,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1446,7 +1456,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1522,7 +1533,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1607,7 +1619,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1647,7 +1660,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1686,7 +1700,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1718,7 +1733,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1757,7 +1773,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1825,7 +1842,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1865,7 +1883,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -1940,7 +1959,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2007,7 +2027,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2039,7 +2060,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2114,7 +2136,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2146,7 +2169,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2222,7 +2246,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2262,7 +2287,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2338,7 +2364,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2377,7 +2404,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2409,7 +2437,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2485,7 +2514,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -2579,7 +2609,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -2619,7 +2650,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -2703,7 +2735,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -2735,7 +2768,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -2819,7 +2853,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -2851,7 +2886,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -2944,7 +2980,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -2976,7 +3013,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3061,7 +3099,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3146,7 +3185,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3185,7 +3225,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3261,7 +3302,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3338,7 +3380,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3378,7 +3421,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3462,7 +3506,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3493,7 +3538,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3578,7 +3624,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -3609,7 +3656,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Enables"
+   "label": "Enables",
+   "warmth_label": "Enables"
   },
   "evidence": [
    {
@@ -3652,7 +3700,7 @@
    {
     "id": "evidence:value-map:remm-iv",
     "source_url": "https://remm.hhs.gov/int_contamination.htm",
-    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "quote": "Ca-DTPA and Zn-DTPA can be administered by nebulizer or directly into the blood stream (i.e. intravenously)",
     "source_date": null,
     "observed_at": "2026-11-24T22:20:00+00:00",
     "kind": "web"
@@ -3695,7 +3743,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Delivers"
+   "label": "Delivers",
+   "warmth_label": "Delivers"
   },
   "evidence": [
    {
@@ -3709,7 +3758,7 @@
    {
     "id": "evidence:value-map:remm-iv",
     "source_url": "https://remm.hhs.gov/int_contamination.htm",
-    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "quote": "Ca-DTPA and Zn-DTPA can be administered by nebulizer or directly into the blood stream (i.e. intravenously)",
     "source_date": null,
     "observed_at": "2026-11-24T22:20:00+00:00",
     "kind": "web"
@@ -3771,7 +3820,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -3811,7 +3861,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -3887,7 +3938,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -3963,7 +4015,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4039,7 +4092,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4105,7 +4159,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4163,7 +4218,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4221,7 +4277,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4289,7 +4346,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4329,7 +4387,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4405,7 +4464,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4480,7 +4540,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4539,7 +4600,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4605,7 +4667,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4673,7 +4736,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4748,7 +4812,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4815,7 +4880,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4882,7 +4948,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4958,7 +5025,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -4992,7 +5060,7 @@
    {
     "id": "evidence:value-map:remm-iv",
     "source_url": "https://remm.hhs.gov/int_contamination.htm",
-    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "quote": "Ca-DTPA and Zn-DTPA can be administered by nebulizer or directly into the blood stream (i.e. intravenously)",
     "source_date": null,
     "observed_at": "2026-11-24T22:20:00+00:00",
     "kind": "web"
@@ -5026,13 +5094,14 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
     "id": "evidence:value-map:remm-iv",
     "source_url": "https://remm.hhs.gov/int_contamination.htm",
-    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "quote": "Ca-DTPA and Zn-DTPA can be administered by nebulizer or directly into the blood stream (i.e. intravenously)",
     "source_date": null,
     "observed_at": "2026-11-24T22:20:00+00:00",
     "kind": "web"
@@ -5102,7 +5171,8 @@
    ],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "Addresses"
+   "label": "Addresses",
+   "warmth_label": "Addresses"
   },
   "evidence": [
    {
@@ -5239,7 +5309,7 @@
    {
     "id": "evidence:value-map:remm-iv",
     "source_url": "https://remm.hhs.gov/int_contamination.htm",
-    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "quote": "Ca-DTPA and Zn-DTPA can be administered by nebulizer or directly into the blood stream (i.e. intravenously)",
     "source_date": null,
     "observed_at": "2026-11-24T22:20:00+00:00",
     "kind": "web"
@@ -7981,7 +8051,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2015 [cached OpenAlex]"
+   "label": "co-authored 2015 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -8012,7 +8083,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2015-04-06 [cached OpenAlex]"
+   "label": "affiliated as of 2015-04-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2015-04-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -8045,7 +8117,9 @@
    "kind": "co_author",
    "score": 0.25,
    "weakest_edge_id": "edge:erick:33cb9f1a9d81af150dbb",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -8103,7 +8177,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2015 [cached OpenAlex]"
+   "label": "co-authored 2015 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -8134,7 +8209,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2015-02-27 [cached OpenAlex]"
+   "label": "affiliated as of 2015-02-27 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2015-02-27 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -8167,7 +8243,9 @@
    "kind": "co_author",
    "score": 0.25,
    "weakest_edge_id": "edge:erick:802fd33a37a865fc2197",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -8225,7 +8303,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2015 [cached OpenAlex]"
+   "label": "co-authored 2015 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -8256,7 +8335,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2015-02-27 [cached OpenAlex]"
+   "label": "affiliated as of 2015-02-27 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2015-02-27 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -8289,7 +8369,9 @@
    "kind": "co_author",
    "score": 0.25,
    "weakest_edge_id": "edge:erick:23ac394ad1d209efd5dc",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2015"
   },
   "evidence": [
    {
@@ -8347,7 +8429,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2023 [cached OpenAlex]"
+   "label": "co-authored 2023 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2023"
   },
   "evidence": [
    {
@@ -8378,7 +8461,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2022-05-19 [cached OpenAlex]"
+   "label": "affiliated as of 2022-05-19 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2022-05-19 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -8411,7 +8495,9 @@
    "kind": "co_author",
    "score": 0.59,
    "weakest_edge_id": "edge:erick:1b3a9648635d41966947",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2023"
   },
   "evidence": [
    {
@@ -8469,7 +8555,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2023 [cached OpenAlex]"
+   "label": "co-authored 2023 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2023"
   },
   "evidence": [
    {
@@ -8500,7 +8587,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-02-14 [cached OpenAlex]"
+   "label": "affiliated as of 2026-02-14 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-02-14 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -8533,7 +8621,9 @@
    "kind": "co_author",
    "score": 0.66,
    "weakest_edge_id": "edge:erick:42d8dd9970070e924f90",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2023"
   },
   "evidence": [
    {
@@ -8591,7 +8681,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -8622,7 +8713,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2025-01-21 [cached OpenAlex]"
+   "label": "affiliated as of 2025-01-21 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2025-01-21 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -8655,7 +8747,9 @@
    "kind": "co_author",
    "score": 0.71,
    "weakest_edge_id": "edge:erick:08d6b79b1832a509e693",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -8713,7 +8807,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -8744,7 +8839,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2025-01-21 [cached OpenAlex]"
+   "label": "affiliated as of 2025-01-21 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2025-01-21 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -8777,7 +8873,9 @@
    "kind": "co_author",
    "score": 0.71,
    "weakest_edge_id": "edge:erick:1c42edc8d3accb29a9ad",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -8835,7 +8933,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -8866,7 +8965,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2025-06-04 [cached OpenAlex]"
+   "label": "affiliated as of 2025-06-04 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2025-06-04 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -8899,7 +8999,9 @@
    "kind": "co_author",
    "score": 0.73,
    "weakest_edge_id": "edge:erick:f3d48dac9fdfdbf191bc",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -8957,7 +9059,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -8988,7 +9091,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2025-06-04 [cached OpenAlex]"
+   "label": "affiliated as of 2025-06-04 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2025-06-04 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -9021,7 +9125,9 @@
    "kind": "co_author",
    "score": 0.73,
    "weakest_edge_id": "edge:erick:5f17c33efa98f2017b6b",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9079,7 +9185,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9110,7 +9217,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2025-06-04 [cached OpenAlex]"
+   "label": "affiliated as of 2025-06-04 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2025-06-04 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -9143,7 +9251,9 @@
    "kind": "co_author",
    "score": 0.73,
    "weakest_edge_id": "edge:erick:78c27c66d6a6035f765b",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9201,7 +9311,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9232,7 +9343,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-02-14 [cached OpenAlex]"
+   "label": "affiliated as of 2026-02-14 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-02-14 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -9265,7 +9377,9 @@
    "kind": "co_author",
    "score": 0.73,
    "weakest_edge_id": "edge:erick:e54a33cb6e108cc6b9e9",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9323,7 +9437,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9354,7 +9469,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-10-30 [cached OpenAlex]"
+   "label": "affiliated as of 2026-10-30 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-10-30 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -9387,7 +9503,9 @@
    "kind": "co_author",
    "score": 0.75,
    "weakest_edge_id": "edge:erick:c82daeddf4ec104bf1de",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9445,7 +9563,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9476,7 +9595,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-10-08 [cached OpenAlex]"
+   "label": "affiliated as of 2026-10-08 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-10-08 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -9509,7 +9629,9 @@
    "kind": "co_author",
    "score": 0.75,
    "weakest_edge_id": "edge:erick:08ff3b3af77285125317",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9567,7 +9689,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9598,7 +9721,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-09-14 [cached OpenAlex]"
+   "label": "affiliated as of 2026-09-14 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-09-14 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -9631,7 +9755,9 @@
    "kind": "co_author",
    "score": 0.75,
    "weakest_edge_id": "edge:erick:43395049c576a19aa054",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -9689,7 +9815,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2014 [cached OpenAlex]"
+   "label": "co-authored 2014 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2014"
   },
   "evidence": [
    {
@@ -9720,7 +9847,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2014-11-01 [cached OpenAlex]"
+   "label": "affiliated as of 2014-11-01 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2014-11-01 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -9753,7 +9881,9 @@
    "kind": "co_author",
    "score": 0.95,
    "weakest_edge_id": "edge:erick:bd0e6b01ea7fd5f83c96",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2014"
   },
   "evidence": [
    {
@@ -9811,7 +9941,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -9842,7 +9973,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-04-22 [cached OpenAlex]"
+   "label": "affiliated as of 2016-04-22 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-04-22 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -9875,7 +10007,9 @@
    "kind": "co_author",
    "score": 1.1,
    "weakest_edge_id": "edge:erick:c0bada41b9ca40823f40",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -9933,7 +10067,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2018 [cached OpenAlex]"
+   "label": "co-authored 2018 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2018"
   },
   "evidence": [
    {
@@ -9980,7 +10115,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2018-10-29 [cached OpenAlex]"
+   "label": "affiliated as of 2018-10-29 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2018-10-29 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10013,7 +10149,9 @@
    "kind": "co_author",
    "score": 1.44,
    "weakest_edge_id": "edge:erick:8cd02f997e12a0b02f14",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2018"
   },
   "evidence": [
    {
@@ -10071,7 +10209,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2018 [cached OpenAlex]"
+   "label": "co-authored 2018 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2018"
   },
   "evidence": [
    {
@@ -10102,7 +10241,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2018-10-29 [cached OpenAlex]"
+   "label": "affiliated as of 2018-10-29 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2018-10-29 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10135,7 +10275,9 @@
    "kind": "co_author",
    "score": 1.44,
    "weakest_edge_id": "edge:erick:b4341f83c0cc4ce22a9c",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2018"
   },
   "evidence": [
    {
@@ -10193,7 +10335,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2018 [cached OpenAlex]"
+   "label": "co-authored 2018 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2018"
   },
   "evidence": [
    {
@@ -10224,7 +10367,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2018-10-29 [cached OpenAlex]"
+   "label": "affiliated as of 2018-10-29 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2018-10-29 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10257,7 +10401,9 @@
    "kind": "co_author",
    "score": 1.44,
    "weakest_edge_id": "edge:erick:afc91ed9ad00d67984b9",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2018"
   },
   "evidence": [
    {
@@ -10315,7 +10461,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10346,7 +10493,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10379,7 +10527,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:45f39b4c8fc9a84e92c7",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10437,7 +10587,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10468,7 +10619,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10501,7 +10653,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:4db2016e45d072102c43",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10559,7 +10713,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10590,7 +10745,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10623,7 +10779,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:1621e4d09a5ee99eeb77",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10681,7 +10839,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10712,7 +10871,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10745,7 +10905,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:4840d369ccd68398bbdf",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10803,7 +10965,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10834,7 +10997,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10867,7 +11031,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:2db22763df3e44331964",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10925,7 +11091,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -10956,7 +11123,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -10989,7 +11157,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:e3a2a48e5476ca9101ea",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -11047,7 +11217,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -11078,7 +11249,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -11111,7 +11283,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:7e8c667303fffd9dbe2b",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -11169,7 +11343,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -11200,7 +11375,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -11233,7 +11409,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:9a34bd979c09083019ff",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -11291,7 +11469,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2016 [cached OpenAlex]"
+   "label": "co-authored 2016 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -11322,7 +11501,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2016-02-25 [cached OpenAlex]"
+   "label": "affiliated as of 2016-02-25 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2016-02-25 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -11355,7 +11535,9 @@
    "kind": "co_author",
    "score": 1.58,
    "weakest_edge_id": "edge:erick:7f4d6af085358197808f",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2016"
   },
   "evidence": [
    {
@@ -11413,7 +11595,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11444,7 +11627,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -11477,7 +11661,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:e8e311da4aae5b85c270",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11535,7 +11721,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11566,7 +11753,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -11599,7 +11787,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:328d2a8301e98f7e6952",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11657,7 +11847,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11688,7 +11879,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -11721,7 +11913,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:c8e420a3e81ee436de20",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11779,7 +11973,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11810,7 +12005,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -11843,7 +12039,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:58516a56d8dead3e291f",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11901,7 +12099,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -11932,7 +12131,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -11965,7 +12165,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:d1de9aed201bcb24ce98",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12023,7 +12225,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12054,7 +12257,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -12087,7 +12291,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:7730a11810aa35b68d42",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12145,7 +12351,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12176,7 +12383,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -12209,7 +12417,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:d41a40d4ee9732fce9bd",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12267,7 +12477,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12298,7 +12509,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -12331,7 +12543,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:b42985919d5a6d2962a9",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12389,7 +12603,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12420,7 +12635,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -12453,7 +12669,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:c952bbfa594da4557963",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12511,7 +12729,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12542,7 +12761,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -12575,7 +12795,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:f9ca434eb2fd81aab614",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12633,7 +12855,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2021 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12664,7 +12887,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2021-07-06 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2021-07-06 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -12697,7 +12921,9 @@
    "kind": "co_author",
    "score": 1.9,
    "weakest_edge_id": "edge:erick:d044f6e809208411044e",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2021"
   },
   "evidence": [
    {
@@ -12755,7 +12981,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "co-authored 2025 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -12786,7 +13013,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-10-30 [cached OpenAlex]"
+   "label": "affiliated as of 2026-10-30 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-10-30 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -12819,7 +13047,9 @@
    "kind": "co_author",
    "score": 1.95,
    "weakest_edge_id": "edge:erick:a020c302dbb0d9fe30f2",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2025"
   },
   "evidence": [
    {
@@ -12877,7 +13107,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2020 [cached OpenAlex]"
+   "label": "co-authored 2020 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2020"
   },
   "evidence": [
    {
@@ -12908,7 +13139,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2020-07-07 [cached OpenAlex]"
+   "label": "affiliated as of 2020-07-07 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2020-07-07 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -12941,7 +13173,9 @@
    "kind": "co_author",
    "score": 2.49,
    "weakest_edge_id": "edge:erick:7f1f96d8a38870fa78ff",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2020"
   },
   "evidence": [
    {
@@ -12999,7 +13233,8 @@
    ],
    "confidence": 0.45,
    "name_check": "ok",
-   "label": "co-authored 2018 [cached OpenAlex]"
+   "label": "co-authored 2018 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2018"
   },
   "evidence": [
    {
@@ -13030,7 +13265,8 @@
    ],
    "confidence": 0.45,
    "name_check": "ok",
-   "label": "affiliated as of 2018-10-29 [cached OpenAlex]"
+   "label": "affiliated as of 2018-10-29 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2018-10-29 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -13063,7 +13299,10 @@
    "kind": "co_author",
    "score": 2.74,
    "weakest_edge_id": "edge:erick:75dd97ebfecc2231acb6",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2018 · Moss-verified",
+   "moss_verified": true
   },
   "evidence": [
    {
@@ -13162,7 +13401,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2026 [cached OpenAlex]"
+   "label": "co-authored 2026 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13193,7 +13433,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-02-04 [cached OpenAlex]"
+   "label": "affiliated as of 2026-02-04 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-02-04 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -13226,7 +13467,9 @@
    "kind": "co_author",
    "score": 3.06,
    "weakest_edge_id": "edge:erick:1f9ad2a9bb4c9c8de2ac",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13284,7 +13527,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2026 [cached OpenAlex]"
+   "label": "co-authored 2026 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13315,7 +13559,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-02-04 [cached OpenAlex]"
+   "label": "affiliated as of 2026-02-04 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-02-04 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -13348,7 +13593,9 @@
    "kind": "co_author",
    "score": 3.06,
    "weakest_edge_id": "edge:erick:a8e4ed2d89ae2a152163",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13406,7 +13653,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2026 [cached OpenAlex]"
+   "label": "co-authored 2026 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13437,7 +13685,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-11-20 [cached OpenAlex]"
+   "label": "affiliated as of 2026-11-20 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-11-20 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -13470,7 +13719,9 @@
    "kind": "co_author",
    "score": 3.32,
    "weakest_edge_id": "edge:erick:c2ca7e2be69a2df8d1a6",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13528,7 +13779,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2026 [cached OpenAlex]"
+   "label": "co-authored 2026 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13559,7 +13811,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-11-20 [cached OpenAlex]"
+   "label": "affiliated as of 2026-11-20 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-11-20 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -13592,7 +13845,9 @@
    "kind": "co_author",
    "score": 3.32,
    "weakest_edge_id": "edge:erick:c5179dddb5c6c9a8bdca",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13650,7 +13905,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "co-authored 2026 [cached OpenAlex]"
+   "label": "co-authored 2026 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13681,7 +13937,8 @@
    ],
    "confidence": 0.45,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-11-20 [cached OpenAlex]"
+   "label": "affiliated as of 2026-11-20 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-11-20 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -13714,7 +13971,9 @@
    "kind": "co_author",
    "score": 3.32,
    "weakest_edge_id": "edge:erick:f3bb41f2116857dd8806",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13772,7 +14031,8 @@
    ],
    "confidence": 0.45,
    "name_check": "ok",
-   "label": "co-authored 2026 [cached OpenAlex]"
+   "label": "co-authored 2026 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13803,7 +14063,8 @@
    ],
    "confidence": 0.45,
    "name_check": "ok",
-   "label": "affiliated as of 2026-09-27 [cached OpenAlex]"
+   "label": "affiliated as of 2026-09-27 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-09-27 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -13836,7 +14097,10 @@
    "kind": "co_author",
    "score": 6.24,
    "weakest_edge_id": "edge:erick:411d5517ac9068331a69",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2026 · Moss-verified",
+   "moss_verified": true
   },
   "evidence": [
    {
@@ -13919,7 +14183,8 @@
    ],
    "confidence": 0.45,
    "name_check": "ok",
-   "label": "co-authored 2026 [cached OpenAlex]"
+   "label": "co-authored 2026 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2026"
   },
   "evidence": [
    {
@@ -13950,7 +14215,8 @@
    ],
    "confidence": 0.45,
    "name_check": "ok",
-   "label": "affiliated as of 2026-09-27 [cached OpenAlex]"
+   "label": "affiliated as of 2026-09-27 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-09-27 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -13983,7 +14249,10 @@
    "kind": "co_author",
    "score": 6.24,
    "weakest_edge_id": "edge:erick:c10c9826fa6bf22adf80",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2026 · Moss-verified",
+   "moss_verified": true
   },
   "evidence": [
    {
@@ -14074,7 +14343,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "co-authored 2023 [cached OpenAlex]"
+   "label": "co-authored 2023 [cached OpenAlex]",
+   "warmth_label": "Research peer · co-authored 2023"
   },
   "evidence": [
    {
@@ -14105,7 +14375,8 @@
    ],
    "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "affiliated as of 2026-11-22 [cached OpenAlex]"
+   "label": "affiliated as of 2026-11-22 [cached OpenAlex]",
+   "warmth_label": "affiliated as of 2026-11-22 [cached OpenAlex]"
   },
   "evidence": [
    {
@@ -14138,7 +14409,9 @@
    "kind": "co_author",
    "score": 6.68,
    "weakest_edge_id": "edge:erick:a84a3ae6c274e8da0cad",
-   "why_now_signal_ids": []
+   "why_now_signal_ids": [],
+   "warmth_type": "research_peer",
+   "warmth_label": "Research peer · co-authored 2023"
   },
   "evidence": [
    {
