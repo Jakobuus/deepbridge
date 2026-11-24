@@ -610,6 +610,41 @@ export default function DeepBridgeWorkspace() {
                 />
               )}
 
+              {/* Inside (inferred ICP) + outside (buyers with source chips) under the ring graph: the ICP & Buyers screen,
+                  reused unchanged so the judged ICP and cited buyer list stay visible next to the graph (#148). */}
+              {activeScreen === "leads" && (
+                <section className="mt-10 space-y-4 border-t border-white/10 pt-8">
+                  <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
+                    <h2 className="text-lg font-semibold tracking-tight">Inside &amp; outside</h2>
+                    <span className="text-xs text-muted-foreground">
+                      Inside: the inferred ICP (buyer roles, needs, segments) · Outside: buyer organisations with dated, cited signals
+                    </span>
+                  </div>
+                  <ScreenBuyers
+                    founder={founder}
+                    icp={icp}
+                    orgs={orgs}
+                    signals={signals}
+                    paths={paths}
+                    orgsMap={orgsMap}
+                    evidenceMap={evidenceMap}
+                    replayNotice={replayNotice}
+                    onInspectEvidence={openEvidence}
+                    onInspectPerson={openPerson}
+                    onSelectOrgForPaths={(orgId) => {
+                      setOrgFilterId(orgId);
+                      if (orgId) {
+                        const bestForOrg = paths
+                          .filter((p) => p.buyer_org_id === orgId)
+                          .sort((a, b) => b.score - a.score)[0];
+                        if (bestForOrg) setSelectedPathId(bestForOrg.id);
+                      }
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                  />
+                </section>
+              )}
+
               {activeScreen === "drafts" && (
                 <ScreenDrafts
                   paths={paths}
