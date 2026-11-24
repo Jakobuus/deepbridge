@@ -337,7 +337,7 @@ export function ScreenDrafts({
                           className="text-sm leading-relaxed"
                         />
 
-                        <div className="flex flex-wrap items-center gap-1.5">
+                        <div className={`flex flex-wrap items-center gap-1.5 ${draft.evidence_ids.length ? "" : "hidden"}`}>
                           <span className="mr-1 text-xs text-muted-foreground">Sources</span>
                           {draft.evidence_ids.map((eid) => (
                             <EvidenceChip
