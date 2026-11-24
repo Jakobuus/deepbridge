@@ -548,13 +548,21 @@ export function ScreenLeads({
                         science from
                       </text>
                       <g transform={`translate(${cx}, ${fPos.y})`}>
-                        <circle r={40} fill="url(#founderHalo)" />
-                        <circle r={17} fill="#0b2536" stroke="#38bdf8" strokeWidth={2.5} />
-                        <circle r={5.5} fill="#ffffff" />
-                        <text y={36} textAnchor="middle" className="fill-white font-sans text-[15px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
+                        {/* Graph core: particle orb (Mark) that kicks once per incoming stream event. */}
+                        <foreignObject x={-48} y={-48} width={96} height={96} style={{ overflow: "visible" }}>
+                          <ParticleOrb
+                            size={96}
+                            state={stream.status === "streaming" || stream.status === "connecting" ? "thinking" : "idle"}
+                            pulseKey={stream.count}
+                            pulseStrength={0.12}
+                            count={320}
+                            label="Hannah Weber, HOPO Therapeutics: graph core"
+                          />
+                        </foreignObject>
+                        <text y={58} textAnchor="middle" className="fill-white font-sans text-[15px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
                           {HOPO_DISPLAY.name}
                         </text>
-                        <text y={53} textAnchor="middle" className="fill-sky-200 font-sans text-[12px]" stroke="#020510" strokeWidth={4} paintOrder="stroke">
+                        <text y={75} textAnchor="middle" className="fill-sky-200 font-sans text-[12px]" stroke="#020510" strokeWidth={4} paintOrder="stroke">
                           {HOPO_DISPLAY.company}
                         </text>
                       </g>
