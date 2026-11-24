@@ -42,6 +42,7 @@ bash scripts/demo-reset.sh                      # fixtures restored from HEAD, c
 cd web && npx next start -p 3000                # in a second terminal
 ```
 
+- Flexprice live (keys in `.env`): `demo-reset.sh` also sets both Flexprice wallets back to `DEMO_CREDITS` (default 5). On-camera top-up: `python3 scripts/flexprice_topup.py 5`. First-time setup: `python3 scripts/flexprice_setup.py` (idempotent). `/credits` shows `source` (`flexprice` or `local`) and `dashboard_url`.
 - `DEMO_CREDITS=1 bash scripts/demo-reset.sh` starts with 1 credit, so the 2nd draft shows the 402 credit-gate banner (default stays 5; reset normally afterwards).
 - Commit fixture edits BEFORE resetting: reset restores tracked `fixtures/*.json` from HEAD.
 - `bash scripts/demo-check.sh` and `service/smoke.sh` spend credits and edit memory: reset again afterwards.
@@ -62,3 +63,8 @@ cd web && npx next start -p 3000                # in a second terminal
 - **Wi-Fi down:** stay on cached fixtures; say "cached research replay"; no new-founder lookups.
 - **Case breaks:** switch to `demo-lightmatter` (Lightmatter, Nicholas C. Harris; contacts Saumil Bandyopadhyay, Ryan Hamerly, Dirk Robert Englund).
 - **UI unavailable:** walk the same data at http://127.0.0.1:8000/docs. No messages to real people.
+
+## 6. Band room (multi-agent + human approval, ~30 s clip)
+Run: `scripts/band-demo.sh` (API on :8000; BAND_* in `.env`). Optional `--no-wait` posts up to the approval request only; `--timeout 600` sets the wait.
+Film the Band room (BAND_ROOM_URL) next to the terminal: Planner @Builder (plan) -> Builder posts the Larsen/Bayer draft with cited sources -> Reviewer posts a tick or cross per real copy check -> Security checks privacy and no-send -> Security asks the human. Then reply in the room `@Security approve` (or `reject`). The script calls our `/approve` endpoint (draft status becomes approved, pipeline card moves) and Planner posts "Approved by Jakob -> pipeline updated".
+Honest framing: the agent messages are scripted (no LLM), data and checks are real; nothing is sent to anyone. Re-run needs a reset (`scripts/demo-reset.sh`) so the draft is back to "draft".

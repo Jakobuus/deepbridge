@@ -12,8 +12,8 @@ def main():
     errs = []
     log = json.loads(OUT.read_text(encoding='utf-8'))
     fresh = build_log()
-    if not 60 <= len(log) <= 120:
-        errs.append(f'{len(log)} events, want 60-120')
+    if not 150 <= len(log) <= 400:
+        errs.append(f'{len(log)} events, want 150-400')
     if len(fresh) != len(log):
         errs.append('file is stale vs build_log()')
     if [e['seq'] for e in log] != list(range(1, len(log) + 1)):

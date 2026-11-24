@@ -2,6 +2,8 @@
 import json
 import math
 import os
+import threading
+import time
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -17,14 +19,17 @@ class Flexprice:
         self.base_url = base_url.rstrip('/')
         self.api_key = api_key
         self.customers = {}
-        self.feature_ready = False
+        self.feature_ready = True  # features/meters are created by scripts/flexprice_setup.py
         self.events = {}
+        self.timeout = 3  # never block the demo on Flexprice
+        self.cache = {}  # founder id -> (balance, read at)
+        self.last_usage = 0.0
 
     def request(self, method, path, body=None):
         request = Request(self.base_url + path, method=method,
             data=json.dumps(body).encode() if body is not None else None,
             headers={'x-api-key': self.api_key, 'Content-Type': 'application/json'})
-        with urlopen(request, timeout=10) as response:
+        with urlopen(request, timeout=self.timeout) as response:
             raw = response.read()
             return json.loads(raw) if raw else {}
 
@@ -59,6 +64,17 @@ class Flexprice:
         self.feature_ready = True
 
     def balance(self, founder):
+        hit = self.cache.get(founder.id)
+        if hit and time.monotonic() - hit[1] < 2.5:
+            return hit[0]
+        value = self._balance(founder)
+        # Usage settles asynchronously: right after an event, trust the lower number.
+        if time.monotonic() - self.last_usage < 8 and hit:
+            value = min(value, hit[0])
+        self.cache[founder.id] = (value, time.monotonic())
+        return value
+
+    def _balance(self, founder):
         customer_id = self.customer(founder)
         wallets = self.request('GET', '/customers/' + quote(customer_id, safe='') + '/wallets')
         # Never combine currencies or silently spend from an arbitrary wallet.
@@ -76,14 +92,24 @@ class Flexprice:
             raise ValueError('Invalid Flexprice balance')
         return value
 
-    def usage(self, founder, action):
-        self.ensure_feature()
-        self.request('POST', '/events', {'event_id': str(uuid4()),
-            'event_name': 'path_enriched', 'external_customer_id': founder.id,
-            'properties': {'action': action}, 'source': 'deepbridge'})
+    def usage(self, founder, event_name, action):
+        """Fire-and-forget: a failed send is logged, never raised."""
+        def send():
+            try:
+                self.request('POST', '/events', {'event_id': str(uuid4()),
+                    'event_name': event_name, 'external_customer_id': founder.id,
+                    'properties': {'action': action}, 'source': 'deepbridge'})
+            except Exception as exc:  # HACK: demo never blocks on metering
+                print('flexprice usage event failed:', type(exc).__name__)
+        self.last_usage = time.monotonic()
+        hit = self.cache.get(founder.id)
+        if hit:
+            self.cache[founder.id] = (hit[0] - 1, time.monotonic())
+        threading.Thread(target=send, daemon=True).start()
 
 
 _client = None
+UNREACHABLE = 'local (Flexprice unreachable)'
 
 
 def client():
@@ -96,12 +122,18 @@ def client():
     return _client
 
 
-def _billing(operation):
-    try:
-        return operation()
-    except (URLError, OSError, ValueError, KeyError, TypeError) as exc:
-        # Don't expose provider bodies or credential-bearing request URLs.
-        raise HTTPException(503, 'Billing unavailable; action paused') from exc
+def event_name(action):
+    if action.startswith('contacts:'):
+        return 'leads_enriched'
+    if action.startswith('drafts:'):
+        return 'outreach_sent'
+    return 'graph_queries'
+
+
+def dashboard_url(remote, founder):
+    # No documented customer-page URL: only link when FLEXPRICE_DASHBOARD_URL is set in .env.
+    base = os.getenv('FLEXPRICE_DASHBOARD_URL')
+    return base or None
 
 
 def credits():
@@ -109,8 +141,12 @@ def credits():
         remote = client()
         if remote is None:
             return store.credits.model_copy(update={'source': 'local'}, deep=True)
-        balance = _billing(lambda: remote.balance(store.founder))
-        return Credits(balance=balance, unit='credit', events=list(remote.events.get(store.founder.id, [])), source='flexprice')
+        try:
+            balance = remote.balance(store.founder)
+        except (URLError, OSError, ValueError, KeyError, TypeError):
+            return store.credits.model_copy(update={'source': UNREACHABLE}, deep=True)
+        return Credits(balance=balance, unit='credit', events=list(remote.events.get(store.founder.id, [])),
+                       source='flexprice', dashboard_url=dashboard_url(remote, store.founder))
 
 
 def gate(action, *, draft=False):
@@ -118,21 +154,28 @@ def gate(action, *, draft=False):
     with store.lock:
         remote = client()
         if remote is not None:
-            balance = _billing(lambda: remote.balance(store.founder))
+            try:
+                balance = remote.balance(store.founder)
+            except (URLError, OSError, ValueError, KeyError, TypeError):
+                remote = None  # Flexprice unreachable: fall back to the local counter
+        if remote is not None:
             if balance < 1:
                 remote.events.setdefault(store.founder.id, []).append(
                     CreditEvent(at=now(), action=action, delta=0, blocked=True))
                 store.credit_event(action, 0, True)
                 raise HTTPException(402, 'No credits remaining')
-            _billing(lambda: remote.usage(store.founder, action))
+            remote.usage(store.founder, event_name(action), action)
             remote.events.setdefault(store.founder.id, []).append(
                 CreditEvent(at=now(), action=action, delta=-1, blocked=False))
             # Existing draft handlers still enforce and record their one-credit debit.
             store.credits.balance = balance
-        elif draft:
+            if draft:
+                return
+            store.credit_event(action, -1)
+            return
+        if draft:
             return
         if store.credits.balance < 1:
             store.credit_event(action, 0, True)
             raise HTTPException(402, 'No credits remaining')
-        if not draft:
-            store.credit_event(action, -1)
+        store.credit_event(action, -1)
