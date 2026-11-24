@@ -1,4 +1,8 @@
 from contextlib import asynccontextmanager
+from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).resolve().parents[2] / '.env')  # repo-root .env (gitignored)
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .routers import buyers, contacts, credits, graph, icp, outreach, paths, pipeline, search
