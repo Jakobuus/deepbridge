@@ -18,6 +18,7 @@ from urllib.parse import quote, unquote, urlencode, urljoin, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from pydantic import BaseModel, Field
+from ...openalex import with_key
 
 try:
     import httpx
@@ -80,7 +81,7 @@ def _get(url, *, headers=None, limit=2_000_000, public=False):
             raise SourceError('Source request timed out')
         try:
             if httpx is not None:
-                with httpx.stream('GET', url, headers=request_headers, timeout=remaining,
+                with httpx.stream('GET', with_key(url), headers=request_headers, timeout=remaining,
                                   follow_redirects=False) as response:
                     status, response_headers = response.status_code, response.headers
                     if status == 200:
@@ -95,7 +96,7 @@ def _get(url, *, headers=None, limit=2_000_000, public=False):
             else:
                 opener = build_opener(_NoRedirect())
                 try:
-                    response = opener.open(Request(url, headers=request_headers), timeout=remaining)
+                    response = opener.open(Request(with_key(url), headers=request_headers), timeout=remaining)
                 except HTTPError as exc:
                     response = exc
                 with response:

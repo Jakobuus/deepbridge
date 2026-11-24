@@ -1,242 +1,296 @@
-"""Pull public buyer signals. Run with `python -m app.lanes.jakob.signals`."""
+"""Evidence-backed buyer hypotheses for any researched founder (38 second budget)."""
 import hashlib
 import json
 import logging
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
 from datetime import datetime, timedelta, timezone
-from threading import Lock
+from threading import Lock, get_ident
+from urllib.error import HTTPError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from ...openalex import with_key
 
-from ...models import Evidence, Founder, Org, Signal
+from ...models import Evidence, Founder, Icp, Org, Signal
 from ...store import FIXTURES, store
+from .icp import load_research
 
 LOG = logging.getLogger(__name__)
 CACHE = FIXTURES.parent / 'data' / 'cache' / 'jakob'
-# Verified against the public board API, 2026-11-24. Other employers are skipped.
-JOB_BOARDS = {'org:psiquantum': ('greenhouse', 'psiquantum')}
 _last_request = 0.0
 _request_lock = Lock()
+_STOP = set('a an and are as at be by can could for from hypothesis in into is it may of on or the their these this to with research based need needs improve improving enable enabling advanced advancements technologies technology modeling management systems materials development manufacturing developers'.split())
 
 
-def _get_json(url: str):
-    """Keyless requests, <=4 req/s; raw responses cached by URL and UTC day."""
+def _write(path, data):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(f'.{get_ident()}.tmp')
+    temporary.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')))
+    temporary.replace(path)
+
+
+def _get_json(url: str, deadline: float | None = None):
+    """Keyless requests, <=4 OpenAlex req/s, with raw successful responses cached."""
     global _last_request
+    deadline = deadline if deadline is not None else time.monotonic() + 5
     cache = CACHE / (hashlib.sha256(url.encode()).hexdigest()[:24] + '.json')
     today = datetime.now(timezone.utc).date().isoformat()
     if cache.exists():
         saved = json.loads(cache.read_text())
         if saved['observed_at'].startswith(today):
             return saved['response']
-    with _request_lock:
-        time.sleep(max(0, .26 - (time.monotonic() - _last_request)))
-        _last_request = time.monotonic()
-        with urlopen(Request(with_key(url), headers={'User-Agent': 'DeepBridge-demo/0.1'}), timeout=30) as response:
-            data = json.load(response)
-    CACHE.mkdir(parents=True, exist_ok=True)
-    cache.write_text(json.dumps({'url': url, 'observed_at': datetime.now(timezone.utc).isoformat(),
-                                'response': data}, ensure_ascii=False, separators=(',', ':')))
+    if url.startswith('https://api.openalex.org/'):
+        with _request_lock:
+            pause = max(0, .26 - (time.monotonic() - _last_request))
+            if time.monotonic() + pause >= deadline:
+                raise TimeoutError('Buyer computation deadline reached')
+            time.sleep(pause)
+            _last_request = time.monotonic()
+    remaining = deadline - time.monotonic()
+    if remaining <= 0:
+        raise TimeoutError('Buyer computation deadline reached')
+    with urlopen(Request(with_key(url), headers={'User-Agent': 'DeepBridge-demo/0.1'}),
+                 timeout=min(3, remaining)) as response:
+        if response.status != 200:
+            raise ValueError('Only successful public boards and API responses are usable')
+        data = json.load(response)
+    _write(cache, {'url': url, 'observed_at': datetime.now(timezone.utc).isoformat(), 'response': data})
     return data
 
 
-def _works_url(filters: str, page=1, per_page=1, sort='publication_date:desc') -> str:
-    return 'https://api.openalex.org/works?' + urlencode({
-        'filter': filters, 'sort': sort, 'select': 'id,title,publication_date',
-        'per-page': per_page, 'page': page})
+def _topic_terms(founder: Founder, icp: Icp | None = None) -> list[str]:
+    """Use scientific words from this founder and their evidence-backed ICP needs."""
+    texts = founder.topics + ([n.text for n in icp.needs] if icp else [])
+    words = [w.casefold() for text in texts for w in re.findall(r'[a-zA-Z][a-zA-Z-]{2,}', text)]
+    return list(dict.fromkeys(w for w in words if w not in _STOP))[:32]
 
 
-def _topic_terms(founder: Founder) -> list[str]:
-    if re.search(r'photonic|optical', ' '.join(founder.topics), re.I):
-        return ['photonic', 'photonics', 'optical', 'optics', 'silicon photonics', 'interconnect']
-    # Preserve scientific phrases; generic words like "computing" alone are too broad.
-    return list(dict.fromkeys(part.strip().lower() for topic in founder.topics
-                              for part in re.split(r'\band\b|[,;]', topic, flags=re.I)
-                              if part.strip()))
+def _cached_icp(founder):
+    if founder.id == store.founder.id:
+        return store.icp
+    # Same fingerprint and location as GET /icp. Never start a 180s CLI call here.
+    try:
+        research = load_research(founder.id)
+        fingerprint = hashlib.sha256(json.dumps({'founder': research['founder'],
+            'works': research['works'], 'persona': research['persona']}, sort_keys=True).encode()).hexdigest()
+        path = CACHE / 'icp' / (hashlib.sha256(founder.id.encode()).hexdigest()[:24] + '.json')
+        saved = json.loads(path.read_text())
+        if saved.get('fingerprint') == fingerprint:
+            return Icp.model_validate(saved['icp'])
+    except (OSError, ValueError, KeyError):
+        pass
+    return None
 
 
-def _founder_works(founder: Founder) -> list[str]:
-    if not founder.openalex_id:
-        return []
-    works, page = [], 1
-    while True:
-        data = _get_json(_works_url('author.id:' + founder.openalex_id.rsplit('/', 1)[-1],
-                                    page=page, per_page=200))
-        works.extend(w['id'].rsplit('/', 1)[-1] for w in data['results'])
-        if page * 200 >= data['meta']['count'] or not data['results']:
-            return list(dict.fromkeys(works))
-        page += 1
+def _works_url(filters, **params):
+    return 'https://api.openalex.org/works?' + urlencode({'filter': filters, 'page': 1, **params})
 
 
-def _known_citing_works(work_ids: list[str]) -> list[dict]:
-    """Recheck individual works seeded by existing citation evidence, without search.
+class _Sources:
+    def __init__(self, deadline):
+        self.deadline = deadline
+        self.blocked = False
+        self.errors = []
 
-    Single-entity reads are still available when the keyless search budget is
-    exhausted. Samples are checked for actual references and exact institutions;
-    they establish a lower bound, never a total query count.
-    """
-    seeds = set()
-    for signal in store.signals.values():
-        if signal.type != 'cites_founder':
-            continue
-        for eid in signal.evidence_ids:
-            evidence = store.evidence.get(eid)
-            if evidence:
-                seeds.update(re.findall(r'https://openalex.org/(W[0-9]+)',
-                                        evidence.source_url + ' ' + evidence.quote))
-    verified = []
-    for wid in sorted(seeds - set(work_ids)):
-        url = 'https://api.openalex.org/works/' + wid + '?' + urlencode({
-            'select': 'id,title,publication_date,authorships,referenced_works'})
+    def get(self, url):
+        if self.blocked or time.monotonic() >= self.deadline:
+            return None
         try:
-            work = _get_json(url)
-            references = {ref.rsplit('/', 1)[-1] for ref in work['referenced_works']}
-            if references.intersection(work_ids):
-                work['_source_url'] = url
-                verified.append(work)
+            return _get_json(url, self.deadline)
         except (OSError, ValueError, KeyError) as exc:
-            LOG.warning('Known citation %s unavailable: %s', wid, exc)
-    return verified
+            self.errors.append(str(exc))
+            if isinstance(exc, HTTPError) and exc.code in (401, 403, 429):
+                self.blocked = True  # Shared keyless budget is exhausted; don't hammer it.
+            LOG.warning('Buyer source unavailable: %s', exc)
+            return None
 
 
-def _jobs(provider: str, slug: str) -> list[dict]:
+def _discover(founder, icp, source):
+    """Company affiliations are publication-dated; they do not establish employment."""
+    companies, works = {}, []
+    try:
+        works = load_research(founder.id)['works']
+    except (OSError, ValueError, KeyError):
+        pass
+    author_id = founder.openalex_id.rsplit('/', 1)[-1] if founder.openalex_id else None
+    if author_id:
+        # A bounded sample: 200 top-cited works, not a claim of exhaustive coverage.
+        data = source.get(_works_url('author.id:' + author_id, **{
+            'per-page': 200, 'sort': 'cited_by_count:desc',
+            'select': 'id,title,publication_date,authorships'}))
+        if data:
+            works = list({w['id']: w for w in works + data['results']}.values())
+    coauthors = {}
+    def remember(institution):
+        if institution.get('type') == 'company' and institution.get('id'):
+            companies[institution['id']] = Org(id='org:openalex:' + institution['id'].rsplit('/', 1)[-1],
+                name=institution['display_name'], type='company', is_buyer=False,
+                buyer_score=0, openalex_id=institution['id'])
+    for work in works:
+        for authorship in work.get('authorships', []):
+            author = authorship.get('author') or {}
+            aid = (author.get('id') or '').rsplit('/', 1)[-1]
+            if not aid or aid == author_id:
+                continue
+            coauthors[aid] = True
+            for institution in authorship.get('institutions', []):
+                remember(institution)
+    # Discover company affiliations of coauthors beyond their shared founder paper.
+    for start in range(0, min(len(coauthors), 100), 50):
+        ids = list(coauthors)[start:start + 50]
+        data = source.get('https://api.openalex.org/authors?' + urlencode({
+            'filter': 'openalex_id:' + '|'.join(ids), 'per-page': 50, 'page': 1,
+            'select': 'id,last_known_institutions,affiliations'}))
+        for author in (data or {}).get('results', []):
+            for institution in author.get('last_known_institutions') or []:
+                remember(institution)
+            for affiliation in author.get('affiliations', []):
+                remember(affiliation.get('institution', {}))
+    for industry in (icp.industries[:3] if icp else []):
+        data = source.get('https://api.openalex.org/institutions?' + urlencode({
+            'search': industry.name, 'filter': 'type:company', 'per-page': 10, 'page': 1,
+            'select': 'id,display_name,type'}))
+        for institution in (data or {}).get('results', []):
+            remember(institution)
+    return [o for o in companies.values() if not founder.company or
+            o.name.casefold() != founder.company.casefold()], list(dict.fromkeys(w['id'].rsplit('/', 1)[-1] for w in works))[:100]
+
+
+def _group_counts(orgs, filters, source):
+    """Counts grouped by company across the candidate set, not a sampled ranking."""
+    if not orgs:
+        return {}, None
+    ids = '|'.join(o.openalex_id.rsplit('/', 1)[-1] for o in orgs)
+    url = _works_url('institutions.id:' + ids + ',' + filters,
+                     group_by='institutions.id', **{'per-page': 200})
+    data = source.get(url)
+    allowed = {o.openalex_id for o in orgs}
+    counts = {g['key']: g['count'] for g in (data or {}).get('group_by', []) if g['key'] in allowed}
+    return counts, url if data else None
+
+
+def _slugs(name):
+    name = name.casefold()
+    trimmed = re.sub(r'\b(incorporated|inc|corporation|corp|limited|ltd|llc|company|co)\b\.?', '', name)
+    return list(dict.fromkeys(s for text in (name, trimmed) for s in (
+        re.sub(r'[^a-z0-9]', '', text), re.sub(r'[^a-z0-9]+', '-', text).strip('-')) if s))
+
+
+def _jobs(provider, slug, deadline):
     if provider == 'greenhouse':
-        data = _get_json(f'https://boards-api.greenhouse.io/v1/boards/{slug}/jobs')
+        url = f'https://boards-api.greenhouse.io/v1/boards/{slug}/jobs'
+        data = _get_json(url, deadline)
         return [dict(id=str(j['id']), title=j['title'], url=j['absolute_url'], date=None,
-                     source_url=f'https://boards-api.greenhouse.io/v1/boards/{slug}/jobs/{j["id"]}')
-                for j in data['jobs']]  # updated_at is not a publication date.
+                     source_url=url) for j in data['jobs']]
     if provider == 'ashby':
-        data = _get_json(f'https://api.ashbyhq.com/posting-api/job-board/{slug}')
+        url = f'https://api.ashbyhq.com/posting-api/job-board/{slug}'
+        data = _get_json(url, deadline)
         return [dict(id=j.get('id', j['jobUrl']), title=j['title'], url=j['jobUrl'],
-                     date=j.get('publishedAt')) for j in data['jobs'] if j.get('isListed', True)]
-    if provider == 'lever':
-        data = _get_json(f'https://api.lever.co/v0/postings/{slug}?mode=json')
-        return [dict(id=j['id'], title=j['text'], url=j['hostedUrl'],
-                     date=datetime.fromtimestamp(j['createdAt'] / 1000, timezone.utc).isoformat()
-                     if j.get('createdAt') else None) for j in data]
-    raise ValueError(f'Unknown public job board: {provider}')
+                     source_url=url, date=j.get('publishedAt')) for j in data['jobs'] if j.get('isListed', True)]
+    url = f'https://api.lever.co/v0/postings/{slug}?mode=json'
+    data = _get_json(url, deadline)
+    return [dict(id=j['id'], title=j['text'], url=j['hostedUrl'], source_url=url,
+                 date=datetime.fromtimestamp(j['createdAt'] / 1000, timezone.utc).isoformat()
+                 if j.get('createdAt') else None) for j in data]
+
+
+def _discover_jobs(org, deadline):
+    jobs = {}
+    for provider in ('ashby', 'greenhouse', 'lever'):
+        for slug in _slugs(org.name):
+            if time.monotonic() >= deadline:
+                return list(jobs.values())
+            try:
+                found = _jobs(provider, slug, deadline)
+                jobs.update({j['url']: j for j in found})
+                break  # Retain only boards returning 200 and the expected JSON shape.
+            except (OSError, ValueError, KeyError, TypeError):
+                continue
+    return list(jobs.values())
 
 
 def rank_buyers(founder: Founder, org_ids: list[str]) -> tuple[list[Org], list[Signal]]:
-    """Rank fixture companies other than the founder's company, with public evidence.
+    """Top ten candidates by on-topic works in 12 months, scored with public signals.
 
-    Score (0-100) = min(40, 4 * on-topic papers in [today-90, today])
-      + min(35, 5 * distinct papers citing any founder work, all time)
-      + min(25, 5 * matching currently listed job posts).
-    This is a ranking heuristic, not purchase intent. Missing/failed sources add
-    zero, never an invented claim. Each source is independent. Empty org_ids means
-    all fixture companies. Evidence is registered in the store for /evidence/{id};
-    the CLI persists it together with the ranked demo response.
+    Scores are heuristics: min(40,4*papers_90d) + min(35,5*citing_papers)
+    + min(25,5*job_posts). Citation counts are verified lower bounds over at most
+    100 founder works and 200 citing works; unavailable sources contribute zero.
     """
+    deadline = time.monotonic() + 38
+    source = _Sources(min(deadline, time.monotonic() + 24))
     today = datetime.now(timezone.utc).date()
-    cutoff = (today - timedelta(days=90)).isoformat()
     observed = datetime.now(timezone.utc).isoformat()
-    terms = _topic_terms(founder)
+    icp = _cached_icp(founder)
+    terms = _topic_terms(founder, icp)
+    orgs, works = _discover(founder, icp, source)
+    if not orgs and source.errors:
+        raise RuntimeError('OpenAlex company discovery unavailable: ' + source.errors[0])
+    if org_ids:
+        orgs = [o for o in orgs if o.id in org_ids]
+    # OpenAlex OR limit is 100; cap discovery deterministically before grouping.
+    orgs = sorted(orgs, key=lambda o: o.id)[:100]
+    topic_filter = 'title_and_abstract.search:' + ' OR '.join(terms)
+    date_filter = 'to_publication_date:' + today.isoformat()
+    year_counts, year_url = _group_counts(orgs, 'from_publication_date:' +
+        (today - timedelta(days=365)).isoformat() + ',' + date_filter + ',' + topic_filter, source) if terms else ({}, None)
+    if orgs and terms and year_url is None:
+        raise RuntimeError('OpenAlex annual buyer ranking unavailable; retry shortly')
+    orgs = sorted(orgs, key=lambda o: (-year_counts.get(o.openalex_id, 0), o.name))[:10]
+    recent, recent_url = _group_counts(orgs, 'from_publication_date:' +
+        (today - timedelta(days=90)).isoformat() + ',' + date_filter + ',' + topic_filter, source) if terms else ({}, None)
+    citations = {o.openalex_id: {} for o in orgs}
+    if orgs and works:
+        ids = '|'.join(o.openalex_id.rsplit('/', 1)[-1] for o in orgs)
+        data = source.get(_works_url('institutions.id:' + ids + ',cites:' + '|'.join(works) + ',' + date_filter,
+            **{'per-page': 200, 'sort': 'publication_date:desc', 'select': 'id,title,publication_date,authorships'}))
+        for work in (data or {}).get('results', []):
+            for authorship in work.get('authorships', []):
+                for institution in authorship.get('institutions', []):
+                    if institution['id'] in citations:
+                        citations[institution['id']][work['id']] = work
     signals, evidence, ranked = [], {}, []
+    def add(org, kind, title, url, quote, date=None, suffix=''):
+        digest = hashlib.sha256((founder.id + org.id + kind + url + suffix).encode()).hexdigest()[:20]
+        eid = 'evidence:buyers:' + digest
+        evidence[eid] = Evidence(id=eid, source_url=url, quote=quote, source_date=date,
+            observed_at=observed, kind='job_post' if kind == 'job_post' else 'paper')
+        signals.append(Signal(id='signal:buyers:' + digest, org_id=org.id, type=kind,
+            title=title, date=date, evidence_ids=[eid]))
+    job_results = {}
+    # Network waits run concurrently. Never wait for worker shutdown beyond the budget.
+    executor = ThreadPoolExecutor(max_workers=10)
+    futures = {executor.submit(_discover_jobs, o, deadline): o for o in orgs}
     try:
-        works = _founder_works(founder)
-    except (OSError, ValueError, KeyError) as exc:
-        LOG.warning('Founder works unavailable: %s', exc)
-        works = []
-    known_citations = None
-    candidates = json.loads((FIXTURES / 'orgs.json').read_text())
-    candidates = candidates.get('items', []) if isinstance(candidates, dict) else candidates
-    selected = set(org_ids)
-
-    def add(org, kind, title, source_url, quote, date=None, suffix=''):
-        digest = hashlib.sha256((founder.id + org.id + kind + source_url + suffix).encode()).hexdigest()[:20]
-        eid, sid = f'evidence:buyers:{digest}', f'signal:buyers:{digest}'
-        evidence[eid] = Evidence(id=eid, source_url=source_url, quote=quote,
-                                 source_date=date, observed_at=observed,
-                                 kind='job_post' if kind == 'job_post' else 'paper')
-        signal = Signal(id=sid, org_id=org.id, type=kind, title=title, date=date, evidence_ids=[eid])
-        signals.append(signal)
-        return signal
-
-    for raw in candidates:
-        org = Org.model_validate(raw)
-        if (org.type != 'company' or org.name.casefold() == founder.company.casefold()
-                or (selected and org.id not in selected)):
-            continue
-        recent, citations, job_count = 0, 0, 0
-        institution = org.openalex_id.rsplit('/', 1)[-1] if org.openalex_id else None
-        if institution and terms:
-            url = _works_url(f'institutions.id:{institution},from_publication_date:{cutoff},'
-                             f'to_publication_date:{today},title_and_abstract.search:' + ' OR '.join(terms))
-            try:
-                data = _get_json(url)
-                if data['meta']['count'] and data['results']:
-                    recent = data['meta']['count']
-                    newest = data['results'][0]
-                    signal = add(org, 'paper_90d', f'{recent} on-topic papers since {cutoff} (cached)',
-                                 url, f"meta.count: {recent}", today.isoformat())
-                    # Keep the newest title verbatim in separate, work-level evidence.
-                    title_signal = add(org, 'paper_90d', newest['title'], newest['id'],
-                                       newest['title'], newest['publication_date'], 'newest')
-                    signals.pop()
-                    signal.evidence_ids.extend(title_signal.evidence_ids)
-            except (OSError, ValueError, KeyError) as exc:
-                LOG.warning('%s recent papers unavailable: %s', org.name, exc)
-        if institution and works:
-            # OR counts each citing work once. OpenAlex allows <=100 IDs per OR.
-            citing, citation_urls = {}, []
-            try:
-                for start in range(0, len(works), 100):
-                    page = 1
-                    while True:
-                        url = _works_url(f'institutions.id:{institution},to_publication_date:{today},cites:'
-                                         + '|'.join(works[start:start + 100]), page=page, per_page=200)
-                        data = _get_json(url)
-                        citation_urls.append((url, data['meta']['count']))
-                        citing.update({w['id']: w for w in data['results']})
-                        if page * 200 >= data['meta']['count'] or not data['results']:
-                            break
-                        page += 1
-                citations = len(citing)
-                if citations:
-                    newest = max(citing.values(), key=lambda w: (w['publication_date'], w['id']))
-                    signal = add(org, 'cites_founder',
-                                 f'{citations} distinct papers cite founder works (all time; cached)',
-                                 newest['id'], newest['title'], newest['publication_date'])
-                    for url, count in citation_urls:
-                        proof = add(org, 'cites_founder', 'Citation query', url,
-                                    f'meta.count: {count}', today.isoformat())
-                        signals.pop()
-                        signal.evidence_ids.extend(proof.evidence_ids)
-            except (OSError, ValueError, KeyError) as exc:
-                LOG.warning('%s citations unavailable: %s', org.name, exc)
-                if known_citations is None:
-                    known_citations = _known_citing_works(works)
-                samples = [w for w in known_citations
-                           if w['publication_date'] <= today.isoformat() and any(
-                               i['id'] == org.openalex_id for a in w['authorships']
-                               for i in a.get('institutions', []))]
-                citations = len(samples)
-                if samples:
-                    newest = max(samples, key=lambda w: (w['publication_date'], w['id']))
-                    add(org, 'cites_founder',
-                        f'at least {citations} verified citing papers (query unavailable; cached)',
-                        newest['_source_url'], newest['title'], newest['publication_date'])
-        if org.id in JOB_BOARDS:
-            try:
-                seen = set()
-                for job in _jobs(*JOB_BOARDS[org.id]):
-                    if job['url'] in seen or not any(re.search(r'\b' + re.escape(t) + r'\b',
-                                                               job['title'], re.I) for t in terms):
-                        continue
-                    seen.add(job['url'])
-                    signal = add(org, 'job_post', job['title'] + ' (cached listing)',
-                                 job.get('source_url', job['url']), job['title'], job['date'], job['id'])
-                    if job.get('source_url') and job['source_url'] != job['url']:
-                        posting = add(org, 'job_post', job['title'], job['url'],
-                                      job['title'], job['date'], job['id'])
-                        signals.pop()
-                        signal.evidence_ids.extend(posting.evidence_ids)
-                    job_count += 1
-            except (OSError, ValueError, KeyError) as exc:
-                LOG.warning('%s job board unavailable: %s', org.name, exc)
-        score = min(40, recent * 4) + min(35, citations * 5) + min(25, job_count * 5)
+        for future in as_completed(futures, timeout=max(.001, deadline - time.monotonic())):
+            job_results[futures[future].id] = future.result()
+    except FuturesTimeout:
+        pass
+    finally:
+        executor.shutdown(wait=False, cancel_futures=True)
+    for org in orgs:
+        papers = recent.get(org.openalex_id, 0)
+        if papers and recent_url:
+            add(org, 'paper_90d', f'{papers} on-topic papers in the past 90 days (cached)',
+                recent_url, f"key: {org.openalex_id}; count: {papers}", today.isoformat(), org.id)
+        citing = citations[org.openalex_id]
+        if citing:
+            # Every counted citing work has a retrievable verbatim title as evidence.
+            start = len(signals)
+            for work in citing.values():
+                add(org, 'cites_founder', 'Citation evidence', work['id'], work['title'], work.get('publication_date'))
+            proofs = signals[start:]
+            del signals[start:]
+            newest = max(citing.values(), key=lambda w: w.get('publication_date') or '')
+            signals.append(Signal(id=proofs[0].id, org_id=org.id, type='cites_founder',
+                title=f'At least {len(citing)} papers cite sampled founder works (cached)',
+                date=newest.get('publication_date'), evidence_ids=[s.evidence_ids[0] for s in proofs]))
+        jobs = [j for j in job_results.get(org.id, []) if any(re.search(r'\b' + re.escape(t) + r'\b',
+                j['title'], re.I) for t in terms)]
+        for job in jobs:
+            add(org, 'job_post', job['title'] + ' (cached listing)', job['source_url'],
+                job['title'], job['date'], job['id'])
+        score = min(40, papers * 4) + min(35, len(citing) * 5) + min(25, len(jobs) * 5)
         ranked.append(org.model_copy(update={'buyer_score': score, 'is_buyer': score > 0}))
     with store.lock:
         store.evidence.update(evidence)
@@ -244,27 +298,17 @@ def rank_buyers(founder: Founder, org_ids: list[str]) -> tuple[list[Org], list[S
 
 
 def main():
-    logging.basicConfig(level=logging.WARNING)
+    """Live check without overwriting the instant Lightmatter stage fixture."""
+    import sys
     store.load()
-    orgs, signals = rank_buyers(store.founder, [])
-    eids = {eid for s in signals for eid in s.evidence_ids}
-    payload = {
-        '_meta': {'cached': True, 'observed_at': datetime.now(timezone.utc).isoformat(),
-                  'founder_id': store.founder.id, 'case': store.founder.company,
-                  'score_formula': 'min(40,4*papers_90d)+min(35,5*citing_papers)+min(25,5*job_posts)',
-                  'notes': 'Public API snapshot. Scores are heuristics. Unavailable sources add zero; '
-                           'query-unavailable citation samples establish lower bounds only. Citations are all time; '
-                           'job listing observation does not establish publication date. '
-                           'Publication affiliations do not establish current employment.'},
-        'orgs': [o.model_dump() for o in orgs],
-        'signals': [s.model_dump() for s in signals],
-        'evidence': [store.evidence[eid].model_dump() for eid in sorted(eids)],
-    }
-    (FIXTURES / 'buyers_computed.json').write_text(json.dumps(payload, indent=2, ensure_ascii=False) + '\n')
-    print(f'Live pull: {len(orgs)} companies, {len(signals)} signals, {len(eids)} evidence records')
-    for org in orgs:
-        kinds = [s.type for s in signals if s.org_id == org.id]
-        print(f'{org.name}: score={org.buyer_score:g}; signals={len(kinds)}; {", ".join(sorted(set(kinds)))}')
+    if len(sys.argv) > 1:
+        founder = Founder.model_validate(load_research(sys.argv[1])['founder'])
+    else:
+        founder = store.founder
+    started = time.monotonic()
+    orgs, signals = rank_buyers(founder, [])
+    print(json.dumps({'founder': founder.name, 'seconds': round(time.monotonic() - started, 2),
+        'orgs': [o.model_dump() for o in orgs], 'signals': [s.model_dump() for s in signals]}, indent=2))
 
 
 if __name__ == '__main__':

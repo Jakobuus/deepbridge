@@ -13,6 +13,7 @@ from threading import Lock
 from urllib.error import HTTPError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from ...openalex import with_key
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -64,7 +65,7 @@ def _get(endpoint, params):
     with _REQUEST_LOCK:
         time.sleep(max(0, .26 - (time.monotonic() - _LAST_REQUEST)))
         _LAST_REQUEST = time.monotonic()
-        with urlopen(Request(url, headers={'User-Agent': 'DeepBridge-demo/0.1'}), timeout=20) as response:
+        with urlopen(Request(with_key(url), headers={'User-Agent': 'DeepBridge-demo/0.1'}), timeout=20) as response:
             data = json.load(response)
     _write(path, {'url': url, 'observed_at': datetime.now(timezone.utc).isoformat(), 'response': data})
     return data

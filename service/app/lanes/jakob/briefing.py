@@ -4,6 +4,7 @@ import json
 import logging
 import re
 from dataclasses import dataclass, field
+from pathlib import Path
 from subprocess import TimeoutExpired
 from threading import Lock
 from typing import Callable, Literal
@@ -134,9 +135,35 @@ class SessionConflict(ValueError):
     """The requested session identifier is already in use."""
 
 
+DEMO_SESSION_ID = 'demo-lightmatter'
+_DEMO_FIXTURE = Path(__file__).resolve().parents[4] / 'fixtures' / 'briefing_demo.json'
+
+
+def _load_demo_session() -> Session | None:
+    """Stage-safe session: the cached briefing under a fixed id the voice app can open (?session=demo-lightmatter)."""
+    import json as _json
+    from ... import events as _events
+    try:
+        data = _json.loads(_DEMO_FIXTURE.read_text())
+    except (OSError, ValueError):
+        return None
+    briefing = Briefing.model_validate({**data['briefing'], 'session_id': DEMO_SESSION_ID})
+    session = Session(briefing=briefing)
+    _save_session(session)
+    if not _events.events(DEMO_SESSION_ID):
+        for event in data.get('events', []):
+            payload = {k: v for k, v in event.items() if k not in ('seq', 'at', 'session_id', 'phase', 'kind', 'layer')}
+            _events.publish(DEMO_SESSION_ID, event.get('phase', 'reading'), event.get('kind', 'status'),
+                            event.get('layer', 'core'), **payload)
+    return session
+
+
 def get_session(session_id: str) -> Session | None:
     with _SESSIONS_LOCK:
-        return _SESSIONS.get(session_id)
+        session = _SESSIONS.get(session_id)
+    if session is None and session_id == DEMO_SESSION_ID:
+        session = _load_demo_session()
+    return session
 
 
 def _save_session(session: Session):
