@@ -19,6 +19,15 @@ _LOCKS_GUARD = Lock()
 _DISCOVERY_VERSION = 2
 
 
+def _strip_volatile(x):
+    # observed_at changes on every founder reload and would bust the fingerprint.
+    if isinstance(x, dict):
+        return {k: _strip_volatile(v) for k, v in x.items() if k != 'observed_at'}
+    if isinstance(x, list):
+        return [_strip_volatile(v) for v in x]
+    return x
+
+
 class BuyerDiscoveryResponse(BuyersResponse):
     orgs: list[BuyerOrg]
 
@@ -72,10 +81,21 @@ def buyers(founder_id: str | None = None):
     if not lock.acquire(timeout=1):
         raise HTTPException(503, 'Buyer discovery already running; retry shortly')
     try:
+        # HACK: a hand-curated cache (_meta.pinned) or any non-empty cache is the safety net.
+        old = None
+        if path.exists():
+            try:
+                old = json.loads(path.read_text())
+                if not old.get('orgs'):
+                    old = None
+                elif old.get('_meta', {}).get('pinned'):
+                    return _register(old)
+            except (OSError, ValueError):
+                old = None
         icp, problems = buyer_inputs(founder)
         fingerprint = hashlib.sha256(json.dumps({
             'version': _DISCOVERY_VERSION,
-            'research': research,
+            'research': _strip_volatile(research),
             'icp': icp.model_dump() if icp else None,
             'problems': problems,
         }, sort_keys=True).encode()).hexdigest()
@@ -89,14 +109,21 @@ def buyers(founder_id: str | None = None):
         try:
             orgs, signals = rank_buyers(founder, [], inputs=(icp, problems))
         except RuntimeError as exc:
+            if old:
+                LOG.warning('Recompute failed; serving stale non-empty cache: %s', exc)
+                return _register(old)
             raise HTTPException(503, str(exc)) from exc
+        if not orgs and old:
+            LOG.warning('Recompute empty; serving stale non-empty cache')
+            return _register(old)
         eids = {eid for item in [*orgs, *signals] for eid in item.evidence_ids}
         data = {'_meta': {'cached': True, 'founder_id': selected, 'fingerprint': fingerprint,
                          'notes': 'Heuristic buyer hypotheses; citation counts are lower bounds. '
                                   'Publication affiliations do not establish current employment.'},
                 'orgs': [o.model_dump() for o in orgs], 'signals': [s.model_dump() for s in signals],
                 'evidence': [store.evidence[eid].model_dump() for eid in sorted(eids)]}
-        _write(path, data)
+        if orgs or not path.exists():  # never overwrite a non-empty cache with an empty result
+            _write(path, data)
         return _register(data)
     finally:
         lock.release()
