@@ -1,0 +1,54 @@
+/* DeepBridge Neo-Brutalist + Deep-Space Overrides (on top of Sistine Lucite Onyx) */
+
+:root,
+.dark {
+  --radius: 0.25rem;
+}
+
+/* Neo-brutalist crisp technical grid surface */
+.db-grid-bg {
+  background-color: #090a0d;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Deep-Space Cosmos Canvas — the ONE exception where the Warm-Path Graph drops into deep space */
+.db-cosmos {
+  background-color: #020510;
+  background-image:
+    radial-gradient(ellipse 72% 58% at 50% 45%, rgba(28, 78, 216, 0.22) 0%, rgba(14, 34, 98, 0.12) 42%, rgba(2, 5, 16, 0.96) 100%),
+    radial-gradient(circle at 18% 24%, rgba(56, 189, 248, 0.12) 0%, transparent 36%),
+    radial-gradient(circle at 82% 74%, rgba(99, 102, 241, 0.14) 0%, transparent 40%),
+    linear-gradient(to right, rgba(96, 165, 250, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(96, 165, 250, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+@keyframes db-photon-flow {
+  0% {
+    stroke-dashoffset: 36;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.db-edge-active {
+  stroke-dasharray: 8 4;
+  animation: db-photon-flow 1.2s linear infinite;
+}
+
+@keyframes db-orbit-pulse {
+  0%, 100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.db-pulse-slow {
+  animation: db-orbit-pulse 3.2s ease-in-out infinite;
+}

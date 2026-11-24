@@ -1,0 +1,76 @@
+import { cva, type VariantProps } from "class-variance-authority";
+import type * as React from "react";
+import { type MaterialAxisProps, type MaterialProps, materialSurface, splitAxisProps } from "@/lib/material";
+import { cn } from "@/lib/utils";
+
+/* Variant classes carry BEHAVIOR only; the surface comes from materialSurface. */
+/* The default (shadcn) field: --input is its rim AND, at --input-fill-a, its night fill. Deep night lifted the rim to
+   the border's lightness so the field reads against the deep floor (tokens.css); at the old 30% that fill
+   would lift the field past where the typed text keeps the body floor, so it is a 10% tint now, through
+   --input-fill-a (tokens.css's night role rule; the pale-stone preset, whose night rim is brighter, takes 8%). */
+const textareaVariants = cva("", {
+  variants: {
+    variant: {
+      default: "dark:bg-input/(--input-fill-a) border-input bg-transparent shadow-xs",
+      glass: "",
+    },
+  },
+  defaultVariants: {
+    variant: "glass",
+  },
+});
+
+/* Role: bordered adaptive glass at the small blur tier. */
+const ROLE: MaterialProps = {
+  border: true,
+  size: "sm",
+};
+
+function Textarea({
+  className,
+  variant = "glass",
+  icon,
+  error,
+  ...props
+}: React.ComponentProps<"textarea"> &
+  VariantProps<typeof textareaVariants> &
+  MaterialAxisProps & {
+    /** Leading icon (folded from the glass wrapper). */
+    icon?: React.ReactNode;
+    /** Destructive border + focus ring (folded from the glass wrapper). */
+    error?: boolean;
+  }) {
+  const [axes, rest] = splitAxisProps(props);
+  const m = materialSurface(variant === "default" ? null : ROLE, axes);
+
+  const textarea = (
+    <textarea
+      data-slot="textarea"
+      data-material={m?.["data-material"]}
+      className={cn(
+        m?.className,
+        "placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 dark:focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive flex field-sizing-content min-h-16 w-full rounded-md px-3 py-2 text-base transition-[color,box-shadow] outline-hidden focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+        textareaVariants({
+          variant,
+        }),
+        icon && "pl-10",
+        error && "border-destructive focus-visible:ring-destructive dark:focus-visible:ring-destructive",
+        className,
+      )}
+      {...rest}
+    />
+  );
+
+  if (icon) {
+    return (
+      <div className="relative">
+        <div className="absolute left-3 top-3 text-muted-foreground">{icon}</div>
+        {textarea}
+      </div>
+    );
+  }
+
+  return textarea;
+}
+
+export { Textarea };
