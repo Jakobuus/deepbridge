@@ -1,7 +1,7 @@
 # DeepBridge: shared working rules (every teammate and every agent reads this first)
 
 Hackathon build, HackwithBay 4.0, 24 Nov 2026. Goal: a demo that works on stage at 16:00. Speed over polish.
-Then read `AGENTS.md` (lanes, file ownership, honesty rules) and `contracts/types.ts` (the shared contract).
+Then read **`docs/PLAN.md` (the shared plan)**, `AGENTS.md` (lanes, file ownership, honesty rules) and `contracts/types.ts` (the shared contract).
 
 ## Same information for everyone: commit early and often
 - **Pull before you start anything**: `git pull --rebase origin main` (on your branch: `git rebase origin/main`).
@@ -30,8 +30,7 @@ WhiteMountain/SilverRiver, Erick: RedHarbor/GoldFalcon).
 scope, demo or money go to your human first. Keep messages short: what, where (branch/file/endpoint), what you need.
 
 ## Run
-`bash scripts/demo-reset.sh` (API on :8000 with cached real data) · `bash scripts/demo-check.sh` · backup UI:
-`python3 -m http.server 3001 -d stage` · main UI: `cd web && npm run dev` (:3000).
+`bash scripts/demo-reset.sh` (API on :8000 with cached real data) · `bash scripts/demo-check.sh` · UI (Mark's lane, the only UI): `cd web && npm run dev` (:3000).
 
 ## Clock (PT)
 13:30 real data everywhere · **14:30 feature freeze** · 14:30–15:15 video (≤ 1:30) + backup take · 15:15 submit ·

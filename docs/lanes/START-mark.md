@@ -10,7 +10,7 @@
 - **Live interview = real conversational voice AI** (reacts, can be interrupted), not browser TTS: a Node relay
   `voice/` on :8787 + `voice/client/useLiveVoice.ts` hook for your Next.js app is being built now (`docs/voice.md`).
 - Design: flat neo-brutalism, no shadows, no glass; the graph is the one deep-space view. Please still push
-  `docs/design/DESIGN.md` + `tokens.css` so the backup UI (`stage/`, :3001) and the video match.
+  `docs/design/DESIGN.md` + `tokens.css` so the whole app and the video match.
 - Team decisions pending (with Erick): demo founder (Lightmatter vs seed-stage Opticore / Zaijun Chen) and the
   break-out visual (world map vs deep space).
 **Blocking you:** accept the repo invite https://github.com/Jakobuus/deepbridge/invitations (as WeekendSuperhero), then
