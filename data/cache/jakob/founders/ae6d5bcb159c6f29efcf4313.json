@@ -1,0 +1,4460 @@
+{
+  "founder": {
+    "id": "person:openalex:A5043992375",
+    "name": "Rebecca J. Abergel",
+    "company": "",
+    "openalex_id": "https://openalex.org/A5043992375",
+    "topics": [
+      "Bacterial Genetics and Biotechnology",
+      "Bacillus and Francisella bacterial research",
+      "Iron Metabolism and Disorders",
+      "Escherichia coli research studies",
+      "Bacterial biofilms and quorum sensing"
+    ],
+    "summary": "Research topics inferred from 5 top-cited OpenAlex works. Customer segments are hypotheses, not verified demand.",
+    "evidence_ids": [
+      "evidence:openalex:W2041755598",
+      "evidence:openalex:W2062348077",
+      "evidence:openalex:W2022017052",
+      "evidence:openalex:W2085969778",
+      "evidence:openalex:W2101984559"
+    ]
+  },
+  "works": [
+    {
+      "id": "https://openalex.org/W2041755598",
+      "title": "The pathogen-associated iroA gene cluster mediates bacterial evasion of lipocalin 2",
+      "publication_date": "2006-10-31",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10943",
+          "display_name": "Escherichia coli research studies",
+          "score": 0.8246999979019165,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2404",
+            "display_name": "Microbiology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/24",
+            "display_name": "Immunology and Microbiology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10120",
+          "display_name": "Bacterial Genetics and Biotechnology",
+          "score": 0.1437000036239624,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10593",
+          "display_name": "Bacterial biofilms and quorum sensing",
+          "score": 0.0032999999821186066,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "Numerous": [
+          0
+        ],
+        "bacteria": [
+          1,
+          86,
+          169
+        ],
+        "cope": [
+          2
+        ],
+        "with": [
+          3
+        ],
+        "the": [
+          4,
+          40,
+          64,
+          120,
+          164,
+          175
+        ],
+        "scarcity": [
+          5
+        ],
+        "of": [
+          6,
+          30,
+          73,
+          90,
+          99,
+          114,
+          124,
+          141,
+          157,
+          174
+        ],
+        "iron": [
+          7,
+          26,
+          51
+        ],
+        "in": [
+          8,
+          69,
+          126,
+          189
+        ],
+        "their": [
+          9,
+          31,
+          180,
+          190
+        ],
+        "microenvironment": [
+          10
+        ],
+        "by": [
+          11,
+          57,
+          92,
+          102,
+          137
+        ],
+        "synthesizing": [
+          12
+        ],
+        "small": [
+          13
+        ],
+        "iron-scavenging": [
+          14
+        ],
+        "molecules": [
+          15
+        ],
+        "known": [
+          16
+        ],
+        "as": [
+          17,
+          28
+        ],
+        "siderophores.": [
+          18
+        ],
+        "Mammals": [
+          19
+        ],
+        "have": [
+          20
+        ],
+        "evolved": [
+          21
+        ],
+        "countermeasures": [
+          22
+        ],
+        "to": [
+          23,
+          87,
+          119,
+          135,
+          170
+        ],
+        "block": [
+          24
+        ],
+        "siderophore-mediated": [
+          25
+        ],
+        "acquisition": [
+          27
+        ],
+        "part": [
+          29
+        ],
+        "innate": [
+          32,
+          176
+        ],
+        "immune": [
+          33,
+          177
+        ],
+        "response.": [
+          34
+        ],
+        "Secreted": [
+          35
+        ],
+        "lipocalin": [
+          36
+        ],
+        "2": [
+          37
+        ],
+        "(Lcn2)": [
+          38
+        ],
+        "sequesters": [
+          39
+        ],
+        "Escherichia": [
+          41
+        ],
+        "coli": [
+          42,
+          48,
+          116,
+          143
+        ],
+        "siderophore": [
+          43
+        ],
+        "enterobactin": [
+          44
+        ],
+        "(Ent),": [
+          45
+        ],
+        "preventing": [
+          46
+        ],
+        "E.": [
+          47,
+          58,
+          78,
+          115,
+          142
+        ],
+        "from": [
+          49,
+          55
+        ],
+        "acquiring": [
+          50
+        ],
+        "and": [
+          52,
+          82,
+          110,
+          149,
+          184
+        ],
+        "protecting": [
+          53
+        ],
+        "mammals": [
+          54
+        ],
+        "infection": [
+          56,
+          136
+        ],
+        "coli.": [
+          59
+        ],
+        "Here,": [
+          60
+        ],
+        "we": [
+          61,
+          129
+        ],
+        "show": [
+          62,
+          130
+        ],
+        "that": [
+          63,
+          96,
+          131,
+          150,
+          163
+        ],
+        "iroA": [
+          65,
+          165
+        ],
+        "gene": [
+          66,
+          166
+        ],
+        "cluster,": [
+          67
+        ],
+        "found": [
+          68
+        ],
+        "many": [
+          70
+        ],
+        "pathogenic": [
+          71
+        ],
+        "strains": [
+          72
+        ],
+        "Gram-negative": [
+          74
+        ],
+        "enteric": [
+          75
+        ],
+        "bacteria,": [
+          76
+        ],
+        "including": [
+          77
+        ],
+        "coli,": [
+          79
+        ],
+        "Salmonella": [
+          80
+        ],
+        "spp.,": [
+          81
+        ],
+        "Klebsiella": [
+          83
+        ],
+        "pneumoniae,": [
+          84
+        ],
+        "allows": [
+          85,
+          168
+        ],
+        "evade": [
+          88,
+          171
+        ],
+        "sequestration": [
+          89
+        ],
+        "Ent": [
+          91,
+          100
+        ],
+        "Lcn2.": [
+          93,
+          159
+        ],
+        "We": [
+          94
+        ],
+        "demonstrate": [
+          95
+        ],
+        "C-glucosylated": [
+          97
+        ],
+        "derivatives": [
+          98
+        ],
+        "produced": [
+          101
+        ],
+        "iroA-encoded": [
+          103
+        ],
+        "enzymes": [
+          104
+        ],
+        "do": [
+          105
+        ],
+        "not": [
+          106,
+          145
+        ],
+        "bind": [
+          107
+        ],
+        "purified": [
+          108
+        ],
+        "Lcn2,": [
+          109
+        ],
+        "an": [
+          111,
+          138,
+          186
+        ],
+        "iroA-harboring": [
+          112,
+          139
+        ],
+        "strain": [
+          113,
+          140
+        ],
+        "is": [
+          117
+        ],
+        "insensitive": [
+          118
+        ],
+        "growth": [
+          121
+        ],
+        "inhibitory": [
+          122
+        ],
+        "effects": [
+          123
+        ],
+        "Lcn2": [
+          125
+        ],
+        "vitro.": [
+          127
+        ],
+        "Furthermore,": [
+          128
+        ],
+        "mice": [
+          132
+        ],
+        "rapidly": [
+          133
+        ],
+        "succumb": [
+          134
+        ],
+        "but": [
+          144
+        ],
+        "its": [
+          146
+        ],
+        "wild-type": [
+          147
+        ],
+        "counterpart,": [
+          148
+        ],
+        "this": [
+          151,
+          172
+        ],
+        "increased": [
+          152
+        ],
+        "virulence": [
+          153
+        ],
+        "depends": [
+          154
+        ],
+        "on": [
+          155
+        ],
+        "evasion": [
+          156
+        ],
+        "host": [
+          158
+        ],
+        "Our": [
+          160
+        ],
+        "findings": [
+          161
+        ],
+        "indicate": [
+          162
+        ],
+        "cluster": [
+          167
+        ],
+        "component": [
+          173
+        ],
+        "system,": [
+          178
+        ],
+        "rejuvenating": [
+          179
+        ],
+        "Ent-mediated": [
+          181
+        ],
+        "iron-acquisition": [
+          182
+        ],
+        "pathway": [
+          183
+        ],
+        "playing": [
+          185
+        ],
+        "important": [
+          187
+        ],
+        "role": [
+          188
+        ],
+        "virulence.": [
+          191
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5050241478",
+            "display_name": "Michael Andrew Fischbach",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3079-8247",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3079-8247",
+              "https://orcid.org/0000-0002-9203-4026"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael A. Fischbach",
+          "raw_affiliation_strings": [
+            "*Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115;",
+            "Howard Hughes Medical Institute and Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA 02138;",
+            "Department Of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "*Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115;",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute and Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA 02138;",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I136199984"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department Of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115, USA",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5001339258",
+            "display_name": "Hening Lin",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0255-2701",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0255-2701"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Hening Lin",
+          "raw_affiliation_strings": [
+            "*Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "*Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115;",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5101988001",
+            "display_name": "Lu Zhou",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5464-5176",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5464-5176"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I219193219",
+              "display_name": "Purdue University West Lafayette",
+              "ror": "https://ror.org/02dqehb95",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Lu Zhou",
+          "raw_affiliation_strings": [
+            "Department of Biological Sciences, Purdue University, West Lafayette, IN 47907;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biological Sciences, Purdue University, West Lafayette, IN 47907;",
+              "institution_ids": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Yang Yu",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I219193219",
+              "display_name": "Purdue University West Lafayette",
+              "ror": "https://ror.org/02dqehb95",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Yang Yu",
+          "raw_affiliation_strings": [
+            "Department of Biological Sciences, Purdue University, West Lafayette, IN 47907;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biological Sciences, Purdue University, West Lafayette, IN 47907;",
+              "institution_ids": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5043992375",
+            "display_name": "Rebecca J. Abergel",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3906-8761",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3906-8761"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Rebecca J. Abergel",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, CA 94720;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720;",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5065535610",
+            "display_name": "David R. Liu",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-9943-7557",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9943-7557"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "David R. Liu",
+          "raw_affiliation_strings": [
+            "Howard Hughes Medical Institute and Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA 02138;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute and Department of Chemistry and Chemical Biology, Harvard University, Cambridge, MA 02138;",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5073204417",
+            "display_name": "Kenneth N. Raymond",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6968-9801",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6968-9801"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Kenneth N. Raymond",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, CA 94720;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720;",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5062865415",
+            "display_name": "Barry L. Wanner",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-8703-1517",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8703-1517"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I219193219",
+              "display_name": "Purdue University West Lafayette",
+              "ror": "https://ror.org/02dqehb95",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Barry L. Wanner",
+          "raw_affiliation_strings": [
+            "Department of Biological Sciences, Purdue University, West Lafayette, IN 47907;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Biological Sciences, Purdue University, West Lafayette, IN 47907;",
+              "institution_ids": [
+                "https://openalex.org/I219193219"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5030551505",
+            "display_name": "Roland K. Strong",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1338-2189",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1338-2189"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210089486",
+              "display_name": "Fred Hutch Cancer Center",
+              "ror": "https://ror.org/007ps6h72",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210089486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Roland K. Strong",
+          "raw_affiliation_strings": [
+            "Division of Basic Sciences, Fred Hutchinson Cancer Research Center, Seattle, WA 98109;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Basic Sciences, Fred Hutchinson Cancer Research Center, Seattle, WA 98109;",
+              "institution_ids": [
+                "https://openalex.org/I4210089486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5060579310",
+            "display_name": "Christopher T. Walsh",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0355-1938",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0355-1938"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I136199984",
+              "display_name": "Harvard University",
+              "ror": "https://ror.org/03vek6s52",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Christopher T. Walsh",
+          "raw_affiliation_strings": [
+            "*Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "*Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115;",
+              "institution_ids": [
+                "https://openalex.org/I136199984"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5063227404",
+            "display_name": "Alan A. Aderem",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4031-5499",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4031-5499"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I3148997608",
+              "display_name": "Institute for Systems Biology",
+              "ror": "https://ror.org/02tpgw303",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I3148997608"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Alan Aderem",
+          "raw_affiliation_strings": [
+            "Institute for Systems Biology, Seattle, WA 98103; and"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Institute for Systems Biology, Seattle, WA 98103; and",
+              "institution_ids": [
+                "https://openalex.org/I3148997608"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5027246219",
+            "display_name": "Kelly D. Smith",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-2368-4957",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2368-4957"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I201448701",
+              "display_name": "University of Washington",
+              "ror": "https://ror.org/00cvxb145",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I201448701"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Kelly D. Smith",
+          "raw_affiliation_strings": [
+            "**Department of Pathology, University of Washington, Seattle, WA 98195"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "**Department of Pathology, University of Washington, Seattle, WA 98195",
+              "institution_ids": [
+                "https://openalex.org/I201448701"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2062348077",
+      "title": "Siderophores of Bacillus anthracis, Bacillus cereus, and Bacillus thuringiensis",
+      "publication_date": "2006-07-21",
+      "topics": [
+        {
+          "id": "https://openalex.org/T11515",
+          "display_name": "Bacillus and Francisella bacterial research",
+          "score": 0.9301999807357788,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10120",
+          "display_name": "Bacterial Genetics and Biotechnology",
+          "score": 0.04129999876022339,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10252",
+          "display_name": "Microbial Natural Products and Biosynthesis",
+          "score": 0.016899999231100082,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2402",
+            "display_name": "Applied Microbiology and Biotechnology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/24",
+            "display_name": "Immunology and Microbiology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5054058469",
+            "display_name": "Melissa K. Wilson",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I29606459",
+              "display_name": "University of Mississippi Medical Center",
+              "ror": "https://ror.org/044pcn091",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I29606459",
+                "https://openalex.org/I4210141039"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Melissa K. Wilson",
+          "raw_affiliation_strings": [
+            "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505, USA",
+              "institution_ids": [
+                "https://openalex.org/I29606459"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5043992375",
+            "display_name": "Rebecca J. Abergel",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3906-8761",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3906-8761"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Rebecca J. Abergel",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, CA 94720-1460, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720-1460, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5073204417",
+            "display_name": "Kenneth N. Raymond",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6968-9801",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6968-9801"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Kenneth N. Raymond",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, CA 94720-1460, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720-1460, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5010908259",
+            "display_name": "Jean E. L. Arceneaux",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I29606459",
+              "display_name": "University of Mississippi Medical Center",
+              "ror": "https://ror.org/044pcn091",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I29606459",
+                "https://openalex.org/I4210141039"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jean E.L. Arceneaux",
+          "raw_affiliation_strings": [
+            "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505, USA",
+              "institution_ids": [
+                "https://openalex.org/I29606459"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5026530386",
+            "display_name": "B. R. Byers",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I29606459",
+              "display_name": "University of Mississippi Medical Center",
+              "ror": "https://ror.org/044pcn091",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I29606459",
+                "https://openalex.org/I4210141039"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "B. Rowe Byers",
+          "raw_affiliation_strings": [
+            "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505, USA",
+              "institution_ids": [
+                "https://openalex.org/I29606459"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2022017052",
+      "title": "Anthrax pathogen evades the mammalian immune system through stealth siderophore production",
+      "publication_date": "2006-12-05",
+      "topics": [
+        {
+          "id": "https://openalex.org/T11515",
+          "display_name": "Bacillus and Francisella bacterial research",
+          "score": 0.9789999723434448,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10120",
+          "display_name": "Bacterial Genetics and Biotechnology",
+          "score": 0.006899999920278788,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10452",
+          "display_name": "Iron Metabolism and Disorders",
+          "score": 0.0013000000035390258,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2720",
+            "display_name": "Hematology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "Systemic": [
+          0
+        ],
+        "anthrax,": [
+          1
+        ],
+        "caused": [
+          2
+        ],
+        "by": [
+          3,
+          13,
+          45,
+          92,
+          118,
+          183
+        ],
+        "inhalation": [
+          4
+        ],
+        "or": [
+          5
+        ],
+        "ingestion": [
+          6
+        ],
+        "of": [
+          7,
+          62,
+          78,
+          103,
+          152,
+          168,
+          178,
+          222
+        ],
+        "Bacillus": [
+          8
+        ],
+        "anthracis": [
+          9,
+          43,
+          212
+        ],
+        "spores,": [
+          10
+        ],
+        "is": [
+          11,
+          31,
+          89,
+          101,
+          116,
+          129,
+          185
+        ],
+        "characterized": [
+          12
+        ],
+        "rapid": [
+          14
+        ],
+        "microbial": [
+          15
+        ],
+        "growth": [
+          16
+        ],
+        "stages": [
+          17
+        ],
+        "that": [
+          18,
+          87,
+          100,
+          132,
+          161,
+          175
+        ],
+        "require": [
+          19
+        ],
+        "iron.": [
+          20
+        ],
+        "Tightly": [
+          21
+        ],
+        "bound": [
+          22,
+          91,
+          117
+        ],
+        "and": [
+          23,
+          55,
+          157,
+          192,
+          234
+        ],
+        "highly": [
+          24
+        ],
+        "regulated": [
+          25
+        ],
+        "in": [
+          26,
+          131,
+          145,
+          149,
+          220
+        ],
+        "a": [
+          27,
+          94,
+          146,
+          165,
+          195,
+          217
+        ],
+        "mammalian": [
+          28
+        ],
+        "host,": [
+          29
+        ],
+        "iron": [
+          30,
+          38,
+          155,
+          181
+        ],
+        "scarce": [
+          32
+        ],
+        "during": [
+          33
+        ],
+        "an": [
+          34,
+          104
+        ],
+        "infection.": [
+          35
+        ],
+        "To": [
+          36
+        ],
+        "scavenge": [
+          37
+        ],
+        "from": [
+          39
+        ],
+        "its": [
+          40,
+          113
+        ],
+        "environment,": [
+          41
+        ],
+        "B.": [
+          42,
+          211
+        ],
+        "synthesizes": [
+          44
+        ],
+        "independent": [
+          46
+        ],
+        "pathways": [
+          47
+        ],
+        "two": [
+          48
+        ],
+        "small": [
+          49
+        ],
+        "molecules,": [
+          50
+        ],
+        "the": [
+          51,
+          59,
+          70,
+          79,
+          82,
+          123,
+          135,
+          150,
+          154,
+          158,
+          169,
+          176,
+          223
+        ],
+        "siderophores": [
+          52
+        ],
+        "bacillibactin": [
+          53
+        ],
+        "(BB)": [
+          54
+        ],
+        "petrobactin": [
+          56
+        ],
+        "(PB).": [
+          57
+        ],
+        "Despite": [
+          58
+        ],
+        "great": [
+          60
+        ],
+        "efficiency": [
+          61
+        ],
+        "BB": [
+          63,
+          88,
+          121
+        ],
+        "at": [
+          64
+        ],
+        "chelating": [
+          65,
+          139
+        ],
+        "iron,": [
+          66
+        ],
+        "PB": [
+          67,
+          111,
+          128
+        ],
+        "may": [
+          68,
+          193
+        ],
+        "be": [
+          69,
+          194
+        ],
+        "only": [
+          71
+        ],
+        "siderophore": [
+          72,
+          160,
+          232
+        ],
+        "necessary": [
+          73
+        ],
+        "to": [
+          74,
+          188,
+          205
+        ],
+        "ensure": [
+          75
+        ],
+        "full": [
+          76
+        ],
+        "virulence": [
+          77,
+          221
+        ],
+        "pathogen.": [
+          80
+        ],
+        "In": [
+          81,
+          108
+        ],
+        "present": [
+          83
+        ],
+        "work,": [
+          84
+        ],
+        "we": [
+          85
+        ],
+        "show": [
+          86
+        ],
+        "specifically": [
+          90
+        ],
+        "siderocalin,": [
+          93
+        ],
+        "recently": [
+          95
+        ],
+        "discovered": [
+          96
+        ],
+        "innate": [
+          97,
+          208
+        ],
+        "immune": [
+          98,
+          170,
+          209
+        ],
+        "protein": [
+          99
+        ],
+        "part": [
+          102
+        ],
+        "antibacterial": [
+          105
+        ],
+        "iron-depletion": [
+          106
+        ],
+        "defense.": [
+          107
+        ],
+        "contrast,": [
+          109
+        ],
+        "neither": [
+          110
+        ],
+        "nor": [
+          112
+        ],
+        "ferric": [
+          114
+        ],
+        "complex": [
+          115,
+          156
+        ],
+        "siderocalin.": [
+          119
+        ],
+        "Although": [
+          120
+        ],
+        "incorporates": [
+          122,
+          134
+        ],
+        "common": [
+          124
+        ],
+        "2,3-dihydroxybenzoyl": [
+          125
+        ],
+        "iron-chelating": [
+          126
+        ],
+        "subunit,": [
+          127
+        ],
+        "novel": [
+          130
+        ],
+        "it": [
+          133
+        ],
+        "very": [
+          136
+        ],
+        "unusual": [
+          137
+        ],
+        "3,4-dihydroxybenzoyl": [
+          138
+        ],
+        "subunit.": [
+          140
+        ],
+        "This": [
+          141,
+          225
+        ],
+        "structural": [
+          142
+        ],
+        "variation": [
+          143
+        ],
+        "results": [
+          144,
+          173
+        ],
+        "large": [
+          147
+        ],
+        "change": [
+          148
+        ],
+        "shape": [
+          151
+        ],
+        "both": [
+          153
+        ],
+        "free": [
+          159
+        ],
+        "precludes": [
+          162
+        ],
+        "siderocalin": [
+          163,
+          184
+        ],
+        "binding,": [
+          164
+        ],
+        "stealthy": [
+          166
+        ],
+        "evasion": [
+          167
+        ],
+        "system.": [
+          171
+        ],
+        "Our": [
+          172
+        ],
+        "indicate": [
+          174
+        ],
+        "blockade": [
+          177
+        ],
+        "bacterial": [
+          179,
+          202
+        ],
+        "siderophore-mediated": [
+          180
+        ],
+        "acquisition": [
+          182
+        ],
+        "not": [
+          186
+        ],
+        "restricted": [
+          187
+        ],
+        "enteric": [
+          189
+        ],
+        "pathogenic": [
+          190
+        ],
+        "organisms": [
+          191
+        ],
+        "general": [
+          196
+        ],
+        "defense": [
+          197
+        ],
+        "mechanism": [
+          198
+        ],
+        "against": [
+          199
+        ],
+        "several": [
+          200
+        ],
+        "different": [
+          201
+        ],
+        "species.": [
+          203
+        ],
+        "Significantly,": [
+          204
+        ],
+        "evade": [
+          206
+        ],
+        "this": [
+          207
+        ],
+        "response,": [
+          210
+        ],
+        "produces": [
+          213
+        ],
+        "PB,": [
+          214
+        ],
+        "which": [
+          215
+        ],
+        "plays": [
+          216
+        ],
+        "key": [
+          218
+        ],
+        "role": [
+          219
+        ],
+        "organism.": [
+          224
+        ],
+        "analysis": [
+          226
+        ],
+        "argues": [
+          227
+        ],
+        "for": [
+          228
+        ],
+        "antianthrax": [
+          229
+        ],
+        "strategies": [
+          230
+        ],
+        "targeting": [
+          231
+        ],
+        "synthesis": [
+          233
+        ],
+        "uptake.": [
+          235
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5043992375",
+            "display_name": "Rebecca J. Abergel",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3906-8761",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3906-8761"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Rebecca J. Abergel",
+          "raw_affiliation_strings": [
+            "*Department of Chemistry, University of California, Berkeley, CA 94720-1460;",
+            "Department of Chemistry, University of California - Berkeley, CA 94720-1460, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "*Department of Chemistry, University of California, Berkeley, CA 94720-1460;",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California - Berkeley, CA 94720-1460, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5054058469",
+            "display_name": "Melissa K. Wilson",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I29606459",
+              "display_name": "University of Mississippi Medical Center",
+              "ror": "https://ror.org/044pcn091",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I29606459",
+                "https://openalex.org/I4210141039"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Melissa K. Wilson",
+          "raw_affiliation_strings": [
+            "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505; and"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505; and",
+              "institution_ids": [
+                "https://openalex.org/I29606459"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5010908259",
+            "display_name": "Jean E. L. Arceneaux",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I29606459",
+              "display_name": "University of Mississippi Medical Center",
+              "ror": "https://ror.org/044pcn091",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I29606459",
+                "https://openalex.org/I4210141039"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jean E. L. Arceneaux",
+          "raw_affiliation_strings": [
+            "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505; and"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505; and",
+              "institution_ids": [
+                "https://openalex.org/I29606459"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5071325117",
+            "display_name": "Trisha M. Hoette",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Trisha M. Hoette",
+          "raw_affiliation_strings": [
+            "*Department of Chemistry, University of California, Berkeley, CA 94720-1460;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "*Department of Chemistry, University of California, Berkeley, CA 94720-1460;",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5030551505",
+            "display_name": "Roland K. Strong",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1338-2189",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1338-2189"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4210089486",
+              "display_name": "Fred Hutch Cancer Center",
+              "ror": "https://ror.org/007ps6h72",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I4210089486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Roland K. Strong",
+          "raw_affiliation_strings": [
+            "Division of Basic Sciences, Fred Hutchinson Cancer Research Center, Seattle, WA 98109"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Division of Basic Sciences, Fred Hutchinson Cancer Research Center, Seattle, WA 98109",
+              "institution_ids": [
+                "https://openalex.org/I4210089486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5026530386",
+            "display_name": "B. R. Byers",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I29606459",
+              "display_name": "University of Mississippi Medical Center",
+              "ror": "https://ror.org/044pcn091",
+              "country_code": "US",
+              "type": "healthcare",
+              "lineage": [
+                "https://openalex.org/I29606459",
+                "https://openalex.org/I4210141039"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "B. Rowe Byers",
+          "raw_affiliation_strings": [
+            "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505; and"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Microbiology, University of Mississippi Medical Center, Jackson, MS 39216-4505; and",
+              "institution_ids": [
+                "https://openalex.org/I29606459"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5073204417",
+            "display_name": "Kenneth N. Raymond",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6968-9801",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6968-9801"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Kenneth N. Raymond",
+          "raw_affiliation_strings": [
+            "*Department of Chemistry, University of California, Berkeley, CA 94720-1460;"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "*Department of Chemistry, University of California, Berkeley, CA 94720-1460;",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2085969778",
+      "title": "Siderophore-Mediated Iron Acquisition Systems in Bacillus cereus : Identification of Receptors for Anthrax Virulence-Associated Petrobactin ,",
+      "publication_date": "2009-03-31",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10120",
+          "display_name": "Bacterial Genetics and Biotechnology",
+          "score": 0.8062000274658203,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11515",
+          "display_name": "Bacillus and Francisella bacterial research",
+          "score": 0.08209999650716782,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10452",
+          "display_name": "Iron Metabolism and Disorders",
+          "score": 0.023099999874830246,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2720",
+            "display_name": "Hematology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "During": [
+          0
+        ],
+        "growth": [
+          1
+        ],
+        "under": [
+          2
+        ],
+        "iron": [
+          3,
+          30,
+          54,
+          100
+        ],
+        "limitation,": [
+          4
+        ],
+        "Bacillus": [
+          5,
+          8,
+          15
+        ],
+        "cereus": [
+          6,
+          16,
+          68,
+          248
+        ],
+        "and": [
+          7,
+          26,
+          37,
+          77,
+          92,
+          110,
+          114,
+          142,
+          154,
+          178,
+          182,
+          189,
+          191,
+          213,
+          222
+        ],
+        "anthracis,": [
+          9,
+          51
+        ],
+        "two": [
+          10,
+          22,
+          195
+        ],
+        "human": [
+          11
+        ],
+        "pathogens": [
+          12
+        ],
+        "from": [
+          13,
+          171
+        ],
+        "the": [
+          14,
+          52,
+          93,
+          126,
+          152,
+          155,
+          204,
+          232,
+          236,
+          246
+        ],
+        "group": [
+          17,
+          249
+        ],
+        "of": [
+          18,
+          95,
+          125,
+          148,
+          158,
+          228,
+          235
+        ],
+        "Gram-positive": [
+          19
+        ],
+        "bacteria,": [
+          20
+        ],
+        "secrete": [
+          21
+        ],
+        "siderophores,": [
+          23
+        ],
+        "bacillibactin": [
+          24
+        ],
+        "(BB)": [
+          25
+        ],
+        "petrobactin": [
+          27
+        ],
+        "(PB),": [
+          28
+        ],
+        "for": [
+          29,
+          61,
+          74,
+          176,
+          207
+        ],
+        "acquisition": [
+          31
+        ],
+        "via": [
+          32
+        ],
+        "membrane-associated": [
+          33
+        ],
+        "substrate-binding": [
+          34
+        ],
+        "proteins": [
+          35
+        ],
+        "(SBPs)": [
+          36
+        ],
+        "other": [
+          38
+        ],
+        "ABC": [
+          39
+        ],
+        "transporter": [
+          40,
+          237
+        ],
+        "components.": [
+          41
+        ],
+        "Since": [
+          42
+        ],
+        "PB": [
+          43,
+          87,
+          183,
+          185,
+          196
+        ],
+        "is": [
+          44,
+          69,
+          217
+        ],
+        "associated": [
+          45
+        ],
+        "with": [
+          46,
+          128,
+          165
+        ],
+        "virulence": [
+          47
+        ],
+        "traits": [
+          48
+        ],
+        "in": [
+          49,
+          66,
+          245
+        ],
+        "B.": [
+          50,
+          67,
+          247
+        ],
+        "PB-mediated": [
+          53
+        ],
+        "uptake": [
+          55,
+          84
+        ],
+        "system": [
+          56
+        ],
+        "presents": [
+          57
+        ],
+        "a": [
+          58,
+          243
+        ],
+        "potential": [
+          59
+        ],
+        "target": [
+          60
+        ],
+        "antimicrobial": [
+          62
+        ],
+        "therapies;": [
+          63
+        ],
+        "its": [
+          64
+        ],
+        "characterization": [
+          65,
+          227
+        ],
+        "described": [
+          70
+        ],
+        "here.": [
+          71
+        ],
+        "Separate": [
+          72
+        ],
+        "transporters": [
+          73,
+          174
+        ],
+        "BB,": [
+          75
+        ],
+        "PB,": [
+          76,
+          211
+        ],
+        "several": [
+          78
+        ],
+        "xenosiderophores": [
+          79
+        ],
+        "are": [
+          80,
+          146
+        ],
+        "suggested": [
+          81
+        ],
+        "by": [
+          82
+        ],
+        "(55)Fe-siderophore": [
+          83
+        ],
+        "studies.": [
+          85
+        ],
+        "The": [
+          86,
+          122,
+          136,
+          194,
+          225
+        ],
+        "precursor,": [
+          88
+        ],
+        "3,4-dihydroxybenzoic": [
+          89
+        ],
+        "acid": [
+          90
+        ],
+        "(3,4-DHB),": [
+          91
+        ],
+        "photoproduct": [
+          94
+        ],
+        "FePB": [
+          96
+        ],
+        "(FePB(nu))": [
+          97
+        ],
+        "also": [
+          98
+        ],
+        "mediate": [
+          99
+        ],
+        "delivery": [
+          101
+        ],
+        "into": [
+          102
+        ],
+        "iron-deprived": [
+          103
+        ],
+        "cells.": [
+          104
+        ],
+        "Putative": [
+          105
+        ],
+        "SBPs": [
+          106,
+          127,
+          170,
+          230
+        ],
+        "were": [
+          107,
+          117,
+          132
+        ],
+        "recombinantly": [
+          108
+        ],
+        "expressed,": [
+          109
+        ],
+        "their": [
+          111,
+          129,
+          159
+        ],
+        "ligand": [
+          112
+        ],
+        "specificity": [
+          113
+        ],
+        "binding": [
+          115,
+          156
+        ],
+        "affinity": [
+          116,
+          206
+        ],
+        "assessed": [
+          118
+        ],
+        "using": [
+          119,
+          134
+        ],
+        "fluorescence": [
+          120
+        ],
+        "spectroscopy.": [
+          121
+        ],
+        "noncovalent": [
+          123,
+          149
+        ],
+        "complexes": [
+          124
+        ],
+        "respective": [
+          130,
+          160
+        ],
+        "siderophores": [
+          131,
+          153
+        ],
+        "characterized": [
+          133
+        ],
+        "ESI-MS.": [
+          135
+        ],
+        "differences": [
+          137
+        ],
+        "between": [
+          138,
+          151
+        ],
+        "solution": [
+          139
+        ],
+        "phase": [
+          140,
+          144
+        ],
+        "behavior": [
+          141
+        ],
+        "gas": [
+          143
+        ],
+        "measurements": [
+          145
+        ],
+        "indicative": [
+          147
+        ],
+        "interactions": [
+          150
+        ],
+        "sites": [
+          157
+        ],
+        "SBPs.": [
+          161
+        ],
+        "These": [
+          162
+        ],
+        "studies": [
+          163
+        ],
+        "combined": [
+          164
+        ],
+        "bioinformatics": [
+          166
+        ],
+        "sequence": [
+          167
+        ],
+        "comparison": [
+          168
+        ],
+        "identify": [
+          169
+        ],
+        "five": [
+          172
+        ],
+        "putative": [
+          173
+        ],
+        "specific": [
+          175,
+          218
+        ],
+        "BB": [
+          177
+        ],
+        "enterobactin": [
+          179
+        ],
+        "(FeuA),": [
+          180
+        ],
+        "3,4-DHB": [
+          181
+        ],
+        "(FatB),": [
+          184
+        ],
+        "(FpuA),": [
+          186
+        ],
+        "schizokinen": [
+          187
+        ],
+        "(YfiY),": [
+          188
+        ],
+        "desferrioxamine": [
+          190
+        ],
+        "ferrichrome": [
+          192
+        ],
+        "(YxeB).": [
+          193
+        ],
+        "receptors": [
+          197
+        ],
+        "show": [
+          198
+        ],
+        "different": [
+          199
+        ],
+        "substrate": [
+          200
+        ],
+        "ranges:": [
+          201
+        ],
+        "FatB": [
+          202
+        ],
+        "has": [
+          203
+        ],
+        "highest": [
+          205
+        ],
+        "ferric": [
+          208,
+          223
+        ],
+        "3,4-DHB,": [
+          209
+        ],
+        "iron-free": [
+          210
+        ],
+        "FePB,": [
+          212
+        ],
+        "FePB(nu),": [
+          214
+        ],
+        "whereas": [
+          215
+        ],
+        "FpuA": [
+          216
+        ],
+        "to": [
+          219
+        ],
+        "only": [
+          220
+        ],
+        "apo-": [
+          221
+        ],
+        "PB.": [
+          224
+        ],
+        "biochemical": [
+          226
+        ],
+        "these": [
+          229
+        ],
+        "provides": [
+          231
+        ],
+        "first": [
+          233
+        ],
+        "identification": [
+          234
+        ],
+        "candidates": [
+          238
+        ],
+        "that": [
+          239
+        ],
+        "most": [
+          240
+        ],
+        "likely": [
+          241
+        ],
+        "play": [
+          242
+        ],
+        "role": [
+          244
+        ],
+        "pathogenicity.": [
+          250
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": null,
+            "display_name": "Anna M. Zawadzka",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Anna M. Zawadzka",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, California 94720-1460"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, California 94720-1460",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5043992375",
+            "display_name": "Rebecca J. Abergel",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3906-8761",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3906-8761"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Rebecca J. Abergel",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, California 94720-1460"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, California 94720-1460",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5037103842",
+            "display_name": "Rita V. Nichiporuk",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6917-8147",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6917-8147"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Rita Nichiporuk",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, California 94720-1460"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, California 94720-1460",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5032755306",
+            "display_name": "Ulla N. Andersen",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Ulla N. Andersen",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, California 94720-1460"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, California 94720-1460",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5073204417",
+            "display_name": "Kenneth N. Raymond",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6968-9801",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6968-9801"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Kenneth N. Raymond",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, California 94720-1460"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, California 94720-1460",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2101984559",
+      "title": "BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE DECORPORATION AGENTS 3,4,3-LI(1,2-HOPO) AND 5-LIO(ME-3,2-HOPO)",
+      "publication_date": "2010-08-11",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10973",
+          "display_name": "Radioactive element chemistry and processing",
+          "score": 0.9359999895095825,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1604",
+            "display_name": "Inorganic Chemistry"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/16",
+            "display_name": "Chemistry"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11395",
+          "display_name": "Radiopharmaceutical Chemistry and Applications",
+          "score": 0.05689999833703041,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2741",
+            "display_name": "Radiology, Nuclear Medicine and Imaging"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11359",
+          "display_name": "Effects of Radiation Exposure",
+          "score": 0.0012000000569969416,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2741",
+            "display_name": "Radiology, Nuclear Medicine and Imaging"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/27",
+            "display_name": "Medicine"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/4",
+            "display_name": "Health Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0,
+          121
+        ],
+        "threat": [
+          1
+        ],
+        "of": [
+          2,
+          14,
+          18,
+          24,
+          49,
+          63,
+          83,
+          99,
+          110,
+          124,
+          168,
+          194
+        ],
+        "a": [
+          3,
+          12,
+          42,
+          74
+        ],
+        "dirty": [
+          4
+        ],
+        "bomb": [
+          5
+        ],
+        "or": [
+          6
+        ],
+        "other": [
+          7
+        ],
+        "major": [
+          8,
+          22
+        ],
+        "radiological": [
+          9
+        ],
+        "contamination": [
+          10,
+          26,
+          51
+        ],
+        "presents": [
+          11
+        ],
+        "danger": [
+          13
+        ],
+        "large-scale": [
+          15
+        ],
+        "radiation": [
+          16,
+          38
+        ],
+        "exposure": [
+          17,
+          39
+        ],
+        "the": [
+          19,
+          47,
+          61,
+          79,
+          107,
+          154,
+          165
+        ],
+        "population.": [
+          20
+        ],
+        "Because": [
+          21
+        ],
+        "components": [
+          23
+        ],
+        "such": [
+          25
+        ],
+        "are": [
+          27,
+          52,
+          95,
+          226
+        ],
+        "likely": [
+          28
+        ],
+        "to": [
+          29,
+          60,
+          191
+        ],
+        "be": [
+          30,
+          41,
+          58
+        ],
+        "actinides,": [
+          31
+        ],
+        "actinide": [
+          32,
+          67,
+          113
+        ],
+        "decorporation": [
+          33,
+          114
+        ],
+        "treatments": [
+          34
+        ],
+        "that": [
+          35
+        ],
+        "will": [
+          36
+        ],
+        "reduce": [
+          37
+        ],
+        "must": [
+          40,
+          57
+        ],
+        "priority.": [
+          43
+        ],
+        "Current": [
+          44
+        ],
+        "therapies": [
+          45
+        ],
+        "for": [
+          46,
+          69,
+          131,
+          139,
+          164
+        ],
+        "treatment": [
+          48
+        ],
+        "radionuclide": [
+          50
+        ],
+        "limited": [
+          53
+        ],
+        "and": [
+          54,
+          85,
+          94,
+          102,
+          117,
+          135,
+          172,
+          197
+        ],
+        "extensive": [
+          55
+        ],
+        "efforts": [
+          56
+        ],
+        "dedicated": [
+          59
+        ],
+        "development": [
+          62,
+          109,
+          230
+        ],
+        "therapeutic,": [
+          64
+        ],
+        "orally": [
+          65,
+          206
+        ],
+        "bioavailable,": [
+          66
+        ],
+        "chelators": [
+          68
+        ],
+        "emergency": [
+          70
+        ],
+        "medical": [
+          71
+        ],
+        "use.": [
+          72,
+          234
+        ],
+        "Using": [
+          73
+        ],
+        "biomimetic": [
+          75
+        ],
+        "approach": [
+          76
+        ],
+        "based": [
+          77
+        ],
+        "on": [
+          78,
+          106,
+          227
+        ],
+        "similar": [
+          80
+        ],
+        "biochemical": [
+          81
+        ],
+        "properties": [
+          82
+        ],
+        "plutonium(IV)": [
+          84
+        ],
+        "iron(III),": [
+          86
+        ],
+        "siderophore-inspired": [
+          87
+        ],
+        "multidentate": [
+          88
+        ],
+        "hydroxypyridonate": [
+          89,
+          112
+        ],
+        "ligands": [
+          90,
+          147,
+          199
+        ],
+        "have": [
+          91,
+          128,
+          143
+        ],
+        "been": [
+          92,
+          129,
+          144
+        ],
+        "designed": [
+          93
+        ],
+        "unrivaled": [
+          96
+        ],
+        "in": [
+          97,
+          178,
+          188,
+          203
+        ],
+        "terms": [
+          98
+        ],
+        "actinide-affinity,": [
+          100
+        ],
+        "selectivity,": [
+          101
+        ],
+        "efficiency.": [
+          103
+        ],
+        "A": [
+          104
+        ],
+        "perspective": [
+          105
+        ],
+        "preclinical": [
+          108
+        ],
+        "two": [
+          111
+        ],
+        "agents,": [
+          115
+        ],
+        "3,4,3-LI(1,2-HOPO)": [
+          116
+        ],
+        "5-LIO(Me-3,2-HOPO),": [
+          118
+        ],
+        "is": [
+          119,
+          176
+        ],
+        "presented.": [
+          120
+        ],
+        "chemical": [
+          122
+        ],
+        "syntheses": [
+          123
+        ],
+        "both": [
+          125,
+          198
+        ],
+        "candidate": [
+          126
+        ],
+        "compounds": [
+          127,
+          225
+        ],
+        "optimized": [
+          130
+        ],
+        "scale-up.": [
+          132
+        ],
+        "Baseline": [
+          133
+        ],
+        "preparation": [
+          134
+        ],
+        "analytical": [
+          136
+        ],
+        "methods": [
+          137
+        ],
+        "suitable": [
+          138
+        ],
+        "manufacturing": [
+          140
+        ],
+        "large": [
+          141
+        ],
+        "amounts": [
+          142
+        ],
+        "established.": [
+          145
+        ],
+        "Both": [
+          146,
+          224
+        ],
+        "show": [
+          148
+        ],
+        "much": [
+          149
+        ],
+        "higher": [
+          150
+        ],
+        "actinide-removal": [
+          151
+        ],
+        "efficacy": [
+          152
+        ],
+        "than": [
+          153
+        ],
+        "currently": [
+          155
+        ],
+        "approved": [
+          156
+        ],
+        "agent,": [
+          157
+        ],
+        "diethylenetriaminepentaacetic": [
+          158
+        ],
+        "acid": [
+          159
+        ],
+        "(DTPA),": [
+          160
+        ],
+        "with": [
+          161
+        ],
+        "different": [
+          162,
+          183
+        ],
+        "selectivity": [
+          163
+        ],
+        "tested": [
+          166
+        ],
+        "isotopes": [
+          167
+        ],
+        "plutonium,": [
+          169
+        ],
+        "americium,": [
+          170
+        ],
+        "uranium": [
+          171
+        ],
+        "neptunium.": [
+          173
+        ],
+        "No": [
+          174
+        ],
+        "toxicity": [
+          175
+        ],
+        "observed": [
+          177
+        ],
+        "cells": [
+          179
+        ],
+        "derived": [
+          180
+        ],
+        "from": [
+          181
+        ],
+        "three": [
+          182
+        ],
+        "human": [
+          184
+        ],
+        "tissue": [
+          185
+        ],
+        "sources": [
+          186
+        ],
+        "treated": [
+          187
+        ],
+        "vitro": [
+          189
+        ],
+        "up": [
+          190
+        ],
+        "ligand": [
+          192
+        ],
+        "concentrations": [
+          193
+        ],
+        "1": [
+          195
+        ],
+        "mM,": [
+          196
+        ],
+        "were": [
+          200
+        ],
+        "well": [
+          201
+        ],
+        "tolerated": [
+          202
+        ],
+        "rats": [
+          204
+        ],
+        "when": [
+          205
+        ],
+        "administered": [
+          207
+        ],
+        "daily": [
+          208
+        ],
+        "at": [
+          209
+        ],
+        "high": [
+          210
+        ],
+        "doses": [
+          211
+        ],
+        "(>100": [
+          212
+        ],
+        "micromol": [
+          213
+        ],
+        "kg": [
+          214
+        ],
+        "d)": [
+          215
+        ],
+        "over": [
+          216
+        ],
+        "28": [
+          217
+        ],
+        "d": [
+          218
+        ],
+        "under": [
+          219
+        ],
+        "good": [
+          220
+        ],
+        "laboratory": [
+          221
+        ],
+        "practice": [
+          222
+        ],
+        "guidelines.": [
+          223
+        ],
+        "an": [
+          228
+        ],
+        "accelerated": [
+          229
+        ],
+        "pathway": [
+          231
+        ],
+        "towards": [
+          232
+        ],
+        "clinical": [
+          233
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5043992375",
+            "display_name": "Rebecca J. Abergel",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3906-8761",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3906-8761"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Rebecca J. Abergel",
+          "raw_affiliation_strings": [
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA. rjabergel@lbl.gov",
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA. rjabergel@lbl.gov",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5112016237",
+            "display_name": "Patricia W. Durbin",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Patricia W. Durbin",
+          "raw_affiliation_strings": [
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "Deceased March 5, 2009",
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Deceased March 5, 2009",
+              "institution_ids": []
+            },
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5021944372",
+            "display_name": "Birgitta Kullgren",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Birgitta Kullgren",
+          "raw_affiliation_strings": [
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5031013336",
+            "display_name": "S Ebbe",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Shirley N. Ebbe",
+          "raw_affiliation_strings": [
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5110106559",
+            "display_name": "Jide Xu",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jide Xu",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5015500305",
+            "display_name": "Polly Y. Chang",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-1324-5408",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-1324-5408"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1298353152",
+              "display_name": "SRI International",
+              "ror": "https://ror.org/05s570m15",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I1298353152"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Polly Y. Chang",
+          "raw_affiliation_strings": [
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "SRI International, Menlo Park, CA 94025",
+            "SRI International, Menlo Park, CA 94025; ** Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "** Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "SRI International, Menlo Park, CA 94025",
+              "institution_ids": [
+                "https://openalex.org/I1298353152"
+              ]
+            },
+            {
+              "raw_affiliation_string": "SRI International, Menlo Park, CA 94025; ** Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I1298353152",
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "** Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5109538374",
+            "display_name": "Deborah I. Bunin",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1298353152",
+              "display_name": "SRI International",
+              "ror": "https://ror.org/05s570m15",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I1298353152"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Deborah I. Bunin",
+          "raw_affiliation_strings": [
+            "SRI International, Menlo Park, CA 94025",
+            "SRI International, Menlo Park, CA 94025; ** Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "** Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "SRI International, Menlo Park, CA 94025",
+              "institution_ids": [
+                "https://openalex.org/I1298353152"
+              ]
+            },
+            {
+              "raw_affiliation_string": "SRI International, Menlo Park, CA 94025; ** Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I1298353152",
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "** Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5076305656",
+            "display_name": "Eleanor A. Blakely",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4779-7021",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4779-7021"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Eleanor A. Blakely",
+          "raw_affiliation_strings": [
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5111724588",
+            "display_name": "Kathleen A. Bjornstad",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Kathleen A. Bjornstad",
+          "raw_affiliation_strings": [
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5112360110",
+            "display_name": "Chris J. Rosen",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Chris J. Rosen",
+          "raw_affiliation_strings": [
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5037193921",
+            "display_name": "David K. Shuh",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3104-3260",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3104-3260"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "David K. Shuh",
+          "raw_affiliation_strings": [
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5073204417",
+            "display_name": "Kenneth N. Raymond",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-6968-9801",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-6968-9801"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Kenneth N. Raymond",
+          "raw_affiliation_strings": [
+            "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+            "Department of Chemistry, University of California, Berkeley, CA 94720",
+            "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Chemical Sciences Division, Glenn T. Seaborg Center, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Life Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence:openalex:W2041755598",
+      "source_url": "https://openalex.org/W2041755598",
+      "quote": "The pathogen-associated iroA gene cluster mediates bacterial evasion of lipocalin 2",
+      "source_date": "2006-10-31",
+      "observed_at": "2026-11-24T21:10:18.739131+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2062348077",
+      "source_url": "https://openalex.org/W2062348077",
+      "quote": "Siderophores of Bacillus anthracis, Bacillus cereus, and Bacillus thuringiensis",
+      "source_date": "2006-07-21",
+      "observed_at": "2026-11-24T21:10:18.739174+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2022017052",
+      "source_url": "https://openalex.org/W2022017052",
+      "quote": "Anthrax pathogen evades the mammalian immune system through stealth siderophore production",
+      "source_date": "2006-12-05",
+      "observed_at": "2026-11-24T21:10:18.739179+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2085969778",
+      "source_url": "https://openalex.org/W2085969778",
+      "quote": "Siderophore-Mediated Iron Acquisition Systems in Bacillus cereus : Identification of Receptors for Anthrax Virulence-Associated Petrobactin ,",
+      "source_date": "2009-03-31",
+      "observed_at": "2026-11-24T21:10:18.739183+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2101984559",
+      "source_url": "https://openalex.org/W2101984559",
+      "quote": "BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE DECORPORATION AGENTS 3,4,3-LI(1,2-HOPO) AND 5-LIO(ME-3,2-HOPO)",
+      "source_date": "2010-08-11",
+      "observed_at": "2026-11-24T21:10:18.739185+00:00",
+      "kind": "paper"
+    }
+  ],
+  "persona": null
+}

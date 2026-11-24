@@ -141,3 +141,34 @@ Input `10.1103/PhysRevLett.87.037901`. Incomplete in 36.281s.
 | 1 | Dieter Jaksch | d-fine (Germany) | <https://openalex.org/W2042458092> | Dipole Blockade and Quantum Information Processing in Mesoscopic Atomic Ensembles |
 
 <!-- /founder-run c8c48ea437803b00 -->
+
+<!-- founder-run da2581c5abbeb1cc -->
+## Rebecca J. Abergel
+
+Input `Rebecca J. Abergel`. Incomplete in 70.399s.
+
+| Request | Status | Time | Counts and notes |
+| --- | --- | ---: | --- |
+| `POST /intake` | 200 | 0.630s | Rebecca J. Abergel (person:openalex:A5043992375), 5 topics, 5 evidence ids |
+| `GET /icp` | 200 | 14.220s | 3 buyer roles, 3 industries, 3 needs, 3 expansion segments |
+| `GET /buyers` | 200 | 11.226s | 10 orgs, 13 signals |
+| `GET /graph` | 200 | 15.122s | 1022 people, 274 orgs, 1784 edges, 954 evidence · computed from cached OpenAlex responses · PhD advisor not independently resolved; no advisor relationship inferred. |
+| `GET /paths` | 200 | 0.071s | 12 paths · computed from cached OpenAlex responses; scores are heuristics · PhD advisor not independently resolved; no advisor relationship inferred. |
+| `GET /value-map` | 200 | 28.954s | 15 value nodes, 16 edges, 9 evidence · generated from founder research |
+| `GET /categories` | 404 | 0.001s | Founder not in cached demo |
+| `GET /knowledge-graph` | 200 | 0.171s | core has 15 value nodes, 16 edges, 1 categories, leads have 1022 people, 274 orgs, 1784 edges, 12 paths, 968 evidence · computed from cached OpenAlex responses; scores are heuristics · PhD advisor not independently resolved; no advisor relationship inferred. · Buyer categories unavailable. Showing All buyers. |
+| `POST /drafts (path:erick:c0c9b39aec13bc62be1a)` | 404 | 0.002s | Founder not in cached demo |
+| `POST /drafts (path:erick:a28bddc4634f28ee5d9e)` | 404 | 0.001s | Founder not in cached demo |
+| `POST /drafts (path:erick:cb0d5043358f6aafbf4a)` | 404 | 0.001s | Founder not in cached demo |
+
+### Top paths
+
+| Rank | Bridge | Buyer organization | Evidence URL | Source quote |
+| ---: | --- | --- | --- | --- |
+| 1 | J Wang | Canadian Light Source (Canada) | <https://openalex.org/W7129601963> | Correlative X-ray spectromicroscopy for quantitative cerium speciation in mammalian cells |
+| 2 | Daniel K. Unruh | Beckman Coulter (United States) | <https://openalex.org/W7213225496> | CSD 2473065: Experimental Crystal Structure Determination |
+| 3 | Stosh A. Kozimor | Canadian Light Source (Canada) | <https://openalex.org/W7213225496> | CSD 2473065: Experimental Crystal Structure Determination |
+| 4 | Corwin H. Booth | Canadian Light Source (Canada) | <https://openalex.org/W7134899851> | Spectroscopic Characterization of Tetravalent Berkelium |
+| 5 | Wayne W. Lukens | Canadian Light Source (Canada) | <https://openalex.org/W7134899851> | Spectroscopic Characterization of Tetravalent Berkelium |
+
+<!-- /founder-run da2581c5abbeb1cc -->

@@ -136,24 +136,26 @@ class SessionConflict(ValueError):
 
 
 DEMO_SESSION_ID = 'demo-lightmatter'
-_DEMO_FIXTURE = Path(__file__).resolve().parents[4] / 'fixtures' / 'briefing_demo.json'
+_FIXTURES = Path(__file__).resolve().parents[4] / 'fixtures'
+DEMO_SESSIONS = {'demo-lightmatter': 'briefing_demo.json', 'demo-hopo': 'briefing_demo_hopo.json'}
+_DEMO_FIXTURE = _FIXTURES / 'briefing_demo.json'
 
 
-def _load_demo_session() -> Session | None:
+def _load_demo_session(session_id: str = DEMO_SESSION_ID) -> Session | None:
     """Stage-safe session: the cached briefing under a fixed id the voice app can open (?session=demo-lightmatter)."""
     import json as _json
     from ... import events as _events
     try:
-        data = _json.loads(_DEMO_FIXTURE.read_text())
+        data = _json.loads((_FIXTURES / DEMO_SESSIONS[session_id]).read_text())
     except (OSError, ValueError):
         return None
-    briefing = Briefing.model_validate({**data['briefing'], 'session_id': DEMO_SESSION_ID})
+    briefing = Briefing.model_validate({**data['briefing'], 'session_id': session_id})
     session = Session(briefing=briefing)
     _save_session(session)
-    if not _events.events(DEMO_SESSION_ID):
+    if not _events.events(session_id):
         for event in data.get('events', []):
             payload = {k: v for k, v in event.items() if k not in ('seq', 'at', 'session_id', 'phase', 'kind', 'layer')}
-            _events.publish(DEMO_SESSION_ID, event.get('phase', 'reading'), event.get('kind', 'status'),
+            _events.publish(session_id, event.get('phase', 'reading'), event.get('kind', 'status'),
                             event.get('layer', 'core'), **payload)
     return session
 
@@ -161,8 +163,8 @@ def _load_demo_session() -> Session | None:
 def get_session(session_id: str) -> Session | None:
     with _SESSIONS_LOCK:
         session = _SESSIONS.get(session_id)
-    if session is None and session_id == DEMO_SESSION_ID:
-        session = _load_demo_session()
+    if session is None and session_id in DEMO_SESSIONS:
+        session = _load_demo_session(session_id)
     return session
 
 
