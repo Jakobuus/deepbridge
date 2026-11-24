@@ -1,7 +1,11 @@
 "use strict";
 
 const $ = (selector, parent = document) => parent.querySelector(selector);
-const API = (new URLSearchParams(location.search).get("api") || "http://localhost:8000").replace(/\/+$/, "");
+const API_ALLOWED = ["http://localhost:8000", "http://127.0.0.1:8000", "http://localhost:8010", "http://127.0.0.1:8010"];
+const API = (() => {
+  const requested = (new URLSearchParams(location.search).get("api") || "").replace(/\/+$/, "");
+  return API_ALLOWED.includes(requested) ? requested : API_ALLOWED[0];
+})();
 const stages = ["found", "path_checked", "draft", "approved", "intro_asked", "intro_made", "pilot"];
 const stageLabels = ["Found", "Path checked", "Draft", "Approved", "Intro asked", "Intro made", "Pilot"];
 const demoId = "person:openalex:A5102978866";
