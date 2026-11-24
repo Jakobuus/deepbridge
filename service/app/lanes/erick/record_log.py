@@ -22,6 +22,13 @@ SPAN = 300  # seconds covered by the recording
 START = datetime(2026, 11, 24, 21, 0, 0, tzinfo=UTC)  # fixed so re-runs do not change the file
 
 
+CENTRE_NODE = {'id': 'company:hopo', 'name': 'Hannah Weber · HOPO Therapeutics', 'type': 'company',
+               'is_buyer': False, 'buyer_score': None, 'openalex_id': None}
+CENTRE_EDGE = {'id': 'edge:hopo:science', 'from': 'company:hopo', 'to': 'person:openalex:A5043992375',
+               'type': 'PERSONAL', 'date': None, 'evidence_ids': [], 'confidence': 1.0, 'name_check': 'ok',
+               'label': 'science from (Berkeley Lab)'}
+
+
 def _load(name):
     return json.loads((FIX / name).read_text(encoding='utf-8'))
 
@@ -134,6 +141,12 @@ def build_log(session_id='demo-hopo'):
     warnings = []
     build_log.final = final
 
+    import re
+    def _rank(c):
+        n = c['name'].lower()
+        return 0 if re.search(r'radiation|decorporation|actinide', n) else 1 if re.search(r'lead|heavy metal|cadmium', n) else 2
+    cats = sorted(cats, key=_rank)  # stable: radiation, then lead/heavy-metal, then the rest
+
     out, seen = [], set()
 
     def emit(phase, kind, layer, **kw):
@@ -161,12 +174,17 @@ def build_log(session_id='demo-hopo'):
         return {k: v for k, v in _dump(o).items() if k in Org.model_fields}
 
     # 1 reading
-    emit('reading', 'status', 'core', status='Reading Berkeley Lab papers (Abergel group)…' if session_id == 'demo-hopo'
+    hero = session_id == 'demo-hopo'
+    if hero:
+        node('reading', 'core', dict(CENTRE_NODE))
+    emit('reading', 'status', 'core', status="Reading HOPO Therapeutics' science (Berkeley Lab papers)…" if hero
          else f"Reading papers and site: {brief['founder'].get('name', 'founder')}…")
     for s in brief['sources']:
         verb = 'Reading paper' if s['kind'] == 'paper' else f"Reading {s['kind']}"
         emit('reading', 'status', 'core', status=f"{verb}: {s['title'][:110]}")
     node('reading', 'core', person_dict(person_by[founder]))
+    if hero:
+        edge('reading', 'core', dict(CENTRE_EDGE), evidence=[])
 
     # 2 interview: value map in kind order, edges right after both ends exist
     vedges = list(vm['edges'])
@@ -248,13 +266,22 @@ def founder_sessions():
     return {FOUNDER: 'demo-hopo', _load('founder.json')['id']: 'demo-lightmatter'}
 
 
-def discovery_events(founder_id=FOUNDER):
+def discovery_events(founder_id=FOUNDER, with_centre=False):
     """Only the discovery + paths phase events (no seq/at/session_id), same order as the recorded log."""
     sid = founder_sessions().get(founder_id)
     if sid is None:
         raise KeyError(founder_id)
-    return [{k: v for k, v in e.items() if k not in ('seq', 'at', 'session_id')}
-            for e in build_log(sid) if e['phase'] in ('discovery', 'paths')]
+    log = build_log(sid)
+    evs = [{k: v for k, v in e.items() if k not in ('seq', 'at', 'session_id')}
+           for e in log if e['phase'] in ('discovery', 'paths')]
+    if with_centre and sid == 'demo-hopo':
+        pre = [{k: v for k, v in e.items() if k not in ('seq', 'at', 'session_id')} for e in log
+               if e['phase'] == 'reading' and (e.get('node') or e.get('edge') or {}).get('id') in
+               ('company:hopo', 'edge:hopo:science')]
+        for e in pre:
+            e['phase'] = 'discovery'
+        evs = [e for e in pre if e.get('node')] + [e for e in pre if e.get('edge')] + evs
+    return evs
 
 
 if __name__ == '__main__':

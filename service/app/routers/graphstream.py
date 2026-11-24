@@ -184,7 +184,8 @@ async def graph_discover(session_id: str, founder_id: str = 'person:openalex:A50
         await asyncio.to_thread(events.ensure_recorded, session_id)
         if any(e.get('phase') in ('discovery', 'paths') for e in events.events(session_id)):
             raise HTTPException(409, 'already has discovery events')
-        evs = await asyncio.to_thread(record_log.discovery_events, founder_id)
+        has_centre = any((e.get('node') or {}).get('id') == 'company:hopo' for e in events.events(session_id))
+        evs = await asyncio.to_thread(record_log.discovery_events, founder_id, not has_centre)
         threading.Thread(target=_run_discovery, args=(session_id, evs, pace), daemon=True).start()
     except BaseException:
         with _running_lock:

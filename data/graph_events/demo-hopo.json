@@ -1,9 +1,16 @@
 [
  {
   "phase": "reading",
-  "kind": "status",
+  "kind": "node",
   "layer": "core",
-  "status": "Reading Berkeley Lab papers (Abergel group)…",
+  "node": {
+   "id": "company:hopo",
+   "name": "Hannah Weber · HOPO Therapeutics",
+   "type": "company",
+   "is_buyer": false,
+   "buyer_score": null,
+   "openalex_id": null
+  },
   "seq": 1,
   "session_id": "demo-hopo",
   "at": "2026-11-24T21:00:00+00:00"
@@ -12,55 +19,64 @@
   "phase": "reading",
   "kind": "status",
   "layer": "core",
-  "status": "Reading paper: BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE",
+  "status": "Reading HOPO Therapeutics' science (Berkeley Lab papers)…",
   "seq": 2,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:01.124000+00:00"
+  "at": "2026-11-24T21:00:00.865000+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "status",
+  "layer": "core",
+  "status": "Reading paper: BIOMIMETIC ACTINIDE CHELATORS: AN UPDATE ON THE PRECLINICAL DEVELOPMENT OF THE ORALLY ACTIVE HYDROXYPYRIDONATE",
+  "seq": 3,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:01.729000+00:00"
  },
  {
   "phase": "reading",
   "kind": "status",
   "layer": "core",
   "status": "Reading paper: Alternative Chelator for 89Zr Radiopharmaceuticals: Radiolabeling and Evaluation of 3,4,3-(LI-1,2-HOPO)",
-  "seq": 3,
+  "seq": 4,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:02.247000+00:00"
+  "at": "2026-11-24T21:00:02.594000+00:00"
  },
  {
   "phase": "reading",
   "kind": "status",
   "layer": "core",
   "status": "Reading paper: Evaluating the potential of chelation therapy to prevent and treat gadolinium deposition from MRI contrast age",
-  "seq": 4,
+  "seq": 5,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:03.371000+00:00"
+  "at": "2026-11-24T21:00:03.458000+00:00"
  },
  {
   "phase": "reading",
   "kind": "status",
   "layer": "core",
   "status": "Reading paper: Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI",
-  "seq": 5,
+  "seq": 6,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:04.494000+00:00"
+  "at": "2026-11-24T21:00:04.323000+00:00"
  },
  {
   "phase": "reading",
   "kind": "status",
   "layer": "core",
   "status": "Reading website: Removing heavy metals, promoting human health | HOPO Therapeutics",
-  "seq": 6,
+  "seq": 7,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:05.618000+00:00"
+  "at": "2026-11-24T21:00:05.187000+00:00"
  },
  {
   "phase": "reading",
   "kind": "status",
   "layer": "core",
   "status": "Reading notes: Founder notes",
-  "seq": 7,
+  "seq": 8,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:06.742000+00:00"
+  "at": "2026-11-24T21:00:06.052000+00:00"
  },
  {
   "phase": "reading",
@@ -77,9 +93,28 @@
    "is_bridge_candidate": false,
    "alignment": null
   },
-  "seq": 8,
+  "seq": 9,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:07.865000+00:00"
+  "at": "2026-11-24T21:00:06.916000+00:00"
+ },
+ {
+  "phase": "reading",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:hopo:science",
+   "from": "company:hopo",
+   "to": "person:openalex:A5043992375",
+   "type": "PERSONAL",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 1.0,
+   "name_check": "ok",
+   "label": "science from (Berkeley Lab)"
+  },
+  "seq": 10,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:07.781000+00:00"
  },
  {
   "phase": "interview",
@@ -113,9 +148,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 9,
+  "seq": 11,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:08.989000+00:00"
+  "at": "2026-11-24T21:00:08.646000+00:00"
  },
  {
   "phase": "interview",
@@ -158,9 +193,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 10,
+  "seq": 12,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:10.112000+00:00"
+  "at": "2026-11-24T21:00:09.510000+00:00"
  },
  {
   "phase": "interview",
@@ -194,9 +229,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 11,
+  "seq": 13,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:11.236000+00:00"
+  "at": "2026-11-24T21:00:10.375000+00:00"
  },
  {
   "phase": "interview",
@@ -221,9 +256,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 12,
+  "seq": 14,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:12.360000+00:00"
+  "at": "2026-11-24T21:00:11.239000+00:00"
  },
  {
   "phase": "interview",
@@ -266,9 +301,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 13,
+  "seq": 15,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:13.483000+00:00"
+  "at": "2026-11-24T21:00:12.104000+00:00"
  },
  {
   "phase": "interview",
@@ -311,9 +346,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 14,
+  "seq": 16,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:14.607000+00:00"
+  "at": "2026-11-24T21:00:12.968000+00:00"
  },
  {
   "phase": "interview",
@@ -356,9 +391,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 15,
+  "seq": 17,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:15.730000+00:00"
+  "at": "2026-11-24T21:00:13.833000+00:00"
  },
  {
   "phase": "interview",
@@ -401,9 +436,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 16,
+  "seq": 18,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:16.854000+00:00"
+  "at": "2026-11-24T21:00:14.697000+00:00"
  },
  {
   "phase": "interview",
@@ -437,9 +472,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 17,
+  "seq": 19,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:17.978000+00:00"
+  "at": "2026-11-24T21:00:15.562000+00:00"
  },
  {
   "phase": "interview",
@@ -482,9 +517,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 18,
+  "seq": 20,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:19.101000+00:00"
+  "at": "2026-11-24T21:00:16.427000+00:00"
  },
  {
   "phase": "interview",
@@ -527,9 +562,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 19,
+  "seq": 21,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:20.225000+00:00"
+  "at": "2026-11-24T21:00:17.291000+00:00"
  },
  {
   "phase": "interview",
@@ -572,9 +607,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 20,
+  "seq": 22,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:21.348000+00:00"
+  "at": "2026-11-24T21:00:18.156000+00:00"
  },
  {
   "phase": "interview",
@@ -617,9 +652,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 21,
+  "seq": 23,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:22.472000+00:00"
+  "at": "2026-11-24T21:00:19.020000+00:00"
  },
  {
   "phase": "interview",
@@ -644,9 +679,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 22,
+  "seq": 24,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:23.596000+00:00"
+  "at": "2026-11-24T21:00:19.885000+00:00"
  },
  {
   "phase": "interview",
@@ -689,9 +724,153 @@
     "kind": "paper"
    }
   ],
-  "seq": 23,
+  "seq": 25,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:24.719000+00:00"
+  "at": "2026-11-24T21:00:20.749000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-lead-f-pb",
+   "kind": "feature",
+   "text": "Pb and Cd complexation by 3,4,3-LI(1,2-HOPO), characterised in a 2018 study (binding chemistry only, no efficacy data in people)",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-pb",
+    "evidence:value-map:pb-topical"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-pb",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:pb-topical",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "The toxicity of heavy metals such as lead (Pb), cadmium (Cd) and tin (Sn) has long been known but accidental exposures of large populations to these elements remain unfortunately a topical issue.",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 26,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:21.614000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-rad-f-window",
+   "kind": "feature",
+   "text": "Decorporation activity window: plutonium removal studied from early prophylaxis to delayed treatment",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:hopo-window",
+    "evidence:value-map:hopo-taylor-more"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-window",
+    "source_url": "https://openalex.org/W2314954075",
+    "quote": "From early prophylaxis to delayed treatment: Establishing the plutonium decorporation activity window of hydroxypyridinonate chelating agents",
+    "source_date": "2016-04-01",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-taylor-more",
+    "source_url": "https://openalex.org/W2087980883",
+    "quote": "Both are much more effective than CaNa3-DTPA for decorporation of Pu(IV), Am(III), U(VI), and Np(IV,V)",
+    "source_date": "2008-10-08",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 27,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:22.478000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-rad-f-cmc",
+   "kind": "feature",
+   "text": "Drug-substance work: in vitro metabolism and stability, impurity identification and an HPLC method for 3,4,3-LI(1,2-HOPO)",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:metab",
+    "evidence:value-map:impur",
+    "evidence:value-map:hopo-hplc"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:metab",
+    "source_url": "https://openalex.org/W1986786784",
+    "quote": "In Vitro Metabolism and Stability of the Actinide Chelating Agent 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2015-02-27",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:impur",
+    "source_url": "https://openalex.org/W2079789697",
+    "quote": "Identification of process related trace level impurities in the actinide decorporation agent 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2014-08-12",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-hplc",
+    "source_url": "https://openalex.org/W2070305029",
+    "quote": "Characterization, HPLC method development and impurity identification for 3,4,3-LI(1,2-HOPO), a potent actinide chelator for radionuclide decorporation",
+    "source_date": "2014-10-22",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 28,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:23.343000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-rad-f-radio",
+   "kind": "feature",
+   "text": "Radiation robustness: the ligand and its complexes were tested under radiolysis, relevant to use in radiation environments",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:radiolysis"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:radiolysis",
+    "source_url": "https://openalex.org/W4366605921",
+    "quote": "3,4,3-LI(1,2-HOPO) (abbreviated as HOPO) has been identified as a promising candidate for both chelation and f -element separation technologies, two applications that require optimal performance in radiation environments",
+    "source_date": "2023-04-21",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 29,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:24.207000+00:00"
  },
  {
   "phase": "interview",
@@ -725,9 +904,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 24,
+  "seq": 30,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:25.843000+00:00"
+  "at": "2026-11-24T21:00:25.072000+00:00"
  },
  {
   "phase": "interview",
@@ -765,9 +944,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 25,
+  "seq": 31,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:26.966000+00:00"
+  "at": "2026-11-24T21:00:25.937000+00:00"
  },
  {
   "phase": "interview",
@@ -796,9 +975,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 26,
+  "seq": 32,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:28.090000+00:00"
+  "at": "2026-11-24T21:00:26.801000+00:00"
  },
  {
   "phase": "interview",
@@ -832,9 +1011,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 27,
+  "seq": 33,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:29.213000+00:00"
+  "at": "2026-11-24T21:00:27.666000+00:00"
  },
  {
   "phase": "interview",
@@ -872,9 +1051,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 28,
+  "seq": 34,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:30.337000+00:00"
+  "at": "2026-11-24T21:00:28.530000+00:00"
  },
  {
   "phase": "interview",
@@ -908,9 +1087,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 29,
+  "seq": 35,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:31.461000+00:00"
+  "at": "2026-11-24T21:00:29.395000+00:00"
  },
  {
   "phase": "interview",
@@ -948,9 +1127,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 30,
+  "seq": 36,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:32.584000+00:00"
+  "at": "2026-11-24T21:00:30.259000+00:00"
  },
  {
   "phase": "interview",
@@ -988,9 +1167,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 31,
+  "seq": 37,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:33.708000+00:00"
+  "at": "2026-11-24T21:00:31.124000+00:00"
  },
  {
   "phase": "interview",
@@ -1033,9 +1212,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 32,
+  "seq": 38,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:34.831000+00:00"
+  "at": "2026-11-24T21:00:31.988000+00:00"
  },
  {
   "phase": "interview",
@@ -1073,9 +1252,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 33,
+  "seq": 39,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:35.955000+00:00"
+  "at": "2026-11-24T21:00:32.853000+00:00"
  },
  {
   "phase": "interview",
@@ -1127,9 +1306,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 34,
+  "seq": 40,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:37.079000+00:00"
+  "at": "2026-11-24T21:00:33.718000+00:00"
  },
  {
   "phase": "interview",
@@ -1167,9 +1346,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 35,
+  "seq": 41,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:38.202000+00:00"
+  "at": "2026-11-24T21:00:34.582000+00:00"
  },
  {
   "phase": "interview",
@@ -1207,9 +1386,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 36,
+  "seq": 42,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:39.326000+00:00"
+  "at": "2026-11-24T21:00:35.447000+00:00"
  },
  {
   "phase": "interview",
@@ -1247,9 +1426,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 37,
+  "seq": 43,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:40.449000+00:00"
+  "at": "2026-11-24T21:00:36.311000+00:00"
  },
  {
   "phase": "interview",
@@ -1287,9 +1466,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 38,
+  "seq": 44,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:41.573000+00:00"
+  "at": "2026-11-24T21:00:37.176000+00:00"
  },
  {
   "phase": "interview",
@@ -1323,9 +1502,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 39,
+  "seq": 45,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:42.697000+00:00"
+  "at": "2026-11-24T21:00:38.040000+00:00"
  },
  {
   "phase": "interview",
@@ -1363,9 +1542,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 40,
+  "seq": 46,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:43.820000+00:00"
+  "at": "2026-11-24T21:00:38.905000+00:00"
  },
  {
   "phase": "interview",
@@ -1408,9 +1587,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 41,
+  "seq": 47,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:44.944000+00:00"
+  "at": "2026-11-24T21:00:39.769000+00:00"
  },
  {
   "phase": "interview",
@@ -1448,9 +1627,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 42,
+  "seq": 48,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:46.067000+00:00"
+  "at": "2026-11-24T21:00:40.634000+00:00"
  },
  {
   "phase": "interview",
@@ -1488,9 +1667,111 @@
     "kind": "paper"
    }
   ],
-  "seq": 43,
+  "seq": 49,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:47.191000+00:00"
+  "at": "2026-11-24T21:00:41.499000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-64",
+   "from": "value:hopo-rad-f-window",
+   "to": "value:hopo-rad-b-reg",
+   "type": "ENABLES",
+   "date": "2016-04-01",
+   "evidence_ids": [
+    "evidence:value-map:hopo-window"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-window",
+    "source_url": "https://openalex.org/W2314954075",
+    "quote": "From early prophylaxis to delayed treatment: Establishing the plutonium decorporation activity window of hydroxypyridinonate chelating agents",
+    "source_date": "2016-04-01",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 50,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:42.363000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-65",
+   "from": "value:hopo-rad-f-cmc",
+   "to": "value:hopo-rad-b-reg",
+   "type": "ENABLES",
+   "date": "2015-02-27",
+   "evidence_ids": [
+    "evidence:value-map:metab",
+    "evidence:value-map:impur"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:metab",
+    "source_url": "https://openalex.org/W1986786784",
+    "quote": "In Vitro Metabolism and Stability of the Actinide Chelating Agent 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2015-02-27",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:impur",
+    "source_url": "https://openalex.org/W2079789697",
+    "quote": "Identification of process related trace level impurities in the actinide decorporation agent 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2014-08-12",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 51,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:43.228000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-66",
+   "from": "value:hopo-rad-f-radio",
+   "to": "value:hopo-rad-b-reg",
+   "type": "ENABLES",
+   "date": "2023-04-21",
+   "evidence_ids": [
+    "evidence:value-map:radiolysis"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:radiolysis",
+    "source_url": "https://openalex.org/W4366605921",
+    "quote": "3,4,3-LI(1,2-HOPO) (abbreviated as HOPO) has been identified as a promising candidate for both chelation and f -element separation technologies, two applications that require optimal performance in radiation environments",
+    "source_date": "2023-04-21",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 52,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:44.092000+00:00"
  },
  {
   "phase": "interview",
@@ -1524,9 +1805,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 44,
+  "seq": 53,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:48.315000+00:00"
+  "at": "2026-11-24T21:00:44.957000+00:00"
  },
  {
   "phase": "interview",
@@ -1564,9 +1845,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 45,
+  "seq": 54,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:49.438000+00:00"
+  "at": "2026-11-24T21:00:45.821000+00:00"
  },
  {
   "phase": "interview",
@@ -1604,9 +1885,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 46,
+  "seq": 55,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:50.562000+00:00"
+  "at": "2026-11-24T21:00:46.686000+00:00"
  },
  {
   "phase": "interview",
@@ -1640,9 +1921,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 47,
+  "seq": 56,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:51.685000+00:00"
+  "at": "2026-11-24T21:00:47.550000+00:00"
  },
  {
   "phase": "interview",
@@ -1671,9 +1952,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 48,
+  "seq": 57,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:52.809000+00:00"
+  "at": "2026-11-24T21:00:48.415000+00:00"
  },
  {
   "phase": "interview",
@@ -1707,9 +1988,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 49,
+  "seq": 58,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:53.933000+00:00"
+  "at": "2026-11-24T21:00:49.280000+00:00"
  },
  {
   "phase": "interview",
@@ -1738,9 +2019,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 50,
+  "seq": 59,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:55.056000+00:00"
+  "at": "2026-11-24T21:00:50.144000+00:00"
  },
  {
   "phase": "interview",
@@ -1778,9 +2059,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 51,
+  "seq": 60,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:56.180000+00:00"
+  "at": "2026-11-24T21:00:51.009000+00:00"
  },
  {
   "phase": "interview",
@@ -1814,9 +2095,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 52,
+  "seq": 61,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:57.303000+00:00"
+  "at": "2026-11-24T21:00:51.873000+00:00"
  },
  {
   "phase": "interview",
@@ -1845,9 +2126,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 53,
+  "seq": 62,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:58.427000+00:00"
+  "at": "2026-11-24T21:00:52.738000+00:00"
  },
  {
   "phase": "interview",
@@ -1885,9 +2166,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 54,
+  "seq": 63,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:00:59.551000+00:00"
+  "at": "2026-11-24T21:00:53.602000+00:00"
  },
  {
   "phase": "interview",
@@ -1921,9 +2202,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 55,
+  "seq": 64,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:00.674000+00:00"
+  "at": "2026-11-24T21:00:54.467000+00:00"
  },
  {
   "phase": "interview",
@@ -1961,9 +2242,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 56,
+  "seq": 65,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:01.798000+00:00"
+  "at": "2026-11-24T21:00:55.331000+00:00"
  },
  {
   "phase": "interview",
@@ -2001,9 +2282,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 57,
+  "seq": 66,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:02.921000+00:00"
+  "at": "2026-11-24T21:00:56.196000+00:00"
  },
  {
   "phase": "interview",
@@ -2037,9 +2318,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 58,
+  "seq": 67,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:04.045000+00:00"
+  "at": "2026-11-24T21:00:57.061000+00:00"
  },
  {
   "phase": "interview",
@@ -2077,9 +2358,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 59,
+  "seq": 68,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:05.169000+00:00"
+  "at": "2026-11-24T21:00:57.925000+00:00"
  },
  {
   "phase": "interview",
@@ -2108,9 +2389,49 @@
     "kind": "paper"
    }
   ],
-  "seq": 60,
+  "seq": 69,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:06.292000+00:00"
+  "at": "2026-11-24T21:00:58.790000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-56",
+   "from": "value:hopo-lead-f-pb",
+   "to": "value:hopo-lead-b-pb",
+   "type": "ENABLES",
+   "date": "2018-01-01",
+   "evidence_ids": [
+    "evidence:value-map:hopo-pb",
+    "evidence:value-map:pb-topical"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-pb",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:pb-topical",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "The toxicity of heavy metals such as lead (Pb), cadmium (Cd) and tin (Sn) has long been known but accidental exposures of large populations to these elements remain unfortunately a topical issue.",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 70,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:00:59.654000+00:00"
  },
  {
   "phase": "interview",
@@ -2144,9 +2465,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 61,
+  "seq": 71,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:07.416000+00:00"
+  "at": "2026-11-24T21:01:00.519000+00:00"
  },
  {
   "phase": "interview",
@@ -2184,9 +2505,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 62,
+  "seq": 72,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:08.539000+00:00"
+  "at": "2026-11-24T21:01:01.383000+00:00"
  },
  {
   "phase": "interview",
@@ -2229,18 +2550,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 63,
+  "seq": 73,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:09.663000+00:00"
+  "at": "2026-11-24T21:01:02.248000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: Radiological-emergency planners and defense stockpiles could gain an oral decorporation option beyond DTPA",
-  "seq": 64,
+  "seq": 74,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:10.787000+00:00"
+  "at": "2026-11-24T21:01:03.112000+00:00"
  },
  {
   "phase": "interview",
@@ -2278,9 +2599,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 65,
+  "seq": 75,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:11.910000+00:00"
+  "at": "2026-11-24T21:01:03.977000+00:00"
  },
  {
   "phase": "interview",
@@ -2318,9 +2639,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 66,
+  "seq": 76,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:13.034000+00:00"
+  "at": "2026-11-24T21:01:04.841000+00:00"
  },
  {
   "phase": "interview",
@@ -2354,18 +2675,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 67,
+  "seq": 77,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:14.157000+00:00"
+  "at": "2026-11-24T21:01:05.706000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: Radiopharmaceutical and PET-imaging developers could swap DFO for a more stable 89Zr chelator",
-  "seq": 68,
+  "seq": 78,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:15.281000+00:00"
+  "at": "2026-11-24T21:01:06.571000+00:00"
  },
  {
   "phase": "interview",
@@ -2394,9 +2715,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 69,
+  "seq": 79,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:16.404000+00:00"
+  "at": "2026-11-24T21:01:07.435000+00:00"
  },
  {
   "phase": "interview",
@@ -2434,9 +2755,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 70,
+  "seq": 80,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:17.528000+00:00"
+  "at": "2026-11-24T21:01:08.300000+00:00"
  },
  {
   "phase": "interview",
@@ -2470,18 +2791,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 71,
+  "seq": 81,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:18.652000+00:00"
+  "at": "2026-11-24T21:01:09.164000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: MRI contrast-agent makers and clinicians could offer a post-hoc remedy for gadolinium deposition",
-  "seq": 72,
+  "seq": 82,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:19.775000+00:00"
+  "at": "2026-11-24T21:01:10.029000+00:00"
  },
  {
   "phase": "interview",
@@ -2510,9 +2831,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 73,
+  "seq": 83,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:20.899000+00:00"
+  "at": "2026-11-24T21:01:10.893000+00:00"
  },
  {
   "phase": "interview",
@@ -2550,9 +2871,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 74,
+  "seq": 84,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:22.022000+00:00"
+  "at": "2026-11-24T21:01:11.758000+00:00"
  },
  {
   "phase": "interview",
@@ -2595,18 +2916,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 75,
+  "seq": 85,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:23.146000+00:00"
+  "at": "2026-11-24T21:01:12.622000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: Government stockpile buyers and regulators could assess a decorporation candidate with a documented efficacy a",
-  "seq": 76,
+  "seq": 86,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:24.270000+00:00"
+  "at": "2026-11-24T21:01:13.487000+00:00"
  },
  {
   "phase": "interview",
@@ -2635,9 +2956,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 77,
+  "seq": 87,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:25.393000+00:00"
+  "at": "2026-11-24T21:01:14.352000+00:00"
  },
  {
   "phase": "interview",
@@ -2675,9 +2996,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 78,
+  "seq": 88,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:26.517000+00:00"
+  "at": "2026-11-24T21:01:15.216000+00:00"
  },
  {
   "phase": "interview",
@@ -2711,18 +3032,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 79,
+  "seq": 89,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:27.640000+00:00"
+  "at": "2026-11-24T21:01:16.081000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: Defense and civil-protection planners could cover inhalation scenarios, not only injected treatment",
-  "seq": 80,
+  "seq": 90,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:28.764000+00:00"
+  "at": "2026-11-24T21:01:16.945000+00:00"
  },
  {
   "phase": "interview",
@@ -2760,9 +3081,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 81,
+  "seq": 91,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:29.888000+00:00"
+  "at": "2026-11-24T21:01:17.810000+00:00"
  },
  {
   "phase": "interview",
@@ -2796,18 +3117,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 82,
+  "seq": 92,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:31.011000+00:00"
+  "at": "2026-11-24T21:01:18.674000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: Antibody-drug and imaging developers could pair a HOPO chelator with their antibody for cleaner PET images",
-  "seq": 83,
+  "seq": 93,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:32.135000+00:00"
+  "at": "2026-11-24T21:01:19.539000+00:00"
  },
  {
   "phase": "interview",
@@ -2845,9 +3166,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 84,
+  "seq": 94,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:33.258000+00:00"
+  "at": "2026-11-24T21:01:20.403000+00:00"
  },
  {
   "phase": "interview",
@@ -2876,9 +3197,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 85,
+  "seq": 95,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:34.382000+00:00"
+  "at": "2026-11-24T21:01:21.268000+00:00"
  },
  {
   "phase": "interview",
@@ -2912,18 +3233,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 86,
+  "seq": 96,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:35.506000+00:00"
+  "at": "2026-11-24T21:01:22.133000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: Targeted-alpha-therapy developers could get a high-affinity tetravalent-metal chelator",
-  "seq": 87,
+  "seq": 97,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:36.629000+00:00"
+  "at": "2026-11-24T21:01:22.997000+00:00"
  },
  {
   "phase": "interview",
@@ -2952,9 +3273,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 88,
+  "seq": 98,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:37.753000+00:00"
+  "at": "2026-11-24T21:01:23.862000+00:00"
  },
  {
   "phase": "interview",
@@ -2988,18 +3309,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 89,
+  "seq": 99,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:38.876000+00:00"
+  "at": "2026-11-24T21:01:24.726000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: Contrast-agent makers could offer a chelation remedy alongside their products to address the regulator concern",
-  "seq": 90,
+  "seq": 100,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:40+00:00"
+  "at": "2026-11-24T21:01:25.591000+00:00"
  },
  {
   "phase": "interview",
@@ -3037,9 +3358,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 91,
+  "seq": 101,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:41.124000+00:00"
+  "at": "2026-11-24T21:01:26.455000+00:00"
  },
  {
   "phase": "interview",
@@ -3077,9 +3398,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 92,
+  "seq": 102,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:42.247000+00:00"
+  "at": "2026-11-24T21:01:27.320000+00:00"
  },
  {
   "phase": "interview",
@@ -3113,18 +3434,18 @@
     "kind": "paper"
    }
   ],
-  "seq": 93,
+  "seq": 103,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:43.371000+00:00"
+  "at": "2026-11-24T21:01:28.184000+00:00"
  },
  {
   "phase": "interview",
   "kind": "status",
   "layer": "core",
   "status": "Value: Poison-control and environmental-health programmes could add an oral chelator candidate to their toolbox",
-  "seq": 94,
+  "seq": 104,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:44.494000+00:00"
+  "at": "2026-11-24T21:01:29.049000+00:00"
  },
  {
   "phase": "interview",
@@ -3153,9 +3474,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 95,
+  "seq": 105,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:45.618000+00:00"
+  "at": "2026-11-24T21:01:29.914000+00:00"
  },
  {
   "phase": "interview",
@@ -3184,9 +3505,219 @@
     "kind": "paper"
    }
   ],
-  "seq": 96,
+  "seq": 106,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:46.742000+00:00"
+  "at": "2026-11-24T21:01:30.778000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-lead-v-study",
+   "kind": "value",
+   "text": "Paediatric environmental-health units could tell HOPO what a children's lead study would have to show before any clinical claim",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:tlc-nocog",
+    "evidence:value-map:tlc-env",
+    "evidence:value-map:hopo-pb"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:tlc-nocog",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "Treatment with succimer lowered blood lead levels but did not improve scores on tests of cognition, behavior, or neuropsychological function in children with blood lead levels below 45 microg per deciliter.",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:tlc-env",
+    "source_url": "https://openalex.org/W2121920115",
+    "quote": "These results emphasize the importance of taking environmental measures to prevent exposure to lead.",
+    "source_date": "2004-07-01",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:hopo-pb",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 107,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:01:31.643000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: Paediatric environmental-health units could tell HOPO what a children's lead study would have to show before a",
+  "seq": 108,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:01:32.507000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-57",
+   "from": "value:hopo-c-oral",
+   "to": "value:hopo-lead-v-study",
+   "type": "ENABLES",
+   "date": "2008-10-08",
+   "evidence_ids": [
+    "evidence:value-map:hopo-taylor-oral"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-taylor-oral",
+    "source_url": "https://openalex.org/W2087980883",
+    "quote": "they are orally active, and toxicity is acceptably low at effective dosage",
+    "source_date": "2008-10-08",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 109,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:01:33.372000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-58",
+   "from": "value:hopo-lead-f-pb",
+   "to": "value:hopo-lead-v-study",
+   "type": "ENABLES",
+   "date": "2018-01-01",
+   "evidence_ids": [
+    "evidence:value-map:hopo-pb"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Enables"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-pb",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 110,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:01:34.236000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-rad-v-sns",
+   "kind": "value",
+   "text": "ASPR/BARDA and the SNS could weigh an oral decorporation candidate next to IV-only DTPA for mass-casualty plans",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:aspr-sns",
+    "evidence:value-map:remm-iv",
+    "evidence:value-map:hopo-taylor-oral"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:aspr-sns",
+    "source_url": "https://www.aspr.gov/SNS/Pages/default.aspx",
+    "quote": "a critical part of the federal medical response infrastructure",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:remm-iv",
+    "source_url": "https://remm.hhs.gov/int_contamination.htm",
+    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:hopo-taylor-oral",
+    "source_url": "https://openalex.org/W2087980883",
+    "quote": "they are orally active, and toxicity is acceptably low at effective dosage",
+    "source_date": "2008-10-08",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 111,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:01:35.101000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "status",
+  "layer": "core",
+  "status": "Value: ASPR/BARDA and the SNS could weigh an oral decorporation candidate next to IV-only DTPA for mass-casualty plan",
+  "seq": 112,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:01:35.965000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-67",
+   "from": "value:hopo-rad-b-oral",
+   "to": "value:hopo-rad-v-sns",
+   "type": "DELIVERS",
+   "date": "2008-10-08",
+   "evidence_ids": [
+    "evidence:value-map:hopo-taylor-oral",
+    "evidence:value-map:remm-iv"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Delivers"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:hopo-taylor-oral",
+    "source_url": "https://openalex.org/W2087980883",
+    "quote": "they are orally active, and toxicity is acceptably low at effective dosage",
+    "source_date": "2008-10-08",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:remm-iv",
+    "source_url": "https://remm.hhs.gov/int_contamination.htm",
+    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 113,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:01:36.830000+00:00"
  },
  {
   "phase": "interview",
@@ -3220,9 +3751,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 97,
+  "seq": 114,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:47.865000+00:00"
+  "at": "2026-11-24T21:01:37.695000+00:00"
  },
  {
   "phase": "interview",
@@ -3260,9 +3791,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 98,
+  "seq": 115,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:48.989000+00:00"
+  "at": "2026-11-24T21:01:38.559000+00:00"
  },
  {
   "phase": "interview",
@@ -3300,9 +3831,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 99,
+  "seq": 116,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:50.112000+00:00"
+  "at": "2026-11-24T21:01:39.424000+00:00"
  },
  {
   "phase": "interview",
@@ -3336,9 +3867,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 100,
+  "seq": 117,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:51.236000+00:00"
+  "at": "2026-11-24T21:01:40.288000+00:00"
  },
  {
   "phase": "interview",
@@ -3376,9 +3907,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 101,
+  "seq": 118,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:52.360000+00:00"
+  "at": "2026-11-24T21:01:41.153000+00:00"
  },
  {
   "phase": "interview",
@@ -3412,9 +3943,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 102,
+  "seq": 119,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:53.483000+00:00"
+  "at": "2026-11-24T21:01:42.017000+00:00"
  },
  {
   "phase": "interview",
@@ -3452,9 +3983,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 103,
+  "seq": 120,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:54.607000+00:00"
+  "at": "2026-11-24T21:01:42.882000+00:00"
  },
  {
   "phase": "interview",
@@ -3488,9 +4019,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 104,
+  "seq": 121,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:55.730000+00:00"
+  "at": "2026-11-24T21:01:43.746000+00:00"
  },
  {
   "phase": "interview",
@@ -3528,9 +4059,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 105,
+  "seq": 122,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:56.854000+00:00"
+  "at": "2026-11-24T21:01:44.611000+00:00"
  },
  {
   "phase": "interview",
@@ -3555,9 +4086,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 106,
+  "seq": 123,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:57.978000+00:00"
+  "at": "2026-11-24T21:01:45.476000+00:00"
  },
  {
   "phase": "interview",
@@ -3586,9 +4117,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 107,
+  "seq": 124,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:01:59.101000+00:00"
+  "at": "2026-11-24T21:01:46.340000+00:00"
  },
  {
   "phase": "interview",
@@ -3613,9 +4144,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 108,
+  "seq": 125,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:00.225000+00:00"
+  "at": "2026-11-24T21:01:47.205000+00:00"
  },
  {
   "phase": "interview",
@@ -3644,9 +4175,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 109,
+  "seq": 126,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:01.348000+00:00"
+  "at": "2026-11-24T21:01:48.069000+00:00"
  },
  {
   "phase": "interview",
@@ -3671,9 +4202,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 110,
+  "seq": 127,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:02.472000+00:00"
+  "at": "2026-11-24T21:01:48.934000+00:00"
  },
  {
   "phase": "interview",
@@ -3702,9 +4233,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 111,
+  "seq": 128,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:03.596000+00:00"
+  "at": "2026-11-24T21:01:49.798000+00:00"
  },
  {
   "phase": "interview",
@@ -3738,9 +4269,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 112,
+  "seq": 129,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:04.719000+00:00"
+  "at": "2026-11-24T21:01:50.663000+00:00"
  },
  {
   "phase": "interview",
@@ -3778,9 +4309,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 113,
+  "seq": 130,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:05.843000+00:00"
+  "at": "2026-11-24T21:01:51.527000+00:00"
  },
  {
   "phase": "interview",
@@ -3818,9 +4349,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 114,
+  "seq": 131,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:06.966000+00:00"
+  "at": "2026-11-24T21:01:52.392000+00:00"
  },
  {
   "phase": "interview",
@@ -3854,9 +4385,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 115,
+  "seq": 132,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:08.090000+00:00"
+  "at": "2026-11-24T21:01:53.256000+00:00"
  },
  {
   "phase": "interview",
@@ -3894,9 +4425,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 116,
+  "seq": 133,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:09.213000+00:00"
+  "at": "2026-11-24T21:01:54.121000+00:00"
  },
  {
   "phase": "interview",
@@ -3930,9 +4461,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 117,
+  "seq": 134,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:10.337000+00:00"
+  "at": "2026-11-24T21:01:54.986000+00:00"
  },
  {
   "phase": "interview",
@@ -3961,9 +4492,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 118,
+  "seq": 135,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:11.461000+00:00"
+  "at": "2026-11-24T21:01:55.850000+00:00"
  },
  {
   "phase": "interview",
@@ -3988,9 +4519,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 119,
+  "seq": 136,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:12.584000+00:00"
+  "at": "2026-11-24T21:01:56.715000+00:00"
  },
  {
   "phase": "interview",
@@ -4028,9 +4559,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 120,
+  "seq": 137,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:13.708000+00:00"
+  "at": "2026-11-24T21:01:57.579000+00:00"
  },
  {
   "phase": "interview",
@@ -4055,9 +4586,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 121,
+  "seq": 138,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:14.831000+00:00"
+  "at": "2026-11-24T21:01:58.444000+00:00"
  },
  {
   "phase": "interview",
@@ -4086,9 +4617,514 @@
     "kind": "paper"
    }
   ],
-  "seq": 122,
+  "seq": 139,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:15.955000+00:00"
+  "at": "2026-11-24T21:01:59.308000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-lead-p-cdc",
+   "kind": "problem",
+   "text": "Children (context, CDC): no safe blood lead level in children has been identified; even low levels are linked to developmental delays and learning difficulty",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:cdc-nosafe",
+    "evidence:value-map:cdc-delay"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:cdc-nosafe",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "No safe blood lead level (BLL) in children has been identified.",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:cdc-delay",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "Even low levels of lead in blood are associated with developmental delays, difficulty learning, and behavioral issues.",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 140,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:00.173000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-61",
+   "from": "value:hopo-lead-v-pb",
+   "to": "value:hopo-lead-p-cdc",
+   "type": "SOLVES",
+   "date": "2018-01-01",
+   "evidence_ids": [
+    "evidence:value-map:cdc-nosafe",
+    "evidence:value-map:hopo-pb"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:cdc-nosafe",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "No safe blood lead level (BLL) in children has been identified.",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:hopo-pb",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 141,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:01.037000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-lead-p-blrv",
+   "kind": "problem",
+   "text": "Paediatric screening (context, CDC): children are flagged against a blood lead reference value of 3.5 µg/dL",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:cdc-blrv",
+    "evidence:value-map:cdc-nosafe"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:cdc-blrv",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "CDC uses a blood lead reference value (BLRV) of 3.5 micrograms per deciliter (µg/dL).",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:cdc-nosafe",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "No safe blood lead level (BLL) in children has been identified.",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 142,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:01.902000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-62",
+   "from": "value:hopo-lead-v-pb",
+   "to": "value:hopo-lead-p-blrv",
+   "type": "SOLVES",
+   "date": "2018-01-01",
+   "evidence_ids": [
+    "evidence:value-map:cdc-blrv"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:cdc-blrv",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "CDC uses a blood lead reference value (BLRV) of 3.5 micrograms per deciliter (µg/dL).",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 143,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:02.767000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-lead-p-tlc",
+   "kind": "problem",
+   "text": "Paediatric toxicologists (context, TLC trial): oral succimer lowered blood lead but did not improve cognition or behaviour in children below 45 µg/dL",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:tlc-nocog",
+    "evidence:value-map:tlc-oral"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:tlc-nocog",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "Treatment with succimer lowered blood lead levels but did not improve scores on tests of cognition, behavior, or neuropsychological function in children with blood lead levels below 45 microg per deciliter.",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:tlc-oral",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "a randomized, placebo-controlled, double-blind trial of up to three 26-day courses of treatment with succimer, a lead chelator that is administered orally",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 144,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:03.631000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-60",
+   "from": "value:hopo-lead-v-study",
+   "to": "value:hopo-lead-p-tlc",
+   "type": "SOLVES",
+   "date": "2001-05-10",
+   "evidence_ids": [
+    "evidence:value-map:tlc-nocog"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:tlc-nocog",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "Treatment with succimer lowered blood lead levels but did not improve scores on tests of cognition, behavior, or neuropsychological function in children with blood lead levels below 45 microg per deciliter.",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 145,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:04.496000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-lead-p-env",
+   "kind": "problem",
+   "text": "Lead programmes (context, TLC follow-up): preventing exposure comes first; any new chelator must show what succimer did not",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:tlc-env",
+    "evidence:value-map:tlc-nocog"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:tlc-env",
+    "source_url": "https://openalex.org/W2121920115",
+    "quote": "These results emphasize the importance of taking environmental measures to prevent exposure to lead.",
+    "source_date": "2004-07-01",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:tlc-nocog",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "Treatment with succimer lowered blood lead levels but did not improve scores on tests of cognition, behavior, or neuropsychological function in children with blood lead levels below 45 microg per deciliter.",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 146,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:05.360000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-63",
+   "from": "value:hopo-lead-v-study",
+   "to": "value:hopo-lead-p-env",
+   "type": "SOLVES",
+   "date": "2004-07-01",
+   "evidence_ids": [
+    "evidence:value-map:tlc-env"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:tlc-env",
+    "source_url": "https://openalex.org/W2121920115",
+    "quote": "These results emphasize the importance of taking environmental measures to prevent exposure to lead.",
+    "source_date": "2004-07-01",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 147,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:06.225000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-lead-p-need",
+   "kind": "problem",
+   "text": "Need: an oral, child-friendly chelation option with a clear study endpoint; succimer is already oral, so the open question is what a children's study must show",
+   "source": "inferred",
+   "evidence_ids": [
+    "evidence:value-map:tlc-oral",
+    "evidence:value-map:tlc-nocog",
+    "evidence:value-map:cdc-nosafe"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:tlc-oral",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "a randomized, placebo-controlled, double-blind trial of up to three 26-day courses of treatment with succimer, a lead chelator that is administered orally",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:tlc-nocog",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "Treatment with succimer lowered blood lead levels but did not improve scores on tests of cognition, behavior, or neuropsychological function in children with blood lead levels below 45 microg per deciliter.",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:cdc-nosafe",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "No safe blood lead level (BLL) in children has been identified.",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 148,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:07.089000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-59",
+   "from": "value:hopo-lead-v-study",
+   "to": "value:hopo-lead-p-need",
+   "type": "SOLVES",
+   "date": "2001-05-10",
+   "evidence_ids": [
+    "evidence:value-map:tlc-nocog"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:tlc-nocog",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "Treatment with succimer lowered blood lead levels but did not improve scores on tests of cognition, behavior, or neuropsychological function in children with blood lead levels below 45 microg per deciliter.",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 149,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:07.954000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-rad-p-iv",
+   "kind": "problem",
+   "text": "Emergency medicine (context, HHS REMM): DTPA is FDA-approved for intravenous treatment of Am, Cm and Pu contamination only; nebulised use is adults-only",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:remm-iv",
+    "evidence:value-map:remm-neb"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:remm-iv",
+    "source_url": "https://remm.hhs.gov/int_contamination.htm",
+    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:remm-neb",
+    "source_url": "https://remm.hhs.gov/int_contamination.htm",
+    "quote": "DTPA is FDA-approved for nebulized inhalation in adults only, and if the only route of contamination is through inhalation",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   }
+  ],
+  "seq": 150,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:08.818000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-68",
+   "from": "value:hopo-rad-v-sns",
+   "to": "value:hopo-rad-p-iv",
+   "type": "SOLVES",
+   "date": "2008-10-08",
+   "evidence_ids": [
+    "evidence:value-map:remm-iv",
+    "evidence:value-map:hopo-taylor-dtpa"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:remm-iv",
+    "source_url": "https://remm.hhs.gov/int_contamination.htm",
+    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:hopo-taylor-dtpa",
+    "source_url": "https://openalex.org/W2087980883",
+    "quote": "DTPA is now clinically accepted, but its oral activity is low, it must be injected as a Ca(II) or Zn(II) chelate to avoid toxicity",
+    "source_date": "2008-10-08",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 151,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:09.683000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "node",
+  "layer": "core",
+  "node": {
+   "id": "value:hopo-rad-p-sns",
+   "kind": "problem",
+   "text": "Stockpile planners (context, ASPR): the Strategic National Stockpile is \"a critical part of the federal medical response infrastructure\", including for radiological and nuclear threats",
+   "source": "paper",
+   "evidence_ids": [
+    "evidence:value-map:aspr-sns",
+    "evidence:value-map:hopo-bomb"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:aspr-sns",
+    "source_url": "https://www.aspr.gov/SNS/Pages/default.aspx",
+    "quote": "a critical part of the federal medical response infrastructure",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:hopo-bomb",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "The threat of a dirty bomb or other major radiological contamination presents a danger of large-scale radiation exposure of the population",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 152,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:10.548000+00:00"
+ },
+ {
+  "phase": "interview",
+  "kind": "edge",
+  "layer": "core",
+  "edge": {
+   "id": "edge:value-map:hopo-69",
+   "from": "value:hopo-rad-v-sns",
+   "to": "value:hopo-rad-p-sns",
+   "type": "SOLVES",
+   "date": "2010-08-11",
+   "evidence_ids": [
+    "evidence:value-map:aspr-sns",
+    "evidence:value-map:hopo-bomb"
+   ],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Addresses"
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:aspr-sns",
+    "source_url": "https://www.aspr.gov/SNS/Pages/default.aspx",
+    "quote": "a critical part of the federal medical response infrastructure",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:hopo-bomb",
+    "source_url": "https://openalex.org/W2101984559",
+    "quote": "The threat of a dirty bomb or other major radiological contamination presents a danger of large-scale radiation exposure of the population",
+    "source_date": "2010-08-11",
+    "observed_at": "2026-11-24T21:25:42.296027+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 153,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:11.412000+00:00"
  },
  {
   "phase": "discovery",
@@ -4100,7 +5136,9 @@
    "problem_set": [
     "Treating internalized plutonium, uranium and other actinides after a radiological or nuclear incident",
     "Current therapies for radionuclide contamination are limited",
-    "Oral options for emergency medical use"
+    "Oral options for emergency medical use",
+    "DTPA is approved for intravenous use only (nebulised: adults only)",
+    "Stockpiling countermeasures for radiological and nuclear threats"
    ],
    "value_prop": "The founder's papers report that 3,4,3-LI(1,2-HOPO) showed much higher actinide-removal efficacy than DTPA in preclinical work and was well tolerated orally in rats.",
    "colour": "--cat-1",
@@ -4114,14 +5152,26 @@
     "org:openalex:I4210155143",
     "org:openalex:I1293448361",
     "org:openalex:I1289490764",
-    "org:openalex:I4210088792"
+    "org:openalex:I4210088792",
+    "org:openalex:I4387154209",
+    "org:openalex:I4387155235",
+    "org:openalex:I4387153084",
+    "org:openalex:I1288894424",
+    "org:openalex:I148314036",
+    "org:openalex:I4210134534",
+    "org:openalex:I4210114391",
+    "org:openalex:I4210137840",
+    "org:openalex:I4389425366",
+    "org:openalex:I1298353152"
    ],
    "problem_node_ids": [
     "value:hopo-p-limited",
     "value:hopo-rad-p-harm",
     "value:hopo-rad-p-dtpa",
     "value:hopo-rad-p-lung",
-    "value:hopo-rad-p-u"
+    "value:hopo-rad-p-u",
+    "value:hopo-rad-p-iv",
+    "value:hopo-rad-p-sns"
    ],
    "evidence_ids": [
     "evidence:buyers:10a2745524d98da3569f",
@@ -4146,12 +5196,82 @@
     "evidence:buyers:cedb67e41bf018be1006",
     "evidence:buyers:f66461f7088eb47a7b48",
     "evidence:buyers:355bad917e84cf0f72d9",
-    "evidence:buyers:53715da0309a65d233f3"
+    "evidence:buyers:53715da0309a65d233f3",
+    "evidence:value-map:remm-iv",
+    "evidence:value-map:aspr-sns",
+    "evidence:value-map:radiolysis",
+    "evidence:value-map:metab",
+    "evidence:buyers:149cfdff6dc24eb4c513",
+    "evidence:buyers:c14edd361b1c25cf637c",
+    "evidence:buyers:b4cb4e89542b8440d104",
+    "evidence:buyers:5bfdf5b7b787c68d0665",
+    "evidence:buyers:e49bcce9a9f3870ea5fd",
+    "evidence:buyers:1e78ade8cc8671bee4e7",
+    "evidence:buyers:b869791a9c698d9343a9",
+    "evidence:buyers:8c3055ac0a1bc4810eb9",
+    "evidence:buyers:51103c29a66855fa5927",
+    "evidence:buyers:4e811ecfa539def09bf3",
+    "evidence:buyers:5724e89958ca35744749",
+    "evidence:buyers:d991a4ac2c2eb9f5fcaa",
+    "evidence:buyers:3cbc17bef2ebe29d92e2",
+    "evidence:buyers:d3294488d9fdb3b727aa",
+    "evidence:buyers:e92d26afc1c050a6c6c2",
+    "evidence:buyers:5fe5c8c1ae0a11a3de5d",
+    "evidence:buyers:6bacb224f167837ae4ae",
+    "evidence:buyers:bcb65fbdd12809e0a3c3",
+    "evidence:buyers:aaf0f6accc8a2594badb",
+    "evidence:buyers:037791f89fec3c0aeb45",
+    "evidence:buyers:e0195c22629c95669c16",
+    "evidence:buyers:265040078bdb2f7e0303",
+    "evidence:buyers:fdc6f634fd62284c179d",
+    "evidence:buyers:efc69d12eea9a48070b5",
+    "evidence:buyers:392b8682297edc3c37a2",
+    "evidence:buyers:16af76b20f57319b5d6b",
+    "evidence:buyers:c3f206a1bce628a71777",
+    "evidence:buyers:d6ef1de061a4f643219d",
+    "evidence:buyers:39d651810faea989ea32",
+    "evidence:buyers:60b25ab244d63d520202",
+    "evidence:buyers:eca3094571e7eb07c087",
+    "evidence:buyers:9a1e3776d993f0dcb505"
    ]
   },
-  "seq": 123,
+  "evidence": [
+   {
+    "id": "evidence:value-map:remm-iv",
+    "source_url": "https://remm.hhs.gov/int_contamination.htm",
+    "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:aspr-sns",
+    "source_url": "https://www.aspr.gov/SNS/Pages/default.aspx",
+    "quote": "a critical part of the federal medical response infrastructure",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:radiolysis",
+    "source_url": "https://openalex.org/W4366605921",
+    "quote": "3,4,3-LI(1,2-HOPO) (abbreviated as HOPO) has been identified as a promising candidate for both chelation and f -element separation technologies, two applications that require optimal performance in radiation environments",
+    "source_date": "2023-04-21",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:metab",
+    "source_url": "https://openalex.org/W1986786784",
+    "quote": "In Vitro Metabolism and Stability of the Actinide Chelating Agent 3,4,3-LI(1,2-HOPO)",
+    "source_date": "2015-02-27",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 154,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:17.079000+00:00"
+  "at": "2026-11-24T21:02:12.277000+00:00"
  },
  {
   "phase": "discovery",
@@ -4168,9 +5288,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 124,
+  "seq": 155,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:18.202000+00:00"
+  "at": "2026-11-24T21:02:13.141000+00:00"
  },
  {
   "phase": "discovery",
@@ -4187,9 +5307,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 125,
+  "seq": 156,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:19.326000+00:00"
+  "at": "2026-11-24T21:02:14.006000+00:00"
  },
  {
   "phase": "discovery",
@@ -4206,9 +5326,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 126,
+  "seq": 157,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:20.449000+00:00"
+  "at": "2026-11-24T21:02:14.870000+00:00"
  },
  {
   "phase": "discovery",
@@ -4225,9 +5345,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 127,
+  "seq": 158,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:21.573000+00:00"
+  "at": "2026-11-24T21:02:15.735000+00:00"
  },
  {
   "phase": "discovery",
@@ -4244,9 +5364,308 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 128,
+  "seq": 159,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:22.697000+00:00"
+  "at": "2026-11-24T21:02:16.599000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "category",
+  "edge": {
+   "id": "edge:solves:category:hopo:radiation:value:hopo-rad-p-iv",
+   "from": "category:hopo:radiation",
+   "to": "value:hopo-rad-p-iv",
+   "type": "SOLVES",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Solves"
+  },
+  "seq": 160,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:17.464000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "category",
+  "edge": {
+   "id": "edge:solves:category:hopo:radiation:value:hopo-rad-p-sns",
+   "from": "category:hopo:radiation",
+   "to": "value:hopo-rad-p-sns",
+   "type": "SOLVES",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Solves"
+  },
+  "seq": 161,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:18.329000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "category",
+  "layer": "category",
+  "node": {
+   "id": "category:hopo:lead",
+   "name": "Lead & heavy-metal poisoning (public health)",
+   "problem_set": [
+    "Removal of toxic heavy metals such as lead and cadmium",
+    "Oral chelation options for metal exposure",
+    "Childhood lead exposure: no safe blood lead level in children (CDC)",
+    "What a children's chelation study must show, given succimer is already oral"
+   ],
+   "value_prop": "A published study reports Pb, Cd and Sn complexation by 3,4,3-LI(1,2-HOPO). Listed hospitals, agencies and poison centres are linked to OpenAlex works on lead-poisoning chelation (succimer/DMSA, EDTA); the link is a research signal, not a purchase intent.",
+   "colour": "--cat-4",
+   "org_ids": [
+    "org:openalex:I4210136340",
+    "org:openalex:I1288882113",
+    "org:openalex:I4210135976",
+    "org:openalex:I4210104433",
+    "org:openalex:I1302368450",
+    "org:openalex:I4210087865",
+    "org:openalex:I4210150312",
+    "org:openalex:I1335289525",
+    "org:openalex:I4210110933",
+    "org:openalex:I4210106432",
+    "org:openalex:I4210092468",
+    "org:openalex:I169222155",
+    "org:openalex:I1285204247",
+    "org:openalex:I103043317",
+    "org:openalex:I4210092716",
+    "org:openalex:I1298060332",
+    "org:openalex:I199145359",
+    "org:openalex:I1336243289",
+    "org:openalex:I4210120689",
+    "org:openalex:I4210087915",
+    "org:openalex:I180297670"
+   ],
+   "problem_node_ids": [
+    "value:hopo-lead-p-pb",
+    "value:hopo-lead-p-cdc",
+    "value:hopo-lead-p-blrv",
+    "value:hopo-lead-p-tlc",
+    "value:hopo-lead-p-env",
+    "value:hopo-lead-p-need"
+   ],
+   "evidence_ids": [
+    "evidence:buyers:cd6584c431e5f63bbdfa",
+    "evidence:buyers:3e348adff49202347ff8",
+    "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
+    "evidence:buyers:67e7cdff7a6cc46dbeef",
+    "evidence:buyers:c6702633a85101f6b214",
+    "evidence:buyers:5c798d9337b6eb395124",
+    "evidence:buyers:eec547e0351f6e620a80",
+    "evidence:buyers:1499e2e854e32c98a617",
+    "evidence:buyers:016635964b94ea12a644",
+    "evidence:buyers:71bdfa8e89f9d51da6b2",
+    "evidence:buyers:58be9a6233d8b0c702c1",
+    "evidence:value-map:cdc-nosafe",
+    "evidence:value-map:cdc-delay",
+    "evidence:value-map:tlc-nocog",
+    "evidence:value-map:tlc-env",
+    "evidence:value-map:pb-topical",
+    "evidence:buyers:b502c021da06f993762f",
+    "evidence:buyers:80a428028c52759fdd59",
+    "evidence:buyers:40696ebfded61b010153",
+    "evidence:buyers:6fff33b98aad4417e2ec",
+    "evidence:buyers:0c2a6e3b89687b0c6f1e",
+    "evidence:buyers:043adcbc0be72fc11d4b",
+    "evidence:buyers:6d23534c5485052de8bf",
+    "evidence:buyers:0e0c6da70648ecb4e9eb",
+    "evidence:buyers:0ccda5942d1ea29e64f6",
+    "evidence:buyers:af5f746056baf2736bef",
+    "evidence:buyers:fb4b9da4635248ca26a6",
+    "evidence:buyers:5cedca18066a2613a061",
+    "evidence:buyers:dbd11d6097704b252c18",
+    "evidence:buyers:617f72c6d626a1c6ea83",
+    "evidence:buyers:aad95a42cfe6e763a8c9",
+    "evidence:buyers:6552f39a291f1353b876",
+    "evidence:buyers:2556603a7a2d50376605",
+    "evidence:buyers:d188ef15b106a72b109a",
+    "evidence:buyers:6644ab5525febc601fcb",
+    "evidence:buyers:4c7a4068b7e5372446ff",
+    "evidence:buyers:a28670ce4c9f4cff7644",
+    "evidence:buyers:6f6b7d455ea15bf3ee62",
+    "evidence:buyers:b91c4f56ac658e9928df",
+    "evidence:buyers:880621aab421a834a603",
+    "evidence:buyers:1a9cbd65cb30a18fc163",
+    "evidence:buyers:0ebf8bf293571d4238d0",
+    "evidence:buyers:5cad05965d405630b7ed",
+    "evidence:buyers:9d49bb3a0311c5282c19",
+    "evidence:buyers:8d8ec6c74cd4e228c592",
+    "evidence:buyers:2fa510aca7413428d9e0",
+    "evidence:buyers:b35b52fb0855de8c0eeb",
+    "evidence:buyers:608dbb9c8940945ac024",
+    "evidence:buyers:1383c95d3d6984a74ca5",
+    "evidence:buyers:3043be5d6cffd35635cf",
+    "evidence:buyers:36f9a00da843967ce74a",
+    "evidence:buyers:68fffcf85023c1c7d9ee"
+   ]
+  },
+  "evidence": [
+   {
+    "id": "evidence:value-map:cdc-nosafe",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "No safe blood lead level (BLL) in children has been identified.",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:cdc-delay",
+    "source_url": "https://www.cdc.gov/lead-prevention/about/index.html",
+    "quote": "Even low levels of lead in blood are associated with developmental delays, difficulty learning, and behavioral issues.",
+    "source_date": null,
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "web"
+   },
+   {
+    "id": "evidence:value-map:tlc-nocog",
+    "source_url": "https://openalex.org/W1991849756",
+    "quote": "Treatment with succimer lowered blood lead levels but did not improve scores on tests of cognition, behavior, or neuropsychological function in children with blood lead levels below 45 microg per deciliter.",
+    "source_date": "2001-05-10",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:tlc-env",
+    "source_url": "https://openalex.org/W2121920115",
+    "quote": "These results emphasize the importance of taking environmental measures to prevent exposure to lead.",
+    "source_date": "2004-07-01",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   },
+   {
+    "id": "evidence:value-map:pb-topical",
+    "source_url": "https://openalex.org/W2785617025",
+    "quote": "The toxicity of heavy metals such as lead (Pb), cadmium (Cd) and tin (Sn) has long been known but accidental exposures of large populations to these elements remain unfortunately a topical issue.",
+    "source_date": "2018-01-01",
+    "observed_at": "2026-11-24T22:20:00+00:00",
+    "kind": "paper"
+   }
+  ],
+  "seq": 162,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:19.193000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "category",
+  "edge": {
+   "id": "edge:solves:category:hopo:lead:value:hopo-lead-p-pb",
+   "from": "category:hopo:lead",
+   "to": "value:hopo-lead-p-pb",
+   "type": "SOLVES",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Solves"
+  },
+  "seq": 163,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:20.058000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "category",
+  "edge": {
+   "id": "edge:solves:category:hopo:lead:value:hopo-lead-p-cdc",
+   "from": "category:hopo:lead",
+   "to": "value:hopo-lead-p-cdc",
+   "type": "SOLVES",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Solves"
+  },
+  "seq": 164,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:20.922000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "category",
+  "edge": {
+   "id": "edge:solves:category:hopo:lead:value:hopo-lead-p-blrv",
+   "from": "category:hopo:lead",
+   "to": "value:hopo-lead-p-blrv",
+   "type": "SOLVES",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Solves"
+  },
+  "seq": 165,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:21.787000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "category",
+  "edge": {
+   "id": "edge:solves:category:hopo:lead:value:hopo-lead-p-tlc",
+   "from": "category:hopo:lead",
+   "to": "value:hopo-lead-p-tlc",
+   "type": "SOLVES",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Solves"
+  },
+  "seq": 166,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:22.651000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "category",
+  "edge": {
+   "id": "edge:solves:category:hopo:lead:value:hopo-lead-p-env",
+   "from": "category:hopo:lead",
+   "to": "value:hopo-lead-p-env",
+   "type": "SOLVES",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Solves"
+  },
+  "seq": 167,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:23.516000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "category",
+  "edge": {
+   "id": "edge:solves:category:hopo:lead:value:hopo-lead-p-need",
+   "from": "category:hopo:lead",
+   "to": "value:hopo-lead-p-need",
+   "type": "SOLVES",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "Solves"
+  },
+  "seq": 168,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:24.380000+00:00"
  },
  {
   "phase": "discovery",
@@ -4295,9 +5714,9 @@
     "evidence:buyers:a88584eb3807b35e71b1"
    ]
   },
-  "seq": 129,
+  "seq": 169,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:23.820000+00:00"
+  "at": "2026-11-24T21:02:25.245000+00:00"
  },
  {
   "phase": "discovery",
@@ -4314,9 +5733,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 130,
+  "seq": 170,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:24.944000+00:00"
+  "at": "2026-11-24T21:02:26.110000+00:00"
  },
  {
   "phase": "discovery",
@@ -4333,9 +5752,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 131,
+  "seq": 171,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:26.067000+00:00"
+  "at": "2026-11-24T21:02:26.974000+00:00"
  },
  {
   "phase": "discovery",
@@ -4352,9 +5771,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 132,
+  "seq": 172,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:27.191000+00:00"
+  "at": "2026-11-24T21:02:27.839000+00:00"
  },
  {
   "phase": "discovery",
@@ -4403,9 +5822,9 @@
     "evidence:buyers:3143dd5272e31feefb56"
    ]
   },
-  "seq": 133,
+  "seq": 173,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:28.315000+00:00"
+  "at": "2026-11-24T21:02:28.703000+00:00"
  },
  {
   "phase": "discovery",
@@ -4422,9 +5841,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 134,
+  "seq": 174,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:29.438000+00:00"
+  "at": "2026-11-24T21:02:29.568000+00:00"
  },
  {
   "phase": "discovery",
@@ -4441,9 +5860,9 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 135,
+  "seq": 175,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:30.562000+00:00"
+  "at": "2026-11-24T21:02:30.432000+00:00"
  },
  {
   "phase": "discovery",
@@ -4460,83 +5879,18 @@
    "name_check": "unchecked",
    "label": "Solves"
   },
-  "seq": 136,
+  "seq": 176,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:31.685000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "category",
-  "layer": "category",
-  "node": {
-   "id": "category:hopo:lead",
-   "name": "Lead & heavy-metal poisoning (public health)",
-   "problem_set": [
-    "Removal of toxic heavy metals such as lead and cadmium",
-    "Oral chelation options for metal exposure"
-   ],
-   "value_prop": "A published study reports Pb, Cd and Sn complexation by 3,4,3-LI(1,2-HOPO). Listed hospitals, agencies and poison centres are linked to OpenAlex works on lead-poisoning chelation (succimer/DMSA, EDTA); the link is a research signal, not a purchase intent.",
-   "colour": "--cat-4",
-   "org_ids": [
-    "org:openalex:I4210136340",
-    "org:openalex:I1288882113",
-    "org:openalex:I4210135976",
-    "org:openalex:I4210104433",
-    "org:openalex:I1302368450",
-    "org:openalex:I4210087865",
-    "org:openalex:I4210150312",
-    "org:openalex:I1335289525",
-    "org:openalex:I4210110933",
-    "org:openalex:I4210106432"
-   ],
-   "problem_node_ids": [
-    "value:hopo-lead-p-pb"
-   ],
-   "evidence_ids": [
-    "evidence:buyers:cd6584c431e5f63bbdfa",
-    "evidence:buyers:3e348adff49202347ff8",
-    "evidence:buyers:fc5b1f7e05c2c8d6f8ea",
-    "evidence:buyers:67e7cdff7a6cc46dbeef",
-    "evidence:buyers:c6702633a85101f6b214",
-    "evidence:buyers:5c798d9337b6eb395124",
-    "evidence:buyers:eec547e0351f6e620a80",
-    "evidence:buyers:1499e2e854e32c98a617",
-    "evidence:buyers:016635964b94ea12a644",
-    "evidence:buyers:71bdfa8e89f9d51da6b2",
-    "evidence:buyers:58be9a6233d8b0c702c1"
-   ]
-  },
-  "seq": 137,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:32.809000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "category",
-  "edge": {
-   "id": "edge:solves:category:hopo:lead:value:hopo-lead-p-pb",
-   "from": "category:hopo:lead",
-   "to": "value:hopo-lead-p-pb",
-   "type": "SOLVES",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "Solves"
-  },
-  "seq": 138,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:33.933000+00:00"
+  "at": "2026-11-24T21:02:31.297000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "status",
   "layer": "category",
   "status": "Found 4 buyer categories",
-  "seq": 139,
+  "seq": 177,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:35.056000+00:00"
+  "at": "2026-11-24T21:02:32.161000+00:00"
  },
  {
   "phase": "discovery",
@@ -4550,9 +5904,9 @@
    "buyer_score": 43.0,
    "openalex_id": "https://openalex.org/I1299303238"
   },
-  "seq": 140,
+  "seq": 178,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:36.180000+00:00"
+  "at": "2026-11-24T21:02:33.026000+00:00"
  },
  {
   "phase": "discovery",
@@ -4569,9 +5923,9 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 141,
+  "seq": 179,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:37.303000+00:00"
+  "at": "2026-11-24T21:02:33.890000+00:00"
  },
  {
   "phase": "discovery",
@@ -4585,9 +5939,9 @@
    "buyer_score": 39.0,
    "openalex_id": "https://openalex.org/I4405271368"
   },
-  "seq": 142,
+  "seq": 180,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:38.427000+00:00"
+  "at": "2026-11-24T21:02:34.755000+00:00"
  },
  {
   "phase": "discovery",
@@ -4604,9 +5958,9 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 143,
+  "seq": 181,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:39.551000+00:00"
+  "at": "2026-11-24T21:02:35.620000+00:00"
  },
  {
   "phase": "discovery",
@@ -4620,9 +5974,9 @@
    "buyer_score": 35.0,
    "openalex_id": "https://openalex.org/I1282311441"
   },
-  "seq": 144,
+  "seq": 182,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:40.674000+00:00"
+  "at": "2026-11-24T21:02:36.484000+00:00"
  },
  {
   "phase": "discovery",
@@ -4639,9 +5993,9 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 145,
+  "seq": 183,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:41.798000+00:00"
+  "at": "2026-11-24T21:02:37.349000+00:00"
  },
  {
   "phase": "discovery",
@@ -4655,9 +6009,9 @@
    "buyer_score": 35.0,
    "openalex_id": "https://openalex.org/I1329621470"
   },
-  "seq": 146,
+  "seq": 184,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:42.921000+00:00"
+  "at": "2026-11-24T21:02:38.213000+00:00"
  },
  {
   "phase": "discovery",
@@ -4674,9 +6028,9 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 147,
+  "seq": 185,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:44.045000+00:00"
+  "at": "2026-11-24T21:02:39.078000+00:00"
  },
  {
   "phase": "discovery",
@@ -4690,9 +6044,9 @@
    "buyer_score": 35.0,
    "openalex_id": "https://openalex.org/I2738703131"
   },
-  "seq": 148,
+  "seq": 186,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:45.169000+00:00"
+  "at": "2026-11-24T21:02:39.942000+00:00"
  },
  {
   "phase": "discovery",
@@ -4709,9 +6063,44 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 149,
+  "seq": 187,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:46.292000+00:00"
+  "at": "2026-11-24T21:02:40.807000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1288894424",
+   "name": "Health Canada",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I1288894424"
+  },
+  "seq": 188,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:41.671000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I1288894424",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I1288894424",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 189,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:42.536000+00:00"
  },
  {
   "phase": "discovery",
@@ -4725,9 +6114,9 @@
    "buyer_score": 9.0,
    "openalex_id": "https://openalex.org/I1289490764"
   },
-  "seq": 150,
+  "seq": 190,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:47.416000+00:00"
+  "at": "2026-11-24T21:02:43.401000+00:00"
  },
  {
   "phase": "discovery",
@@ -4744,9 +6133,9 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 151,
+  "seq": 191,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:48.539000+00:00"
+  "at": "2026-11-24T21:02:44.265000+00:00"
  },
  {
   "phase": "discovery",
@@ -4760,9 +6149,9 @@
    "buyer_score": 9.0,
    "openalex_id": "https://openalex.org/I1293448361"
   },
-  "seq": 152,
+  "seq": 192,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:49.663000+00:00"
+  "at": "2026-11-24T21:02:45.130000+00:00"
  },
  {
   "phase": "discovery",
@@ -4779,9 +6168,79 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 153,
+  "seq": 193,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:50.787000+00:00"
+  "at": "2026-11-24T21:02:45.994000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1298353152",
+   "name": "SRI International",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I1298353152"
+  },
+  "seq": 194,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:46.859000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I1298353152",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I1298353152",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 195,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:47.723000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I148314036",
+   "name": "Uniformed Services University of the Health Sciences",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I148314036"
+  },
+  "seq": 196,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:48.588000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I148314036",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I148314036",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 197,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:49.452000+00:00"
  },
  {
   "phase": "discovery",
@@ -4795,9 +6254,9 @@
    "buyer_score": 9.0,
    "openalex_id": "https://openalex.org/I2801182042"
   },
-  "seq": 154,
+  "seq": 198,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:51.910000+00:00"
+  "at": "2026-11-24T21:02:50.317000+00:00"
  },
  {
   "phase": "discovery",
@@ -4814,9 +6273,114 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 155,
+  "seq": 199,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:53.034000+00:00"
+  "at": "2026-11-24T21:02:51.182000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210114391",
+   "name": "Belgian Nuclear Research Centre",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I4210114391"
+  },
+  "seq": 200,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:52.046000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I4210114391",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I4210114391",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 201,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:52.911000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210134534",
+   "name": "National Institute of Allergy and Infectious Diseases",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I4210134534"
+  },
+  "seq": 202,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:53.775000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I4210134534",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I4210134534",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 203,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:54.640000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210137840",
+   "name": "Federal Office for Radiation Protection",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I4210137840"
+  },
+  "seq": 204,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:55.504000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I4210137840",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I4210137840",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 205,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:56.369000+00:00"
  },
  {
   "phase": "discovery",
@@ -4830,9 +6394,9 @@
    "buyer_score": 9.0,
    "openalex_id": "https://openalex.org/I4210155143"
   },
-  "seq": 156,
+  "seq": 206,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:54.157000+00:00"
+  "at": "2026-11-24T21:02:57.233000+00:00"
  },
  {
   "phase": "discovery",
@@ -4849,9 +6413,79 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 157,
+  "seq": 207,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:55.281000+00:00"
+  "at": "2026-11-24T21:02:58.098000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4387155235",
+   "name": "Institut für Radiobiologie der Bundeswehr",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I4387155235"
+  },
+  "seq": 208,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:58.963000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I4387155235",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I4387155235",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 209,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:02:59.827000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4389425366",
+   "name": "Oak Ridge Institute for Science and Education",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I4389425366"
+  },
+  "seq": 210,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:00.692000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I4389425366",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I4389425366",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
+  },
+  "seq": 211,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:01.556000+00:00"
  },
  {
   "phase": "discovery",
@@ -4865,9 +6499,9 @@
    "buyer_score": 6.0,
    "openalex_id": "https://openalex.org/I4210088792"
   },
-  "seq": 158,
+  "seq": 212,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:56.404000+00:00"
+  "at": "2026-11-24T21:03:02.421000+00:00"
  },
  {
   "phase": "discovery",
@@ -4884,604 +6518,394 @@
    "name_check": "unchecked",
    "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 159,
+  "seq": 213,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:57.528000+00:00"
+  "at": "2026-11-24T21:03:03.285000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "node",
   "layer": "lead",
   "node": {
-   "id": "org:openalex:I1294671590",
-   "name": "Centre National de la Recherche Scientifique",
+   "id": "org:openalex:I4387153084",
+   "name": "UK Health Security Agency",
    "type": "government",
-   "is_buyer": true,
-   "buyer_score": 51.0,
-   "openalex_id": "https://openalex.org/I1294671590"
-  },
-  "seq": 160,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:58.652000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I1294671590",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I1294671590",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 161,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:02:59.775000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I154526488",
-   "name": "Inserm",
-   "type": "government",
-   "is_buyer": true,
-   "buyer_score": 24.0,
-   "openalex_id": "https://openalex.org/I154526488"
-  },
-  "seq": 162,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:00.899000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I154526488",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I154526488",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 163,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:02.022000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I4210140884",
-   "name": "National Cancer Institute",
-   "type": "government",
-   "is_buyer": true,
-   "buyer_score": 24.0,
-   "openalex_id": "https://openalex.org/I4210140884"
-  },
-  "seq": 164,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:03.146000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I4210140884",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I4210140884",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 165,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:04.270000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I4210118725",
-   "name": "Laboratoire Chimie Electrochimie Moléculaires et Chimie Analytique",
-   "type": "lab",
-   "is_buyer": true,
-   "buyer_score": 22.0,
-   "openalex_id": "https://openalex.org/I4210118725"
-  },
-  "seq": 166,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:05.393000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I4210118725",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I4210118725",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 167,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:06.517000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I133593841",
-   "name": "Lundbeck (Denmark)",
-   "type": "company",
    "is_buyer": true,
    "buyer_score": 6.0,
-   "openalex_id": "https://openalex.org/I133593841"
+   "openalex_id": "https://openalex.org/I4387153084"
   },
-  "seq": 168,
+  "seq": 214,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:07.640000+00:00"
+  "at": "2026-11-24T21:03:04.150000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I133593841",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I133593841",
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I4387153084",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I4387153084",
    "type": "FITS",
    "date": null,
    "evidence_ids": [],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 169,
+  "seq": 215,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:08.764000+00:00"
+  "at": "2026-11-24T21:03:05.014000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "node",
   "layer": "lead",
   "node": {
-   "id": "org:openalex:I183934855",
-   "name": "Genentech",
-   "type": "company",
-   "is_buyer": true,
-   "buyer_score": 6.0,
-   "openalex_id": "https://openalex.org/I183934855"
-  },
-  "seq": 170,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:09.888000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I183934855",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I183934855",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 171,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:11.011000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I4405257904",
-   "name": "JFE Engineering Corporation (Japan)",
-   "type": "company",
-   "is_buyer": true,
-   "buyer_score": 6.0,
-   "openalex_id": "https://openalex.org/I4405257904"
-  },
-  "seq": 172,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:12.135000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I4405257904",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I4405257904",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 173,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:13.258000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I186523950",
-   "name": "Regeneron (United States)",
-   "type": "company",
-   "is_buyer": true,
-   "buyer_score": 3.0,
-   "openalex_id": "https://openalex.org/I186523950"
-  },
-  "seq": 174,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:14.382000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I186523950",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I186523950",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 175,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:15.506000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I25763013",
-   "name": "South African Nuclear Energy Corporation (South Africa)",
-   "type": "company",
-   "is_buyer": true,
-   "buyer_score": 3.0,
-   "openalex_id": "https://openalex.org/I25763013"
-  },
-  "seq": 176,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:16.629000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I25763013",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I25763013",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 177,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:17.753000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I4210147582",
-   "name": "Lumiphore (United States)",
-   "type": "company",
-   "is_buyer": true,
-   "buyer_score": 3.0,
-   "openalex_id": "https://openalex.org/I4210147582"
-  },
-  "seq": 178,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:18.876000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:pet:org:openalex:I4210147582",
-   "from": "category:hopo:pet",
-   "to": "org:openalex:I4210147582",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
-  },
-  "seq": 179,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:20+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I19820366",
-   "name": "Chinese Academy of Sciences",
+   "id": "org:openalex:I4387154209",
+   "name": "Administration for Strategic Preparedness and Response",
    "type": "government",
    "is_buyer": true,
-   "buyer_score": 47.0,
-   "openalex_id": "https://openalex.org/I19820366"
+   "buyer_score": 6.0,
+   "openalex_id": "https://openalex.org/I4387154209"
   },
-  "seq": 180,
+  "seq": 216,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:21.124000+00:00"
+  "at": "2026-11-24T21:03:05.879000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:fits:category:hopo:gd:org:openalex:I19820366",
-   "from": "category:hopo:gd",
-   "to": "org:openalex:I19820366",
+   "id": "edge:fits:category:hopo:radiation:org:openalex:I4387154209",
+   "from": "category:hopo:radiation",
+   "to": "org:openalex:I4387154209",
    "type": "FITS",
    "date": null,
    "evidence_ids": [],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+   "label": "fits Radiation countermeasures: government stockpiles & defense"
   },
-  "seq": 181,
+  "seq": 217,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:22.247000+00:00"
+  "at": "2026-11-24T21:03:06.744000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "node",
   "layer": "lead",
   "node": {
-   "id": "org:openalex:I67348948",
-   "name": "Bayer (Germany)",
-   "type": "company",
-   "is_buyer": true,
-   "buyer_score": 35.0,
-   "openalex_id": "https://openalex.org/I67348948"
-  },
-  "seq": 182,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:23.371000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "edge",
-  "layer": "lead",
-  "edge": {
-   "id": "edge:fits:category:hopo:gd:org:openalex:I67348948",
-   "from": "category:hopo:gd",
-   "to": "org:openalex:I67348948",
-   "type": "FITS",
-   "date": null,
-   "evidence_ids": [],
-   "confidence": 0.6,
-   "name_check": "unchecked",
-   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
-  },
-  "seq": 183,
-  "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:24.494000+00:00"
- },
- {
-  "phase": "discovery",
-  "kind": "node",
-  "layer": "lead",
-  "node": {
-   "id": "org:openalex:I120615911",
-   "name": "Guerbet (France)",
-   "type": "company",
+   "id": "org:openalex:I103043317",
+   "name": "Wisconsin Department of Health Services",
+   "type": "government",
    "is_buyer": true,
    "buyer_score": 9.0,
-   "openalex_id": "https://openalex.org/I120615911"
+   "openalex_id": "https://openalex.org/I103043317"
   },
-  "seq": 184,
+  "seq": 218,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:25.618000+00:00"
+  "at": "2026-11-24T21:03:07.608000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:fits:category:hopo:gd:org:openalex:I120615911",
-   "from": "category:hopo:gd",
-   "to": "org:openalex:I120615911",
+   "id": "edge:fits:category:hopo:lead:org:openalex:I103043317",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I103043317",
    "type": "FITS",
    "date": null,
    "evidence_ids": [],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+   "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 185,
+  "seq": 219,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:26.742000+00:00"
+  "at": "2026-11-24T21:03:08.473000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "node",
   "layer": "lead",
   "node": {
-   "id": "org:openalex:I17937529",
-   "name": "German Cancer Research Center",
+   "id": "org:openalex:I1285204247",
+   "name": "Cincinnati Children's Hospital Medical Center",
    "type": "other",
    "is_buyer": true,
    "buyer_score": 9.0,
-   "openalex_id": "https://openalex.org/I17937529"
+   "openalex_id": "https://openalex.org/I1285204247"
   },
-  "seq": 186,
+  "seq": 220,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:27.865000+00:00"
+  "at": "2026-11-24T21:03:09.337000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:fits:category:hopo:gd:org:openalex:I17937529",
-   "from": "category:hopo:gd",
-   "to": "org:openalex:I17937529",
+   "id": "edge:fits:category:hopo:lead:org:openalex:I1285204247",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I1285204247",
    "type": "FITS",
    "date": null,
    "evidence_ids": [],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+   "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 187,
+  "seq": 221,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:28.989000+00:00"
+  "at": "2026-11-24T21:03:10.202000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "node",
   "layer": "lead",
   "node": {
-   "id": "org:openalex:I30558944",
-   "name": "Oklahoma Medical Research Foundation",
+   "id": "org:openalex:I1336243289",
+   "name": "National Center for Healthy Housing",
    "type": "other",
    "is_buyer": true,
-   "buyer_score": 3.0,
-   "openalex_id": "https://openalex.org/I30558944"
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I1336243289"
   },
-  "seq": 188,
+  "seq": 222,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:30.112000+00:00"
+  "at": "2026-11-24T21:03:11.066000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:fits:category:hopo:gd:org:openalex:I30558944",
-   "from": "category:hopo:gd",
-   "to": "org:openalex:I30558944",
+   "id": "edge:fits:category:hopo:lead:org:openalex:I1336243289",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I1336243289",
    "type": "FITS",
    "date": null,
    "evidence_ids": [],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+   "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 189,
+  "seq": 223,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:31.236000+00:00"
+  "at": "2026-11-24T21:03:11.931000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "node",
   "layer": "lead",
   "node": {
-   "id": "org:openalex:I4210132761",
-   "name": "Bracco (Italy)",
-   "type": "company",
+   "id": "org:openalex:I180297670",
+   "name": "RTI International",
+   "type": "other",
    "is_buyer": true,
-   "buyer_score": 3.0,
-   "openalex_id": "https://openalex.org/I4210132761"
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I180297670"
   },
-  "seq": 190,
+  "seq": 224,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:32.360000+00:00"
+  "at": "2026-11-24T21:03:12.795000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:fits:category:hopo:gd:org:openalex:I4210132761",
-   "from": "category:hopo:gd",
-   "to": "org:openalex:I4210132761",
+   "id": "edge:fits:category:hopo:lead:org:openalex:I180297670",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I180297670",
    "type": "FITS",
    "date": null,
    "evidence_ids": [],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+   "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 191,
+  "seq": 225,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:33.483000+00:00"
+  "at": "2026-11-24T21:03:13.660000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "node",
   "layer": "lead",
   "node": {
-   "id": "org:openalex:I4210150350",
-   "name": "PDX Pharmaceuticals (United States)",
-   "type": "company",
+   "id": "org:openalex:I4210087915",
+   "name": "Massachusetts General Hospital",
+   "type": "other",
    "is_buyer": true,
-   "buyer_score": 3.0,
-   "openalex_id": "https://openalex.org/I4210150350"
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I4210087915"
   },
-  "seq": 192,
+  "seq": 226,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:34.607000+00:00"
+  "at": "2026-11-24T21:03:14.524000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:fits:category:hopo:gd:org:openalex:I4210150350",
-   "from": "category:hopo:gd",
-   "to": "org:openalex:I4210150350",
+   "id": "edge:fits:category:hopo:lead:org:openalex:I4210087915",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I4210087915",
    "type": "FITS",
    "date": null,
    "evidence_ids": [],
    "confidence": 0.6,
    "name_check": "unchecked",
-   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+   "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 193,
+  "seq": 227,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:35.730000+00:00"
+  "at": "2026-11-24T21:03:15.389000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210092468",
+   "name": "National Center for Environmental Health",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I4210092468"
+  },
+  "seq": 228,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:16.254000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:lead:org:openalex:I4210092468",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I4210092468",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Lead & heavy-metal poisoning (public health)"
+  },
+  "seq": 229,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:17.118000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210120689",
+   "name": "Universitätsklinikum Aachen",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I4210120689"
+  },
+  "seq": 230,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:17.983000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:lead:org:openalex:I4210120689",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I4210120689",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Lead & heavy-metal poisoning (public health)"
+  },
+  "seq": 231,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:18.847000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I169222155",
+   "name": "Chicago Department of Public Health",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 6.0,
+   "openalex_id": "https://openalex.org/I169222155"
+  },
+  "seq": 232,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:19.712000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:lead:org:openalex:I169222155",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I169222155",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Lead & heavy-metal poisoning (public health)"
+  },
+  "seq": 233,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:20.576000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I199145359",
+   "name": "Agency for Toxic Substances and Disease Registry",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 6.0,
+   "openalex_id": "https://openalex.org/I199145359"
+  },
+  "seq": 234,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:21.441000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:lead:org:openalex:I199145359",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I199145359",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Lead & heavy-metal poisoning (public health)"
+  },
+  "seq": 235,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:22.305000+00:00"
  },
  {
   "phase": "discovery",
@@ -5495,9 +6919,9 @@
    "buyer_score": 6.0,
    "openalex_id": "https://openalex.org/I4210135976"
   },
-  "seq": 194,
+  "seq": 236,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:36.854000+00:00"
+  "at": "2026-11-24T21:03:23.170000+00:00"
  },
  {
   "phase": "discovery",
@@ -5514,9 +6938,9 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 195,
+  "seq": 237,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:37.978000+00:00"
+  "at": "2026-11-24T21:03:24.035000+00:00"
  },
  {
   "phase": "discovery",
@@ -5530,9 +6954,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I1288882113"
   },
-  "seq": 196,
+  "seq": 238,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:39.101000+00:00"
+  "at": "2026-11-24T21:03:24.899000+00:00"
  },
  {
   "phase": "discovery",
@@ -5549,9 +6973,44 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 197,
+  "seq": 239,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:40.225000+00:00"
+  "at": "2026-11-24T21:03:25.764000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1298060332",
+   "name": "New York State Department of Health",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 3.0,
+   "openalex_id": "https://openalex.org/I1298060332"
+  },
+  "seq": 240,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:26.628000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:lead:org:openalex:I1298060332",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I1298060332",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Lead & heavy-metal poisoning (public health)"
+  },
+  "seq": 241,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:27.493000+00:00"
  },
  {
   "phase": "discovery",
@@ -5565,9 +7024,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I1302368450"
   },
-  "seq": 198,
+  "seq": 242,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:41.348000+00:00"
+  "at": "2026-11-24T21:03:28.357000+00:00"
  },
  {
   "phase": "discovery",
@@ -5584,9 +7043,9 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 199,
+  "seq": 243,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:42.472000+00:00"
+  "at": "2026-11-24T21:03:29.222000+00:00"
  },
  {
   "phase": "discovery",
@@ -5600,9 +7059,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I1335289525"
   },
-  "seq": 200,
+  "seq": 244,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:43.596000+00:00"
+  "at": "2026-11-24T21:03:30.086000+00:00"
  },
  {
   "phase": "discovery",
@@ -5619,9 +7078,9 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 201,
+  "seq": 245,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:44.719000+00:00"
+  "at": "2026-11-24T21:03:30.951000+00:00"
  },
  {
   "phase": "discovery",
@@ -5635,9 +7094,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I4210087865"
   },
-  "seq": 202,
+  "seq": 246,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:45.843000+00:00"
+  "at": "2026-11-24T21:03:31.816000+00:00"
  },
  {
   "phase": "discovery",
@@ -5654,9 +7113,44 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 203,
+  "seq": 247,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:46.966000+00:00"
+  "at": "2026-11-24T21:03:32.680000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210092716",
+   "name": "Santé Publique France",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3.0,
+   "openalex_id": "https://openalex.org/I4210092716"
+  },
+  "seq": 248,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:33.545000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:lead:org:openalex:I4210092716",
+   "from": "category:hopo:lead",
+   "to": "org:openalex:I4210092716",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Lead & heavy-metal poisoning (public health)"
+  },
+  "seq": 249,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:34.409000+00:00"
  },
  {
   "phase": "discovery",
@@ -5670,9 +7164,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I4210104433"
   },
-  "seq": 204,
+  "seq": 250,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:48.090000+00:00"
+  "at": "2026-11-24T21:03:35.274000+00:00"
  },
  {
   "phase": "discovery",
@@ -5689,9 +7183,9 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 205,
+  "seq": 251,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:49.213000+00:00"
+  "at": "2026-11-24T21:03:36.138000+00:00"
  },
  {
   "phase": "discovery",
@@ -5705,9 +7199,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I4210106432"
   },
-  "seq": 206,
+  "seq": 252,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:50.337000+00:00"
+  "at": "2026-11-24T21:03:37.003000+00:00"
  },
  {
   "phase": "discovery",
@@ -5724,9 +7218,9 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 207,
+  "seq": 253,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:51.461000+00:00"
+  "at": "2026-11-24T21:03:37.867000+00:00"
  },
  {
   "phase": "discovery",
@@ -5740,9 +7234,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I4210110933"
   },
-  "seq": 208,
+  "seq": 254,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:52.584000+00:00"
+  "at": "2026-11-24T21:03:38.732000+00:00"
  },
  {
   "phase": "discovery",
@@ -5759,9 +7253,9 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 209,
+  "seq": 255,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:53.708000+00:00"
+  "at": "2026-11-24T21:03:39.597000+00:00"
  },
  {
   "phase": "discovery",
@@ -5775,9 +7269,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I4210136340"
   },
-  "seq": 210,
+  "seq": 256,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:54.831000+00:00"
+  "at": "2026-11-24T21:03:40.461000+00:00"
  },
  {
   "phase": "discovery",
@@ -5794,9 +7288,9 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 211,
+  "seq": 257,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:55.955000+00:00"
+  "at": "2026-11-24T21:03:41.326000+00:00"
  },
  {
   "phase": "discovery",
@@ -5810,9 +7304,9 @@
    "buyer_score": 3.0,
    "openalex_id": "https://openalex.org/I4210150312"
   },
-  "seq": 212,
+  "seq": 258,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:57.079000+00:00"
+  "at": "2026-11-24T21:03:42.190000+00:00"
  },
  {
   "phase": "discovery",
@@ -5829,18 +7323,613 @@
    "name_check": "unchecked",
    "label": "fits Lead & heavy-metal poisoning (public health)"
   },
-  "seq": 213,
+  "seq": 259,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:58.202000+00:00"
+  "at": "2026-11-24T21:03:43.055000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I1294671590",
+   "name": "Centre National de la Recherche Scientifique",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 51.0,
+   "openalex_id": "https://openalex.org/I1294671590"
+  },
+  "seq": 260,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:43.919000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I1294671590",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I1294671590",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 261,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:44.784000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I154526488",
+   "name": "Inserm",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 24.0,
+   "openalex_id": "https://openalex.org/I154526488"
+  },
+  "seq": 262,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:45.648000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I154526488",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I154526488",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 263,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:46.513000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210140884",
+   "name": "National Cancer Institute",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 24.0,
+   "openalex_id": "https://openalex.org/I4210140884"
+  },
+  "seq": 264,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:47.378000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I4210140884",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I4210140884",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 265,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:48.242000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210118725",
+   "name": "Laboratoire Chimie Electrochimie Moléculaires et Chimie Analytique",
+   "type": "lab",
+   "is_buyer": true,
+   "buyer_score": 22.0,
+   "openalex_id": "https://openalex.org/I4210118725"
+  },
+  "seq": 266,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:49.107000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I4210118725",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I4210118725",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 267,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:49.971000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I133593841",
+   "name": "Lundbeck (Denmark)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 6.0,
+   "openalex_id": "https://openalex.org/I133593841"
+  },
+  "seq": 268,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:50.836000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I133593841",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I133593841",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 269,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:51.700000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I183934855",
+   "name": "Genentech",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 6.0,
+   "openalex_id": "https://openalex.org/I183934855"
+  },
+  "seq": 270,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:52.565000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I183934855",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I183934855",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 271,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:53.429000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4405257904",
+   "name": "JFE Engineering Corporation (Japan)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 6.0,
+   "openalex_id": "https://openalex.org/I4405257904"
+  },
+  "seq": 272,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:54.294000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I4405257904",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I4405257904",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 273,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:55.159000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I186523950",
+   "name": "Regeneron (United States)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3.0,
+   "openalex_id": "https://openalex.org/I186523950"
+  },
+  "seq": 274,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:56.023000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I186523950",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I186523950",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 275,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:56.888000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I25763013",
+   "name": "South African Nuclear Energy Corporation (South Africa)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3.0,
+   "openalex_id": "https://openalex.org/I25763013"
+  },
+  "seq": 276,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:57.752000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I25763013",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I25763013",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 277,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:58.617000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210147582",
+   "name": "Lumiphore (United States)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3.0,
+   "openalex_id": "https://openalex.org/I4210147582"
+  },
+  "seq": 278,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:03:59.481000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:pet:org:openalex:I4210147582",
+   "from": "category:hopo:pet",
+   "to": "org:openalex:I4210147582",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Radiopharmaceutical imaging (89Zr PET)"
+  },
+  "seq": 279,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:00.346000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I19820366",
+   "name": "Chinese Academy of Sciences",
+   "type": "government",
+   "is_buyer": true,
+   "buyer_score": 47.0,
+   "openalex_id": "https://openalex.org/I19820366"
+  },
+  "seq": 280,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:01.210000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I19820366",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I19820366",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 281,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:02.075000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I67348948",
+   "name": "Bayer (Germany)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 35.0,
+   "openalex_id": "https://openalex.org/I67348948"
+  },
+  "seq": 282,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:02.939000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I67348948",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I67348948",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 283,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:03.804000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I120615911",
+   "name": "Guerbet (France)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I120615911"
+  },
+  "seq": 284,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:04.669000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I120615911",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I120615911",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 285,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:05.533000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I17937529",
+   "name": "German Cancer Research Center",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 9.0,
+   "openalex_id": "https://openalex.org/I17937529"
+  },
+  "seq": 286,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:06.398000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I17937529",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I17937529",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 287,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:07.262000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I30558944",
+   "name": "Oklahoma Medical Research Foundation",
+   "type": "other",
+   "is_buyer": true,
+   "buyer_score": 3.0,
+   "openalex_id": "https://openalex.org/I30558944"
+  },
+  "seq": 288,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:08.127000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I30558944",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I30558944",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 289,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:08.991000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210132761",
+   "name": "Bracco (Italy)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3.0,
+   "openalex_id": "https://openalex.org/I4210132761"
+  },
+  "seq": 290,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:09.856000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I4210132761",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I4210132761",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 291,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:10.720000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "node",
+  "layer": "lead",
+  "node": {
+   "id": "org:openalex:I4210150350",
+   "name": "PDX Pharmaceuticals (United States)",
+   "type": "company",
+   "is_buyer": true,
+   "buyer_score": 3.0,
+   "openalex_id": "https://openalex.org/I4210150350"
+  },
+  "seq": 292,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:11.585000+00:00"
+ },
+ {
+  "phase": "discovery",
+  "kind": "edge",
+  "layer": "lead",
+  "edge": {
+   "id": "edge:fits:category:hopo:gd:org:openalex:I4210150350",
+   "from": "category:hopo:gd",
+   "to": "org:openalex:I4210150350",
+   "type": "FITS",
+   "date": null,
+   "evidence_ids": [],
+   "confidence": 0.6,
+   "name_check": "unchecked",
+   "label": "fits Gadolinium removal after MRI contrast (contrast-agent makers)"
+  },
+  "seq": 293,
+  "session_id": "demo-hopo",
+  "at": "2026-11-24T21:04:12.450000+00:00"
  },
  {
   "phase": "discovery",
   "kind": "status",
   "layer": "lead",
   "status": "1 other buyers",
-  "seq": 214,
+  "seq": 294,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:03:59.326000+00:00"
+  "at": "2026-11-24T21:04:13.314000+00:00"
  },
  {
   "phase": "discovery",
@@ -5854,9 +7943,9 @@
    "buyer_score": 17.0,
    "openalex_id": "https://openalex.org/I4210114217"
   },
-  "seq": 215,
+  "seq": 295,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:00.449000+00:00"
+  "at": "2026-11-24T21:04:14.179000+00:00"
  },
  {
   "phase": "paths",
@@ -5873,9 +7962,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 216,
+  "seq": 296,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:01.573000+00:00"
+  "at": "2026-11-24T21:04:15.043000+00:00"
  },
  {
   "phase": "paths",
@@ -5904,9 +7993,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 217,
+  "seq": 297,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:02.697000+00:00"
+  "at": "2026-11-24T21:04:15.908000+00:00"
  },
  {
   "phase": "paths",
@@ -5935,9 +8024,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 218,
+  "seq": 298,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:03.820000+00:00"
+  "at": "2026-11-24T21:04:16.772000+00:00"
  },
  {
   "phase": "paths",
@@ -5976,131 +8065,131 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 219,
+  "seq": 299,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:04.944000+00:00"
+  "at": "2026-11-24T21:04:17.637000+00:00"
  },
  {
   "phase": "paths",
   "kind": "node",
   "layer": "lead",
   "node": {
-   "id": "person:openalex:A5012858685",
-   "name": "Nisha Mulakken",
-   "openalex_id": "https://openalex.org/A5012858685",
-   "orcid": null,
-   "org_id": "org:openalex:I1282311441",
-   "affiliation_asof": "2021-07-06",
+   "id": "person:openalex:A5035055430",
+   "name": "Roger M. Pallares",
+   "openalex_id": "https://openalex.org/A5035055430",
+   "orcid": "https://orcid.org/0000-0001-7423-8706",
+   "org_id": "org:openalex:I4210120689",
+   "affiliation_asof": "2026-10-30",
    "role": null,
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 220,
+  "seq": 300,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:06.067000+00:00"
+  "at": "2026-11-24T21:04:18.501000+00:00"
  },
  {
   "phase": "paths",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:erick:328d2a8301e98f7e6952",
+   "id": "edge:erick:a020c302dbb0d9fe30f2",
    "from": "person:openalex:A5043992375",
-   "to": "person:openalex:A5012858685",
+   "to": "person:openalex:A5035055430",
    "type": "CO_AUTHORED",
-   "date": "2021-07-06",
+   "date": "2025-01-21",
    "evidence_ids": [
-    "evidence:erick:028ff848d0ea346f7eb0"
+    "evidence:erick:71040838bb60c4af1756"
    ],
-   "confidence": 0.45,
+   "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "co-authored 2021 [cached OpenAlex]"
+   "label": "co-authored 2025 [cached OpenAlex]"
   },
   "evidence": [
    {
-    "id": "evidence:erick:028ff848d0ea346f7eb0",
-    "source_url": "https://openalex.org/W4206479191",
-    "quote": "COVID-19 Testing R&D (Final Report)",
-    "source_date": "2021-07-06",
+    "id": "evidence:erick:71040838bb60c4af1756",
+    "source_url": "https://openalex.org/W4406674105",
+    "quote": "Gold Nanoparticle-Enabled Fluorescence Sensing of Gadolinium-Based Contrast Agents in Urine",
+    "source_date": "2025-01-21",
     "observed_at": "2026-11-24T21:23:33.907182+00:00",
     "kind": "paper"
    }
   ],
-  "seq": 221,
+  "seq": 301,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:07.191000+00:00"
+  "at": "2026-11-24T21:04:19.366000+00:00"
  },
  {
   "phase": "paths",
   "kind": "edge",
   "layer": "lead",
   "edge": {
-   "id": "edge:erick:4574859c2774c92d5bfe",
-   "from": "person:openalex:A5012858685",
-   "to": "org:openalex:I1282311441",
+   "id": "edge:erick:b9190f94bde48449a3c9",
+   "from": "person:openalex:A5035055430",
+   "to": "org:openalex:I4210120689",
    "type": "AFFILIATED_AT",
-   "date": "2021-07-06",
+   "date": "2026-10-30",
    "evidence_ids": [
-    "evidence:erick:0e48fd43a7d5f3c69a1f"
+    "evidence:erick:76525df7a7a7188b1bcc"
    ],
-   "confidence": 0.45,
+   "confidence": 0.85,
    "name_check": "unchecked",
-   "label": "affiliated as of 2021-07-06 [cached OpenAlex]"
+   "label": "affiliated as of 2026-10-30 [cached OpenAlex]"
   },
   "evidence": [
    {
-    "id": "evidence:erick:0e48fd43a7d5f3c69a1f",
-    "source_url": "https://openalex.org/W4206479191",
-    "quote": "Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)",
-    "source_date": "2021-07-06",
+    "id": "evidence:erick:76525df7a7a7188b1bcc",
+    "source_url": "https://openalex.org/W7224852742",
+    "quote": "RWTH Aachen University Clinic, Aachen, Germany, 52074",
+    "source_date": "2026-10-30",
     "observed_at": "2026-11-24T21:23:33.907182+00:00",
     "kind": "affiliation"
    }
   ],
-  "seq": 222,
+  "seq": 302,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:08.315000+00:00"
+  "at": "2026-11-24T21:04:20.231000+00:00"
  },
  {
   "phase": "paths",
   "kind": "path",
   "layer": "lead",
   "path": {
-   "id": "path:erick:2e181a4b0a51a94255a1",
+   "id": "path:erick:476d99d1bac45674aac8",
    "founder_id": "person:openalex:A5043992375",
-   "bridge_id": "person:openalex:A5012858685",
-   "buyer_person_id": "person:openalex:A5012858685",
-   "buyer_org_id": "org:openalex:I1282311441",
+   "bridge_id": "person:openalex:A5035055430",
+   "buyer_person_id": "person:openalex:A5035055430",
+   "buyer_org_id": "org:openalex:I4210120689",
    "hops": [
-    "edge:erick:328d2a8301e98f7e6952",
-    "edge:erick:4574859c2774c92d5bfe"
+    "edge:erick:a020c302dbb0d9fe30f2",
+    "edge:erick:b9190f94bde48449a3c9"
    ],
    "kind": "co_author",
-   "score": 1.9,
-   "weakest_edge_id": "edge:erick:328d2a8301e98f7e6952",
+   "score": 1.95,
+   "weakest_edge_id": "edge:erick:a020c302dbb0d9fe30f2",
    "why_now_signal_ids": []
   },
   "evidence": [
    {
-    "id": "evidence:erick:028ff848d0ea346f7eb0",
-    "source_url": "https://openalex.org/W4206479191",
-    "quote": "COVID-19 Testing R&D (Final Report)",
-    "source_date": "2021-07-06",
+    "id": "evidence:erick:71040838bb60c4af1756",
+    "source_url": "https://openalex.org/W4406674105",
+    "quote": "Gold Nanoparticle-Enabled Fluorescence Sensing of Gadolinium-Based Contrast Agents in Urine",
+    "source_date": "2025-01-21",
     "observed_at": "2026-11-24T21:23:33.907182+00:00",
     "kind": "paper"
    },
    {
-    "id": "evidence:erick:0e48fd43a7d5f3c69a1f",
-    "source_url": "https://openalex.org/W4206479191",
-    "quote": "Lawrence Livermore National Lab. (LLNL), Livermore, CA (United States)",
-    "source_date": "2021-07-06",
+    "id": "evidence:erick:76525df7a7a7188b1bcc",
+    "source_url": "https://openalex.org/W7224852742",
+    "quote": "RWTH Aachen University Clinic, Aachen, Germany, 52074",
+    "source_date": "2026-10-30",
     "observed_at": "2026-11-24T21:23:33.907182+00:00",
     "kind": "affiliation"
    }
   ],
-  "seq": 223,
+  "seq": 303,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:09.438000+00:00"
+  "at": "2026-11-24T21:04:21.095000+00:00"
  },
  {
   "phase": "paths",
@@ -6117,9 +8206,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 224,
+  "seq": 304,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:10.562000+00:00"
+  "at": "2026-11-24T21:04:21.960000+00:00"
  },
  {
   "phase": "paths",
@@ -6148,9 +8237,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 225,
+  "seq": 305,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:11.685000+00:00"
+  "at": "2026-11-24T21:04:22.824000+00:00"
  },
  {
   "phase": "paths",
@@ -6179,9 +8268,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 226,
+  "seq": 306,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:12.809000+00:00"
+  "at": "2026-11-24T21:04:23.689000+00:00"
  },
  {
   "phase": "paths",
@@ -6220,9 +8309,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 227,
+  "seq": 307,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:13.933000+00:00"
+  "at": "2026-11-24T21:04:24.553000+00:00"
  },
  {
   "phase": "paths",
@@ -6239,9 +8328,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 228,
+  "seq": 308,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:15.056000+00:00"
+  "at": "2026-11-24T21:04:25.418000+00:00"
  },
  {
   "phase": "paths",
@@ -6270,9 +8359,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 229,
+  "seq": 309,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:16.180000+00:00"
+  "at": "2026-11-24T21:04:26.282000+00:00"
  },
  {
   "phase": "paths",
@@ -6286,9 +8375,9 @@
    "buyer_score": null,
    "openalex_id": "https://openalex.org/I1321897675"
   },
-  "seq": 230,
+  "seq": 310,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:17.303000+00:00"
+  "at": "2026-11-24T21:04:27.147000+00:00"
  },
  {
   "phase": "paths",
@@ -6317,9 +8406,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 231,
+  "seq": 311,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:18.427000+00:00"
+  "at": "2026-11-24T21:04:28.012000+00:00"
  },
  {
   "phase": "paths",
@@ -6390,18 +8479,18 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 232,
+  "seq": 312,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:19.551000+00:00"
+  "at": "2026-11-24T21:04:28.876000+00:00"
  },
  {
   "phase": "paths",
   "kind": "status",
   "layer": "lead",
   "status": "Moss verified: Åsmund Larsen, Radiopharmaceuticals manager at Bayer (as of Mar 2024)",
-  "seq": 233,
+  "seq": 313,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:20.674000+00:00"
+  "at": "2026-11-24T21:04:29.741000+00:00"
  },
  {
   "phase": "paths",
@@ -6418,9 +8507,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 234,
+  "seq": 314,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:21.798000+00:00"
+  "at": "2026-11-24T21:04:30.605000+00:00"
  },
  {
   "phase": "paths",
@@ -6449,9 +8538,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 235,
+  "seq": 315,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:22.921000+00:00"
+  "at": "2026-11-24T21:04:31.470000+00:00"
  },
  {
   "phase": "paths",
@@ -6480,9 +8569,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 236,
+  "seq": 316,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:24.045000+00:00"
+  "at": "2026-11-24T21:04:32.334000+00:00"
  },
  {
   "phase": "paths",
@@ -6521,9 +8610,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 237,
+  "seq": 317,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:25.169000+00:00"
+  "at": "2026-11-24T21:04:33.199000+00:00"
  },
  {
   "phase": "paths",
@@ -6540,9 +8629,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 238,
+  "seq": 318,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:26.292000+00:00"
+  "at": "2026-11-24T21:04:34.063000+00:00"
  },
  {
   "phase": "paths",
@@ -6571,9 +8660,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 239,
+  "seq": 319,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:27.416000+00:00"
+  "at": "2026-11-24T21:04:34.928000+00:00"
  },
  {
   "phase": "paths",
@@ -6602,9 +8691,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 240,
+  "seq": 320,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:28.539000+00:00"
+  "at": "2026-11-24T21:04:35.793000+00:00"
  },
  {
   "phase": "paths",
@@ -6643,9 +8732,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 241,
+  "seq": 321,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:29.663000+00:00"
+  "at": "2026-11-24T21:04:36.657000+00:00"
  },
  {
   "phase": "paths",
@@ -6662,9 +8751,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 242,
+  "seq": 322,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:30.787000+00:00"
+  "at": "2026-11-24T21:04:37.522000+00:00"
  },
  {
   "phase": "paths",
@@ -6693,9 +8782,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 243,
+  "seq": 323,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:31.910000+00:00"
+  "at": "2026-11-24T21:04:38.386000+00:00"
  },
  {
   "phase": "paths",
@@ -6724,9 +8813,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 244,
+  "seq": 324,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:33.034000+00:00"
+  "at": "2026-11-24T21:04:39.251000+00:00"
  },
  {
   "phase": "paths",
@@ -6765,9 +8854,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 245,
+  "seq": 325,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:34.157000+00:00"
+  "at": "2026-11-24T21:04:40.115000+00:00"
  },
  {
   "phase": "paths",
@@ -6784,9 +8873,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 246,
+  "seq": 326,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:35.281000+00:00"
+  "at": "2026-11-24T21:04:40.980000+00:00"
  },
  {
   "phase": "paths",
@@ -6815,9 +8904,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 247,
+  "seq": 327,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:36.404000+00:00"
+  "at": "2026-11-24T21:04:41.844000+00:00"
  },
  {
   "phase": "paths",
@@ -6846,9 +8935,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 248,
+  "seq": 328,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:37.528000+00:00"
+  "at": "2026-11-24T21:04:42.709000+00:00"
  },
  {
   "phase": "paths",
@@ -6887,9 +8976,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 249,
+  "seq": 329,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:38.652000+00:00"
+  "at": "2026-11-24T21:04:43.573000+00:00"
  },
  {
   "phase": "paths",
@@ -6906,9 +8995,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 250,
+  "seq": 330,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:39.775000+00:00"
+  "at": "2026-11-24T21:04:44.438000+00:00"
  },
  {
   "phase": "paths",
@@ -6937,9 +9026,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 251,
+  "seq": 331,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:40.899000+00:00"
+  "at": "2026-11-24T21:04:45.303000+00:00"
  },
  {
   "phase": "paths",
@@ -6968,9 +9057,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 252,
+  "seq": 332,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:42.022000+00:00"
+  "at": "2026-11-24T21:04:46.167000+00:00"
  },
  {
   "phase": "paths",
@@ -7009,9 +9098,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 253,
+  "seq": 333,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:43.146000+00:00"
+  "at": "2026-11-24T21:04:47.032000+00:00"
  },
  {
   "phase": "paths",
@@ -7028,9 +9117,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 254,
+  "seq": 334,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:44.270000+00:00"
+  "at": "2026-11-24T21:04:47.896000+00:00"
  },
  {
   "phase": "paths",
@@ -7059,9 +9148,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 255,
+  "seq": 335,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:45.393000+00:00"
+  "at": "2026-11-24T21:04:48.761000+00:00"
  },
  {
   "phase": "paths",
@@ -7090,9 +9179,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 256,
+  "seq": 336,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:46.517000+00:00"
+  "at": "2026-11-24T21:04:49.625000+00:00"
  },
  {
   "phase": "paths",
@@ -7147,18 +9236,18 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 257,
+  "seq": 337,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:47.640000+00:00"
+  "at": "2026-11-24T21:04:50.490000+00:00"
  },
  {
   "phase": "paths",
   "kind": "status",
   "layer": "lead",
   "status": "Moss verified: S. Olivia Gunther, Staff Scientist at Lawrence Livermore National Laboratory",
-  "seq": 258,
+  "seq": 338,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:48.764000+00:00"
+  "at": "2026-11-24T21:04:51.354000+00:00"
  },
  {
   "phase": "paths",
@@ -7175,9 +9264,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 259,
+  "seq": 339,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:49.888000+00:00"
+  "at": "2026-11-24T21:04:52.219000+00:00"
  },
  {
   "phase": "paths",
@@ -7206,9 +9295,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 260,
+  "seq": 340,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:51.011000+00:00"
+  "at": "2026-11-24T21:04:53.084000+00:00"
  },
  {
   "phase": "paths",
@@ -7237,9 +9326,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 261,
+  "seq": 341,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:52.135000+00:00"
+  "at": "2026-11-24T21:04:53.948000+00:00"
  },
  {
   "phase": "paths",
@@ -7302,18 +9391,18 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 262,
+  "seq": 342,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:53.258000+00:00"
+  "at": "2026-11-24T21:04:54.813000+00:00"
  },
  {
   "phase": "paths",
   "kind": "status",
   "layer": "lead",
   "status": "Moss verified: Appie Peterson, Staff Scientist, Materials Science Division at Lawrence Livermore National Laboratory",
-  "seq": 263,
+  "seq": 343,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:54.382000+00:00"
+  "at": "2026-11-24T21:04:55.677000+00:00"
  },
  {
   "phase": "paths",
@@ -7330,9 +9419,9 @@
    "is_bridge_candidate": true,
    "alignment": null
   },
-  "seq": 264,
+  "seq": 344,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:55.506000+00:00"
+  "at": "2026-11-24T21:04:56.542000+00:00"
  },
  {
   "phase": "paths",
@@ -7361,9 +9450,9 @@
     "kind": "paper"
    }
   ],
-  "seq": 265,
+  "seq": 345,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:56.629000+00:00"
+  "at": "2026-11-24T21:04:57.406000+00:00"
  },
  {
   "phase": "paths",
@@ -7392,9 +9481,9 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 266,
+  "seq": 346,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:57.753000+00:00"
+  "at": "2026-11-24T21:04:58.271000+00:00"
  },
  {
   "phase": "paths",
@@ -7433,16 +9522,16 @@
     "kind": "affiliation"
    }
   ],
-  "seq": 267,
+  "seq": 347,
   "session_id": "demo-hopo",
-  "at": "2026-11-24T21:04:58.876000+00:00"
+  "at": "2026-11-24T21:04:59.135000+00:00"
  },
  {
   "phase": "paths",
   "kind": "status",
   "layer": "lead",
-  "status": "12 warm paths to 3 buyer orgs",
-  "seq": 268,
+  "status": "12 warm paths to 4 buyer orgs",
+  "seq": 348,
   "session_id": "demo-hopo",
   "at": "2026-11-24T21:05:00+00:00"
  }
