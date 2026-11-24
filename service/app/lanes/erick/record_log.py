@@ -12,7 +12,9 @@ from . import build, paths
 
 ROOT = Path(__file__).resolve().parents[4]
 FIX = ROOT / 'fixtures'
-OUT = ROOT / 'data' / 'graph_events' / 'demo-hopo.json'
+OUTDIR = ROOT / 'data' / 'graph_events'
+OUT = OUTDIR / 'demo-hopo.json'
+SESSIONS = ('demo-hopo', 'demo-lightmatter')
 FOUNDER = 'person:openalex:A5043992375'
 HERO = 'person:openalex:A5085203145'
 MAX_PATHS = 12
@@ -32,7 +34,7 @@ def _ev(ids, pool):
     return [pool[i] for i in ids if i in pool]
 
 
-def build_log(session_id='demo-hopo'):
+def _hopo_ctx():
     vm, cats, buyers = _load('value_map_hopo.json'), _load('categories_hopo.json'), _load('buyers_hopo.json')
     brief, contacts = _load('briefing_demo_hopo.json')['briefing'], _load('contacts.json')
     pool = {e['id']: e for e in vm['evidence'] + contacts['evidence']}
@@ -50,10 +52,7 @@ def build_log(session_id='demo-hopo'):
 
     base = [p for p in paths.find_paths(FOUNDER) if p.buyer_org_id in buyer_ids]
     # Moss-verified contacts: source moss_task + task verification_passed (never pattern/guessed/cache)
-    tasks = contacts['_meta'].get('tasks', {})
-    verified = {c['person_id']: c for c in contacts['items']
-                if c.get('source') == 'moss_task' and tasks.get(c['person_id'], {}).get('verification_passed')}
-    warnings = []
+    verified = _verified(contacts)
 
     def _is_verified(p):
         c = verified.get(p.bridge_id)
@@ -73,6 +72,66 @@ def build_log(session_id='demo-hopo'):
     ranked = sorted(final, key=lambda p: (-p.score, p.id))
     keep = {p.id for p in ranked[:MAX_PATHS]} | {p.id for p in ranked if _is_verified(p)}
     final = sorted((p for p in ranked if p.id in keep), key=lambda p: (p.score, p.id))  # ascending: best last
+    return _ctx(vm=vm, cats=cats, brief=brief, pool=pool, buyer_orgs=buyer_orgs, buyer_ev=buyer_ev,
+                founder=FOUNDER, person_by=person_by, org_by=org_by, ed=ed, final=final, is_verified=_is_verified)
+
+
+def _ctx(**kw):
+    return kw
+
+
+def _verified(contacts):
+    tasks = contacts['_meta'].get('tasks', {})
+    return {c['person_id']: c for c in contacts['items']
+            if c.get('source') == 'moss_task' and tasks.get(c['person_id'], {}).get('verification_passed')}
+
+
+def _lightmatter_ctx():
+    """The original fixture founder (Lightmatter): fixtures only, scores taken from fixtures/paths.json as-is."""
+    from ...models import Edge, Path, Person
+    founder, vm, plans = _load('founder.json'), _load('value_map.json'), _load('categories.json')
+    brief, contacts = _load('briefing_demo.json')['briefing'], _load('contacts.json')
+    pool = {e['id']: e for e in _load('evidence.json')['items'] + vm['evidence'] + contacts['evidence']}
+    for evs in plans['buyer_evidence'].values():
+        pool.update({e['id']: e for e in evs})
+    person_by = {p['id']: Person.model_validate(p) for p in _load('people.json')['items']}
+    org_by = {o['id']: Org.model_validate(o) for o in _load('orgs.json')['items']}
+    ed = {e['id']: Edge.model_validate(e) for e in _load('edges.json')['items']}
+    buyer_orgs = [o for o in org_by.values() if o.is_buyer]
+    buyer_ev = {oid: [e['id'] for e in evs] for oid, evs in plans['buyer_evidence'].items()}
+    cats = []
+    for i, pl in enumerate(plans['plans']):
+        ids = [oid for oid in pl['members'] if oid in org_by]
+        cats.append({'id': f'category:lightmatter:{i + 1}', 'name': pl['name'], 'problem_set': pl['problem_set'],
+                     'value_prop': pl['value_prop'], 'colour': f'--cat-{i + 1}', 'org_ids': ids,
+                     'problem_node_ids': pl['problem_ids'],
+                     'evidence_ids': sorted({x for oid in ids for x in pl['members'][oid]})})
+    verified = _verified(contacts)
+    for p in _load('paths.json')['items']:  # name check ok on the Moss-verified bridge person's own hop edges
+        c = verified.get(p['bridge_id'])
+        if c and paths._norm(c['current_org']) == paths._norm(org_by[p['buyer_org_id']].name):
+            for h in p['hops']:
+                if p['bridge_id'] in (ed[h].from_, ed[h].to):
+                    ed[h].name_check = 'ok'
+    final = sorted((Path.model_validate(p) for p in _load('paths.json')['items']
+                    if org_by[p['buyer_org_id']].is_buyer), key=lambda p: (p.score, p.id))
+
+    def _is_verified(p):
+        c = verified.get(p.bridge_id)
+        return c if c and paths._norm(c['current_org']) == paths._norm(org_by[p.buyer_org_id].name) else None
+    person_by[founder['id']] = person_by.get(founder['id']) or Person.model_validate(
+        {'id': founder['id'], 'name': founder['name'], 'openalex_id': founder['openalex_id'], 'orcid': None,
+         'org_id': None, 'affiliation_asof': None, 'role': None, 'is_bridge_candidate': False, 'alignment': None})
+    return _ctx(vm=vm, cats=cats, brief=brief, pool=pool, buyer_orgs=buyer_orgs, buyer_ev=buyer_ev,
+                founder=founder['id'], person_by=person_by, org_by=org_by, ed=ed, final=final, is_verified=_is_verified)
+
+
+def build_log(session_id='demo-hopo'):
+    ctx = {'demo-hopo': _hopo_ctx, 'demo-lightmatter': _lightmatter_ctx}[session_id]()
+    vm, cats, brief, pool = ctx['vm'], ctx['cats'], ctx['brief'], ctx['pool']
+    buyer_orgs, buyer_ev, person_by, org_by = ctx['buyer_orgs'], ctx['buyer_ev'], ctx['person_by'], ctx['org_by']
+    ed, final, _is_verified, founder = ctx['ed'], ctx['final'], ctx['is_verified'], ctx['founder']
+    warnings = []
     build_log.final = final
 
     out, seen = [], set()
@@ -102,11 +161,12 @@ def build_log(session_id='demo-hopo'):
         return {k: v for k, v in _dump(o).items() if k in Org.model_fields}
 
     # 1 reading
-    emit('reading', 'status', 'core', status='Reading Berkeley Lab papers (Abergel group)…')
+    emit('reading', 'status', 'core', status='Reading Berkeley Lab papers (Abergel group)…' if session_id == 'demo-hopo'
+         else f"Reading papers and site: {brief['founder'].get('name', 'founder')}…")
     for s in brief['sources']:
         verb = 'Reading paper' if s['kind'] == 'paper' else f"Reading {s['kind']}"
         emit('reading', 'status', 'core', status=f"{verb}: {s['title'][:110]}")
-    node('reading', 'core', person_dict(person_by[FOUNDER]))
+    node('reading', 'core', person_dict(person_by[founder]))
 
     # 2 interview: value map in kind order, edges right after both ends exist
     vedges = list(vm['edges'])
@@ -184,13 +244,16 @@ def build_log(session_id='demo-hopo'):
 
 
 if __name__ == '__main__':
-    log = build_log()
-    OUT.write_text(json.dumps(log, indent=1, ensure_ascii=False) + '\n', encoding='utf-8')
-    print(len(log), 'events ->', OUT)
-    for k, n in sorted(Counter((e['phase'], e['kind']) for e in log).items()):
-        print(' ', *k, n)
-    for w in build_log.warnings:
-        print(w)
-    for e in log:
-        if e['kind'] == 'path':
-            print(' path', e['path']['score'], e['path']['bridge_id'], '->', e['path']['buyer_org_id'])
+    import sys
+    for sid in sys.argv[1:] or SESSIONS:
+        log = build_log(sid)
+        out = OUTDIR / f'{sid}.json'
+        out.write_text(json.dumps(log, indent=1, ensure_ascii=False) + '\n', encoding='utf-8')
+        print(sid, len(log), 'events ->', out)
+        for k, n in sorted(Counter((e['phase'], e['kind']) for e in log).items()):
+            print(' ', *k, n)
+        for w in build_log.warnings:
+            print(w)
+        for e in log:
+            if e['kind'] == 'path':
+                print(' path', e['path']['score'], e['path']['bridge_id'], '->', e['path']['buyer_org_id'])

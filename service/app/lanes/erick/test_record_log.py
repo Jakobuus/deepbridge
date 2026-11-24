@@ -1,20 +1,20 @@
-"""Quick check of the recorded demo-hopo log. Run from service/: uv run python -m app.lanes.erick.test_record_log"""
+"""Quick check of the recorded demo-hopo and demo-lightmatter logs. Run from service/: uv run python -m app.lanes.erick.test_record_log"""
 import json
 import sys
 
 from ... import events
-from .record_log import OUT, build_log
+from .record_log import OUTDIR, SESSIONS, build_log
 
 ORDER = ['reading', 'interview', 'discovery', 'paths']
 
 
-def main():
+def check(sid):
     errs = []
-    log = json.loads(OUT.read_text(encoding='utf-8'))
-    fresh = build_log()
-    if not 150 <= len(log) <= 400:
-        errs.append(f'{len(log)} events, want 150-400')
-    if len(fresh) != len(log):
+    log = json.loads((OUTDIR / f'{sid}.json').read_text(encoding='utf-8'))
+    fresh = build_log(sid)
+    if not 60 <= len(log) <= 400:
+        errs.append(f'{len(log)} events, want 60-400')
+    if fresh != log:
         errs.append('file is stale vs build_log()')
     if [e['seq'] for e in log] != list(range(1, len(log) + 1)):
         errs.append('seq not contiguous')
@@ -52,13 +52,17 @@ def main():
     scores = [e['path']['score'] for e in log if e['kind'] == 'path']
     if scores != sorted(scores):
         errs.append('paths not ascending by score')
-    events._LOG.pop('demo-hopo', None)
-    if not events.ensure_recorded('demo-hopo') or len(events.events('demo-hopo')) != len(log):
+    events._LOG.pop(sid, None)
+    if not events.ensure_recorded(sid) or len(events.events(sid)) != len(log):
         errs.append('ensure_recorded failed')
     for er in errs:
-        print('FAIL', er)
-    print('OK' if not errs else f'{len(errs)} failure(s)', len(log), 'events')
-    return 1 if errs else 0
+        print('FAIL', sid, er)
+    print(sid, 'OK' if not errs else f'{len(errs)} failure(s)', len(log), 'events')
+    return len(errs)
+
+
+def main():
+    return 1 if sum(check(sid) for sid in SESSIONS) else 0
 
 
 if __name__ == '__main__':
