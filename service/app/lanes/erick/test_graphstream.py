@@ -4,7 +4,7 @@ import sys as _sys
 from pathlib import Path as _P
 
 _sys.path.insert(0, str(_P(__file__).resolve().parents[3]))
-import json
+import json  # noqa: I001, RUF100  (isort differs: repo root vs service/)
 import socket
 import sys
 import threading
@@ -15,6 +15,7 @@ import uuid
 from datetime import UTC, datetime, timedelta
 
 import uvicorn
+
 from app import events
 
 _server = None
@@ -189,8 +190,9 @@ def test_speed_invalid_is_422():
 
 
 def test_ensure_recorded_bad_ids():
-    for bad in ('../etc/passwd', 'a/b', '', 'x' * 65, 'a b', 'a.json'):
+    for bad in ('../etc/passwd', 'a/b', '', 'x' * 65, 'a b', 'a.json', 'abc\n'):
         assert events.ensure_recorded(bad) is False
+    assert events.ensure_recorded('abc\n') is False  # trailing newline must not pass
     assert events.ensure_recorded(_sid('missing')) is False
 
 
@@ -207,6 +209,65 @@ def test_ensure_recorded_loads_file(tmp_path=None):
             assert events.ensure_recorded(sid) is False  # already has events
         finally:
             events._LOG_DIR = old
+
+
+def test_ensure_recorded_rejects_invalid_file():
+    import tempfile
+    from pathlib import Path
+    sid = _sid('bad')
+    good = _mk(2)
+    for tweak in ({'phase': 'nope'}, {'kind': 'x'}, {'layer': 'x'}, {'at': 5}):
+        bad = [good[0], {**good[1], **tweak}]
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / f'{sid}.json').write_text(json.dumps(bad))
+            old, events._LOG_DIR = events._LOG_DIR, Path(d)
+            try:
+                assert events.ensure_recorded(sid) is False
+                assert events.events(sid) == []
+            finally:
+                events._LOG_DIR = old
+    with tempfile.TemporaryDirectory() as d:
+        (Path(d) / f'{sid}.json').write_text(json.dumps([good[0], 'junk']))
+        old, events._LOG_DIR = events._LOG_DIR, Path(d)
+        try:
+            assert events.ensure_recorded(sid) is False
+        finally:
+            events._LOG_DIR = old
+
+
+def test_ensure_recorded_does_not_clobber():
+    sid = _sid('cl')
+    events.publish(sid, 'reading', 'status', 'core', status='live')
+    assert events._install_if_empty(sid, _mk(3)) is False
+    assert len(events.events(sid)) == 1
+
+
+def test_unsubscribe_cleans_key_and_bounded_publish():
+    sid = _sid('bq')
+    q = events.subscribe(sid, maxsize=1)
+    for i in range(5):
+        events.publish(sid, 'reading', 'status', 'core', status=str(i))  # must not block/raise
+    assert q.qsize() == 1
+    events.unsubscribe(sid, q)
+    assert sid not in events._SUBS
+
+
+def test_disconnect_unsubscribes():
+    base = _start()
+    sid = _sid('dc')
+    events.publish(sid, 'reading', 'status', 'core', status='a')
+    host, port = base.replace('http://', '').split(':')
+    s = socket.create_connection((host, int(port)))
+    s.sendall(f'GET /graph/stream?session_id={sid} HTTP/1.1\r\nHost: x\r\n\r\n'.encode())
+    buf = b''
+    while b'event: graph' not in buf:
+        buf += s.recv(4096)
+    assert events._SUBS.get(sid)
+    s.close()
+    deadline = time.time() + 3
+    while time.time() < deadline and events._SUBS.get(sid):
+        time.sleep(0.1)
+    assert not events._SUBS.get(sid)
 
 
 def _main():
