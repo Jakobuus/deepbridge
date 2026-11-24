@@ -1,395 +1,400 @@
 {
   "value_nodes": [
     {
-      "id": "value:f82e39e6bb27ac23ecd9a30c",
+      "id": "value:hopo-f-decorp",
       "kind": "feature",
-      "text": "Research showing iroA-encoded C-glucosylation of enterobactin lets Gram-negative pathogens evade host lipocalin 2",
+      "text": "3,4,3-LI(1,2-HOPO): an orally active actinide decorporation agent (plutonium, uranium, americium, neptunium), preclinical, well tolerated in rats at high oral doses",
       "source": "paper",
       "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0"
+        "evidence:value-map:hopo-dtpa",
+        "evidence:value-map:hopo-oral"
       ]
     },
     {
-      "id": "value:4ffb2da58c4b890bbcd04bb3",
+      "id": "value:hopo-f-affinity",
       "kind": "feature",
-      "text": "Structural explanation of why anthrax petrobactin escapes siderocalin binding",
+      "text": "High affinity for hard metal ions (lanthanides, actinides, and the toxic heavy metals Pb and Cd) from one octadentate hydroxypyridonate ligand",
       "source": "paper",
       "evidence_ids": [
-        "evidence:value-map:e7b027377d24d7699255f3c1"
+        "evidence:value-map:hopo-unrivaled",
+        "evidence:value-map:hopo-ln",
+        "evidence:value-map:hopo-pb"
       ]
     },
     {
-      "id": "value:920e70b2c49064ca45996f4d",
+      "id": "value:hopo-f-zr",
       "kind": "feature",
-      "text": "Biochemical characterization of petrobactin receptor proteins in B. cereus (laboratory study, not a drug)",
+      "text": "89Zr PET chelation: Zr-HOPO complex matched or surpassed the stability of the current DFO chelator and cleared rapidly in healthy mice",
       "source": "paper",
       "evidence_ids": [
-        "evidence:value-map:1ddce2b55f9e06e8f882b337"
+        "evidence:value-map:hopo-zr",
+        "evidence:value-map:hopo-zrclear"
       ]
     },
     {
-      "id": "value:63368df75efa487006d937e1",
+      "id": "value:hopo-f-gd",
       "kind": "feature",
-      "text": "Design of siderophore-inspired hydroxypyridonate chelators for actinides (preclinical candidates)",
+      "text": "Gadolinium removal: more effective than DTPA at chelating and removing gadolinium from the body in a preclinical study",
       "source": "paper",
       "evidence_ids": [
-        "evidence:value-map:5bf30e2f6c3944feb8765070"
+        "evidence:value-map:hopo-gd"
       ]
     },
     {
-      "id": "value:565b87c81559f73ec6f5611a",
-      "kind": "feature",
-      "text": "Preclinical comparison of two oral chelator candidates against the approved agent DTPA",
-      "source": "paper",
-      "evidence_ids": [
-        "evidence:value-map:c6919f7c0275d77762508a61"
-      ]
-    },
-    {
-      "id": "value:3643ebdba43095bef06ec782",
+      "id": "value:hopo-b-dtpa",
       "kind": "benefit",
-      "text": "Could help flag which pathogens can sidestep host iron-sequestration defenses",
+      "text": "Could remove internalized plutonium and uranium more effectively than the approved agent DTPA, as an oral drug",
       "source": "inferred",
       "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
+        "evidence:value-map:hopo-dtpa",
+        "evidence:value-map:hopo-oral"
       ]
     },
     {
-      "id": "value:69cf8d32ed8b2039bbec41e6",
+      "id": "value:hopo-b-pet",
       "kind": "benefit",
-      "text": "Could point to specific siderophore uptake proteins as candidate drug targets",
+      "text": "Could give a safer PET tracer with reduced background radiation dose by stopping 89Zr release",
       "source": "inferred",
       "evidence_ids": [
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
+        "evidence:value-map:hopo-safer",
+        "evidence:value-map:hopo-zr"
       ]
     },
     {
-      "id": "value:90ff190bc800fd8c3b56a5df",
+      "id": "value:hopo-b-gd",
       "kind": "benefit",
-      "text": "Could yield orally dosed decorporation candidates with higher preclinical actinide removal",
+      "text": "Could mitigate gadolinium retention in patients who need contrast-enhanced MRI",
       "source": "inferred",
       "evidence_ids": [
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61"
+        "evidence:value-map:hopo-mitigate",
+        "evidence:value-map:hopo-gd"
       ]
     },
     {
-      "id": "value:0adf419dbf868bff90804aea",
+      "id": "value:hopo-v-prep",
       "kind": "value",
-      "text": "Antibacterial and biodefense developers could prioritize mechanism-defined siderophore targets and chemistry",
+      "text": "Radiological-emergency planners and defense stockpiles could gain an oral decorporation option beyond DTPA",
       "source": "inferred",
       "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
+        "evidence:value-map:hopo-dtpa",
+        "evidence:value-map:hopo-bomb",
+        "evidence:value-map:hopo-oral"
       ]
     },
     {
-      "id": "value:a6f6e6cb7c1d4ab778cfb0d2",
+      "id": "value:hopo-v-pet",
       "kind": "value",
-      "text": "Radiological emergency planners could gain a potential oral option beyond the current approved therapy",
+      "text": "Radiopharmaceutical and PET-imaging developers could swap DFO for a more stable 89Zr chelator",
       "source": "inferred",
       "evidence_ids": [
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61"
+        "evidence:value-map:hopo-safer",
+        "evidence:value-map:hopo-zr"
       ]
     },
     {
-      "id": "value:69bd23e33aa7c4567ebae31a",
-      "kind": "problem",
-      "text": "Anti-infective developers: enteric pathogens such as E. coli evade the host lipocalin 2 iron-sequestration defense, undermining it as a therapeutic lever",
-      "source": "paper",
+      "id": "value:hopo-v-gd",
+      "kind": "value",
+      "text": "MRI contrast-agent makers and clinicians could offer a post-hoc remedy for gadolinium deposition",
+      "source": "inferred",
       "evidence_ids": [
-        "evidence:value-map:d9b5ede4d3c1ad61433384a0"
+        "evidence:value-map:hopo-mitigate",
+        "evidence:value-map:hopo-gd"
       ]
     },
     {
-      "id": "value:e7328bc063b8b35c95ff13a8",
+      "id": "value:hopo-p-limited",
       "kind": "problem",
-      "text": "Biodefense developers: anthrax evades siderocalin through a structurally altered siderophore, complicating iron-targeted countermeasures",
+      "text": "Emergency-preparedness planners: current therapies for radionuclide contamination are limited",
       "source": "paper",
       "evidence_ids": [
-        "evidence:value-map:f5ed46f91684b2f91b66f563"
+        "evidence:value-map:hopo-limited",
+        "evidence:value-map:hopo-bomb"
       ]
     },
     {
-      "id": "value:77a740e1f0107b28678df5be",
+      "id": "value:hopo-p-dfo",
       "kind": "problem",
-      "text": "Emergency-preparedness planners: existing radionuclide decorporation therapies are limited, especially orally administered ones",
+      "text": "Radiopharmaceutical developers: 89Zr appears to be released from DFO in vivo and accumulates in bone",
       "source": "paper",
       "evidence_ids": [
-        "evidence:value-map:a03f4aa74b0d56ad1ae4dcd0"
+        "evidence:value-map:hopo-dfo",
+        "evidence:value-map:hopo-safer"
+      ]
+    },
+    {
+      "id": "value:hopo-p-gd",
+      "kind": "problem",
+      "text": "MRI contrast-agent users: gadolinium deposits remain in brain, bones and other organs",
+      "source": "paper",
+      "evidence_ids": [
+        "evidence:value-map:hopo-deposits",
+        "evidence:value-map:hopo-gd"
       ]
     }
   ],
   "edges": [
     {
-      "id": "edge:value-map:68db39bfc72c6c0a415b5aab",
-      "from": "value:f82e39e6bb27ac23ecd9a30c",
-      "to": "value:3643ebdba43095bef06ec782",
-      "type": "ENABLES",
-      "date": "2006-12-05",
-      "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
-      ],
-      "confidence": 0.5,
-      "name_check": "unchecked",
-      "label": "Enables"
-    },
-    {
-      "id": "edge:value-map:e44e52a342fc83d31769d9a8",
-      "from": "value:4ffb2da58c4b890bbcd04bb3",
-      "to": "value:3643ebdba43095bef06ec782",
-      "type": "ENABLES",
-      "date": "2006-12-05",
-      "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
-      ],
-      "confidence": 0.5,
-      "name_check": "unchecked",
-      "label": "Enables"
-    },
-    {
-      "id": "edge:value-map:7dc88cac640601bf405d26c1",
-      "from": "value:4ffb2da58c4b890bbcd04bb3",
-      "to": "value:69cf8d32ed8b2039bbec41e6",
-      "type": "ENABLES",
-      "date": "2009-03-31",
-      "evidence_ids": [
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
-      ],
-      "confidence": 0.5,
-      "name_check": "unchecked",
-      "label": "Enables"
-    },
-    {
-      "id": "edge:value-map:41b638974716ee335b8977cf",
-      "from": "value:920e70b2c49064ca45996f4d",
-      "to": "value:69cf8d32ed8b2039bbec41e6",
-      "type": "ENABLES",
-      "date": "2009-03-31",
-      "evidence_ids": [
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
-      ],
-      "confidence": 0.5,
-      "name_check": "unchecked",
-      "label": "Enables"
-    },
-    {
-      "id": "edge:value-map:f15f0cfc4836e26add8421f2",
-      "from": "value:63368df75efa487006d937e1",
-      "to": "value:90ff190bc800fd8c3b56a5df",
+      "id": "edge:value-map:hopo-1",
+      "from": "value:hopo-f-decorp",
+      "to": "value:hopo-b-dtpa",
       "type": "ENABLES",
       "date": "2010-08-11",
       "evidence_ids": [
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61"
+        "evidence:value-map:hopo-dtpa",
+        "evidence:value-map:hopo-oral"
       ],
-      "confidence": 0.5,
+      "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Enables"
     },
     {
-      "id": "edge:value-map:97a621a4028f7256811bc7c1",
-      "from": "value:565b87c81559f73ec6f5611a",
-      "to": "value:90ff190bc800fd8c3b56a5df",
+      "id": "edge:value-map:hopo-2",
+      "from": "value:hopo-f-affinity",
+      "to": "value:hopo-b-dtpa",
       "type": "ENABLES",
       "date": "2010-08-11",
       "evidence_ids": [
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61"
+        "evidence:value-map:hopo-unrivaled"
       ],
-      "confidence": 0.5,
+      "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Enables"
     },
     {
-      "id": "edge:value-map:5c07d6b61a13e3ed295472af",
-      "from": "value:3643ebdba43095bef06ec782",
-      "to": "value:0adf419dbf868bff90804aea",
+      "id": "edge:value-map:hopo-3",
+      "from": "value:hopo-f-affinity",
+      "to": "value:hopo-b-gd",
+      "type": "ENABLES",
+      "date": "2018-03-13",
+      "evidence_ids": [
+        "evidence:value-map:hopo-ln",
+        "evidence:value-map:hopo-gd"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-4",
+      "from": "value:hopo-f-zr",
+      "to": "value:hopo-b-pet",
+      "type": "ENABLES",
+      "date": "2014-05-09",
+      "evidence_ids": [
+        "evidence:value-map:hopo-zr",
+        "evidence:value-map:hopo-safer"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-5",
+      "from": "value:hopo-f-gd",
+      "to": "value:hopo-b-gd",
+      "type": "ENABLES",
+      "date": "2018-03-13",
+      "evidence_ids": [
+        "evidence:value-map:hopo-gd",
+        "evidence:value-map:hopo-mitigate"
+      ],
+      "confidence": 0.6,
+      "name_check": "unchecked",
+      "label": "Enables"
+    },
+    {
+      "id": "edge:value-map:hopo-6",
+      "from": "value:hopo-b-dtpa",
+      "to": "value:hopo-v-prep",
       "type": "DELIVERS",
       "date": "2010-08-11",
       "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
+        "evidence:value-map:hopo-dtpa",
+        "evidence:value-map:hopo-bomb"
       ],
-      "confidence": 0.5,
+      "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Delivers"
     },
     {
-      "id": "edge:value-map:7a6707bec3f2247e6f16fdad",
-      "from": "value:69cf8d32ed8b2039bbec41e6",
-      "to": "value:0adf419dbf868bff90804aea",
+      "id": "edge:value-map:hopo-7",
+      "from": "value:hopo-b-pet",
+      "to": "value:hopo-v-pet",
       "type": "DELIVERS",
-      "date": "2010-08-11",
+      "date": "2014-05-09",
       "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
+        "evidence:value-map:hopo-safer"
       ],
-      "confidence": 0.5,
+      "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Delivers"
     },
     {
-      "id": "edge:value-map:db1c90d499b9ce9e514c8a16",
-      "from": "value:90ff190bc800fd8c3b56a5df",
-      "to": "value:0adf419dbf868bff90804aea",
+      "id": "edge:value-map:hopo-8",
+      "from": "value:hopo-b-gd",
+      "to": "value:hopo-v-gd",
       "type": "DELIVERS",
-      "date": "2010-08-11",
+      "date": "2018-03-13",
       "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
+        "evidence:value-map:hopo-mitigate"
       ],
-      "confidence": 0.5,
+      "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Delivers"
     },
     {
-      "id": "edge:value-map:c8747b81dd89c387ea4fdb5e",
-      "from": "value:90ff190bc800fd8c3b56a5df",
-      "to": "value:a6f6e6cb7c1d4ab778cfb0d2",
-      "type": "DELIVERS",
-      "date": "2010-08-11",
-      "evidence_ids": [
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61"
-      ],
-      "confidence": 0.5,
-      "name_check": "unchecked",
-      "label": "Delivers"
-    },
-    {
-      "id": "edge:value-map:8969098d4a3ac0fbe77c2a6c",
-      "from": "value:0adf419dbf868bff90804aea",
-      "to": "value:69bd23e33aa7c4567ebae31a",
+      "id": "edge:value-map:hopo-9",
+      "from": "value:hopo-v-prep",
+      "to": "value:hopo-p-limited",
       "type": "SOLVES",
       "date": "2010-08-11",
       "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61",
-        "evidence:value-map:d9b5ede4d3c1ad61433384a0",
-        "evidence:value-map:e7b027377d24d7699255f3c1"
+        "evidence:value-map:hopo-limited",
+        "evidence:value-map:hopo-dtpa"
       ],
-      "confidence": 0.5,
+      "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Addresses"
     },
     {
-      "id": "edge:value-map:dce399e967e076cd9c18a229",
-      "from": "value:0adf419dbf868bff90804aea",
-      "to": "value:e7328bc063b8b35c95ff13a8",
+      "id": "edge:value-map:hopo-10",
+      "from": "value:hopo-v-pet",
+      "to": "value:hopo-p-dfo",
       "type": "SOLVES",
-      "date": "2010-08-11",
+      "date": "2014-05-09",
       "evidence_ids": [
-        "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-        "evidence:value-map:1ddce2b55f9e06e8f882b337",
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:c6919f7c0275d77762508a61",
-        "evidence:value-map:e7b027377d24d7699255f3c1",
-        "evidence:value-map:f5ed46f91684b2f91b66f563"
+        "evidence:value-map:hopo-dfo",
+        "evidence:value-map:hopo-zr"
       ],
-      "confidence": 0.5,
+      "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Addresses"
     },
     {
-      "id": "edge:value-map:a5013b1e92235972fddf5c43",
-      "from": "value:a6f6e6cb7c1d4ab778cfb0d2",
-      "to": "value:77a740e1f0107b28678df5be",
+      "id": "edge:value-map:hopo-11",
+      "from": "value:hopo-v-gd",
+      "to": "value:hopo-p-gd",
       "type": "SOLVES",
-      "date": "2010-08-11",
+      "date": "2018-03-13",
       "evidence_ids": [
-        "evidence:value-map:5bf30e2f6c3944feb8765070",
-        "evidence:value-map:a03f4aa74b0d56ad1ae4dcd0",
-        "evidence:value-map:c6919f7c0275d77762508a61"
+        "evidence:value-map:hopo-deposits",
+        "evidence:value-map:hopo-gd"
       ],
-      "confidence": 0.5,
+      "confidence": 0.6,
       "name_check": "unchecked",
       "label": "Addresses"
     }
   ],
   "evidence": [
     {
-      "id": "evidence:value-map:03f7bbf0105b7fec627bd1d0",
-      "source_url": "https://openalex.org/W2041755598",
-      "quote": "C-glucosylated derivatives of Ent produced by iroA-encoded enzymes do not bind purified Lcn2",
-      "source_date": "2006-10-31",
-      "observed_at": "2026-11-24T21:25:42.296027+00:00",
-      "kind": "paper"
-    },
-    {
-      "id": "evidence:value-map:e7b027377d24d7699255f3c1",
-      "source_url": "https://openalex.org/W2022017052",
-      "quote": "precludes siderocalin binding",
-      "source_date": "2006-12-05",
-      "observed_at": "2026-11-24T21:25:42.296027+00:00",
-      "kind": "paper"
-    },
-    {
-      "id": "evidence:value-map:1ddce2b55f9e06e8f882b337",
-      "source_url": "https://openalex.org/W2085969778",
-      "quote": "FpuA is specific to only apo- and ferric PB",
-      "source_date": "2009-03-31",
-      "observed_at": "2026-11-24T21:25:42.296027+00:00",
-      "kind": "paper"
-    },
-    {
-      "id": "evidence:value-map:5bf30e2f6c3944feb8765070",
+      "id": "evidence:value-map:hopo-dtpa",
       "source_url": "https://openalex.org/W2101984559",
-      "quote": "siderophore-inspired multidentate hydroxypyridonate ligands have been designed",
+      "quote": "Both ligands show much higher actinide-removal efficacy than the currently approved agent, diethylenetriaminepentaacetic acid (DTPA), with different selectivity for the tested isotopes of plutonium, americium, uranium and neptunium",
       "source_date": "2010-08-11",
       "observed_at": "2026-11-24T21:25:42.296027+00:00",
       "kind": "paper"
     },
     {
-      "id": "evidence:value-map:c6919f7c0275d77762508a61",
+      "id": "evidence:value-map:hopo-unrivaled",
       "source_url": "https://openalex.org/W2101984559",
-      "quote": "Both ligands show much higher actinide-removal efficacy than the currently approved agent",
+      "quote": "siderophore-inspired multidentate hydroxypyridonate ligands have been designed and are unrivaled in terms of actinide-affinity, selectivity, and efficiency",
       "source_date": "2010-08-11",
       "observed_at": "2026-11-24T21:25:42.296027+00:00",
       "kind": "paper"
     },
     {
-      "id": "evidence:value-map:d9b5ede4d3c1ad61433384a0",
-      "source_url": "https://openalex.org/W2041755598",
-      "quote": "allows bacteria to evade sequestration of Ent by Lcn2",
-      "source_date": "2006-10-31",
+      "id": "evidence:value-map:hopo-oral",
+      "source_url": "https://openalex.org/W2101984559",
+      "quote": "both ligands were well tolerated in rats when orally administered daily at high doses",
+      "source_date": "2010-08-11",
       "observed_at": "2026-11-24T21:25:42.296027+00:00",
       "kind": "paper"
     },
     {
-      "id": "evidence:value-map:f5ed46f91684b2f91b66f563",
-      "source_url": "https://openalex.org/W2022017052",
-      "quote": "to evade this innate immune response, B. anthracis produces PB",
-      "source_date": "2006-12-05",
-      "observed_at": "2026-11-24T21:25:42.296027+00:00",
-      "kind": "paper"
-    },
-    {
-      "id": "evidence:value-map:a03f4aa74b0d56ad1ae4dcd0",
+      "id": "evidence:value-map:hopo-limited",
       "source_url": "https://openalex.org/W2101984559",
       "quote": "Current therapies for the treatment of radionuclide contamination are limited",
       "source_date": "2010-08-11",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-bomb",
+      "source_url": "https://openalex.org/W2101984559",
+      "quote": "The threat of a dirty bomb or other major radiological contamination presents a danger of large-scale radiation exposure of the population",
+      "source_date": "2010-08-11",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-ln",
+      "source_url": "https://openalex.org/W2076534859",
+      "quote": "The remarkably high affinity of 3,4,3-LI(1,2-HOPO) for lanthanide metal ions and the resulting high complex stabilities",
+      "source_date": "2011-09-07",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-pb",
+      "source_url": "https://openalex.org/W2785617025",
+      "quote": "Toxic heavy metal – Pb, Cd, Sn – complexation by the octadentate hydroxypyridinonate ligand archetype 3,4,3-LI(1,2-HOPO)",
+      "source_date": "2018-01-01",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-zr",
+      "source_url": "https://openalex.org/W1979550737",
+      "quote": "The stability of (89)Zr-HOPO matched or surpassed that of (89)Zr-DFO in every experiment",
+      "source_date": "2014-05-09",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-zrclear",
+      "source_url": "https://openalex.org/W1979550737",
+      "quote": "In healthy mice, (89)Zr-HOPO cleared the body rapidly with no signs of demetalation",
+      "source_date": "2014-05-09",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-safer",
+      "source_url": "https://openalex.org/W1979550737",
+      "quote": "An improved chelator for (89)Zr(4+) could eliminate the release of osteophilic (89)Zr(4+) and lead to a safer PET tracer with reduced background radiation dose",
+      "source_date": "2014-05-09",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-dfo",
+      "source_url": "https://openalex.org/W1979550737",
+      "quote": "accumulation of (89)Zr in the bones of mice suggests that (89)Zr(4+) is released from DFO in vivo",
+      "source_date": "2014-05-09",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-gd",
+      "source_url": "https://openalex.org/W2791769218",
+      "quote": "the orally-available metal decorporation agent 3,4,3-LI(1,2-HOPO) demonstrates superior efficacy at chelating and removing Gd from the body compared to diethylenetriaminepentaacetic acid",
+      "source_date": "2018-03-13",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-mitigate",
+      "source_url": "https://openalex.org/W2791769218",
+      "quote": "the prophylactic or post-hoc therapeutic use of 3,4,3-LI(1,2-HOPO) may provide a means to mitigate Gd retention in patients requiring contrast-enhanced MRI",
+      "source_date": "2018-03-13",
+      "observed_at": "2026-11-24T21:25:42.296027+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:value-map:hopo-deposits",
+      "source_url": "https://openalex.org/W2791769218",
+      "quote": "Several MRI contrast agent clinical formulations are now known to leave deposits of the heavy metal gadolinium in the brain, bones, and other organs of patients",
+      "source_date": "2018-03-13",
       "observed_at": "2026-11-24T21:25:42.296027+00:00",
       "kind": "paper"
     }
