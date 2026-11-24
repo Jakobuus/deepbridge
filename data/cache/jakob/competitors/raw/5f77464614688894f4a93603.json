@@ -1,0 +1,107 @@
+{
+  "url": "https://api.openalex.org/works/W4400495356?select=id%2Ctitle%2Cpublication_date%2Ctopics%2Cauthorships",
+  "observed_at": "2026-11-24T19:44:47.310176+00:00",
+  "response": {
+    "id": "https://openalex.org/W4400495356",
+    "title": "Reconfigurable Photonics and Flexible AI Systems",
+    "publication_date": "2024-01-01",
+    "topics": [
+      {
+        "id": "https://openalex.org/T10829",
+        "display_name": "Interconnection Networks and Systems",
+        "score": 0.3617999851703644,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1705",
+          "display_name": "Computer Networks and Communications"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T11429",
+        "display_name": "Semiconductor Lasers and Optical Devices",
+        "score": 0.298799991607666,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2208",
+          "display_name": "Electrical and Electronic Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T12611",
+        "display_name": "Neural Networks and Reservoir Computing",
+        "score": 0.12729999423027039,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5061412493",
+          "display_name": "Gregory R. Steinbrecher",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0001-9895-0191",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-9895-0191"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210114444",
+            "display_name": "Meta (United States)",
+            "ror": "https://ror.org/01zbnvs85",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210114444"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": true,
+        "contributor_roles": [],
+        "raw_author_name": "Gregory Steinbrecher",
+        "raw_affiliation_strings": [
+          "Meta Platforms Inc, San Francisco, California, United States"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Meta Platforms Inc, San Francisco, California, United States",
+            "institution_ids": [
+              "https://openalex.org/I4210114444"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

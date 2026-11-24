@@ -1,0 +1,447 @@
+{
+  "url": "https://api.openalex.org/works/W7167835520?select=id%2Ctitle%2Cpublication_date%2Ctopics%2Cauthorships",
+  "observed_at": "2026-11-24T19:44:48.422223+00:00",
+  "response": {
+    "id": "https://openalex.org/W7167835520",
+    "title": "Spin singlets are useful",
+    "publication_date": "2026-07-07",
+    "topics": [
+      {
+        "id": "https://openalex.org/T10382",
+        "display_name": "Quantum and electron transport phenomena",
+        "score": 0.9276999831199646,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3104",
+          "display_name": "Condensed Matter Physics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10682",
+        "display_name": "Quantum Computing Algorithms and Architecture",
+        "score": 0.059300001710653305,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10020",
+        "display_name": "Quantum Information and Cryptography",
+        "score": 0.0027000000700354576,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3107",
+          "display_name": "Atomic and Molecular Physics, and Optics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5019212600",
+          "display_name": "Silas Hoffman",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-7381-7893",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-7381-7893"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1290206253",
+            "display_name": "Microsoft (United States)",
+            "ror": "https://ror.org/00d0nc645",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1290206253"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Hoffman, Silas",
+        "raw_affiliation_strings": [
+          "Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA",
+            "institution_ids": [
+              "https://openalex.org/I1290206253"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5085311993",
+          "display_name": "Edward H. Chen",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0001-7217-7137",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7217-7137"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1290206253",
+            "display_name": "Microsoft (United States)",
+            "ror": "https://ror.org/00d0nc645",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1290206253"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Chen, Edward H.",
+        "raw_affiliation_strings": [
+          "Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA",
+            "institution_ids": [
+              "https://openalex.org/I1290206253"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5079058264",
+          "display_name": "Matthew Brooks",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-8432-5624",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8432-5624"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1290206253",
+            "display_name": "Microsoft (United States)",
+            "ror": "https://ror.org/00d0nc645",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1290206253"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Brooks, Matthew",
+        "raw_affiliation_strings": [
+          "Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA",
+            "institution_ids": [
+              "https://openalex.org/I1290206253"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5069117153",
+          "display_name": "Stephen Carr",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-2749-8625",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-2749-8625"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I200576644",
+            "display_name": "HRL Laboratories (United States)",
+            "ror": "https://ror.org/05p7te762",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Carr, Stephen",
+        "raw_affiliation_strings": [
+          "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA",
+            "institution_ids": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5080096703",
+          "display_name": "Daniel Volya",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0001-5026-5646",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-5026-5646"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I200576644",
+            "display_name": "HRL Laboratories (United States)",
+            "ror": "https://ror.org/05p7te762",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Volya, Daniel",
+        "raw_affiliation_strings": [
+          "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA",
+            "institution_ids": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5088582043",
+          "display_name": "Alan Tran",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I200576644",
+            "display_name": "HRL Laboratories (United States)",
+            "ror": "https://ror.org/05p7te762",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Tran, Alan",
+        "raw_affiliation_strings": [
+          "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA",
+            "institution_ids": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5040934386",
+          "display_name": "Tyler Keating",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I200576644",
+            "display_name": "HRL Laboratories (United States)",
+            "ror": "https://ror.org/05p7te762",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Keating, Tyler",
+        "raw_affiliation_strings": [
+          "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA",
+            "institution_ids": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5018885489",
+          "display_name": "Thaddeus D. Ladd",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-0373-0717",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-0373-0717"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I200576644",
+            "display_name": "HRL Laboratories (United States)",
+            "ror": "https://ror.org/05p7te762",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Ladd, Thaddeus D.",
+        "raw_affiliation_strings": [
+          "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "HRL Laboratories , 3011 Malibu Canyon Rd. , Malibu , CA 90265 , USA",
+            "institution_ids": [
+              "https://openalex.org/I200576644"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5030534234",
+          "display_name": "Charles Tahan",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0001-7726-8329",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-7726-8329"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1290206253",
+            "display_name": "Microsoft (United States)",
+            "ror": "https://ror.org/00d0nc645",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I1290206253"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Tahan, Charles",
+        "raw_affiliation_strings": [
+          "Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Microsoft Discovery & Quantum , One Microsoft Way , Redmond , WA 98052 , USA",
+            "institution_ids": [
+              "https://openalex.org/I1290206253"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

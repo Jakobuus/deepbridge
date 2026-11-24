@@ -1,0 +1,881 @@
+{
+  "url": "https://api.openalex.org/works/W4410994200?select=id%2Ctitle%2Cpublication_date%2Ctopics%2Cauthorships",
+  "observed_at": "2026-11-24T19:44:48.094625+00:00",
+  "response": {
+    "id": "https://openalex.org/W4410994200",
+    "title": "Multi-rate PAM4 Silicon Photonic Based Receiver Assembly with -10dBm iFEC Sensitivity at 226Gb/s/λ and 125mW/Ch CMOS TIA",
+    "publication_date": "2025-01-01",
+    "topics": [
+      {
+        "id": "https://openalex.org/T10232",
+        "display_name": "Optical Network Technologies",
+        "score": 0.3889000117778778,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2208",
+          "display_name": "Electrical and Electronic Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10299",
+        "display_name": "Photonic and Optical Devices",
+        "score": 0.38179999589920044,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2208",
+          "display_name": "Electrical and Electronic Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T11429",
+        "display_name": "Semiconductor Lasers and Optical Devices",
+        "score": 0.10000000149011612,
+        "subfield": {
+          "id": "https://openalex.org/subfields/2208",
+          "display_name": "Electrical and Electronic Engineering"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/22",
+          "display_name": "Engineering"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5049011969",
+          "display_name": "Mahdi Parvizi",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0003-4848-9469",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-4848-9469",
+            "https://orcid.org/0000-0003-4295-5844"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127351",
+            "display_name": "Cisco Systems (Canada)",
+            "ror": "https://ror.org/02af0qw97",
+            "country_code": "CA",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043",
+              "https://openalex.org/I4210127351"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": true,
+        "contributor_roles": [],
+        "raw_author_name": "Mahdi Parvizi",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 2000 Innovation Dr., Ottawa, ON, K2K 3E8, Canada"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 2000 Innovation Dr., Ottawa, ON, K2K 3E8, Canada",
+            "institution_ids": [
+              "https://openalex.org/I4210127351"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5048504385",
+          "display_name": "Hao Ran Song",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-4118-6898",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-4118-6898"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Hao Song",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5089375986",
+          "display_name": "Bahar Jalali Farahani",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Bahar Jalali",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5117815371",
+          "display_name": "Masoud Madiseh",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [],
+        "countries": [],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Masoud Madiseh",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 595 Burrard St, Vancouver, BC V7X 1A0, Canada"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 595 Burrard St, Vancouver, BC V7X 1A0, Canada",
+            "institution_ids": []
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": null,
+          "display_name": "John Rogers",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "John Rogers",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5022538143",
+          "display_name": "T.T. Sun",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Tie Sun",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5040426048",
+          "display_name": "Toshi Omori",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [],
+        "countries": [],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Toshi Omori",
+        "raw_affiliation_strings": [
+          "3 Mill and Main Place, Suite 400 Maynard, MA 01754, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "3 Mill and Main Place, Suite 400 Maynard, MA 01754, USA",
+            "institution_ids": []
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5086845798",
+          "display_name": "Brandon Davis",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Brandon Davis",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5009039245",
+          "display_name": "Bernd Huebner",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Bernd Huebner",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 3700 Cisco Way, San Jose, CA, 95134, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 3700 Cisco Way, San Jose, CA, 95134, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5111767093",
+          "display_name": "Mark E. Heimbuch",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [],
+        "countries": [],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Mark Heimbuch",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 225 N 9th St #500, Boise, ID 83702, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 225 N 9th St #500, Boise, ID 83702, USA",
+            "institution_ids": []
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5001179417",
+          "display_name": "Michael G. Soskind",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0003-3030-6150",
+          "observed_orcids": [
+            "https://orcid.org/0000-0003-3030-6150"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Michael Soskind",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5004985958",
+          "display_name": "Md Jubayer Shawon",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-1138-6442",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1138-6442"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Md Jubayer Shawon",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5018701316",
+          "display_name": "Ren-Jye Shiue",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Ren Jye Shiue",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5110099052",
+          "display_name": "Jonathan E. Roth",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Jonathan Roth",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 3700 Cisco Way, San Jose, CA, 95134, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 3700 Cisco Way, San Jose, CA, 95134, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5100523913",
+          "display_name": "Qianfan Xu",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Qianfan Xu",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 3700 Cisco Way, San Jose, CA, 95134, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 3700 Cisco Way, San Jose, CA, 95134, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5100379268",
+          "display_name": "Li Chen",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-6587-0272",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6587-0272"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Li Chen",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5112286717",
+          "display_name": "John F. Heanue",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [],
+        "countries": [],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "John Heanue",
+        "raw_affiliation_strings": [
+          "3 Mill and Main Place, Suite 400 Maynard, MA 01754, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "3 Mill and Main Place, Suite 400 Maynard, MA 01754, USA",
+            "institution_ids": []
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5039611091",
+          "display_name": "Richard Zhou",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Richard Zhou",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 2320 Camino Vida Roble Suite 100, Carlsbad CA 92011, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 2320 Camino Vida Roble Suite 100, Carlsbad CA 92011, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5100336420",
+          "display_name": "Long Chen",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-8590-6391",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8590-6391"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Long Chen",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5032756587",
+          "display_name": "Alexey V. Turukhin",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-4720-310X",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-4720-310X"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Alex Turukhin",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": null,
+          "display_name": "Ricardo Aroca",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I135428043",
+            "display_name": "Cisco Systems (United States)",
+            "ror": "https://ror.org/03yt1ez60",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Ricardo Aroca",
+        "raw_affiliation_strings": [
+          "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Cisco Systems, 101 Crawfords Corner Rd Building 1, Floor 4, Suite 1-406 Holmdel, NJ 07733, USA",
+            "institution_ids": [
+              "https://openalex.org/I135428043"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "url": "https://api.openalex.org/works/W7236566979?select=id%2Ctitle%2Cpublication_date%2Ctopics%2Cauthorships",
+  "observed_at": "2026-11-24T19:44:09.765362+00:00",
+  "response": {
+    "id": "https://openalex.org/W7236566979",
+    "title": "General Noise Channels and Mid-Circuit Measurements for Pre-Trajectory Sampling with Batched Execution",
+    "publication_date": "2026-11-18",
+    "topics": [
+      {
+        "id": "https://openalex.org/T10682",
+        "display_name": "Quantum Computing Algorithms and Architecture",
+        "score": 0.9994999766349792,
+        "subfield": {
+          "id": "https://openalex.org/subfields/1702",
+          "display_name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/17",
+          "display_name": "Computer Science"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T11804",
+        "display_name": "Quantum many-body systems",
+        "score": 9.999999747378752e-05,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3107",
+          "display_name": "Atomic and Molecular Physics, and Optics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      },
+      {
+        "id": "https://openalex.org/T10020",
+        "display_name": "Quantum Information and Cryptography",
+        "score": 0.0,
+        "subfield": {
+          "id": "https://openalex.org/subfields/3107",
+          "display_name": "Atomic and Molecular Physics, and Optics"
+        },
+        "field": {
+          "id": "https://openalex.org/fields/31",
+          "display_name": "Physics and Astronomy"
+        },
+        "domain": {
+          "id": "https://openalex.org/domains/3",
+          "display_name": "Physical Sciences"
+        }
+      }
+    ],
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5092247170",
+          "display_name": "Louis Follet",
+          "type": null,
+          "orcid": "https://orcid.org/0009-0009-9994-4434",
+          "observed_orcids": [
+            "https://orcid.org/0009-0009-9994-4434"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I63966007",
+            "display_name": "Massachusetts Institute of Technology",
+            "ror": "https://ror.org/042nb2s44",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Follet, Louis",
+        "raw_affiliation_strings": [
+          "NVIDIA Corporation , Santa Clara , CA , USA",
+          "Research Laboratory of Electronics , Massachusetts Institute of Technology , Cambridge , MA 02139 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Research Laboratory of Electronics , Massachusetts Institute of Technology , Cambridge , MA 02139 , USA",
+            "institution_ids": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5102663228",
+          "display_name": "Paavai Pari",
+          "type": null,
+          "orcid": "https://orcid.org/0009-0002-5498-3340",
+          "observed_orcids": [
+            "https://orcid.org/0009-0002-5498-3340"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Pari, Paavai",
+        "raw_affiliation_strings": [
+          "NVIDIA Corporation , Santa Clara , CA , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5000473535",
+          "display_name": "Isidor Schoch",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I40120149",
+            "display_name": "University of Oxford",
+            "ror": "https://ror.org/052gg0110",
+            "country_code": "GB",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I40120149"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ],
+        "countries": [
+          "GB",
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Schoch, Isidor",
+        "raw_affiliation_strings": [
+          "Department of Materials , University of Oxford , Parks Road , Oxford OX1 3PH , UK",
+          "NVIDIA Corporation , Santa Clara , CA , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Materials , University of Oxford , Parks Road , Oxford OX1 3PH , UK",
+            "institution_ids": [
+              "https://openalex.org/I40120149"
+            ]
+          },
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5162918706",
+          "display_name": "Thien Nguyen",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Nguyen, Thien",
+        "raw_affiliation_strings": [
+          "NVIDIA Corporation , Santa Clara , CA , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5056532643",
+          "display_name": "Justin G. Lietz",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-8398-5524",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8398-5524"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Lietz, Justin G.",
+        "raw_affiliation_strings": [
+          "NVIDIA Corporation , Santa Clara , CA , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5133316155",
+          "display_name": "Daniel Lowell",
+          "type": null,
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Lowell, Daniel",
+        "raw_affiliation_strings": [
+          "NVIDIA Corporation , Santa Clara , CA , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5010156116",
+          "display_name": "Brucek Khailany",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-7584-3489",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-7584-3489"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Khailany, Brucek",
+        "raw_affiliation_strings": [
+          "NVIDIA Corporation , Santa Clara , CA , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5019716296",
+          "display_name": "Krysta M. Svore",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0001-9500-9443",
+          "observed_orcids": [
+            "https://orcid.org/0000-0001-9500-9443"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Svore, Krysta M.",
+        "raw_affiliation_strings": [
+          "NVIDIA Corporation , Santa Clara , CA , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "middle",
+        "author": {
+          "id": "https://openalex.org/A5049120533",
+          "display_name": "Dirk Robert Englund",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-1043-3489",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-1043-3489"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I63966007",
+            "display_name": "Massachusetts Institute of Technology",
+            "ror": "https://ror.org/042nb2s44",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Englund, Dirk R.",
+        "raw_affiliation_strings": [
+          "Research Laboratory of Electronics , Massachusetts Institute of Technology , Cambridge , MA 02139 , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Research Laboratory of Electronics , Massachusetts Institute of Technology , Cambridge , MA 02139 , USA",
+            "institution_ids": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5041559873",
+          "display_name": "Taylor L. Patti",
+          "type": null,
+          "orcid": "https://orcid.org/0000-0002-4242-6072",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-4242-6072"
+          ]
+        },
+        "acted_on_behalf_of": [],
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210127875",
+            "display_name": "Nvidia (United States)",
+            "ror": "https://ror.org/03jdj4y14",
+            "country_code": "US",
+            "type": "company",
+            "lineage": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ],
+        "countries": [
+          "US"
+        ],
+        "is_corresponding": false,
+        "contributor_roles": [],
+        "raw_author_name": "Patti, Taylor L.",
+        "raw_affiliation_strings": [
+          "NVIDIA Corporation , Santa Clara , CA , USA"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "NVIDIA Corporation , Santa Clara , CA , USA",
+            "institution_ids": [
+              "https://openalex.org/I4210127875"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

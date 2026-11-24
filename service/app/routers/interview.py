@@ -1,4 +1,10 @@
-"""Stub; owned by its lane (see AGENTS.md). Replace the body, keep the router name."""
-from fastapi import APIRouter, Depends
-from .common import check_founder
-router = APIRouter(dependencies=[Depends(check_founder)])
+"""Research-founder sign-up interview; never sends outreach."""
+from fastapi import APIRouter
+from ..lanes.mark.interview import InterviewRequest, InterviewResponse, turn
+
+router = APIRouter()
+
+
+@router.post('/interview', response_model=InterviewResponse)
+def interview(request: InterviewRequest):
+    return turn(request.session_id, request.answer)

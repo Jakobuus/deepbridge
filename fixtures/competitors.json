@@ -1,0 +1,76 @@
+{
+  "competitors": [
+    {
+      "name": "NTT (United States)",
+      "url": "https://openalex.org/I4210092597",
+      "why": "Adjacent company publishing on the same topics: publishes on Photonic and Optical Devices (at least 1 observed works since 2024-11-24) [partial paper sample; not a total publication count]; publishes on Neural Networks and Reservoir Computing (at least 1 observed works since 2024-11-24) [partial paper sample; not a total publication count]",
+      "overlap_topics": [
+        "Photonic and Optical Devices",
+        "Neural Networks and Reservoir Computing"
+      ],
+      "evidence_ids": [
+        "evidence:adjacent:paper:W4404905249:I4210092597"
+      ]
+    },
+    {
+      "name": "Cisco Systems (Canada)",
+      "url": "https://openalex.org/I4210127351",
+      "why": "Adjacent company publishing on the same topics: publishes on Photonic and Optical Devices (at least 1 observed works since 2024-11-24) [partial paper sample; not a total publication count]",
+      "overlap_topics": [
+        "Photonic and Optical Devices"
+      ],
+      "evidence_ids": [
+        "evidence:adjacent:paper:W4410994200:I4210127351"
+      ]
+    },
+    {
+      "name": "Cisco Systems (United States)",
+      "url": "https://openalex.org/I135428043",
+      "why": "Adjacent company publishing on the same topics: publishes on Photonic and Optical Devices (at least 1 observed works since 2024-11-24) [partial paper sample; not a total publication count]",
+      "overlap_topics": [
+        "Photonic and Optical Devices"
+      ],
+      "evidence_ids": [
+        "evidence:adjacent:paper:W4410994200:I135428043"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence:adjacent:paper:W4404905249:I4210092597",
+      "source_url": "https://api.openalex.org/works/W4404905249?select=id%2Ctitle%2Cpublication_date%2Ctopics%2Cauthorships",
+      "quote": "{\"id\":\"https://openalex.org/W4404905249\",\"title\":\"Single-chip photonic deep neural network with forward-only training\",\"publication_date\":\"2024-12-01\",\"topics\":[{\"id\":\"https://openalex.org/T12611\",\"display_name\":\"Neural Networks and Reservoir Computing\",\"score\":0.9994999766349792,\"subfield\":{\"id\":\"https://openalex.org/subfields/1702\",\"display_name\":\"Artificial Intelligence\"},\"field\":{\"id\":\"https://openalex.org/fields/17\",\"display_name\":\"Computer Science\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}},{\"id\":\"https://openalex.org/T10502\",\"display_name\":\"Advanced Memory and Neural Computing\",\"score\":0.00019999999494757503,\"subfield\":{\"id\":\"https://openalex.org/subfields/2208\",\"display_name\":\"Electrical and Electronic Engineering\"},\"field\":{\"id\":\"https://openalex.org/fields/22\",\"display_name\":\"Engineering\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}},{\"id\":\"https://openalex.org/T10299\",\"display_name\":\"Photonic and Optical Devices\",\"score\":9.999999747378752e-05,\"subfield\":{\"id\":\"https://openalex.org/subfields/2208\",\"display_name\":\"Electrical and Electronic Engineering\"},\"field\":{\"id\":\"https://openalex.org/fields/22\",\"display_name\":\"Engineering\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}}],\"authorships.institutions\":{\"id\":\"https://openalex.org/I4210092597\",\"display_name\":\"NTT (United States)\",\"ror\":\"https://ror.org/004cn7092\",\"country_code\":\"US\",\"type\":\"company\",\"lineage\":[\"https://openalex.org/I2251713219\",\"https://openalex.org/I4210092597\"]}}",
+      "source_date": "2024-12-01",
+      "observed_at": "2026-11-24T19:44:46.733942+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:adjacent:paper:W4410994200:I4210127351",
+      "source_url": "https://api.openalex.org/works/W4410994200?select=id%2Ctitle%2Cpublication_date%2Ctopics%2Cauthorships",
+      "quote": "{\"id\":\"https://openalex.org/W4410994200\",\"title\":\"Multi-rate PAM4 Silicon Photonic Based Receiver Assembly with -10dBm iFEC Sensitivity at 226Gb/s/λ and 125mW/Ch CMOS TIA\",\"publication_date\":\"2025-01-01\",\"topics\":[{\"id\":\"https://openalex.org/T10232\",\"display_name\":\"Optical Network Technologies\",\"score\":0.3889000117778778,\"subfield\":{\"id\":\"https://openalex.org/subfields/2208\",\"display_name\":\"Electrical and Electronic Engineering\"},\"field\":{\"id\":\"https://openalex.org/fields/22\",\"display_name\":\"Engineering\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}},{\"id\":\"https://openalex.org/T10299\",\"display_name\":\"Photonic and Optical Devices\",\"score\":0.38179999589920044,\"subfield\":{\"id\":\"https://openalex.org/subfields/2208\",\"display_name\":\"Electrical and Electronic Engineering\"},\"field\":{\"id\":\"https://openalex.org/fields/22\",\"display_name\":\"Engineering\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}},{\"id\":\"https://openalex.org/T11429\",\"display_name\":\"Semiconductor Lasers and Optical Devices\",\"score\":0.10000000149011612,\"subfield\":{\"id\":\"https://openalex.org/subfields/2208\",\"display_name\":\"Electrical and Electronic Engineering\"},\"field\":{\"id\":\"https://openalex.org/fields/22\",\"display_name\":\"Engineering\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}}],\"authorships.institutions\":{\"id\":\"https://openalex.org/I4210127351\",\"display_name\":\"Cisco Systems (Canada)\",\"ror\":\"https://ror.org/02af0qw97\",\"country_code\":\"CA\",\"type\":\"company\",\"lineage\":[\"https://openalex.org/I135428043\",\"https://openalex.org/I4210127351\"]}}",
+      "source_date": "2025-01-01",
+      "observed_at": "2026-11-24T19:44:46.733942+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:adjacent:paper:W4410994200:I135428043",
+      "source_url": "https://api.openalex.org/works/W4410994200?select=id%2Ctitle%2Cpublication_date%2Ctopics%2Cauthorships",
+      "quote": "{\"id\":\"https://openalex.org/W4410994200\",\"title\":\"Multi-rate PAM4 Silicon Photonic Based Receiver Assembly with -10dBm iFEC Sensitivity at 226Gb/s/λ and 125mW/Ch CMOS TIA\",\"publication_date\":\"2025-01-01\",\"topics\":[{\"id\":\"https://openalex.org/T10232\",\"display_name\":\"Optical Network Technologies\",\"score\":0.3889000117778778,\"subfield\":{\"id\":\"https://openalex.org/subfields/2208\",\"display_name\":\"Electrical and Electronic Engineering\"},\"field\":{\"id\":\"https://openalex.org/fields/22\",\"display_name\":\"Engineering\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}},{\"id\":\"https://openalex.org/T10299\",\"display_name\":\"Photonic and Optical Devices\",\"score\":0.38179999589920044,\"subfield\":{\"id\":\"https://openalex.org/subfields/2208\",\"display_name\":\"Electrical and Electronic Engineering\"},\"field\":{\"id\":\"https://openalex.org/fields/22\",\"display_name\":\"Engineering\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}},{\"id\":\"https://openalex.org/T11429\",\"display_name\":\"Semiconductor Lasers and Optical Devices\",\"score\":0.10000000149011612,\"subfield\":{\"id\":\"https://openalex.org/subfields/2208\",\"display_name\":\"Electrical and Electronic Engineering\"},\"field\":{\"id\":\"https://openalex.org/fields/22\",\"display_name\":\"Engineering\"},\"domain\":{\"id\":\"https://openalex.org/domains/3\",\"display_name\":\"Physical Sciences\"}}],\"authorships.institutions\":{\"id\":\"https://openalex.org/I135428043\",\"display_name\":\"Cisco Systems (United States)\",\"ror\":\"https://ror.org/03yt1ez60\",\"country_code\":\"US\",\"type\":\"company\",\"lineage\":[\"https://openalex.org/I135428043\"]}}",
+      "source_date": "2025-01-01",
+      "observed_at": "2026-11-24T19:44:46.733942+00:00",
+      "kind": "paper"
+    }
+  ],
+  "_meta": {
+    "founder_id": "person:openalex:A5102978866",
+    "fingerprint": "3a61eafe96f545ff97eb136e369ac6849f0a0626b0586b1b401cf733b0966cd1",
+    "cached": true,
+    "observed_at": "2026-11-24T19:44:46.733942+00:00",
+    "from_publication_date": "2024-11-24",
+    "to_publication_date": "2026-11-24",
+    "label": "Adjacent companies publishing on the same topics",
+    "partial": true,
+    "notes": "OpenAlex shared keyless query budget exhausted (HTTP 429); counts are lower bounds from a sample of founder papers and papers already cited in this founder research.",
+    "company_exclusion": "name match"
+  }
+}
