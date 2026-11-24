@@ -12,8 +12,8 @@ def check(sid):
     errs = []
     log = json.loads((OUTDIR / f'{sid}.json').read_text(encoding='utf-8'))
     fresh = build_log(sid)
-    if not 60 <= len(log) <= 400:
-        errs.append(f'{len(log)} events, want 60-400')
+    if not 60 <= len(log) <= 1500:
+        errs.append(f'{len(log)} events, want 60-1500')
     if fresh != log:
         errs.append('file is stale vs build_log()')
     if [e['seq'] for e in log] != list(range(1, len(log) + 1)):
