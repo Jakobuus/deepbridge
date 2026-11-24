@@ -9,7 +9,7 @@ from pydantic import ValidationError
 
 from ..lanes.jakob.icp import CACHE, FounderNotFound, _write, build_icp, fetch_founder, load_research
 from ..models import Evidence, Founder, Icp, IntakeRequest
-from ..store import store
+from ..store import FIXTURES, store
 
 router = APIRouter()
 _BUILD_LOCK = Lock()
@@ -61,6 +61,11 @@ def icp(founder_id: str | None = None):
     selected = founder_id or getattr(store, 'jakob_active_founder_id', store.founder.id)
     if selected == store.founder.id:
         return store.icp
+    if selected == 'person:openalex:A5043992375':
+        # HACK: cached curated ICP for the HOPO demo founder (grounded in value_map_hopo/buyers_hopo evidence).
+        cached = json.loads((FIXTURES / 'icp_hopo.json').read_text())
+        cached.pop('_meta', None)
+        return Icp.model_validate(cached)
     try:
         research = load_research(selected)
         founder = _register(research)

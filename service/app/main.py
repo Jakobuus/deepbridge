@@ -24,4 +24,6 @@ app.include_router(__import__(__package__ + '.routers.connectors', fromlist=['ro
 
 @app.get('/health')
 def health():
-    return {'status': 'ok', 'data': 'cache', 'case': 'Lightmatter / Nicholas C. Harris'}
+    hopo = getattr(store, 'jakob_active_founder_id', None) == 'person:openalex:A5043992375'
+    return {'status': 'ok', 'data': 'cache',
+            'case': 'HOPO Therapeutics / Rebecca Abergel' if hopo else 'Lightmatter / Nicholas C. Harris'}
