@@ -36,6 +36,7 @@ import type {
 } from "@/lib/types";
 import { EvidenceChip } from "./evidence-chip";
 import { ParticleOrb } from "./particle-orb";
+import { orbBus } from "@/lib/orb-bus";
 
 type LeadsViewMode = "graph" | "table";
 
@@ -127,6 +128,20 @@ export function ScreenLeads({
   const streamSessionId = useStreamSessionParam();
   const stream = useGraphStream(streamSessionId);
   const live = stream.status === "connecting" || stream.status === "streaming" || stream.status === "done";
+
+  // Sidebar orb: pulse per graph event, fill with build progress. HACK: ~500 events in the demo-hopo replay.
+  React.useEffect(() => {
+    if (stream.status === "connecting" || stream.status === "streaming") {
+      if (stream.count <= 1) orbBus.resetProgress();
+      orbBus.setState("thinking", `Building graph · ${stream.count} events`);
+      orbBus.pulse();
+      orbBus.setProgress(Math.min(0.95, stream.count / 500));
+    } else if (stream.status === "done") {
+      orbBus.setProgress(1);
+      orbBus.setState("idle", `Graph built · ${stream.count} events`);
+    }
+  }, [stream.status, stream.count]);
+  React.useEffect(() => () => orbBus.setState("idle", null), []);
 
   // "Find buyers": asks the backend to publish buyer orgs + warm paths into this live session (POST /graph/discover).
   const [discover, setDiscover] = React.useState<{ busy: boolean; note: string | null }>({ busy: false, note: null });

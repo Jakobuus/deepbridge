@@ -62,6 +62,8 @@ interface ParticleOrbProps {
   pulseStrength?: number;
   colors?: string[];
   count?: number;
+  /** 0..1: share of particles lit; the rest stay dim (the orb "fills" as the graph builds). Default 1. */
+  progress?: number;
   label?: string;
   className?: string;
 }
@@ -73,6 +75,7 @@ export function ParticleOrb({
   pulseStrength = 0.5,
   colors = DEFAULT_COLORS,
   count,
+  progress = 1,
   label = "AI voice activity",
   className,
 }: ParticleOrbProps) {
@@ -89,6 +92,11 @@ export function ParticleOrb({
   const kick = useMotionValue(0);
   const angle = React.useRef(0);
   const drewStatic = React.useRef(false);
+  const lit = useSpring(progress, { stiffness: 40, damping: 18 });
+  React.useEffect(() => {
+    lit.set(progress);
+    drewStatic.current = false; // reduced motion: redraw the static frame with the new fill
+  }, [progress, lit]);
 
   React.useEffect(() => {
     energy.set(TARGETS[state].energy);
@@ -152,12 +160,15 @@ export function ParticleOrb({
     const sinT = Math.sin(tilt);
     const persp = 2.8;
 
+    const litShare = lit.get();
     ctx.globalCompositeOperation = "lighter";
     for (const p of particles) {
+      // p.phase is spread evenly over 0..1, so lit particles appear scattered across the sphere.
+      const isLit = p.phase <= litShare;
       // Radial breathing: two waves so the surface ripples instead of pulsing as one.
       const wobble =
         1 +
-        e * (0.55 * Math.sin(t * 3.1 + p.phase * 12.6) + 0.45 * Math.sin(t * 1.7 + p.y * 5.0));
+        e * 0.65 * (0.7 * Math.sin(t * 3.1 + p.phase * 12.6) + 0.3 * Math.sin(t * 2.3 + p.y * 5.0));
       const x0 = p.x * wobble;
       const y0 = p.y * wobble;
       const z0 = p.z * wobble;
@@ -168,7 +179,7 @@ export function ParticleOrb({
       const z2 = y0 * sinT + z1 * cosT;
       const k = persp / (persp - z2);
       const depth = (z2 + 1) / 2; // 0 back, 1 front
-      ctx.globalAlpha = 0.18 + depth * 0.72;
+      ctx.globalAlpha = (0.18 + depth * 0.72) * (isLit ? 1 : 0.16);
       ctx.fillStyle = p.color;
       ctx.beginPath();
       ctx.arc(cx + x1 * R * k, cy + y2 * R * k, dot * (0.55 + depth * 0.9), 0, Math.PI * 2);
