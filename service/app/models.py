@@ -109,6 +109,8 @@ class Draft(BaseModel):
     content_hash: str
     status: Literal['draft', 'approved', 'rejected', 'stale']
     checks: list[dict] = Field(default_factory=list)  # automatic copy checks (D2); optional
+    review: dict | None = None  # Band review: {by, room_url, status, steps:[{agent, verdict, at}]}
+    approved_via: Literal['app', 'band'] | None = None
 
 class Profile(BaseModel):
     kind: Literal['linkedin', 'homepage', 'scholar', 'orcid', 'github', 'other']
@@ -157,6 +159,8 @@ class Credits(BaseModel):
     events: list[CreditEvent]
     source: Literal['flexprice', 'local', 'local (Flexprice unreachable)']
     dashboard_url: str | None = None  # Flexprice usage page when source is flexprice
+    meters: dict[str, int] = Field(default_factory=lambda: {'leads_enriched': 0, 'outreach_sent': 0, 'graph_queries': 0})
+    spent: float | None = None  # credits spent according to the meter source
 
 class Conversion(BaseModel):
     model_config = ConfigDict(populate_by_name=True, serialize_by_alias=True)

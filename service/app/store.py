@@ -101,7 +101,7 @@ class Store:
             draft.subject, draft.body, draft.content_hash = subject, body, new_hash
             return draft
 
-    def approve(self, draft_id, digest, decision):
+    def approve(self, draft_id, digest, decision, via='app', actor='Jakob'):
         with self.lock:
             draft = self.get('drafts', draft_id)
             if digest != draft.content_hash:
@@ -110,9 +110,10 @@ class Store:
                                            decision=decision, by='Jakob', at=now()))
             draft.status = 'approved' if decision == 'approve' else 'rejected'
             if decision == 'approve':
+                draft.approved_via = via
                 card = next((c for c in self.cards.values() if c.path_id == draft.path_id), None)
                 if card and STAGES.index(card.stage) < STAGES.index('approved'):
-                    self.advance_card(card.id, 'approved', 'Jakob')
+                    self.advance_card(card.id, 'approved', actor)
             return draft
 
     def advance_card(self, card_id, stage, actor, actor_kind='human'):
