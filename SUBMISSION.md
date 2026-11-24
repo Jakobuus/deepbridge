@@ -13,7 +13,7 @@ affiliations and finds warm paths: a dated, sourced chain from the founder's lab
 that the person on the last hop still holds the role. A draft agent writes an intro request from cited facts, 12
 automatic copy checks run on it, and a human approves the exact text. Nothing is sent. A dashboard tracks every stage, actor and
 conversion. Flexprice meters usage and blocks paid steps when credits run out. Our demo
-case: HOPO Therapeutics, a Berkeley Lab spinout, finds 38 buyer organisations and a warm path into Bayer.
+case: HOPO Therapeutics, a Berkeley Lab spinout, finds 59 buyer organisations and 50 warm paths, including into radiation and lead buyers.
 
 ## The problem
 
@@ -31,7 +31,7 @@ public record: a shared paper, a shared lab, a citation. Finding it by hand take
    30 papers in the demo. Problems group buyers into categories. For HOPO: radiation countermeasures, 89Zr PET imaging,
    MRI contrast (gadolinium removal), and lead poisoning as an expansion segment.
 3. **Discovery.** Buyer organisations are ranked from public signals (recent on-topic papers, citations of the
-   founder's work, job posts). The demo lists 38 buyer organisations, each with OpenAlex evidence.
+   founder's work, job posts). The demo lists 59 buyer organisations, each with OpenAlex evidence.
 4. **Warm paths and contact check.** A graph of co-author and affiliation edges finds 2 to 3 hop paths into each buyer,
    weighted by edge type, recency and a human name check. The featured path: a 2018 thorium chelator paper
    (doi 10.1021/acs.inorgchem.8b02430) links the HOPO science to Åsmund Larsen at Bayer. Moss then checks the live web:
@@ -48,7 +48,7 @@ API base `http://127.0.0.1:8000` (explorer at `/docs`), web app `http://localhos
 
 | Criterion | What to look at |
 |---|---|
-| ICP & Discovery Quality (20%) | Inferred ICP and briefing with source chips: `POST /intake`, `GET /icp`, `GET /interview/brief/demo-hopo`. Four buyer categories incl. the lead-poisoning expansion segment: `GET /categories`. 38 cited buyer organisations: `GET /buyers`. Value map: `GET /value-map`. Code: `service/app/lanes/jakob/{briefing,grounding,icp,categories,signals}.py` |
+| ICP & Discovery Quality (20%) | Inferred ICP and briefing with source chips: `POST /intake`, `GET /icp`, `GET /interview/brief/demo-hopo`. Four buyer categories incl. the lead-poisoning expansion segment: `GET /categories`. 59 cited buyer organisations: `GET /buyers`. Value map: `GET /value-map`. Code: `service/app/lanes/jakob/{briefing,grounding,icp,categories,signals}.py` |
 | Enrichment & Outreach (20%) | Moss-verified role with source and date: `GET /contacts/{person_id}`, `POST /contacts/{person_id}/refresh`, cached results in `fixtures/contacts.json`. Signal-personalised draft with check results: `POST /drafts`, `PUT /drafts/{id}`. Hash-bound HITL gate: `POST /approve` (409 on a changed text). Code: `service/app/lanes/jakob/{contacts,drafts,draftchecks}.py`, `service/app/store.py` |
 | Dashboard & Lead Management (15%) | Pipeline screen with stages, actor history (agent or human) and stage-to-stage conversion: `GET /pipeline`, `GET /metrics`, `POST /pipeline/{card_id}/advance`. Code: `service/app/routers/pipeline.py`, `web/src/components/deepbridge/screen-pipeline.tsx` |
 | Startup Viability (15%) | Customer, pricing through credits, risks and next tests: [docs/viability.md](docs/viability.md) |
