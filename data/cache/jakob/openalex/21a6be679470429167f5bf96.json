@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "count": 3,
+    "db_response_time_ms": 25,
+    "page": 1,
+    "per_page": 5,
+    "groups_count": null,
+    "x_query": {
+      "oql": "get authors where text has (Jennifer Doudna)",
+      "x_new_oql": "get authors where text has (Jennifer Doudna)",
+      "oqo": {
+        "get_rows": "authors",
+        "filter_rows": [
+          {
+            "column_id": "text.search",
+            "value": "Jennifer Doudna",
+            "operator": "has"
+          }
+        ]
+      },
+      "url": "/authors?filter=text.search:Jennifer Doudna&per_page=5&page=1",
+      "order": "best matches first",
+      "order_default": true
+    },
+    "cost_usd": 0.001
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/A5067184382",
+      "display_name": "Jennifer A. Doudna",
+      "cited_by_count": 134377
+    },
+    {
+      "id": "https://openalex.org/A5126655441",
+      "display_name": "2026 Priestley medalist Jennifer Doudna",
+      "cited_by_count": 1
+    },
+    {
+      "id": "https://openalex.org/A5163147294",
+      "display_name": "Jennifer Doudna",
+      "cited_by_count": 0
+    }
+  ],
+  "group_by": []
+}

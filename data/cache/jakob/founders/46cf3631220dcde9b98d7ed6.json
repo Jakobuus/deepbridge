@@ -4666,7 +4666,7 @@
       "source_url": "https://openalex.org/W2097535432",
       "quote": "Electronically conductive phospho-olivines as lithium storage electrodes",
       "source_date": "2002-09-22",
-      "observed_at": "2026-11-24T19:16:35.424070+00:00",
+      "observed_at": "2026-11-24T19:31:57.623654+00:00",
       "kind": "paper"
     },
     {
@@ -4674,7 +4674,7 @@
       "source_url": "https://openalex.org/W2811133697",
       "quote": "Net-zero emissions energy systems",
       "source_date": "2018-06-28",
-      "observed_at": "2026-11-24T19:16:35.424081+00:00",
+      "observed_at": "2026-11-24T19:31:57.623691+00:00",
       "kind": "paper"
     },
     {
@@ -4682,7 +4682,7 @@
       "source_url": "https://openalex.org/W1629830706",
       "quote": "Virus-Enabled Synthesis and Assembly of Nanowires for Lithium Ion Battery Electrodes",
       "source_date": "2006-04-06",
-      "observed_at": "2026-11-24T19:16:35.424084+00:00",
+      "observed_at": "2026-11-24T19:31:57.623694+00:00",
       "kind": "paper"
     },
     {
@@ -4690,7 +4690,7 @@
       "source_url": "https://openalex.org/W2265160803",
       "quote": "The synergetic effect of lithium polysulfide and lithium nitrate to prevent lithium dendrite growth",
       "source_date": "2015-06-17",
-      "observed_at": "2026-11-24T19:16:35.424085+00:00",
+      "observed_at": "2026-11-24T19:31:57.623696+00:00",
       "kind": "paper"
     },
     {
@@ -4698,9 +4698,9 @@
       "source_url": "https://openalex.org/W2725925537",
       "quote": "Mechanism of Lithium Metal Penetration through Inorganic Solid Electrolytes",
       "source_date": "2017-07-06",
-      "observed_at": "2026-11-24T19:16:35.424086+00:00",
+      "observed_at": "2026-11-24T19:31:57.623697+00:00",
       "kind": "paper"
     }
   ],
-  "persona": "Battery manufacturing R&D leaders"
+  "persona": null
 }

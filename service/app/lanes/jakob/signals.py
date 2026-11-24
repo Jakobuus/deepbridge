@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 from threading import Lock
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from ...openalex import with_key
 
 from ...models import Evidence, Founder, Org, Signal
 from ...store import FIXTURES, store
@@ -32,7 +33,7 @@ def _get_json(url: str):
     with _request_lock:
         time.sleep(max(0, .26 - (time.monotonic() - _last_request)))
         _last_request = time.monotonic()
-        with urlopen(Request(url, headers={'User-Agent': 'DeepBridge-demo/0.1'}), timeout=30) as response:
+        with urlopen(Request(with_key(url), headers={'User-Agent': 'DeepBridge-demo/0.1'}), timeout=30) as response:
             data = json.load(response)
     CACHE.mkdir(parents=True, exist_ok=True)
     cache.write_text(json.dumps({'url': url, 'observed_at': datetime.now(timezone.utc).isoformat(),

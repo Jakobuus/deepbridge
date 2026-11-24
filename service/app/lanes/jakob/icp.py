@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
+from ...openalex import with_key
 
 from ...models import Evidence, Founder, Icp
 
@@ -49,7 +50,7 @@ def _openalex(endpoint, params, deadline):
         time.sleep(pause)
         remaining = deadline - time.monotonic()
         _LAST_REQUEST = time.monotonic()
-        request = Request(url, headers={'User-Agent': 'DeepBridge/0.1 (founder publication research)'})
+        request = Request(with_key(url), headers={'User-Agent': 'DeepBridge/0.1 (founder publication research)'})
         with urlopen(request, timeout=max(.01, remaining)) as response:
             raw = response.read()
         if time.monotonic() > deadline:
