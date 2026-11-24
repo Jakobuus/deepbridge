@@ -181,7 +181,7 @@ function VoiceStageInner({ onStart, onEnded }: { onStart: () => void; onEnded?: 
           </AnimatePresence>
         ) : (
           <p className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-            Real-voice interview · ElevenLabs
+            Realtime interview
           </p>
         )}
         {ended && !error && (

@@ -61,10 +61,8 @@
 /* Mark 14:40: cards are lustre glass at ~70% opacity over the starfield (see layout data-glass="lustre").
    No backdrop blur (it erased the 1px stars), so ~30% of the starfield shows through. Flat: no drop shadows. */
 :root {
-  /* "Pure glass at ~70%": lustre's body alone at 0.7 (default 0.8), no extra solidify floor (it stacked to ~94%). */
-  --glass-lustre-a: 0.7;
-  --glass-opacity: 0;
-  --blur-lustre: 0px;
+  /* Mark 15:40: regular glass (Sistine base, no page style) at a 70% floor; no blur so the starfield shows. */
+  --glass-opacity: 0.7;
 }
 [data-slot="card"] {
   --srf-filter: none;
@@ -208,7 +206,6 @@
 /* Mark 15:35: the sidebar and header use the same ~70% lustre glass as the cards, over the starfield. */
 .db-glass-rail {
   background-color: oklch(0.18 0 250 / 0.7);
-  background-image: linear-gradient(oklch(0.52 0 250 / 0.22), transparent 96px);
 }
 .db-glass-bar {
   background-color: oklch(0.18 0 250 / 0.7);
