@@ -3,8 +3,9 @@
     "cached": true,
     "observed_at": "2026-11-24T18:12:00Z",
     "case": "Lightmatter / Nicholas C. Harris",
-    "notes": "Publication affiliations are dated evidence, not a claim of current employment. Scores are demo ranking heuristics, not measured relationship strength. Board path uses aligned grouping because the contract has no board path kind; its edges explicitly say BOARD. When a source supplies only a year, exact date fields are null; evidence and labels preserve the year. Pipeline history is a simulated demo, including Jakob actions; no outreach occurred.",
-    "sample": true
+    "notes": "Cached AI drafts for review; no outreach sent. Claims use cited evidence only. Affiliations are dated; missing recent signals are not invented. Aligned citation-only paths use direct fallback.",
+    "sample": false,
+    "generator": "claude -p --model sonnet"
   },
   "items": [
     {
@@ -12,13 +13,16 @@
       "path_id": "path:steinbrecher",
       "to_person_id": "person:openalex:A5061412493",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with Meta",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Gregory R. Steinbrecher,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Meta. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Forwarding a note to Meta's photonics team?",
+      "body": "Hi Gregory,\n\nWe co-authored a paper at MIT's Research Laboratory of Electronics in 2017, and your published affiliation is Meta as of 2024. Could you forward the blurb below to the relevant team at Meta working on photonic or optical interconnects? A cached search shows one matching Meta paper since 25 Aug 2026, so I'm asking whether it's timely. Happy for you to say no.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonic or optical interconnect work at Meta relevant, given one matching Meta paper since 25 Aug 2026?",
       "evidence_ids": [
         "evidence:shared-A5061412493",
-        "evidence:steinbrecher-affiliation"
+        "evidence:steinbrecher-affiliation",
+        "evidence:90d-meta",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "42a1f3c49a94a4b878fd38854acbe920bbfce3eb0b26f649fc25ca9e5cdd4728",
+      "content_hash": "be71ab4044f76da4893b5f2bf5de01ac17fc3ea357d2435f107b367db4f0cabe",
       "status": "draft"
     },
     {
@@ -26,13 +30,14 @@
       "path_id": "path:steinbrecher",
       "to_person_id": "person:openalex:A5061412493",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with Meta",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Gregory R. Steinbrecher,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Meta. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Photonic interconnects at Meta",
+      "body": "Nicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonic or optical interconnect work at Meta relevant, given one matching Meta paper since 25 Aug 2026?",
       "evidence_ids": [
-        "evidence:shared-A5061412493",
-        "evidence:steinbrecher-affiliation"
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
+        "evidence:90d-meta"
       ],
-      "content_hash": "42a1f3c49a94a4b878fd38854acbe920bbfce3eb0b26f649fc25ca9e5cdd4728",
+      "content_hash": "9c55a8c67f7050ff4f358e52dad0f7d03a8d28549dc4da1f2d4f51f44ef2de5a",
       "status": "draft"
     },
     {
@@ -40,13 +45,17 @@
       "path_id": "path:chen",
       "to_person_id": "person:openalex:A5085311993",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with Microsoft",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Edward H. Chen,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Microsoft. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Forward a note to Microsoft's photonics team?",
+      "body": "Hi Edward,\n\nWe co-authored a 2015 paper at MIT's Research Laboratory of Electronics, and your published affiliation is Microsoft Discovery & Quantum as of 2026.\n\nWould you be comfortable forwarding the note below to the relevant team at Microsoft? A photonics paper matched to Microsoft, Photonic Ising machines towards and beyond a million spins, was published 2026-11-19. A no is completely fine.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored Deep learning with coherent nanophotonic circuits (2017). Might Microsoft's recent photonics work, such as Photonic Ising machines towards and beyond a million spins (2026), relate to that research?",
       "evidence_ids": [
         "evidence:shared-A5085311993",
-        "evidence:chen-affiliation"
+        "evidence:chen-affiliation",
+        "evidence:recent-microsoft",
+        "evidence:90d-microsoft",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "6c3e9b0d01a5cc295c8f6253eff6bd05ad24ce91e5bb91e6bb8cc21a36c7e09a",
+      "content_hash": "67d2d68b1ee67303b5146724b78a49f283e8fd055702a1fedc0e7a54a9945894",
       "status": "draft"
     },
     {
@@ -54,13 +63,15 @@
       "path_id": "path:chen",
       "to_person_id": "person:openalex:A5085311993",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with Microsoft",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Edward H. Chen,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Microsoft. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Nicholas Harris, Lightmatter: photonics question",
+      "body": "Nicholas Harris, founder of Lightmatter, co-authored Deep learning with coherent nanophotonic circuits (2017). Might Microsoft's recent photonics work, such as Photonic Ising machines towards and beyond a million spins (2026), relate to that research?",
       "evidence_ids": [
-        "evidence:shared-A5085311993",
-        "evidence:chen-affiliation"
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
+        "evidence:recent-microsoft",
+        "evidence:90d-microsoft"
       ],
-      "content_hash": "6c3e9b0d01a5cc295c8f6253eff6bd05ad24ce91e5bb91e6bb8cc21a36c7e09a",
+      "content_hash": "a1cbcc82bab2ca4456b6703d66acc3b38e376205b319ae81fe4bf9acce380415",
       "status": "draft"
     },
     {
@@ -68,13 +79,15 @@
       "path_id": "path:shiue",
       "to_person_id": "person:openalex:A5018701316",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with Cisco Systems",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Ren-Jye Shiue,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Cisco Systems. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Could you forward a short note to Cisco?",
+      "body": "Hi Ren-Jye,\n\nWe co-authored a paper at MIT in 2014, and your published affiliation is Cisco as of 2025. Would you be comfortable forwarding the blurb below to the relevant team at Cisco, so they can say whether my 2017 photonics research is relevant to them? Fine to decline.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that research be relevant to your team at Cisco?",
       "evidence_ids": [
         "evidence:shared-A5018701316",
-        "evidence:shiue-affiliation"
+        "evidence:shiue-affiliation",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "fee55ef8b2d93db798f4ce63099ce28bcdaf1824a8c713aa93240a93c5e41441",
+      "content_hash": "4d9e3a001f1b88b3ba4ba185a66a8583a759e53e3c252336f0dd1d6468049a0a",
       "status": "draft"
     },
     {
@@ -82,13 +95,14 @@
       "path_id": "path:shiue",
       "to_person_id": "person:openalex:A5018701316",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with Cisco Systems",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Ren-Jye Shiue,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Cisco Systems. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Nanophotonic deep-learning research, for the Cisco team",
+      "body": "Nicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that research be relevant to your team at Cisco?",
       "evidence_ids": [
-        "evidence:shared-A5018701316",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
         "evidence:shiue-affiliation"
       ],
-      "content_hash": "fee55ef8b2d93db798f4ce63099ce28bcdaf1824a8c713aa93240a93c5e41441",
+      "content_hash": "4bdd8d0ef7983cf089f5ba634cc9ea52a389b3894fc8a008f0ccc8da8f8ceeee",
       "status": "draft"
     },
     {
@@ -96,13 +110,15 @@
       "path_id": "path:najafi",
       "to_person_id": "person:openalex:A5069544756",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with PsiQuantum",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Faraz Najafi,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to PsiQuantum. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Could you forward a note to PsiQuantum?",
+      "body": "Hi Faraz,\n\nWe co-authored a 2015 paper at MIT's EECS department, and your published affiliation is PsiQuantum as of 2025. Would you be comfortable forwarding the note below to the relevant team at PsiQuantum, in case a photonics conversation is useful to them? No problem at all if not.\n\nThanks,\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonics research like this relevant to any team at PsiQuantum?",
       "evidence_ids": [
         "evidence:shared-A5069544756",
-        "evidence:najafi-affiliation"
+        "evidence:najafi-affiliation",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "e1a2f439500567ca656a8e6497de3cd80fe99f059b288d981dd2664fb96afba3",
+      "content_hash": "86ef642a13e90ca813ac92a495859ab47cf949e34d506ac33e0e8abefd83b9bf",
       "status": "draft"
     },
     {
@@ -110,13 +126,14 @@
       "path_id": "path:najafi",
       "to_person_id": "person:openalex:A5069544756",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with PsiQuantum",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Faraz Najafi,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to PsiQuantum. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Photonics research from Nicholas Harris",
+      "body": "Nicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonics research like this relevant to any team at PsiQuantum?",
       "evidence_ids": [
-        "evidence:shared-A5069544756",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
         "evidence:najafi-affiliation"
       ],
-      "content_hash": "e1a2f439500567ca656a8e6497de3cd80fe99f059b288d981dd2664fb96afba3",
+      "content_hash": "7fd334ea43acc69d09b63c324869340792874a6cd047291729dae290e08391c9",
       "status": "draft"
     },
     {
@@ -124,13 +141,15 @@
       "path_id": "path:dane",
       "to_person_id": "person:openalex:A5108697414",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with IBM",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Andrew E. Dane,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to IBM. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Intro to the right team at IBM?",
+      "body": "Hi Andrew,\n\nWe co-authored a paper at MIT in 2015, and your published affiliation is IBM as of 2026. Would you be comfortable forwarding the note below to the relevant team at IBM, to ask whether photonic hardware for deep learning is on their radar? No problem at all if you'd rather not.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, a Lightmatter founder, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017), research on deep learning in photonic circuits. Is photonic hardware for deep learning something your team at IBM is looking at?",
       "evidence_ids": [
         "evidence:shared-A5108697414",
-        "evidence:dane-affiliation"
+        "evidence:dane-affiliation",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "11511844baecb21f48ce59ee3d2899690ede29fecc1f5ac55ae3923e1b5616a1",
+      "content_hash": "a27fa9a2b29e8af9b7a4041f09f517f8113cb27867ae0f6ae40a73965868f113",
       "status": "draft"
     },
     {
@@ -138,13 +157,14 @@
       "path_id": "path:dane",
       "to_person_id": "person:openalex:A5108697414",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with IBM",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Andrew E. Dane,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to IBM. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Photonic hardware for deep learning",
+      "body": "Nicholas Harris, a Lightmatter founder, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017), research on deep learning in photonic circuits. Is photonic hardware for deep learning something your team at IBM is looking at?",
       "evidence_ids": [
-        "evidence:shared-A5108697414",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
         "evidence:dane-affiliation"
       ],
-      "content_hash": "11511844baecb21f48ce59ee3d2899690ede29fecc1f5ac55ae3923e1b5616a1",
+      "content_hash": "a77ac658232800016beca9cf8ba2ea025c7ad956eabec3b488eacba731b04e05",
       "status": "draft"
     },
     {
@@ -152,12 +172,14 @@
       "path_id": "path:bandyopadhyay",
       "to_person_id": "person:openalex:A5047268098",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with NTT Research",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Saumil Bandyopadhyay,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NTT Research. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Forwarding a short note to the right team at NTT Research?",
+      "body": "Hi Saumil,\n\nWe co-authored a 2024 paper, when your affiliations were NTT Research (Physics & Informatics Laboratories) and MIT RLE as of 2024. Would you be comfortable forwarding the blurb below to the relevant team at NTT Research, in case my photonic computing background is useful to them? Happy to hear no.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that photonic research be relevant to your team at NTT Research?",
       "evidence_ids": [
-        "evidence:shared-A5047268098"
+        "evidence:shared-A5047268098",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "2607548c1e95af05d3b67a3d281cf5d79b5e9a1ee7427cb9a7bd43467ddc6676",
+      "content_hash": "96f005e93afe24a5002ac5111afd6d77b8eb3d606800437ae491ca26bdde03de",
       "status": "draft"
     },
     {
@@ -165,12 +187,13 @@
       "path_id": "path:bandyopadhyay",
       "to_person_id": "person:openalex:A5047268098",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with NTT Research",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Saumil Bandyopadhyay,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NTT Research. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Nicholas Harris (Lightmatter): photonic research, relevant to NTT Research?",
+      "body": "Nicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that photonic research be relevant to your team at NTT Research?",
       "evidence_ids": [
-        "evidence:shared-A5047268098"
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "2607548c1e95af05d3b67a3d281cf5d79b5e9a1ee7427cb9a7bd43467ddc6676",
+      "content_hash": "17c95038a6f44826788e8bd93aa9dedbb3fa3fc1847b7591e6a64626b405e45a",
       "status": "draft"
     },
     {
@@ -178,12 +201,14 @@
       "path_id": "path:hamerly",
       "to_person_id": "person:openalex:A5089821617",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with NTT Research",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Ryan Hamerly,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NTT Research. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Forward a short note to NTT Research?",
+      "body": "Hi Ryan,\n\nWould you forward the blurb below to the relevant team at NTT Research? We co-authored a paper in December 2024 (as of 2024, you were at NTT Research and MIT's RLE), and I wonder if my nanophotonic work is relevant to them. No worries if you'd rather not.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). He co-authored a December 2024 paper with a researcher at NTT Research's Physics & Informatics Laboratories (as of 2024); might his work be relevant to your team?",
       "evidence_ids": [
-        "evidence:shared-A5089821617"
+        "evidence:shared-A5089821617",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "c589f6c494998bd09b9a1dab81005ce8780e95bbdb361a1769c358f33f071751",
+      "content_hash": "656c76152026a98cc1362c9706244b0eaf1ab27080273c8b4c5b1e91fca390a2",
       "status": "draft"
     },
     {
@@ -191,12 +216,14 @@
       "path_id": "path:hamerly",
       "to_person_id": "person:openalex:A5089821617",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with NTT Research",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Ryan Hamerly,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NTT Research. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Nicholas Harris (Lightmatter) and NTT Research",
+      "body": "Nicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). He co-authored a December 2024 paper with a researcher at NTT Research's Physics & Informatics Laboratories (as of 2024); might his work be relevant to your team?",
       "evidence_ids": [
-        "evidence:shared-A5089821617"
+        "evidence:shared-A5089821617",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "c589f6c494998bd09b9a1dab81005ce8780e95bbdb361a1769c358f33f071751",
+      "content_hash": "c4b2d482172d9e2f15c76f7315ad2e9ac3566d10b2e82cad6bbac1e72b0b5f16",
       "status": "draft"
     },
     {
@@ -204,13 +231,16 @@
       "path_id": "path:follet",
       "to_person_id": "person:openalex:A5049120533",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with NVIDIA",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Dirk Robert Englund,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NVIDIA. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Intro to Louis Follet at NVIDIA?",
+      "body": "Hi Dirk,\n\nYou published with me on \"Deep learning with coherent nanophotonic circuits\" (2017). Would you be comfortable introducing me to Louis Follet, who lists NVIDIA and MIT affiliations as of 2026-11-18? A cached query found 6 matching NVIDIA papers since 2026-08-25, prompting this note. Fine to decline.\n\nNicholas\n\nBlurb you can forward:\nLouis, I'm Nicholas Harris, a founder at Lightmatter, and I co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). NVIDIA has 6 matching photonic or optical papers since 2026-08-25, and your publication lists NVIDIA and MIT affiliations as of 2026-11-18, so might this be relevant to you?",
       "evidence_ids": [
+        "evidence:harris-2017",
         "evidence:harris-englund",
-        "evidence:follet-dual"
+        "evidence:follet-dual",
+        "evidence:90d-nvidia",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "ee096ec083fa499c97893013ccc8dae402f124836df1c6213bc595bb6859ae68",
+      "content_hash": "cc202fcd9402a64bbf0a29e96c6d88bf62c5d9f706b2a02fa513c00932e25fda",
       "status": "draft"
     },
     {
@@ -218,13 +248,15 @@
       "path_id": "path:follet",
       "to_person_id": "person:openalex:A5092247170",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with NVIDIA",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Dirk Robert Englund,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to NVIDIA. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Nicholas Harris, Lightmatter",
+      "body": "Louis, I'm Nicholas Harris, a founder at Lightmatter, and I co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). NVIDIA has 6 matching photonic or optical papers since 2026-08-25, and your publication lists NVIDIA and MIT affiliations as of 2026-11-18, so might this be relevant to you?",
       "evidence_ids": [
-        "evidence:harris-englund",
-        "evidence:follet-dual"
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
+        "evidence:follet-dual",
+        "evidence:90d-nvidia"
       ],
-      "content_hash": "ee096ec083fa499c97893013ccc8dae402f124836df1c6213bc595bb6859ae68",
+      "content_hash": "2f383fd4d59e86ad2d4bd6cdd707d97f5cc16ee3e41cfbdc8098a41575447bf1",
       "status": "draft"
     },
     {
@@ -232,13 +264,16 @@
       "path_id": "path:zander",
       "to_person_id": "person:zander",
       "kind": "intro_request",
-      "subject": "Sample: technical discussion with Microsoft",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Jason Zander,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Microsoft. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Forward to a Microsoft team?",
+      "body": "Hi Jason,\n\nLightmatter lists us on its board as of 2026-11-24. Your Microsoft role was documented as of 2025-03-25. Could you forward the blurb below to the relevant team at Microsoft for photonic computing? A Microsoft-affiliated paper, 'Photonic Ising machines towards and beyond a million spins' (2026-11-19), made me wonder if a short chat could be relevant. No problem at all if you'd rather not.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris founded Lightmatter and co-authored 'Deep learning with coherent nanophotonic circuits' (2017). Given Microsoft-affiliated work on photonic Ising machines published 2026-11-19, would a conversation about photonic computing be relevant to your team?",
       "evidence_ids": [
         "evidence:lightmatter-board",
+        "evidence:harris-2017",
+        "evidence:recent-microsoft",
+        "evidence:90d-microsoft",
         "evidence:zander-microsoft"
       ],
-      "content_hash": "dad216d0fc27622b6d8e79ec7594a33f6f96d8fdd57420fe14a854601d9e5013",
+      "content_hash": "892a75d3bbac13d0ad398ccc37e6c4d775eca1bae976ffe096c815dca92cc263",
       "status": "draft"
     },
     {
@@ -246,39 +281,31 @@
       "path_id": "path:zander",
       "to_person_id": "person:zander",
       "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with Microsoft",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Jason Zander,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Microsoft. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "subject": "Lightmatter and photonic computing",
+      "body": "Nicholas Harris founded Lightmatter and co-authored 'Deep learning with coherent nanophotonic circuits' (2017). Given Microsoft-affiliated work on photonic Ising machines published 2026-11-19, would a conversation about photonic computing be relevant to your team?",
       "evidence_ids": [
         "evidence:lightmatter-board",
-        "evidence:zander-microsoft"
+        "evidence:harris-2017",
+        "evidence:recent-microsoft",
+        "evidence:90d-microsoft"
       ],
-      "content_hash": "dad216d0fc27622b6d8e79ec7594a33f6f96d8fdd57420fe14a854601d9e5013",
+      "content_hash": "6d6d730e5b89906c8d3c72f64d7d90745cc7a64d951f1c55edfed74c71cff34e",
       "status": "draft"
     },
     {
-      "id": "draft:google-citation:intro_request",
+      "id": "draft:google-citation:direct_fallback",
       "path_id": "path:google-citation",
       "to_person_id": "person:azalia-mirhoseini",
-      "kind": "intro_request",
-      "subject": "Sample: technical discussion with Google",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Azalia Mirhoseini,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Google. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
+      "kind": "direct_fallback",
+      "subject": "Your 2025 paper citing my 2017 photonics paper",
+      "body": "Hi Azalia,\n\nI'm Nicholas Harris from Lightmatter. A 2025 paper listing you, with Google as your affiliation as of September 2025, cites my 2017 paper, Deep learning with coherent nanophotonic circuits.\n\nSeparately, a cached search finds 2 Google papers since 25 August 2026 matching photonic and optical interconnect terms. Would you be open to a short call about whether this research could be relevant to your team? A plain no is fine.\n\nNicholas",
       "evidence_ids": [
-        "evidence:google-citation"
+        "evidence:harris-2017",
+        "evidence:google-citation",
+        "evidence:90d-google",
+        "evidence:lightmatter-board"
       ],
-      "content_hash": "4aade80fe054b90211893041c17080baed45132b40b3368974312c9a4f76cf84",
-      "status": "draft"
-    },
-    {
-      "id": "draft:google-citation:forwardable_note",
-      "path_id": "path:google-citation",
-      "to_person_id": "person:azalia-mirhoseini",
-      "kind": "forwardable_note",
-      "subject": "Sample: technical discussion with Google",
-      "body": "SAMPLE DRAFT — for review, not sent.\n\nHi Azalia Mirhoseini,\n\nWe are exploring whether Lightmatter’s photonic computing work could be relevant to Google. The attached dated sources suggest a technical connection, but do not confirm a current role or personal relationship. Would you be comfortable checking relevance and suggesting the right research team for a short conversation?\n\nNicholas",
-      "evidence_ids": [
-        "evidence:google-citation"
-      ],
-      "content_hash": "4aade80fe054b90211893041c17080baed45132b40b3368974312c9a4f76cf84",
+      "content_hash": "6ece41e8a64228115d87278e5b89c85ef81f99b904cdd2b4b0010e7a7f0abafd",
       "status": "draft"
     }
   ]

@@ -1,0 +1,40 @@
+{
+  "context_hash": "08ff046a4c11811e06727063f9f3ab8f0200f4508ce9e13c74999b00d056f4e4",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:zander:intro_request",
+      "path_id": "path:zander",
+      "to_person_id": "person:zander",
+      "kind": "intro_request",
+      "subject": "Forward to a Microsoft team?",
+      "body": "Hi Jason,\n\nLightmatter lists us on its board as of 2026-11-24. Your Microsoft role was documented as of 2025-03-25. Could you forward the blurb below to the relevant team at Microsoft for photonic computing? A Microsoft-affiliated paper, 'Photonic Ising machines towards and beyond a million spins' (2026-11-19), made me wonder if a short chat could be relevant. No problem at all if you'd rather not.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris founded Lightmatter and co-authored 'Deep learning with coherent nanophotonic circuits' (2017). Given Microsoft-affiliated work on photonic Ising machines published 2026-11-19, would a conversation about photonic computing be relevant to your team?",
+      "evidence_ids": [
+        "evidence:lightmatter-board",
+        "evidence:harris-2017",
+        "evidence:recent-microsoft",
+        "evidence:90d-microsoft",
+        "evidence:zander-microsoft"
+      ],
+      "content_hash": "892a75d3bbac13d0ad398ccc37e6c4d775eca1bae976ffe096c815dca92cc263",
+      "status": "draft"
+    },
+    {
+      "id": "draft:zander:forwardable_note",
+      "path_id": "path:zander",
+      "to_person_id": "person:zander",
+      "kind": "forwardable_note",
+      "subject": "Lightmatter and photonic computing",
+      "body": "Nicholas Harris founded Lightmatter and co-authored 'Deep learning with coherent nanophotonic circuits' (2017). Given Microsoft-affiliated work on photonic Ising machines published 2026-11-19, would a conversation about photonic computing be relevant to your team?",
+      "evidence_ids": [
+        "evidence:lightmatter-board",
+        "evidence:harris-2017",
+        "evidence:recent-microsoft",
+        "evidence:90d-microsoft"
+      ],
+      "content_hash": "6d6d730e5b89906c8d3c72f64d7d90745cc7a64d951f1c55edfed74c71cff34e",
+      "status": "draft"
+    }
+  ],
+  "reviewed": true
+}

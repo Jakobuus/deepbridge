@@ -1,0 +1,23 @@
+{
+  "context_hash": "ed66da5ea617ad4d9e633c98497a4b476d391ab1dcc8ce51614e98f1e0e3c27d",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:google-citation:direct_fallback",
+      "path_id": "path:google-citation",
+      "to_person_id": "person:azalia-mirhoseini",
+      "kind": "direct_fallback",
+      "subject": "Your 2025 paper citing my 2017 photonics paper",
+      "body": "Hi Azalia,\n\nI'm Nicholas Harris from Lightmatter. A 2025 paper listing you, with Google as your affiliation as of September 2025, cites my 2017 paper, Deep learning with coherent nanophotonic circuits.\n\nSeparately, a cached search finds 2 Google papers since 25 August 2026 matching photonic and optical interconnect terms. Would you be open to a short call about whether this research could be relevant to your team? A plain no is fine.\n\nNicholas",
+      "evidence_ids": [
+        "evidence:harris-2017",
+        "evidence:google-citation",
+        "evidence:90d-google",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "6ece41e8a64228115d87278e5b89c85ef81f99b904cdd2b4b0010e7a7f0abafd",
+      "status": "draft"
+    }
+  ],
+  "reviewed": true
+}

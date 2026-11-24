@@ -1,0 +1,36 @@
+{
+  "context_hash": "ba95c6cfc64220501a4d1e5d3ece56baf5dac515ceccac6931fdca0306f8382c",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:bandyopadhyay:intro_request",
+      "path_id": "path:bandyopadhyay",
+      "to_person_id": "person:openalex:A5047268098",
+      "kind": "intro_request",
+      "subject": "Forwarding a short note to the right team at NTT Research?",
+      "body": "Hi Saumil,\n\nWe co-authored a 2024 paper, when your affiliations were NTT Research (Physics & Informatics Laboratories) and MIT RLE as of 2024. Would you be comfortable forwarding the blurb below to the relevant team at NTT Research, in case my photonic computing background is useful to them? Happy to hear no.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that photonic research be relevant to your team at NTT Research?",
+      "evidence_ids": [
+        "evidence:shared-A5047268098",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "96f005e93afe24a5002ac5111afd6d77b8eb3d606800437ae491ca26bdde03de",
+      "status": "draft"
+    },
+    {
+      "id": "draft:bandyopadhyay:forwardable_note",
+      "path_id": "path:bandyopadhyay",
+      "to_person_id": "person:openalex:A5047268098",
+      "kind": "forwardable_note",
+      "subject": "Nicholas Harris (Lightmatter): photonic research, relevant to NTT Research?",
+      "body": "Nicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that photonic research be relevant to your team at NTT Research?",
+      "evidence_ids": [
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "17c95038a6f44826788e8bd93aa9dedbb3fa3fc1847b7591e6a64626b405e45a",
+      "status": "draft"
+    }
+  ],
+  "reviewed": true
+}

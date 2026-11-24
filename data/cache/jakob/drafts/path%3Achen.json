@@ -1,0 +1,41 @@
+{
+  "context_hash": "e5664219c88fe35798bf303c8d1b5dc337f8a3795550d589bd29af8dc66dcde1",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:chen:intro_request",
+      "path_id": "path:chen",
+      "to_person_id": "person:openalex:A5085311993",
+      "kind": "intro_request",
+      "subject": "Forward a note to Microsoft's photonics team?",
+      "body": "Hi Edward,\n\nWe co-authored a 2015 paper at MIT's Research Laboratory of Electronics, and your published affiliation is Microsoft Discovery & Quantum as of 2026.\n\nWould you be comfortable forwarding the note below to the relevant team at Microsoft? A photonics paper matched to Microsoft, Photonic Ising machines towards and beyond a million spins, was published 2026-11-19. A no is completely fine.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored Deep learning with coherent nanophotonic circuits (2017). Might Microsoft's recent photonics work, such as Photonic Ising machines towards and beyond a million spins (2026), relate to that research?",
+      "evidence_ids": [
+        "evidence:shared-A5085311993",
+        "evidence:chen-affiliation",
+        "evidence:recent-microsoft",
+        "evidence:90d-microsoft",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "67d2d68b1ee67303b5146724b78a49f283e8fd055702a1fedc0e7a54a9945894",
+      "status": "draft"
+    },
+    {
+      "id": "draft:chen:forwardable_note",
+      "path_id": "path:chen",
+      "to_person_id": "person:openalex:A5085311993",
+      "kind": "forwardable_note",
+      "subject": "Nicholas Harris, Lightmatter: photonics question",
+      "body": "Nicholas Harris, founder of Lightmatter, co-authored Deep learning with coherent nanophotonic circuits (2017). Might Microsoft's recent photonics work, such as Photonic Ising machines towards and beyond a million spins (2026), relate to that research?",
+      "evidence_ids": [
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
+        "evidence:recent-microsoft",
+        "evidence:90d-microsoft"
+      ],
+      "content_hash": "a1cbcc82bab2ca4456b6703d66acc3b38e376205b319ae81fe4bf9acce380415",
+      "status": "draft"
+    }
+  ],
+  "reviewed": true
+}

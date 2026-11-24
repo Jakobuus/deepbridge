@@ -1,0 +1,1167 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T19:19:55.669698+00:00",
+    "founder_id": "person:openalex:A5102978866",
+    "case": "Lightmatter",
+    "score_formula": "min(40,4*papers_90d)+min(35,5*citing_papers)+min(25,5*job_posts)",
+    "notes": "Public API snapshot. Scores are heuristics. Unavailable sources add zero; query-unavailable citation samples establish lower bounds only. Citations are all time; job listing observation does not establish publication date. Publication affiliations do not establish current employment."
+  },
+  "orgs": [
+    {
+      "id": "org:ntt",
+      "name": "NTT Research",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": 35,
+      "openalex_id": "https://openalex.org/I4210092597"
+    },
+    {
+      "id": "org:nvidia",
+      "name": "NVIDIA",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": 35,
+      "openalex_id": "https://openalex.org/I4210127875"
+    },
+    {
+      "id": "org:psiquantum",
+      "name": "PsiQuantum",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": 25,
+      "openalex_id": "https://openalex.org/I4405263132"
+    },
+    {
+      "id": "org:microsoft",
+      "name": "Microsoft",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": 20,
+      "openalex_id": "https://openalex.org/I1290206253"
+    },
+    {
+      "id": "org:google",
+      "name": "Google",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": 5,
+      "openalex_id": "https://openalex.org/I1291425158"
+    },
+    {
+      "id": "org:meta",
+      "name": "Meta",
+      "type": "company",
+      "is_buyer": true,
+      "buyer_score": 5,
+      "openalex_id": "https://openalex.org/I4210114444"
+    },
+    {
+      "id": "org:amd",
+      "name": "AMD",
+      "type": "company",
+      "is_buyer": false,
+      "buyer_score": 0,
+      "openalex_id": "https://openalex.org/I4210137977"
+    },
+    {
+      "id": "org:cisco",
+      "name": "Cisco Systems",
+      "type": "company",
+      "is_buyer": false,
+      "buyer_score": 0,
+      "openalex_id": "https://openalex.org/I135428043"
+    },
+    {
+      "id": "org:ibm",
+      "name": "IBM",
+      "type": "company",
+      "is_buyer": false,
+      "buyer_score": 0,
+      "openalex_id": "https://openalex.org/I1341412227"
+    },
+    {
+      "id": "org:intel",
+      "name": "Intel",
+      "type": "company",
+      "is_buyer": false,
+      "buyer_score": 0,
+      "openalex_id": "https://openalex.org/I1343180700"
+    }
+  ],
+  "signals": [
+    {
+      "id": "signal:buyers:efb1e45fb582af301cf9",
+      "org_id": "org:meta",
+      "type": "cites_founder",
+      "title": "1 distinct papers cite founder works (all time; cached)",
+      "date": "2024-01-01",
+      "evidence_ids": [
+        "evidence:buyers:efb1e45fb582af301cf9",
+        "evidence:buyers:9d9cb07da4d65bedfda4"
+      ]
+    },
+    {
+      "id": "signal:buyers:f8ed12ba9a1b8e000e62",
+      "org_id": "org:ntt",
+      "type": "cites_founder",
+      "title": "64 distinct papers cite founder works (all time; cached)",
+      "date": "2026-11-19",
+      "evidence_ids": [
+        "evidence:buyers:f8ed12ba9a1b8e000e62",
+        "evidence:buyers:9811747615099f3ec966"
+      ]
+    },
+    {
+      "id": "signal:buyers:0b42a55d16f825acd54e",
+      "org_id": "org:nvidia",
+      "type": "cites_founder",
+      "title": "19 distinct papers cite founder works (all time; cached)",
+      "date": "2026-11-13",
+      "evidence_ids": [
+        "evidence:buyers:0b42a55d16f825acd54e",
+        "evidence:buyers:2c8e44cac6caefbdf01f"
+      ]
+    },
+    {
+      "id": "signal:buyers:64d574aff533253dd2be",
+      "org_id": "org:microsoft",
+      "type": "cites_founder",
+      "title": "4 distinct papers cite founder works (all time; cached)",
+      "date": "2026-03-18",
+      "evidence_ids": [
+        "evidence:buyers:64d574aff533253dd2be",
+        "evidence:buyers:6e8e15c18a129495b626"
+      ]
+    },
+    {
+      "id": "signal:buyers:38e3d42b50a536dd6845",
+      "org_id": "org:google",
+      "type": "cites_founder",
+      "title": "at least 1 verified citing papers (query unavailable; cached)",
+      "date": "2025-09-03",
+      "evidence_ids": [
+        "evidence:buyers:38e3d42b50a536dd6845"
+      ]
+    },
+    {
+      "id": "signal:buyers:2cd9ec9ded911f2e4e5d",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Cryogenic Electrical Interconnect Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:2cd9ec9ded911f2e4e5d",
+        "evidence:buyers:7aa0b9f75e7e7398bff8"
+      ]
+    },
+    {
+      "id": "signal:buyers:5ecf73a260ed498960f4",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Director, Electro-Optical Validation (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:5ecf73a260ed498960f4",
+        "evidence:buyers:35aec0cb7237f9a48f73"
+      ]
+    },
+    {
+      "id": "signal:buyers:afb481de5f2692f457ac",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Intern, Optical Packaging and Characterization Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:afb481de5f2692f457ac",
+        "evidence:buyers:d174bafccbc31b23d82a"
+      ]
+    },
+    {
+      "id": "signal:buyers:fe0aa19230248a9fd056",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Manager, Optical Validation (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:fe0aa19230248a9fd056",
+        "evidence:buyers:d897e76db7e36cf3b5b6"
+      ]
+    },
+    {
+      "id": "signal:buyers:ecde9f7dd1860dea84dd",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Manager, Photonics Hardware Validation Engineering (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:ecde9f7dd1860dea84dd",
+        "evidence:buyers:00c8a321b0c4335d3ae6"
+      ]
+    },
+    {
+      "id": "signal:buyers:985ecae53fde5694ff3d",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Mechanical Design Engineer – Photonic Hardware (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:985ecae53fde5694ff3d",
+        "evidence:buyers:befc15775e437c674279"
+      ]
+    },
+    {
+      "id": "signal:buyers:213cfa0635943fb87d3a",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Photonic Circuit Data Analysis Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:213cfa0635943fb87d3a",
+        "evidence:buyers:133b5849be134fd8307e"
+      ]
+    },
+    {
+      "id": "signal:buyers:1a99a9cd9f4bc5794b96",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Photonic Circuit Design and Simulation Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:1a99a9cd9f4bc5794b96",
+        "evidence:buyers:c852fc9f3c9f4f4eef15"
+      ]
+    },
+    {
+      "id": "signal:buyers:9271eb0cc60979c6a9db",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Photonic Design Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:9271eb0cc60979c6a9db",
+        "evidence:buyers:8a4dee82b95b53d82c0e"
+      ]
+    },
+    {
+      "id": "signal:buyers:b05dfe7985bc8830861c",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Photonic Model Integrator  (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:b05dfe7985bc8830861c",
+        "evidence:buyers:0895434498775f39bc78"
+      ]
+    },
+    {
+      "id": "signal:buyers:343a6b6b6c87f5668a95",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Photonics Circuit Designer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:343a6b6b6c87f5668a95",
+        "evidence:buyers:c44b4112f83ad55e73f0"
+      ]
+    },
+    {
+      "id": "signal:buyers:1827e4d2901ad84cbf5c",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Photonics Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:1827e4d2901ad84cbf5c",
+        "evidence:buyers:e943ede8f12714ed3208"
+      ]
+    },
+    {
+      "id": "signal:buyers:cc62ec5f4ada90ff84b2",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Photonics Layout Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:cc62ec5f4ada90ff84b2",
+        "evidence:buyers:119d20a17e2a42090ad0"
+      ]
+    },
+    {
+      "id": "signal:buyers:a404bc00bcb4339ab8e8",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Photonics Test and Characterization Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:a404bc00bcb4339ab8e8",
+        "evidence:buyers:20a97c5a5387438a53c8"
+      ]
+    },
+    {
+      "id": "signal:buyers:1c51f00dfd6557bb3456",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Automation Engineer, Optical Packaging (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:1c51f00dfd6557bb3456",
+        "evidence:buyers:4b03f4b2e6a70bcc729d"
+      ]
+    },
+    {
+      "id": "signal:buyers:5580433d4e252d0a6990",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Director, Finance Business Partner – Optical Circuit Switch (OCS) (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:5580433d4e252d0a6990",
+        "evidence:buyers:3aada5db67069717cc51"
+      ]
+    },
+    {
+      "id": "signal:buyers:bf046453f6d3d8279c49",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Engineer, System Calibration (Electro-Optics) (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:bf046453f6d3d8279c49",
+        "evidence:buyers:7fed0fd6c1a4bc984eb1"
+      ]
+    },
+    {
+      "id": "signal:buyers:c2f3484ba2ea2956e7a0",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Hardware Test Automation Engineer, Photonics (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:c2f3484ba2ea2956e7a0",
+        "evidence:buyers:112e4f58f46f94d72e91"
+      ]
+    },
+    {
+      "id": "signal:buyers:7b41c87ba4d3b92a1850",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Integrated Photonics Engineer - Active Devices and Circuits (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:7b41c87ba4d3b92a1850",
+        "evidence:buyers:6c7a817dba7f63a1b768"
+      ]
+    },
+    {
+      "id": "signal:buyers:43adf444bc8da0847e1a",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Manufacturing Engineer – Photonics Manufacturing & NPI (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:43adf444bc8da0847e1a",
+        "evidence:buyers:2d14f35fe698adb9a67e"
+      ]
+    },
+    {
+      "id": "signal:buyers:0406439ea2e6af4ea15a",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Optical Fibre R&D Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:0406439ea2e6af4ea15a",
+        "evidence:buyers:f0ab07a08576e9cda3e0"
+      ]
+    },
+    {
+      "id": "signal:buyers:31e9474fc051175d0530",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Optical Packaging & Assembly Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:31e9474fc051175d0530",
+        "evidence:buyers:7f42ea74482581c44bf4"
+      ]
+    },
+    {
+      "id": "signal:buyers:a4340b3d45d7a9a232a3",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Optical Packaging Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:a4340b3d45d7a9a232a3",
+        "evidence:buyers:356c92237fc741181d42"
+      ]
+    },
+    {
+      "id": "signal:buyers:fe4ccbc2ac561e06572b",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Optical Process Engineer  (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:fe4ccbc2ac561e06572b",
+        "evidence:buyers:724a213b507d1d3f2147"
+      ]
+    },
+    {
+      "id": "signal:buyers:4a000f03d24185addd51",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Optical Systems Validation Engineer - Optical Circuit Switch (OCS) (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:4a000f03d24185addd51",
+        "evidence:buyers:439d76729e53ce61dd31"
+      ]
+    },
+    {
+      "id": "signal:buyers:5be3286c7b32d490053b",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Photonics Engineer, Optical Interfaces (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:5be3286c7b32d490053b",
+        "evidence:buyers:d2625bce11d7a3d4a7d3"
+      ]
+    },
+    {
+      "id": "signal:buyers:59a377b3c83970eceb5c",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Photonic Technical Program Manager  (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:59a377b3c83970eceb5c",
+        "evidence:buyers:3a3dd56e56ffd71e6ef0"
+      ]
+    },
+    {
+      "id": "signal:buyers:bf66c4c9d0b2d751d7c5",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior System Integration & Optical Validation Engineer    (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:bf66c4c9d0b2d751d7c5",
+        "evidence:buyers:8fc60aa6ef44638b1881"
+      ]
+    },
+    {
+      "id": "signal:buyers:2e2c83838fbcbb80043d",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Senior Validation Engineer, Electro-Optical Devices (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:2e2c83838fbcbb80043d",
+        "evidence:buyers:5f3b2dee79bbfbbfd2ab"
+      ]
+    },
+    {
+      "id": "signal:buyers:e4faf78a5a06265db1fe",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Silicon Photonics Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:e4faf78a5a06265db1fe",
+        "evidence:buyers:d721794a2bb0fe51e538"
+      ]
+    },
+    {
+      "id": "signal:buyers:8ba2744e5b928a83656d",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Staff Fiber Optics System Engineer (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:8ba2744e5b928a83656d",
+        "evidence:buyers:639a036f6109c27cf7d9"
+      ]
+    },
+    {
+      "id": "signal:buyers:11d2fd41f7b66aeed3c5",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Staff Optomechanical / Photonics Packaging Engineer  (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:11d2fd41f7b66aeed3c5",
+        "evidence:buyers:f4afd4859cc63c7ec516"
+      ]
+    },
+    {
+      "id": "signal:buyers:0974a469253b3319a9c2",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Staff Software Engineer, Photonics (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:0974a469253b3319a9c2",
+        "evidence:buyers:1122eb7b05a4a7654a94"
+      ]
+    },
+    {
+      "id": "signal:buyers:8da7d5a815c7b1b8dee1",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Technical Product Management Lead, Datacenter Networking & Optical Interconnect (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:8da7d5a815c7b1b8dee1",
+        "evidence:buyers:6291368ec345db5701e6"
+      ]
+    },
+    {
+      "id": "signal:buyers:e65c3c15581dcb290bcf",
+      "org_id": "org:psiquantum",
+      "type": "job_post",
+      "title": "Validation Engineer, Electro-Optical devices (cached listing)",
+      "date": null,
+      "evidence_ids": [
+        "evidence:buyers:e65c3c15581dcb290bcf",
+        "evidence:buyers:1c0feb23dec85e25707d"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence:buyers:00c8a321b0c4335d3ae6",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8184512003",
+      "quote": "Manager, Photonics Hardware Validation Engineering",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:0406439ea2e6af4ea15a",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7728563003",
+      "quote": "Senior Optical Fibre R&D Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:0895434498775f39bc78",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7686599003",
+      "quote": "Photonic Model Integrator ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:0974a469253b3319a9c2",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7767571003",
+      "quote": "Staff Software Engineer, Photonics",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:0b42a55d16f825acd54e",
+      "source_url": "https://openalex.org/W7170141139",
+      "quote": "PRISM: Photonics-Informed Inverse Lithography for Manufacturable Inverse-Designed Photonic Integrated Circuits",
+      "source_date": "2026-11-13",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:1122eb7b05a4a7654a94",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7767571003",
+      "quote": "Staff Software Engineer, Photonics",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:112e4f58f46f94d72e91",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7498975003",
+      "quote": "Senior Hardware Test Automation Engineer, Photonics",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:119d20a17e2a42090ad0",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8040245003",
+      "quote": "Photonics Layout Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:11d2fd41f7b66aeed3c5",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7767551003",
+      "quote": "Staff Optomechanical / Photonics Packaging Engineer ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:133b5849be134fd8307e",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8214399003",
+      "quote": "Photonic Circuit Data Analysis Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:1827e4d2901ad84cbf5c",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8033608003",
+      "quote": "Photonics Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:1a99a9cd9f4bc5794b96",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8214404003",
+      "quote": "Photonic Circuit Design and Simulation Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:1c0feb23dec85e25707d",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7775551003",
+      "quote": "Validation Engineer, Electro-Optical devices",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:1c51f00dfd6557bb3456",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7770390003",
+      "quote": "Senior Automation Engineer, Optical Packaging",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:20a97c5a5387438a53c8",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8205589003",
+      "quote": "Photonics Test and Characterization Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:213cfa0635943fb87d3a",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8214399003",
+      "quote": "Photonic Circuit Data Analysis Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:2c8e44cac6caefbdf01f",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI4210127875%2Cto_publication_date%3A2026-11-24%2Ccites%3AW7133770301%7CW7163127142%7CW4414004825%7CW4409283612%7CW4410992308%7CW4404905249%7CW4392254874%7CW3196795730%7CW4385315986%7CW4297097367%7CW4280610722%7CW3188858148%7CW3163879263%7CW3133779704%7CW4393402380%7CW3210455725%7CW3018394831%7CW3146087515%7CW3005239671%7CW2941382743%7CW3009136983%7CW4288101375%7CW2963530810%7CW2943845744%7CW3102638752%7CW2924216505%7CW2930111165%7CW2949762399%7CW3161950014%7CW4245250876%7CW4254730886%7CW2905425616%7CW2896340290%7CW2783781338%7CW2787508042%7CW4255196056%7CW2746675113%7CW4246799416%7CW1833198276%7CW2752849906%7CW2612892824%7CW2735845721%7CW2792463771%7CW2512343577%7CW2285854022%7CW2391515462%7CW2600484989%7CW2527335842%7CW2560317248%7CW2560472445%7CW1776515882%7CW1591639909%7CW2778463797%7CW3151279072%7CW2012272465%7CW2115213492%7CW1491272453%7CW1520331598%7CW1539848319%7CW1598990735%7CW1607294115%7CW2772148516%7CW2787959275%7CW2142144911%7CW2964089184%7CW3102708284%7CW2047964983%7CW2589017242%7CW2952285760%7CW2048784526%7CW2049948571%7CW2051662894%7CW2042945067%7CW2017093231%7CW2074989281%7CW2008538751%7CW2080619713%7CW2098474373%7CW2270610701%7CW2323482816%7CW2073032885&sort=publication_date%3Adesc&select=id%2Ctitle%2Cpublication_date&per-page=200&page=1",
+      "quote": "meta.count: 19",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:2cd9ec9ded911f2e4e5d",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8010626003",
+      "quote": "Cryogenic Electrical Interconnect Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:2d14f35fe698adb9a67e",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8184266003",
+      "quote": "Senior Manufacturing Engineer – Photonics Manufacturing & NPI",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:2e2c83838fbcbb80043d",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7545260003",
+      "quote": "Senior Validation Engineer, Electro-Optical Devices",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:31e9474fc051175d0530",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8004824003",
+      "quote": "Senior Optical Packaging & Assembly Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:343a6b6b6c87f5668a95",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7743064003",
+      "quote": "Photonics Circuit Designer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:356c92237fc741181d42",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7545267003",
+      "quote": "Senior Optical Packaging Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:35aec0cb7237f9a48f73",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8033613003",
+      "quote": "Director, Electro-Optical Validation",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:38e3d42b50a536dd6845",
+      "source_url": "https://api.openalex.org/works/W4413946588?select=id%2Ctitle%2Cpublication_date%2Cauthorships%2Creferenced_works",
+      "quote": "Training of physical neural networks",
+      "source_date": "2025-09-03",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:3a3dd56e56ffd71e6ef0",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7695744003",
+      "quote": "Senior Photonic Technical Program Manager ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:3aada5db67069717cc51",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7896348003",
+      "quote": "Senior Director, Finance Business Partner – Optical Circuit Switch (OCS)",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:439d76729e53ce61dd31",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8200665003",
+      "quote": "Senior Optical Systems Validation Engineer - Optical Circuit Switch (OCS)",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:43adf444bc8da0847e1a",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8184266003",
+      "quote": "Senior Manufacturing Engineer – Photonics Manufacturing & NPI",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:4a000f03d24185addd51",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8200665003",
+      "quote": "Senior Optical Systems Validation Engineer - Optical Circuit Switch (OCS)",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:4b03f4b2e6a70bcc729d",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7770390003",
+      "quote": "Senior Automation Engineer, Optical Packaging",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:5580433d4e252d0a6990",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7896348003",
+      "quote": "Senior Director, Finance Business Partner – Optical Circuit Switch (OCS)",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:59a377b3c83970eceb5c",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7695744003",
+      "quote": "Senior Photonic Technical Program Manager ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:5be3286c7b32d490053b",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7728495003",
+      "quote": "Senior Photonics Engineer, Optical Interfaces",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:5ecf73a260ed498960f4",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8033613003",
+      "quote": "Director, Electro-Optical Validation",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:5f3b2dee79bbfbbfd2ab",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7545260003",
+      "quote": "Senior Validation Engineer, Electro-Optical Devices",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:6291368ec345db5701e6",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7984551003",
+      "quote": "Technical Product Management Lead, Datacenter Networking & Optical Interconnect",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:639a036f6109c27cf7d9",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7918361003",
+      "quote": "Staff Fiber Optics System Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:64d574aff533253dd2be",
+      "source_url": "https://openalex.org/W7138953771",
+      "quote": "Analog Diffusion Models",
+      "source_date": "2026-03-18",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:6c7a817dba7f63a1b768",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7760358003",
+      "quote": "Senior Integrated Photonics Engineer - Active Devices and Circuits",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:6e8e15c18a129495b626",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI1290206253%2Cto_publication_date%3A2026-11-24%2Ccites%3AW7133770301%7CW7163127142%7CW4414004825%7CW4409283612%7CW4410992308%7CW4404905249%7CW4392254874%7CW3196795730%7CW4385315986%7CW4297097367%7CW4280610722%7CW3188858148%7CW3163879263%7CW3133779704%7CW4393402380%7CW3210455725%7CW3018394831%7CW3146087515%7CW3005239671%7CW2941382743%7CW3009136983%7CW4288101375%7CW2963530810%7CW2943845744%7CW3102638752%7CW2924216505%7CW2930111165%7CW2949762399%7CW3161950014%7CW4245250876%7CW4254730886%7CW2905425616%7CW2896340290%7CW2783781338%7CW2787508042%7CW4255196056%7CW2746675113%7CW4246799416%7CW1833198276%7CW2752849906%7CW2612892824%7CW2735845721%7CW2792463771%7CW2512343577%7CW2285854022%7CW2391515462%7CW2600484989%7CW2527335842%7CW2560317248%7CW2560472445%7CW1776515882%7CW1591639909%7CW2778463797%7CW3151279072%7CW2012272465%7CW2115213492%7CW1491272453%7CW1520331598%7CW1539848319%7CW1598990735%7CW1607294115%7CW2772148516%7CW2787959275%7CW2142144911%7CW2964089184%7CW3102708284%7CW2047964983%7CW2589017242%7CW2952285760%7CW2048784526%7CW2049948571%7CW2051662894%7CW2042945067%7CW2017093231%7CW2074989281%7CW2008538751%7CW2080619713%7CW2098474373%7CW2270610701%7CW2323482816%7CW2073032885&sort=publication_date%3Adesc&select=id%2Ctitle%2Cpublication_date&per-page=200&page=1",
+      "quote": "meta.count: 4",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:724a213b507d1d3f2147",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7568801003",
+      "quote": "Senior Optical Process Engineer ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:7aa0b9f75e7e7398bff8",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8010626003",
+      "quote": "Cryogenic Electrical Interconnect Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:7b41c87ba4d3b92a1850",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7760358003",
+      "quote": "Senior Integrated Photonics Engineer - Active Devices and Circuits",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:7f42ea74482581c44bf4",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8004824003",
+      "quote": "Senior Optical Packaging & Assembly Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:7fed0fd6c1a4bc984eb1",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7715494003",
+      "quote": "Senior Engineer, System Calibration (Electro-Optics)",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:8a4dee82b95b53d82c0e",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7767642003",
+      "quote": "Photonic Design Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:8ba2744e5b928a83656d",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7918361003",
+      "quote": "Staff Fiber Optics System Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:8da7d5a815c7b1b8dee1",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7984551003",
+      "quote": "Technical Product Management Lead, Datacenter Networking & Optical Interconnect",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:8fc60aa6ef44638b1881",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8009508003",
+      "quote": "Senior System Integration & Optical Validation Engineer   ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:9271eb0cc60979c6a9db",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7767642003",
+      "quote": "Photonic Design Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:9811747615099f3ec966",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI4210092597%2Cto_publication_date%3A2026-11-24%2Ccites%3AW7133770301%7CW7163127142%7CW4414004825%7CW4409283612%7CW4410992308%7CW4404905249%7CW4392254874%7CW3196795730%7CW4385315986%7CW4297097367%7CW4280610722%7CW3188858148%7CW3163879263%7CW3133779704%7CW4393402380%7CW3210455725%7CW3018394831%7CW3146087515%7CW3005239671%7CW2941382743%7CW3009136983%7CW4288101375%7CW2963530810%7CW2943845744%7CW3102638752%7CW2924216505%7CW2930111165%7CW2949762399%7CW3161950014%7CW4245250876%7CW4254730886%7CW2905425616%7CW2896340290%7CW2783781338%7CW2787508042%7CW4255196056%7CW2746675113%7CW4246799416%7CW1833198276%7CW2752849906%7CW2612892824%7CW2735845721%7CW2792463771%7CW2512343577%7CW2285854022%7CW2391515462%7CW2600484989%7CW2527335842%7CW2560317248%7CW2560472445%7CW1776515882%7CW1591639909%7CW2778463797%7CW3151279072%7CW2012272465%7CW2115213492%7CW1491272453%7CW1520331598%7CW1539848319%7CW1598990735%7CW1607294115%7CW2772148516%7CW2787959275%7CW2142144911%7CW2964089184%7CW3102708284%7CW2047964983%7CW2589017242%7CW2952285760%7CW2048784526%7CW2049948571%7CW2051662894%7CW2042945067%7CW2017093231%7CW2074989281%7CW2008538751%7CW2080619713%7CW2098474373%7CW2270610701%7CW2323482816%7CW2073032885&sort=publication_date%3Adesc&select=id%2Ctitle%2Cpublication_date&per-page=200&page=1",
+      "quote": "meta.count: 64",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:985ecae53fde5694ff3d",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7727655003",
+      "quote": "Mechanical Design Engineer – Photonic Hardware",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:9d9cb07da4d65bedfda4",
+      "source_url": "https://api.openalex.org/works?filter=institutions.id%3AI4210114444%2Cto_publication_date%3A2026-11-24%2Ccites%3AW7133770301%7CW7163127142%7CW4414004825%7CW4409283612%7CW4410992308%7CW4404905249%7CW4392254874%7CW3196795730%7CW4385315986%7CW4297097367%7CW4280610722%7CW3188858148%7CW3163879263%7CW3133779704%7CW4393402380%7CW3210455725%7CW3018394831%7CW3146087515%7CW3005239671%7CW2941382743%7CW3009136983%7CW4288101375%7CW2963530810%7CW2943845744%7CW3102638752%7CW2924216505%7CW2930111165%7CW2949762399%7CW3161950014%7CW4245250876%7CW4254730886%7CW2905425616%7CW2896340290%7CW2783781338%7CW2787508042%7CW4255196056%7CW2746675113%7CW4246799416%7CW1833198276%7CW2752849906%7CW2612892824%7CW2735845721%7CW2792463771%7CW2512343577%7CW2285854022%7CW2391515462%7CW2600484989%7CW2527335842%7CW2560317248%7CW2560472445%7CW1776515882%7CW1591639909%7CW2778463797%7CW3151279072%7CW2012272465%7CW2115213492%7CW1491272453%7CW1520331598%7CW1539848319%7CW1598990735%7CW1607294115%7CW2772148516%7CW2787959275%7CW2142144911%7CW2964089184%7CW3102708284%7CW2047964983%7CW2589017242%7CW2952285760%7CW2048784526%7CW2049948571%7CW2051662894%7CW2042945067%7CW2017093231%7CW2074989281%7CW2008538751%7CW2080619713%7CW2098474373%7CW2270610701%7CW2323482816%7CW2073032885&sort=publication_date%3Adesc&select=id%2Ctitle%2Cpublication_date&per-page=200&page=1",
+      "quote": "meta.count: 1",
+      "source_date": "2026-11-24",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:a404bc00bcb4339ab8e8",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8205589003",
+      "quote": "Photonics Test and Characterization Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:a4340b3d45d7a9a232a3",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7545267003",
+      "quote": "Senior Optical Packaging Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:afb481de5f2692f457ac",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7761881003",
+      "quote": "Intern, Optical Packaging and Characterization Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:b05dfe7985bc8830861c",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7686599003",
+      "quote": "Photonic Model Integrator ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:befc15775e437c674279",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7727655003",
+      "quote": "Mechanical Design Engineer – Photonic Hardware",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:bf046453f6d3d8279c49",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7715494003",
+      "quote": "Senior Engineer, System Calibration (Electro-Optics)",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:bf66c4c9d0b2d751d7c5",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8009508003",
+      "quote": "Senior System Integration & Optical Validation Engineer   ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:c2f3484ba2ea2956e7a0",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7498975003",
+      "quote": "Senior Hardware Test Automation Engineer, Photonics",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:c44b4112f83ad55e73f0",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7743064003",
+      "quote": "Photonics Circuit Designer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:c852fc9f3c9f4f4eef15",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8214404003",
+      "quote": "Photonic Circuit Design and Simulation Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:cc62ec5f4ada90ff84b2",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8040245003",
+      "quote": "Photonics Layout Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:d174bafccbc31b23d82a",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7761881003",
+      "quote": "Intern, Optical Packaging and Characterization Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:d2625bce11d7a3d4a7d3",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7728495003",
+      "quote": "Senior Photonics Engineer, Optical Interfaces",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:d721794a2bb0fe51e538",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7763037003",
+      "quote": "Silicon Photonics Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:d897e76db7e36cf3b5b6",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8043401003",
+      "quote": "Manager, Optical Validation",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:e4faf78a5a06265db1fe",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7763037003",
+      "quote": "Silicon Photonics Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:e65c3c15581dcb290bcf",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7775551003",
+      "quote": "Validation Engineer, Electro-Optical devices",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:e943ede8f12714ed3208",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=8033608003",
+      "quote": "Photonics Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:ecde9f7dd1860dea84dd",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8184512003",
+      "quote": "Manager, Photonics Hardware Validation Engineering",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:efb1e45fb582af301cf9",
+      "source_url": "https://openalex.org/W4402268774",
+      "quote": "Ultra-Compact Inverse-Designed Photonic Hadamard Transform",
+      "source_date": "2024-01-01",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:f0ab07a08576e9cda3e0",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7728563003",
+      "quote": "Senior Optical Fibre R&D Engineer",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:f4afd4859cc63c7ec516",
+      "source_url": "https://www.psiquantum.com/apply?gh_jid=7767551003",
+      "quote": "Staff Optomechanical / Photonics Packaging Engineer ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:f8ed12ba9a1b8e000e62",
+      "source_url": "https://openalex.org/W7169050271",
+      "quote": "Photonic Ising machines towards and beyond a million spins",
+      "source_date": "2026-11-19",
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:buyers:fe0aa19230248a9fd056",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/8043401003",
+      "quote": "Manager, Optical Validation",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    },
+    {
+      "id": "evidence:buyers:fe4ccbc2ac561e06572b",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/psiquantum/jobs/7568801003",
+      "quote": "Senior Optical Process Engineer ",
+      "source_date": null,
+      "observed_at": "2026-11-24T19:19:51.549917+00:00",
+      "kind": "job_post"
+    }
+  ]
+}

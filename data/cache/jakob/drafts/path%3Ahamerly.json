@@ -1,0 +1,37 @@
+{
+  "context_hash": "0caeb056123f03aebde9dce62726c721cfc66e58114186dd2090ecf13ab682de",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:hamerly:intro_request",
+      "path_id": "path:hamerly",
+      "to_person_id": "person:openalex:A5089821617",
+      "kind": "intro_request",
+      "subject": "Forward a short note to NTT Research?",
+      "body": "Hi Ryan,\n\nWould you forward the blurb below to the relevant team at NTT Research? We co-authored a paper in December 2024 (as of 2024, you were at NTT Research and MIT's RLE), and I wonder if my nanophotonic work is relevant to them. No worries if you'd rather not.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). He co-authored a December 2024 paper with a researcher at NTT Research's Physics & Informatics Laboratories (as of 2024); might his work be relevant to your team?",
+      "evidence_ids": [
+        "evidence:shared-A5089821617",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "656c76152026a98cc1362c9706244b0eaf1ab27080273c8b4c5b1e91fca390a2",
+      "status": "draft"
+    },
+    {
+      "id": "draft:hamerly:forwardable_note",
+      "path_id": "path:hamerly",
+      "to_person_id": "person:openalex:A5089821617",
+      "kind": "forwardable_note",
+      "subject": "Nicholas Harris (Lightmatter) and NTT Research",
+      "body": "Nicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). He co-authored a December 2024 paper with a researcher at NTT Research's Physics & Informatics Laboratories (as of 2024); might his work be relevant to your team?",
+      "evidence_ids": [
+        "evidence:shared-A5089821617",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "c4b2d482172d9e2f15c76f7315ad2e9ac3566d10b2e82cad6bbac1e72b0b5f16",
+      "status": "draft"
+    }
+  ],
+  "reviewed": true
+}

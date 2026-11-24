@@ -1,0 +1,39 @@
+{
+  "context_hash": "bc0fe72d245770f94ba328c79c441315b7261b8a8a8b27826e22837f48b621eb",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:steinbrecher:intro_request",
+      "path_id": "path:steinbrecher",
+      "to_person_id": "person:openalex:A5061412493",
+      "kind": "intro_request",
+      "subject": "Forwarding a note to Meta's photonics team?",
+      "body": "Hi Gregory,\n\nWe co-authored a paper at MIT's Research Laboratory of Electronics in 2017, and your published affiliation is Meta as of 2024. Could you forward the blurb below to the relevant team at Meta working on photonic or optical interconnects? A cached search shows one matching Meta paper since 25 Aug 2026, so I'm asking whether it's timely. Happy for you to say no.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonic or optical interconnect work at Meta relevant, given one matching Meta paper since 25 Aug 2026?",
+      "evidence_ids": [
+        "evidence:shared-A5061412493",
+        "evidence:steinbrecher-affiliation",
+        "evidence:90d-meta",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "be71ab4044f76da4893b5f2bf5de01ac17fc3ea357d2435f107b367db4f0cabe",
+      "status": "draft"
+    },
+    {
+      "id": "draft:steinbrecher:forwardable_note",
+      "path_id": "path:steinbrecher",
+      "to_person_id": "person:openalex:A5061412493",
+      "kind": "forwardable_note",
+      "subject": "Photonic interconnects at Meta",
+      "body": "Nicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonic or optical interconnect work at Meta relevant, given one matching Meta paper since 25 Aug 2026?",
+      "evidence_ids": [
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
+        "evidence:90d-meta"
+      ],
+      "content_hash": "9c55a8c67f7050ff4f358e52dad0f7d03a8d28549dc4da1f2d4f51f44ef2de5a",
+      "status": "draft"
+    }
+  ],
+  "reviewed": true
+}

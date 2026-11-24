@@ -1,0 +1,38 @@
+{
+  "context_hash": "057d2797aa6adbf58f85383fd1f03eb77f6a5a19a92f53b0503c9b8174b3def9",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:najafi:intro_request",
+      "path_id": "path:najafi",
+      "to_person_id": "person:openalex:A5069544756",
+      "kind": "intro_request",
+      "subject": "Could you forward a note to PsiQuantum?",
+      "body": "Hi Faraz,\n\nWe co-authored a 2015 paper at MIT's EECS department, and your published affiliation is PsiQuantum as of 2025. Would you be comfortable forwarding the note below to the relevant team at PsiQuantum, in case a photonics conversation is useful to them? No problem at all if not.\n\nThanks,\nNicholas\n\nBlurb you can forward:\nNicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonics research like this relevant to any team at PsiQuantum?",
+      "evidence_ids": [
+        "evidence:shared-A5069544756",
+        "evidence:najafi-affiliation",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "86ef642a13e90ca813ac92a495859ab47cf949e34d506ac33e0e8abefd83b9bf",
+      "status": "draft"
+    },
+    {
+      "id": "draft:najafi:forwardable_note",
+      "path_id": "path:najafi",
+      "to_person_id": "person:openalex:A5069544756",
+      "kind": "forwardable_note",
+      "subject": "Photonics research from Nicholas Harris",
+      "body": "Nicholas Harris, founder of Lightmatter, co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Is photonics research like this relevant to any team at PsiQuantum?",
+      "evidence_ids": [
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
+        "evidence:najafi-affiliation"
+      ],
+      "content_hash": "7fd334ea43acc69d09b63c324869340792874a6cd047291729dae290e08391c9",
+      "status": "draft"
+    }
+  ],
+  "reviewed": true
+}

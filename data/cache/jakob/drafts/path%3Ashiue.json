@@ -1,0 +1,38 @@
+{
+  "context_hash": "13c8098e7441783c4b1c7f476313a453f9f9661a839b0f57926b6bf53e3eb798",
+  "cached": true,
+  "items": [
+    {
+      "id": "draft:shiue:intro_request",
+      "path_id": "path:shiue",
+      "to_person_id": "person:openalex:A5018701316",
+      "kind": "intro_request",
+      "subject": "Could you forward a short note to Cisco?",
+      "body": "Hi Ren-Jye,\n\nWe co-authored a paper at MIT in 2014, and your published affiliation is Cisco as of 2025. Would you be comfortable forwarding the blurb below to the relevant team at Cisco, so they can say whether my 2017 photonics research is relevant to them? Fine to decline.\n\nNicholas\n\nBlurb you can forward:\nNicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that research be relevant to your team at Cisco?",
+      "evidence_ids": [
+        "evidence:shared-A5018701316",
+        "evidence:shiue-affiliation",
+        "evidence:harris-2017",
+        "evidence:lightmatter-board"
+      ],
+      "content_hash": "4d9e3a001f1b88b3ba4ba185a66a8583a759e53e3c252336f0dd1d6468049a0a",
+      "status": "draft"
+    },
+    {
+      "id": "draft:shiue:forwardable_note",
+      "path_id": "path:shiue",
+      "to_person_id": "person:openalex:A5018701316",
+      "kind": "forwardable_note",
+      "subject": "Nanophotonic deep-learning research, for the Cisco team",
+      "body": "Nicholas Harris is the founder of Lightmatter and co-authored \"Deep learning with coherent nanophotonic circuits\" (2017). Could that research be relevant to your team at Cisco?",
+      "evidence_ids": [
+        "evidence:harris-2017",
+        "evidence:lightmatter-board",
+        "evidence:shiue-affiliation"
+      ],
+      "content_hash": "4bdd8d0ef7983cf089f5ba634cc9ea52a389b3894fc8a008f0ccc8da8f8ceeee",
+      "status": "draft"
+    }
+  ],
+  "reviewed": true
+}
