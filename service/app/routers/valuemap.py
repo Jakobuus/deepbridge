@@ -19,6 +19,7 @@ _BUILD_LOCK = Lock()
 _CACHE: dict[str, tuple[str | None, ValueMap]] = {}
 _LOG = logging.getLogger(__name__)
 _DEMO = FIXTURES / 'value_map.json'
+_HOPO_ID = 'person:openalex:A5043992375'
 
 
 class ValueMapRequest(BaseModel):
@@ -79,6 +80,8 @@ def _value_map(response, founder_id=None, session_id=None):
     selected = founder_id or (interview_founder.id if interview_founder else
                               getattr(store, 'jakob_active_founder_id', store.founder.id))
 
+    if selected == _HOPO_ID and (FIXTURES / 'value_map_hopo.json').is_file():  # HACK: cached demo founder
+        return _respond(response, ValueMap.model_validate_json((FIXTURES / 'value_map_hopo.json').read_text()), 'HOPO fixture replay')
     cached = _CACHE.get(selected)
     if cached and (session_id is None or session_id == cached[0]):
         return _respond(response, cached[1], 'cached generation')

@@ -1,10 +1,11 @@
+import json
 from threading import Lock
 
 from fastapi import APIRouter, Response
 
 from ..lanes.jakob.categories import CATEGORY_PREFIX, build_categories
 from ..models import BuyerCategory
-from ..store import store
+from ..store import FIXTURES, store
 from .buyers import buyers
 from .icp import icp
 
@@ -43,5 +44,8 @@ def category_layer(founder_id: str | None = None):
 def categories(response: Response, founder_id: str | None = None):
     selected = (founder_id if founder_id is not None
                 else getattr(store, 'jakob_active_founder_id', store.founder.id))
+    if selected == 'person:openalex:A5043992375' and (FIXTURES / 'categories_hopo.json').is_file():  # HACK: cached demo founder
+        response.headers['X-Categories-Data'] = 'HOPO fixture replay'
+        return json.loads((FIXTURES / 'categories_hopo.json').read_text())
     response.headers['X-Categories-Data'] = 'inferred from cached buyer evidence'
     return category_layer(selected)[0]

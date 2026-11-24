@@ -1,0 +1,98 @@
+[
+  {
+    "id": "category:buyers:ae6d5bcb159c6f29efcf4313:48f76c5f6d68",
+    "name": "Actinide decorporation and radiological/nuclear countermeasures",
+    "problem_set": [
+      "Removing internalized plutonium, uranium and other actinides after exposure",
+      "Preparedness and countermeasure development for radiological or nuclear emergencies",
+      "Analytical and quality methods for chelator candidates"
+    ],
+    "value_prop": "Tentatively, the founder's preclinical work on orally active HOPO actinide decorporation agents (3,4,3-LI(1,2-HOPO), 5-LIO(Me-3,2-HOPO)), reported as outperforming DTPA with scale-up-ready synthesis and analytical methods, may be relevant to groups studying chelation therapy and countermeasures.",
+    "colour": "--cat-1",
+    "org_ids": [
+      "org:openalex:I1329621470",
+      "org:openalex:I2738703131",
+      "org:openalex:I4405271368",
+      "org:openalex:I1299303238",
+      "org:openalex:I4210140884",
+      "org:openalex:I148283060"
+    ],
+    "problem_node_ids": [],
+    "evidence_ids": [
+      "evidence:buyers:0717418f4c82d22cba98",
+      "evidence:buyers:10a2745524d98da3569f",
+      "evidence:buyers:1cf3093b86c334fc4d32",
+      "evidence:buyers:2a4b2b643970a9fa9237",
+      "evidence:buyers:2b3b96e665a7502ca627",
+      "evidence:buyers:2cb137fbdb69e79bbeb8",
+      "evidence:buyers:2d94a3884ddaf3ddb742",
+      "evidence:buyers:31595466fe6f52e64c91",
+      "evidence:buyers:46c13daa79280390b546",
+      "evidence:buyers:4919d36555cd5ef3da95",
+      "evidence:buyers:5fe64f77ef0636f7b3e6",
+      "evidence:buyers:77d7b0b5a5a656c21591",
+      "evidence:buyers:9986a6973ed92c0a82af",
+      "evidence:buyers:a62c2de465b4f93c6f6b",
+      "evidence:buyers:b8ca1d4aff4f1b4be829",
+      "evidence:buyers:d7af3fec8c850a815247",
+      "evidence:openalex:W2022017052",
+      "evidence:openalex:W2101984559"
+    ]
+  },
+  {
+    "id": "category:buyers:ae6d5bcb159c6f29efcf4313:14ee29e59a51",
+    "name": "HOPO and chelator chemistry for radiopharmaceuticals and imaging",
+    "problem_set": [
+      "Stable chelation of metal radionuclides (e.g. Zr-89, Th-227) for PET imaging and targeted alpha therapy",
+      "Characterizing radionuclide coordination chemistry for radiopharmaceutical design",
+      "Analytical methods for chelator-conjugates"
+    ],
+    "value_prop": "Tentatively, the founder's hydroxypyridonate ligand synthesis and analytical work may be of interest to teams working with HOPO-based chelation in radiopharmaceutical settings, though the supplied founder work does not itself address imaging or therapy applications.",
+    "colour": "--cat-2",
+    "org_ids": [
+      "org:openalex:I67348948",
+      "org:openalex:I1294671590",
+      "org:openalex:I154526488",
+      "org:openalex:I4210118725"
+    ],
+    "problem_node_ids": [],
+    "evidence_ids": [
+      "evidence:buyers:0233113714bcc60960c0",
+      "evidence:buyers:33f15e0835f11183028c",
+      "evidence:buyers:41baf0716777c413fb3e",
+      "evidence:buyers:42bb8894058d9e1823a9",
+      "evidence:buyers:46b86763b5ccd01b0017",
+      "evidence:buyers:6bf34c3eeb298f01dab3",
+      "evidence:buyers:75d7df2c395fadcfad2b",
+      "evidence:buyers:8788381e57b176629061",
+      "evidence:buyers:8f18c87419c2af9ede24",
+      "evidence:buyers:af7029d5baa78fa3c98d",
+      "evidence:buyers:f1db0fb9dcb68254f1c2",
+      "evidence:openalex:W2101984559"
+    ]
+  },
+  {
+    "id": "category:buyers:ae6d5bcb159c6f29efcf4313:ff3315fed222",
+    "name": "Actinide and f-element coordination chemistry and ligand design",
+    "problem_set": [
+      "Understanding f-element and actinide binding geometry and selectivity",
+      "Modeling and designing chelating ligands for actinides and lanthanides"
+    ],
+    "value_prop": "Tentatively, the founder's characterized HOPO actinide chelators may serve as a reference ligand class for groups studying actinide coordination, though the quotes show basic-science focus rather than a stated product need.",
+    "colour": "--cat-3",
+    "org_ids": [
+      "org:openalex:I1282311441",
+      "org:openalex:I19820366"
+    ],
+    "problem_node_ids": [],
+    "evidence_ids": [
+      "evidence:buyers:484adff3945ddeec3ca9",
+      "evidence:buyers:7991459d8ac013f1d1ef",
+      "evidence:buyers:8ce1332ba03eb15f65de",
+      "evidence:buyers:a382676f6dae7a4d7f5a",
+      "evidence:buyers:c239ae2b0c8d03d36f51",
+      "evidence:buyers:e9e63db9b1c1c4d76b46",
+      "evidence:openalex:W2101984559"
+    ]
+  }
+]
