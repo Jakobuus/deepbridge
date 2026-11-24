@@ -24,10 +24,11 @@ from ..jakob import interview_style as style, sharpen
 from ..jakob.icp import CACHE, FounderNotFound, _abstract, _name_matches, _openalex, load_research
 
 TOPICS = style.TOPICS  # what it does/for whom, who pays first, proof, channel, competition, timeline
-QUESTIONS = ('In plain words, what does your work do, and for whom?', *style.full_questions())
+QUESTIONS = ('What\'s the real value of your work, in one line?', *style.full_questions())
 FOLLOW_UPS = (
-    ('Who exactly feels that problem the most?', 'Can you picture one person who needs this?'),
+    ('Who feels that the most?', 'What changes for them, in plain words?'),
     ('Whose budget would that come out of?', 'Who signs off on buying it?'),
+    ('Anyone from your lab or papers who works there now?', 'Who would open that door for you?'),
     ('What result would make them say yes?', 'Is there a test they already trust?'),
     ('Where do those buyers go to learn about new options?', 'Who do they listen to?'),
     ('What do they do when that falls short?', 'Why haven\'t they switched already?'),
@@ -544,8 +545,8 @@ def _readback(session, timeout):
     try:
         text = ' '.join(str(_moss(
             'Write the closing read-back: exactly two short plain spoken sentences, at most 40 words in total, '
-            'reflecting only what the founder said: what their work does and for whom, who pays first, and what '
-            'proof that buyer needs. Address them as "you"; say "your molecule" or "your work". No numbers, '
+            'reflecting only what the founder said: the real value, who buys it first, and who they already know '
+            'there or we should talk to. Address them as "you"; say "your molecule" or "your work". No numbers, '
             'chemical names, paper titles or lists. Start with "So, in short:". Shape: {"readback":"..."}.',
             {'interview': [{'question': e.question, 'answer': e.answer} for e in session.exchanges]},
             timeout=timeout)['readback']).split())
@@ -561,9 +562,18 @@ def _readback(session, timeout):
     payer = clause(_answers(session, 1)[0]) if _answers(session, 1) else ''
     proof = clause(_answers(session, 2)[0]) if _answers(session, 2) else ''
     second = '; '.join(filter(None, (f'first buyer: {payer[:1].lower() + payer[1:]}' if payer else '',
-                                     f'proof they need: {proof[:1].lower() + proof[1:]}' if proof else '')))
+                                     f'way in: {proof[:1].lower() + proof[1:]}' if proof else '')))
     second = second[:1].upper() + second[1:] + '.' if second else ''
     return f'So, in short: {what[:1].lower() + what[1:]}. {second}'.strip() + thanks
+
+
+def _llm_entities(answer):
+    """Full mode: named orgs, people and value phrases from one answer (runs inside the sharpen thread)."""
+    data = _moss('List the organisations, people and value phrases the founder names in this answer, only '
+                 'if literally present. kind is buyer (organisation), person, or value (a short benefit phrase, '
+                 'max 6 words). Shape: {"entities":[{"label":"...","kind":"buyer"}]}.', {'answer': answer}, timeout=3)
+    return [e for e in data.get('entities', []) if isinstance(e, dict) and e.get('label')
+            and e.get('kind') in ('buyer', 'person', 'value') and e['label'].casefold() in answer.casefold()][:6]
 
 
 def _vague(answer):
@@ -636,14 +646,14 @@ def _intake_links(session, links, name):
 
 def _summary_quotes(session, timeout=8):
     answers = [e.answer for e in session.exchanges]
-    customer = next((_excerpt(a) for a in _answers(session, 0) if not _vague(a)), '')
+    customer = next((_excerpt(a) for a in _answers(session, 1) if not _vague(a)), '')
     customer = re.sub(r"^(?i:My name is|I'm|I am) .+?(?<!\b[A-Z])\.\s+", '', customer)
     buyer, pain = customer, customer
     match = re.match(r'(.+?) (?:struggle(?:s)? (?:to|with)|have trouble|'
                      r'has trouble|are stuck|is stuck|cannot|can.t)\b', customer, re.I)
     if match:
         buyer = match[1]
-    improvement = next((_excerpt(a) for a in _answers(session, 2) if not _vague(a)), '')
+    improvement = next((_excerpt(a) for a in _answers(session, 0) if not _vague(a)), '')
     signer = next((_excerpt(a) for a in _answers(session, 1) if not _vague(a)), '')
     match = re.match(r'(?:The )?(.+?) (?:signs?|approves?|owns?|authorizes?)\b', signer, re.I)
     if match:
@@ -666,7 +676,7 @@ def _summary_quotes(session, timeout=8):
             '"proof_points":[{"text":"verbatim quote","source":"founder"}]}.',
             _context(session), timeout=timeout,
         ))
-        for field_name, topic in (('for_whom', 0), ('pain', 0), ('benefit', 2), ('expertise', None)):
+        for field_name, topic in (('for_whom', 1), ('pain', 0), ('benefit', 0), ('expertise', None)):
             value = getattr(extracted, field_name)
             eligible = answers if topic is None else _answers(session, topic)
             if not value or not any(_contains_quote(answer, value) and _numbers(value) <= _numbers(answer)
@@ -752,7 +762,9 @@ def turn(session_id: str | None, answer: str | None, *, paper_links=None, founde
                 raise HTTPException(409, 'Interview is complete; start a new session to change answers')
             session.exchanges.append(Exchange(session.topic, session.question, answer.strip()))
             if session.hopo:  # answers sharpen the knowledge graph live (fire and forget)
-                session.sharpen = sharpen.send('demo-hopo', [e.answer for e in session.exchanges])
+                session.sharpen = sharpen.send(
+                    'demo-hopo', [e.answer for e in session.exchanges], answer.strip(), session.topic,
+                    extractor=None if session.mode == 'stage' else _llm_entities)
             last_topic = session.topic == len(TOPICS) - 1
             if session.mode == 'stage':
                 session.question, session.engine = _stage_question(session)

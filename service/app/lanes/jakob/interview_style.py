@@ -14,8 +14,8 @@ STYLE_RULES = [
     'Close with a read-back of two plain sentences in the founder\'s own terms, then thank them.',
 ]
 # Topic order for both modes; stage mode uses the first three.
-TOPICS = ('what it does and for whom', 'who would pay first', 'what proof buyers need',
-          'how buyers find out about it', 'what they use instead today', 'timeline to first sale')
+TOPICS = ('the real value in one line', 'who buys it first', 'who they already know there',
+          'what proof buyers need', 'how buyers find out about it', 'timeline to first sale')
 STAGE_TOPICS = 3
 HOPO_PLAIN = ('HOPO Therapeutics, founded by Hannah Weber, is developing a pill that pulls radioactive metals '
               'like plutonium out of the body after a radiation accident. The molecule came out of Berkeley Lab, '
@@ -41,20 +41,19 @@ def first_name(name: str | None) -> str:
 
 
 def stage_questions(name: str | None = None, hopo: bool = False) -> list[str]:
-    hello = f'Hi {first_name(name)}, ' if first_name(name) else 'Hi, '
-    thing = 'your molecule' if hopo else 'your work'
-    read = 'the Berkeley Lab papers' if hopo else 'your papers'
+    hello = f'Hi {first_name(name)}.' if first_name(name) else 'Hi.'
+    read = ' Your papers say: a pill that clears radioactive metals and lead.' if hopo else ' I\'ve read your papers.'
     return [
-        f'{hello}I\'ve read {read}. In plain words, what does {thing} do, and for whom?',
-        'Who would pay for it first?',
-        'What would they need to see before they say yes?',
+        f'{hello}{read} What\'s the real value, in one line?',
+        'Who do you think buys it first?',
+        'Who do you already know there, or who should we talk to?',
     ]
 
 
 def full_questions(hopo: bool = False) -> list[str]:
     return [*stage_questions(hopo=hopo)[1:],
+            'What would that buyer need to see before saying yes?',
             'How would those buyers first hear about you?',
-            'What do they use today instead?',
             'When could the first one realistically buy?']
 
 
@@ -86,8 +85,8 @@ def instructions(name: str | None, company: str | None, summary: str, gaps: list
         'STAGE MODE (about 75 seconds, on a live stage): ask exactly these three questions in order, each after a '
         'few words acknowledging the last answer; no follow-ups; then the two-sentence read-back and a thank you.'
         if mode == 'stage' else
-        'FULL MODE: five to seven questions. Start with the three below, then ask about how buyers find out, '
-        'what they use today, and the timeline. One short follow-up when an answer is vague, at most two in total.'
+        'FULL MODE: five to seven questions. Start with the three below, then ask what proof the buyer needs, '
+        'how buyers find out, and the timeline. One short follow-up when an answer is vague, at most two in total.'
     )
     return (
         f'You are {PERSONA}\nYou are interviewing {name or "a founder"}'
