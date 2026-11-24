@@ -257,7 +257,9 @@ export default function DeepBridgeWorkspace() {
 
       const [buyersRes, graphRes, pathsRes, kgRes, pipelineRes, metricsRes, creditsRes] =
         await Promise.all([
-          api.getBuyers(buyersParam).catch(() => api.getBuyers()),
+          api.getBuyers(buyersParam)
+            .catch(() => api.getBuyers())
+            .catch(() => ({ orgs: [], signals: [] }) as unknown as Awaited<ReturnType<typeof api.getBuyers>>),
           api.getGraph(resolvedFounder.id).catch(() => api.getGraph()),
           api.getPaths(resolvedFounder.id).catch(() => api.getPaths()),
           api.getKnowledgeGraph(resolvedFounder.id).catch(() => null),

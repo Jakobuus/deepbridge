@@ -38,21 +38,13 @@ export const LIGHTMATTER_DISPLAY = {
   intakeQuery: "Nicholas C. Harris",
 };
 
-/** Which demo case to boot: URL ?session wins, else the API's active intake founder (GET /health). */
+/** Which demo case to boot: HOPO by default (Jakob 24 Nov: HOPO only); ?session=demo-lightmatter keeps Lightmatter. */
 export async function resolveDemoCase(): Promise<"hopo" | "lightmatter"> {
   if (typeof window !== "undefined") {
     const session = new URLSearchParams(window.location.search).get("session") ?? "";
-    if (session.includes("hopo")) return "hopo";
     if (session.includes("lightmatter")) return "lightmatter";
   }
-  try {
-    const res = await fetch(`${API_BASE}/health`, { cache: "no-store" });
-    const data = await res.json();
-    if (String(data?.case ?? "").includes("HOPO")) return "hopo";
-  } catch {
-    // fall through
-  }
-  return "lightmatter";
+  return "hopo";
 }
 
 export class ApiError extends Error {
