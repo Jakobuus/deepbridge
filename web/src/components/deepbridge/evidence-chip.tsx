@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, FileCheck2 } from "lucide-react";
+import { ArrowUpRight, FileText } from "lucide-react";
 import type { Evidence, Id } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +12,16 @@ interface EvidenceChipProps {
   className?: string;
 }
 
+const KIND_HUMAN: Record<Evidence["kind"], string> = {
+  paper: "Paper",
+  affiliation: "Affiliation",
+  job_post: "Job Post",
+  filing: "Filing",
+  grant: "Grant",
+  web: "Web",
+  board_page: "Board",
+};
+
 export function EvidenceChip({
   evidenceId,
   evidenceMap,
@@ -20,23 +30,25 @@ export function EvidenceChip({
   className,
 }: EvidenceChipProps) {
   const ev = evidenceMap[evidenceId];
-  const shortSlug = evidenceId.replace(/^evidence:/, "").slice(0, 18);
   const year = ev?.source_date ? ev.source_date.slice(0, 4) : null;
-  const kindTag = ev?.kind ? ev.kind.replace("_", " ").toUpperCase() : "PROOF";
+  const kindLabel = ev?.kind ? KIND_HUMAN[ev.kind] ?? "Source" : "Source";
+  const label = compact
+    ? `${kindLabel}${year ? ` '${year.slice(2)}` : ""}`
+    : `${kindLabel}${year ? ` · ${year}` : ""}`;
 
   return (
-    <span className={cn("inline-flex items-center gap-1", className)}>
+    <span className={cn("group/chip inline-flex items-center gap-1", className)}>
       <button
         type="button"
         onClick={(e) => {
           e.stopPropagation();
           onInspect(evidenceId);
         }}
-        title={ev ? `${ev.quote} (${ev.source_url})` : `Inspect ${evidenceId}`}
-        className="inline-flex items-center gap-1.5 rounded border border-sky-400/35 bg-sky-500/10 px-2 py-0.5 font-mono text-[11px] font-medium text-sky-200 transition hover:border-sky-300 hover:bg-sky-500/20"
+        title={ev ? `${ev.quote} — ${ev.source_url}` : "Inspect cited source"}
+        className="inline-flex items-center gap-1.5 border border-white/15 bg-[#0f1117] px-2.5 py-1 font-mono text-xs font-medium text-sky-300 transition-colors hover:border-sky-400 hover:bg-[#0b2536] hover:text-white"
       >
-        <FileCheck2 className="size-3 text-sky-300" />
-        <span>{compact ? shortSlug : `${kindTag}${year ? ` · ${year}` : ""} · ${shortSlug}`}</span>
+        <FileText className="size-3.5 text-sky-400" />
+        <span>{label}</span>
       </button>
       {ev?.source_url && (
         <a
@@ -44,10 +56,10 @@ export function EvidenceChip({
           target="_blank"
           rel="noreferrer"
           onClick={(e) => e.stopPropagation()}
-          title={`Open source: ${ev.source_url}`}
-          className="inline-flex items-center justify-center rounded border border-white/15 bg-white/5 p-1 text-muted-foreground transition hover:border-white/40 hover:text-foreground"
+          title={`Open original source: ${ev.source_url}`}
+          className="inline-flex items-center justify-center border border-transparent px-1.5 py-1 text-muted-foreground opacity-0 transition-all group-hover/chip:opacity-100 hover:border-white/25 hover:text-white focus:opacity-100"
         >
-          <ExternalLink className="size-2.5" />
+          <ArrowUpRight className="size-3.5" />
         </a>
       )}
     </span>

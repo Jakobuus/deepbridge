@@ -1,18 +1,10 @@
 "use client";
 
-import {
-  Activity,
-  ArrowRight,
-  BarChart3,
-  Bot,
-  History,
-  Kanban,
-  User,
-} from "lucide-react";
+import { ArrowRight, Bot, ChevronDown, User } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import * as React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card as UiCard, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { api } from "@/lib/api";
 import type { Card, Id, Metrics, Org, Path, Person, Stage } from "@/lib/types";
 
@@ -27,13 +19,13 @@ const STAGES: Stage[] = [
 ];
 
 const STAGE_LABELS: Record<Stage, string> = {
-  found: "1 · Found",
-  path_checked: "2 · Path Checked",
-  draft: "3 · Drafted",
-  approved: "4 · Approved",
-  intro_asked: "5 · Intro Asked",
-  intro_made: "6 · Intro Made",
-  pilot: "7 · Pilot",
+  found: "Found",
+  path_checked: "Verified",
+  draft: "Drafted",
+  approved: "Approved",
+  intro_asked: "Intro Asked",
+  intro_made: "Intro Made",
+  pilot: "Pilot",
 };
 
 interface ScreenPipelineProps {
@@ -57,6 +49,9 @@ export function ScreenPipeline({
 }: ScreenPipelineProps) {
   const [advancingId, setAdvancingId] = React.useState<Id | null>(null);
   const [expandedCardId, setExpandedCardId] = React.useState<Id | null>(null);
+  const [dragCardId, setDragCardId] = React.useState<Id | null>(null);
+  const [dragOverStage, setDragOverStage] = React.useState<Stage | null>(null);
+  const [showAnalytics, setShowAnalytics] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
 
   const cardsByStage = React.useMemo(() => {
@@ -75,280 +70,272 @@ export function ScreenPipeline({
     return grouped;
   }, [cards]);
 
-  const handleAdvance = async (card: Card) => {
-    const idx = STAGES.indexOf(card.stage);
-    if (idx < 0 || idx >= STAGES.length - 1) return;
-    const nextStage = STAGES[idx + 1];
-    setAdvancingId(card.id);
+  const moveCardToStage = async (cardId: Id, targetStage: Stage) => {
+    setAdvancingId(cardId);
     setError(null);
     try {
-      await api.advanceCard(card.id, nextStage, "Mark (Human Review)");
+      await api.advanceCard(cardId, targetStage, "Human Reviewer");
       await onCardUpdated();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to advance card");
+      setError(err instanceof Error ? err.message : "Failed to move card");
     } finally {
       setAdvancingId(null);
     }
   };
 
   return (
-    <div className="space-y-6">
-      {/* HONEST SIMULATION LABEL */}
-      <div className="flex flex-wrap items-center justify-between gap-2 rounded border border-amber-400/35 bg-amber-500/10 px-4 py-2.5 font-mono text-xs text-amber-100">
-        <div className="flex items-center gap-2">
-          <History className="size-4 text-amber-300" />
-          <span>
-            <strong>SIMULATED DEMO PIPELINE HISTORY:</strong> Initial stage history is seeded fixture replay; approvals and stage advances performed in this session append live human/agent events. No real external outreach occurred.
+    <div className="space-y-8 py-2">
+      {/* HEADER */}
+      <div className="flex flex-wrap items-end justify-between gap-4 border-b border-white/15 pb-6">
+        <div className="space-y-1.5">
+          <div className="font-mono text-xs uppercase tracking-widest text-sky-400">
+            05 · Warm-Intro Pipeline
+          </div>
+          <h1 className="text-3xl font-bold tracking-tight text-white">
+            {cards.length} Tracked Warm Paths · Agent &amp; Human Attribution
+          </h1>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <span className="border border-amber-400/35 bg-[#2b1d05]/60 px-3 py-1.5 font-mono text-xs text-amber-200">
+            Seeded replay + live session actions
           </span>
+          {metrics && (
+            <button
+              type="button"
+              onClick={() => setShowAnalytics((v) => !v)}
+              className="inline-flex items-center gap-2 border border-white/20 bg-[#0f1117] px-4 py-2 text-sm font-medium text-foreground hover:border-sky-400"
+            >
+              <span>Conversion Telemetry</span>
+              <ChevronDown
+                className={`size-4 transition-transform ${showAnalytics ? "rotate-180" : ""}`}
+              />
+            </button>
+          )}
         </div>
       </div>
 
       {error && (
-        <div className="rounded border border-red-400/40 bg-red-500/10 p-3 font-mono text-xs text-red-200">
+        <div className="border-l-2 border-red-400 bg-[#2d0a0e] px-4 py-2.5 font-mono text-xs text-red-200">
           {error}
         </div>
       )}
 
-      {/* 7-STAGE KANBAN BOARD */}
-      <div className="space-y-3">
-        <div className="flex items-center justify-between">
-          <h2 className="text-lg font-bold flex items-center gap-2">
-            <Kanban className="size-5 text-sky-300" />
-            <span>7-Stage Warm-Intro Pipeline ({cards.length} Tracked Paths)</span>
-          </h2>
-          <span className="font-mono text-xs text-muted-foreground">
-            Click any card&apos;s audit log to inspect agent vs. human actions
-          </span>
-        </div>
+      {/* FLAT 7-COLUMN DRAG-AND-DROP KANBAN BOARD */}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
+        {STAGES.map((stage, stageIdx) => {
+          const stageCards = cardsByStage[stage];
+          const nextStage = STAGES[stageIdx + 1] ?? null;
+          const isDropTarget = dragOverStage === stage;
 
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
-          {STAGES.map((stage) => {
-            const stageCards = cardsByStage[stage];
-            const nextStage = STAGES[STAGES.indexOf(stage) + 1] ?? null;
+          return (
+            <div
+              key={stage}
+              onDragOver={(e) => {
+                e.preventDefault();
+                setDragOverStage(stage);
+              }}
+              onDragLeave={() => setDragOverStage(null)}
+              onDrop={(e) => {
+                e.preventDefault();
+                setDragOverStage(null);
+                if (dragCardId) {
+                  void moveCardToStage(dragCardId, stage);
+                  setDragCardId(null);
+                }
+              }}
+              className={`flex min-h-[380px] flex-col border-t-2 pt-3 transition-colors ${
+                isDropTarget ? "border-sky-400 bg-[#0b2536]/30" : "border-white/20"
+              }`}
+            >
+              <div className="mb-4 flex items-baseline justify-between px-1">
+                <span className="text-base font-bold text-white">{STAGE_LABELS[stage]}</span>
+                <span className="font-mono text-sm text-muted-foreground">
+                  {stageCards.length}
+                </span>
+              </div>
 
-            return (
-              <div
-                key={stage}
-                className="flex flex-col rounded border border-white/15 bg-white/[0.02] p-2.5 min-h-[320px]"
-              >
-                <div className="mb-2.5 flex items-center justify-between border-b border-white/10 pb-2">
-                  <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-foreground">
-                    {STAGE_LABELS[stage]}
-                  </span>
-                  <Badge flat className="font-mono text-[10px]">
-                    {stageCards.length}
-                  </Badge>
-                </div>
+              <div className="flex flex-1 flex-col gap-3">
+                {stageCards.map((card) => {
+                  const path = pathsMap[card.path_id];
+                  const org = path ? orgsMap[path.buyer_org_id] : null;
+                  const bridge = path ? peopleMap[path.bridge_id] : null;
+                  const lastEvent = card.history[card.history.length - 1];
+                  const isExpanded = expandedCardId === card.id;
 
-                <div className="flex flex-1 flex-col gap-2.5">
-                  {stageCards.map((card) => {
-                    const path = pathsMap[card.path_id];
-                    const org = path ? orgsMap[path.buyer_org_id] : null;
-                    const bridge = path ? peopleMap[path.bridge_id] : null;
-                    const lastEvent = card.history[card.history.length - 1];
-                    const isExpanded = expandedCardId === card.id;
-
-                    return (
-                      <div
-                        key={card.id}
-                        className="rounded border border-white/15 bg-black/50 p-2.5 space-y-2"
-                      >
-                        <div className="flex items-start justify-between gap-1">
-                          <div>
-                            <div className="text-xs font-bold text-foreground">
-                              {org?.name ?? card.path_id}
-                            </div>
-                            <div className="font-mono text-[10px] text-muted-foreground">
-                              via {bridge?.name ?? path?.bridge_id ?? "bridge"}
-                            </div>
-                          </div>
-                          {path && (
-                            <span className="font-mono text-[10px] font-bold text-emerald-300">
-                              {path.score}
-                            </span>
-                          )}
+                  return (
+                    <motion.div
+                      layout
+                      key={card.id}
+                      draggable
+                      onDragStart={() => setDragCardId(card.id)}
+                      onDragEnd={() => {
+                        setDragCardId(null);
+                        setDragOverStage(null);
+                      }}
+                      onClick={() => setExpandedCardId(isExpanded ? null : card.id)}
+                      className="group cursor-pointer border border-white/15 bg-[#0f1117] p-3.5 space-y-2.5 transition-colors hover:border-sky-400/60"
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="text-base font-bold leading-snug text-white">
+                          {org?.name ?? card.path_id}
                         </div>
-
                         {path && (
-                          <Badge flat className="font-mono text-[9px] uppercase border-white/15">
-                            {path.kind.replace("_", " ")}
-                          </Badge>
+                          <span className="font-mono text-xs font-bold text-emerald-300">
+                            {path.score}
+                          </span>
                         )}
+                      </div>
 
-                        {lastEvent && (
-                          <div className="flex items-center gap-1 font-mono text-[10px] text-muted-foreground">
-                            {lastEvent.actor_kind === "human" ? (
-                              <User className="size-3 text-emerald-300 shrink-0" />
-                            ) : (
-                              <Bot className="size-3 text-sky-300 shrink-0" />
-                            )}
-                            <span className="truncate">{lastEvent.actor}</span>
-                          </div>
-                        )}
+                      <div className="text-sm text-muted-foreground">
+                        via {bridge?.name ?? path?.bridge_id ?? "Bridge"}
+                      </div>
 
-                        <div className="flex items-center justify-between gap-1 pt-1 border-t border-white/10">
-                          <button
-                            type="button"
-                            onClick={() =>
-                              setExpandedCardId(isExpanded ? null : card.id)
-                            }
-                            className="font-mono text-[10px] text-sky-300 hover:underline"
-                          >
-                            {isExpanded ? "Hide Log" : `Log (${card.history.length})`}
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => onOpenPathInDrafts(card.path_id)}
-                            className="font-mono text-[10px] text-muted-foreground hover:text-foreground"
-                          >
-                            Drafts ↗
-                          </button>
+                      {lastEvent && (
+                        <div className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground">
+                          {lastEvent.actor_kind === "human" ? (
+                            <User className="size-3.5 text-emerald-300 shrink-0" />
+                          ) : (
+                            <Bot className="size-3.5 text-sky-300 shrink-0" />
+                          )}
+                          <span className="truncate">{lastEvent.actor}</span>
                         </div>
+                      )}
 
-                        {isExpanded && (
-                          <div className="space-y-1 rounded border border-white/10 bg-white/[0.03] p-2 font-mono text-[10px]">
-                            {card.history.map((h, i) => (
-                              <div key={i} className="flex items-center justify-between gap-1">
-                                <span
-                                  className={
-                                    h.actor_kind === "human"
-                                      ? "text-emerald-300"
-                                      : "text-sky-300"
-                                  }
-                                >
-                                  [{h.actor_kind[0].toUpperCase()}] {h.stage}
-                                </span>
-                                <span className="text-white/50 truncate max-w-[75px]">
-                                  {h.actor}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-
+                      {/* HOVER-REVEAL QUICK ACTIONS */}
+                      <div
+                        className="flex items-center justify-between gap-2 pt-1 opacity-0 transition-opacity group-hover:opacity-100"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <button
+                          type="button"
+                          onClick={() => onOpenPathInDrafts(card.path_id)}
+                          className="font-mono text-xs text-sky-300 hover:underline"
+                        >
+                          Draft ↗
+                        </button>
                         {nextStage && (
                           <Button
                             size="xs"
                             flat
                             disabled={advancingId === card.id}
-                            onClick={() => void handleAdvance(card)}
-                            className="w-full border border-white/20 font-mono text-[10px]"
+                            onClick={() => void moveCardToStage(card.id, nextStage)}
+                            className="border border-white/25 font-mono text-xs"
                           >
-                            <span>Advance</span>
-                            <ArrowRight className="size-2.5" />
+                            Advance <ArrowRight className="size-3" />
                           </Button>
                         )}
                       </div>
-                    );
-                  })}
-                </div>
+
+                      {/* CLICK-TO-EXPAND AUDIT HISTORY */}
+                      <AnimatePresence initial={false}>
+                        {isExpanded && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            className="overflow-hidden border-t border-white/10 pt-2.5 space-y-1 font-mono text-xs"
+                          >
+                            {card.history.map((h, i) => (
+                              <div key={i} className="flex items-center justify-between gap-2">
+                                <span
+                                  className={
+                                    h.actor_kind === "human" ? "text-emerald-300" : "text-sky-300"
+                                  }
+                                >
+                                  {STAGE_LABELS[h.stage] ?? h.stage}
+                                </span>
+                                <span className="truncate text-muted-foreground">{h.actor}</span>
+                              </div>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </motion.div>
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
 
-      {/* ANALYTICS & CONVERSION TELEMETRY (GET /metrics) */}
-      {metrics && (
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 pt-2">
-          {/* Stage Conversion */}
-          <UiCard flat border className="border-white/15 bg-white/[0.02] py-4 gap-3">
-            <CardHeader className="px-5">
-              <CardTitle className="text-sm font-mono uppercase tracking-wider text-sky-300 flex items-center gap-2">
-                <BarChart3 className="size-4" />
-                <span>Stage-to-Stage Conversion</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="px-5 space-y-2.5">
-              {metrics.conversion.map((c) => {
-                const pct = Math.round(c.rate * 100);
-                return (
-                  <div key={`${c.from}-${c.to}`} className="space-y-1">
-                    <div className="flex items-center justify-between font-mono text-xs">
-                      <span className="text-muted-foreground">
-                        {c.from} → <span className="text-foreground">{c.to}</span>
-                      </span>
-                      <span className="font-bold text-sky-200">{pct}%</span>
-                    </div>
-                    <div className="h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-                      <div
-                        className="h-full bg-sky-400"
-                        style={{ width: `${Math.min(100, pct)}%` }}
-                      />
-                    </div>
-                  </div>
-                );
-              })}
-            </CardContent>
-          </UiCard>
-
-          {/* Warm Path Kind Performance */}
-          <UiCard flat border className="border-white/15 bg-white/[0.02] py-4 gap-3">
-            <CardHeader className="px-5">
-              <CardTitle className="text-sm font-mono uppercase tracking-wider text-emerald-300 flex items-center gap-2">
-                <Activity className="size-4" />
-                <span>Performance by Warm-Path Kind</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="px-5 space-y-2.5">
-              {metrics.by_path_kind.map((row) => (
-                <div
-                  key={row.kind}
-                  className="flex items-center justify-between rounded border border-white/10 bg-black/35 px-3 py-2 font-mono text-xs"
-                >
-                  <span className="uppercase text-foreground">{row.kind.replace("_", " ")}</span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-muted-foreground">total: {row.count}</span>
-                    <Badge flat className="border-emerald-400/40 bg-emerald-500/15 text-emerald-200 font-mono text-[10px]">
-                      approved+: {row.approved}
-                    </Badge>
-                  </div>
+      {/* EXPANDABLE CONVERSION & ACTOR TELEMETRY */}
+      <AnimatePresence initial={false}>
+        {showAnalytics && metrics && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden"
+          >
+            <div className="grid grid-cols-1 gap-8 border-t border-white/15 pt-6 lg:grid-cols-3">
+              <div className="space-y-3">
+                <div className="font-mono text-xs uppercase tracking-wider text-sky-300">
+                  Stage Conversion
                 </div>
-              ))}
-            </CardContent>
-          </UiCard>
+                {metrics.conversion.map((c) => {
+                  const pct = Math.round(c.rate * 100);
+                  return (
+                    <div key={`${c.from}-${c.to}`} className="space-y-1">
+                      <div className="flex justify-between text-sm">
+                        <span className="text-muted-foreground">
+                          {STAGE_LABELS[c.from] ?? c.from} → {STAGE_LABELS[c.to] ?? c.to}
+                        </span>
+                        <span className="font-mono font-bold text-white">{pct}%</span>
+                      </div>
+                      <div className="h-1 w-full bg-white/10">
+                        <div className="h-full bg-sky-400" style={{ width: `${Math.min(100, pct)}%` }} />
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
 
-          {/* Human vs Agent Audit Ledger */}
-          <UiCard flat border className="border-white/15 bg-white/[0.02] py-4 gap-3">
-            <CardHeader className="px-5">
-              <CardTitle className="text-sm font-mono uppercase tracking-wider text-amber-300 flex items-center gap-2">
-                <User className="size-4" />
-                <span>Agent vs. Human Governance Ledger</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="px-5 space-y-2">
-              {metrics.by_actor.map((actorRow) => (
-                <div
-                  key={`${actorRow.actor}-${actorRow.actor_kind}`}
-                  className="flex items-center justify-between rounded border border-white/10 bg-black/35 px-3 py-2 font-mono text-xs"
-                >
-                  <div className="flex items-center gap-2">
-                    {actorRow.actor_kind === "human" ? (
-                      <User className="size-3.5 text-emerald-300" />
-                    ) : (
-                      <Bot className="size-3.5 text-sky-300" />
-                    )}
-                    <span className="text-foreground">{actorRow.actor}</span>
+              <div className="space-y-3">
+                <div className="font-mono text-xs uppercase tracking-wider text-emerald-300">
+                  By Warm-Path Type
+                </div>
+                {metrics.by_path_kind.map((row) => (
+                  <div
+                    key={row.kind}
+                    className="flex items-center justify-between border-b border-white/10 pb-2 text-sm"
+                  >
+                    <span className="capitalize text-white">{row.kind.replace(/_/g, " ")}</span>
+                    <span className="font-mono text-muted-foreground">
+                      {row.approved} approved / {row.count}
+                    </span>
                   </div>
-                  <div className="flex items-center gap-2">
+                ))}
+              </div>
+
+              <div className="space-y-3">
+                <div className="font-mono text-xs uppercase tracking-wider text-amber-300">
+                  Agent vs Human Actions
+                </div>
+                {metrics.by_actor.map((a) => (
+                  <div
+                    key={`${a.actor}-${a.actor_kind}`}
+                    className="flex items-center justify-between border-b border-white/10 pb-2 text-sm"
+                  >
+                    <span className="text-white">{a.actor}</span>
                     <Badge
                       flat
-                      className={`font-mono text-[10px] uppercase ${
-                        actorRow.actor_kind === "human"
-                          ? "border-emerald-400/40 bg-emerald-500/15 text-emerald-200"
-                          : "border-sky-400/40 bg-sky-500/15 text-sky-200"
+                      className={`font-mono text-xs uppercase ${
+                        a.actor_kind === "human"
+                          ? "border-emerald-400/40 bg-[#07291e] text-emerald-200"
+                          : "border-sky-400/40 bg-[#0b2536] text-sky-200"
                       }`}
                     >
-                      {actorRow.actor_kind}
+                      {a.actor_kind} · {a.actions}
                     </Badge>
-                    <span className="font-bold">{actorRow.actions}</span>
                   </div>
-                </div>
-              ))}
-            </CardContent>
-          </UiCard>
-        </div>
-      )}
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

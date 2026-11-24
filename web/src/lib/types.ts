@@ -98,6 +98,7 @@ export interface Path {
   score: number;
   weakest_edge_id: Id;
   why_now_signal_ids: Id[];
+  category_id?: Id | null;
 }
 
 export interface Signal {
@@ -107,6 +108,12 @@ export interface Signal {
   title: string;
   date: Iso | null;
   evidence_ids: Id[];
+}
+
+export interface DraftCheck {
+  name: string;
+  ok: boolean;
+  detail?: string;
 }
 
 export interface Draft {
@@ -119,6 +126,7 @@ export interface Draft {
   evidence_ids: Id[];
   content_hash: string;
   status: "draft" | "approved" | "rejected" | "stale";
+  checks?: DraftCheck[];
 }
 
 export interface Contact {
@@ -188,8 +196,58 @@ export interface KnowledgeGraph {
   founder: Founder;
   core: { value_nodes: ValueNode[]; edges: Edge[] };
   categories: BuyerCategory[];
-  leads: { people: Person[]; orgs: Org[]; edges: Edge[]; paths: Path[] };
+  leads: {
+    people: Person[];
+    orgs: Org[];
+    edges: Edge[];
+    paths: Path[];
+    signals?: Signal[];
+  };
   evidence: Evidence[];
+}
+
+export interface GraphEvent {
+  seq: number;
+  at: Iso;
+  session_id: string;
+  phase: "reading" | "interview" | "discovery" | "paths";
+  kind: "node" | "edge" | "path" | "category" | "status";
+  layer: "core" | "category" | "lead";
+  node?: ValueNode | Person | Org | BuyerCategory;
+  edge?: Edge;
+  path?: Path;
+  evidence?: Evidence[];
+  status?: string;
+}
+
+export interface SourceDoc {
+  kind: "paper" | "website" | "notes" | "notion" | "gdoc";
+  url: string | null;
+  title: string;
+  text: string;
+}
+
+export interface Briefing {
+  session_id: string;
+  founder: Founder;
+  sources: { kind: SourceDoc["kind"]; url: string | null; title: string }[];
+  understanding: string;
+  claims: { text: string; source: SourceDoc["kind"]; evidence_ids: Id[] }[];
+  gaps: string[];
+  interviewer_instructions: string;
+}
+
+export interface ConnectorStatus {
+  id: "notion" | "gdrive";
+  name: string;
+  connected: boolean;
+  setup: string;
+}
+
+export interface FetchedConnectorDoc {
+  title: string;
+  url: string;
+  text: string;
 }
 
 export interface ValueProposition {

@@ -1,14 +1,18 @@
 import type {
+  Briefing,
   BuyerCategory,
   BuyersBundle,
   Card,
+  ConnectorStatus,
   Contact,
   Credits,
   Draft,
   Edge,
   Evidence,
+  FetchedConnectorDoc,
   Founder,
   GraphBundle,
+  GraphEvent,
   Icp,
   Id,
   IntakeForm,
@@ -21,7 +25,10 @@ import type {
 } from "./types";
 
 export const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+export const HOPO_FOUNDER_ID = "person:openalex:A5043992375";
 export const GOLDEN_FOUNDER_ID = "person:openalex:A5102978866";
+export const DEMO_SESSION_ID = "demo-hopo";
+export const FALLBACK_SESSION_ID = "demo-lightmatter";
 
 export class ApiError extends Error {
   status: number;
@@ -71,8 +78,9 @@ async function request<T>(url: string, init?: RequestInit): Promise<T> {
 
 /** Mask email addresses on stage per honesty & privacy rules. */
 export function maskEmail(email: string | null | undefined): string {
-  if (!email) return "No public email (masked / unverified)";
+  if (!email) return "No public email (masked)";
   const trimmed = email.trim();
+  if (trimmed.includes("*")) return trimmed;
   const atIndex = trimmed.indexOf("@");
   if (atIndex <= 0) return "•••@•••";
   const local = trimmed.slice(0, atIndex);
@@ -81,9 +89,62 @@ export function maskEmail(email: string | null | undefined): string {
   return `${visibleLocal}••••@${domain}`;
 }
 
+export function graphStreamUrl(sessionId: string, speed?: number, fromSeq?: number): string {
+  const params = new URLSearchParams({ session_id: sessionId });
+  if (speed && speed > 0) params.set("speed", String(speed));
+  if (fromSeq !== undefined && fromSeq >= 0) params.set("from_seq", String(fromSeq));
+  return `${API_BASE}/graph/stream?${params.toString()}`;
+}
+
 export const api = {
   health: () =>
     request<{ status: string; data: string; case: string }>(`${API_BASE}/health`),
+
+  getConnectors: () =>
+    request<ConnectorStatus[]>(`${API_BASE}/connectors`),
+
+  fetchConnector: (id: "notion" | "gdrive", url: string) =>
+    request<FetchedConnectorDoc>(`${API_BASE}/connectors/${id}/fetch`, {
+      method: "POST",
+      body: JSON.stringify({ url }),
+    }),
+
+  createBriefing: (
+    body: {
+      founder_name: string;
+      startup_name?: string;
+      paper_links: string[];
+      website?: string;
+      notes?: string;
+      notion_urls?: string[];
+      gdoc_urls?: string[];
+      mode: "stage" | "full";
+    },
+    sessionId?: string,
+  ) =>
+    request<Briefing>(`${API_BASE}/interview/brief`, {
+      method: "POST",
+      headers: sessionId ? { "X-Interview-Session-Id": sessionId } : undefined,
+      body: JSON.stringify(body),
+    }),
+
+  getBriefing: (sessionId: string) =>
+    request<Briefing>(`${API_BASE}/interview/brief/${encodeURIComponent(sessionId)}`),
+
+  submitInterviewTurn: (body: {
+    session_id: string;
+    role: "founder" | "interviewer";
+    text: string;
+  }) =>
+    request<{ ok: true }>(`${API_BASE}/interview/turn`, {
+      method: "POST",
+      body: JSON.stringify(body),
+    }),
+
+  getGraphEvents: (sessionId: string) =>
+    request<GraphEvent[]>(
+      `${API_BASE}/graph/events?session_id=${encodeURIComponent(sessionId)}`,
+    ),
 
   interview: (body: {
     session_id?: string | null;
