@@ -2110,7 +2110,7 @@
     {
       "id": "evidence:value-map:remm-iv",
       "source_url": "https://remm.hhs.gov/int_contamination.htm",
-      "quote": "DTPA is FDA-approved for intravenous Rx of known or suspected internal contamination with Am, Cm, and Pu only",
+      "quote": "Ca-DTPA and Zn-DTPA can be administered by nebulizer or directly into the blood stream (i.e. intravenously)",
       "source_date": null,
       "observed_at": "2026-11-24T22:20:00+00:00",
       "kind": "web"
