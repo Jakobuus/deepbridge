@@ -64,6 +64,8 @@ interface ParticleOrbProps {
   count?: number;
   /** 0..1: share of particles lit; the rest stay dim (the orb "fills" as the graph builds). Default 1. */
   progress?: number;
+  /** Live audio level 0..1 read every frame (e.g. voice volume); adds to the orb's energy. */
+  levelRef?: React.RefObject<number>;
   label?: string;
   className?: string;
 }
@@ -76,6 +78,7 @@ export function ParticleOrb({
   colors = DEFAULT_COLORS,
   count,
   progress = 1,
+  levelRef,
   label = "AI voice activity",
   className,
 }: ParticleOrbProps) {
@@ -139,7 +142,8 @@ export function ParticleOrb({
     const H = c.height;
     const cx = W / 2;
     const cy = H / 2;
-    const e = energy.get() + kick.get();
+    const level = Math.min(1, Math.max(0, levelRef?.current ?? 0));
+    const e = energy.get() + kick.get() + level * 0.3;
     const R = W * 0.34 * scale.get() * (1 + kick.get() * 0.12);
     const dot = Math.max(0.6, W / 240);
 

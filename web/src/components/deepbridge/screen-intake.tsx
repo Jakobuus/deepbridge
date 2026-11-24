@@ -23,6 +23,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { api, GOLDEN_FOUNDER_ID, HOPO_DISPLAY, HOPO_FOUNDER_ID } from "@/lib/api";
 import type { Evidence, Founder, Icp, Id, IntakeForm, InterviewResponse } from "@/lib/types";
 import { orbBus } from "@/lib/orb-bus";
+import { VoiceStage } from "./voice-stage";
 import { EvidenceChip } from "./evidence-chip";
 
 interface ScreenIntakeProps {
@@ -370,7 +371,12 @@ export function ScreenIntake({
 
   return (
     <div className="grid grid-cols-1 gap-6 xl:grid-cols-12">
-      {/* LEFT: VOICE PAPER-GRILLING INTERVIEW + INTAKE */}
+      {/* Real-voice interview: large orb floating in space + one Speak button (ElevenLabs Agents). */}
+      <div className="xl:col-span-12">
+        <VoiceStage />
+      </div>
+
+      {/* LEFT: VOICE PAPER-GRILLING INTERVIEW + INTAKE (typed fallback) */}
       <div className="xl:col-span-5 space-y-5">
         {/* 1. LIVE PAPER-GRILLING VOICE INTERVIEW (POST /interview · Moss fastlane-1) */}
         <Card flat border className="border-white/10 bg-white/[0.02] py-5 gap-4">
