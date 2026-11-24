@@ -107,7 +107,7 @@
   --db-border-color: rgba(255, 255, 255, 0.18);
   --db-border-strong: rgba(255, 255, 255, 0.34);
 
-  --radius: 0.25rem;            /* 4px neo-brutalist sharp radius */
+  --radius: 0.75rem;            /* 12px; cards = radius + 4px = 1rem (Mark 14:30) */
   --db-radius-none: 0px;
   --db-radius-sm: 2px;
   --db-radius-md: 4px;

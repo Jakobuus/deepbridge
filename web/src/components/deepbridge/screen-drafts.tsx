@@ -45,6 +45,8 @@ const DRAFT_KIND_TITLES: Record<Draft["kind"], string> = {
   direct_fallback: "Direct fallback",
 };
 
+const NO_DRAFTS: Draft[] = [];
+
 export function ScreenDrafts({
   paths,
   selectedPathId,
@@ -66,7 +68,11 @@ export function ScreenDrafts({
   const activePath =
     sortedPaths.find((p) => p.id === selectedPathId) ?? sortedPaths[0] ?? null;
 
-  const currentDrafts = activePath ? draftsByPath[activePath.id] ?? [] : [];
+  // Stable reference: a fresh `[]` each render re-fired the effects below in a loop ("Maximum update depth").
+  const currentDrafts = React.useMemo(
+    () => (activePath ? draftsByPath[activePath.id] ?? NO_DRAFTS : NO_DRAFTS),
+    [activePath, draftsByPath],
+  );
 
   const [generating, setGenerating] = React.useState(false);
   const [creditBlocked402, setCreditBlocked402] = React.useState<string | null>(null);
@@ -86,12 +92,10 @@ export function ScreenDrafts({
 
   React.useEffect(() => {
     setEdits((prev) => {
+      const missing = currentDrafts.filter((d) => !prev[d.id]);
+      if (missing.length === 0) return prev;
       const next = { ...prev };
-      for (const d of currentDrafts) {
-        if (!next[d.id]) {
-          next[d.id] = { subject: d.subject, body: d.body };
-        }
-      }
+      for (const d of missing) next[d.id] = { subject: d.subject, body: d.body };
       return next;
     });
   }, [currentDrafts]);

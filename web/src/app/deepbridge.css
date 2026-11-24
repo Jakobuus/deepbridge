@@ -54,7 +54,7 @@
   --db-cosmos-core: #071430;
   --db-cosmos-grid: rgba(56, 189, 248, 0.06);
 
-  --radius: 0.25rem;
+  --radius: 0.75rem; /* Mark 14:30: rounder cards (card = radius + 4px = 1rem) */
   --glass-diffuse: 0px;
 }
 

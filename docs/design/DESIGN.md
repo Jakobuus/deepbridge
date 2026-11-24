@@ -10,7 +10,7 @@
 1. **Flat Neo-Brutalist Operating Surface:**
    - **Zero drop shadows (`box-shadow: none`)** and **zero frosted glass (`backdrop-filter: none`)** across every form, table, card, badge, and drawer.
    - Hierarchy comes from **1px / 2px crisp structural borders**, flat Onyx elevation steps (`#060709` → `#090a0d` → `#0f1117` → `#151922`), bold sans headings, and monospace provenance pills.
-   - Tight corners (`--radius: 0.25rem` / `2px–4px`), WCAG AA contrast (`>= 7.2:1` muted text, `17.4:1` body text).
+   - Rounded corners (`--radius: 0.75rem`; cards 1rem, buttons ~10px, inputs ~8px), WCAG AA contrast (`>= 7.2:1` muted text, `17.4:1` body text).
 2. **The One Spatial Portal — Deep-Space Knowledge Graph:**
    - The **only** surface that breaks out of flat Onyx is the **Layered Knowledge Graph**, which drops into a deep-cosmos `#020510` void (`--db-cosmos-bg`) with crisp orbital rings, luminous category hues (`--cat-1..5`), and directional photon pulses along active warm paths.
 3. **Receipts Over Claims:**
