@@ -1,0 +1,93 @@
+{
+  "_meta": {
+    "cached": true,
+    "observed_at": "2026-11-24T19:45:07.308165+00:00",
+    "notes": "Live Moss Tasks results. Affiliations are dated; matches are not relationships."
+  },
+  "items": [
+    {
+      "org_id": "org:nvidia",
+      "topic": "silicon photonics / optical interconnect",
+      "observed_at": "2026-11-24T19:45:07.307411+00:00",
+      "people": [
+        {
+          "id": "person:prospect:8339b1f7ffc45cf0c1bf",
+          "name": "Ben Lee",
+          "openalex_id": null,
+          "orcid": null,
+          "org_id": "org:nvidia",
+          "affiliation_asof": null,
+          "role": null,
+          "is_bridge_candidate": false,
+          "alignment": null
+        },
+        {
+          "id": "person:prospect:2942927be94ba352e035",
+          "name": "Liron Gantz",
+          "openalex_id": null,
+          "orcid": null,
+          "org_id": "org:nvidia",
+          "affiliation_asof": null,
+          "role": null,
+          "is_bridge_candidate": false,
+          "alignment": null
+        },
+        {
+          "id": "person:prospect:77085ff44684dc09efcd",
+          "name": "Angad Rekhi",
+          "openalex_id": null,
+          "orcid": null,
+          "org_id": "org:nvidia",
+          "affiliation_asof": null,
+          "role": null,
+          "is_bridge_candidate": false,
+          "alignment": null
+        }
+      ],
+      "evidence": [
+        {
+          "id": "evidence:prospect:f226c568f5cdecdc2e19",
+          "source_url": "https://research.nvidia.com/person/ben-lee",
+          "quote": "Ben Lee joined NVIDIA Research in 2021 as a member of the Circuits Research Group with focus in photonics. His technical interests include short-reach, high-speed, and low-energy optical interconnects and integrated photonic systems.",
+          "source_date": null,
+          "observed_at": "2026-11-24T19:45:07.307411+00:00",
+          "kind": "web"
+        },
+        {
+          "id": "evidence:prospect:00021f94912b82aa39cb",
+          "source_url": "https://research.nvidia.com/person/liron-gantz",
+          "quote": "Dr. Liron Gantz has led Nvidia's Electro-Optics group (NVEO) for the past six years, driving advancements in silicon photonics for Co-Packaged Optics products.",
+          "source_date": null,
+          "observed_at": "2026-11-24T19:45:07.307411+00:00",
+          "kind": "web"
+        },
+        {
+          "id": "evidence:prospect:d68eb1943279677ff804",
+          "source_url": "https://research.nvidia.com/person/angad-rekhi",
+          "quote": "Angad S. Rekhi joined NVIDIA Research in 2021 as a member of the Circuits Research Group. His current research interests include package-level photonics, next-generation signaling systems, and machine learning acceleration.",
+          "source_date": null,
+          "observed_at": "2026-11-24T19:45:07.307411+00:00",
+          "kind": "web"
+        }
+      ],
+      "evidence_ids": {
+        "person:prospect:8339b1f7ffc45cf0c1bf": [
+          "evidence:prospect:f226c568f5cdecdc2e19"
+        ],
+        "person:prospect:2942927be94ba352e035": [
+          "evidence:prospect:00021f94912b82aa39cb"
+        ],
+        "person:prospect:77085ff44684dc09efcd": [
+          "evidence:prospect:d68eb1943279677ff804"
+        ]
+      },
+      "task": {
+        "id": "task_ae14c92a9ff046b9a9b4609aa7f080ac",
+        "status": "completed",
+        "verification_passed": true,
+        "max_cost_usd": 0.5,
+        "cost_usd": 0.012916
+      }
+    }
+  ]
+}

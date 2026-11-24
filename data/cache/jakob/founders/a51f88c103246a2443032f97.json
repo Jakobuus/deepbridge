@@ -1,0 +1,4043 @@
+{
+  "founder": {
+    "id": "person:openalex:A5067184382",
+    "name": "Jennifer A. Doudna",
+    "company": "",
+    "openalex_id": "https://openalex.org/A5067184382",
+    "topics": [
+      "CRISPR and Genetic Engineering",
+      "RNA regulation and disease",
+      "Bacterial Genetics and Biotechnology",
+      "RNA Interference and Gene Delivery",
+      "Biosensors and Analytical Detection"
+    ],
+    "summary": "Research topics inferred from 5 top-cited OpenAlex works. Customer segments are hypotheses, not verified demand.",
+    "evidence_ids": [
+      "evidence:openalex:W2045435533",
+      "evidence:openalex:W2050480410",
+      "evidence:openalex:W2160051211",
+      "evidence:openalex:W2787024379",
+      "evidence:openalex:W2101749257"
+    ]
+  },
+  "works": [
+    {
+      "id": "https://openalex.org/W2045435533",
+      "title": "A Programmable Dual-RNA–Guided DNA Endonuclease in Adaptive Bacterial Immunity",
+      "publication_date": "2012-06-29",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10878",
+          "display_name": "CRISPR and Genetic Engineering",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12610",
+          "display_name": "RNA regulation and disease",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10120",
+          "display_name": "Bacterial Genetics and Biotechnology",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "Clustered": [
+          0
+        ],
+        "regularly": [
+          1
+        ],
+        "interspaced": [
+          2
+        ],
+        "short": [
+          3
+        ],
+        "palindromic": [
+          4
+        ],
+        "repeats": [
+          5
+        ],
+        "(CRISPR)/CRISPR-associated": [
+          6
+        ],
+        "(Cas)": [
+          7
+        ],
+        "systems": [
+          8
+        ],
+        "provide": [
+          9
+        ],
+        "bacteria": [
+          10
+        ],
+        "and": [
+          11,
+          18,
+          125
+        ],
+        "archaea": [
+          12
+        ],
+        "with": [
+          13
+        ],
+        "adaptive": [
+          14
+        ],
+        "immunity": [
+          15
+        ],
+        "against": [
+          16
+        ],
+        "viruses": [
+          17
+        ],
+        "plasmids": [
+          19
+        ],
+        "by": [
+          20
+        ],
+        "using": [
+          21
+        ],
+        "CRISPR": [
+          22
+        ],
+        "RNAs": [
+          23
+        ],
+        "(crRNAs)": [
+          24
+        ],
+        "to": [
+          25,
+          49,
+          63,
+          74,
+          129
+        ],
+        "guide": [
+          26
+        ],
+        "the": [
+          27,
+          43,
+          59,
+          75,
+          78,
+          84,
+          88,
+          93,
+          127,
+          131
+        ],
+        "silencing": [
+          28
+        ],
+        "of": [
+          29,
+          40,
+          116
+        ],
+        "invading": [
+          30
+        ],
+        "nucleic": [
+          31
+        ],
+        "acids.": [
+          32
+        ],
+        "We": [
+          33
+        ],
+        "show": [
+          34
+        ],
+        "here": [
+          35
+        ],
+        "that": [
+          36,
+          46,
+          57,
+          118
+        ],
+        "in": [
+          37,
+          68
+        ],
+        "a": [
+          38,
+          54,
+          101,
+          114
+        ],
+        "subset": [
+          39
+        ],
+        "these": [
+          41
+        ],
+        "systems,": [
+          42
+        ],
+        "mature": [
+          44
+        ],
+        "crRNA": [
+          45,
+          51
+        ],
+        "is": [
+          47
+        ],
+        "base-paired": [
+          48
+        ],
+        "trans-activating": [
+          50
+        ],
+        "(tracrRNA)": [
+          52
+        ],
+        "forms": [
+          53
+        ],
+        "two-RNA": [
+          55
+        ],
+        "structure": [
+          56
+        ],
+        "directs": [
+          58,
+          106
+        ],
+        "CRISPR-associated": [
+          60
+        ],
+        "protein": [
+          61
+        ],
+        "Cas9": [
+          62,
+          79,
+          89,
+          108
+        ],
+        "introduce": [
+          64
+        ],
+        "double-stranded": [
+          65
+        ],
+        "(ds)": [
+          66
+        ],
+        "breaks": [
+          67
+        ],
+        "target": [
+          69
+        ],
+        "DNA.": [
+          70
+        ],
+        "At": [
+          71
+        ],
+        "sites": [
+          72
+        ],
+        "complementary": [
+          73,
+          85
+        ],
+        "crRNA-guide": [
+          76
+        ],
+        "sequence,": [
+          77
+        ],
+        "HNH": [
+          80
+        ],
+        "nuclease": [
+          81
+        ],
+        "domain": [
+          82,
+          91
+        ],
+        "cleaves": [
+          83,
+          92
+        ],
+        "strand,": [
+          86
+        ],
+        "whereas": [
+          87
+        ],
+        "RuvC-like": [
+          90
+        ],
+        "noncomplementary": [
+          94
+        ],
+        "strand.": [
+          95
+        ],
+        "The": [
+          96
+        ],
+        "dual-tracrRNA:crRNA,": [
+          97
+        ],
+        "when": [
+          98
+        ],
+        "engineered": [
+          99
+        ],
+        "as": [
+          100
+        ],
+        "single": [
+          102
+        ],
+        "RNA": [
+          103
+        ],
+        "chimera,": [
+          104
+        ],
+        "also": [
+          105
+        ],
+        "sequence-specific": [
+          107
+        ],
+        "dsDNA": [
+          109
+        ],
+        "cleavage.": [
+          110
+        ],
+        "Our": [
+          111
+        ],
+        "study": [
+          112
+        ],
+        "reveals": [
+          113
+        ],
+        "family": [
+          115
+        ],
+        "endonucleases": [
+          117
+        ],
+        "use": [
+          119
+        ],
+        "dual-RNAs": [
+          120
+        ],
+        "for": [
+          121,
+          133
+        ],
+        "site-specific": [
+          122
+        ],
+        "DNA": [
+          123
+        ],
+        "cleavage": [
+          124
+        ],
+        "highlights": [
+          126
+        ],
+        "potential": [
+          128
+        ],
+        "exploit": [
+          130
+        ],
+        "system": [
+          132
+        ],
+        "RNA-programmable": [
+          134
+        ],
+        "genome": [
+          135
+        ],
+        "editing.": [
+          136
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5000173541",
+            "display_name": "Martin Jínek",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-7601-210X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-7601-210X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Martin Jinek",
+          "raw_affiliation_strings": [
+            "Department of Molecular and Cell Biology, University of California, Berkeley, CA 94720, USA",
+            "Howard Hughes Medical Institute (HHMI), University of California, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Molecular and Cell Biology, University of California, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute (HHMI), University of California, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5062136919",
+            "display_name": "Krzysztof Chylinski",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-7029-8090",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7029-8090"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I129774422",
+              "display_name": "University of Vienna",
+              "ror": "https://ror.org/03prydq77",
+              "country_code": "AT",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I129774422"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I2802916955",
+              "display_name": "Max Perutz Labs",
+              "ror": "https://ror.org/05cz70a34",
+              "country_code": "AT",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I129774422",
+                "https://openalex.org/I2802916955"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4405273516",
+              "display_name": "Umeå Centre for Microbial Research",
+              "ror": "https://ror.org/05y3vbx53",
+              "country_code": "SE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4405273516"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I90267481",
+              "display_name": "Umeå University",
+              "ror": "https://ror.org/05kb8h459",
+              "country_code": "SE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I90267481"
+              ]
+            }
+          ],
+          "countries": [
+            "AT",
+            "SE"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Krzysztof Chylinski",
+          "raw_affiliation_strings": [
+            "Max F. Perutz Laboratories (MFPL), University of Vienna, A-1030 Vienna, Austria",
+            "The Laboratory for Molecular Infection Medicine Sweden, Umeå Centre for Microbial Research, Department of Molecular Biology, Umeå University, S-90187 Umeå, Sweden"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Max F. Perutz Laboratories (MFPL), University of Vienna, A-1030 Vienna, Austria",
+              "institution_ids": [
+                "https://openalex.org/I129774422",
+                "https://openalex.org/I2802916955"
+              ]
+            },
+            {
+              "raw_affiliation_string": "The Laboratory for Molecular Infection Medicine Sweden, Umeå Centre for Microbial Research, Department of Molecular Biology, Umeå University, S-90187 Umeå, Sweden",
+              "institution_ids": [
+                "https://openalex.org/I4405273516",
+                "https://openalex.org/I90267481"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5081033943",
+            "display_name": "Ines Fonfara",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4075-9217",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4075-9217"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4405273516",
+              "display_name": "Umeå Centre for Microbial Research",
+              "ror": "https://ror.org/05y3vbx53",
+              "country_code": "SE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4405273516"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I90267481",
+              "display_name": "Umeå University",
+              "ror": "https://ror.org/05kb8h459",
+              "country_code": "SE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I90267481"
+              ]
+            }
+          ],
+          "countries": [
+            "SE"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Ines Fonfara",
+          "raw_affiliation_strings": [
+            "The Laboratory for Molecular Infection Medicine Sweden, Umeå Centre for Microbial Research, Department of Molecular Biology, Umeå University, S-90187 Umeå, Sweden"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Laboratory for Molecular Infection Medicine Sweden, Umeå Centre for Microbial Research, Department of Molecular Biology, Umeå University, S-90187 Umeå, Sweden",
+              "institution_ids": [
+                "https://openalex.org/I4405273516",
+                "https://openalex.org/I90267481"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5062738098",
+            "display_name": "M. Hauer",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-7463-3191",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7463-3191"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Michael Hauer",
+          "raw_affiliation_strings": [
+            "Department of Molecular and Cell Biology, University of California, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Molecular and Cell Biology, University of California, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5067184382",
+            "display_name": "Jennifer A. Doudna",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9161-999X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9161-999X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Jennifer A. Doudna",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, CA 94720, USA",
+            "Department of Molecular and Cell Biology, University of California, Berkeley, CA 94720, USA",
+            "Howard Hughes Medical Institute (HHMI), University of California, Berkeley, CA 94720, USA",
+            "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Molecular and Cell Biology, University of California, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute (HHMI), University of California, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5074743574",
+            "display_name": "Emmanuelle Charpentier",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0254-0778",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0254-0778"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I4405273516",
+              "display_name": "Umeå Centre for Microbial Research",
+              "ror": "https://ror.org/05y3vbx53",
+              "country_code": "SE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4405273516"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I90267481",
+              "display_name": "Umeå University",
+              "ror": "https://ror.org/05kb8h459",
+              "country_code": "SE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I90267481"
+              ]
+            }
+          ],
+          "countries": [
+            "SE"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Emmanuelle Charpentier",
+          "raw_affiliation_strings": [
+            "The Laboratory for Molecular Infection Medicine Sweden, Umeå Centre for Microbial Research, Department of Molecular Biology, Umeå University, S-90187 Umeå, Sweden"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "The Laboratory for Molecular Infection Medicine Sweden, Umeå Centre for Microbial Research, Department of Molecular Biology, Umeå University, S-90187 Umeå, Sweden",
+              "institution_ids": [
+                "https://openalex.org/I4405273516",
+                "https://openalex.org/I90267481"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2050480410",
+      "title": "The new frontier of genome engineering with CRISPR-Cas9",
+      "publication_date": "2014-11-28",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10878",
+          "display_name": "CRISPR and Genetic Engineering",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12610",
+          "display_name": "RNA regulation and disease",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10120",
+          "display_name": "Bacterial Genetics and Biotechnology",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "The": [
+          0
+        ],
+        "advent": [
+          1
+        ],
+        "of": [
+          2,
+          23,
+          38,
+          65,
+          73,
+          105
+        ],
+        "facile": [
+          3
+        ],
+        "genome": [
+          4
+        ],
+        "engineering": [
+          5
+        ],
+        "using": [
+          6,
+          51
+        ],
+        "the": [
+          7,
+          21,
+          36,
+          39,
+          46,
+          93
+        ],
+        "bacterial": [
+          8
+        ],
+        "RNA-guided": [
+          9
+        ],
+        "CRISPR-Cas9": [
+          10,
+          40
+        ],
+        "system": [
+          11
+        ],
+        "in": [
+          12,
+          61,
+          81,
+          98,
+          102
+        ],
+        "animals": [
+          13
+        ],
+        "and": [
+          14,
+          67
+        ],
+        "plants": [
+          15
+        ],
+        "is": [
+          16,
+          85
+        ],
+        "transforming": [
+          17
+        ],
+        "biology.": [
+          18
+        ],
+        "We": [
+          19
+        ],
+        "review": [
+          20
+        ],
+        "history": [
+          22
+        ],
+        "CRISPR": [
+          24
+        ],
+        "(clustered": [
+          25
+        ],
+        "regularly": [
+          26
+        ],
+        "interspaced": [
+          27
+        ],
+        "palindromic": [
+          28
+        ],
+        "repeat)": [
+          29
+        ],
+        "biology": [
+          30
+        ],
+        "from": [
+          31,
+          69
+        ],
+        "its": [
+          32
+        ],
+        "initial": [
+          33
+        ],
+        "discovery": [
+          34
+        ],
+        "through": [
+          35
+        ],
+        "elucidation": [
+          37
+        ],
+        "enzyme": [
+          41
+        ],
+        "mechanism,": [
+          42
+        ],
+        "which": [
+          43,
+          82
+        ],
+        "has": [
+          44
+        ],
+        "set": [
+          45
+        ],
+        "stage": [
+          47
+        ],
+        "for": [
+          48,
+          111
+        ],
+        "remarkable": [
+          49
+        ],
+        "developments": [
+          50
+        ],
+        "this": [
+          52
+        ],
+        "technology": [
+          53
+        ],
+        "to": [
+          54,
+          90
+        ],
+        "modify,": [
+          55
+        ],
+        "regulate,": [
+          56
+        ],
+        "or": [
+          57
+        ],
+        "mark": [
+          58
+        ],
+        "genomic": [
+          59,
+          83
+        ],
+        "loci": [
+          60
+        ],
+        "a": [
+          62,
+          78,
+          88
+        ],
+        "wide": [
+          63
+        ],
+        "variety": [
+          64
+        ],
+        "cells": [
+          66
+        ],
+        "organisms": [
+          68
+        ],
+        "all": [
+          70,
+          103
+        ],
+        "three": [
+          71
+        ],
+        "domains": [
+          72
+        ],
+        "life.": [
+          74
+        ],
+        "These": [
+          75
+        ],
+        "results": [
+          76
+        ],
+        "highlight": [
+          77
+        ],
+        "new": [
+          79
+        ],
+        "era": [
+          80
+        ],
+        "manipulation": [
+          84
+        ],
+        "no": [
+          86
+        ],
+        "longer": [
+          87
+        ],
+        "bottleneck": [
+          89
+        ],
+        "experiments,": [
+          91
+        ],
+        "paving": [
+          92
+        ],
+        "way": [
+          94
+        ],
+        "toward": [
+          95
+        ],
+        "fundamental": [
+          96
+        ],
+        "discoveries": [
+          97
+        ],
+        "biology,": [
+          99
+        ],
+        "with": [
+          100
+        ],
+        "applications": [
+          101
+        ],
+        "branches": [
+          104
+        ],
+        "biotechnology,": [
+          106
+        ],
+        "as": [
+          107,
+          109
+        ],
+        "well": [
+          108
+        ],
+        "strategies": [
+          110
+        ],
+        "human": [
+          112
+        ],
+        "therapeutics.": [
+          113
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5067184382",
+            "display_name": "Jennifer A. Doudna",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9161-999X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9161-999X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Jennifer A. Doudna",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, CA 94720, USA",
+            "Howard Hughes Medical Institute, Department of Molecular and Cell Biology, University of California, Berkeley, CA 94720, USA",
+            "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, Department of Molecular and Cell Biology, University of California, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5074743574",
+            "display_name": "Emmanuelle Charpentier",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-0254-0778",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-0254-0778"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I34809795",
+              "display_name": "Medizinische Hochschule Hannover",
+              "ror": "https://ror.org/00f2yqf98",
+              "country_code": "DE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I34809795"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210124929",
+              "display_name": "Helmholtz Centre for Infection Research",
+              "ror": "https://ror.org/03d0p2685",
+              "country_code": "DE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1305996414",
+                "https://openalex.org/I4210124929"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4405273516",
+              "display_name": "Umeå Centre for Microbial Research",
+              "ror": "https://ror.org/05y3vbx53",
+              "country_code": "SE",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I4405273516"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I90267481",
+              "display_name": "Umeå University",
+              "ror": "https://ror.org/05kb8h459",
+              "country_code": "SE",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I90267481"
+              ]
+            }
+          ],
+          "countries": [
+            "DE",
+            "SE"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Emmanuelle Charpentier",
+          "raw_affiliation_strings": [
+            "Department of Regulation in Infection Biology, Helmholtz Centre for Infection Research, D-38124 Braunschweig, Germany",
+            "Hannover Medical School, D-30625 Hannover, Germany",
+            "Laboratory for Molecular Infection Medicine Sweden, Umeå Centre for Microbial Research, Department of Molecular Biology, Umeå University, S-90187 Umeå, Sweden"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Regulation in Infection Biology, Helmholtz Centre for Infection Research, D-38124 Braunschweig, Germany",
+              "institution_ids": [
+                "https://openalex.org/I4210124929"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Hannover Medical School, D-30625 Hannover, Germany",
+              "institution_ids": [
+                "https://openalex.org/I34809795"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Laboratory for Molecular Infection Medicine Sweden, Umeå Centre for Microbial Research, Department of Molecular Biology, Umeå University, S-90187 Umeå, Sweden",
+              "institution_ids": [
+                "https://openalex.org/I4405273516",
+                "https://openalex.org/I90267481"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2160051211",
+      "title": "Repurposing CRISPR as an RNA-Guided Platform for Sequence-Specific Control of Gene Expression",
+      "publication_date": "2013-02-01",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10878",
+          "display_name": "CRISPR and Genetic Engineering",
+          "score": 1.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10120",
+          "display_name": "Bacterial Genetics and Biotechnology",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1311",
+            "display_name": "Genetics"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10725",
+          "display_name": "RNA Interference and Gene Delivery",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5009068819",
+            "display_name": "Lei S. Qi",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3965-3223",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3965-3223"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Lei S. Qi",
+          "raw_affiliation_strings": [
+            "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA. stanley.qi@ucsf.edu",
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA. stanley.qi@ucsf.edu",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008849049",
+            "display_name": "Matthew H. Larson",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-6778-2604",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6778-2604"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Matthew H. Larson",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5035219354",
+            "display_name": "Luke A. Gilbert",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5854-0825",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5854-0825"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Luke A. Gilbert",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5067184382",
+            "display_name": "Jennifer A. Doudna",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9161-999X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9161-999X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jennifer A. Doudna",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Chemistry, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Molecular and Cellular Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Howard Hughes Medical Institute, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Molecular and Cellular Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5026663934",
+            "display_name": "Jonathan S. Weissman",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-2445-670X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2445-670X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jonathan S. Weissman",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5066623854",
+            "display_name": "Adam P. Arkin",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-4999-2931",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4999-2931"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Adam P. Arkin",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Bioengineering, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioengineering, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5006257775",
+            "display_name": "Wendell A. Lim",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4052-8056",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4052-8056"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Wendell A. Lim",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2787024379",
+      "title": "CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity",
+      "publication_date": "2018-02-15",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10878",
+          "display_name": "CRISPR and Genetic Engineering",
+          "score": 0.9961000084877014,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T11393",
+          "display_name": "Biosensors and Analytical Detection",
+          "score": 0.0015999999595806003,
+          "subfield": {
+            "id": "https://openalex.org/subfields/2204",
+            "display_name": "Biomedical Engineering"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/22",
+            "display_name": "Engineering"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/3",
+            "display_name": "Physical Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10207",
+          "display_name": "Advanced biosensing and bioanalysis techniques",
+          "score": 0.000699999975040555,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": {
+        "Taking": [
+          0,
+          21
+        ],
+        "CRISPR": [
+          1,
+          4,
+          29,
+          89
+        ],
+        "technology": [
+          2,
+          40,
+          114
+        ],
+        "further": [
+          3
+        ],
+        "techniques": [
+          5
+        ],
+        "are": [
+          6
+        ],
+        "allowing": [
+          7
+        ],
+        "the": [
+          8,
+          17,
+          24
+        ],
+        "development": [
+          9
+        ],
+        "of": [
+          10,
+          23,
+          28,
+          73,
+          76
+        ],
+        "technologies": [
+          11
+        ],
+        "for": [
+          12,
+          41,
+          52,
+          70,
+          98
+        ],
+        "nucleic": [
+          13,
+          37
+        ],
+        "acid": [
+          14,
+          38
+        ],
+        "detection": [
+          15,
+          39,
+          72
+        ],
+        "(see": [
+          16
+        ],
+        "Perspective": [
+          18
+        ],
+        "by": [
+          19
+        ],
+        "Chertow).": [
+          20
+        ],
+        "advantages": [
+          22
+        ],
+        "distinctive": [
+          25
+        ],
+        "enzymatic": [
+          26
+        ],
+        "properties": [
+          27
+        ],
+        "enzymes,": [
+          30
+        ],
+        "Gootenberg": [
+          31
+        ],
+        "et": [
+          32,
+          56,
+          102
+        ],
+        "al.": [
+          33,
+          57,
+          103
+        ],
+        "developed": [
+          34
+        ],
+        "an": [
+          35
+        ],
+        "improved": [
+          36
+        ],
+        "multiplexed": [
+          42
+        ],
+        "quantitative": [
+          43
+        ],
+        "and": [
+          44,
+          94
+        ],
+        "highly": [
+          45
+        ],
+        "sensitive": [
+          46
+        ],
+        "detection,": [
+          47
+        ],
+        "combined": [
+          48
+        ],
+        "with": [
+          49,
+          126
+        ],
+        "lateral": [
+          50
+        ],
+        "flow": [
+          51
+        ],
+        "visual": [
+          53
+        ],
+        "readout.": [
+          54
+        ],
+        "Myhrvold": [
+          55
+        ],
+        "added": [
+          58
+        ],
+        "a": [
+          59,
+          65,
+          86
+        ],
+        "sample": [
+          60
+        ],
+        "preparation": [
+          61
+        ],
+        "protocol": [
+          62
+        ],
+        "to": [
+          63
+        ],
+        "create": [
+          64
+        ],
+        "field-deployable": [
+          66
+        ],
+        "viral": [
+          67
+        ],
+        "diagnostic": [
+          68
+        ],
+        "platform": [
+          69,
+          115
+        ],
+        "rapid": [
+          71
+        ],
+        "specific": [
+          74
+        ],
+        "strains": [
+          75
+        ],
+        "pathogens": [
+          77
+        ],
+        "in": [
+          78,
+          123
+        ],
+        "clinical": [
+          79
+        ],
+        "samples.": [
+          80
+        ],
+        "Cas12a": [
+          81,
+          106
+        ],
+        "(also": [
+          82
+        ],
+        "known": [
+          83
+        ],
+        "as": [
+          84
+        ],
+        "Cpf1),": [
+          85
+        ],
+        "type": [
+          87
+        ],
+        "V": [
+          88
+        ],
+        "protein,": [
+          90
+        ],
+        "cleaves": [
+          91
+        ],
+        "double-stranded": [
+          92
+        ],
+        "DNA": [
+          93,
+          110
+        ],
+        "has": [
+          95
+        ],
+        "been": [
+          96
+        ],
+        "adapted": [
+          97
+        ],
+        "genome": [
+          99
+        ],
+        "editing.": [
+          100
+        ],
+        "Chen": [
+          101
+        ],
+        "discovered": [
+          104
+        ],
+        "that": [
+          105
+        ],
+        "also": [
+          107,
+          143
+        ],
+        "processes": [
+          108
+        ],
+        "single-stranded": [
+          109
+        ],
+        "threading": [
+          111
+        ],
+        "activity.": [
+          112
+        ],
+        "A": [
+          113
+        ],
+        "based": [
+          116
+        ],
+        "on": [
+          117
+        ],
+        "this": [
+          118,
+          131
+        ],
+        "activity": [
+          119
+        ],
+        "detected": [
+          120
+        ],
+        "human": [
+          121
+        ],
+        "papillomavirus": [
+          122
+        ],
+        "patient": [
+          124
+        ],
+        "samples": [
+          125
+        ],
+        "high": [
+          127
+        ],
+        "sensitivity.": [
+          128
+        ],
+        "Science": [
+          129
+        ],
+        ",": [
+          130,
+          135,
+          138
+        ],
+        "issue": [
+          132
+        ],
+        "p.": [
+          133,
+          136,
+          139,
+          144
+        ],
+        "439": [
+          134
+        ],
+        "444": [
+          137
+        ],
+        "436": [
+          140
+        ],
+        ";": [
+          141
+        ],
+        "see": [
+          142
+        ],
+        "381": [
+          145
+        ]
+      },
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5016109748",
+            "display_name": "Janice S. Chen",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4797-3056",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4797-3056"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Janice S. Chen",
+          "raw_affiliation_strings": [
+            "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0003-4797-3056",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": null,
+            "display_name": "Enbo Ma",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Enbo Ma",
+          "raw_affiliation_strings": [
+            "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5083234514",
+            "display_name": "Lucas B. Harrington",
+            "type": null,
+            "orcid": "https://orcid.org/0009-0007-0761-4039",
+            "observed_orcids": [
+              "https://orcid.org/0009-0007-0761-4039"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Lucas B. Harrington",
+          "raw_affiliation_strings": [
+            "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5103045388",
+            "display_name": "Maria Da Costa",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-7268-1912",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-7268-1912"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Maria Da Costa",
+          "raw_affiliation_strings": [
+            "Department of Medicine, University of California, San Francisco, San Francisco, CA 94143, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-7268-1912",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Medicine, University of California, San Francisco, San Francisco, CA 94143, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5056739062",
+            "display_name": "Xinran Tian",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-9484-7856",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-9484-7856"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Xinran Tian",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-9484-7856",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5079764395",
+            "display_name": "Joel Michael Palefsky",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-5097-3818",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-5097-3818"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Joel M. Palefsky",
+          "raw_affiliation_strings": [
+            "Department of Medicine, University of California, San Francisco, San Francisco, CA 94143, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0002-5097-3818",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Medicine, University of California, San Francisco, San Francisco, CA 94143, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5067184382",
+            "display_name": "Jennifer A. Doudna",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9161-999X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9161-999X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I4210109258",
+              "display_name": "Innovative Genomics Institute",
+              "ror": "https://ror.org/01r4tcq81",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I4210109258",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Jennifer A. Doudna",
+          "raw_affiliation_strings": [
+            "Department of Chemistry, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Howard Hughes Medical Institute, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Innovative Genomics Institute, University of California, Berkeley, Berkeley, CA 94704, USA",
+            "Molecular Biophysics and Integrated Bioimaging Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": "https://orcid.org/0000-0001-9161-999X",
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Innovative Genomics Institute, University of California, Berkeley, Berkeley, CA 94704, USA",
+              "institution_ids": [
+                "https://openalex.org/I4210109258",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Molecular Biophysics and Integrated Bioimaging Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/W2101749257",
+      "title": "CRISPR-Mediated Modular RNA-Guided Regulation of Transcription in Eukaryotes",
+      "publication_date": "2013-07-01",
+      "topics": [
+        {
+          "id": "https://openalex.org/T10878",
+          "display_name": "CRISPR and Genetic Engineering",
+          "score": 0.9994999766349792,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T10725",
+          "display_name": "RNA Interference and Gene Delivery",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        },
+        {
+          "id": "https://openalex.org/T12610",
+          "display_name": "RNA regulation and disease",
+          "score": 0.0,
+          "subfield": {
+            "id": "https://openalex.org/subfields/1312",
+            "display_name": "Molecular Biology"
+          },
+          "field": {
+            "id": "https://openalex.org/fields/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+          },
+          "domain": {
+            "id": "https://openalex.org/domains/1",
+            "display_name": "Life Sciences"
+          }
+        }
+      ],
+      "abstract_inverted_index": null,
+      "authorships": [
+        {
+          "author_position": "first",
+          "author": {
+            "id": "https://openalex.org/A5035219354",
+            "display_name": "Luke A. Gilbert",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-5854-0825",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-5854-0825"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Luke A. Gilbert",
+          "raw_affiliation_strings": [
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5008849049",
+            "display_name": "Matthew H. Larson",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-6778-2604",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-6778-2604"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Matthew H. Larson",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5064750899",
+            "display_name": "Leonardo Morsut",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-7049-3478",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-7049-3478"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Leonardo Morsut",
+          "raw_affiliation_strings": [
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5010039785",
+            "display_name": "Zairan Liu",
+            "type": null,
+            "orcid": null,
+            "observed_orcids": []
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I20231570",
+              "display_name": "Peking University",
+              "ror": "https://ror.org/02v51f717",
+              "country_code": "CN",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I20231570"
+              ]
+            }
+          ],
+          "countries": [
+            "CN"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Zairan Liu",
+          "raw_affiliation_strings": [
+            "Peking University, Beijing China"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "Peking University, Beijing China",
+              "institution_ids": [
+                "https://openalex.org/I20231570"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5058972457",
+            "display_name": "Gloria Ann Brar",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-8560-9581",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-8560-9581"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Gloria A. Brar",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5015446291",
+            "display_name": "Sandra Elizabeth Torres",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-2764-4407",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2764-4407"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Sandra E. Torres",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5082856046",
+            "display_name": "Noam Stern‐Ginossar",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-3583-5932",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-3583-5932"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Noam Stern-Ginossar",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5002019876",
+            "display_name": "Onn Brandman",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-2084-154X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-2084-154X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Onn Brandman",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5072805426",
+            "display_name": "Evan H. Whitehead",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-4132-2140",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-4132-2140"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Evan H. Whitehead",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5067184382",
+            "display_name": "Jennifer A. Doudna",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0001-9161-999X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0001-9161-999X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I148283060",
+              "display_name": "Lawrence Berkeley National Laboratory",
+              "ror": "https://ror.org/02jbv0t02",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1330989302",
+                "https://openalex.org/I148283060",
+                "https://openalex.org/I39565521"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Jennifer A. Doudna",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Bioengineering, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Chemistry, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Molecular & Cellular Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA",
+            "Department of Molecular and Cellular Biology, University of California, Berkeley, Berkeley, CA 94720, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Bioengineering, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Molecular & Cellular Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Physical Biosciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I148283060"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Molecular and Cellular Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5006257775",
+            "display_name": "Wendell A. Lim",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-4052-8056",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-4052-8056"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Wendell A. Lim",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "middle",
+          "author": {
+            "id": "https://openalex.org/A5026663934",
+            "display_name": "Jonathan S. Weissman",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0003-2445-670X",
+            "observed_orcids": [
+              "https://orcid.org/0000-0003-2445-670X"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I1344073410",
+              "display_name": "Howard Hughes Medical Institute",
+              "ror": "https://ror.org/006w34k90",
+              "country_code": "US",
+              "type": "facility",
+              "lineage": [
+                "https://openalex.org/I1344073410"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I95457486",
+              "display_name": "University of California, Berkeley",
+              "ror": "https://ror.org/01an7q238",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I95457486"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": true,
+          "contributor_roles": [],
+          "raw_author_name": "Jonathan S. Weissman",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Center for RNA Systems Biology, University of California, Berkeley, Berkeley, CA 94720, USA",
+              "institution_ids": [
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Howard Hughes Medical Institute, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I1344073410",
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        },
+        {
+          "author_position": "last",
+          "author": {
+            "id": "https://openalex.org/A5009068819",
+            "display_name": "Lei S. Qi",
+            "type": null,
+            "orcid": "https://orcid.org/0000-0002-3965-3223",
+            "observed_orcids": [
+              "https://orcid.org/0000-0002-3965-3223"
+            ]
+          },
+          "acted_on_behalf_of": [],
+          "institutions": [
+            {
+              "id": "https://openalex.org/I103922791",
+              "display_name": "QB3",
+              "ror": "https://ror.org/04n1n3n22",
+              "country_code": "US",
+              "type": "nonprofit",
+              "lineage": [
+                "https://openalex.org/I103922791",
+                "https://openalex.org/I180670191",
+                "https://openalex.org/I185103710",
+                "https://openalex.org/I95457486"
+              ]
+            },
+            {
+              "id": "https://openalex.org/I180670191",
+              "display_name": "University of California, San Francisco",
+              "ror": "https://ror.org/043mz5j54",
+              "country_code": "US",
+              "type": "education",
+              "lineage": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ],
+          "countries": [
+            "US"
+          ],
+          "is_corresponding": false,
+          "contributor_roles": [],
+          "raw_author_name": "Lei S. Qi",
+          "raw_affiliation_strings": [
+            "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+            "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+            "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA"
+          ],
+          "raw_orcid": null,
+          "affiliations": [
+            {
+              "raw_affiliation_string": "California Institute for Quantitative Biomedical Research, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I103922791"
+              ]
+            },
+            {
+              "raw_affiliation_string": "Department of Cellular and Molecular Pharmacology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            },
+            {
+              "raw_affiliation_string": "UCSF Center for Systems and Synthetic Biology, University of California, San Francisco, San Francisco, CA 94158, USA",
+              "institution_ids": [
+                "https://openalex.org/I180670191"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence:openalex:W2045435533",
+      "source_url": "https://openalex.org/W2045435533",
+      "quote": "A Programmable Dual-RNA–Guided DNA Endonuclease in Adaptive Bacterial Immunity",
+      "source_date": "2012-06-29",
+      "observed_at": "2026-11-24T19:43:39.538042+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2050480410",
+      "source_url": "https://openalex.org/W2050480410",
+      "quote": "The new frontier of genome engineering with CRISPR-Cas9",
+      "source_date": "2014-11-28",
+      "observed_at": "2026-11-24T19:43:39.538062+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2160051211",
+      "source_url": "https://openalex.org/W2160051211",
+      "quote": "Repurposing CRISPR as an RNA-Guided Platform for Sequence-Specific Control of Gene Expression",
+      "source_date": "2013-02-01",
+      "observed_at": "2026-11-24T19:43:39.538065+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2787024379",
+      "source_url": "https://openalex.org/W2787024379",
+      "quote": "CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity",
+      "source_date": "2018-02-15",
+      "observed_at": "2026-11-24T19:43:39.538067+00:00",
+      "kind": "paper"
+    },
+    {
+      "id": "evidence:openalex:W2101749257",
+      "source_url": "https://openalex.org/W2101749257",
+      "quote": "CRISPR-Mediated Modular RNA-Guided Regulation of Transcription in Eukaryotes",
+      "source_date": "2013-07-01",
+      "observed_at": "2026-11-24T19:43:39.538068+00:00",
+      "kind": "paper"
+    }
+  ],
+  "persona": null
+}

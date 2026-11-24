@@ -2,12 +2,12 @@ import hashlib
 import json
 import subprocess
 from threading import Lock
-from urllib.error import URLError
+from urllib.error import HTTPError, URLError
 
 from fastapi import APIRouter, HTTPException
 from pydantic import ValidationError
 
-from ..lanes.jakob.icp import CACHE, _write, build_icp, fetch_founder, load_research
+from ..lanes.jakob.icp import CACHE, FounderNotFound, _write, build_icp, fetch_founder, load_research
 from ..models import Evidence, Founder, Icp, IntakeRequest
 from ..store import store
 
@@ -35,7 +35,8 @@ def intake(body: IntakeRequest):
                    'a5102978866', 'https://openalex.org/a5102978866',
                    '10.1038/nphoton.2017.93', 'https://doi.org/10.1038/nphoton.2017.93'}
     links = {link.rstrip('/').casefold() for link in body.paper_links}
-    if query in lightmatter or (not query and links.intersection(lightmatter)):
+    if ((query in lightmatter and (not links or links.issubset(lightmatter)))
+            or (not query and links and links.issubset(lightmatter))):
         store.jakob_active_founder_id = store.founder.id
         return store.founder
     try:
@@ -43,6 +44,12 @@ def intake(body: IntakeRequest):
         _register(load_research(founder.id))
         store.jakob_active_founder_id = founder.id
         return founder
+    except FounderNotFound as exc:
+        raise HTTPException(404, str(exc)) from exc
+    except HTTPError as exc:
+        detail = ('OpenAlex is rate limited; retry shortly'
+                  if exc.code == 429 else 'OpenAlex is unavailable; retry shortly')
+        raise HTTPException(503, detail) from exc
     except (TimeoutError, URLError) as exc:
         raise HTTPException(504, 'OpenAlex intake unavailable or timed out; retry shortly') from exc
     except ValueError as exc:

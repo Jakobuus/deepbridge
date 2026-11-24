@@ -18,6 +18,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote, urlencode
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from ...openalex import with_key
 
@@ -27,6 +28,18 @@ ROOT = Path(__file__).resolve().parents[4]
 CACHE = ROOT / 'data/cache/jakob'
 _RATE_LOCK = threading.Lock()
 _LAST_REQUEST = 0.0
+
+
+class FounderNotFound(LookupError):
+    """A successful lookup returned no matching author or publication."""
+
+
+def _cacheable(data):
+    if not isinstance(data, dict) or any(key in data for key in ('error', 'errors')):
+        return False
+    if 'results' in data:
+        return isinstance(data['results'], list) and bool(data['results'])
+    return bool(data.get('id'))
 
 
 def _write(path, value):
@@ -42,7 +55,13 @@ def _openalex(endpoint, params, deadline):
     url = 'https://api.openalex.org/' + endpoint + '?' + urlencode(params)
     path = CACHE / 'openalex' / (hashlib.sha256(url.encode()).hexdigest()[:24] + '.json')
     if path.exists():
-        return json.loads(path.read_text())
+        try:
+            cached = json.loads(path.read_text())
+        except (ValueError, OSError):
+            cached = None
+        if _cacheable(cached):
+            return cached
+        path.unlink(missing_ok=True)
     with _RATE_LOCK:
         pause = max(0, .21 - (time.monotonic() - _LAST_REQUEST))
         if time.monotonic() + pause >= deadline:
@@ -51,12 +70,27 @@ def _openalex(endpoint, params, deadline):
         remaining = deadline - time.monotonic()
         _LAST_REQUEST = time.monotonic()
         request = Request(with_key(url), headers={'User-Agent': 'DeepBridge/0.1 (founder publication research)'})
-        with urlopen(request, timeout=max(.01, remaining)) as response:
-            raw = response.read()
+        try:
+            with urlopen(request, timeout=max(.01, remaining)) as response:
+                raw = response.read()
+        except HTTPError as exc:
+            if exc.code == 404:
+                raise FounderNotFound('OpenAlex has no record for the supplied author or paper') from exc
+            raise
         if time.monotonic() > deadline:
             raise TimeoutError('OpenAlex intake exceeded 20 seconds')
-    data = json.loads(raw)
-    _write(path, data)
+    try:
+        data = json.loads(raw)
+    except ValueError as exc:
+        raise URLError('OpenAlex returned an invalid response') from exc
+    if not isinstance(data, dict) or any(key in data for key in ('error', 'errors')):
+        raise URLError('OpenAlex returned an error response')
+    if 'results' in data and not isinstance(data['results'], list):
+        raise URLError('OpenAlex returned invalid results')
+    if 'results' not in data and not data.get('id'):
+        raise URLError('OpenAlex returned an incomplete record')
+    if _cacheable(data):
+        _write(path, data)
     return data
 
 
@@ -64,10 +98,26 @@ def _normal(value):
     return re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', value).casefold())
 
 
+def _name_matches(candidate, name):
+    if _normal(candidate) == _normal(name):
+        return True
+    parts = lambda value: re.findall(r'[a-z0-9]+', unicodedata.normalize('NFKD', value).casefold())
+    full, requested = parts(candidate), parts(name)
+    if len(full) < 2 or len(requested) < 2:
+        return False
+    same = lambda a, b: a == b or (min(len(a), len(b)) == 1 and a[0] == b[0])
+    if not same(full[0], requested[0]) or full[-1] != requested[-1]:
+        return False
+    # Missing middle names/initials are common; supplied middle names must agree.
+    shorter, longer = sorted((full[1:-1], requested[1:-1]), key=len)
+    remaining = iter(longer)
+    return all(any(same(part, other) for other in remaining) for part in shorter)
+
+
 def _work_ref(value):
     doi = re.search(r'10\.\d{4,9}/\S+', value, re.I)
     if doi:
-        return 'https://doi.org/' + doi.group(0).rstrip('.,;)')
+        return 'doi:' + doi.group(0).rstrip('.,;)')
     work = re.search(r'(?:openalex.org/)?(W\d+)', value, re.I)
     if work:
         return work.group(1).upper()
@@ -100,35 +150,43 @@ def fetch_founder(query: str | dict) -> Founder:
     deadline = time.monotonic() + 19.5
     get = lambda endpoint, **params: _openalex(endpoint, params, deadline)
     works_select = 'id,title,publication_date,topics,abstract_inverted_index,authorships'
-    ref = _work_ref(links[0] if links else name)
+    refs = list(dict.fromkeys(_work_ref(link) for link in links)) if links else [_work_ref(name)]
+    if links and not all(refs):
+        raise ValueError('Paper links must contain a DOI or OpenAlex work ID')
+    supplied_works = []
     first_author_resolution = False
-    if ref:
-        paper = get('works/' + quote(ref, safe=''), select=works_select)
-        authors = [entry['author'] for entry in paper.get('authorships', [])]
-        matches = [a for a in authors if _normal(a['display_name']) == _normal(name)]
+    if refs[0]:
+        supplied_works = [get('works/' + quote(ref, safe=':/'), select=works_select) for ref in refs]
+        authors = [entry['author'] for entry in supplied_works[0].get('authorships', [])]
+        matches = [a for a in authors if _name_matches(a['display_name'], name)] if name else []
         if name and not _work_ref(name) and not matches:
             raise ValueError('Founder name does not match an author of the supplied paper')
         # A bare paper resolves to its first author; the summary makes this explicit.
         author = (matches or authors or [None])[0]
         first_author_resolution = not matches
         if not author:
-            raise ValueError('No authors on the supplied paper')
+            raise FounderNotFound('No authors found on the supplied paper')
         author_id = author['id']
+        if any(not any(entry['author']['id'] == author_id for entry in paper.get('authorships', []))
+               for paper in supplied_works):
+            raise ValueError('The supplied papers do not share the selected founder as an author')
     elif re.fullmatch(r'(?:https://openalex.org/)?A\d+', name, re.I):
         author = get('authors/' + name.rsplit('/', 1)[-1], select='id,display_name')
         author_id = author['id']
     else:
-        candidates = get('authors', search=name, **{'per-page': 5, 'page': 1,
-                         'select': 'id,display_name,cited_by_count'})['results']
+        candidates = get('authors', search=name, **{'per-page': 25, 'page': 1,
+                         'select': 'id,display_name,works_count'})['results']
         if not candidates:
-            raise ValueError('No OpenAlex author found')
-        exact = [a for a in candidates if _normal(a['display_name']) == _normal(name)]
-        author = max(exact, key=lambda a: a.get('cited_by_count', 0)) if exact else candidates[0]
+            raise FounderNotFound('No OpenAlex author found for this name; try a paper DOI')
+        matches = [a for a in candidates if _name_matches(a['display_name'], name)]
+        if not matches:
+            raise FounderNotFound('No matching OpenAlex author found; try a paper DOI')
+        author = max(matches, key=lambda a: a.get('works_count') or 0)
         author_id = author['id']
-    works = get('works', filter='author.id:' + author_id.rsplit('/', 1)[-1],
+    works = supplied_works or get('works', filter='author.id:' + author_id.rsplit('/', 1)[-1],
                 sort='cited_by_count:desc', page=1, **{'per-page': 5, 'select': works_select})['results']
     if not works:
-        raise ValueError('No publication evidence found for this author')
+        raise FounderNotFound('No publication evidence found for this author in OpenAlex; try a paper DOI')
     evidence = [Evidence(id='evidence:openalex:' + w['id'].rsplit('/', 1)[-1],
                          source_url=w['id'], quote=w['title'], source_date=w.get('publication_date'),
                          observed_at=datetime.now(timezone.utc).isoformat(), kind='paper') for w in works]
@@ -136,7 +194,8 @@ def fetch_founder(query: str | dict) -> Founder:
     founder = Founder(id='person:openalex:' + author_id.rsplit('/', 1)[-1],
                       name=author['display_name'], company='', openalex_id=author_id,
                       topics=[t for t, _ in topics.most_common(5)],
-                      summary=f'Research topics inferred from {len(works)} top-cited OpenAlex works. '
+                      summary=f'Research topics inferred from {len(works)} '
+                              + ('supplied' if supplied_works else 'top-cited') + ' OpenAlex works. '
                               + ('Paper-only intake resolves to the first listed author. ' if first_author_resolution else '')
                               + 'Customer segments are hypotheses, not verified demand.',
                       evidence_ids=[e.id for e in evidence])
