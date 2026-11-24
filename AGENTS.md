@@ -7,7 +7,7 @@ Hackathon build (HackwithBay 4.0, 24 Nov 2026). Goal: a demo that works on stage
 - **Lanes (stay in your files):**
   | Owner | Files |
   |---|---|
-  | Jakob (sales, ICP) | `service/app/routers/icp.py`, `buyers.py`, `outreach.py`, `credits.py`, `service/app/lanes/jakob/` |
+  | Jakob (sales, ICP) | `service/app/routers/icp.py`, `buyers.py`, `outreach.py`, `credits.py`, `contacts.py`, `service/app/lanes/jakob/` |
   | Erick (graph) | `service/app/routers/graph.py`, `paths.py`, `service/app/lanes/erick/`, `data/`, `docs/architecture.md` |
   | Mark (visual) | `web/`, `service/app/routers/search.py`, `service/app/lanes/mark/`, video |
   | Orchestrator | `contracts/`, `fixtures/`, `service/app/main.py`, `service/app/models.py`, `service/app/store.py`, `DEMO.md` |
