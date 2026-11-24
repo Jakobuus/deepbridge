@@ -39,7 +39,7 @@ Fallback case: `demo-lightmatter` (Lightmatter / Nicholas C. Harris).
 ```bash
 caffeinate -dims &                              # keep the Mac awake
 bash scripts/demo-reset.sh                      # fixtures restored from HEAD, credits back to 5
-cd web && npx next start -p 3000                # in a second terminal
+cd web && bun install && bun run build && bun run start -p 3000   # in a second terminal
 ```
 
 - Flexprice live (keys in `.env`): `demo-reset.sh` also sets both Flexprice wallets back to `DEMO_CREDITS` (default 5). On-camera top-up: `python3 scripts/flexprice_topup.py 5`. First-time setup: `python3 scripts/flexprice_setup.py` (idempotent). `/credits` shows `source` (`flexprice` or `local`) and `dashboard_url`.

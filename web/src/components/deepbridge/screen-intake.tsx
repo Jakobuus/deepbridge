@@ -44,10 +44,16 @@ interface SpeechRecognitionAlternativeLike {
 
 interface SpeechRecognitionResultLike {
   0: SpeechRecognitionAlternativeLike;
+  isFinal: boolean;
 }
 
 interface SpeechRecognitionEventLike {
+  resultIndex: number;
   results: ArrayLike<SpeechRecognitionResultLike>;
+}
+
+interface SpeechRecognitionErrorLike {
+  error: string;
 }
 
 interface SpeechRecognitionLike {
@@ -55,11 +61,21 @@ interface SpeechRecognitionLike {
   interimResults: boolean;
   continuous: boolean;
   onresult: ((event: SpeechRecognitionEventLike) => void) | null;
-  onerror: (() => void) | null;
+  onerror: ((event: SpeechRecognitionErrorLike) => void) | null;
   onend: (() => void) | null;
   start: () => void;
   stop: () => void;
+  abort: () => void;
 }
+
+// Plain-language reasons for the browser's speech errors (they used to be swallowed, so the mic just "died").
+const MIC_ERRORS: Record<string, string> = {
+  "not-allowed": "Microphone is blocked. Allow mic access for this site (address bar → site settings), then press Speak again.",
+  "service-not-allowed": "This browser's speech service is turned off. Use Chrome, or type your answer below.",
+  "audio-capture": "No microphone found. Check System Settings → Sound → Input, or type your answer below.",
+  network: "The browser's speech service is unreachable (Chrome dictation needs internet). Type your answer below.",
+  "language-not-supported": "Speech recognition doesn't support en-US here. Type your answer below.",
+};
 
 export function ScreenIntake({
   founder,
@@ -104,6 +120,8 @@ export function ScreenIntake({
   const [speaking, setSpeaking] = React.useState(false);
   const [voiceReadback, setVoiceReadback] = React.useState(true);
   const recognitionRef = React.useRef<SpeechRecognitionLike | null>(null);
+  const wantMicRef = React.useRef(false);
+  const finalTextRef = React.useRef("");
 
   const isGoldenReplay = founder?.id === GOLDEN_FOUNDER_ID || isHopo;
 
@@ -148,6 +166,7 @@ export function ScreenIntake({
   };
 
   const sendInterviewTurn = async (e?: React.FormEvent) => {
+    if (wantMicRef.current) stopMic();
     e?.preventDefault();
     if (!interviewState || !interviewAnswer.trim()) return;
     setInterviewBusy(true);
@@ -175,11 +194,26 @@ export function ScreenIntake({
     }
   };
 
-  const toggleMic = () => {
+  // Mic: continuous dictation that survives pauses and browser-side session ends.
+  // HACK: Web Speech API only (Chrome/Edge/Safari); typed answer stays the fallback.
+
+  const stopMic = React.useCallback(() => {
+    wantMicRef.current = false;
+    try {
+      recognitionRef.current?.stop();
+    } catch {
+      // already stopped
+    }
+    recognitionRef.current = null;
+    setListening(false);
+  }, []);
+
+  React.useEffect(() => () => stopMic(), [stopMic]);
+
+  const toggleMic = async () => {
     if (typeof window === "undefined") return;
-    if (listening && recognitionRef.current) {
-      recognitionRef.current.stop();
-      setListening(false);
+    if (listening || wantMicRef.current) {
+      stopMic();
       return;
     }
     const w = window as unknown as {
@@ -188,25 +222,84 @@ export function ScreenIntake({
     };
     const Ctor = w.SpeechRecognition ?? w.webkitSpeechRecognition;
     if (!Ctor) {
-      setInterviewErr("Speech recognition is not supported in this browser; type your answer below.");
+      setInterviewErr("Speech recognition isn't available in this browser. Use Chrome, or type your answer below.");
       return;
     }
-    const rec = new Ctor();
-    rec.lang = "en-US";
-    rec.interimResults = true;
-    rec.continuous = false;
-    rec.onresult = (ev) => {
-      const chunks: string[] = [];
-      for (let i = 0; i < ev.results.length; i++) {
-        chunks.push(ev.results[i][0].transcript);
+    setInterviewErr(null);
+    // Don't let the interviewer's read-back talk over (or into) the mic.
+    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    setSpeaking(false);
+
+    // Ask for the mic up front so a blocked/missing mic gets a clear message instead of a silent stop.
+    // Capped at 2.5 s: if the permission check hangs, start recognition anyway (it asks for the mic itself).
+    if (navigator.mediaDevices?.getUserMedia) {
+      try {
+        const stream = await Promise.race([
+          navigator.mediaDevices.getUserMedia({ audio: true }),
+          new Promise<null>((resolve) => setTimeout(() => resolve(null), 2500)),
+        ]);
+        stream?.getTracks().forEach((t) => t.stop());
+      } catch (err) {
+        const name = err instanceof DOMException ? err.name : "";
+        setInterviewErr(
+          name === "NotFoundError" ? MIC_ERRORS["audio-capture"] : MIC_ERRORS["not-allowed"],
+        );
+        return;
       }
-      setInterviewAnswer(chunks.join(" "));
+    }
+
+    finalTextRef.current = interviewAnswer ? `${interviewAnswer.trim()} ` : "";
+    wantMicRef.current = true;
+
+    const startSession = () => {
+      const rec = new Ctor();
+      rec.lang = "en-US";
+      rec.interimResults = true;
+      rec.continuous = true;
+      rec.onresult = (ev) => {
+        let interim = "";
+        for (let i = ev.resultIndex; i < ev.results.length; i++) {
+          const r = ev.results[i];
+          if (r.isFinal) finalTextRef.current += `${r[0].transcript.trim()} `;
+          else interim += r[0].transcript;
+        }
+        setInterviewAnswer(`${finalTextRef.current}${interim}`.trimStart());
+      };
+      rec.onerror = (ev) => {
+        // "no-speech" and "aborted" are routine; the end handler restarts or stops.
+        if (ev.error === "no-speech" || ev.error === "aborted") return;
+        wantMicRef.current = false;
+        setInterviewErr(MIC_ERRORS[ev.error] ?? `Microphone stopped (${ev.error}). Type your answer below.`);
+      };
+      rec.onend = () => {
+        if (wantMicRef.current && recognitionRef.current === rec) {
+          // Browser ended the session (silence/time limit): keep listening.
+          try {
+            startSession();
+            return;
+          } catch {
+            // fall through to stop
+          }
+        }
+        if (recognitionRef.current === rec) {
+          recognitionRef.current = null;
+          wantMicRef.current = false;
+          setListening(false);
+        }
+      };
+      recognitionRef.current = rec;
+      rec.start();
     };
-    rec.onerror = () => setListening(false);
-    rec.onend = () => setListening(false);
-    recognitionRef.current = rec;
-    setListening(true);
-    rec.start();
+
+    try {
+      startSession();
+      setListening(true);
+    } catch (err) {
+      wantMicRef.current = false;
+      recognitionRef.current = null;
+      setListening(false);
+      setInterviewErr(`Microphone couldn't start (${err instanceof Error ? err.message : "unknown error"}). Type your answer below.`);
+    }
   };
 
   const handleFormSubmit = async (e: React.FormEvent) => {
@@ -320,7 +413,7 @@ export function ScreenIntake({
                         type="button"
                         size="sm"
                         flat
-                        onClick={toggleMic}
+                        onClick={() => void toggleMic()}
                         className={`border font-mono text-xs ${
                           listening
                             ? "border-red-400 bg-red-950/60 text-red-100"
