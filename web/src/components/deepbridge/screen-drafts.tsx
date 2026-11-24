@@ -7,15 +7,11 @@ import {
   Coins,
   Hash,
   MailCheck,
-  Save,
   ShieldCheck,
-  Sparkles,
-  XCircle,
 } from "lucide-react";
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { ApiError, api } from "@/lib/api";
 import type { Credits, Draft, Edge, Evidence, Id, Org, Path, Person } from "@/lib/types";
@@ -39,12 +35,6 @@ interface ScreenDraftsProps {
   onGoToPipeline: () => void;
 }
 
-const DRAFT_KIND_TITLES: Record<Draft["kind"], string> = {
-  intro_request: "Intro request",
-  forwardable_note: "Forwardable note",
-  direct_fallback: "Direct fallback",
-};
-
 const NO_DRAFTS: Draft[] = [];
 
 export function ScreenDrafts({
@@ -52,7 +42,7 @@ export function ScreenDrafts({
   selectedPathId,
   peopleMap,
   orgsMap,
-  edgesMap,
+  edgesMap: _edgesMap,
   evidenceMap,
   credits,
   draftsByPath,
@@ -74,38 +64,28 @@ export function ScreenDrafts({
     [activePath, draftsByPath],
   );
 
-  const [generating, setGenerating] = React.useState(false);
+  const [loadingIds, setLoadingIds] = React.useState<Record<Id, boolean>>({});
+  const [loadFailed, setLoadFailed] = React.useState<Record<Id, boolean>>({});
+  const requested = React.useRef<Set<Id>>(new Set());
   const [creditBlocked402, setCreditBlocked402] = React.useState<string | null>(null);
   const [actionError, setActionError] = React.useState<string | null>(null);
-  const [activeTab, setActiveTab] = React.useState<string>("intro_request");
-  const [savingId, setSavingId] = React.useState<Id | null>(null);
   const [approvingId, setApprovingId] = React.useState<Id | null>(null);
 
   // Local editable buffers keyed by draft.id
   const [edits, setEdits] = React.useState<Record<Id, { subject: string; body: string }>>({});
 
-  React.useEffect(() => {
-    if (currentDrafts.length > 0 && !currentDrafts.some((d) => d.kind === activeTab)) {
-      setActiveTab(currentDrafts[0].kind);
-    }
-  }, [currentDrafts, activeTab]);
-
-  React.useEffect(() => {
-    setEdits((prev) => {
-      const missing = currentDrafts.filter((d) => !prev[d.id]);
-      if (missing.length === 0) return prev;
-      const next = { ...prev };
-      for (const d of missing) next[d.id] = { subject: d.subject, body: d.body };
-      return next;
-    });
-  }, [currentDrafts]);
-
   const handleGenerateDrafts = async (pathId: Id) => {
-    setGenerating(true);
+    requested.current.add(pathId);
+    setLoadingIds((prev) => ({ ...prev, [pathId]: true }));
     setActionError(null);
     setCreditBlocked402(null);
+    setLoadFailed((prev) => ({ ...prev, [pathId]: false }));
     try {
-      const generated = await api.generateDrafts(pathId);
+      // HACK: give up after 15 s so the stage never sits on a skeleton; the retry button asks again.
+      const generated = await Promise.race([
+        api.generateDrafts(pathId),
+        new Promise<never>((_, reject) => setTimeout(() => reject(new Error("timeout")), 15000)),
+      ]);
       onDraftsLoaded(pathId, generated);
       setEdits((prev) => {
         const next = { ...prev };
@@ -114,38 +94,34 @@ export function ScreenDrafts({
         }
         return next;
       });
-      if (generated[0]) setActiveTab(generated[0].kind);
       await onRefreshCreditsAndPipeline();
     } catch (err) {
       await onRefreshCreditsAndPipeline();
+      setLoadFailed((prev) => ({ ...prev, [pathId]: true }));
       if (err instanceof ApiError && err.status === 402) {
         setCreditBlocked402(
           `Flexprice blocked this draft: ${err.detail}.`,
         );
-      } else {
-        setActionError(err instanceof Error ? err.message : "Failed to generate drafts");
       }
     } finally {
-      setGenerating(false);
+      setLoadingIds((prev) => ({ ...prev, [pathId]: false }));
     }
   };
 
-  const handleSaveEdit = async (draft: Draft) => {
-    const buffer = edits[draft.id];
-    if (!buffer) return;
-    setSavingId(draft.id);
-    setActionError(null);
-    try {
-      const updated = await api.editDraft(draft.id, buffer.subject, buffer.body);
-      onDraftUpdated(updated);
-      setEdits((prev) => ({
-        ...prev,
-        [updated.id]: { subject: updated.subject, body: updated.body },
-      }));
-    } catch (err) {
-      setActionError(err instanceof Error ? err.message : "Failed to save draft edits");
-    } finally {
-      setSavingId(null);
+  // Selecting a path loads its intro ask straight away (cached replay, no click needed).
+  const activePathId = activePath?.id ?? null;
+  const hasDrafts = currentDrafts.length > 0;
+  React.useEffect(() => {
+    if (!activePathId || hasDrafts || requested.current.has(activePathId)) return;
+    void handleGenerateDrafts(activePathId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activePathId, hasDrafts]);
+
+  // One Approve: the intro ask and the note to forward are approved together, each bound to its exact text.
+  const handleApproveAll = async (drafts: Draft[]) => {
+    for (const d of drafts) {
+      if (d.status === "approved") continue;
+      await handleApproveDecision(d, "approve");
     }
   };
 
@@ -241,225 +217,187 @@ export function ScreenDrafts({
           </details>
         </div>
 
-        {/* RIGHT: draft + HITL approve */}
+        {/* RIGHT: warm intro ask from Hannah + HITL approve */}
         <div className="xl:col-span-8 space-y-5">
-          {activePath && (
-            <>
-              <div className="flex flex-wrap items-center justify-between gap-3">
-                <div className="text-lg font-semibold">
-                  <button
-                    type="button"
-                    onClick={() => onInspectPerson(activePath.bridge_id)}
-                    className="underline decoration-white/30 underline-offset-4 hover:decoration-sky-400"
-                  >
-                    {peopleMap[activePath.bridge_id]?.name ?? activePath.bridge_id}
-                  </button>
-                  <span className="mx-2 text-muted-foreground">→</span>
-                  <span>{orgsMap[activePath.buyer_org_id]?.name ?? activePath.buyer_org_id}</span>
+          {activePath && (() => {
+            const bridgeName = peopleMap[activePath.bridge_id]?.name ?? "the bridge";
+            const bridgeFirst = bridgeName.split(/\s+/)[0];
+            const orgName = orgsMap[activePath.buyer_org_id]?.name ?? "the buyer";
+            const intro = currentDrafts.find((d) => d.kind === "intro_request") ?? currentDrafts[0] ?? null;
+            const note = currentDrafts.find((d) => d.kind === "forwardable_note" && d.id !== intro?.id) ?? null;
+            const shown = [intro, note].filter(Boolean) as Draft[];
+            const checks = intro?.checks ?? [];
+            const passed = checks.filter((c) => c.ok).length;
+            const review = shown.find((d) => (d.review?.steps?.length ?? 0) > 0)?.review ?? null;
+            const steps = review?.steps ?? [];
+            const allApproved = shown.length > 0 && shown.every((d) => d.status === "approved");
+            const anyStale = shown.some((d) => d.status === "stale");
+            const busy = shown.some((d) => approvingId === d.id);
+            const failed = loadFailed[activePath.id];
+            const loading = Boolean(loadingIds[activePath.id]) || (!failed && currentDrafts.length === 0);
+            const setBuf = (d: Draft, patch: Partial<{ subject: string; body: string }>) =>
+              setEdits((prev) => ({ ...prev, [d.id]: { ...(prev[d.id] ?? { subject: d.subject, body: d.body }), ...patch } }));
+            return (
+              <>
+                <div className="space-y-1">
+                  <div className="text-xs text-muted-foreground">
+                    From: <span className="text-foreground">Hannah Weber · HOPO Therapeutics</span>
+                    <span className="mx-2">→</span>
+                    To:{" "}
+                    <button
+                      type="button"
+                      onClick={() => onInspectPerson(activePath.bridge_id)}
+                      className="text-foreground underline decoration-white/30 underline-offset-4 hover:decoration-sky-400"
+                    >
+                      {bridgeName}
+                    </button>
+                  </div>
+                  <div className="text-lg font-semibold">
+                    Intro ask to {bridgeFirst}
+                    <span className="ml-2 text-sm font-normal text-muted-foreground">for {orgName}</span>
+                  </div>
                 </div>
-                <Button
-                  variant={currentDrafts.length > 0 ? "glass" : "default"}
-                  size={currentDrafts.length > 0 ? "sm" : "default"}
-                  flat
-                  disabled={generating}
-                  onClick={() => void handleGenerateDrafts(activePath.id)}
-                >
-                  <Sparkles className="size-4" />
-                  {generating ? "Generating..." : currentDrafts.length > 0 ? "Regenerate (1 credit)" : "Generate drafts (1 credit)"}
-                </Button>
-              </div>
 
-              {currentDrafts.length === 0 ? (
-                <div className="py-16 text-center text-sm text-muted-foreground">
-                  <MailCheck className="mx-auto mb-3 size-7 text-muted-foreground/60" />
-                  No drafts yet. Nothing is ever sent without your approval.
-                </div>
-              ) : (
-                <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-4">
-                  <TabsList flat className="bg-transparent">
-                    {currentDrafts.map((d) => (
-                      <TabsTrigger key={d.id} value={d.kind} className="text-xs">
-                        <span>{DRAFT_KIND_TITLES[d.kind] ?? d.kind}</span>
-                        <span
-                          className={`ml-2 text-[10px] ${
-                            d.status === "approved"
-                              ? "text-emerald-300"
-                              : d.status === "stale"
-                                ? "text-amber-300"
-                                : d.status === "rejected"
-                                  ? "text-red-300"
-                                  : "text-muted-foreground"
-                          }`}
-                        >
-                          {d.status}
-                        </span>
-                      </TabsTrigger>
-                    ))}
-                  </TabsList>
+                {failed ? (
+                  <div className="flex items-center gap-3 rounded-md border border-white/10 px-4 py-3 text-sm text-muted-foreground">
+                    <MailCheck className="size-4 shrink-0" />
+                    The intro ask didn&apos;t load this time.
+                    <Button size="sm" variant="glass" flat onClick={() => void handleGenerateDrafts(activePath.id)}>
+                      Try again
+                    </Button>
+                  </div>
+                ) : loading || !intro ? (
+                  <div className="space-y-3" aria-label="Loading intro ask">
+                    <div className="h-9 w-2/3 animate-pulse rounded-md bg-white/[0.06]" />
+                    <div className="h-32 animate-pulse rounded-md bg-white/[0.05]" />
+                    <div className="h-4 w-1/3 animate-pulse rounded bg-white/[0.05]" />
+                    <div className="h-20 animate-pulse rounded-md bg-white/[0.04]" />
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    {anyStale && (
+                      <div className="flex items-center gap-2 text-xs text-amber-200">
+                        <AlertTriangle className="size-4 shrink-0 text-amber-300" />
+                        Edited after approval. Approval no longer matches the text; approve again.
+                      </div>
+                    )}
+                    {allApproved && (
+                      <div className="flex items-center gap-2 text-xs text-emerald-200">
+                        <ShieldCheck className="size-4 shrink-0 text-emerald-300" />
+                        Approved by Hannah · bound to this exact text · nothing sent
+                        <button type="button" onClick={onGoToPipeline} className="ml-2 underline underline-offset-4">
+                          Pipeline →
+                        </button>
+                      </div>
+                    )}
 
-                  {currentDrafts.map((draft) => {
-                    const buffer = edits[draft.id] ?? { subject: draft.subject, body: draft.body };
-                    const isDirty = buffer.subject !== draft.subject || buffer.body !== draft.body;
-                    const review = draft.review;
-                    const steps = review?.steps ?? [];
+                    <Input
+                      value={(edits[intro.id] ?? intro).subject}
+                      onChange={(e) => setBuf(intro, { subject: e.target.value })}
+                      className="font-medium text-sm"
+                    />
+                    <Textarea
+                      value={(edits[intro.id] ?? intro).body}
+                      onChange={(e) => setBuf(intro, { body: e.target.value })}
+                      rows={8}
+                      className="text-sm leading-relaxed"
+                    />
 
-                    return (
-                      <TabsContent key={draft.id} value={draft.kind} className="space-y-4">
-                        {draft.status === "stale" && (
-                          <div className="flex items-center gap-2 text-xs text-amber-200">
-                            <AlertTriangle className="size-4 shrink-0 text-amber-300" />
-                            Edited after approval. Approval no longer matches the text; approve again.
-                          </div>
-                        )}
-                        {draft.status === "approved" && !isDirty && (
-                          <div className="flex items-center gap-2 text-xs text-emerald-200">
-                            <ShieldCheck className="size-4 shrink-0 text-emerald-300" />
-                            Approved by you · bound to this exact text · nothing sent
-                            <button type="button" onClick={onGoToPipeline} className="ml-2 underline underline-offset-4">
-                              Pipeline →
-                            </button>
-                          </div>
-                        )}
-
+                    {note && (
+                      <div className="space-y-1.5">
                         <div className="text-xs text-muted-foreground">
-                          To <span className="text-foreground">{peopleMap[draft.to_person_id]?.name ?? draft.to_person_id}</span>
+                          Forwardable note · <span className="text-foreground">Note Hannah asks them to forward</span>
                         </div>
-
-                        <Input
-                          value={buffer.subject}
-                          onChange={(e) =>
-                            setEdits((prev) => ({ ...prev, [draft.id]: { ...buffer, subject: e.target.value } }))
-                          }
-                          className="font-medium text-sm"
-                        />
                         <Textarea
-                          value={buffer.body}
-                          onChange={(e) =>
-                            setEdits((prev) => ({ ...prev, [draft.id]: { ...buffer, body: e.target.value } }))
-                          }
-                          rows={9}
-                          className="text-sm leading-relaxed"
+                          value={(edits[note.id] ?? note).body}
+                          onChange={(e) => setBuf(note, { body: e.target.value })}
+                          rows={6}
+                          className="bg-white/[0.02] text-sm leading-relaxed"
                         />
+                      </div>
+                    )}
 
-                        <div className={`flex flex-wrap items-center gap-1.5 ${draft.evidence_ids.length ? "" : "hidden"}`}>
-                          <span className="mr-1 text-xs text-muted-foreground">Sources</span>
-                          {draft.evidence_ids.map((eid) => (
-                            <EvidenceChip
-                              key={eid}
-                              evidenceId={eid}
-                              evidenceMap={evidenceMap}
-                              onInspect={onInspectEvidence}
-                            />
-                          ))}
-                        </div>
+                    {shown.some((d) => d.evidence_ids.length) && (
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <span className="mr-1 text-xs text-muted-foreground">Sources</span>
+                        {[...new Set(shown.flatMap((d) => d.evidence_ids))].map((eid) => (
+                          <EvidenceChip key={eid} evidenceId={eid} evidenceMap={evidenceMap} onInspect={onInspectEvidence} />
+                        ))}
+                      </div>
+                    )}
 
-                        {(draft.checks?.length ?? 0) > 0 && (
-                          <details className="text-xs text-muted-foreground">
-                            <summary className="cursor-pointer list-none">
-                              <span className={draft.checks!.every((c) => c.ok) ? "text-emerald-300" : "text-amber-300"}>
-                                {draft.checks!.every((c) => c.ok) ? "✓" : "!"}
-                              </span>{" "}
-                              {draft.checks!.filter((c) => c.ok).length}/{draft.checks!.length} checks pass
+                    {/* Band review strip (only when the API returns draft.review) */}
+                    {steps.length > 0 && (
+                      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
+                        <span>Reviewed in Band:</span>
+                        {steps.map((st, i) => {
+                          const label = st.agent ?? `step ${i + 1}`;
+                          const extra = label === "Reviewer" && st.verdict ? ` ${st.verdict}` : "";
+                          return (
+                            <React.Fragment key={`${label}-${i}`}>
+                              {i > 0 && <span>→</span>}
+                              <span className="text-foreground" title={st.verdict}>
+                                <span className="mr-0.5 text-emerald-300">✓</span>
+                                {label}
+                                {extra}
+                              </span>
+                            </React.Fragment>
+                          );
+                        })}
+                        <span>→</span>
+                        <span className="text-amber-200">
+                          {allApproved
+                            ? "approved by Hannah"
+                            : review?.status === "in_review" && steps.length < 4
+                              ? "reviewing…"
+                              : "awaiting Hannah"}
+                        </span>
+                        {review?.room_url && (
+                          <a href={review.room_url} target="_blank" rel="noreferrer" className="ml-2 underline underline-offset-4 hover:text-foreground">
+                            Open Band room
+                          </a>
+                        )}
+                      </div>
+                    )}
+
+                    <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
+                      <div className="flex items-center gap-3">
+                        {checks.length > 0 && (
+                          <details className="text-xs">
+                            <summary
+                              className={`cursor-pointer list-none rounded-full border px-2.5 py-0.5 ${
+                                passed === checks.length ? "border-emerald-400/40 text-emerald-300" : "border-amber-400/40 text-amber-300"
+                              }`}
+                            >
+                              {passed === checks.length ? "✓" : "!"} {passed}/{checks.length} checks pass
                             </summary>
-                            <div className="mt-1.5 grid grid-cols-1 gap-x-6 gap-y-0.5 sm:grid-cols-2">
-                              {draft.checks!.map((c) => (
-                                <div key={c.name} className={c.ok ? "" : "text-amber-200"} title={c.detail ?? undefined}>
+                            <div className="mt-1.5 grid grid-cols-1 gap-x-6 gap-y-0.5 text-muted-foreground sm:grid-cols-2">
+                              {checks.map((c, i) => (
+                                <div key={`${c.name}-${i}`} className={c.ok ? "" : "text-amber-200"} title={c.detail ?? undefined}>
                                   {c.ok ? "✓" : "✗"} {c.name}
                                 </div>
                               ))}
                             </div>
                           </details>
                         )}
-
-                        {/* Band review strip (only when the API returns draft.review) */}
-                        {steps.length > 0 && (
-                          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground">
-                            <span>Reviewed in Band:</span>
-                            {steps.map((st, i) => {
-                              const label = st.agent ?? `step ${i + 1}`;
-                              const extra = label === "Reviewer" && st.verdict ? ` ${st.verdict}` : "";
-                              return (
-                                <React.Fragment key={`${label}-${i}`}>
-                                  {i > 0 && <span>→</span>}
-                                  <span className="text-foreground" title={st.verdict}>
-                                    <span className="mr-0.5 text-emerald-300">✓</span>
-                                    {label}
-                                    {extra}
-                                  </span>
-                                </React.Fragment>
-                              );
-                            })}
-                            <span>→</span>
-                            <span className="text-amber-200">
-                              {draft.status === "approved"
-                                ? "approved by Jakob"
-                                : review?.status === "in_review" && steps.length < 4
-                                  ? "reviewing…"
-                                  : "awaiting Jakob"}
-                            </span>
-                            {review?.room_url && (
-                              <a
-                                href={review.room_url}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="ml-2 underline underline-offset-4 hover:text-foreground"
-                              >
-                                Open Band room
-                              </a>
-                            )}
-                          </div>
-                        )}
-
-                        <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
-                          <details className="text-[11px] text-muted-foreground">
-                            <summary className="cursor-pointer list-none">
-                              <Hash className="mr-1 inline size-3" />
-                              hash {draft.content_hash.slice(0, 10)}…
-                            </summary>
-                            <code className="break-all">{draft.content_hash}</code>
-                          </details>
-                          <div className="flex items-center gap-2">
-                            {isDirty && (
-                              <Button
-                                size="sm"
-                                variant="ghost"
-                                flat
-                                disabled={savingId === draft.id}
-                                onClick={() => void handleSaveEdit(draft)}
-                              >
-                                <Save className="size-3.5" />
-                                {savingId === draft.id ? "Saving..." : "Save edits"}
-                              </Button>
-                            )}
-                            <Button
-                              size="sm"
-                              variant="ghost"
-                              flat
-                              disabled={approvingId === draft.id}
-                              onClick={() => void handleApproveDecision(draft, "reject")}
-                              className="text-muted-foreground"
-                            >
-                              <XCircle className="size-4" />
-                              Reject
-                            </Button>
-                            <Button
-                              variant="default"
-                              flat
-                              disabled={approvingId === draft.id}
-                              onClick={() => void handleApproveDecision(draft, "approve")}
-                            >
-                              <CheckCircle2 className="size-4" />
-                              {draft.status === "stale" ? "Approve again" : "Approve"}
-                            </Button>
-                          </div>
-                        </div>
-                      </TabsContent>
-                    );
-                  })}
-                </Tabs>
-              )}
-            </>
-          )}
+                        <details className="text-[11px] text-muted-foreground">
+                          <summary className="cursor-pointer list-none">
+                            <Hash className="mr-1 inline size-3" />
+                            hash {intro.content_hash.slice(0, 10)}…
+                          </summary>
+                          <code className="break-all">{intro.content_hash}</code>
+                        </details>
+                      </div>
+                      <Button variant="default" flat disabled={busy || allApproved} onClick={() => void handleApproveAll(shown)}>
+                        <CheckCircle2 className="size-4" />
+                        {allApproved ? "Approved" : anyStale ? "Approve again" : "Approve"}
+                      </Button>
+                    </div>
+                  </div>
+                )}
+              </>
+            );
+          })()}
         </div>
       </div>
     </div>
