@@ -20,7 +20,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { api, GOLDEN_FOUNDER_ID } from "@/lib/api";
+import { api, GOLDEN_FOUNDER_ID, HOPO_DISPLAY, HOPO_FOUNDER_ID } from "@/lib/api";
 import type { Evidence, Founder, Icp, Id, IntakeForm, InterviewResponse } from "@/lib/types";
 import { EvidenceChip } from "./evidence-chip";
 
@@ -72,17 +72,25 @@ export function ScreenIntake({
   onEvidenceLoaded,
   onGoToBuyers,
 }: ScreenIntakeProps) {
-  const [quickQuery, setQuickQuery] = React.useState("Nicholas C. Harris");
-  const [name, setName] = React.useState("Nicholas C. Harris");
+  // HACK: prefill follows the booted demo case (HOPO for ?session=demo-hopo, else Lightmatter).
+  const isHopo = founder?.id === HOPO_FOUNDER_ID;
+  const [quickQuery, setQuickQuery] = React.useState(isHopo ? HOPO_DISPLAY.scientist : "Nicholas C. Harris");
+  const [name, setName] = React.useState(isHopo ? HOPO_DISPLAY.name : "Nicholas C. Harris");
   const [expertise, setExpertise] = React.useState(
-    "Coherent nanophotonic circuits, silicon photonics, and optical interconnects for AI compute clusters",
+    isHopo
+      ? "Oral hydroxypyridinone chelators (3,4,3-LI(1,2-HOPO)) for actinide decorporation, 89Zr PET imaging and gadolinium clearance"
+      : "Coherent nanophotonic circuits, silicon photonics, and optical interconnects for AI compute clusters",
   );
   const [paperLinksRaw, setPaperLinksRaw] = React.useState(
-    "https://doi.org/10.1038/nphoton.2017.93",
+    isHopo
+      ? "https://doi.org/10.1021/jm500389b\nhttps://doi.org/10.1039/c7nj04559j"
+      : "https://doi.org/10.1038/nphoton.2017.93",
   );
-  const [startupUrl, setStartupUrl] = React.useState("https://lightmatter.co");
+  const [startupUrl, setStartupUrl] = React.useState(isHopo ? "https://hopotx.com" : "https://lightmatter.co");
   const [customerPersona, setCustomerPersona] = React.useState(
-    "Hyperscale AI infrastructure, optical interconnect architecture, and silicon photonics R&D leads",
+    isHopo
+      ? "Radiological countermeasure programs, radiopharmaceutical BD leads, and MRI contrast-agent R&D heads"
+      : "Hyperscale AI infrastructure, optical interconnect architecture, and silicon photonics R&D leads",
   );
   const [interviewTranscript, setInterviewTranscript] = React.useState("");
 
@@ -95,7 +103,7 @@ export function ScreenIntake({
   const [voiceReadback, setVoiceReadback] = React.useState(true);
   const recognitionRef = React.useRef<SpeechRecognitionLike | null>(null);
 
-  const isGoldenReplay = founder?.id === GOLDEN_FOUNDER_ID;
+  const isGoldenReplay = founder?.id === GOLDEN_FOUNDER_ID || isHopo;
 
   const speakQuestion = React.useCallback(
     (text: string | null | undefined) => {
@@ -535,17 +543,26 @@ export function ScreenIntake({
 
                 <div className="pt-1">
                   <CardTitle className="text-2xl font-bold tracking-tight">
-                    {founder.name}{" "}
-                    <span className="font-normal text-muted-foreground">· {founder.company}</span>
+                    {isHopo ? HOPO_DISPLAY.name : founder.name}{" "}
+                    <span className="font-normal text-muted-foreground">
+                      · {isHopo ? HOPO_DISPLAY.company : founder.company}
+                    </span>
                   </CardTitle>
+                  {isHopo && (
+                    <div className="mt-1 text-xs text-muted-foreground">
+                      science: {HOPO_DISPLAY.science}
+                    </div>
+                  )}
                   <CardDescription className="mt-1.5 text-sm leading-relaxed text-foreground/90">
-                    {founder.summary}
+                    {isHopo
+                      ? "HOPO Therapeutics develops investigational oral chelating agents for heavy-metal exposure. The papers study the 3,4,3-LI(1,2-HOPO) chelator in lab and animal work on actinide removal, 89Zr imaging and gadolinium clearance."
+                      : founder.summary}
                   </CardDescription>
                 </div>
               </CardHeader>
 
               <CardContent className="px-6 space-y-4">
-                <div className="text-xs text-muted-foreground">{founder.topics.join(" · ")}</div>
+                {!isHopo && <div className="text-xs text-muted-foreground">{founder.topics.join(" · ")}</div>}
 
                 <div className="space-y-1.5">
                   <div className="flex flex-wrap gap-2">
@@ -578,9 +595,11 @@ export function ScreenIntake({
                     <p className="text-xs leading-relaxed text-foreground/90">
                       Co-authored research in{" "}
                       <span className="font-semibold text-white">
-                        {founder.topics.join(" & ") || "deep-tech systems"}
+                        {isHopo ? "heavy-metal chelation" : founder.topics.join(" & ") || "deep-tech systems"}
                       </span>{" "}
-                      — programmable Mach-Zehnder interferometer meshes and coherent nanophotonic circuits demonstrated at MIT.
+                      {isHopo
+                        ? "— the oral chelator 3,4,3-LI(1,2-HOPO), tested in lab and animal work on actinide removal, 89Zr PET imaging and gadolinium clearance at Berkeley Lab."
+                        : "— programmable Mach-Zehnder interferometer meshes and coherent nanophotonic circuits demonstrated at MIT."}
                     </p>
                   </div>
 

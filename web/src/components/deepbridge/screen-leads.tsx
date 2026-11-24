@@ -19,7 +19,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { api } from "@/lib/api";
+import { api, HOPO_DISPLAY, HOPO_FOUNDER_ID } from "@/lib/api";
 import { useGraphStream, useStreamSessionParam } from "@/lib/useGraphStream";
 import type {
   BuyerCategory,
@@ -39,6 +39,18 @@ import { EvidenceChip } from "./evidence-chip";
 type LeadsViewMode = "graph" | "table";
 
 const CAT_COLORS = ["#38bdf8", "#a78bfa", "#34d399", "#fbbf24", "#f472b6"];
+
+// Short display names for graph categories (full name stays in the <title> tooltip).
+const CATEGORY_SHORT_NAMES: [RegExp, string][] = [
+  [/^radiation/i, "Radiation"],
+  [/^radiopharmaceutical|89zr pet/i, "PET imaging"],
+  [/^gadolinium/i, "Gadolinium"],
+  [/^lead\b/i, "Lead"],
+];
+function shortCategoryName(name: string): string {
+  for (const [re, short] of CATEGORY_SHORT_NAMES) if (re.test(name)) return short;
+  return name.split(/[:(]/)[0].trim();
+}
 
 function resolveCatColor(tokenOrHex: string | undefined, idx: number): string {
   if (!tokenOrHex) return CAT_COLORS[idx % CAT_COLORS.length];
@@ -253,7 +265,7 @@ export function ScreenLeads({
       }
     }
 
-    const width = 1140;
+    const width = 1220; // room for full org names right of the org column (no truncation)
     // Tall enough that every buyer org gets its own row (38 orgs used to stack into one block).
     const height = Math.max(520, Math.max(buyerOrgIds.length, bridgeIds.length) * 17 + 90);
     const coords: Record<
@@ -261,7 +273,9 @@ export function ScreenLeads({
       { x: number; y: number; col: "founder" | "cat" | "bridge" | "hop2" | "org" }
     > = {};
 
-    coords[founderNodeId] = { x: 105, y: height / 2, col: "founder" };
+    // HOPO: the company founder (Hannah) is the centre; the scientist whose co-authorships give the warm paths sits one hop right.
+    const hopoCentre = founderNodeId === HOPO_FOUNDER_ID;
+    coords[founderNodeId] = { x: hopoCentre ? 205 : 105, y: height / 2, col: "founder" };
 
     const distributeY = (count: number, idx: number, padTop = 52, padBottom = 52) => {
       if (count <= 1) return height / 2;
@@ -313,6 +327,7 @@ export function ScreenLeads({
 
     return {
       founderNodeId,
+      hopoCentre,
       labelledOrgIds,
       bridgeIds,
       secondHopIds,
@@ -409,7 +424,7 @@ export function ScreenLeads({
                     }`}
                   >
                     <span className="size-2 rounded-full" style={{ backgroundColor: color }} />
-                    <span>{cat.name.split(/[:(]/)[0].slice(0, 32)}</span>
+                    <span>{shortCategoryName(cat.name)}</span>
                   </button>
                 );
               })}
@@ -488,10 +503,54 @@ export function ScreenLeads({
                 );
               })}
 
+              {/* HOPO centre: Hannah Weber · HOPO Therapeutics, with "science from" edge to the scientist */}
+              {graphLayout.hopoCentre &&
+                (() => {
+                  const fPos = graphLayout.coords[graphLayout.founderNodeId];
+                  if (!fPos) return null;
+                  const cx = 72;
+                  return (
+                    <g>
+                      <line x1={cx} y1={fPos.y} x2={fPos.x} y2={fPos.y} stroke="#38bdf8" strokeWidth={1.5} strokeOpacity={0.7} />
+                      <text x={(cx + fPos.x) / 2 + 4} y={fPos.y - 7} textAnchor="middle" className="fill-slate-400 font-sans text-[10px]" stroke="#020510" strokeWidth={3} paintOrder="stroke">
+                        science from
+                      </text>
+                      <g transform={`translate(${cx}, ${fPos.y})`}>
+                        <circle r={40} fill="url(#founderHalo)" />
+                        <circle r={17} fill="#0b2536" stroke="#38bdf8" strokeWidth={2.5} />
+                        <circle r={5.5} fill="#ffffff" />
+                        <text y={36} textAnchor="middle" className="fill-white font-sans text-[15px] font-semibold" stroke="#020510" strokeWidth={4} paintOrder="stroke">
+                          {HOPO_DISPLAY.name}
+                        </text>
+                        <text y={53} textAnchor="middle" className="fill-sky-200 font-sans text-[12px]" stroke="#020510" strokeWidth={4} paintOrder="stroke">
+                          {HOPO_DISPLAY.company}
+                        </text>
+                      </g>
+                    </g>
+                  );
+                })()}
+
               {/* Founder */}
               {(() => {
                 const fPos = graphLayout.coords[graphLayout.founderNodeId];
                 if (!fPos) return null;
+                if (graphLayout.hopoCentre)
+                  return (
+                    <g
+                      transform={`translate(${fPos.x}, ${fPos.y})`}
+                      onClick={() => onInspectPerson(graphLayout.founderNodeId)}
+                      className="cursor-pointer"
+                    >
+                      <circle r={8} fill="#0b2536" stroke="#38bdf8" strokeWidth={1.5} />
+                      <circle r={3} fill="#ffffff" />
+                      <text y={24} textAnchor="middle" className="fill-slate-200 font-sans text-[10px]" stroke="#020510" strokeWidth={3} paintOrder="stroke">
+                        {HOPO_DISPLAY.scientist} · Berkeley Lab
+                      </text>
+                      <text y={37} textAnchor="middle" className="fill-slate-400 font-sans text-[10px]" stroke="#020510" strokeWidth={3} paintOrder="stroke">
+                        (HOPO&apos;s science)
+                      </text>
+                    </g>
+                  );
                 return (
                   <g
                     transform={`translate(${fPos.x}, ${fPos.y})`}
@@ -524,7 +583,7 @@ export function ScreenLeads({
                     <title>{cat.name}</title>
                     <circle r={isCatSelected ? 7 : 5.5} fill={color} />
                     <text y={-12} textAnchor="middle" className="fill-slate-200 font-sans text-[11px]" stroke="#020510" strokeWidth={4} paintOrder="stroke">
-                      {cat.name.split(/[:(]/)[0].slice(0, 24)}
+                      {shortCategoryName(cat.name)}
                     </text>
                   </g>
                 );
@@ -594,7 +653,7 @@ export function ScreenLeads({
                         y={4}
                         className={`font-sans text-[12px] ${isLit ? "fill-white font-semibold" : "fill-slate-300"}`} stroke="#020510" strokeWidth={4} paintOrder="stroke"
                       >
-                        {org.name.slice(0, 34)}
+                        {org.name}
                       </text>
                     )}
                   </g>
@@ -611,7 +670,11 @@ export function ScreenLeads({
                   <span className="font-mono text-xs font-normal text-muted-foreground">
                     {activePath.score}
                   </span>
-                  <span>{founder?.name ?? "Nicholas C. Harris"}</span>
+                  <span>
+                    {founder?.id === HOPO_FOUNDER_ID
+                      ? `${HOPO_DISPLAY.name} · ${HOPO_DISPLAY.company} → ${HOPO_DISPLAY.scientist} (science)`
+                      : founder?.name ?? "Nicholas C. Harris"}
+                  </span>
                   <span className="text-muted-foreground">→</span>
                   <button
                     type="button"

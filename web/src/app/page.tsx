@@ -21,7 +21,16 @@ import { ScreenIntake } from "@/components/deepbridge/screen-intake";
 import { ScreenLeads } from "@/components/deepbridge/screen-leads";
 import { ScreenPipeline } from "@/components/deepbridge/screen-pipeline";
 import { Button } from "@/components/ui/button";
-import { API_BASE, ApiError, api, GOLDEN_FOUNDER_ID } from "@/lib/api";
+import {
+  API_BASE,
+  ApiError,
+  api,
+  GOLDEN_FOUNDER_ID,
+  HOPO_DISPLAY,
+  HOPO_FOUNDER_ID,
+  LIGHTMATTER_DISPLAY,
+  resolveDemoCase,
+} from "@/lib/api";
 import type {
   Card,
   Credits,
@@ -229,7 +238,12 @@ export default function DeepBridgeWorkspace() {
   }, []);
 
   const loadWorkspaceForFounder = React.useCallback(
-    async (resolvedFounder: Founder) => {
+    async (rawFounder: Founder) => {
+      // HACK: OpenAlex has no affiliation for the HOPO scientist; show her lab.
+      const resolvedFounder =
+        rawFounder.id === HOPO_FOUNDER_ID && !rawFounder.company
+          ? { ...rawFounder, company: "Berkeley Lab" }
+          : rawFounder;
       setFounder(resolvedFounder);
       setReplayNotice(null);
 
@@ -237,7 +251,9 @@ export default function DeepBridgeWorkspace() {
       setIcp(icpRes);
 
       const buyersParam =
-        resolvedFounder.id === GOLDEN_FOUNDER_ID ? resolvedFounder.id : undefined;
+        resolvedFounder.id === GOLDEN_FOUNDER_ID || resolvedFounder.id === HOPO_FOUNDER_ID
+          ? resolvedFounder.id
+          : undefined;
 
       const [buyersRes, graphRes, pathsRes, kgRes, pipelineRes, metricsRes, creditsRes] =
         await Promise.all([
@@ -250,7 +266,7 @@ export default function DeepBridgeWorkspace() {
           api.getCredits(),
         ]);
 
-      if (resolvedFounder.id !== GOLDEN_FOUNDER_ID) {
+      if (resolvedFounder.id !== GOLDEN_FOUNDER_ID && resolvedFounder.id !== HOPO_FOUNDER_ID) {
         setReplayNotice(
           `Live OpenAlex Intake, ICP, and computed Warm-Path Graph loaded for ${resolvedFounder.name}. Buyer why-now signals & pipeline cards show cached Lightmatter fixtures.`,
         );
@@ -288,7 +304,10 @@ export default function DeepBridgeWorkspace() {
     setBooting(true);
     setApiOfflineError(null);
     try {
-      const f = await api.intake({ query: "Nicholas C. Harris" });
+      const demoCase = await resolveDemoCase();
+      const f = await api.intake({
+        query: demoCase === "hopo" ? HOPO_DISPLAY.intakeQuery : LIGHTMATTER_DISPLAY.intakeQuery,
+      });
       await loadWorkspaceForFounder(f);
     } catch (err) {
       setApiOfflineError(
@@ -422,10 +441,18 @@ export default function DeepBridgeWorkspace() {
         <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 bg-[#090a0d] px-6 py-3">
           <div className="flex flex-wrap items-baseline gap-3">
             <span className="text-sm font-medium">
-              {founder ? `${founder.name} · ${founder.company}` : "Loading..."}
+              {founder
+                ? founder.id === HOPO_FOUNDER_ID
+                  ? `${HOPO_DISPLAY.name} · ${HOPO_DISPLAY.company}`
+                  : `${founder.name} · ${founder.company}`
+                : "Loading..."}
             </span>
             <span className="text-[11px] text-muted-foreground">
-              {founder?.id === GOLDEN_FOUNDER_ID ? "cached research replay" : "live OpenAlex graph"}
+              {founder?.id === HOPO_FOUNDER_ID
+                ? `science: ${HOPO_DISPLAY.science} · cached research replay`
+                : founder?.id === GOLDEN_FOUNDER_ID
+                  ? "cached research replay"
+                  : "live OpenAlex graph"}
             </span>
           </div>
 
@@ -502,7 +529,7 @@ export default function DeepBridgeWorkspace() {
             </div>
           ) : booting ? (
             <div className="flex h-64 items-center justify-center font-mono text-xs text-muted-foreground">
-              Loading cached Lightmatter research graph & provenance store...
+              Loading cached research graph & provenance store...
             </div>
           ) : (
             <>

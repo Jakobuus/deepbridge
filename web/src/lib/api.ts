@@ -23,6 +23,38 @@ import type {
 export const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 export const GOLDEN_FOUNDER_ID = "person:openalex:A5102978866";
 
+// HOPO demo (?session=demo-hopo): the graph founder is the scientist; the header shows the company founder.
+export const HOPO_FOUNDER_ID = "person:openalex:A5043992375";
+export const HOPO_DISPLAY = {
+  name: "Hannah Weber",
+  company: "HOPO Therapeutics",
+  science: "Rebecca J. Abergel, Berkeley Lab",
+  intakeQuery: "A5043992375",
+  scientist: "Rebecca J. Abergel",
+};
+export const LIGHTMATTER_DISPLAY = {
+  name: "Nicholas C. Harris",
+  company: "Lightmatter",
+  intakeQuery: "Nicholas C. Harris",
+};
+
+/** Which demo case to boot: URL ?session wins, else the API's active intake founder (GET /health). */
+export async function resolveDemoCase(): Promise<"hopo" | "lightmatter"> {
+  if (typeof window !== "undefined") {
+    const session = new URLSearchParams(window.location.search).get("session") ?? "";
+    if (session.includes("hopo")) return "hopo";
+    if (session.includes("lightmatter")) return "lightmatter";
+  }
+  try {
+    const res = await fetch(`${API_BASE}/health`, { cache: "no-store" });
+    const data = await res.json();
+    if (String(data?.case ?? "").includes("HOPO")) return "hopo";
+  } catch {
+    // fall through
+  }
+  return "lightmatter";
+}
+
 export class ApiError extends Error {
   status: number;
   detail: string;
