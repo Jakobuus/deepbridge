@@ -19,9 +19,9 @@ _SUBS: dict[str, list[queue.Queue]] = {}
 def publish(session_id: str, phase: str, kind: str, layer: str, **payload) -> dict:
     with _LOCK:
         log = _LOG.setdefault(session_id, [])
-        event = {'seq': len(log) + 1, 'at': datetime.now(UTC).isoformat(), 'session_id': session_id,
-                 'phase': phase, 'kind': kind, 'layer': layer,
-                 **{k: v for k, v in payload.items() if v is not None}}
+        event = {**{k: v for k, v in payload.items() if v is not None},
+                 'seq': len(log) + 1, 'at': datetime.now(UTC).isoformat(), 'session_id': session_id,
+                 'phase': phase, 'kind': kind, 'layer': layer}
         log.append(event)
         listeners = list(_SUBS.get(session_id, []))
     for q in listeners:
