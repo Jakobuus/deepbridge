@@ -4,8 +4,8 @@ from fastapi import APIRouter, Depends, Request
 from ..store import store
 from .common import check_founder
 from ..models import Credits, DraftRequest
-from ..lanes.jakob.credits import credits as read_credits, gate
-from . import contacts, outreach, prospect
+from ..lanes.jakob.credits import credits as read_credits, gate, meter_graph_query
+from . import buyers, contacts, graph, outreach, paths, prospect
 from ..lanes.jakob import prospect as prospect_lane, drafts as drafts_lane
 
 router = APIRouter(dependencies=[Depends(check_founder)])
@@ -47,8 +47,13 @@ async def meter_action(request: Request, _=Depends(check_founder)):
             await asyncio.to_thread(gate, 'contacts:' + person_id)
 
 
-def _metered(original):
-    wrapped = APIRouter(dependencies=[Depends(meter_action)])
+def meter_graph(request: Request):
+    if request.method == 'GET' and request.url.path in ('/graph', '/paths', '/buyers'):
+        meter_graph_query('graph:' + request.url.path)  # non-blocking, debounced, never gates
+
+
+def _metered(original, dep=meter_action):
+    wrapped = APIRouter(dependencies=[Depends(dep)])
     wrapped.include_router(original)
     return wrapped
 
@@ -58,3 +63,6 @@ def _metered(original):
 outreach.router = _metered(outreach.router)
 contacts.router = _metered(contacts.router)
 prospect.router = _metered(prospect.router)
+graph.router = _metered(graph.router, meter_graph)
+paths.router = _metered(paths.router, meter_graph)
+buyers.router = _metered(buyers.router, meter_graph)

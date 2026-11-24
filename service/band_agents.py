@@ -110,7 +110,7 @@ class Band:
                 return True
         return False
 
-    def human_reply(self, since_id):
+    def human_reply(self, since_id, after=None):
         """Newest human message after `since_id` (as seen by Security and Planner), or None."""
         for role in ('SECURITY', 'PLANNER', 'REVIEWER', 'BUILDER'):
             st, js = http('GET', self.url('messages?status=all&sort_order=desc&limit=20'), self.hdr(role))
@@ -119,6 +119,8 @@ class Band:
             for m in js['data']:                      # newest first
                 if m['id'] == since_id:
                     break
+                if after and (m.get('inserted_at') or '') < after:
+                    break  # older than our request (the request itself may be invisible to this agent)
                 if m.get('sender_type') == 'User' and m.get('message_type', 'text') == 'text' \
                         and (not self.human_id or m['sender_id'] == self.human_id):
                     return m

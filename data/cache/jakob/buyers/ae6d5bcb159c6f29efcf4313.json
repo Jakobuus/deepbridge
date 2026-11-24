@@ -3,7 +3,8 @@
   "cached": true,
   "founder_id": "person:openalex:A5043992375",
   "fingerprint": "b6232327586f77cbefd0066956643ed5e2b1171fb846cab4a7a8a104237be57d",
-  "notes": "Heuristic buyer hypotheses; citation counts are lower bounds. Publication affiliations do not establish current employment."
+  "notes": "Heuristic buyer hypotheses; citation counts are lower bounds. Publication affiliations do not establish current employment.",
+  "pinned": true
  },
  "orgs": [
   {

@@ -6,6 +6,8 @@ The founder checks the evidence, reviews a draft, and approves its exact text. N
 
 Built at HackwithBay 4.0, 24 Nov 2026. The judge case follows **Hannah Weber / HOPO Therapeutics** and the science of Rebecca J. Abergel. The local smoke flow replays cached **Lightmatter / Nicholas C. Harris** data. See the [system design](docs/system-design.md).
 
+**For judges:** the [submission write-up](SUBMISSION.md) maps each judging criterion to the demo, files and endpoints.
+
 ## Run it
 
 Requires Python 3.12, uv, lsof, curl, and Node.js with npm. [Install uv](https://docs.astral.sh/uv/).

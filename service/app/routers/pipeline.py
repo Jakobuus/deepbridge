@@ -3,6 +3,7 @@ from datetime import datetime
 from statistics import median
 from ..activity import log
 from ..store import store
+from ..lanes.jakob.credits import credits as read_credits
 from .common import check_founder
 from ..models import AdvanceRequest, Card, Metrics, STAGES
 from fastapi import HTTPException
@@ -58,6 +59,12 @@ def _metrics(cards):
 class ActivityMetrics(Metrics):
     # Completed visits only; null means no observed exit from that stage.
     median_hours_per_stage: dict[str, float | None]
+    # Flexprice meters (computed, not invented): cost per lead = credits spent / leads (pipeline cards)
+    meters: dict[str, int] = {}
+    credits_spent: float = 0
+    leads: int = 0
+    cost_per_lead: float | None = None
+    meter_source: str = 'local'
 
 
 @router.get('/metrics', response_model=ActivityMetrics)
@@ -73,6 +80,9 @@ def metrics(founder_id: str | None = None):
                 if elapsed >= 0:
                     durations[start.stage].append(elapsed / 3600)
         base = _metrics(cards)
+        used = read_credits()
+        spent = used.spent or 0
         return ActivityMetrics(**base, median_hours_per_stage={
             stage: median(values) if values else None for stage, values in durations.items()
-        })
+        }, meters=used.meters, credits_spent=spent, leads=len(cards),
+            cost_per_lead=round(spent / len(cards), 3) if cards else None, meter_source=used.source)

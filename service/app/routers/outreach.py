@@ -4,6 +4,7 @@ from ..store import store
 from .common import check_founder
 from ..models import ApprovalRequest, Draft, DraftEdit, DraftRequest, STAGES
 from ..lanes.jakob.drafts import computed_path, write_drafts
+from .. import band_review
 
 router = APIRouter()
 
@@ -45,6 +46,7 @@ def drafts(body: DraftRequest, founder_id: str | None = None):
         card = next((c for c in store.cards.values() if c.path_id == path.id), None)
         if card and STAGES.index(card.stage) < STAGES.index('draft'):
             store.advance_card(card.id, 'draft', 'Draft agent', 'agent')
+        band_review.maybe_start(result, founder_id)  # background, non-blocking, silent if Band is off
         return result
 
 @router.put('/drafts/{id}', response_model=Draft, dependencies=[Depends(check_founder)])
