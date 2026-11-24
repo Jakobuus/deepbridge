@@ -1,28 +1,93 @@
-/* DeepBridge Neo-Brutalist + Deep-Space Overrides (on top of Sistine Lucite Onyx) */
+/* ==========================================================================
+   DeepBridge Strict Flat Neo-Brutalist Enforcement (Onyx + Lucite + Flat)
+   Mirrors canonical `docs/design/tokens.css`.
+   Zero drop shadows, zero frosted backdrop-blur across all UI chrome.
+   ========================================================================== */
 
 :root,
-.dark {
+.dark,
+[data-glass="lucite"][data-glass-tint="onyx"] {
+  --db-paper: #090a0d;
+  --db-paper-rail: #060709;
+  --db-surface-1: #0f1117;
+  --db-surface-2: #151922;
+  --db-surface-3: #1d2230;
+
+  --db-ink: #f3f5f9;
+  --db-ink-strong: #ffffff;
+  --db-ink-muted: #9aa3b5;
+  --db-ink-subtle: #687387;
+
+  --db-accent: #38bdf8;
+  --db-accent-ink: #04131d;
+  --db-accent-bg: #0b2536;
+
+  --db-verified: #34d399;
+  --db-verified-bg: #07291e;
+  --db-verified-border: #10b981;
+
+  --db-unverified: #fbbf24;
+  --db-unverified-bg: #2b1d05;
+  --db-unverified-border: #f59e0b;
+
+  --db-stale: #fb923c;
+  --db-stale-bg: #2e1505;
+  --db-stale-border: #f97316;
+
+  --db-blocked: #f87171;
+  --db-blocked-bg: #2d0a0e;
+  --db-blocked-border: #ef4444;
+
+  --db-agent: #60a5fa;
+  --db-agent-bg: #0b1d3a;
+
+  --db-human: #34d399;
+  --db-human-bg: #07291e;
+
+  --cat-1: #38bdf8;
+  --cat-2: #a78bfa;
+  --cat-3: #34d399;
+  --cat-4: #fbbf24;
+  --cat-5: #f472b6;
+
+  --db-cosmos-bg: #020510;
+  --db-cosmos-core: #071430;
+  --db-cosmos-grid: rgba(56, 189, 248, 0.06);
+
   --radius: 0.25rem;
+  --glass-diffuse: 0px;
+}
+
+/* Strip any residual blur or lift on flat Onyx Lucite surfaces */
+[data-slot="card"],
+[data-slot="badge"],
+[data-slot="table"],
+[data-slot="tabs-list"],
+[data-slot="sheet-content"],
+[data-slot="sheet-overlay"] {
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 /* Neo-brutalist crisp technical grid surface */
 .db-grid-bg {
-  background-color: #090a0d;
+  background-color: var(--db-paper);
   background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
-/* Deep-Space Cosmos Canvas — the ONE exception where the Warm-Path Graph drops into deep space */
+/* Deep-Space Cosmos Canvas — the ONE view that drops into deep space */
 .db-cosmos {
-  background-color: #020510;
+  background-color: var(--db-cosmos-bg);
   background-image:
-    radial-gradient(ellipse 72% 58% at 50% 45%, rgba(28, 78, 216, 0.22) 0%, rgba(14, 34, 98, 0.12) 42%, rgba(2, 5, 16, 0.96) 100%),
-    radial-gradient(circle at 18% 24%, rgba(56, 189, 248, 0.12) 0%, transparent 36%),
-    radial-gradient(circle at 82% 74%, rgba(99, 102, 241, 0.14) 0%, transparent 40%),
-    linear-gradient(to right, rgba(96, 165, 250, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(96, 165, 250, 0.05) 1px, transparent 1px);
+    radial-gradient(ellipse 72% 58% at 50% 45%, rgba(28, 78, 216, 0.20) 0%, rgba(7, 20, 48, 0.16) 45%, rgba(2, 5, 16, 0.98) 100%),
+    radial-gradient(circle at 16% 26%, rgba(56, 189, 248, 0.12) 0%, transparent 34%),
+    radial-gradient(circle at 84% 72%, rgba(167, 139, 250, 0.12) 0%, transparent 38%),
+    linear-gradient(to right, var(--db-cosmos-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--db-cosmos-grid) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
 }
 
@@ -40,15 +105,8 @@
   animation: db-photon-flow 1.2s linear infinite;
 }
 
-@keyframes db-orbit-pulse {
-  0%, 100% {
-    opacity: 0.45;
+@media (prefers-reduced-motion: reduce) {
+  .db-edge-active {
+    animation: none;
   }
-  50% {
-    opacity: 0.9;
-  }
-}
-
-.db-pulse-slow {
-  animation: db-orbit-pulse 3.2s ease-in-out infinite;
 }

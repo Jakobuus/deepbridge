@@ -69,7 +69,11 @@ export type EdgeType =
   | "TOPIC_ALIGNED"
   | "AFFILIATED_AT"
   | "BOARD"
-  | "PERSONAL";
+  | "PERSONAL"
+  | "ENABLES"
+  | "DELIVERS"
+  | "SOLVES"
+  | "FITS";
 
 export interface Edge {
   id: Id;
@@ -159,6 +163,53 @@ export interface Metrics {
   conversion: { from: Stage; to: Stage; rate: number }[];
   by_path_kind: { kind: Path["kind"]; count: number; approved: number }[];
   by_actor: { actor: string; actor_kind: "agent" | "human"; actions: number }[];
+}
+
+export interface ValueNode {
+  id: Id;
+  kind: "feature" | "benefit" | "value" | "problem";
+  text: string;
+  source: "paper" | "founder" | "inferred";
+  evidence_ids: Id[];
+}
+
+export interface BuyerCategory {
+  id: Id;
+  name: string;
+  problem_set: string[];
+  value_prop: string;
+  colour: string;
+  org_ids: Id[];
+  problem_node_ids: Id[];
+  evidence_ids: Id[];
+}
+
+export interface KnowledgeGraph {
+  founder: Founder;
+  core: { value_nodes: ValueNode[]; edges: Edge[] };
+  categories: BuyerCategory[];
+  leads: { people: Person[]; orgs: Org[]; edges: Edge[]; paths: Path[] };
+  evidence: Evidence[];
+}
+
+export interface ValueProposition {
+  one_liner: string;
+  for_whom: string;
+  pain: string;
+  proof_points: { text: string; source: string }[];
+  buyer_roles: string[];
+}
+
+export interface InterviewResponse {
+  session_id: string;
+  question: string | null;
+  form: Partial<IntakeForm>;
+  done: boolean;
+  ms: number;
+  engine: "moss" | "script";
+  value_proposition?: ValueProposition | null;
+  founder?: Founder | null;
+  paper_evidence?: Evidence[];
 }
 
 export interface GraphBundle {

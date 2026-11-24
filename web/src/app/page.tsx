@@ -34,6 +34,7 @@ import type {
   Icp,
   Id,
   IntakeForm,
+  KnowledgeGraph,
   Metrics,
   Org,
   Path,
@@ -54,7 +55,7 @@ const NAV_ITEMS: {
     key: "intake",
     step: "01",
     label: "Founder Intake",
-    sub: "Papers → Story Translation",
+    sub: "Voice Grilling → Value Map",
     icon: FlaskConical,
   },
   {
@@ -67,8 +68,8 @@ const NAV_ITEMS: {
   {
     key: "leads",
     step: "03",
-    label: "Warm-Path Graph",
-    sub: "Table ↔ Deep-Space Cosmos",
+    label: "Knowledge Graph",
+    sub: "3-Ring Cosmos ↔ Flat Table",
     icon: GitBranch,
   },
   {
@@ -93,6 +94,7 @@ export default function DeepBridgeWorkspace() {
   // Core Domain State
   const [founder, setFounder] = React.useState<Founder | null>(null);
   const [icp, setIcp] = React.useState<Icp | null>(null);
+  const [knowledgeGraph, setKnowledgeGraph] = React.useState<KnowledgeGraph | null>(null);
   const [orgs, setOrgs] = React.useState<Org[]>([]);
   const [signals, setSignals] = React.useState<Signal[]>([]);
   const [people, setPeople] = React.useState<Person[]>([]);
@@ -174,20 +176,18 @@ export default function DeepBridgeWorkspace() {
       setFounder(resolvedFounder);
       setReplayNotice(null);
 
-      // Fetch ICP for this specific founder
       const icpRes = await api.getIcp(resolvedFounder.id);
       setIcp(icpRes);
 
-      // Buyers check_founder uses default golden store for non-Lightmatter founders;
-      // Graph + Paths support live OpenAlex computation per founder_id!
       const buyersParam =
         resolvedFounder.id === GOLDEN_FOUNDER_ID ? resolvedFounder.id : undefined;
 
-      const [buyersRes, graphRes, pathsRes, pipelineRes, metricsRes, creditsRes] =
+      const [buyersRes, graphRes, pathsRes, kgRes, pipelineRes, metricsRes, creditsRes] =
         await Promise.all([
           api.getBuyers(buyersParam).catch(() => api.getBuyers()),
           api.getGraph(resolvedFounder.id).catch(() => api.getGraph()),
           api.getPaths(resolvedFounder.id).catch(() => api.getPaths()),
+          api.getKnowledgeGraph(resolvedFounder.id).catch(() => null),
           api.getPipeline(),
           api.getMetrics(),
           api.getCredits(),
@@ -199,13 +199,14 @@ export default function DeepBridgeWorkspace() {
         );
       }
 
+      setKnowledgeGraph(kgRes);
       setOrgs(buyersRes.orgs);
       setSignals(buyersRes.signals);
-      setPeople(graphRes.people);
-      setGraphOrgs(graphRes.orgs);
-      setEdges(graphRes.edges);
-      mergeEvidenceList(graphRes.evidence);
-      setPaths(pathsRes);
+      setPeople(kgRes?.leads.people ?? graphRes.people);
+      setGraphOrgs(kgRes?.leads.orgs ?? graphRes.orgs);
+      setEdges(kgRes?.leads.edges ?? graphRes.edges);
+      mergeEvidenceList(kgRes?.evidence ?? graphRes.evidence);
+      setPaths(kgRes?.leads.paths ?? pathsRes);
       setCards(pipelineRes);
       setMetrics(metricsRes);
       setCredits(creditsRes);
@@ -219,13 +220,13 @@ export default function DeepBridgeWorkspace() {
         }
       }
 
-      const topPath = [...pathsRes].sort((a, b) => b.score - a.score)[0];
+      const activePaths = kgRes?.leads.paths ?? pathsRes;
+      const topPath = [...activePaths].sort((a, b) => b.score - a.score)[0];
       setSelectedPathId(topPath ? topPath.id : null);
     },
     [mergeEvidenceList],
   );
 
-  // Initial Boot
   const boot = React.useCallback(async () => {
     setBooting(true);
     setApiOfflineError(null);
@@ -322,27 +323,25 @@ export default function DeepBridgeWorkspace() {
 
   return (
     <div className="db-grid-bg flex min-h-screen flex-col lg:flex-row">
-      {/* LEFT NAVIGATION RAIL (FLAT NEO-BRUTALIST LUCITE ONYX) */}
-      <aside className="flex w-full shrink-0 flex-col justify-between border-b border-white/15 bg-[#07080b] lg:w-64 lg:border-b-0 lg:border-r">
+      {/* LEFT NAVIGATION RAIL — STRICT FLAT LUCITE ONYX */}
+      <aside className="flex w-full shrink-0 flex-col justify-between border-b border-white/20 bg-[#060709] lg:w-64 lg:border-b-0 lg:border-r">
         <div>
-          {/* Brand Lockup */}
-          <div className="border-b border-white/15 px-5 py-4">
+          <div className="border-b border-white/20 px-5 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <div className="flex size-7 items-center justify-center rounded border border-sky-400/60 bg-sky-500/20 font-mono text-xs font-bold text-sky-200">
+                <div className="flex size-7 items-center justify-center rounded border-2 border-sky-400 bg-[#0b2536] font-mono text-xs font-bold text-sky-200">
                   DB
                 </div>
                 <div>
                   <div className="text-sm font-bold tracking-tight">DEEPBRIDGE</div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                    Deep-Tech GTM Engine
+                    Onyx · Lucite · Flat
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* 5-Screen Stepper Nav */}
           <nav className="flex flex-row gap-1 overflow-x-auto p-3 lg:flex-col">
             {NAV_ITEMS.map((item) => {
               const Icon = item.icon;
@@ -354,8 +353,8 @@ export default function DeepBridgeWorkspace() {
                   onClick={() => setActiveScreen(item.key)}
                   className={`flex min-w-[165px] items-start gap-3 rounded border px-3 py-2.5 text-left transition lg:min-w-0 ${
                     isActive
-                      ? "border-sky-400/70 bg-sky-500/15 text-white"
-                      : "border-transparent text-muted-foreground hover:border-white/15 hover:bg-white/[0.03] hover:text-foreground"
+                      ? "border-2 border-sky-400 bg-[#0b2536] text-white"
+                      : "border-transparent text-muted-foreground hover:border-white/20 hover:bg-[#0f1117] hover:text-foreground"
                   }`}
                 >
                   <Icon
@@ -378,8 +377,7 @@ export default function DeepBridgeWorkspace() {
           </nav>
         </div>
 
-        {/* Honesty & Guardrails Footer */}
-        <div className="hidden border-t border-white/15 p-4 space-y-2.5 lg:block">
+        <div className="hidden border-t border-white/20 p-4 space-y-2.5 lg:block">
           <div className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wider text-emerald-300">
             <ShieldCheck className="size-3.5" />
             <span>Stage Guardrails Active</span>
@@ -393,17 +391,16 @@ export default function DeepBridgeWorkspace() {
         </div>
       </aside>
 
-      {/* MAIN WORKSPACE COLUMN */}
+      {/* MAIN WORKSPACE COLUMN — FLAT SOLID HEADER (NO FROSTED BLUR) */}
       <div className="flex min-w-0 flex-1 flex-col">
-        {/* TOP TELEMETRY BAR */}
-        <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border-b border-white/15 bg-[#090a0d]/95 px-6 py-3 backdrop-blur">
+        <header className="sticky top-0 z-30 flex flex-wrap items-center justify-between gap-3 border-b border-white/20 bg-[#090a0d] px-6 py-3">
           <div className="flex flex-wrap items-center gap-2.5">
-            <Badge flat className="border-white/20 bg-white/[0.06] font-mono text-[11px]">
+            <Badge flat className="border-white/25 bg-[#0f1117] font-mono text-[11px]">
               CASE: {founder ? `${founder.name} · ${founder.company}` : "Loading..."}
             </Badge>
             <Badge
               flat
-              className="border-emerald-400/40 bg-emerald-500/15 font-mono text-[10px] text-emerald-200"
+              className="border-emerald-400/50 bg-[#07291e] font-mono text-[10px] text-emerald-200"
             >
               {founder?.id === GOLDEN_FOUNDER_ID
                 ? "CACHED RESEARCH REPLAY"
@@ -417,13 +414,13 @@ export default function DeepBridgeWorkspace() {
               onClick={() => setActiveScreen("drafts")}
               className={`inline-flex items-center gap-1.5 rounded border px-2.5 py-1 font-mono text-xs transition ${
                 credits && credits.balance <= 0
-                  ? "border-red-400/60 bg-red-500/20 text-red-100"
-                  : "border-amber-400/40 bg-amber-500/15 text-amber-100 hover:bg-amber-500/25"
+                  ? "border-2 border-red-400 bg-[#2d0a0e] text-red-100"
+                  : "border-amber-400/50 bg-[#2b1d05] text-amber-100 hover:border-amber-300"
               }`}
             >
               <Coins className="size-3.5 text-amber-300" />
               <span>CREDITS: {credits?.balance ?? "—"}</span>
-              <span className="text-[10px] opacity-75">({credits?.source ?? "local"})</span>
+              <span className="text-[10px] opacity-80">({credits?.source ?? "local"})</span>
             </button>
 
             <Button
@@ -438,7 +435,7 @@ export default function DeepBridgeWorkspace() {
                 });
                 setDrawerOpen(true);
               }}
-              className="border border-white/20 font-mono text-xs"
+              className="border border-white/25 font-mono text-xs"
             >
               <FileSearch className="size-3.5 text-sky-300" />
               Proof Drawer ({Object.keys(evidenceMap).length})
@@ -449,17 +446,16 @@ export default function DeepBridgeWorkspace() {
               flat
               title="Reload state from FastAPI"
               onClick={() => void boot()}
-              className="border border-white/20"
+              className="border border-white/25"
             >
               <RefreshCw className={`size-3.5 ${booting ? "animate-spin" : ""}`} />
             </Button>
           </div>
         </header>
 
-        {/* BODY CONTENT */}
         <main className="flex-1 p-6">
           {apiOfflineError ? (
-            <div className="mx-auto max-w-2xl rounded border border-red-500/50 bg-red-950/30 p-6 space-y-3 font-mono text-xs text-red-100">
+            <div className="mx-auto max-w-2xl rounded border-2 border-red-500/60 bg-[#2d0a0e] p-6 space-y-3 font-mono text-xs text-red-100">
               <div className="text-sm font-bold uppercase text-red-300">
                 FastAPI Backend Unreachable
               </div>
@@ -488,6 +484,7 @@ export default function DeepBridgeWorkspace() {
                   onSubmitQuery={handleIntakeQuery}
                   onSubmitForm={handleIntakeForm}
                   onInspectEvidence={openEvidence}
+                  onEvidenceLoaded={mergeEvidenceList}
                   onGoToBuyers={() => setActiveScreen("buyers")}
                 />
               )}
@@ -520,6 +517,8 @@ export default function DeepBridgeWorkspace() {
               {activeScreen === "leads" && (
                 <ScreenLeads
                   founder={founder}
+                  icp={icp}
+                  knowledgeGraph={knowledgeGraph}
                   paths={paths}
                   people={people}
                   orgs={orgs}
@@ -584,7 +583,6 @@ export default function DeepBridgeWorkspace() {
         </main>
       </div>
 
-      {/* SLIDE-OVER EVIDENCE, NAME-CHECK & MOSS CONTACT DRAWER */}
       <EvidenceDrawer
         open={drawerOpen}
         onOpenChange={setDrawerOpen}

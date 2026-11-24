@@ -1,4 +1,5 @@
 import type {
+  BuyerCategory,
   BuyersBundle,
   Card,
   Contact,
@@ -11,6 +12,8 @@ import type {
   Icp,
   Id,
   IntakeForm,
+  InterviewResponse,
+  KnowledgeGraph,
   Metrics,
   Path,
   SearchBundle,
@@ -82,6 +85,17 @@ export const api = {
   health: () =>
     request<{ status: string; data: string; case: string }>(`${API_BASE}/health`),
 
+  interview: (body: {
+    session_id?: string | null;
+    answer?: string | null;
+    paper_links?: string[];
+    founder_id?: string | null;
+  }) =>
+    request<InterviewResponse>(`${API_BASE}/interview`, {
+      method: "POST",
+      body: JSON.stringify(body),
+    }),
+
   intake: (body: IntakeForm | { query: string }) =>
     request<Founder>(`${API_BASE}/intake`, {
       method: "POST",
@@ -99,6 +113,12 @@ export const api = {
 
   getPaths: (founderId?: string | null) =>
     request<Path[]>(withFounder("/paths", founderId)),
+
+  getCategories: (founderId?: string | null) =>
+    request<BuyerCategory[]>(withFounder("/categories", founderId)),
+
+  getKnowledgeGraph: (founderId?: string | null) =>
+    request<KnowledgeGraph>(withFounder("/knowledge-graph", founderId)),
 
   nameCheck: (edgeId: Id, decision: "ok" | "rejected") =>
     request<Edge>(`${API_BASE}/name-check`, {
