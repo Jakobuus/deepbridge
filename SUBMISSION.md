@@ -4,6 +4,8 @@
 
 Built at HackwithBay 4.0, San Francisco, 24 Nov 2026.
 
+**Demo video:** [docs/video/deepbridge-demo.mp4](docs/video/deepbridge-demo.mp4) · **Slide deck:** [docs/deepbridge-deck.pdf](docs/deepbridge-deck.pdf)
+
 ## Description (150 words)
 
 Deep-tech founders publish strong science but rarely know who would buy it, or how to get a meeting.
@@ -77,8 +79,8 @@ API base `http://127.0.0.1:8000` (explorer at `/docs`), web app `http://localhos
 ## Team
 
 - **Jakob Volbracht:** sales workflow, ICP, buyers, contacts, drafts, credits, pitch.
-- **Erick** ([raimaverick](https://github.com/raimaverick)): research graph, warm paths, evidence, live graph events.
-- **Mark:** web experience and visual demo.
+- **Erick Julyan** ([raimaverick](https://github.com/raimaverick)): research graph, warm paths, evidence, live graph events.
+- **Mark Blake** ([WeekendSuperhero](https://github.com/WeekendSuperhero)): web experience and visual demo.
 
 ## Setup
 
