@@ -8,6 +8,8 @@ Built at HackwithBay 4.0, 24 Nov 2026. The judge case follows **Hannah Weber / H
 
 **For judges:** the [submission write-up](SUBMISSION.md) maps each judging criterion to the demo, files and endpoints.
 
+**Demo video:** [docs/video/deepbridge-demo.mp4](docs/video/deepbridge-demo.mp4) · **Slide deck:** [docs/deepbridge-deck.pdf](docs/deepbridge-deck.pdf) · **System design:** [docs/system-design.md](docs/system-design.md)
+
 ## Run it
 
 Requires Python 3.12, uv, lsof, curl, and Node.js and [Bun](https://bun.sh) (the web app uses bun; `bun.lock` is the lockfile). [Install uv](https://docs.astral.sh/uv/).
@@ -62,9 +64,11 @@ The smoke check changes in-memory drafts, pipeline stages, and credits. Run the 
 
 ## Sponsor integrations
 
+- **Band — built.** A Band room with four agents (Planner, Builder, Reviewer, Security) reviews each outreach draft with its sources and check results; a human approves in the room with `@Security approve`, which calls our `/approve` endpoint and moves the pipeline card. Agent messages are scripted. `service/band_agents.py`, `scripts/band-demo.sh`.
+- **Flexprice — built.** Usage events `leads_enriched`, `outreach_sent` and `graph_queries` go to a prepaid wallet; at zero credits the next paid step returns HTTP 402 until a top-up. Without keys, a local counter applies the same gate. `service/app/lanes/jakob/credits.py`, `scripts/flexprice_*.py`.
 - **Moss Tasks — built, credentials required for live use.** A browser task checks a person's role and public profiles using `moss-fast`, structured output, verification, and runtime/cost limits. Cached results support stage replay. Moss is not asked for emails or phone numbers. The service also accepts voice interview turns and transcripts.
-- **Credits.** The local credit counter starts with five demo credits and returns HTTP 402 when exhausted. The optional Flexprice adapter supports wallet lookup and usage metering. `/credits` exposes the balance, events, and source.
 - **OpenAlex — built.** Public papers support founder intake, buyer research, and source links. Research responses are cached.
+- **ElevenLabs Agents — built.** The real-voice interviewer (orb beside the graph) asks about value, first buyers and contacts; answers sharpen the graph live.
 
 ## What the demo claims
 
@@ -76,8 +80,8 @@ Nothing is sent to real people. Approval records a decision on the current draft
 
 ## Team and further reading
 
-- **Jakob:** sales workflow, ideal customer profile, buyers, contacts, and drafts.
-- **Erick:** research graph, paths, and evidence.
-- **Mark:** web experience and visual demo.
+- **Jakob Volbracht:** sales workflow, ideal customer profile, buyers, contacts, and drafts.
+- **Erick Julyan** ([raimaverick](https://github.com/raimaverick)): research graph, paths, and evidence.
+- **Mark Blake** ([WeekendSuperhero](https://github.com/WeekendSuperhero)): web experience and visual demo.
 
 Read the [architecture](docs/architecture.md) for implementation details and the [viability assessment](docs/viability.md) for customers, pricing, and risks.
