@@ -60,17 +60,18 @@ function useOneAtATime(total: number, everyMs: number): number {
 
 // Seed graph before Speak: what we read in her papers, drawn dashed as AI assumptions until the interview confirms.
 // HACK: short labels hand-written from GET /value-map, GET /categories and the POST /intake works list (HOPO case).
+// Papers: only the HOPO list served by POST /intake (fixtures/hopo_papers.json); ids are its evidence ids.
 const SEED_PAPERS = [
-  { id: "paper:hopo-chelators", label: "Oral actinide chelators (HOPO)", a: -150 },
-  { id: "paper:anthrax-stealth", label: "Anthrax stealth siderophores", a: -35 },
-  { id: "paper:bacillus-sid", label: "Bacillus siderophores", a: 95 },
-  { id: "paper:lipocalin", label: "Evading lipocalin 2", a: 150 },
+  { id: "evidence:openalex:W2101984559", label: "Biomimetic actinide chelators (2010)", a: -150 },
+  { id: "evidence:openalex:W2785617025", label: "Lead & heavy-metal binding (2018)", a: -35 },
+  { id: "evidence:openalex:W1979550737", label: "89Zr PET chelator (2014)", a: 95 },
+  { id: "evidence:openalex:W2899214672", label: "Thorium-227 chelator (2018)", a: 150 },
 ];
 const SEED_VALUES: { id: string; label: string; a: number }[] = [
   { id: "value:hopo-f-decorp", label: "Oral decorporation pill", a: -125 },
-  { id: "value:hopo-b-dtpa", label: "Beats DTPA", a: -55 },
+  { id: "value:hopo-b-dtpa", label: "Oral, unlike today's antidote", a: -55 },
   { id: "value:hopo-f-zr", label: "Stable 89Zr chelator", a: 30 },
-  { id: "value:hopo-f-gd", label: "Removes gadolinium", a: 125 },
+  { id: "value:hopo-f-gd", label: "Gadolinium chelation", a: 125 },
   { id: "value:hopo-f-affinity", label: "Binds lead and cadmium", a: 210 },
 ];
 const SEED_CATS: { id: string; label: string; a: number }[] = [
