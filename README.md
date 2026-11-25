@@ -8,7 +8,7 @@ Built at HackwithBay 4.0, 24 Nov 2026. The judge case follows **Hannah Weber / H
 
 **For judges:** the [submission write-up](SUBMISSION.md) maps each judging criterion to the demo, files and endpoints.
 
-**Demo video:** [docs/video/deepbridge-demo.mp4](docs/video/deepbridge-demo.mp4) · **Slide deck:** [docs/deepbridge-deck.pdf](docs/deepbridge-deck.pdf) · **System design:** [docs/system-design.md](docs/system-design.md)
+**Demo video:** https://drive.google.com/file/d/1uIKyb5i4DVXj-JOhcU07MAEVq31vijbV/view?usp=drive_link · **Slide deck:** [docs/deepbridge-deck.pdf](docs/deepbridge-deck.pdf) · **System design:** [docs/system-design.md](docs/system-design.md)
 
 ## Run it
 
