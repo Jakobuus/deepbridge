@@ -9,3 +9,8 @@ __pycache__/
 .DS_Store
 .playwright-mcp/
 /.webhook-url
+
+# runtime caches written by the running API (profile caches stay out of the public repo; Jakob 24 Nov)
+data/cache/jakob/*.json
+data/cache/jakob/categories/
+data/cache/jakob/drafts/
