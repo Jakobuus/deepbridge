@@ -14,3 +14,6 @@ __pycache__/
 data/cache/jakob/*.json
 data/cache/jakob/categories/
 data/cache/jakob/drafts/
+data/cache/jakob/openalex/*.json
+data/cache/jakob/founders/*.json
+web/package-lock.json
